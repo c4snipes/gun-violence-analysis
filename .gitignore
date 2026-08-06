@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+build/
+dist/
+data/raw/mother_jones.csv
+figures/
+results/
+.DS_Store
