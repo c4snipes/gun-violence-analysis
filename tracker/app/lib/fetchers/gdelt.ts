@@ -61,15 +61,39 @@ export async function fetchGdeltCitation(incident: Incident): Promise<GdeltLooku
   return { had_results: true, match: findStrictMatch(articles, incident) };
 }
 
+/** Terms that mark a headline as being about a shooting at all. */
+const SHOOTING_TERMS = ["shoot", "shot", "gun"];
+
+function escapeRegExp(s: string): string {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+/**
+ * Whole-word containment. Plain substring matching bleeds badly on short place
+ * names — "Ada" matches "Canada", "Kent" matches "Kentucky", "Rome" matches
+ * "Jerome", "King" matches "parking" — and every one of those produces a
+ * confidently-wrong citation, which is the precise failure this gate exists
+ * to prevent.
+ */
+function containsWord(haystack: string, phrase: string): boolean {
+  const trimmed = phrase.trim();
+  if (!trimmed) return false;
+  return new RegExp(`\\b${escapeRegExp(trimmed)}\\b`, "i").test(haystack);
+}
+
 export function findStrictMatch(
   articles: GdeltArticle[],
   incident: Incident,
 ): CitationMatch | null {
-  const cityLower = incident.city.toLowerCase();
-  const stateLower = incident.state.toLowerCase();
   const article = articles.find((a) => {
-    const haystack = a.title.toLowerCase();
-    return haystack.includes(cityLower) && haystack.includes(stateLower);
+    const haystack = a.title;
+    // A headline can name the right city and state and still be about a
+    // parade: "Missouri towns celebrate Independence Day" names Independence,
+    // Missouri. Requiring a shooting term keeps place-name coincidence from
+    // being read as coverage of this incident.
+    const lower = haystack.toLowerCase();
+    if (!SHOOTING_TERMS.some((t) => lower.includes(t))) return false;
+    return containsWord(haystack, incident.city) && containsWord(haystack, incident.state);
   });
   if (!article) return null;
   return {

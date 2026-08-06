@@ -57,6 +57,70 @@ describe("findStrictMatch", () => {
     expect(findStrictMatch(onlyGeneric, makeIncident())).toBeNull();
   });
 
+  it("rejects a city name that appears only inside a longer word", () => {
+    // Ada, Oklahoma vs "Canada"; Kent, Ohio vs "Kentucky"; Rome, Georgia vs
+    // "Jerome". Plain substring matching accepts all three.
+    const cases = [
+      { city: "Ada", state: "Oklahoma", title: "Canada announces border policy amid Oklahoma gun talks" },
+      { city: "Kent", state: "Ohio", title: "Kentucky and Ohio police discuss a shooting response plan" },
+      { city: "Rome", state: "Georgia", title: "Jerome and Georgia officials review a shooting report" },
+    ];
+    for (const { city, state, title } of cases) {
+      const result = findStrictMatch(
+        [{ url: "https://x.com/a", title, domain: "x.com", seendate: "20260104T000000Z" }],
+        makeIncident({ city, state }),
+      );
+      expect(result, `"${city}" should not match "${title}"`).toBeNull();
+    }
+  });
+
+  it("still accepts the city as a whole word next to punctuation", () => {
+    const result = findStrictMatch(
+      [
+        {
+          url: "https://x.com/a",
+          title: "Shooting in Ada, Oklahoma leaves four injured",
+          domain: "x.com",
+          seendate: "20260104T000000Z",
+        },
+      ],
+      makeIncident({ city: "Ada", state: "Oklahoma" }),
+    );
+    expect(result).not.toBeNull();
+  });
+
+  it("rejects a headline naming the right city and state that is not about a shooting", () => {
+    // Independence, Missouri: "Missouri towns celebrate Independence Day"
+    // names both as whole words while being about fireworks.
+    const result = findStrictMatch(
+      [
+        {
+          url: "https://x.com/a",
+          title: "Missouri towns celebrate Independence Day with fireworks",
+          domain: "x.com",
+          seendate: "20260104T000000Z",
+        },
+      ],
+      makeIncident({ city: "Independence", state: "Missouri" }),
+    );
+    expect(result).toBeNull();
+  });
+
+  it("handles multi-word city names as a whole phrase", () => {
+    const result = findStrictMatch(
+      [
+        {
+          url: "https://x.com/a",
+          title: "Police report a shooting in Grand Haven, Michigan",
+          domain: "x.com",
+          seendate: "20260104T000000Z",
+        },
+      ],
+      makeIncident({ city: "Grand Haven", state: "Michigan" }),
+    );
+    expect(result).not.toBeNull();
+  });
+
   it("rejects an article that mentions the city but not the state", async () => {
     const result = findStrictMatch(
       [

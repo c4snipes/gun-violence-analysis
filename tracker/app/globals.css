@@ -282,6 +282,32 @@ sup {
   color: var(--ink-muted);
 }
 
+/*
+ * News citations are not one of the four datasets, so their footnote block
+ * must not look like the authoritative per-source footnotes it sits beneath.
+ * Single column, dimmer, indented, and a dotted rule rather than a solid one:
+ * the copy already says "unconfirmed", and the styling should agree with it.
+ */
+.citation-footnotes {
+  grid-template-columns: 1fr;
+  margin-top: 22px;
+  padding-left: 14px;
+  border-top: 1px dotted var(--rule);
+  opacity: 0.78;
+  font-size: 10px;
+}
+
+.citation-footnotes a {
+  color: inherit;
+  word-break: break-all;
+}
+
+.citation-mark {
+  color: var(--ink-muted);
+  font-size: 9px;
+  padding-left: 2px;
+}
+
 .page-title {
   font: 400 27px/1.2 var(--serif);
   color: var(--ink);

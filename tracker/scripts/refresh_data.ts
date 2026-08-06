@@ -19,7 +19,7 @@ import type {
   StateStats,
   TrackerSnapshot,
 } from "../types/data";
-import { mergeCitations } from "../app/lib/citations";
+import { ensureUniqueIds, mergeCitations } from "../app/lib/citations";
 import { fetchGdeltCitation } from "../app/lib/fetchers/gdelt";
 import { fetchGVA } from "../app/lib/fetchers/gva";
 import { fetchMotherJones } from "../app/lib/fetchers/mother_jones";
@@ -175,8 +175,10 @@ async function loadCitations(): Promise<CitationsFile> {
 async function main(): Promise<void> {
   await mkdir(DATA_DIR, { recursive: true });
 
-  const { incidents, staleSources } = await fetchAllSources();
-  incidents.sort((a, b) => (a.date > b.date ? -1 : 1));
+  const { incidents: rawIncidents, staleSources } = await fetchAllSources();
+  rawIncidents.sort((a, b) => (a.date > b.date ? -1 : 1));
+  // Must happen before anything keys off an incident id — see ensureUniqueIds.
+  const incidents = ensureUniqueIds(rawIncidents);
 
   const model = await loadModelResults();
   const snapshot: TrackerSnapshot = {

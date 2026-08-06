@@ -57,6 +57,26 @@ export function searchLinkFor(incident: Incident): string {
  * so the cap always spends its budget on the incidents most likely to be
  * displayed.
  */
+/**
+ * Give every incident a genuinely unique id, suffixing any duplicate.
+ *
+ * Source ids are not reliably unique: GVA ids are built from date+state+city,
+ * which collides when one city has two incidents on one day, and the Stanford
+ * CSV reuses CaseIDs (the committed data contains two such collisions today).
+ * Anything keyed by incident id inherits that collision — the citation cache
+ * would attach one incident's article to a different incident permanently,
+ * the dagger markers would desync from their footnotes, and React would see
+ * duplicate keys in the incident table.
+ */
+export function ensureUniqueIds(incidents: Incident[]): Incident[] {
+  const seen = new Map<string, number>();
+  return incidents.map((incident) => {
+    const count = seen.get(incident.id) ?? 0;
+    seen.set(incident.id, count + 1);
+    return count === 0 ? incident : { ...incident, id: `${incident.id}-${count + 1}` };
+  });
+}
+
 export const MAX_NEW_LOOKUPS_PER_RUN = 10;
 
 /**

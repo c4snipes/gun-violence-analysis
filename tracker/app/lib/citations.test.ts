@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from "vitest";
 
-import { footnoteForCitation, mergeCitations, searchLinkFor } from "./citations";
+import { ensureUniqueIds, footnoteForCitation, mergeCitations, searchLinkFor } from "./citations";
 import type { CitationEntry, CitationsFile, Incident } from "@/types/data";
 
 function makeIncident(overrides: Partial<Incident> = {}): Incident {
@@ -67,6 +67,50 @@ describe("searchLinkFor", () => {
     expect(url).toBe(
       "https://news.google.com/search?q=" + encodeURIComponent("shooting Houston Texas 2026-01-04"),
     );
+  });
+});
+
+describe("ensureUniqueIds", () => {
+  it("leaves already-unique ids untouched", () => {
+    const incidents = [makeIncident({ id: "a" }), makeIncident({ id: "b" })];
+    expect(ensureUniqueIds(incidents).map((i) => i.id)).toEqual(["a", "b"]);
+  });
+
+  it("suffixes duplicate ids so two distinct incidents never share one", () => {
+    // Mirrors the real collision in the committed data: stanford-156 maps to
+    // two different incidents with different casualty counts.
+    const incidents = [
+      makeIncident({ id: "stanford-156", killed: 3, injured: 5 }),
+      makeIncident({ id: "stanford-156", killed: 4, injured: 4 }),
+      makeIncident({ id: "stanford-156", killed: 1, injured: 1 }),
+    ];
+    const result = ensureUniqueIds(incidents);
+    expect(result.map((i) => i.id)).toEqual([
+      "stanford-156",
+      "stanford-156-2",
+      "stanford-156-3",
+    ]);
+    // Casualty data must survive the rewrite unchanged.
+    expect(result.map((i) => i.killed)).toEqual([3, 4, 1]);
+  });
+
+  it("does not mutate the input incidents", () => {
+    const incidents = [makeIncident({ id: "dup" }), makeIncident({ id: "dup" })];
+    ensureUniqueIds(incidents);
+    expect(incidents.map((i) => i.id)).toEqual(["dup", "dup"]);
+  });
+
+  it("gives every incident in a colliding set a distinct citation lookup", async () => {
+    const incidents = ensureUniqueIds([
+      makeIncident({ id: "dup", city: "Houston", killed: 1 }),
+      makeIncident({ id: "dup", city: "Houston", killed: 9 }),
+    ]);
+    const lookup = vi.fn().mockResolvedValue({ had_results: false, match: null });
+    const result = await mergeCitations({}, incidents, lookup, 25, 0);
+    // Without unique ids the second incident is skipped as "already cached"
+    // and permanently inherits the first one's citation.
+    expect(lookup).toHaveBeenCalledTimes(2);
+    expect(Object.keys(result)).toEqual(["dup", "dup-2"]);
   });
 });
 
