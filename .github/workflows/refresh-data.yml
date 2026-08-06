@@ -1,0 +1,64 @@
+name: Refresh data
+
+on:
+  # Daily at 06:00 UTC (roughly 1am US Central)
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: refresh-data
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: tracker/package-lock.json
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install analysis package
+        working-directory: analysis
+        run: pip install -e .
+
+      - name: Install tracker deps
+        working-directory: tracker
+        run: npm ci
+
+      - name: Refit model
+        working-directory: tracker
+        run: python scripts/refit_model.py --out public/data/model.json
+
+      - name: Refresh incident data
+        working-directory: tracker
+        run: npm run refresh-data
+
+      - name: Commit updated data
+        env:
+          GIT_COMMITTER_NAME: github-actions[bot]
+          GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+          GIT_AUTHOR_NAME: github-actions[bot]
+          GIT_AUTHOR_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+        run: |
+          if [ -z "$(git status --porcelain tracker/public/data)" ]; then
+            echo "No changes"
+            exit 0
+          fi
+          git add tracker/public/data
+          git commit -m "chore: refresh tracker data"
+          git push
