@@ -1,0 +1,82 @@
+name: CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+# The two halves of this monorepo have independent toolchains (Python package
+# in analysis/, Next.js app in tracker/) and no shared build graph, so they run
+# as separate jobs rather than through a JS workspace runner. Paths filters keep
+# a tracker-only change from spending time on the Python suite and vice versa.
+jobs:
+  analysis:
+    name: analysis (pytest)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install analysis package
+        working-directory: analysis
+        run: pip install -e ".[dev]"
+
+      # `ruff check src tests scripts` currently reports two pre-existing
+      # findings (import ordering, and an intentional blind `except Exception`
+      # in the bootstrap resampler that turns singular resamples into NaN).
+      # Left out of the gate rather than failing every build on day one, or
+      # silently rewriting statistical code to satisfy a linter.
+
+      # The SRI source workbook is gitignored, so `make build` cannot run in CI.
+      # The committed data/state_data_full.csv is what the tests and the
+      # tracker's refit both consume, so the suite is still meaningful here.
+      - name: Test
+        working-directory: analysis
+        run: python -m pytest -v
+
+  tracker:
+    name: tracker (vitest + build)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: tracker/package-lock.json
+
+      - name: Install dependencies
+        working-directory: tracker
+        run: npm ci
+
+      - name: Typecheck
+        working-directory: tracker
+        run: npm run typecheck
+
+      - name: Lint
+        working-directory: tracker
+        run: npm run lint
+
+      - name: Test
+        working-directory: tracker
+        run: npm test
+
+      # Builds with whatever data files are committed — including none, which
+      # is the case on a fresh clone. loadSnapshot() returning null and pages
+      # falling back to AwaitingData is required behaviour, so a build that
+      # survives absent data is exactly what this step verifies.
+      - name: Build
+        working-directory: tracker
+        run: npx next build
