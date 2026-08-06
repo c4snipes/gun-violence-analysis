@@ -48,7 +48,10 @@ export async function fetchGdeltCitation(incident: Incident): Promise<GdeltLooku
     maxrecords: "10",
   });
 
-  const res = await fetchWithTimeout(`${DOC_API_URL}?${params.toString()}`, {}, 10_000);
+  // 25s: GDELT's public endpoint is frequently slow to first byte, and a
+  // timeout that fires before it answers just burns the run's lookup budget
+  // without producing a result.
+  const res = await fetchWithTimeout(`${DOC_API_URL}?${params.toString()}`, {}, 25_000);
   if (!res.ok) throw new Error(`GDELT fetch failed: ${res.status}`);
 
   const body = (await res.json()) as GdeltResponse;

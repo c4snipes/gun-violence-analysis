@@ -47,21 +47,66 @@ export function searchLinkFor(incident: Incident): string {
 }
 
 /**
+ * Cap on how many *new* GDELT lookups one run performs.
+ *
+ * Lookups are sequential and network-bound, so an uncapped run over a full
+ * backlog is unbounded in wall-clock time — the first run against a
+ * populated tracker has hundreds of uncached incidents and will not finish
+ * inside a CI job. Because cache entries are permanent, a capped run simply
+ * backfills a little further each day. Incidents arrive sorted newest-first,
+ * so the cap always spends its budget on the incidents most likely to be
+ * displayed.
+ */
+export const MAX_NEW_LOOKUPS_PER_RUN = 10;
+
+/**
+ * Pause between consecutive GDELT requests.
+ *
+ * GDELT's public DOC API is unauthenticated and rate-limited. Its own 429
+ * body states the rule: "Please limit requests to one every 5 seconds."
+ * This is set to double that minimum, because exceeding it puts the caller
+ * in a penalty window where even correctly-spaced requests keep 429ing.
+ * Combined with the permanent cache, a slow-but-successful run beats a fast
+ * run that 429s on most of its lookups.
+ */
+export const LOOKUP_DELAY_MS = 10_000;
+
+function sleep(ms: number): Promise<void> {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+/**
  * Merge GDELT lookups for any incident not already present in `existing`.
  * Entries are permanent once written — even had_results:false ones — so
  * an id already present is never re-queried. A lookup failure for one
  * incident is logged and skipped (no entry written) rather than aborting
  * the whole merge, so it's simply retried on the next run.
+ *
+ * At most `maxNewLookups` new incidents are queried per call; the rest are
+ * left uncached for a later run and the shortfall is logged rather than
+ * passing silently.
  */
 export async function mergeCitations(
   existing: CitationsFile,
   incidents: Incident[],
   lookup: (incident: Incident) => Promise<GdeltLookupResult>,
+  maxNewLookups: number = MAX_NEW_LOOKUPS_PER_RUN,
+  delayMs: number = LOOKUP_DELAY_MS,
 ): Promise<CitationsFile> {
   const citations: CitationsFile = { ...existing };
+  let budget = maxNewLookups;
+  let deferred = 0;
+  let queried = 0;
 
   for (const incident of incidents) {
     if (citations[incident.id]) continue;
+    if (budget <= 0) {
+      deferred += 1;
+      continue;
+    }
+    budget -= 1;
+    if (queried > 0 && delayMs > 0) await sleep(delayMs);
+    queried += 1;
     try {
       const result = await lookup(incident);
       citations[incident.id] = {
@@ -72,6 +117,12 @@ export async function mergeCitations(
     } catch (err) {
       console.warn(`  GDELT lookup failed for ${incident.id}: ${err}`);
     }
+  }
+
+  if (deferred > 0) {
+    console.log(
+      `  ${deferred} uncached incident(s) deferred past this run's ${maxNewLookups}-lookup cap`,
+    );
   }
 
   return citations;

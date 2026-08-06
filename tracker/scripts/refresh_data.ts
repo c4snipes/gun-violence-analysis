@@ -12,12 +12,15 @@ import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import type {
+  CitationsFile,
   Incident,
   ModelResults,
   SourceCounts,
   StateStats,
   TrackerSnapshot,
 } from "../types/data";
+import { mergeCitations } from "../app/lib/citations";
+import { fetchGdeltCitation } from "../app/lib/fetchers/gdelt";
 import { fetchGVA } from "../app/lib/fetchers/gva";
 import { fetchMotherJones } from "../app/lib/fetchers/mother_jones";
 import { fetchStanfordMSA } from "../app/lib/fetchers/stanford_msa";
@@ -161,6 +164,14 @@ async function loadModelResults(): Promise<ModelResults> {
   }
 }
 
+async function loadCitations(): Promise<CitationsFile> {
+  try {
+    return JSON.parse(await readFile(join(DATA_DIR, "citations.json"), "utf-8"));
+  } catch {
+    return {};
+  }
+}
+
 async function main(): Promise<void> {
   await mkdir(DATA_DIR, { recursive: true });
 
@@ -177,13 +188,19 @@ async function main(): Promise<void> {
     model,
   };
 
+  const existingCitations = await loadCitations();
+  const citations = await mergeCitations(existingCitations, incidents, fetchGdeltCitation);
+  const newCitationCount = Object.keys(citations).length - Object.keys(existingCitations).length;
+
   await writeFile(join(DATA_DIR, "snapshot.json"), JSON.stringify(snapshot, null, 2));
   await writeFile(join(DATA_DIR, "incidents.json"), JSON.stringify(incidents, null, 2));
+  await writeFile(join(DATA_DIR, "citations.json"), JSON.stringify(citations, null, 2));
 
   const staleList = [...staleSources];
   if (staleList.length > 0) {
     console.log(`Stale sources this run: ${staleList.join(", ")}`);
   }
+  console.log(`Looked up ${newCitationCount} new incident(s) for GDELT citations`);
   console.log(
     `Wrote snapshot with ${incidents.length} total incidents across ${
       Object.keys(SOURCES).length

@@ -73,7 +73,7 @@ describe("searchLinkFor", () => {
 describe("mergeCitations", () => {
   it("queries and adds an entry for an incident not already in the citations file", async () => {
     const lookup = vi.fn().mockResolvedValue({ had_results: false, match: null });
-    const result = await mergeCitations({}, [makeIncident()], lookup);
+    const result = await mergeCitations({}, [makeIncident()], lookup, 25, 0);
     expect(lookup).toHaveBeenCalledTimes(1);
     expect(result[makeIncident().id]).toMatchObject({ had_results: false, match: null });
     expect(result[makeIncident().id].queried_at).toBeTruthy();
@@ -84,15 +84,45 @@ describe("mergeCitations", () => {
       [makeIncident().id]: { queried_at: "2026-01-01T00:00:00Z", had_results: false, match: null },
     };
     const lookup = vi.fn().mockResolvedValue({ had_results: true, match: null });
-    const result = await mergeCitations(existing, [makeIncident()], lookup);
+    const result = await mergeCitations(existing, [makeIncident()], lookup, 25, 0);
     expect(lookup).not.toHaveBeenCalled();
     expect(result[makeIncident().id]).toEqual(existing[makeIncident().id]);
   });
 
   it("skips an incident without writing an entry when the lookup throws, so it is retried next run", async () => {
     const lookup = vi.fn().mockRejectedValue(new Error("GDELT fetch failed: 503"));
-    const result = await mergeCitations({}, [makeIncident()], lookup);
+    const result = await mergeCitations({}, [makeIncident()], lookup, 25, 0);
     expect(result[makeIncident().id]).toBeUndefined();
+  });
+
+  it("stops querying once the per-run cap is reached, leaving the rest uncached for a later run", async () => {
+    const incidents = Array.from({ length: 5 }, (_, i) =>
+      makeIncident({ id: `incident-${i}` }),
+    );
+    const lookup = vi.fn().mockResolvedValue({ had_results: false, match: null });
+    const result = await mergeCitations({}, incidents, lookup, 2, 0);
+    expect(lookup).toHaveBeenCalledTimes(2);
+    // Budget is spent on the first two (incidents arrive newest-first).
+    expect(Object.keys(result)).toEqual(["incident-0", "incident-1"]);
+  });
+
+  it("does not spend cap budget on incidents that are already cached", async () => {
+    const incidents = Array.from({ length: 4 }, (_, i) =>
+      makeIncident({ id: `incident-${i}` }),
+    );
+    const existing: CitationsFile = {
+      "incident-0": { queried_at: "2026-01-01T00:00:00Z", had_results: false, match: null },
+      "incident-1": { queried_at: "2026-01-01T00:00:00Z", had_results: false, match: null },
+    };
+    const lookup = vi.fn().mockResolvedValue({ had_results: false, match: null });
+    const result = await mergeCitations(existing, incidents, lookup, 2, 0);
+    expect(lookup).toHaveBeenCalledTimes(2);
+    expect(Object.keys(result).sort()).toEqual([
+      "incident-0",
+      "incident-1",
+      "incident-2",
+      "incident-3",
+    ]);
   });
 
   it("processes multiple incidents independently, mixing new and already-cached", async () => {
@@ -102,7 +132,7 @@ describe("mergeCitations", () => {
       "cached-1": { queried_at: "2026-01-01T00:00:00Z", had_results: false, match: null },
     };
     const lookup = vi.fn().mockResolvedValue({ had_results: false, match: null });
-    const result = await mergeCitations(existing, [cached, fresh], lookup);
+    const result = await mergeCitations(existing, [cached, fresh], lookup, 25, 0);
     expect(lookup).toHaveBeenCalledTimes(1);
     expect(lookup).toHaveBeenCalledWith(fresh);
     expect(Object.keys(result)).toEqual(["cached-1", "fresh-1"]);
