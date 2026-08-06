@@ -5,7 +5,14 @@ import type { Incident } from "@/types/data";
 
 const MARK_COLOR = { yes: "#d8d5cf", unknown: "#8b8880", no: "#4a4945" } as const;
 
-export default function IncidentMatrix({ incidents }: { incidents: Incident[] }) {
+export default function IncidentMatrix({
+  incidents,
+  citationMarkers,
+}: {
+  incidents: Incident[];
+  /** incident id -> marker text (e.g. "†1"), only for incidents with a citation footnote */
+  citationMarkers?: Map<string, string>;
+}) {
   return (
     <div className="matrix">
       <div className="head">DATE</div>
@@ -17,7 +24,13 @@ export default function IncidentMatrix({ incidents }: { incidents: Incident[] })
       {incidents.map((incident) => {
         const match = evaluateAll(incident);
         return (
-          <Row key={incident.id} incident={incident} gva={match.gva} mj={match.mother_jones} />
+          <Row
+            key={incident.id}
+            incident={incident}
+            gva={match.gva}
+            mj={match.mother_jones}
+            citationMark={citationMarkers?.get(incident.id)}
+          />
         );
       })}
     </div>
@@ -28,10 +41,12 @@ function Row({
   incident,
   gva,
   mj,
+  citationMark,
 }: {
   incident: Incident;
   gva: keyof typeof MARK_COLOR;
   mj: keyof typeof MARK_COLOR;
+  citationMark?: string;
 }) {
   return (
     <>
@@ -40,6 +55,7 @@ function Row({
       </div>
       <div className="cell place">
         {incident.city}, {incident.state}
+        {citationMark && <sup className="citation-mark">{citationMark}</sup>}
       </div>
       <div className="cell num right" style={{ color: "#d8d5cf" }}>
         {incident.killed}/{incident.injured}

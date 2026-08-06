@@ -4,7 +4,8 @@ import AwaitingData from "./components/AwaitingData";
 import IncidentMatrix from "./components/IncidentMatrix";
 import Masthead from "./components/Masthead";
 import StateTileGrid from "./components/StateTileGrid";
-import { loadSnapshot } from "./lib/data";
+import { footnoteForCitation } from "./lib/citations";
+import { loadCitations, loadSnapshot } from "./lib/data";
 import { SOURCES, type SourceId } from "./lib/sources";
 import type { SourceCounts } from "@/types/data";
 
@@ -15,6 +16,7 @@ const ORDER: SourceId[] = ["gva", "mother_jones", "violence_project", "stanford_
 export default async function Dashboard() {
   const snap = await loadSnapshot();
   if (!snap) return <AwaitingData current="/" />;
+  const citations = await loadCitations();
 
   const generated = new Date(snap.generated_at);
   const bySource = new Map(snap.totals_by_source.map((t) => [t.source, t]));
@@ -32,6 +34,19 @@ export default async function Dashboard() {
       notes.push(note);
       noteIndex.set(id, notes.length);
     }
+  }
+
+  // Citation footnotes are kept in their own numbered sequence with a dagger
+  // marker. They are evidence a reader can check, not a fifth dataset, so they
+  // never join the numbered source footnotes above.
+  const recentIncidents = snap.recent_incidents.slice(0, 8);
+  const citationNotes: { text: string; url: string }[] = [];
+  const citationMarkers = new Map<string, string>();
+  for (const incident of recentIncidents) {
+    const footnote = footnoteForCitation(incident, citations[incident.id]);
+    if (!footnote) continue;
+    citationNotes.push({ text: footnote.text, url: footnote.url });
+    citationMarkers.set(incident.id, `†${citationNotes.length}`);
   }
 
   return (
@@ -109,8 +124,8 @@ export default async function Dashboard() {
             qualifies, an open dot means it clears the casualty threshold but the contextual
             condition is unrecorded, an em dash means it does not qualify.
           </p>
-          {snap.recent_incidents.length > 0 ? (
-            <IncidentMatrix incidents={snap.recent_incidents.slice(0, 8)} />
+          {recentIncidents.length > 0 ? (
+            <IncidentMatrix incidents={recentIncidents} citationMarkers={citationMarkers} />
           ) : (
             <p className="table-note">No incidents recorded in the current window.</p>
           )}
@@ -122,6 +137,23 @@ export default async function Dashboard() {
           {notes.map((note, i) => (
             <div key={i}>
               <sup>{i + 1}</sup> {note}
+            </div>
+          ))}
+        </footer>
+      )}
+
+      {citationNotes.length > 0 && (
+        <footer className="footnotes citation-footnotes">
+          <p className="table-note">
+            Related news coverage, matched automatically and unconfirmed. Not one of the four
+            datasets, and it does not resolve any definition above.
+          </p>
+          {citationNotes.map((note, i) => (
+            <div key={i}>
+              <sup>{`†${i + 1}`}</sup> {note.text}{" "}
+              <a href={note.url} target="_blank" rel="noopener noreferrer">
+                {note.url}
+              </a>
             </div>
           ))}
         </footer>
