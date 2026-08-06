@@ -13,6 +13,28 @@ export interface Incident {
   summary?: string;
 }
 
+/** A single GDELT article accepted as a strict-tier match for an incident. */
+export interface CitationMatch {
+  title: string;
+  url: string;
+  source_domain: string;
+  published_at: string;
+}
+
+/**
+ * Cached GDELT lookup result for one incident. Present entries are
+ * permanent — including had_results:false ones — so an incident already
+ * keyed here is never re-queried on a later refresh run.
+ */
+export interface CitationEntry {
+  queried_at: string; // ISO
+  had_results: boolean; // true if GDELT returned >=1 raw article in the window
+  match: CitationMatch | null; // null unless a result passed the strict-tier gate
+}
+
+/** citations.json shape: keyed by incident id. */
+export type CitationsFile = Record<string, CitationEntry>;
+
 /** Counts for one source in the current window. */
 export interface SourceCounts {
   source: SourceId;

@@ -31,3 +31,23 @@ export function stripHtml(s: string): string {
     .replace(/&#039;/g, "'")
     .replace(/&quot;/g, '"');
 }
+
+/**
+ * fetch() with a hard timeout. None of this repo's fetchers bound their
+ * fetch() before this — a single hung request could stall the whole daily
+ * refresh job indefinitely. GDELT's per-incident lookup loop (gdelt.ts) is
+ * the first place that risk is realistic, so it's fixed here first.
+ */
+export async function fetchWithTimeout(
+  url: string,
+  options: RequestInit = {},
+  timeoutMs = 10_000,
+): Promise<Response> {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    return await fetch(url, { ...options, signal: controller.signal });
+  } finally {
+    clearTimeout(timer);
+  }
+}
