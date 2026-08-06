@@ -1,0 +1,16 @@
+{
+  "articles": [
+    {
+      "url": "https://example-news.com/articles/houston-shooting-report",
+      "title": "Police investigate shooting in Houston, Texas that left one dead",
+      "seendate": "20260104T140000Z",
+      "domain": "example-news.com"
+    },
+    {
+      "url": "https://another-outlet.com/national-roundup",
+      "title": "National crime roundup mentions incidents across the country",
+      "seendate": "20260104T160000Z",
+      "domain": "another-outlet.com"
+    }
+  ]
+}
