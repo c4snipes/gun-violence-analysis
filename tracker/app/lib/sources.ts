@@ -9,9 +9,13 @@
  * References:
  *   - Booty et al., "Describing a 'mass shooting': the role of databases in
  *     understanding burden," Injury Epidemiology (2019)
- *   - Reeping et al., "Database discrepancies in understanding the burden of
- *     mass shootings in the United States, 2013-2020," Lancet Regional
- *     Health – Americas (2023)
+ *   - Bridges, Tober & Brazzell, "Database discrepancies in understanding the
+ *     burden of mass shootings in the United States, 2013-2020," Lancet
+ *     Regional Health – Americas (2023) 22:100504. Compared five databases
+ *     over 2013-2020: 3,155 discrete incidents in total, but only 25 (0.008%)
+ *     appear in all five. Counts for the same window range from 57 (Mother
+ *     Jones) to 2,950 (Gun Violence Archive) — the ~52x spread this site's
+ *     no-merging rule exists to respect.
  */
 
 export type SourceId = "gva" | "mother_jones" | "stanford_msa" | "violence_project";

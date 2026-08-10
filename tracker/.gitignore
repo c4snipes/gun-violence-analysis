@@ -6,3 +6,12 @@ node_modules/
 next-env.d.ts
 *.log
 .DS_Store
+
+# Source data supplied under access-restricted licences. The Violence Project
+# database in particular states: "Data may not be redistributed, shared
+# publicly, or posted online without written permission." violence_project.ts
+# reads data/raw/violence_project.csv from here, so without this rule that
+# file would be committed to a public repository the moment it is created.
+# Derived aggregate statistics may be published; the underlying rows may not.
+data/raw/
+
