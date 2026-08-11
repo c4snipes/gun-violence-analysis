@@ -74,6 +74,16 @@ supports and are stated for that reason:
   The `lawtotal` table below is therefore a worst case under an error structure
   that may not hold. It is not a proof that `lawtotal`'s within estimate is
   useless — only that it could be.
+- **Tufts' stated methodology implies higher reliability than assumed.** Per
+  the project's published methodology, provisions were coded from Westlaw Edge
+  by **four independent research team members**, with discrepancies resolved by
+  jointly reviewing the statutes, against a **detailed a priori codebook** that
+  fixes each provision's scope and exemptions (e.g. a school-carry ban with a
+  teacher exemption is *not* coded as a ban), and cross-checked against
+  Giffords. Multiple independent coders plus adjudication is precisely the
+  design that raises λ. This weakens the case against `lawtotal`'s within
+  estimate and is recorded here for that reason. Do not treat the λ = 0.95 row
+  as the expected case.
 
 For `lawtotal` at ICC 0.966:
 
@@ -122,7 +132,35 @@ n = 500 does not deliver 500 observations' worth of information for the
 headline variables — their effective information is closer to the 50-state
 cross-section, averaged.
 
-### 1.4 A caution about how this estimator was chosen
+### 1.4 The database authors' own warning
+
+The Tufts report's foreword (Webster & Vernick) warns directly against the use
+this spec is designing, and it should be quoted in the paper rather than
+paraphrased away:
+
+> there may be a temptation to simply upload the information into one's
+> preferred statistical package and begin to generate estimates of a given
+> law's effects
+
+They name three specific hazards, all of which apply here:
+
+1. **Grouping masks within-category differences.** `lawtotal` counts 73
+   provisions equally; even a single provision like `gvrolawenforcement` varies
+   in scope across states.
+2. **The database records enactment, not implementation or enforcement.** Two
+   states coded 1 may enforce very differently — an unmeasured heterogeneity
+   that no amount of estimator sophistication fixes.
+3. **Selection into treatment is strongly non-random.** "the very nonrandom
+   process by which state gun laws are adopted, and the many ways in which
+   states with the weakest gun laws are different from states with the
+   strongest" is exactly the confounding a between coefficient cannot escape.
+   This bounds how much causal weight §1.3's between estimates can carry, and
+   is a stronger caution than anything else in this document.
+
+The honest framing for any published result: these are **associations under a
+non-random policy-adoption process**, not causal effects of laws.
+
+### 1.5 A caution about how this estimator was chosen
 
 Reviewers flagged that the previous draft justified the estimator partly by its
 preservation of the project's existing headline result. That is backwards
