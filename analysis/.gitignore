@@ -7,6 +7,7 @@ venv/
 build/
 dist/
 data/raw/mother_jones.csv
+data/raw/saipe_2014_2023.csv
 figures/
 results/
 .DS_Store
