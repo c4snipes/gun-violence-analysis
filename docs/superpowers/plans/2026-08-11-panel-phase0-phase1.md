@@ -524,6 +524,44 @@ def test_raises_on_unrecognised_state_name(tmp_path: Path) -> None:
     wb2 = openpyxl.load_workbook(path, data_only=True)
     with pytest.raises(ValueError, match="unrecognised state"):
         _read_sheet_by_state(wb2["Typo"], "Typo")
+
+
+def _sheet_with_values(path: Path, values: list[float]) -> "openpyxl.worksheet.worksheet.Worksheet":
+    """Build a 50-row keyless sheet (column A is the cached error '#VALUE!')."""
+    wb = openpyxl.Workbook()
+    ws = wb.active
+    ws.title = "Keyless"
+    ws.append(["#VALUE!", "value"])
+    for v in values:
+        ws.append(["#VALUE!", v])
+    wb.save(path)
+    return openpyxl.load_workbook(path, data_only=True)["Keyless"]
+
+
+def test_positional_read_accepts_plausible_values(tmp_path: Path) -> None:
+    ws = _sheet_with_values(tmp_path / "ok.xlsx", [55000.0] * 50)
+    values = _read_sheet_positional(ws, "Keyless", "median_household_income")
+    assert len(values) == 50
+    assert values[0] == 55000.0
+
+
+def test_positional_read_rejects_a_column_from_the_wrong_sheet(tmp_path: Path) -> None:
+    """The real corruption mode: firearm mortality values in the income column."""
+    ws = _sheet_with_values(tmp_path / "wrong.xlsx", [23.6, 23.5, 16.7] + [20.0] * 47)
+    with pytest.raises(ValueError, match="outside the plausible range"):
+        _read_sheet_positional(ws, "Keyless", "median_household_income")
+
+
+def test_positional_read_rejects_wrong_row_count(tmp_path: Path) -> None:
+    ws = _sheet_with_values(tmp_path / "short.xlsx", [55000.0] * 30)
+    with pytest.raises(ValueError, match="expected 50 data rows"):
+        _read_sheet_positional(ws, "Keyless", "median_household_income")
+```
+
+Update the import at the top of this test file to bring in both functions:
+
+```python
+from gun_violence.data import _read_sheet_by_state, _read_sheet_positional
 ```
 
 - [ ] **Step 3: Run the test to verify it fails**
@@ -531,7 +569,44 @@ def test_raises_on_unrecognised_state_name(tmp_path: Path) -> None:
 Run: `cd analysis && source .venv/bin/activate && python -m pytest tests/test_workbook_join.py -v`
 Expected: FAIL — `ImportError: cannot import name '_read_sheet_by_state' from 'gun_violence.data'`
 
-- [ ] **Step 4: Implement the keyed read**
+- [ ] **Step 3a: Establish which sheets actually have a usable state key**
+
+**This step was added after a first implementation attempt correctly reported BLOCKED.** The original plan assumed every sheet carries a state name in column A. It does not. Measured against the real workbook:
+
+| Sheet | Column A | Keyable? |
+|---|---|---|
+| `Firearm Morality Rate 2020` (anchor) | `Alabama` … | ✅ |
+| `Registered Guns` | `Alabama` … | ✅ |
+| `Average Credit Score ` | `Alabama` … | ✅ |
+| `State Poverty Rates 2020` | `#VALUE!` | ❌ |
+| `Sucide Rates by State 2020` | `#VALUE!` | ❌ |
+| `Homicide Rates by State 2020` | `#VALUE!` | ❌ |
+| `Accident Mortality by State` | `#VALUE!` | ❌ |
+| `Median House Income v Firearm` | `#VALUE!` | ❌ |
+
+Five sheets have broken formulas whose cached value is the literal Excel error `#VALUE!`. Their value columns are still row-aligned to the anchor, which is why the positional loader has silently "worked", but there is no key left to verify against.
+
+So the design becomes: **key-join where a key exists; positional fallback with a value-plausibility check where it does not.** The plausibility check is not a consolation prize — it directly catches the corruption mode that motivated this task. The alternative workbook's `Median House Income v Firearm` column B contained firearm mortality values (`23.6`, `23.5`, `16.7`); a range assertion of 30,000–150,000 rejects that instantly, which a key-join on a `#VALUE!` column never could.
+
+Verify the table above before implementing:
+
+```bash
+cd analysis && source .venv/bin/activate && python -c "
+import openpyxl, sys
+sys.path.insert(0,'src')
+from gun_violence.constants import FULL_STATE_NAMES
+from gun_violence.data import _SRI_SHEETS_FIRST_COL
+wb = openpyxl.load_workbook('data/raw/SnipesCFinalDataAnalysis.xlsx', data_only=True)
+for sh in _SRI_SHEETS_FIRST_COL:
+    colA = [r[0] for r in wb[sh].iter_rows(min_row=2, max_row=51, values_only=True)]
+    valid = sum(1 for v in colA if isinstance(v, str) and v.strip() in FULL_STATE_NAMES)
+    print(f'{sh[:34]:<36}{valid:>3}/50 valid state names')
+"
+```
+
+Expected: 50/50 for the three keyable sheets, 0/50 for the other five.
+
+- [ ] **Step 4: Implement the keyed read with a plausibility-checked fallback**
 
 In `analysis/src/gun_violence/data.py`, replace the whole of `_load_sri_workbook` (currently lines 92–117) with:
 
@@ -566,11 +641,76 @@ def _read_sheet_by_state(ws, sheet_name: str) -> dict[str, float]:
     return values
 
 
+# Plausible value range per output column, used to verify sheets whose state
+# key is unrecoverable. These are deliberately wide -- the job is to catch a
+# whole column coming from the wrong sheet, not to police individual outliers.
+# The motivating case: an alternative copy of this workbook had firearm
+# mortality values (23.6, 23.5, 16.7) sitting in the median-income column.
+_PLAUSIBLE_RANGE = {
+    "firearm_mortality_rate": (1.0, 40.0),        # deaths per 100k
+    "gun_reg_pct": (0.0, 1.0),                     # a fraction, not a percent
+    "poverty_rate": (3.0, 30.0),                   # percent
+    "suicide_rate": (3.0, 40.0),                   # per 100k
+    "homicide_rate": (0.0, 30.0),                  # per 100k
+    "accident_mortality_rate": (15.0, 130.0),      # per 100k
+    "credit_score": (500.0, 850.0),                # FICO-like scale
+    "median_household_income": (30_000.0, 150_000.0),
+}
+
+# Sheets whose column A is the cached Excel error '#VALUE!' rather than a state
+# name. Their values are still row-aligned to the anchor sheet, so they are read
+# positionally and verified by range instead of by key. Listed explicitly so the
+# fallback can never be applied silently to a sheet that ought to have a key.
+_KEYLESS_SHEETS = {
+    "State Poverty Rates 2020",
+    "Sucide Rates by State 2020",
+    "Homicide Rates by State 2020",
+    "Accident Mortality by State",
+    "Median House Income v Firearm",
+}
+
+
+def _read_sheet_positional(ws, sheet_name: str, col_name: str) -> list:
+    """Read column B by row position, for sheets with no usable state key.
+
+    Cannot verify alignment -- there is no key to align against. Verifies what
+    it can: exactly 50 data rows, and every value inside a plausible range for
+    this column. The range check is what catches a column sourced from the
+    wrong sheet.
+    """
+    rows = list(ws.iter_rows(min_row=2, max_row=51, values_only=True))
+    values = [r[1] if r and len(r) > 1 else None for r in rows]
+
+    if len(values) != 50:
+        raise ValueError(f"{sheet_name}: expected 50 data rows, got {len(values)}")
+
+    lo, hi = _PLAUSIBLE_RANGE[col_name]
+    for i, v in enumerate(values):
+        if v is None:
+            raise ValueError(f"{sheet_name}: empty value at row {i + 2}")
+        if not isinstance(v, (int, float)):
+            raise ValueError(
+                f"{sheet_name}: non-numeric value {v!r} at row {i + 2}"
+            )
+        if not (lo <= float(v) <= hi):
+            raise ValueError(
+                f"{sheet_name}: value {v} at row {i + 2} is outside the "
+                f"plausible range [{lo}, {hi}] for {col_name}. This usually "
+                "means the column came from the wrong sheet."
+            )
+    return values
+
+
 def _load_sri_workbook(path: Path) -> pd.DataFrame:
     """Extract state-level columns from the original SRI workbook.
 
-    Every sheet is joined on the state name. A sheet that omits a state, adds
-    an unknown one, or duplicates one raises rather than silently misaligning.
+    Sheets that carry a state name in column A are joined on it: a missing,
+    duplicated, or unrecognised state raises rather than silently misaligning.
+
+    Five sheets have '#VALUE!' in column A -- broken formulas whose error was
+    cached -- so no key survives to join on. Those are read positionally and
+    every value is range-checked instead, which catches the corruption mode
+    that matters (a whole column sourced from the wrong sheet).
     """
     import openpyxl
 
@@ -579,20 +719,27 @@ def _load_sri_workbook(path: Path) -> pd.DataFrame:
     anchor = _read_sheet_by_state(
         wb["Firearm Morality Rate 2020"], "Firearm Morality Rate 2020"
     )
-    df = pd.DataFrame({"state": sorted(anchor)})
+    # Preserve the anchor sheet's own row order: the keyless sheets are aligned
+    # to it positionally, so re-sorting here would break them.
+    anchor_states = list(anchor)
+    df = pd.DataFrame({"state": anchor_states})
     df["firearm_mortality_rate"] = df["state"].map(anchor)
 
     for sheet_name, col_name in _SRI_SHEETS_FIRST_COL.items():
         if col_name == "firearm_mortality_rate":
             continue  # already taken from the anchor sheet
-        values = _read_sheet_by_state(wb[sheet_name], sheet_name)
-        missing = set(df["state"]) - set(values)
-        if missing:
-            raise ValueError(
-                f"{sheet_name}: missing {len(missing)} state(s) present in the "
-                f"anchor sheet: {sorted(missing)[:5]}"
-            )
-        df[col_name] = df["state"].map(values)
+        ws = wb[sheet_name]
+        if sheet_name in _KEYLESS_SHEETS:
+            df[col_name] = _read_sheet_positional(ws, sheet_name, col_name)
+        else:
+            values = _read_sheet_by_state(ws, sheet_name)
+            missing = set(df["state"]) - set(values)
+            if missing:
+                raise ValueError(
+                    f"{sheet_name}: missing {len(missing)} state(s) present in "
+                    f"the anchor sheet: {sorted(missing)[:5]}"
+                )
+            df[col_name] = df["state"].map(values)
 
     # governor party lookup
     ws = wb["us-governors"]
@@ -605,6 +752,8 @@ def _load_sri_workbook(path: Path) -> pd.DataFrame:
 
     return df
 ```
+
+Note the anchor row order is preserved rather than sorted. The keyless sheets are aligned to the anchor positionally, so sorting the anchor would silently break exactly the sheets this design cannot verify.
 
 - [ ] **Step 5: Run the new test to verify it passes**
 
@@ -634,7 +783,7 @@ Expected: `Wrote 50 states x 16 columns` from the build, then `identical: True`.
 - [ ] **Step 7: Run the full suite**
 
 Run: `cd analysis && source .venv/bin/activate && python -m pytest -q && ruff check src tests scripts`
-Expected: `17 passed`; ruff reports the same 2 pre-existing findings and no new ones.
+Expected: `20 passed` (14 from Task 1, plus 6 here: 3 keyed-join tests and 3 positional/range tests); ruff reports the same 2 pre-existing findings and no new ones.
 
 - [ ] **Step 8: Commit**
 
