@@ -89,21 +89,158 @@ _SRI_SHEETS_FIRST_COL = {
 }
 
 
+def _read_sheet_by_state(ws, sheet_name: str) -> dict[str, float]:
+    """Read a two-column state/value sheet into a dict keyed by state name.
+
+    Replaces the previous positional read (fixed rows 2-51, take column B),
+    which assumed every sheet listed the same 50 states in the same order and
+    verified nothing. A real alternative copy of this workbook has a different
+    state order in one sheet and the outcome variable sitting in the column
+    read as median income; positional loading would have merged both silently.
+    """
+    values: dict[str, float] = {}
+    for row in ws.iter_rows(min_row=2, values_only=True):
+        if row is None or len(row) < 2:
+            continue
+        raw_state, value = row[0], row[1]
+        if raw_state is None:
+            continue
+        state = str(raw_state).strip()
+        if not state:
+            continue
+        if state not in FULL_STATE_NAMES:
+            raise ValueError(
+                f"{sheet_name}: unrecognised state name {state!r}. "
+                "Sheets must key on a full state name."
+            )
+        if state in values:
+            raise ValueError(f"{sheet_name}: duplicate state {state!r}")
+        values[state] = value
+    return values
+
+
+# Plausible value range per output column, used to verify sheets whose state
+# key is unrecoverable. These are deliberately wide -- the job is to catch a
+# whole column coming from the wrong sheet, not to police individual outliers.
+# The motivating case: an alternative copy of this workbook had firearm
+# mortality values (23.6, 23.5, 16.7) sitting in the median-income column.
+_PLAUSIBLE_RANGE = {
+    "firearm_mortality_rate": (1.0, 40.0),        # deaths per 100k
+    "gun_reg_pct": (0.0, 1.0),                     # a fraction, not a percent
+    "poverty_rate": (3.0, 30.0),                   # percent
+    "suicide_rate": (3.0, 40.0),                   # per 100k
+    "homicide_rate": (0.0, 30.0),                  # per 100k
+    "accident_mortality_rate": (15.0, 130.0),      # per 100k
+    "credit_score": (500.0, 850.0),                # FICO-like scale
+    "median_household_income": (30_000.0, 150_000.0),
+}
+
+# Sheets whose column A is the cached Excel error '#VALUE!' rather than a state
+# name. Their values are still row-aligned to the anchor sheet, so they are read
+# positionally and verified by range instead of by key. Listed explicitly so the
+# fallback can never be applied silently to a sheet that ought to have a key.
+_KEYLESS_SHEETS = {
+    "State Poverty Rates 2020",
+    "Sucide Rates by State 2020",
+    "Homicide Rates by State 2020",
+    "Accident Mortality by State",
+    "Median House Income v Firearm",
+}
+
+
+def _read_sheet_positional(ws, sheet_name: str, col_name: str) -> list:
+    """Read column B by row position, for sheets with no usable state key.
+
+    Cannot verify alignment -- there is no key to align against. Verifies what
+    it can: exactly 50 data rows, and every value inside a plausible range for
+    this column. The range check is what catches a column sourced from the
+    wrong sheet.
+
+    Row count is measured from the sheet's actual contiguous data block --
+    stopping at the first row whose first cell is blank -- rather than via a
+    fixed min_row=2/max_row=51 window. openpyxl pads a capped iter_rows()
+    range with (None, None) rows past the sheet's real extent, so a window
+    read would always report exactly 50 rows regardless of how much real data
+    the sheet has, silently defeating this check for short sheets. The real
+    workbook's keyless sheets have exactly 50 populated rows followed by
+    blank rows and a footer, so this still reads the same 50 values as before.
+    """
+    data_rows = []
+    for row in ws.iter_rows(min_row=2, values_only=True):
+        if row is None or row[0] is None:
+            break
+        data_rows.append(row)
+
+    if len(data_rows) != 50:
+        raise ValueError(f"{sheet_name}: expected 50 data rows, got {len(data_rows)}")
+
+    values = [r[1] if len(r) > 1 else None for r in data_rows]
+
+    lo, hi = _PLAUSIBLE_RANGE[col_name]
+    for i, v in enumerate(values):
+        if v is None:
+            raise ValueError(f"{sheet_name}: empty value at row {i + 2}")
+        if not isinstance(v, (int, float)):
+            raise TypeError(
+                f"{sheet_name}: non-numeric value {v!r} at row {i + 2}"
+            )
+        if not (lo <= float(v) <= hi):
+            raise ValueError(
+                f"{sheet_name}: value {v} at row {i + 2} is outside the "
+                f"plausible range [{lo}, {hi}] for {col_name}. This usually "
+                "means the column came from the wrong sheet."
+            )
+    return values
+
+
 def _load_sri_workbook(path: Path) -> pd.DataFrame:
-    """Extract state-level columns from the original SRI workbook."""
+    """Extract state-level columns from the original SRI workbook.
+
+    Sheets that carry a state name in column A are joined on it: a missing,
+    duplicated, or unrecognised state raises rather than silently misaligning.
+
+    Five sheets have '#VALUE!' in column A -- broken formulas whose error was
+    cached -- so no key survives to join on. Those are read positionally and
+    every value is range-checked instead, which catches the corruption mode
+    that matters (a whole column sourced from the wrong sheet).
+    """
     import openpyxl
 
     wb = openpyxl.load_workbook(path, data_only=True)
 
-    # anchor state list from the first sheet
-    ws = wb["Firearm Morality Rate 2020"]
-    states = [row[0] for row in ws.iter_rows(min_row=2, max_row=51, values_only=True)]
-    df = pd.DataFrame({"state": states})
+    anchor = _read_sheet_by_state(
+        wb["Firearm Morality Rate 2020"], "Firearm Morality Rate 2020"
+    )
+    # Preserve the anchor sheet's own row order: the keyless sheets are aligned
+    # to it positionally, so re-sorting here would break them.
+    anchor_states = list(anchor)
+    df = pd.DataFrame({"state": anchor_states})
+    df["firearm_mortality_rate"] = df["state"].map(anchor)
 
     for sheet_name, col_name in _SRI_SHEETS_FIRST_COL.items():
+        if col_name == "firearm_mortality_rate":
+            continue  # already taken from the anchor sheet
         ws = wb[sheet_name]
-        values = [row[1] for row in ws.iter_rows(min_row=2, max_row=51, values_only=True)]
-        df[col_name] = values
+        if sheet_name in _KEYLESS_SHEETS:
+            df[col_name] = _read_sheet_positional(ws, sheet_name, col_name)
+        else:
+            values = _read_sheet_by_state(ws, sheet_name)
+            missing = set(df["state"]) - set(values)
+            if missing:
+                # A keyed sheet may genuinely lack a state. 'Average Credit
+                # Score ' has no South Carolina row and instead carries
+                # District of Columbia, which this project excludes. Under the
+                # previous positional read that inserted DC at row 8 and
+                # dropped South Carolina, shifting every state alphabetically
+                # between Florida and South Carolina by one row -- 32 states
+                # carried another state's credit score. NaN is the correct
+                # answer where the source has no value; the alternative is
+                # silently attaching a neighbour's.
+                print(
+                    f"  note: {sheet_name} has no row for {sorted(missing)} "
+                    "-- these become NaN"
+                )
+            df[col_name] = df["state"].map(values)
 
     # governor party lookup
     ws = wb["us-governors"]
@@ -195,18 +332,30 @@ def load_dataset(path: str | Path) -> pd.DataFrame:
     return df
 
 
+# Columns that must be present AND complete. A gap here means the build is
+# broken, not that the underlying figure is unavailable.
+REQUIRED_COMPLETE = {
+    "state", "firearm_mortality_rate", "gun_reg_pct", "poverty_rate",
+    "median_household_income", "pop_density", "population",
+    "gov_party_rep", "mass_shootings_count", "mass_shootings_per_10m",
+}
+
+# Columns whose source legitimately lacks a value for some state. These may be
+# NaN. 'credit_score' is here because the source sheet has no South Carolina
+# row at all -- absent must read as absent rather than borrowing a neighbour's
+# value, which is precisely the defect that put the wrong score on 32 states.
+ALLOWED_MISSING = {"credit_score"}
+
+
 def _validate(df: pd.DataFrame) -> None:
     """Sanity checks on the merged dataset."""
     if len(df) != 50:
         raise ValueError(f"Expected 50 states, got {len(df)}")
-    required = {
-        "state", "firearm_mortality_rate", "gun_reg_pct", "poverty_rate",
-        "median_household_income", "credit_score", "pop_density", "population",
-        "gov_party_rep", "mass_shootings_count", "mass_shootings_per_10m",
-    }
-    missing = required - set(df.columns)
+    missing = (REQUIRED_COMPLETE | ALLOWED_MISSING) - set(df.columns)
     if missing:
         raise ValueError(f"Missing required columns: {missing}")
-    nan_cols = [c for c in required if c != "state" and df[c].isna().any()]
+    nan_cols = [
+        c for c in REQUIRED_COMPLETE if c != "state" and df[c].isna().any()
+    ]
     if nan_cols:
         raise ValueError(f"NaN values in required columns: {nan_cols}")
