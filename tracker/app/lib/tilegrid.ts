@@ -86,6 +86,34 @@ export const TILE_ROWS = 8;
 /** Five-step ink ramp, darkest to lightest. Index 0 means no incidents. */
 export const INK_RAMP = ["#141416", "#26262b", "#3c3c3e", "#5e5b56", "#a99d85"];
 
+/**
+ * Rates are stored per 100,000 but displayed per 10,000,000.
+ *
+ * A 365-day window holds only a few dozen qualifying incidents nationally, so
+ * a per-100,000 rate is around 0.05 at its highest and every state renders as
+ * "0.0" -- the scale carries no information. Per 10 million puts the same
+ * figures in a 0-5 range that can actually be read, and matches the
+ * `mass_shootings_per_10m` convention already used in the analysis package's
+ * state_data_full.csv, so the two halves of the project agree.
+ *
+ * This is a presentation change only. The underlying per_100k values in
+ * snapshot.json are untouched.
+ */
+export const RATE_SCALE = 100; // per 100k -> per 10M
+export const RATE_UNIT = "per 10,000,000 residents";
+
+export function toDisplayRate(per100k: number): number {
+  return per100k * RATE_SCALE;
+}
+
+/** Format an already-scaled display rate with precision suited to its size. */
+export function formatRate(displayValue: number): string {
+  if (displayValue === 0) return "0";
+  if (displayValue < 0.1) return displayValue.toFixed(2);
+  if (displayValue < 10) return displayValue.toFixed(1);
+  return displayValue.toFixed(0);
+}
+
 export function inkStep(value: number, max: number): number {
   if (value <= 0 || max <= 0) return 0;
   const step = Math.ceil((value / max) * (INK_RAMP.length - 1));

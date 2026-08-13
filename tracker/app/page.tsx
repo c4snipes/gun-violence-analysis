@@ -3,6 +3,7 @@ import { format, formatDistanceToNow } from "date-fns";
 import AwaitingData from "./components/AwaitingData";
 import IncidentMatrix from "./components/IncidentMatrix";
 import Masthead from "./components/Masthead";
+import StateMap from "./components/StateMap";
 import StateTileGrid from "./components/StateTileGrid";
 import { footnoteForCitation } from "./lib/citations";
 import { loadCitations, loadSnapshot } from "./lib/data";
@@ -109,7 +110,18 @@ export default async function Dashboard() {
 
       <section className="tables">
         <div>
-          <div className="table-title">Table 1 &mdash; Incidents per 100,000 residents, by state</div>
+          <div className="table-title">Figure 1 &mdash; Incidents per 10 million residents, by state</div>
+          <p className="table-note">
+            Gun Violence Archive definition. Hover a state for its counts. A geographic projection
+            sizes each state by land area, so sparsely populated states carry more visual weight
+            than their populations warrant on a per-capita measure; the equal-area grid below shows
+            the same figures without that distortion.
+          </p>
+          <StateMap states={snap.states} source="gva" />
+        </div>
+
+        <div>
+          <div className="table-title">Table 1 &mdash; Incidents per 10 million residents, by state</div>
           <p className="table-note">
             Equal-area tiles. Gun Violence Archive definition. A centred dot marks a state with no
             qualifying incident in the window.

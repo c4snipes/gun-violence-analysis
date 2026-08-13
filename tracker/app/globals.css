@@ -282,6 +282,34 @@ sup {
   color: var(--ink-muted);
 }
 
+.statemap {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 4px 0 2px;
+}
+
+/*
+ * Hairline separators between states, matching the rule colour used elsewhere,
+ * so the map reads as a printed figure rather than a web widget.
+ */
+.statepath {
+  stroke: var(--paper);
+  stroke-width: 0.7;
+  stroke-linejoin: round;
+  transition: opacity 120ms ease;
+}
+
+.statemap:hover .statepath {
+  opacity: 0.55;
+}
+
+.statemap .statepath:hover {
+  opacity: 1;
+  stroke: var(--ink-muted);
+  stroke-width: 1.1;
+}
+
 /*
  * News citations are not one of the four datasets, so their footnote block
  * must not look like the authoritative per-source footnotes it sits beneath.
