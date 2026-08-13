@@ -1,0 +1,94 @@
+{
+  "fitted_at": "2026-08-06T15:44:57.180897+00:00",
+  "n_states": 50,
+  "outcome": "firearm_mortality_rate",
+  "ols": {
+    "r_squared": 0.7493426623317482,
+    "adj_r_squared": 0.7143672198664107,
+    "coefficients": [
+      {
+        "name": "gun_reg_pct",
+        "coef": 56.0329774945417,
+        "std_err": 28.73451413574428,
+        "p_value": 0.05117331953018066,
+        "ci_low": -0.2856353247741694,
+        "ci_high": 112.35159031385757
+      },
+      {
+        "name": "poverty_rate",
+        "coef": 1.5878054006611602,
+        "std_err": 0.40826355843680995,
+        "p_value": 0.00010058863977825376,
+        "ci_low": 0.787623529924849,
+        "ci_high": 2.3879872713974715
+      },
+      {
+        "name": "median_household_income",
+        "coef": 5.984116718147172e-05,
+        "std_err": 0.00018663485507405735,
+        "p_value": 0.7484890394507722,
+        "ci_low": -0.00030595642702353326,
+        "ci_high": 0.0004256387613864767
+      },
+      {
+        "name": "credit_score",
+        "coef": 0.04075641267844077,
+        "std_err": 0.04386061613256106,
+        "p_value": 0.3527721200192152,
+        "ci_low": -0.04520881528111538,
+        "ci_high": 0.1267216406379969
+      },
+      {
+        "name": "pop_density",
+        "coef": -0.008311612516343284,
+        "std_err": 0.0030646079939234934,
+        "p_value": 0.006685255048511221,
+        "ci_low": -0.014318133811166875,
+        "ci_high": -0.002305091221519692
+      },
+      {
+        "name": "gov_party_rep",
+        "coef": 2.684489327434366,
+        "std_err": 1.0879751031674838,
+        "p_value": 0.013609139661759313,
+        "ci_low": 0.5520973091498482,
+        "ci_high": 4.816881345718883
+      }
+    ]
+  },
+  "random_forest": {
+    "loo_cv_r_squared": 0.4372304934936512,
+    "permutation_importance": [
+      {
+        "feature": "median_household_income",
+        "importance_mean": 0.5283134884568607,
+        "importance_std": 0.10467349816227184
+      },
+      {
+        "feature": "pop_density",
+        "importance_mean": 0.21466439648906285,
+        "importance_std": 0.050535400163358786
+      },
+      {
+        "feature": "gun_reg_pct",
+        "importance_mean": 0.11699407219275176,
+        "importance_std": 0.03646223886954992
+      },
+      {
+        "feature": "poverty_rate",
+        "importance_mean": 0.06421092780121404,
+        "importance_std": 0.01424068048984965
+      },
+      {
+        "feature": "credit_score",
+        "importance_mean": 0.01943862622523335,
+        "importance_std": 0.004545762156649642
+      },
+      {
+        "feature": "gov_party_rep",
+        "importance_mean": 0.005595944638075099,
+        "importance_std": 0.0021444297248775666
+      }
+    ]
+  }
+}

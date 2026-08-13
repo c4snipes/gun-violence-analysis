@@ -6,8 +6,13 @@ __pycache__/
 venv/
 build/
 dist/
-data/raw/mother_jones.csv
-data/raw/saipe_2014_2023.csv
+# Everything under data/raw/ is source or fetched data and is never committed.
+# This previously listed only mother_jones.csv and saipe_2014_2023.csv, which
+# left SnipesCFinalDataAnalysis.xlsx unignored despite README.md stating "The
+# SRI source workbook is not committed" -- one `git add data/raw/` would have
+# published it. The built dataset lives at data/state_data_full.csv and IS
+# committed; nothing in data/raw/ needs to be.
+data/raw/
 figures/
 results/
 .DS_Store

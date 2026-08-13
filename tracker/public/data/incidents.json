@@ -1,0 +1,3557 @@
+[
+  {
+    "id": "gva-2026-08-04-florida-pensacola",
+    "date": "2026-08-04",
+    "state": "Florida",
+    "city": "Pensacola",
+    "killed": 0,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-08-03-north-carolina-raleigh",
+    "date": "2026-08-03",
+    "state": "North Carolina",
+    "city": "Raleigh",
+    "killed": 0,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-08-03-virginia-norfolk",
+    "date": "2026-08-03",
+    "state": "Virginia",
+    "city": "Norfolk",
+    "killed": 0,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-08-03-michigan-oak-park",
+    "date": "2026-08-03",
+    "state": "Michigan",
+    "city": "Oak Park",
+    "killed": 2,
+    "injured": 2,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-08-03-massachusetts-boston",
+    "date": "2026-08-03",
+    "state": "Massachusetts",
+    "city": "Boston",
+    "killed": 1,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-08-02-new-york-rochester",
+    "date": "2026-08-02",
+    "state": "New York",
+    "city": "Rochester",
+    "killed": 1,
+    "injured": 5,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-08-02-north-carolina-greensboro",
+    "date": "2026-08-02",
+    "state": "North Carolina",
+    "city": "Greensboro",
+    "killed": 0,
+    "injured": 9,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-08-02-new-york-yonkers",
+    "date": "2026-08-02",
+    "state": "New York",
+    "city": "Yonkers",
+    "killed": 1,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-08-02-alabama-huntsville",
+    "date": "2026-08-02",
+    "state": "Alabama",
+    "city": "Huntsville",
+    "killed": 1,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-08-02-north-carolina-dunn",
+    "date": "2026-08-02",
+    "state": "North Carolina",
+    "city": "Dunn",
+    "killed": 2,
+    "injured": 2,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-08-02-oregon-portland",
+    "date": "2026-08-02",
+    "state": "Oregon",
+    "city": "Portland",
+    "killed": 1,
+    "injured": 5,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-08-01-florida-jacksonville",
+    "date": "2026-08-01",
+    "state": "Florida",
+    "city": "Jacksonville",
+    "killed": 0,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-08-01-idaho-twin-falls",
+    "date": "2026-08-01",
+    "state": "Idaho",
+    "city": "Twin Falls",
+    "killed": 3,
+    "injured": 8,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-07-30-ohio-dayton",
+    "date": "2026-07-30",
+    "state": "Ohio",
+    "city": "Dayton",
+    "killed": 0,
+    "injured": 5,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-07-27-florida-jacksonville",
+    "date": "2026-07-27",
+    "state": "Florida",
+    "city": "Jacksonville",
+    "killed": 1,
+    "injured": 3,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-07-26-washington-seattle",
+    "date": "2026-07-26",
+    "state": "Washington",
+    "city": "Seattle",
+    "killed": 2,
+    "injured": 5,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-07-26-tennessee-memphis",
+    "date": "2026-07-26",
+    "state": "Tennessee",
+    "city": "Memphis",
+    "killed": 0,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-07-26-illinois-chicago",
+    "date": "2026-07-26",
+    "state": "Illinois",
+    "city": "Chicago",
+    "killed": 0,
+    "injured": 6,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-07-26-michigan-grand-haven",
+    "date": "2026-07-26",
+    "state": "Michigan",
+    "city": "Grand Haven",
+    "killed": 0,
+    "injured": 5,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-07-25-south-carolina-north-charleston",
+    "date": "2026-07-25",
+    "state": "South Carolina",
+    "city": "North Charleston",
+    "killed": 1,
+    "injured": 3,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-07-25-louisiana-saint-martinville",
+    "date": "2026-07-25",
+    "state": "Louisiana",
+    "city": "Saint Martinville",
+    "killed": 0,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-07-25-california-morgan-hill",
+    "date": "2026-07-25",
+    "state": "California",
+    "city": "Morgan Hill",
+    "killed": 1,
+    "injured": 6,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-07-25-california-san-francisco",
+    "date": "2026-07-25",
+    "state": "California",
+    "city": "San Francisco",
+    "killed": 0,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-07-24-michigan-grand-haven",
+    "date": "2026-07-24",
+    "state": "Michigan",
+    "city": "Grand Haven",
+    "killed": 7,
+    "injured": 0,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-07-22-georgia-atlanta",
+    "date": "2026-07-22",
+    "state": "Georgia",
+    "city": "Atlanta",
+    "killed": 0,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "stanford-344",
+    "date": "2016-06-26",
+    "state": "South Carolina",
+    "city": "Lyman",
+    "killed": 0,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Nightclub Disput"
+  },
+  {
+    "id": "stanford-343",
+    "date": "2016-06-12",
+    "state": "Florida",
+    "city": "Orlando",
+    "killed": 49,
+    "injured": 52,
+    "source": "stanford_msa",
+    "summary": "Orlando Nightclub Massacre"
+  },
+  {
+    "id": "stanford-342",
+    "date": "2016-06-11",
+    "state": "Minnesota",
+    "city": "Webster",
+    "killed": 0,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "Webster, MN party shooting"
+  },
+  {
+    "id": "stanford-341",
+    "date": "2016-06-07",
+    "state": "Florida",
+    "city": "Cape Coral",
+    "killed": 2,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Cape Coral Shooting Spree"
+  },
+  {
+    "id": "stanford-340",
+    "date": "2016-05-31",
+    "state": "Indiana",
+    "city": "Fort Wayne",
+    "killed": 0,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "Fort Warne drive by"
+  },
+  {
+    "id": "stanford-338",
+    "date": "2016-05-29",
+    "state": "Nevada",
+    "city": "Las Vegas",
+    "killed": 0,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "Las Vegas sidewalk shooting"
+  },
+  {
+    "id": "stanford-339",
+    "date": "2016-05-29",
+    "state": "Texas",
+    "city": "Houston",
+    "killed": 1,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "Army vet shooting in Houston"
+  },
+  {
+    "id": "stanford-337",
+    "date": "2016-05-25",
+    "state": "New York",
+    "city": "New York City",
+    "killed": 1,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "NYC Concert shooting"
+  },
+  {
+    "id": "stanford-336",
+    "date": "2016-05-21",
+    "state": "California",
+    "city": "Stockton",
+    "killed": 1,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Stockton, CA murder"
+  },
+  {
+    "id": "stanford-335",
+    "date": "2016-05-18",
+    "state": "Georgia",
+    "city": "Jackson",
+    "killed": 1,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Graduation party drive by"
+  },
+  {
+    "id": "stanford-334",
+    "date": "2016-05-17",
+    "state": "South Carolina",
+    "city": "Ravenel",
+    "killed": 3,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "Trailer park triple homocide in South Carolina"
+  },
+  {
+    "id": "stanford-333",
+    "date": "2016-05-15",
+    "state": "Georgia",
+    "city": "Moultrie",
+    "killed": 5,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Friend murder and fire coverup in Moultrie, GA"
+  },
+  {
+    "id": "stanford-332",
+    "date": "2016-05-14",
+    "state": "Arizona",
+    "city": "Phoenix",
+    "killed": 1,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Phoenix girlfriend murder and cop shootout"
+  },
+  {
+    "id": "stanford-331",
+    "date": "2016-05-12",
+    "state": "Illinois",
+    "city": "Chicago",
+    "killed": 3,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Chicago Family Murder Suicide"
+  },
+  {
+    "id": "stanford-329",
+    "date": "2016-05-11",
+    "state": "Alabama",
+    "city": "Birmingham",
+    "killed": 1,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "Birmingham Domestic Dispute Murder"
+  },
+  {
+    "id": "stanford-330",
+    "date": "2016-05-11",
+    "state": "Illinois",
+    "city": "Chicago",
+    "killed": 0,
+    "injured": 5,
+    "source": "stanford_msa",
+    "summary": "Chicago bus stop ambush"
+  },
+  {
+    "id": "stanford-328",
+    "date": "2016-05-08",
+    "state": "Texas",
+    "city": "Austin",
+    "killed": 1,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Austin Taco truck murder"
+  },
+  {
+    "id": "stanford-325",
+    "date": "2016-05-06",
+    "state": "Maryland",
+    "city": "Bethesda",
+    "killed": 3,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Federal Security Officer has day shooting rampage near Washington DC"
+  },
+  {
+    "id": "stanford-326",
+    "date": "2016-05-06",
+    "state": "Alabama",
+    "city": "Montgomery",
+    "killed": 1,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Montgomery, Alabama street shooting"
+  },
+  {
+    "id": "stanford-327",
+    "date": "2016-05-06",
+    "state": "Michigan",
+    "city": "Detroit",
+    "killed": 1,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "Detroit street shooting"
+  },
+  {
+    "id": "stanford-323",
+    "date": "2016-05-05",
+    "state": "Louisiana",
+    "city": "Shreveport",
+    "killed": 2,
+    "injured": 6,
+    "source": "stanford_msa",
+    "summary": "Card game ambush in Shreveport, Louisiana"
+  },
+  {
+    "id": "stanford-324",
+    "date": "2016-05-05",
+    "state": "Florida",
+    "city": "Allapattah",
+    "killed": 1,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Allapattah, Florida street shooting"
+  },
+  {
+    "id": "stanford-322",
+    "date": "2016-05-04",
+    "state": "Texas",
+    "city": "Katy",
+    "killed": 1,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "Katy, Texas work retaliation murder"
+  },
+  {
+    "id": "stanford-321",
+    "date": "2016-05-03",
+    "state": "Florida",
+    "city": "Green Cove Springs",
+    "killed": 3,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Florida Ex-wife, ex-girlfriend murder"
+  },
+  {
+    "id": "stanford-320",
+    "date": "2016-05-01",
+    "state": "Tennessee",
+    "city": "Murfreesboro",
+    "killed": 5,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Murfreesboro, TN party shooting"
+  },
+  {
+    "id": "stanford-316",
+    "date": "2016-04-29",
+    "state": "Missouri",
+    "city": "Ferguson",
+    "killed": 0,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "Ferguson, MO Drive by"
+  },
+  {
+    "id": "stanford-315",
+    "date": "2016-04-26",
+    "state": "Maryland",
+    "city": "Forestville",
+    "killed": 1,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "Forestville, Maryland Drive-by"
+  },
+  {
+    "id": "stanford-319",
+    "date": "2016-04-25",
+    "state": "Tennessee",
+    "city": "Nashville",
+    "killed": 0,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "Nashville Music City Central shooting"
+  },
+  {
+    "id": "stanford-314",
+    "date": "2016-04-24",
+    "state": "Virginia",
+    "city": "Halifax",
+    "killed": 0,
+    "injured": 6,
+    "source": "stanford_msa",
+    "summary": "Halifax County, VA"
+  },
+  {
+    "id": "stanford-318",
+    "date": "2016-04-23",
+    "state": "Alabama",
+    "city": "Auburn",
+    "killed": 3,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "Auburn, AL club shootout"
+  },
+  {
+    "id": "stanford-317",
+    "date": "2016-04-22",
+    "state": "Georgia",
+    "city": "Appling",
+    "killed": 5,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Appling, GA family murder"
+  },
+  {
+    "id": "stanford-313",
+    "date": "2016-04-21",
+    "state": "Maryland",
+    "city": "Baltimore",
+    "killed": 0,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "Tire-Slashing revenge escalation"
+  },
+  {
+    "id": "stanford-310",
+    "date": "2016-04-19",
+    "state": "Illinois",
+    "city": "Chicago",
+    "killed": 1,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "Chicago Rap video Shootout"
+  },
+  {
+    "id": "stanford-311",
+    "date": "2016-04-19",
+    "state": "Texas",
+    "city": "Katy",
+    "killed": 4,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Texas family murder-suicide"
+  },
+  {
+    "id": "stanford-312",
+    "date": "2016-04-19",
+    "state": "Alabama",
+    "city": "Brooksville",
+    "killed": 0,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "Alabama highway random shooting"
+  },
+  {
+    "id": "stanford-309",
+    "date": "2016-04-18",
+    "state": "California",
+    "city": "Long Beach",
+    "killed": 1,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Long Beach Street murder"
+  },
+  {
+    "id": "stanford-307",
+    "date": "2016-04-09",
+    "state": "New Mexico",
+    "city": "Albuquerque",
+    "killed": 0,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "Albuquerque, NM House party shooting"
+  },
+  {
+    "id": "stanford-308",
+    "date": "2016-04-09",
+    "state": "Tennessee",
+    "city": "Memphis",
+    "killed": 0,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "Memphis, TN gas station shooting"
+  },
+  {
+    "id": "stanford-306",
+    "date": "2016-04-07",
+    "state": "Illinois",
+    "city": "Chicago",
+    "killed": 0,
+    "injured": 5,
+    "source": "stanford_msa",
+    "summary": "Chicago Birthday Party Bus Shooting"
+  },
+  {
+    "id": "stanford-305",
+    "date": "2016-04-01",
+    "state": "New Mexico",
+    "city": "Albuquerque",
+    "killed": 2,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "Albuquerque, NM Family restaurant shooting"
+  },
+  {
+    "id": "stanford-263",
+    "date": "2016-03-31",
+    "state": "Virginia",
+    "city": "Richmond",
+    "killed": 1,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "Richmond, Virginia"
+  },
+  {
+    "id": "stanford-262",
+    "date": "2016-03-26",
+    "state": "North Carolina",
+    "city": "Louisburg",
+    "killed": 3,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Louisburg, North Carolina"
+  },
+  {
+    "id": "stanford-261",
+    "date": "2016-03-25",
+    "state": "Tennessee",
+    "city": "Lawrenceburg",
+    "killed": 1,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "Lawrenceburg, Tennessee"
+  },
+  {
+    "id": "stanford-304",
+    "date": "2016-03-25",
+    "state": "Alabama",
+    "city": "Greenhill",
+    "killed": 1,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "Greenhill, AL Family murder-suicide"
+  },
+  {
+    "id": "stanford-260",
+    "date": "2016-03-21",
+    "state": "Texas",
+    "city": "Sherman",
+    "killed": 3,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Sherman, Texas"
+  },
+  {
+    "id": "stanford-303",
+    "date": "2016-03-21",
+    "state": "Texas",
+    "city": "Sherman",
+    "killed": 3,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Sherman, TX Family murder-suicide"
+  },
+  {
+    "id": "stanford-259",
+    "date": "2016-03-20",
+    "state": "Kentucky",
+    "city": "Louisville",
+    "killed": 3,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Louisville, Kentucky"
+  },
+  {
+    "id": "stanford-302",
+    "date": "2016-03-20",
+    "state": "Kentucky",
+    "city": "Louisville",
+    "killed": 3,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Louisville, KY Family Murder-Suicide"
+  },
+  {
+    "id": "stanford-258",
+    "date": "2016-03-19",
+    "state": "Florida",
+    "city": "Plantation",
+    "killed": 1,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "Plantation, Florida"
+  },
+  {
+    "id": "stanford-300",
+    "date": "2016-03-19",
+    "state": "Alabama",
+    "city": "Wetumpka",
+    "killed": 2,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "Wetumpka Drive-by"
+  },
+  {
+    "id": "stanford-301",
+    "date": "2016-03-19",
+    "state": "Florida",
+    "city": "Plantation",
+    "killed": 1,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "Spring Break Party shooting"
+  },
+  {
+    "id": "stanford-299",
+    "date": "2016-03-15",
+    "state": "Georgia",
+    "city": "Atlanta",
+    "killed": 0,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "Atlanta Nightclub shooting"
+  },
+  {
+    "id": "stanford-298",
+    "date": "2016-03-13",
+    "state": "Florida",
+    "city": "Fort Myers",
+    "killed": 0,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "Florida Family celebration ends in shooting"
+  },
+  {
+    "id": "stanford-297",
+    "date": "2016-03-12",
+    "state": "Georgia",
+    "city": "Elberton",
+    "killed": 1,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "Elberton, Georgia murder-suicide"
+  },
+  {
+    "id": "stanford-295",
+    "date": "2016-03-11",
+    "state": "New Jersey",
+    "city": "Trenton",
+    "killed": 0,
+    "injured": 5,
+    "source": "stanford_msa",
+    "summary": "Trenton, NJ sidewalk shooting"
+  },
+  {
+    "id": "stanford-296",
+    "date": "2016-03-11",
+    "state": "Michigan",
+    "city": "Detroit",
+    "killed": 2,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "Detroit Drive-by"
+  },
+  {
+    "id": "stanford-257",
+    "date": "2016-03-09",
+    "state": "Pennsylvania",
+    "city": "Pittsburgh",
+    "killed": 6,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Pittsburgh, Pennsylvania"
+  },
+  {
+    "id": "stanford-294",
+    "date": "2016-03-09",
+    "state": "Pennsylvania",
+    "city": "Wilkinsburg",
+    "killed": 5,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Wilkinsburg BBQ cookout shootout"
+  },
+  {
+    "id": "stanford-256",
+    "date": "2016-03-07",
+    "state": "Kansas",
+    "city": "Kansas City",
+    "killed": 5,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Kansas City, Kansas"
+  },
+  {
+    "id": "stanford-292",
+    "date": "2016-03-07",
+    "state": "Louisiana",
+    "city": "Lafayette",
+    "killed": 0,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "Lafayette, LA drive by"
+  },
+  {
+    "id": "stanford-293",
+    "date": "2016-03-07",
+    "state": "Kansas",
+    "city": "Kansas City",
+    "killed": 4,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Kansas City Home Invasion"
+  },
+  {
+    "id": "stanford-255",
+    "date": "2016-03-06",
+    "state": "Massachusetts",
+    "city": "Chelsea",
+    "killed": 1,
+    "injured": 6,
+    "source": "stanford_msa",
+    "summary": "Chelsea, Massachusetts"
+  },
+  {
+    "id": "stanford-290",
+    "date": "2016-03-06",
+    "state": "Massachusetts",
+    "city": "Chelsea",
+    "killed": 1,
+    "injured": 6,
+    "source": "stanford_msa",
+    "summary": "Chelsea, MA empty apartment party shooting"
+  },
+  {
+    "id": "stanford-291",
+    "date": "2016-03-06",
+    "state": "Georgia",
+    "city": "Roswell",
+    "killed": 0,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "Roswell, GA Hookah shootout"
+  },
+  {
+    "id": "stanford-289",
+    "date": "2016-03-05",
+    "state": "Kansas",
+    "city": "Wichita",
+    "killed": 0,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "Wichita Nightclub shooting"
+  },
+  {
+    "id": "stanford-287",
+    "date": "2016-02-28",
+    "state": "Michigan",
+    "city": "Detroit",
+    "killed": 0,
+    "injured": 5,
+    "source": "stanford_msa",
+    "summary": "Detroit Strip Club Shootout"
+  },
+  {
+    "id": "stanford-288",
+    "date": "2016-02-28",
+    "state": "California",
+    "city": "Jurupa Valley",
+    "killed": 1,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Riverside restaurant shooting"
+  },
+  {
+    "id": "stanford-254",
+    "date": "2016-02-27",
+    "state": "Virginia",
+    "city": "Woodbridge",
+    "killed": 1,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Woodbridge, Virginia"
+  },
+  {
+    "id": "stanford-253",
+    "date": "2016-02-26",
+    "state": "Washington",
+    "city": "Belfair",
+    "killed": 4,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Belfair, Washington"
+  },
+  {
+    "id": "stanford-252",
+    "date": "2016-02-25",
+    "state": "Kansas",
+    "city": "Hesston",
+    "killed": 3,
+    "injured": 14,
+    "source": "stanford_msa",
+    "summary": "Hesston, Kansas"
+  },
+  {
+    "id": "stanford-286",
+    "date": "2016-02-25",
+    "state": "Washington",
+    "city": "Belfair",
+    "killed": 4,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Belfair, WA Family murder-suicide"
+  },
+  {
+    "id": "stanford-251",
+    "date": "2016-02-23",
+    "state": "Arizona",
+    "city": "Glendale",
+    "killed": 4,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Glendale, Arizona"
+  },
+  {
+    "id": "stanford-285",
+    "date": "2016-02-23",
+    "state": "Arizona",
+    "city": "Phoenix",
+    "killed": 4,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Arizona Family Murder"
+  },
+  {
+    "id": "stanford-283",
+    "date": "2016-02-21",
+    "state": "Missouri",
+    "city": "Hazelwood",
+    "killed": 1,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Missouri Highway shooting"
+  },
+  {
+    "id": "stanford-284",
+    "date": "2016-02-21",
+    "state": "Texas",
+    "city": "Houston",
+    "killed": 0,
+    "injured": 5,
+    "source": "stanford_msa",
+    "summary": "Houston Drive-by"
+  },
+  {
+    "id": "stanford-249",
+    "date": "2016-02-20",
+    "state": "Mississippi",
+    "city": "Iuka",
+    "killed": 0,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Iuka, Mississippi"
+  },
+  {
+    "id": "stanford-250",
+    "date": "2016-02-20",
+    "state": "Michigan",
+    "city": "Kalamazoo",
+    "killed": 6,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "Kalamazoo, Michigan"
+  },
+  {
+    "id": "stanford-281",
+    "date": "2016-02-20",
+    "state": "Florida",
+    "city": "Tampa",
+    "killed": 1,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Florida Hookah Bar Shooting"
+  },
+  {
+    "id": "stanford-282",
+    "date": "2016-02-20",
+    "state": "Michigan",
+    "city": "Kalamazoo",
+    "killed": 6,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "Kalamazoo Uber Driver Spree Killing"
+  },
+  {
+    "id": "stanford-280",
+    "date": "2016-02-19",
+    "state": "California",
+    "city": "Vallejo",
+    "killed": 2,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "Vallejo, CA car shooting"
+  },
+  {
+    "id": "stanford-279",
+    "date": "2016-02-09",
+    "state": "Michigan",
+    "city": "Muskegon Heights",
+    "killed": 0,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Michigan school shooting"
+  },
+  {
+    "id": "stanford-248",
+    "date": "2016-02-07",
+    "state": "Florida",
+    "city": "Orlando",
+    "killed": 2,
+    "injured": 10,
+    "source": "stanford_msa",
+    "summary": "Orlando, Florida"
+  },
+  {
+    "id": "stanford-278",
+    "date": "2016-02-07",
+    "state": "New York",
+    "city": "Rochester",
+    "killed": 1,
+    "injured": 7,
+    "source": "stanford_msa",
+    "summary": "Nightclub fight turns into shootout"
+  },
+  {
+    "id": "stanford-275",
+    "date": "2016-02-06",
+    "state": "Florida",
+    "city": "Tampa",
+    "killed": 2,
+    "injured": 6,
+    "source": "stanford_msa",
+    "summary": "Tampa, FL Strip club shooting"
+  },
+  {
+    "id": "stanford-276",
+    "date": "2016-02-06",
+    "state": "California",
+    "city": "Los Angeles",
+    "killed": 1,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Los Angeles, CA street shooting"
+  },
+  {
+    "id": "stanford-277",
+    "date": "2016-02-06",
+    "state": "Texas",
+    "city": "Uvalde",
+    "killed": 3,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Texas teen commits family murder suicide"
+  },
+  {
+    "id": "stanford-274",
+    "date": "2016-01-31",
+    "state": "Louisiana",
+    "city": "New Orleans",
+    "killed": 0,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "New Orleans gas station shoot-out"
+  },
+  {
+    "id": "stanford-273",
+    "date": "2016-01-30",
+    "state": "Arizona",
+    "city": "Glendale",
+    "killed": 3,
+    "injured": 5,
+    "source": "stanford_msa",
+    "summary": "Glendale, AZ House Party shooting"
+  },
+  {
+    "id": "stanford-272",
+    "date": "2016-01-29",
+    "state": "Virginia",
+    "city": "Caroline",
+    "killed": 1,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "Caroline County, VA Family Murder Suicide"
+  },
+  {
+    "id": "stanford-247",
+    "date": "2016-01-27",
+    "state": "Virginia",
+    "city": "Chesapeake",
+    "killed": 5,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Chesapeake, Virginia"
+  },
+  {
+    "id": "stanford-271",
+    "date": "2016-01-27",
+    "state": "Virginia",
+    "city": "Chesapeake",
+    "killed": 5,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Chesapeake, VA Family Murder Suicide"
+  },
+  {
+    "id": "stanford-270",
+    "date": "2016-01-25",
+    "state": "California",
+    "city": "Perris",
+    "killed": 1,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "Perris, CA Mexican restaurant shooting"
+  },
+  {
+    "id": "stanford-268",
+    "date": "2016-01-23",
+    "state": "Florida",
+    "city": "Crestview",
+    "killed": 3,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Florida family murder"
+  },
+  {
+    "id": "stanford-269",
+    "date": "2016-01-23",
+    "state": "California",
+    "city": "Los Angeles",
+    "killed": 2,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "Los Angeles Drive-by"
+  },
+  {
+    "id": "stanford-267",
+    "date": "2016-01-17",
+    "state": "Virginia",
+    "city": "Ware Neck",
+    "killed": 1,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Gloucester County, VA, House Party"
+  },
+  {
+    "id": "stanford-266",
+    "date": "2016-01-11",
+    "state": "Delaware",
+    "city": "Wilmington",
+    "killed": 0,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "Wilmington, DE robbery"
+  },
+  {
+    "id": "stanford-265",
+    "date": "2016-01-07",
+    "state": "Tennessee",
+    "city": "Memphis",
+    "killed": 1,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Roadside in Memphis, Tennessee"
+  },
+  {
+    "id": "stanford-264",
+    "date": "2016-01-06",
+    "state": "Florida",
+    "city": "Lakeland",
+    "killed": 3,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "Residence in Lakeland, Florida"
+  },
+  {
+    "id": "stanford-246",
+    "date": "2015-12-06",
+    "state": "Nebraska",
+    "city": "Omaha",
+    "killed": 2,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Omaha, Nebraska"
+  },
+  {
+    "id": "stanford-245",
+    "date": "2015-12-02",
+    "state": "California",
+    "city": "San Bernardino",
+    "killed": 14,
+    "injured": 21,
+    "source": "stanford_msa",
+    "summary": "San Bernardino, California"
+  },
+  {
+    "id": "stanford-244",
+    "date": "2015-11-27",
+    "state": "Colorado",
+    "city": "Colorado Springs",
+    "killed": 3,
+    "injured": 9,
+    "source": "stanford_msa",
+    "summary": "Colorado Springs, Colorado"
+  },
+  {
+    "id": "stanford-242",
+    "date": "2015-11-23",
+    "state": "Ohio",
+    "city": "Columbus",
+    "killed": 3,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "Columbus, Ohio"
+  },
+  {
+    "id": "stanford-243",
+    "date": "2015-11-23",
+    "state": "Minnesota",
+    "city": "Minneapolis",
+    "killed": 0,
+    "injured": 5,
+    "source": "stanford_msa",
+    "summary": "Minneapolis, Minnesota"
+  },
+  {
+    "id": "stanford-241",
+    "date": "2015-11-15",
+    "state": "Texas",
+    "city": "Tennessee Colony",
+    "killed": 6,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Tennessee Colony, Texas"
+  },
+  {
+    "id": "stanford-240",
+    "date": "2015-11-13",
+    "state": "Florida",
+    "city": "Jacksonville",
+    "killed": 3,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "Jacksonville, Florida"
+  },
+  {
+    "id": "stanford-239",
+    "date": "2015-11-07",
+    "state": "Georgia",
+    "city": "Waycross",
+    "killed": 1,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "Waycross, GA"
+  },
+  {
+    "id": "stanford-237",
+    "date": "2015-11-04",
+    "state": "Maine",
+    "city": "Oakland",
+    "killed": 3,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Oakland, Maine"
+  },
+  {
+    "id": "stanford-236",
+    "date": "2015-10-31",
+    "state": "Colorado",
+    "city": "Colorado Springs",
+    "killed": 3,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Colorado Springs"
+  },
+  {
+    "id": "stanford-235",
+    "date": "2015-10-21",
+    "state": "Ohio",
+    "city": "Colerain Township",
+    "killed": 2,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "Colerain Township, Ohio"
+  },
+  {
+    "id": "stanford-232",
+    "date": "2015-10-09",
+    "state": "Arizona",
+    "city": "Flagstaff",
+    "killed": 1,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Northern Arizona University at Flagstaff Campus"
+  },
+  {
+    "id": "stanford-231",
+    "date": "2015-10-01",
+    "state": "Oregon",
+    "city": "Roseburg",
+    "killed": 9,
+    "injured": 7,
+    "source": "stanford_msa",
+    "summary": "Umpqua Community College"
+  },
+  {
+    "id": "stanford-238",
+    "date": "2015-10-01",
+    "state": "Florida",
+    "city": "Inglis",
+    "killed": 2,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "Inglis, Florida"
+  },
+  {
+    "id": "stanford-234",
+    "date": "2015-09-27",
+    "state": "Georgia",
+    "city": "Greenville",
+    "killed": 0,
+    "injured": 10,
+    "source": "stanford_msa",
+    "summary": "Hill Haven Event Center (Formerly Club CJ's)"
+  },
+  {
+    "id": "stanford-230",
+    "date": "2015-09-17",
+    "state": "South Dakota",
+    "city": "Platte",
+    "killed": 5,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Platte, South Dakota"
+  },
+  {
+    "id": "stanford-229",
+    "date": "2015-09-10",
+    "state": "Minnesota",
+    "city": "Clearbrook (Greenwood)",
+    "killed": 4,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Clearbrook (Greenwood), Minnesota"
+  },
+  {
+    "id": "stanford-228",
+    "date": "2015-08-29",
+    "state": "Tennessee",
+    "city": "Bristol",
+    "killed": 3,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "Bristol, Tennessee"
+  },
+  {
+    "id": "stanford-227",
+    "date": "2015-08-26",
+    "state": "Virginia",
+    "city": "Roanoke",
+    "killed": 2,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "Virginia WDBJ live TV interview shooting"
+  },
+  {
+    "id": "stanford-226",
+    "date": "2015-08-19",
+    "state": "New York",
+    "city": "Rochester",
+    "killed": 3,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "Parking lot near Boys and Girls Club"
+  },
+  {
+    "id": "stanford-225",
+    "date": "2015-08-08",
+    "state": "Texas",
+    "city": "Houston",
+    "killed": 8,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Houston, Texas"
+  },
+  {
+    "id": "stanford-224",
+    "date": "2015-07-23",
+    "state": "Louisiana",
+    "city": "Lafayette",
+    "killed": 2,
+    "injured": 9,
+    "source": "stanford_msa",
+    "summary": "Grand 16 Theatre, Louisiana"
+  },
+  {
+    "id": "stanford-223",
+    "date": "2015-07-22",
+    "state": "Georgia",
+    "city": "Suwanee",
+    "killed": 3,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "Suwanee"
+  },
+  {
+    "id": "stanford-222",
+    "date": "2015-07-16",
+    "state": "Tennessee",
+    "city": "Chattanooga",
+    "killed": 4,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "Amnicola Training Center, Chattanooga"
+  },
+  {
+    "id": "stanford-221",
+    "date": "2015-07-12",
+    "state": "Illinois",
+    "city": "River Forest",
+    "killed": 1,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "River Forest"
+  },
+  {
+    "id": "stanford-216",
+    "date": "2015-06-20",
+    "state": "North Carolina",
+    "city": "Morven",
+    "killed": 0,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "Boom Boom Room"
+  },
+  {
+    "id": "stanford-215",
+    "date": "2015-06-17",
+    "state": "South Carolina",
+    "city": "Charleston",
+    "killed": 9,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Mother Emanuel AME Church"
+  },
+  {
+    "id": "stanford-219",
+    "date": "2015-06-16",
+    "state": "Florida",
+    "city": "Miami Gardens",
+    "killed": 0,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "Miami Gardens"
+  },
+  {
+    "id": "stanford-214",
+    "date": "2015-06-07",
+    "state": "Montana",
+    "city": "Deer Lodge",
+    "killed": 4,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Deer Lodge"
+  },
+  {
+    "id": "stanford-212",
+    "date": "2015-05-31",
+    "state": "Ohio",
+    "city": "Cleveland",
+    "killed": 2,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "Cleveland"
+  },
+  {
+    "id": "stanford-213",
+    "date": "2015-05-31",
+    "state": "Georgia",
+    "city": "Conyers",
+    "killed": 2,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "Conyers"
+  },
+  {
+    "id": "stanford-211",
+    "date": "2015-05-25",
+    "state": "Illinois",
+    "city": "Decatur",
+    "killed": 1,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "Club Maxey's"
+  },
+  {
+    "id": "stanford-210",
+    "date": "2015-05-12",
+    "state": "Arizona",
+    "city": "Tucson",
+    "killed": 4,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Tucson"
+  },
+  {
+    "id": "stanford-218",
+    "date": "2015-05-10",
+    "state": "New Jersey",
+    "city": "Newark",
+    "killed": 1,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Annual motorcycle event in Newark"
+  },
+  {
+    "id": "stanford-208",
+    "date": "2015-05-03",
+    "state": "Wisconsin",
+    "city": "Menasha",
+    "killed": 3,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "Fox Cities Trestle Trail bridge over Little Lake Butte des Morts"
+  },
+  {
+    "id": "stanford-207",
+    "date": "2015-05-01",
+    "state": "Wisconsin",
+    "city": "Milwaukee",
+    "killed": 2,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Milwaukee"
+  },
+  {
+    "id": "stanford-205",
+    "date": "2015-04-25",
+    "state": "New York",
+    "city": "Gates",
+    "killed": 1,
+    "injured": 6,
+    "source": "stanford_msa",
+    "summary": "Gates Pub"
+  },
+  {
+    "id": "stanford-204",
+    "date": "2015-04-21",
+    "state": "Texas",
+    "city": "Killeen",
+    "killed": 2,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Killeen"
+  },
+  {
+    "id": "stanford-203",
+    "date": "2015-04-16",
+    "state": "Arizona",
+    "city": "Phoenix",
+    "killed": 4,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Phoenix"
+  },
+  {
+    "id": "stanford-202",
+    "date": "2015-04-07",
+    "state": "Georgia",
+    "city": "Rome",
+    "killed": 1,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Rome"
+  },
+  {
+    "id": "stanford-201",
+    "date": "2015-04-05",
+    "state": "Indiana",
+    "city": "Indianapolis",
+    "killed": 0,
+    "injured": 5,
+    "source": "stanford_msa",
+    "summary": "Indianapolis"
+  },
+  {
+    "id": "stanford-200",
+    "date": "2015-04-03",
+    "state": "Florida",
+    "city": "Daytona Beach",
+    "killed": 0,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "Daytona Beach"
+  },
+  {
+    "id": "stanford-199",
+    "date": "2015-03-30",
+    "state": "Oklahoma",
+    "city": "Tulsa",
+    "killed": 3,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Tulsa"
+  },
+  {
+    "id": "stanford-198",
+    "date": "2015-03-28",
+    "state": "Florida",
+    "city": "Panama City Beach",
+    "killed": 0,
+    "injured": 7,
+    "source": "stanford_msa",
+    "summary": "Panama City Beach"
+  },
+  {
+    "id": "stanford-197",
+    "date": "2015-03-19",
+    "state": "New Mexico",
+    "city": "Little Water",
+    "killed": 0,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Little Water"
+  },
+  {
+    "id": "stanford-196",
+    "date": "2015-03-18",
+    "state": "Arizona",
+    "city": "Mesa",
+    "killed": 1,
+    "injured": 5,
+    "source": "stanford_msa",
+    "summary": "Mesa"
+  },
+  {
+    "id": "stanford-195",
+    "date": "2015-03-15",
+    "state": "Alabama",
+    "city": "Cottonwood",
+    "killed": 2,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "Cottonwood"
+  },
+  {
+    "id": "stanford-194",
+    "date": "2015-03-13",
+    "state": "Mississippi",
+    "city": "Brookhaven",
+    "killed": 2,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Brookhaven"
+  },
+  {
+    "id": "stanford-192",
+    "date": "2015-02-28",
+    "state": "North Carolina",
+    "city": "Tarboro",
+    "killed": 3,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Tarboro"
+  },
+  {
+    "id": "stanford-191",
+    "date": "2015-02-27",
+    "state": "Alabama",
+    "city": "Birmingham",
+    "killed": 1,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "Birmingham's Washington Park"
+  },
+  {
+    "id": "stanford-184",
+    "date": "2015-02-26",
+    "state": "Missouri",
+    "city": "Tyrone",
+    "killed": 7,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "Tyrone"
+  },
+  {
+    "id": "stanford-190",
+    "date": "2015-02-24",
+    "state": "North Carolina",
+    "city": "Charlotte",
+    "killed": 3,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Charlotte"
+  },
+  {
+    "id": "stanford-188",
+    "date": "2015-02-22",
+    "state": "Georgia",
+    "city": "Clarkesville",
+    "killed": 2,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Clarkesville"
+  },
+  {
+    "id": "stanford-189",
+    "date": "2015-02-22",
+    "state": "Texas",
+    "city": "Killeen",
+    "killed": 3,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "Killeen"
+  },
+  {
+    "id": "stanford-181",
+    "date": "2015-02-10",
+    "state": "North Carolina",
+    "city": "Chapel Hill",
+    "killed": 3,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Chapel Hill"
+  },
+  {
+    "id": "stanford-183",
+    "date": "2015-02-09",
+    "state": "Florida",
+    "city": "New Port Richey",
+    "killed": 3,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "Moon Lake"
+  },
+  {
+    "id": "stanford-182",
+    "date": "2015-02-07",
+    "state": "Pennsylvania",
+    "city": "Monroeville",
+    "killed": 0,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Monroeville Macy's"
+  },
+  {
+    "id": "stanford-186",
+    "date": "2015-02-07",
+    "state": "Georgia",
+    "city": "Douglasville",
+    "killed": 4,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "Douglasville"
+  },
+  {
+    "id": "stanford-233",
+    "date": "2015-02-04",
+    "state": "North Carolina",
+    "city": "King",
+    "killed": 3,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "King, North Carolina"
+  },
+  {
+    "id": "stanford-187",
+    "date": "2015-02-01",
+    "state": "New York",
+    "city": "Syracuse",
+    "killed": 0,
+    "injured": 6,
+    "source": "stanford_msa",
+    "summary": "McAvan's Pub"
+  },
+  {
+    "id": "stanford-178",
+    "date": "2015-01-28",
+    "state": "Georgia",
+    "city": "LaGrange",
+    "killed": 5,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "LaGrange"
+  },
+  {
+    "id": "stanford-177",
+    "date": "2015-01-24",
+    "state": "New York",
+    "city": "New York City",
+    "killed": 3,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "Queens"
+  },
+  {
+    "id": "stanford-180",
+    "date": "2015-01-24",
+    "state": "Nebraska",
+    "city": "Omaha",
+    "killed": 3,
+    "injured": 5,
+    "source": "stanford_msa",
+    "summary": "Omaha"
+  },
+  {
+    "id": "stanford-173",
+    "date": "2015-01-10",
+    "state": "Idaho",
+    "city": "Moscow",
+    "killed": 3,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "Moscow"
+  },
+  {
+    "id": "stanford-170",
+    "date": "2015-01-01",
+    "state": "Tennessee",
+    "city": "Memphis",
+    "killed": 0,
+    "injured": 5,
+    "source": "stanford_msa",
+    "summary": "Memphis"
+  },
+  {
+    "id": "stanford-169",
+    "date": "2014-12-15",
+    "state": "Pennsylvania",
+    "city": "Pennsburg",
+    "killed": 6,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "Pennsburg, Souderton, Lansdale, Harleysville"
+  },
+  {
+    "id": "stanford-185",
+    "date": "2014-12-01",
+    "state": "West Virginia",
+    "city": "Morgantown",
+    "killed": 4,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Morgantown"
+  },
+  {
+    "id": "stanford-166",
+    "date": "2014-11-19",
+    "state": "Florida",
+    "city": "Tallahassee",
+    "killed": 0,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Florida State University"
+  },
+  {
+    "id": "stanford-165",
+    "date": "2014-10-24",
+    "state": "Washington",
+    "city": "Marysville",
+    "killed": 4,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "Marysville-Pilchuck High School"
+  },
+  {
+    "id": "stanford-164",
+    "date": "2014-08-08",
+    "state": "New Mexico",
+    "city": "Albuquerque",
+    "killed": 1,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Albuquerque Auto Shop"
+  },
+  {
+    "id": "stanford-163",
+    "date": "2014-06-29",
+    "state": "Louisiana",
+    "city": "New Orleans",
+    "killed": 1,
+    "injured": 9,
+    "source": "stanford_msa",
+    "summary": "Bourbon Street New Orleans"
+  },
+  {
+    "id": "stanford-162",
+    "date": "2014-06-08",
+    "state": "Nevada",
+    "city": "Las Vegas",
+    "killed": 1,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Nellis Plaza"
+  },
+  {
+    "id": "stanford-161",
+    "date": "2014-06-05",
+    "state": "Washington",
+    "city": "Seattle",
+    "killed": 1,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "Seattle Pacific University"
+  },
+  {
+    "id": "stanford-160",
+    "date": "2014-05-23",
+    "state": "California",
+    "city": "Isla Vista",
+    "killed": 3,
+    "injured": 7,
+    "source": "stanford_msa",
+    "summary": "Isla Vista"
+  },
+  {
+    "id": "stanford-159",
+    "date": "2014-04-29",
+    "state": "Georgia",
+    "city": "Kennesaw",
+    "killed": 0,
+    "injured": 6,
+    "source": "stanford_msa",
+    "summary": "Kennesaw FedEx"
+  },
+  {
+    "id": "stanford-158",
+    "date": "2014-04-02",
+    "state": "Texas",
+    "city": "Killeen",
+    "killed": 3,
+    "injured": 16,
+    "source": "stanford_msa",
+    "summary": "Fort Hood"
+  },
+  {
+    "id": "stanford-167",
+    "date": "2014-02-20",
+    "state": "California",
+    "city": "Alturas",
+    "killed": 4,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "Cedarville Rancheria Tribe"
+  },
+  {
+    "id": "stanford-156",
+    "date": "2013-12-28",
+    "state": "Alabama",
+    "city": "Montgomery",
+    "killed": 3,
+    "injured": 5,
+    "source": "stanford_msa",
+    "summary": "Centennial Hill Bar & Grill"
+  },
+  {
+    "id": "stanford-155",
+    "date": "2013-11-01",
+    "state": "California",
+    "city": "Los Angeles",
+    "killed": 0,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "Los Angeles International Airport (LAX)"
+  },
+  {
+    "id": "stanford-150",
+    "date": "2013-10-21",
+    "state": "Nevada",
+    "city": "Sparks",
+    "killed": 1,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "Sparks Middle School"
+  },
+  {
+    "id": "stanford-148",
+    "date": "2013-08-14",
+    "state": "Oklahoma",
+    "city": "Oklahoma City",
+    "killed": 4,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Oklahoma City Residence"
+  },
+  {
+    "id": "stanford-156",
+    "date": "2013-08-07",
+    "state": "Texas",
+    "city": "Dallas",
+    "killed": 4,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "Homes in Desoto and Dallas"
+  },
+  {
+    "id": "stanford-147",
+    "date": "2013-08-05",
+    "state": "Pennsylvania",
+    "city": "Salisbury",
+    "killed": 3,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Ross Township Supervisor Council Meeting"
+  },
+  {
+    "id": "stanford-146",
+    "date": "2013-07-26",
+    "state": "Florida",
+    "city": "Hialeah",
+    "killed": 6,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Hialeah Apartments"
+  },
+  {
+    "id": "stanford-145",
+    "date": "2013-06-07",
+    "state": "California",
+    "city": "Santa Monica",
+    "killed": 5,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Santa Monica College"
+  },
+  {
+    "id": "stanford-144",
+    "date": "2013-04-24",
+    "state": "Illinois",
+    "city": "Manchester",
+    "killed": 6,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "Village of Manchester in Illinois"
+  },
+  {
+    "id": "stanford-143",
+    "date": "2013-04-21",
+    "state": "Washington",
+    "city": "Federal Way",
+    "killed": 4,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Pinewood Village Apartments"
+  },
+  {
+    "id": "stanford-154",
+    "date": "2013-03-13",
+    "state": "New York",
+    "city": "Mohawk",
+    "killed": 4,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "Mohawk and Herkimer Villages in New York"
+  },
+  {
+    "id": "stanford-142",
+    "date": "2013-02-19",
+    "state": "California",
+    "city": "Ladera Ranch",
+    "killed": 3,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Ladera Ranch, Santa Ana, Tustin and Orange"
+  },
+  {
+    "id": "stanford-141",
+    "date": "2013-02-03",
+    "state": "California",
+    "city": "Irvine",
+    "killed": 3,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "Los Angeles Police Department"
+  },
+  {
+    "id": "stanford-140",
+    "date": "2013-01-30",
+    "state": "Arizona",
+    "city": "Phoenix",
+    "killed": 2,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "Phoenix Law Firm"
+  },
+  {
+    "id": "stanford-139",
+    "date": "2013-01-19",
+    "state": "New Mexico",
+    "city": "South Valley",
+    "killed": 5,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "South Valley Residence"
+  },
+  {
+    "id": "stanford-138",
+    "date": "2012-12-14",
+    "state": "Connecticut",
+    "city": "Newtown",
+    "killed": 27,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "Sandy Hook Elementary School"
+  },
+  {
+    "id": "stanford-137",
+    "date": "2012-12-11",
+    "state": "Oregon",
+    "city": "Happy Valley",
+    "killed": 2,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "Clackamas Town Center"
+  },
+  {
+    "id": "stanford-136",
+    "date": "2012-10-21",
+    "state": "Wisconsin",
+    "city": "Brookfield",
+    "killed": 3,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "Azana Spa in Brookfield"
+  },
+  {
+    "id": "stanford-135",
+    "date": "2012-09-28",
+    "state": "Florida",
+    "city": "Miami",
+    "killed": 0,
+    "injured": 15,
+    "source": "stanford_msa",
+    "summary": "The Spot Nightclub"
+  },
+  {
+    "id": "stanford-134",
+    "date": "2012-09-27",
+    "state": "Minnesota",
+    "city": "Minneapolis",
+    "killed": 6,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "Accent Signage Systems in Minneapolis"
+  },
+  {
+    "id": "stanford-133",
+    "date": "2012-08-05",
+    "state": "Wisconsin",
+    "city": "Oak Creek",
+    "killed": 6,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "Sikh Temple in Wisconsin"
+  },
+  {
+    "id": "stanford-132",
+    "date": "2012-07-20",
+    "state": "Colorado",
+    "city": "Denver",
+    "killed": 12,
+    "injured": 58,
+    "source": "stanford_msa",
+    "summary": "Movie Theater in Aurora"
+  },
+  {
+    "id": "stanford-131",
+    "date": "2012-06-09",
+    "state": "Alabama",
+    "city": "Auburn",
+    "killed": 3,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "University Heights Apartments in Auburn"
+  },
+  {
+    "id": "stanford-130",
+    "date": "2012-05-30",
+    "state": "Washington",
+    "city": "Seattle",
+    "killed": 5,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "Cafe in Seattle"
+  },
+  {
+    "id": "stanford-129",
+    "date": "2012-04-06",
+    "state": "Oklahoma",
+    "city": "Tulsa",
+    "killed": 3,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "North Tulsa, Oklahoma"
+  },
+  {
+    "id": "stanford-128",
+    "date": "2012-04-02",
+    "state": "California",
+    "city": "Oakland",
+    "killed": 7,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Oikos University"
+  },
+  {
+    "id": "stanford-127",
+    "date": "2012-02-27",
+    "state": "Ohio",
+    "city": "Chardon",
+    "killed": 3,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Chardon High School"
+  },
+  {
+    "id": "stanford-126",
+    "date": "2012-02-22",
+    "state": "Georgia",
+    "city": "Norcross",
+    "killed": 4,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Su Jung Health Sauna"
+  },
+  {
+    "id": "stanford-168",
+    "date": "2012-01-29",
+    "state": "Alabama",
+    "city": "Birmingham",
+    "killed": 5,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Ensley Birmingham"
+  },
+  {
+    "id": "stanford-125",
+    "date": "2011-10-12",
+    "state": "California",
+    "city": "Seal Beach",
+    "killed": 8,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "Salon Meritage"
+  },
+  {
+    "id": "stanford-124",
+    "date": "2011-09-06",
+    "state": "Nevada",
+    "city": "Carson City",
+    "killed": 4,
+    "injured": 7,
+    "source": "stanford_msa",
+    "summary": "Carson City IHOP"
+  },
+  {
+    "id": "stanford-123",
+    "date": "2011-07-07",
+    "state": "Michigan",
+    "city": "Grand Rapids",
+    "killed": 7,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "Residences in Grand Rapids"
+  },
+  {
+    "id": "stanford-122",
+    "date": "2011-04-06",
+    "state": "Alabama",
+    "city": "Opelika",
+    "killed": 1,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Southern Union State Community College"
+  },
+  {
+    "id": "stanford-121",
+    "date": "2011-02-06",
+    "state": "Ohio",
+    "city": "Youngstown",
+    "killed": 1,
+    "injured": 11,
+    "source": "stanford_msa",
+    "summary": "Youngstown State University"
+  },
+  {
+    "id": "stanford-120",
+    "date": "2011-01-08",
+    "state": "Arizona",
+    "city": "Tucson",
+    "killed": 6,
+    "injured": 13,
+    "source": "stanford_msa",
+    "summary": "Tucson, Arizona"
+  },
+  {
+    "id": "stanford-119",
+    "date": "2010-08-03",
+    "state": "Connecticut",
+    "city": "Manchester",
+    "killed": 8,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "Hartford Beer Distributors"
+  },
+  {
+    "id": "stanford-118",
+    "date": "2010-02-12",
+    "state": "Alabama",
+    "city": "Huntsville",
+    "killed": 3,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "University of Alabama in Huntsville"
+  },
+  {
+    "id": "stanford-117",
+    "date": "2009-11-29",
+    "state": "Washington",
+    "city": "Lakewood",
+    "killed": 0,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Parkland Coffee Shop"
+  },
+  {
+    "id": "stanford-116",
+    "date": "2009-11-05",
+    "state": "Texas",
+    "city": "Fort Hood",
+    "killed": 13,
+    "injured": 32,
+    "source": "stanford_msa",
+    "summary": "Fort Hood Army Base"
+  },
+  {
+    "id": "stanford-115",
+    "date": "2009-04-03",
+    "state": "New York",
+    "city": "Binghamton",
+    "killed": 13,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "Immigration Services Center in Binghamton"
+  },
+  {
+    "id": "stanford-113",
+    "date": "2009-03-29",
+    "state": "California",
+    "city": "Santa Clara",
+    "killed": 5,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "Rivermark, Santa Clara, California"
+  },
+  {
+    "id": "stanford-114",
+    "date": "2009-03-29",
+    "state": "North Carolina",
+    "city": "Carthage",
+    "killed": 8,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "Pinelake Health and Rehab nursing home"
+  },
+  {
+    "id": "stanford-112",
+    "date": "2009-03-10",
+    "state": "Alabama",
+    "city": "Geneva",
+    "killed": 10,
+    "injured": 6,
+    "source": "stanford_msa",
+    "summary": "Geneva County, Alabama"
+  },
+  {
+    "id": "stanford-111",
+    "date": "2008-12-24",
+    "state": "California",
+    "city": "Covina",
+    "killed": 9,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "Covina, California"
+  },
+  {
+    "id": "stanford-110",
+    "date": "2008-10-26",
+    "state": "Arkansas",
+    "city": "Conway",
+    "killed": 2,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "University of Central Arkansas"
+  },
+  {
+    "id": "stanford-109",
+    "date": "2008-07-24",
+    "state": "Arizona",
+    "city": "Phoenix",
+    "killed": 0,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "South Mountain Community College"
+  },
+  {
+    "id": "stanford-108",
+    "date": "2008-06-25",
+    "state": "Kentucky",
+    "city": "Henderson",
+    "killed": 6,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "Atlantis Plastics"
+  },
+  {
+    "id": "stanford-107",
+    "date": "2008-02-14",
+    "state": "Illinois",
+    "city": "DeKalb",
+    "killed": 5,
+    "injured": 17,
+    "source": "stanford_msa",
+    "summary": "Northern Illinois University"
+  },
+  {
+    "id": "stanford-106",
+    "date": "2008-02-07",
+    "state": "Missouri",
+    "city": "Kirkwood",
+    "killed": 3,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "Kirkwood City Hall"
+  },
+  {
+    "id": "stanford-105",
+    "date": "2007-12-24",
+    "state": "Washington",
+    "city": "Carnation",
+    "killed": 6,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Carnation, Washington"
+  },
+  {
+    "id": "stanford-104",
+    "date": "2007-12-11",
+    "state": "Nevada",
+    "city": "Las Vegas",
+    "killed": 0,
+    "injured": 6,
+    "source": "stanford_msa",
+    "summary": "Mojave High School Bus"
+  },
+  {
+    "id": "stanford-103",
+    "date": "2007-12-09",
+    "state": "Colorado",
+    "city": "Arvada",
+    "killed": 4,
+    "injured": 5,
+    "source": "stanford_msa",
+    "summary": "Youth With A Mission and New Life Church"
+  },
+  {
+    "id": "stanford-102",
+    "date": "2007-12-05",
+    "state": "Nebraska",
+    "city": "Omaha",
+    "killed": 8,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "Westroads Mall"
+  },
+  {
+    "id": "stanford-101",
+    "date": "2007-10-25",
+    "state": "Michigan",
+    "city": "Saginaw",
+    "killed": 0,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "South Middle School Football Game"
+  },
+  {
+    "id": "stanford-100",
+    "date": "2007-10-11",
+    "state": "Ohio",
+    "city": "Cleveland",
+    "killed": 0,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "SuccessTech Academy"
+  },
+  {
+    "id": "stanford-99",
+    "date": "2007-10-07",
+    "state": "Wisconsin",
+    "city": "Crandon",
+    "killed": 6,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "Apartment in Crandon, Wisconsin"
+  },
+  {
+    "id": "stanford-98",
+    "date": "2007-04-16",
+    "state": "Virginia",
+    "city": "Blacksburg",
+    "killed": 32,
+    "injured": 17,
+    "source": "stanford_msa",
+    "summary": "Virginia Tech  Campus"
+  },
+  {
+    "id": "stanford-97",
+    "date": "2007-04-10",
+    "state": "Oregon",
+    "city": "Gresham",
+    "killed": 0,
+    "injured": 10,
+    "source": "stanford_msa",
+    "summary": "Springwater Trail High School"
+  },
+  {
+    "id": "stanford-96",
+    "date": "2007-02-12",
+    "state": "Utah",
+    "city": "Salt Lake City",
+    "killed": 5,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "Trolley Square"
+  },
+  {
+    "id": "stanford-95",
+    "date": "2006-10-02",
+    "state": "Pennsylvania",
+    "city": "Nickel Mines",
+    "killed": 5,
+    "injured": 5,
+    "source": "stanford_msa",
+    "summary": "West Nickel Mines Amish School"
+  },
+  {
+    "id": "stanford-94",
+    "date": "2006-09-17",
+    "state": "Pennsylvania",
+    "city": "Pittsburgh",
+    "killed": 0,
+    "injured": 5,
+    "source": "stanford_msa",
+    "summary": "Duquesne University"
+  },
+  {
+    "id": "stanford-93",
+    "date": "2006-08-30",
+    "state": "North Carolina",
+    "city": "Hillsborough",
+    "killed": 1,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "Orange High School"
+  },
+  {
+    "id": "stanford-92",
+    "date": "2006-08-24",
+    "state": "Vermont",
+    "city": "Essex Junction",
+    "killed": 2,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "Essex Elementary School"
+  },
+  {
+    "id": "stanford-91",
+    "date": "2006-03-25",
+    "state": "Washington",
+    "city": "Seattle",
+    "killed": 6,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "Party in Capitol Hill, Seattle"
+  },
+  {
+    "id": "stanford-90",
+    "date": "2006-01-30",
+    "state": "California",
+    "city": "Goleta",
+    "killed": 7,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Goleta Post Office"
+  },
+  {
+    "id": "stanford-89",
+    "date": "2005-03-21",
+    "state": "Minnesota",
+    "city": "Red Lake",
+    "killed": 8,
+    "injured": 5,
+    "source": "stanford_msa",
+    "summary": "Red Lake High School"
+  },
+  {
+    "id": "stanford-88",
+    "date": "2005-03-12",
+    "state": "Wisconsin",
+    "city": "Brookfield",
+    "killed": 7,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "Living Church of God"
+  },
+  {
+    "id": "stanford-153",
+    "date": "2005-02-24",
+    "state": "Texas",
+    "city": "Tyler",
+    "killed": 2,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "Tyler Courthouse"
+  },
+  {
+    "id": "stanford-87",
+    "date": "2004-12-08",
+    "state": "Ohio",
+    "city": "Columbus",
+    "killed": 4,
+    "injured": 7,
+    "source": "stanford_msa",
+    "summary": "Damageplan show at the Alrosa Villa Nightclub"
+  },
+  {
+    "id": "stanford-86",
+    "date": "2004-11-21",
+    "state": "Wisconsin",
+    "city": "Birchwood",
+    "killed": 6,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "Birchwood, Wisconsin"
+  },
+  {
+    "id": "stanford-85",
+    "date": "2003-08-27",
+    "state": "Illinois",
+    "city": "Chicago",
+    "killed": 6,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Windy City Core Supply Warehouse"
+  },
+  {
+    "id": "stanford-84",
+    "date": "2003-07-08",
+    "state": "Mississippi",
+    "city": "Meridian",
+    "killed": 6,
+    "injured": 8,
+    "source": "stanford_msa",
+    "summary": "Lockheed Martin"
+  },
+  {
+    "id": "stanford-83",
+    "date": "2003-05-09",
+    "state": "Ohio",
+    "city": "Cleveland",
+    "killed": 1,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "Case Western Reserve University"
+  },
+  {
+    "id": "stanford-82",
+    "date": "2002-10-28",
+    "state": "Arizona",
+    "city": "Tucson",
+    "killed": 3,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "University of Arizona College of Nursing"
+  },
+  {
+    "id": "stanford-81",
+    "date": "2002-01-16",
+    "state": "Virginia",
+    "city": "Grundy",
+    "killed": 3,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Appalachian School of Law"
+  },
+  {
+    "id": "stanford-80",
+    "date": "2001-03-05",
+    "state": "California",
+    "city": "Santee",
+    "killed": 2,
+    "injured": 13,
+    "source": "stanford_msa",
+    "summary": "Santana High School"
+  },
+  {
+    "id": "stanford-79",
+    "date": "2001-02-05",
+    "state": "Illinois",
+    "city": "Melrose Park",
+    "killed": 5,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "Navistar International"
+  },
+  {
+    "id": "stanford-78",
+    "date": "2000-12-26",
+    "state": "Massachusetts",
+    "city": "Wakefield",
+    "killed": 7,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Edgewater Technology"
+  },
+  {
+    "id": "stanford-77",
+    "date": "1999-12-30",
+    "state": "Florida",
+    "city": "Tampa",
+    "killed": 5,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Radisson Bay Harbor Inn"
+  },
+  {
+    "id": "stanford-76",
+    "date": "1999-12-06",
+    "state": "Oklahoma",
+    "city": "Fort Gibson",
+    "killed": 0,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "Fort Gibson Middle School"
+  },
+  {
+    "id": "stanford-75",
+    "date": "1999-11-02",
+    "state": "Hawaii",
+    "city": "Honolulu",
+    "killed": 7,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Xerox Office Building"
+  },
+  {
+    "id": "stanford-74",
+    "date": "1999-09-15",
+    "state": "Texas",
+    "city": "Fort Worth",
+    "killed": 7,
+    "injured": 7,
+    "source": "stanford_msa",
+    "summary": "Wedgwood Baptist Church"
+  },
+  {
+    "id": "stanford-73",
+    "date": "1999-07-29",
+    "state": "Georgia",
+    "city": "Atlanta",
+    "killed": 9,
+    "injured": 12,
+    "source": "stanford_msa",
+    "summary": "Offices of All-Tech Investment Group and Momentum Securities"
+  },
+  {
+    "id": "stanford-72",
+    "date": "1999-05-20",
+    "state": "Georgia",
+    "city": "Conyers",
+    "killed": 0,
+    "injured": 6,
+    "source": "stanford_msa",
+    "summary": "Heritage High School"
+  },
+  {
+    "id": "stanford-71",
+    "date": "1999-04-20",
+    "state": "Colorado",
+    "city": "Littleton",
+    "killed": 13,
+    "injured": 24,
+    "source": "stanford_msa",
+    "summary": "Columbine High School"
+  },
+  {
+    "id": "stanford-70",
+    "date": "1998-10-06",
+    "state": "California",
+    "city": "Riverside",
+    "killed": 0,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Riverside City Hall"
+  },
+  {
+    "id": "stanford-69",
+    "date": "1998-05-21",
+    "state": "Oregon",
+    "city": "Springfield",
+    "killed": 4,
+    "injured": 25,
+    "source": "stanford_msa",
+    "summary": "Thurston High School"
+  },
+  {
+    "id": "stanford-68",
+    "date": "1998-04-24",
+    "state": "Pennsylvania",
+    "city": "Edinboro",
+    "killed": 1,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Parker Middle School Dance"
+  },
+  {
+    "id": "stanford-67",
+    "date": "1998-03-24",
+    "state": "Arkansas",
+    "city": "Jonesboro",
+    "killed": 5,
+    "injured": 10,
+    "source": "stanford_msa",
+    "summary": "Westside Middle School"
+  },
+  {
+    "id": "stanford-66",
+    "date": "1998-03-06",
+    "state": "Connecticut",
+    "city": "Newington",
+    "killed": 4,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Connecticut State Lottery Headquarters"
+  },
+  {
+    "id": "stanford-64",
+    "date": "1997-12-19",
+    "state": "Wisconsin",
+    "city": "Milwaukee",
+    "killed": 1,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "Milwaukee Post Office"
+  },
+  {
+    "id": "stanford-65",
+    "date": "1997-12-18",
+    "state": "California",
+    "city": "Orange",
+    "killed": 4,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "Caltrans Maintenance Yard"
+  },
+  {
+    "id": "stanford-63",
+    "date": "1997-12-01",
+    "state": "Kentucky",
+    "city": "West Paducah",
+    "killed": 3,
+    "injured": 5,
+    "source": "stanford_msa",
+    "summary": "Heath High School"
+  },
+  {
+    "id": "stanford-62",
+    "date": "1997-10-01",
+    "state": "Mississippi",
+    "city": "Pearl",
+    "killed": 2,
+    "injured": 7,
+    "source": "stanford_msa",
+    "summary": "Pearl High School"
+  },
+  {
+    "id": "stanford-61",
+    "date": "1997-09-15",
+    "state": "South Carolina",
+    "city": "Aiken",
+    "killed": 4,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "R.E. Phelon Company"
+  },
+  {
+    "id": "stanford-60",
+    "date": "1997-02-19",
+    "state": "Alaska",
+    "city": "Bethel",
+    "killed": 2,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "Bethel Regional High School"
+  },
+  {
+    "id": "stanford-59",
+    "date": "1996-08-15",
+    "state": "California",
+    "city": "San Diego",
+    "killed": 3,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "San Diego State University"
+  },
+  {
+    "id": "stanford-58",
+    "date": "1996-02-09",
+    "state": "Florida",
+    "city": "Fort Lauderdale",
+    "killed": 6,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Fort Lauderdale City Parks Office"
+  },
+  {
+    "id": "stanford-57",
+    "date": "1996-02-02",
+    "state": "Washington",
+    "city": "Moses Lake",
+    "killed": 3,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "Frontier Junior High School"
+  },
+  {
+    "id": "stanford-56",
+    "date": "1995-11-15",
+    "state": "Tennessee",
+    "city": "Lynnville",
+    "killed": 2,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "Richland High School"
+  },
+  {
+    "id": "stanford-55",
+    "date": "1995-04-03",
+    "state": "Texas",
+    "city": "Corpus Christi",
+    "killed": 5,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Walter Rossler Company"
+  },
+  {
+    "id": "stanford-54",
+    "date": "1995-03-21",
+    "state": "New Jersey",
+    "city": "Montclair",
+    "killed": 4,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "Montclair Post Office"
+  },
+  {
+    "id": "stanford-53",
+    "date": "1995-01-26",
+    "state": "North Carolina",
+    "city": "Chapel Hill",
+    "killed": 2,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "Downtown Chapel Hill"
+  },
+  {
+    "id": "stanford-168",
+    "date": "1994-12-30",
+    "state": "Massachusetts",
+    "city": "Brookline",
+    "killed": 2,
+    "injured": 5,
+    "source": "stanford_msa",
+    "summary": "Massachusetts Abortion Clinic"
+  },
+  {
+    "id": "stanford-52",
+    "date": "1994-11-07",
+    "state": "Ohio",
+    "city": "Wickliffe",
+    "killed": 1,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Wickliffe Middle School"
+  },
+  {
+    "id": "stanford-51",
+    "date": "1994-06-20",
+    "state": "Washington",
+    "city": "Fairchild Air Force Base",
+    "killed": 4,
+    "injured": 23,
+    "source": "stanford_msa",
+    "summary": "Fairchild Air Force Base Hospital"
+  },
+  {
+    "id": "stanford-50",
+    "date": "1994-05-26",
+    "state": "Kentucky",
+    "city": "Union",
+    "killed": 4,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Residence in Union, Kentucky"
+  },
+  {
+    "id": "stanford-49",
+    "date": "1993-12-16",
+    "state": "Michigan",
+    "city": "Chelsea",
+    "killed": 1,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "Chelsea High School"
+  },
+  {
+    "id": "stanford-48",
+    "date": "1993-12-14",
+    "state": "Colorado",
+    "city": "Aurora",
+    "killed": 4,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "Chuck E. Cheese in Aurora"
+  },
+  {
+    "id": "stanford-47",
+    "date": "1993-12-07",
+    "state": "New York",
+    "city": "Garden City",
+    "killed": 6,
+    "injured": 19,
+    "source": "stanford_msa",
+    "summary": "Long Island Rail Road Commuter Train"
+  },
+  {
+    "id": "stanford-46",
+    "date": "1993-09-17",
+    "state": "Wyoming",
+    "city": "Sheridan",
+    "killed": 0,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "Central Middle School"
+  },
+  {
+    "id": "stanford-45",
+    "date": "1993-08-06",
+    "state": "North Carolina",
+    "city": "Fayetteville",
+    "killed": 4,
+    "injured": 8,
+    "source": "stanford_msa",
+    "summary": "Luigi's Restaurant in Fayetteville"
+  },
+  {
+    "id": "stanford-44",
+    "date": "1993-07-08",
+    "state": "Utah",
+    "city": "Ogden",
+    "killed": 0,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "Weber State University"
+  },
+  {
+    "id": "stanford-41",
+    "date": "1993-07-01",
+    "state": "California",
+    "city": "San Francisco",
+    "killed": 8,
+    "injured": 6,
+    "source": "stanford_msa",
+    "summary": "Offices of Pettit & Martin in San Francisco"
+  },
+  {
+    "id": "stanford-42",
+    "date": "1993-05-06",
+    "state": "Michigan",
+    "city": "Dearborn",
+    "killed": 1,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "Dearborn Post Office"
+  },
+  {
+    "id": "stanford-43",
+    "date": "1993-05-06",
+    "state": "California",
+    "city": "Dana Point",
+    "killed": 1,
+    "injured": 5,
+    "source": "stanford_msa",
+    "summary": "Dana Point Post Office"
+  },
+  {
+    "id": "stanford-40",
+    "date": "1992-12-14",
+    "state": "Massachusetts",
+    "city": "Great Barrington",
+    "killed": 2,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "Simon's Rock College of Bard"
+  },
+  {
+    "id": "stanford-39",
+    "date": "1992-10-15",
+    "state": "New York",
+    "city": "Watkins Glen",
+    "killed": 4,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Schuyler County Office Building"
+  },
+  {
+    "id": "stanford-38",
+    "date": "1992-09-11",
+    "state": "Texas",
+    "city": "Amarillo",
+    "killed": 0,
+    "injured": 6,
+    "source": "stanford_msa",
+    "summary": "Palo Duro High School"
+  },
+  {
+    "id": "stanford-37",
+    "date": "1992-05-01",
+    "state": "California",
+    "city": "Olivehurst",
+    "killed": 4,
+    "injured": 10,
+    "source": "stanford_msa",
+    "summary": "Lindhurst High School"
+  },
+  {
+    "id": "stanford-36",
+    "date": "1991-11-14",
+    "state": "Michigan",
+    "city": "Royal Oak",
+    "killed": 4,
+    "injured": 5,
+    "source": "stanford_msa",
+    "summary": "Royal Oak Post Office"
+  },
+  {
+    "id": "stanford-33",
+    "date": "1991-11-01",
+    "state": "Iowa",
+    "city": "Iowa City",
+    "killed": 5,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "University of Iowa"
+  },
+  {
+    "id": "stanford-35",
+    "date": "1991-10-16",
+    "state": "Texas",
+    "city": "Killeen",
+    "killed": 23,
+    "injured": 20,
+    "source": "stanford_msa",
+    "summary": "Luby's Cafeteria in Killeen, Texas"
+  },
+  {
+    "id": "stanford-34",
+    "date": "1991-10-10",
+    "state": "New Jersey",
+    "city": "Ridgewood",
+    "killed": 3,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Ridgewood Post Office"
+  },
+  {
+    "id": "stanford-152",
+    "date": "1991-08-09",
+    "state": "Arizona",
+    "city": "Phoenix",
+    "killed": 9,
+    "injured": 0,
+    "source": "stanford_msa",
+    "summary": "Wat Promkunaram Buddhist Temple"
+  },
+  {
+    "id": "stanford-32",
+    "date": "1990-06-17",
+    "state": "Florida",
+    "city": "Jacksonville",
+    "killed": 11,
+    "injured": 6,
+    "source": "stanford_msa",
+    "summary": "GMAC Loan Office"
+  },
+  {
+    "id": "stanford-31",
+    "date": "1989-09-14",
+    "state": "Kentucky",
+    "city": "Louisville",
+    "killed": 8,
+    "injured": 12,
+    "source": "stanford_msa",
+    "summary": "Standard Gravure Corporation"
+  },
+  {
+    "id": "stanford-30",
+    "date": "1989-08-10",
+    "state": "California",
+    "city": "Escondido",
+    "killed": 3,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "Orange Glenn Post Office"
+  },
+  {
+    "id": "stanford-29",
+    "date": "1989-01-17",
+    "state": "California",
+    "city": "Stockton",
+    "killed": 5,
+    "injured": 30,
+    "source": "stanford_msa",
+    "summary": "Cleveland Elementary School"
+  },
+  {
+    "id": "stanford-28",
+    "date": "1988-12-14",
+    "state": "Louisiana",
+    "city": "New Orleans",
+    "killed": 0,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "New Orleans Downtown Post Office"
+  },
+  {
+    "id": "stanford-27",
+    "date": "1988-09-26",
+    "state": "South Carolina",
+    "city": "Greenwood",
+    "killed": 2,
+    "injured": 9,
+    "source": "stanford_msa",
+    "summary": "Oakland Elementary School"
+  },
+  {
+    "id": "stanford-26",
+    "date": "1988-09-22",
+    "state": "Illinois",
+    "city": "Chicago",
+    "killed": 3,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "Comet Auto Parts and Montefiore School"
+  },
+  {
+    "id": "stanford-25",
+    "date": "1988-05-20",
+    "state": "Illinois",
+    "city": "Winnetka",
+    "killed": 1,
+    "injured": 7,
+    "source": "stanford_msa",
+    "summary": "Hubbard Woods Elementary School"
+  },
+  {
+    "id": "stanford-24",
+    "date": "1988-02-16",
+    "state": "California",
+    "city": "Sunnyvale",
+    "killed": 7,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "Electromagnetic Systems Laboratory (ESL)"
+  },
+  {
+    "id": "stanford-23",
+    "date": "1988-02-11",
+    "state": "Florida",
+    "city": "Pinellas Park",
+    "killed": 1,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "Pinellas Park High School"
+  },
+  {
+    "id": "stanford-22",
+    "date": "1987-04-23",
+    "state": "Florida",
+    "city": "Palm Bay",
+    "killed": 4,
+    "injured": 14,
+    "source": "stanford_msa",
+    "summary": "Palm Bay Shopping Centers"
+  },
+  {
+    "id": "stanford-21",
+    "date": "1986-12-04",
+    "state": "Montana",
+    "city": "Lewistown",
+    "killed": 1,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Fergus County High School"
+  },
+  {
+    "id": "stanford-20",
+    "date": "1986-08-20",
+    "state": "Oklahoma",
+    "city": "Edmond",
+    "killed": 14,
+    "injured": 6,
+    "source": "stanford_msa",
+    "summary": "Post office in Edmond, Oklahoma"
+  },
+  {
+    "id": "stanford-19",
+    "date": "1986-08-12",
+    "state": "New York",
+    "city": "Brooklyn",
+    "killed": 1,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "New York Technical College"
+  },
+  {
+    "id": "stanford-18",
+    "date": "1985-03-06",
+    "state": "Georgia",
+    "city": "Atlanta",
+    "killed": 2,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "Atlanta Post Office"
+  },
+  {
+    "id": "stanford-17",
+    "date": "1985-01-21",
+    "state": "Kansas",
+    "city": "Goddard",
+    "killed": 1,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Goddard Junior High School"
+  },
+  {
+    "id": "stanford-16",
+    "date": "1984-07-18",
+    "state": "California",
+    "city": "San Ysidro",
+    "killed": 21,
+    "injured": 19,
+    "source": "stanford_msa",
+    "summary": "McDonald's restaurant in San Ysidro"
+  },
+  {
+    "id": "stanford-15",
+    "date": "1984-06-29",
+    "state": "Texas",
+    "city": "Dallas",
+    "killed": 6,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "Ianni's Club in Dallas"
+  },
+  {
+    "id": "stanford-14",
+    "date": "1984-02-24",
+    "state": "California",
+    "city": "Los Angeles",
+    "killed": 2,
+    "injured": 12,
+    "source": "stanford_msa",
+    "summary": "49th Street Elementary School"
+  },
+  {
+    "id": "stanford-13",
+    "date": "1983-08-19",
+    "state": "South Carolina",
+    "city": "Johnston",
+    "killed": 1,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Johnston Post Office"
+  },
+  {
+    "id": "stanford-12",
+    "date": "1983-02-18",
+    "state": "Washington",
+    "city": "Seattle",
+    "killed": 13,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "Wah Mee Club in Seattle"
+  },
+  {
+    "id": "stanford-11",
+    "date": "1982-08-20",
+    "state": "Florida",
+    "city": "Miami",
+    "killed": 8,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Welding shop in Miami"
+  },
+  {
+    "id": "stanford-10",
+    "date": "1982-03-19",
+    "state": "Nevada",
+    "city": "Las Vegas",
+    "killed": 1,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "Valley High School"
+  },
+  {
+    "id": "stanford-9",
+    "date": "1979-10-06",
+    "state": "South Carolina",
+    "city": "Columbia",
+    "killed": 2,
+    "injured": 5,
+    "source": "stanford_msa",
+    "summary": "University of South Carolina"
+  },
+  {
+    "id": "stanford-8",
+    "date": "1979-01-29",
+    "state": "California",
+    "city": "San Diego",
+    "killed": 2,
+    "injured": 8,
+    "source": "stanford_msa",
+    "summary": "Grover Cleveland Elementary School"
+  },
+  {
+    "id": "stanford-7",
+    "date": "1976-07-12",
+    "state": "California",
+    "city": "Fullerton",
+    "killed": 7,
+    "injured": 2,
+    "source": "stanford_msa",
+    "summary": "Cal State Fullerton"
+  },
+  {
+    "id": "stanford-6",
+    "date": "1976-02-19",
+    "state": "California",
+    "city": "Los Angeles",
+    "killed": 1,
+    "injured": 6,
+    "source": "stanford_msa",
+    "summary": "Los Angeles Computer Learning Center"
+  },
+  {
+    "id": "stanford-5",
+    "date": "1974-12-30",
+    "state": "New York",
+    "city": "Olean",
+    "killed": 3,
+    "injured": 7,
+    "source": "stanford_msa",
+    "summary": "Olean High School"
+  },
+  {
+    "id": "stanford-4",
+    "date": "1974-01-17",
+    "state": "Illinois",
+    "city": "Chicago",
+    "killed": 1,
+    "injured": 3,
+    "source": "stanford_msa",
+    "summary": "Clara Barton Elementary School"
+  },
+  {
+    "id": "stanford-3",
+    "date": "1972-12-31",
+    "state": "Louisiana",
+    "city": "New Orleans",
+    "killed": 4,
+    "injured": 8,
+    "source": "stanford_msa",
+    "summary": "New Orleans Police Shootings"
+  },
+  {
+    "id": "stanford-151",
+    "date": "1971-11-11",
+    "state": "Washington",
+    "city": "Spokane",
+    "killed": 1,
+    "injured": 4,
+    "source": "stanford_msa",
+    "summary": "St. Aloysius Church"
+  },
+  {
+    "id": "stanford-2",
+    "date": "1966-11-12",
+    "state": "Arizona",
+    "city": "Mesa",
+    "killed": 5,
+    "injured": 1,
+    "source": "stanford_msa",
+    "summary": "Rose-Mar College of Beauty"
+  },
+  {
+    "id": "stanford-1",
+    "date": "1966-08-01",
+    "state": "Texas",
+    "city": "Austin",
+    "killed": 15,
+    "injured": 32,
+    "source": "stanford_msa",
+    "summary": "University of Texas at Austin"
+  }
+]

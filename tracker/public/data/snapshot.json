@@ -1,0 +1,2658 @@
+{
+  "generated_at": "2026-08-06T17:00:09.334Z",
+  "window_days": 365,
+  "totals_by_source": [
+    {
+      "source": "gva",
+      "incidents": 25,
+      "killed": 24,
+      "injured": 108,
+      "latest_incident_date": "2026-08-04",
+      "stale_since": "2026-08-06T17:00:09.334Z"
+    },
+    {
+      "source": "mother_jones",
+      "incidents": 0,
+      "killed": 0,
+      "injured": 0,
+      "latest_incident_date": null
+    },
+    {
+      "source": "stanford_msa",
+      "incidents": 0,
+      "killed": 0,
+      "injured": 0,
+      "latest_incident_date": null
+    },
+    {
+      "source": "violence_project",
+      "incidents": 0,
+      "killed": 0,
+      "injured": 0,
+      "latest_incident_date": null
+    }
+  ],
+  "states": [
+    {
+      "state": "Alabama",
+      "code": "AL",
+      "population": 5223121,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 1,
+          "killed": 1,
+          "injured": 4,
+          "per_100k": 0.01914564108317613
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "Alaska",
+      "code": "AK",
+      "population": 738003,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "Arizona",
+      "code": "AZ",
+      "population": 7691212,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "Arkansas",
+      "code": "AR",
+      "population": 3133502,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "California",
+      "code": "CA",
+      "population": 39345844,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 2,
+          "killed": 1,
+          "injured": 10,
+          "per_100k": 0.005083128983076332
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "Colorado",
+      "code": "CO",
+      "population": 6036620,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "Connecticut",
+      "code": "CT",
+      "population": 3702543,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "Delaware",
+      "code": "DE",
+      "population": 1069781,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "Florida",
+      "code": "FL",
+      "population": 23659198,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 3,
+          "killed": 1,
+          "injured": 11,
+          "per_100k": 0.012680057878546857
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "Georgia",
+      "code": "GA",
+      "population": 11401288,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 1,
+          "killed": 0,
+          "injured": 4,
+          "per_100k": 0.008770938862346079
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "Hawaii",
+      "code": "HI",
+      "population": 1430688,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "Idaho",
+      "code": "ID",
+      "population": 2058594,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 1,
+          "killed": 3,
+          "injured": 8,
+          "per_100k": 0.04857684419560147
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "Illinois",
+      "code": "IL",
+      "population": 12735249,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 1,
+          "killed": 0,
+          "injured": 6,
+          "per_100k": 0.007852221813644946
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "Indiana",
+      "code": "IN",
+      "population": 7011912,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "Iowa",
+      "code": "IA",
+      "population": 3246320,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "Kansas",
+      "code": "KS",
+      "population": 2989188,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "Kentucky",
+      "code": "KY",
+      "population": 4629682,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "Louisiana",
+      "code": "LA",
+      "population": 4621500,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 1,
+          "killed": 0,
+          "injured": 4,
+          "per_100k": 0.021637996321540627
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "Maine",
+      "code": "ME",
+      "population": 1421310,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "Maryland",
+      "code": "MD",
+      "population": 6285380,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "Massachusetts",
+      "code": "MA",
+      "population": 7169608,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 1,
+          "killed": 1,
+          "injured": 4,
+          "per_100k": 0.013947763950274548
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "Michigan",
+      "code": "MI",
+      "population": 10155806,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 3,
+          "killed": 9,
+          "injured": 7,
+          "per_100k": 0.029539752925567896
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "Minnesota",
+      "code": "MN",
+      "population": 5863405,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "Mississippi",
+      "code": "MS",
+      "population": 2958148,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "Missouri",
+      "code": "MO",
+      "population": 6297538,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "Montana",
+      "code": "MT",
+      "population": 1151831,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "Nebraska",
+      "code": "NE",
+      "population": 2030421,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "Nevada",
+      "code": "NV",
+      "population": 3310833,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "New Hampshire",
+      "code": "NH",
+      "population": 1422166,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "New Jersey",
+      "code": "NJ",
+      "population": 9590076,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "New Mexico",
+      "code": "NM",
+      "population": 2124222,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "New York",
+      "code": "NY",
+      "population": 20003435,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 2,
+          "killed": 2,
+          "injured": 9,
+          "per_100k": 0.00999828279492997
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "North Carolina",
+      "code": "NC",
+      "population": 11343875,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 3,
+          "killed": 2,
+          "injured": 15,
+          "per_100k": 0.026445989575872443
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "North Dakota",
+      "code": "ND",
+      "population": 805329,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "Ohio",
+      "code": "OH",
+      "population": 11940399,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 1,
+          "killed": 0,
+          "injured": 5,
+          "per_100k": 0.008374929514499474
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "Oklahoma",
+      "code": "OK",
+      "population": 4148818,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "Oregon",
+      "code": "OR",
+      "population": 4281848,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 1,
+          "killed": 1,
+          "injured": 5,
+          "per_100k": 0.02335440211796402
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "Pennsylvania",
+      "code": "PA",
+      "population": 13073016,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "Rhode Island",
+      "code": "RI",
+      "population": 1118627,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "South Carolina",
+      "code": "SC",
+      "population": 5650232,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 1,
+          "killed": 1,
+          "injured": 3,
+          "per_100k": 0.017698388313966577
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "South Dakota",
+      "code": "SD",
+      "population": 943078,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "Tennessee",
+      "code": "TN",
+      "population": 7378861,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 1,
+          "killed": 0,
+          "injured": 4,
+          "per_100k": 0.013552227098464112
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "Texas",
+      "code": "TX",
+      "population": 32101064,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "Utah",
+      "code": "UT",
+      "population": 3574825,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "Vermont",
+      "code": "VT",
+      "population": 642805,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "Virginia",
+      "code": "VA",
+      "population": 8940572,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 1,
+          "killed": 0,
+          "injured": 4,
+          "per_100k": 0.011184966688932206
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "Washington",
+      "code": "WA",
+      "population": 8074082,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 1,
+          "killed": 2,
+          "injured": 5,
+          "per_100k": 0.012385308942861863
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "West Virginia",
+      "code": "WV",
+      "population": 1764892,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "Wisconsin",
+      "code": "WI",
+      "population": 5988406,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    },
+    {
+      "state": "Wyoming",
+      "code": "WY",
+      "population": 590784,
+      "counts_by_source": {
+        "gva": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "mother_jones": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "stanford_msa": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        },
+        "violence_project": {
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
+        }
+      }
+    }
+  ],
+  "recent_incidents": [
+    {
+      "id": "gva-2026-08-04-florida-pensacola",
+      "date": "2026-08-04",
+      "state": "Florida",
+      "city": "Pensacola",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-08-03-north-carolina-raleigh",
+      "date": "2026-08-03",
+      "state": "North Carolina",
+      "city": "Raleigh",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-08-03-virginia-norfolk",
+      "date": "2026-08-03",
+      "state": "Virginia",
+      "city": "Norfolk",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-08-03-michigan-oak-park",
+      "date": "2026-08-03",
+      "state": "Michigan",
+      "city": "Oak Park",
+      "killed": 2,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-08-03-massachusetts-boston",
+      "date": "2026-08-03",
+      "state": "Massachusetts",
+      "city": "Boston",
+      "killed": 1,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-08-02-new-york-rochester",
+      "date": "2026-08-02",
+      "state": "New York",
+      "city": "Rochester",
+      "killed": 1,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-08-02-north-carolina-greensboro",
+      "date": "2026-08-02",
+      "state": "North Carolina",
+      "city": "Greensboro",
+      "killed": 0,
+      "injured": 9,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-08-02-new-york-yonkers",
+      "date": "2026-08-02",
+      "state": "New York",
+      "city": "Yonkers",
+      "killed": 1,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-08-02-alabama-huntsville",
+      "date": "2026-08-02",
+      "state": "Alabama",
+      "city": "Huntsville",
+      "killed": 1,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-08-02-north-carolina-dunn",
+      "date": "2026-08-02",
+      "state": "North Carolina",
+      "city": "Dunn",
+      "killed": 2,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-08-02-oregon-portland",
+      "date": "2026-08-02",
+      "state": "Oregon",
+      "city": "Portland",
+      "killed": 1,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-08-01-florida-jacksonville",
+      "date": "2026-08-01",
+      "state": "Florida",
+      "city": "Jacksonville",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-08-01-idaho-twin-falls",
+      "date": "2026-08-01",
+      "state": "Idaho",
+      "city": "Twin Falls",
+      "killed": 3,
+      "injured": 8,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-30-ohio-dayton",
+      "date": "2026-07-30",
+      "state": "Ohio",
+      "city": "Dayton",
+      "killed": 0,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-27-florida-jacksonville",
+      "date": "2026-07-27",
+      "state": "Florida",
+      "city": "Jacksonville",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-26-washington-seattle",
+      "date": "2026-07-26",
+      "state": "Washington",
+      "city": "Seattle",
+      "killed": 2,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-26-tennessee-memphis",
+      "date": "2026-07-26",
+      "state": "Tennessee",
+      "city": "Memphis",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-26-illinois-chicago",
+      "date": "2026-07-26",
+      "state": "Illinois",
+      "city": "Chicago",
+      "killed": 0,
+      "injured": 6,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-26-michigan-grand-haven",
+      "date": "2026-07-26",
+      "state": "Michigan",
+      "city": "Grand Haven",
+      "killed": 0,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-25-south-carolina-north-charleston",
+      "date": "2026-07-25",
+      "state": "South Carolina",
+      "city": "North Charleston",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-25-louisiana-saint-martinville",
+      "date": "2026-07-25",
+      "state": "Louisiana",
+      "city": "Saint Martinville",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-25-california-morgan-hill",
+      "date": "2026-07-25",
+      "state": "California",
+      "city": "Morgan Hill",
+      "killed": 1,
+      "injured": 6,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-25-california-san-francisco",
+      "date": "2026-07-25",
+      "state": "California",
+      "city": "San Francisco",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-24-michigan-grand-haven",
+      "date": "2026-07-24",
+      "state": "Michigan",
+      "city": "Grand Haven",
+      "killed": 7,
+      "injured": 0,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-22-georgia-atlanta",
+      "date": "2026-07-22",
+      "state": "Georgia",
+      "city": "Atlanta",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "stanford-344",
+      "date": "2016-06-26",
+      "state": "South Carolina",
+      "city": "Lyman",
+      "killed": 0,
+      "injured": 3,
+      "source": "stanford_msa",
+      "summary": "Nightclub Disput"
+    },
+    {
+      "id": "stanford-343",
+      "date": "2016-06-12",
+      "state": "Florida",
+      "city": "Orlando",
+      "killed": 49,
+      "injured": 52,
+      "source": "stanford_msa",
+      "summary": "Orlando Nightclub Massacre"
+    },
+    {
+      "id": "stanford-342",
+      "date": "2016-06-11",
+      "state": "Minnesota",
+      "city": "Webster",
+      "killed": 0,
+      "injured": 4,
+      "source": "stanford_msa",
+      "summary": "Webster, MN party shooting"
+    },
+    {
+      "id": "stanford-341",
+      "date": "2016-06-07",
+      "state": "Florida",
+      "city": "Cape Coral",
+      "killed": 2,
+      "injured": 3,
+      "source": "stanford_msa",
+      "summary": "Cape Coral Shooting Spree"
+    },
+    {
+      "id": "stanford-340",
+      "date": "2016-05-31",
+      "state": "Indiana",
+      "city": "Fort Wayne",
+      "killed": 0,
+      "injured": 4,
+      "source": "stanford_msa",
+      "summary": "Fort Warne drive by"
+    },
+    {
+      "id": "stanford-338",
+      "date": "2016-05-29",
+      "state": "Nevada",
+      "city": "Las Vegas",
+      "killed": 0,
+      "injured": 4,
+      "source": "stanford_msa",
+      "summary": "Las Vegas sidewalk shooting"
+    },
+    {
+      "id": "stanford-339",
+      "date": "2016-05-29",
+      "state": "Texas",
+      "city": "Houston",
+      "killed": 1,
+      "injured": 4,
+      "source": "stanford_msa",
+      "summary": "Army vet shooting in Houston"
+    },
+    {
+      "id": "stanford-337",
+      "date": "2016-05-25",
+      "state": "New York",
+      "city": "New York City",
+      "killed": 1,
+      "injured": 2,
+      "source": "stanford_msa",
+      "summary": "NYC Concert shooting"
+    },
+    {
+      "id": "stanford-336",
+      "date": "2016-05-21",
+      "state": "California",
+      "city": "Stockton",
+      "killed": 1,
+      "injured": 3,
+      "source": "stanford_msa",
+      "summary": "Stockton, CA murder"
+    },
+    {
+      "id": "stanford-335",
+      "date": "2016-05-18",
+      "state": "Georgia",
+      "city": "Jackson",
+      "killed": 1,
+      "injured": 3,
+      "source": "stanford_msa",
+      "summary": "Graduation party drive by"
+    },
+    {
+      "id": "stanford-334",
+      "date": "2016-05-17",
+      "state": "South Carolina",
+      "city": "Ravenel",
+      "killed": 3,
+      "injured": 1,
+      "source": "stanford_msa",
+      "summary": "Trailer park triple homocide in South Carolina"
+    },
+    {
+      "id": "stanford-333",
+      "date": "2016-05-15",
+      "state": "Georgia",
+      "city": "Moultrie",
+      "killed": 5,
+      "injured": 0,
+      "source": "stanford_msa",
+      "summary": "Friend murder and fire coverup in Moultrie, GA"
+    },
+    {
+      "id": "stanford-332",
+      "date": "2016-05-14",
+      "state": "Arizona",
+      "city": "Phoenix",
+      "killed": 1,
+      "injured": 0,
+      "source": "stanford_msa",
+      "summary": "Phoenix girlfriend murder and cop shootout"
+    },
+    {
+      "id": "stanford-331",
+      "date": "2016-05-12",
+      "state": "Illinois",
+      "city": "Chicago",
+      "killed": 3,
+      "injured": 0,
+      "source": "stanford_msa",
+      "summary": "Chicago Family Murder Suicide"
+    },
+    {
+      "id": "stanford-329",
+      "date": "2016-05-11",
+      "state": "Alabama",
+      "city": "Birmingham",
+      "killed": 1,
+      "injured": 4,
+      "source": "stanford_msa",
+      "summary": "Birmingham Domestic Dispute Murder"
+    },
+    {
+      "id": "stanford-330",
+      "date": "2016-05-11",
+      "state": "Illinois",
+      "city": "Chicago",
+      "killed": 0,
+      "injured": 5,
+      "source": "stanford_msa",
+      "summary": "Chicago bus stop ambush"
+    },
+    {
+      "id": "stanford-328",
+      "date": "2016-05-08",
+      "state": "Texas",
+      "city": "Austin",
+      "killed": 1,
+      "injured": 3,
+      "source": "stanford_msa",
+      "summary": "Austin Taco truck murder"
+    },
+    {
+      "id": "stanford-325",
+      "date": "2016-05-06",
+      "state": "Maryland",
+      "city": "Bethesda",
+      "killed": 3,
+      "injured": 3,
+      "source": "stanford_msa",
+      "summary": "Federal Security Officer has day shooting rampage near Washington DC"
+    },
+    {
+      "id": "stanford-326",
+      "date": "2016-05-06",
+      "state": "Alabama",
+      "city": "Montgomery",
+      "killed": 1,
+      "injured": 3,
+      "source": "stanford_msa",
+      "summary": "Montgomery, Alabama street shooting"
+    },
+    {
+      "id": "stanford-327",
+      "date": "2016-05-06",
+      "state": "Michigan",
+      "city": "Detroit",
+      "killed": 1,
+      "injured": 4,
+      "source": "stanford_msa",
+      "summary": "Detroit street shooting"
+    },
+    {
+      "id": "stanford-323",
+      "date": "2016-05-05",
+      "state": "Louisiana",
+      "city": "Shreveport",
+      "killed": 2,
+      "injured": 6,
+      "source": "stanford_msa",
+      "summary": "Card game ambush in Shreveport, Louisiana"
+    },
+    {
+      "id": "stanford-324",
+      "date": "2016-05-05",
+      "state": "Florida",
+      "city": "Allapattah",
+      "killed": 1,
+      "injured": 3,
+      "source": "stanford_msa",
+      "summary": "Allapattah, Florida street shooting"
+    },
+    {
+      "id": "stanford-322",
+      "date": "2016-05-04",
+      "state": "Texas",
+      "city": "Katy",
+      "killed": 1,
+      "injured": 2,
+      "source": "stanford_msa",
+      "summary": "Katy, Texas work retaliation murder"
+    },
+    {
+      "id": "stanford-321",
+      "date": "2016-05-03",
+      "state": "Florida",
+      "city": "Green Cove Springs",
+      "killed": 3,
+      "injured": 0,
+      "source": "stanford_msa",
+      "summary": "Florida Ex-wife, ex-girlfriend murder"
+    },
+    {
+      "id": "stanford-320",
+      "date": "2016-05-01",
+      "state": "Tennessee",
+      "city": "Murfreesboro",
+      "killed": 5,
+      "injured": 0,
+      "source": "stanford_msa",
+      "summary": "Murfreesboro, TN party shooting"
+    },
+    {
+      "id": "stanford-316",
+      "date": "2016-04-29",
+      "state": "Missouri",
+      "city": "Ferguson",
+      "killed": 0,
+      "injured": 4,
+      "source": "stanford_msa",
+      "summary": "Ferguson, MO Drive by"
+    },
+    {
+      "id": "stanford-315",
+      "date": "2016-04-26",
+      "state": "Maryland",
+      "city": "Forestville",
+      "killed": 1,
+      "injured": 4,
+      "source": "stanford_msa",
+      "summary": "Forestville, Maryland Drive-by"
+    },
+    {
+      "id": "stanford-319",
+      "date": "2016-04-25",
+      "state": "Tennessee",
+      "city": "Nashville",
+      "killed": 0,
+      "injured": 4,
+      "source": "stanford_msa",
+      "summary": "Nashville Music City Central shooting"
+    },
+    {
+      "id": "stanford-314",
+      "date": "2016-04-24",
+      "state": "Virginia",
+      "city": "Halifax",
+      "killed": 0,
+      "injured": 6,
+      "source": "stanford_msa",
+      "summary": "Halifax County, VA"
+    },
+    {
+      "id": "stanford-318",
+      "date": "2016-04-23",
+      "state": "Alabama",
+      "city": "Auburn",
+      "killed": 3,
+      "injured": 1,
+      "source": "stanford_msa",
+      "summary": "Auburn, AL club shootout"
+    },
+    {
+      "id": "stanford-317",
+      "date": "2016-04-22",
+      "state": "Georgia",
+      "city": "Appling",
+      "killed": 5,
+      "injured": 0,
+      "source": "stanford_msa",
+      "summary": "Appling, GA family murder"
+    },
+    {
+      "id": "stanford-313",
+      "date": "2016-04-21",
+      "state": "Maryland",
+      "city": "Baltimore",
+      "killed": 0,
+      "injured": 4,
+      "source": "stanford_msa",
+      "summary": "Tire-Slashing revenge escalation"
+    },
+    {
+      "id": "stanford-310",
+      "date": "2016-04-19",
+      "state": "Illinois",
+      "city": "Chicago",
+      "killed": 1,
+      "injured": 4,
+      "source": "stanford_msa",
+      "summary": "Chicago Rap video Shootout"
+    },
+    {
+      "id": "stanford-311",
+      "date": "2016-04-19",
+      "state": "Texas",
+      "city": "Katy",
+      "killed": 4,
+      "injured": 0,
+      "source": "stanford_msa",
+      "summary": "Texas family murder-suicide"
+    },
+    {
+      "id": "stanford-312",
+      "date": "2016-04-19",
+      "state": "Alabama",
+      "city": "Brooksville",
+      "killed": 0,
+      "injured": 4,
+      "source": "stanford_msa",
+      "summary": "Alabama highway random shooting"
+    },
+    {
+      "id": "stanford-309",
+      "date": "2016-04-18",
+      "state": "California",
+      "city": "Long Beach",
+      "killed": 1,
+      "injured": 3,
+      "source": "stanford_msa",
+      "summary": "Long Beach Street murder"
+    },
+    {
+      "id": "stanford-307",
+      "date": "2016-04-09",
+      "state": "New Mexico",
+      "city": "Albuquerque",
+      "killed": 0,
+      "injured": 4,
+      "source": "stanford_msa",
+      "summary": "Albuquerque, NM House party shooting"
+    },
+    {
+      "id": "stanford-308",
+      "date": "2016-04-09",
+      "state": "Tennessee",
+      "city": "Memphis",
+      "killed": 0,
+      "injured": 4,
+      "source": "stanford_msa",
+      "summary": "Memphis, TN gas station shooting"
+    },
+    {
+      "id": "stanford-306",
+      "date": "2016-04-07",
+      "state": "Illinois",
+      "city": "Chicago",
+      "killed": 0,
+      "injured": 5,
+      "source": "stanford_msa",
+      "summary": "Chicago Birthday Party Bus Shooting"
+    },
+    {
+      "id": "stanford-305",
+      "date": "2016-04-01",
+      "state": "New Mexico",
+      "city": "Albuquerque",
+      "killed": 2,
+      "injured": 1,
+      "source": "stanford_msa",
+      "summary": "Albuquerque, NM Family restaurant shooting"
+    },
+    {
+      "id": "stanford-263",
+      "date": "2016-03-31",
+      "state": "Virginia",
+      "city": "Richmond",
+      "killed": 1,
+      "injured": 2,
+      "source": "stanford_msa",
+      "summary": "Richmond, Virginia"
+    },
+    {
+      "id": "stanford-262",
+      "date": "2016-03-26",
+      "state": "North Carolina",
+      "city": "Louisburg",
+      "killed": 3,
+      "injured": 0,
+      "source": "stanford_msa",
+      "summary": "Louisburg, North Carolina"
+    },
+    {
+      "id": "stanford-261",
+      "date": "2016-03-25",
+      "state": "Tennessee",
+      "city": "Lawrenceburg",
+      "killed": 1,
+      "injured": 2,
+      "source": "stanford_msa",
+      "summary": "Lawrenceburg, Tennessee"
+    },
+    {
+      "id": "stanford-304",
+      "date": "2016-03-25",
+      "state": "Alabama",
+      "city": "Greenhill",
+      "killed": 1,
+      "injured": 2,
+      "source": "stanford_msa",
+      "summary": "Greenhill, AL Family murder-suicide"
+    },
+    {
+      "id": "stanford-260",
+      "date": "2016-03-21",
+      "state": "Texas",
+      "city": "Sherman",
+      "killed": 3,
+      "injured": 0,
+      "source": "stanford_msa",
+      "summary": "Sherman, Texas"
+    },
+    {
+      "id": "stanford-303",
+      "date": "2016-03-21",
+      "state": "Texas",
+      "city": "Sherman",
+      "killed": 3,
+      "injured": 0,
+      "source": "stanford_msa",
+      "summary": "Sherman, TX Family murder-suicide"
+    },
+    {
+      "id": "stanford-259",
+      "date": "2016-03-20",
+      "state": "Kentucky",
+      "city": "Louisville",
+      "killed": 3,
+      "injured": 0,
+      "source": "stanford_msa",
+      "summary": "Louisville, Kentucky"
+    },
+    {
+      "id": "stanford-302",
+      "date": "2016-03-20",
+      "state": "Kentucky",
+      "city": "Louisville",
+      "killed": 3,
+      "injured": 0,
+      "source": "stanford_msa",
+      "summary": "Louisville, KY Family Murder-Suicide"
+    },
+    {
+      "id": "stanford-258",
+      "date": "2016-03-19",
+      "state": "Florida",
+      "city": "Plantation",
+      "killed": 1,
+      "injured": 4,
+      "source": "stanford_msa",
+      "summary": "Plantation, Florida"
+    },
+    {
+      "id": "stanford-300",
+      "date": "2016-03-19",
+      "state": "Alabama",
+      "city": "Wetumpka",
+      "killed": 2,
+      "injured": 2,
+      "source": "stanford_msa",
+      "summary": "Wetumpka Drive-by"
+    },
+    {
+      "id": "stanford-301",
+      "date": "2016-03-19",
+      "state": "Florida",
+      "city": "Plantation",
+      "killed": 1,
+      "injured": 4,
+      "source": "stanford_msa",
+      "summary": "Spring Break Party shooting"
+    },
+    {
+      "id": "stanford-299",
+      "date": "2016-03-15",
+      "state": "Georgia",
+      "city": "Atlanta",
+      "killed": 0,
+      "injured": 4,
+      "source": "stanford_msa",
+      "summary": "Atlanta Nightclub shooting"
+    },
+    {
+      "id": "stanford-298",
+      "date": "2016-03-13",
+      "state": "Florida",
+      "city": "Fort Myers",
+      "killed": 0,
+      "injured": 4,
+      "source": "stanford_msa",
+      "summary": "Florida Family celebration ends in shooting"
+    },
+    {
+      "id": "stanford-297",
+      "date": "2016-03-12",
+      "state": "Georgia",
+      "city": "Elberton",
+      "killed": 1,
+      "injured": 2,
+      "source": "stanford_msa",
+      "summary": "Elberton, Georgia murder-suicide"
+    },
+    {
+      "id": "stanford-295",
+      "date": "2016-03-11",
+      "state": "New Jersey",
+      "city": "Trenton",
+      "killed": 0,
+      "injured": 5,
+      "source": "stanford_msa",
+      "summary": "Trenton, NJ sidewalk shooting"
+    },
+    {
+      "id": "stanford-296",
+      "date": "2016-03-11",
+      "state": "Michigan",
+      "city": "Detroit",
+      "killed": 2,
+      "injured": 2,
+      "source": "stanford_msa",
+      "summary": "Detroit Drive-by"
+    },
+    {
+      "id": "stanford-257",
+      "date": "2016-03-09",
+      "state": "Pennsylvania",
+      "city": "Pittsburgh",
+      "killed": 6,
+      "injured": 3,
+      "source": "stanford_msa",
+      "summary": "Pittsburgh, Pennsylvania"
+    },
+    {
+      "id": "stanford-294",
+      "date": "2016-03-09",
+      "state": "Pennsylvania",
+      "city": "Wilkinsburg",
+      "killed": 5,
+      "injured": 3,
+      "source": "stanford_msa",
+      "summary": "Wilkinsburg BBQ cookout shootout"
+    },
+    {
+      "id": "stanford-256",
+      "date": "2016-03-07",
+      "state": "Kansas",
+      "city": "Kansas City",
+      "killed": 5,
+      "injured": 0,
+      "source": "stanford_msa",
+      "summary": "Kansas City, Kansas"
+    },
+    {
+      "id": "stanford-292",
+      "date": "2016-03-07",
+      "state": "Louisiana",
+      "city": "Lafayette",
+      "killed": 0,
+      "injured": 4,
+      "source": "stanford_msa",
+      "summary": "Lafayette, LA drive by"
+    },
+    {
+      "id": "stanford-293",
+      "date": "2016-03-07",
+      "state": "Kansas",
+      "city": "Kansas City",
+      "killed": 4,
+      "injured": 0,
+      "source": "stanford_msa",
+      "summary": "Kansas City Home Invasion"
+    },
+    {
+      "id": "stanford-255",
+      "date": "2016-03-06",
+      "state": "Massachusetts",
+      "city": "Chelsea",
+      "killed": 1,
+      "injured": 6,
+      "source": "stanford_msa",
+      "summary": "Chelsea, Massachusetts"
+    },
+    {
+      "id": "stanford-290",
+      "date": "2016-03-06",
+      "state": "Massachusetts",
+      "city": "Chelsea",
+      "killed": 1,
+      "injured": 6,
+      "source": "stanford_msa",
+      "summary": "Chelsea, MA empty apartment party shooting"
+    },
+    {
+      "id": "stanford-291",
+      "date": "2016-03-06",
+      "state": "Georgia",
+      "city": "Roswell",
+      "killed": 0,
+      "injured": 4,
+      "source": "stanford_msa",
+      "summary": "Roswell, GA Hookah shootout"
+    },
+    {
+      "id": "stanford-289",
+      "date": "2016-03-05",
+      "state": "Kansas",
+      "city": "Wichita",
+      "killed": 0,
+      "injured": 4,
+      "source": "stanford_msa",
+      "summary": "Wichita Nightclub shooting"
+    },
+    {
+      "id": "stanford-287",
+      "date": "2016-02-28",
+      "state": "Michigan",
+      "city": "Detroit",
+      "killed": 0,
+      "injured": 5,
+      "source": "stanford_msa",
+      "summary": "Detroit Strip Club Shootout"
+    },
+    {
+      "id": "stanford-288",
+      "date": "2016-02-28",
+      "state": "California",
+      "city": "Jurupa Valley",
+      "killed": 1,
+      "injured": 3,
+      "source": "stanford_msa",
+      "summary": "Riverside restaurant shooting"
+    },
+    {
+      "id": "stanford-254",
+      "date": "2016-02-27",
+      "state": "Virginia",
+      "city": "Woodbridge",
+      "killed": 1,
+      "injured": 0,
+      "source": "stanford_msa",
+      "summary": "Woodbridge, Virginia"
+    },
+    {
+      "id": "stanford-253",
+      "date": "2016-02-26",
+      "state": "Washington",
+      "city": "Belfair",
+      "killed": 4,
+      "injured": 0,
+      "source": "stanford_msa",
+      "summary": "Belfair, Washington"
+    },
+    {
+      "id": "stanford-252",
+      "date": "2016-02-25",
+      "state": "Kansas",
+      "city": "Hesston",
+      "killed": 3,
+      "injured": 14,
+      "source": "stanford_msa",
+      "summary": "Hesston, Kansas"
+    },
+    {
+      "id": "stanford-286",
+      "date": "2016-02-25",
+      "state": "Washington",
+      "city": "Belfair",
+      "killed": 4,
+      "injured": 0,
+      "source": "stanford_msa",
+      "summary": "Belfair, WA Family murder-suicide"
+    },
+    {
+      "id": "stanford-251",
+      "date": "2016-02-23",
+      "state": "Arizona",
+      "city": "Glendale",
+      "killed": 4,
+      "injured": 0,
+      "source": "stanford_msa",
+      "summary": "Glendale, Arizona"
+    },
+    {
+      "id": "stanford-285",
+      "date": "2016-02-23",
+      "state": "Arizona",
+      "city": "Phoenix",
+      "killed": 4,
+      "injured": 0,
+      "source": "stanford_msa",
+      "summary": "Arizona Family Murder"
+    },
+    {
+      "id": "stanford-283",
+      "date": "2016-02-21",
+      "state": "Missouri",
+      "city": "Hazelwood",
+      "killed": 1,
+      "injured": 3,
+      "source": "stanford_msa",
+      "summary": "Missouri Highway shooting"
+    },
+    {
+      "id": "stanford-284",
+      "date": "2016-02-21",
+      "state": "Texas",
+      "city": "Houston",
+      "killed": 0,
+      "injured": 5,
+      "source": "stanford_msa",
+      "summary": "Houston Drive-by"
+    }
+  ],
+  "model": {
+    "fitted_at": "2026-08-06T15:44:57.180897+00:00",
+    "n_states": 50,
+    "outcome": "firearm_mortality_rate",
+    "ols": {
+      "r_squared": 0.7493426623317482,
+      "adj_r_squared": 0.7143672198664107,
+      "coefficients": [
+        {
+          "name": "gun_reg_pct",
+          "coef": 56.0329774945417,
+          "std_err": 28.73451413574428,
+          "p_value": 0.05117331953018066,
+          "ci_low": -0.2856353247741694,
+          "ci_high": 112.35159031385757
+        },
+        {
+          "name": "poverty_rate",
+          "coef": 1.5878054006611602,
+          "std_err": 0.40826355843680995,
+          "p_value": 0.00010058863977825376,
+          "ci_low": 0.787623529924849,
+          "ci_high": 2.3879872713974715
+        },
+        {
+          "name": "median_household_income",
+          "coef": 0.00005984116718147172,
+          "std_err": 0.00018663485507405735,
+          "p_value": 0.7484890394507722,
+          "ci_low": -0.00030595642702353326,
+          "ci_high": 0.0004256387613864767
+        },
+        {
+          "name": "credit_score",
+          "coef": 0.04075641267844077,
+          "std_err": 0.04386061613256106,
+          "p_value": 0.3527721200192152,
+          "ci_low": -0.04520881528111538,
+          "ci_high": 0.1267216406379969
+        },
+        {
+          "name": "pop_density",
+          "coef": -0.008311612516343284,
+          "std_err": 0.0030646079939234934,
+          "p_value": 0.006685255048511221,
+          "ci_low": -0.014318133811166875,
+          "ci_high": -0.002305091221519692
+        },
+        {
+          "name": "gov_party_rep",
+          "coef": 2.684489327434366,
+          "std_err": 1.0879751031674838,
+          "p_value": 0.013609139661759313,
+          "ci_low": 0.5520973091498482,
+          "ci_high": 4.816881345718883
+        }
+      ]
+    },
+    "random_forest": {
+      "loo_cv_r_squared": 0.4372304934936512,
+      "permutation_importance": [
+        {
+          "feature": "median_household_income",
+          "importance_mean": 0.5283134884568607,
+          "importance_std": 0.10467349816227184
+        },
+        {
+          "feature": "pop_density",
+          "importance_mean": 0.21466439648906285,
+          "importance_std": 0.050535400163358786
+        },
+        {
+          "feature": "gun_reg_pct",
+          "importance_mean": 0.11699407219275176,
+          "importance_std": 0.03646223886954992
+        },
+        {
+          "feature": "poverty_rate",
+          "importance_mean": 0.06421092780121404,
+          "importance_std": 0.01424068048984965
+        },
+        {
+          "feature": "credit_score",
+          "importance_mean": 0.01943862622523335,
+          "importance_std": 0.004545762156649642
+        },
+        {
+          "feature": "gov_party_rep",
+          "importance_mean": 0.005595944638075099,
+          "importance_std": 0.0021444297248775666
+        }
+      ]
+    }
+  }
+}

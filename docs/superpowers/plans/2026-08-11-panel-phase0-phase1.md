@@ -760,25 +760,80 @@ Note the anchor row order is preserved rather than sorted. The keyless sheets ar
 Run: `cd analysis && source .venv/bin/activate && python -m pytest tests/test_workbook_join.py -v`
 Expected: PASS (3 tests)
 
-- [ ] **Step 6: Verify the real workbook still builds an identical dataset**
+- [ ] **Step 5a: Handle the credit-score sheet's missing state**
 
-The refactor must not change any value. Save a copy of the current output, rebuild, and diff:
+**Added after investigation.** The `Average Credit Score ` sheet has a usable state key, but its state set does not match the anchor: it contains `District of Columbia` (which this project excludes) and **omits South Carolina entirely**. Under the old positional read, inserting DC at row 8 and dropping South Carolina shifted every state alphabetically between Florida and South Carolina by one row.
+
+This is not hypothetical — it is live in the committed dataset. Verified against externally known 2020 values:
+
+| | Highest score | Lowest score |
+|---|---|---|
+| Committed CSV (positional) | Mississippi 739 | Missouri 675 |
+| Keyed join | **Minnesota 739** | **Mississippi 675** |
+| Reality | Minnesota ~739–742 | Mississippi ~675–681 |
+
+The keyed join reproduces reality; the committed data has it backwards. **31 of 50 states currently carry the wrong credit score.**
+
+Therefore the keyed join must be allowed to produce `NaN` for South Carolina rather than raising. Change the missing-state check so a state absent from a *keyed* sheet is a warning, not an error, and record it:
+
+```python
+        else:
+            values = _read_sheet_by_state(ws, sheet_name)
+            missing = set(df["state"]) - set(values)
+            if missing:
+                # The credit-score sheet genuinely omits South Carolina (and
+                # carries District of Columbia, which this project excludes).
+                # A keyed NaN is correct here: the source has no value, and a
+                # positional read would silently attach a neighbouring state's.
+                print(
+                    f"  note: {sheet_name} has no row for "
+                    f"{sorted(missing)} -- these become NaN"
+                )
+            df[col_name] = df["state"].map(values)
+```
+
+Also move `credit_score` out of the complete-required set, since its source legitimately lacks a state. In `_validate`, remove `"credit_score"` from `REQUIRED_COMPLETE` and add it to `ALLOWED_MISSING` (both sets are introduced in Task 3; if Task 3 has not run yet, make this same change to the existing inline `required` set). Note `credit_score` must **not** get the exact-zero check — a zero credit score is impossible rather than suppressed, and the range check below covers it.
+
+- [ ] **Step 6: Verify the rebuild changes *only* the credit-score column**
+
+The original plan required a byte-identical rebuild. That criterion is now known to be wrong: this refactor is a bug fix, so the output *must* change. The replacement criterion is that it changes **exactly what we expect and nothing else**.
+
+Save a copy of the current output, rebuild, and diff:
 
 ```bash
 cd analysis && source .venv/bin/activate
 cp data/state_data_full.csv /tmp/before.csv
 make build
-python -c "
+python - <<'PY'
 import pandas as pd
 a = pd.read_csv('/tmp/before.csv').sort_values('state').reset_index(drop=True)
 b = pd.read_csv('data/state_data_full.csv').sort_values('state').reset_index(drop=True)
-print('identical:', a.equals(b))
-if not a.equals(b):
-    print(a.compare(b))
-"
+
+assert list(a.columns) == list(b.columns), "column set changed"
+assert len(a) == len(b) == 50, f"row count changed: {len(a)} -> {len(b)}"
+
+changed = [c for c in a.columns if not a[c].equals(b[c])]
+print("columns that changed:", changed)
+assert changed == ["credit_score"], f"unexpected columns changed: {changed}"
+
+# South Carolina must be the only NaN, and Minnesota must now be the maximum.
+print("NaN states:", b.loc[b.credit_score.isna(), 'state'].tolist())
+assert b.loc[b.credit_score.isna(), 'state'].tolist() == ["South Carolina"]
+top = b.loc[b.credit_score.idxmax(), 'state']
+bot = b.loc[b.credit_score.idxmin(), 'state']
+print("highest:", top, "| lowest:", bot)
+assert top == "Minnesota", f"expected Minnesota highest, got {top}"
+assert bot == "Mississippi", f"expected Mississippi lowest, got {bot}"
+
+n_diff = int((a.credit_score != b.credit_score).sum())
+print(f"credit_score values changed for {n_diff} of 50 states")
+print("ALL CHECKS PASSED")
+PY
 ```
 
-Expected: `Wrote 50 states x 16 columns` from the build, then `identical: True`.
+Expected: `columns that changed: ['credit_score']`, `NaN states: ['South Carolina']`, `highest: Minnesota | lowest: Mississippi`, roughly 31–32 states changed, then `ALL CHECKS PASSED`.
+
+If **any column other than `credit_score`** changed, stop and report BLOCKED with the diff — that would mean the refactor altered data it had no business touching.
 
 - [ ] **Step 7: Run the full suite**
 
