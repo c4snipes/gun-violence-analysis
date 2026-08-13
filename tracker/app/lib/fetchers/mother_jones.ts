@@ -21,14 +21,42 @@ export async function fetchMotherJones(): Promise<Incident[]> {
   const csv = await res.text();
 
   const rows = parse(csv, {
-    columns: true,
+    // The sheet has TWO columns named 'location': column 1 is "City, State"
+    // and column 7 is the venue type ("Workplace", "Other", ...). With
+    // columns:true csv-parse keeps the last, so row.location was "Other" and
+    // parseStateFromLocation rejected every row -- the source silently
+    // returned zero incidents and the dashboard reported it as uncollected.
+    // De-duplicate by suffixing repeats, so the first keeps its bare name.
+    columns: (header: string[]) => {
+      const seen = new Map<string, number>();
+      return header.map((h) => {
+        const n = seen.get(h) ?? 0;
+        seen.set(h, n + 1);
+        return n === 0 ? h : `${h}_${n}`;
+      });
+    },
     skip_empty_lines: true,
     relax_column_count: true,
   }) as Record<string, string>[];
 
+  if (rows.length === 0) {
+    throw new Error("Mother Jones sheet parsed to zero rows");
+  }
+
+  // Misspellings present in the published sheet. The analysis package patches
+  // the same two rows (see analysis/src/gun_violence/data.py); without this the
+  // Baton Rouge incident is silently dropped and the tracker's 2013-2020 count
+  // comes to 55 where the published literature reports 57.
+  const LOCATION_FIXES: Record<string, string> = {
+    "Baton Rouge, Lousiana": "Baton Rouge, Louisiana",
+  };
+
   const incidents: Incident[] = [];
   for (const row of rows) {
-    const state = parseStateFromLocation(row.location ?? "");
+    const rawLocation = LOCATION_FIXES[row.location ?? ""] ?? row.location ?? "";
+    // Washington, D.C. resolves to nothing on purpose: this project covers the
+    // 50 states only, so DC is excluded here as it is everywhere else.
+    const state = parseStateFromLocation(rawLocation);
     if (!state) continue;
     const date = normalizeDate(row.date);
     if (!date) continue;

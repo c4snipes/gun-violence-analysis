@@ -117,6 +117,17 @@
     "source": "gva"
   },
   {
+    "id": "mj-in-n-out-burger-shooting",
+    "date": "2026-08-01",
+    "state": "Idaho",
+    "city": "Twin Falls",
+    "killed": 3,
+    "injured": 7,
+    "source": "mother_jones",
+    "url": "https://abcnews.com/US/burger-shooting-suspect/story?id=135337720",
+    "summary": "Chad Williams, 24, opened fire outside the restaurant, faced return fire from an armed citizen and an off-duty police officer, and shot himself to death."
+  },
+  {
     "id": "gva-2026-07-30-ohio-dayton",
     "date": "2026-07-30",
     "state": "Ohio",
@@ -225,6 +236,875 @@
     "source": "gva"
   },
   {
+    "id": "mj-san-diego-mosque-shooting",
+    "date": "2026-05-18",
+    "state": "California",
+    "city": "San Diego",
+    "killed": 3,
+    "injured": 0,
+    "source": "mother_jones",
+    "url": "https://www.latimes.com/california/story/2026-05-18/san-diego-islamic-center-shooting-suspects-what-we-know",
+    "summary": "Cain Clark, 17, and Caleb Vasquez, 18, attacked a mosque and then died by self-inflicted gunshots as police responded."
+  },
+  {
+    "id": "mj-austin-bar-shooting",
+    "date": "2026-03-01",
+    "state": "Texas",
+    "city": "Austin",
+    "killed": 3,
+    "injured": 13,
+    "source": "mother_jones",
+    "url": "https://www.cnn.com/2026/03/02/us/austin-mass-shooting-ndiaga-diagne-wwk-hnk",
+    "summary": "Ndiaga Diagne, 53, opened fire in a popular entertainment district along Sixth Street, and was quickly killed in a gun battle with police. Diagne had emigrated to the US in 2000 and became a naturalized citizen in 2013."
+  },
+  {
+    "id": "mj-brown-university-and-mit-shooting",
+    "date": "2025-12-13",
+    "state": "Rhode Island",
+    "city": "Providence",
+    "killed": 3,
+    "injured": 9,
+    "source": "mother_jones",
+    "url": "https://www.nytimes.com/2025/12/19/us/mit-professor-shooting-suspect-portugal-lisbon-physics.html",
+    "summary": "Claudio Neves Valente, 48, a former student at Brown, opened fire inside the school of engineering, killing two victims and injuring nine others; two days later he shot and killed an MIT professor, who had been his former classmate in Portugal. After a six-day regional manhunt and a key tip from a reddit user, authorities found Neves Valente, dead from a self-inflicted gunshot wound, in a storage rental facility in New Hampshire."
+  },
+  {
+    "id": "mj-michigan-mormon-church-shooting",
+    "date": "2025-09-28",
+    "state": "Michigan",
+    "city": "Grand Blanc",
+    "killed": 4,
+    "injured": 8,
+    "source": "mother_jones",
+    "url": "https://www.nbcnews.com/news/us-news/what-we-know-thomas-jacob-sanford-suspect-michigan-church-shooting-rcna234309",
+    "summary": "Thomas J. Sanford, 40, an ex-Marine and Iraq War veteran, crashed his truck into a Mormon church during crowded Sunday morning services. He opened fire with a semiautomatic rifle and also carried out an arson attack on the building, before dying in a gun battle with responding police."
+  },
+  {
+    "id": "mj-north-carolina-waterfront-bar-shooting",
+    "date": "2025-09-27",
+    "state": "North Carolina",
+    "city": "Southport Yacht Basin",
+    "killed": 3,
+    "injured": 8,
+    "source": "mother_jones",
+    "url": "https://www.cnn.com/2025/09/28/us/southport-yacht-basin-north-carolina-shooting-hnk?cid=ios_app",
+    "summary": "Nigel Edge (formerly Sean DeBevoise), 39, an ex-Marine and decorated Iraq war veteran, opened fire from a boat at the waterfront establishment; was arrested the following day by local authorities."
+  },
+  {
+    "id": "mj-austin-parking-lot-shooting",
+    "date": "2025-08-11",
+    "state": "Texas",
+    "city": "Austin",
+    "killed": 3,
+    "injured": 0,
+    "source": "mother_jones",
+    "url": "https://www.cnn.com/2025/08/11/us/shooting-austin-target-four-injured",
+    "summary": "Ethan Nieneker, 32, allegedly fled after opening fire in a Target parking lot in Austin, and was soon apprehended elsewhere in Austin by police. He allegedly had a criminal record including domestic violence and a history of mental health problems, according to local authorities."
+  },
+  {
+    "id": "mj-montana-bar-shooting",
+    "date": "2025-08-01",
+    "state": "Montana",
+    "city": "Anaconda",
+    "killed": 4,
+    "injured": 0,
+    "source": "mother_jones",
+    "url": "https://www.wsj.com/us-news/manhunt-for-montana-bar-gunman-enters-third-day-1d7f5d8f",
+    "summary": "Michael Paul Brown, 45, the suspect in the attack, is an Army veteran who served in Iraq. Brown struggled with mental illness for years, according to family members who spoke to news media after the attack. Brown fled the scene and was captured after an eight-day manhunt."
+  },
+  {
+    "id": "mj-nyc-park-avenue-shooting",
+    "date": "2025-07-28",
+    "state": "New York",
+    "city": "Manhattan",
+    "killed": 4,
+    "injured": 1,
+    "source": "mother_jones",
+    "url": "https://www.nytimes.com/2025/07/29/nyregion/nyc-shooting-midtown-gunman-victims.html",
+    "summary": "Shane Tamura, 27, who lived in Las Vegas, drove from Nevada to Manhattan, where he parked in front of a Park Avenue skyscraper and went into the building housing offices for the NFL, Blackstone and other corporations. He shot himself fatally after killing four people, including a police officer, and wounding another. A note found on him by police suggested he may have been targeting the NFL."
+  },
+  {
+    "id": "mj-reno-casino-shooting",
+    "date": "2025-07-28",
+    "state": "Nevada",
+    "city": "Reno",
+    "killed": 3,
+    "injured": 3,
+    "source": "mother_jones",
+    "url": "https://www.nbcnews.com/news/us-news/multiple-people-injured-reno-hotel-casino-shooting-rcna221532",
+    "summary": "Dakota Hawver, 26, opened fire in a parking area of the Grand Sierra Resort, soon exchaning gunfire with responding police, who wounded and apprehended him. He had no known criminal or mental health history, according to local authorities."
+  },
+  {
+    "id": "mj-apalachee-high-school-shooting",
+    "date": "2024-09-04",
+    "state": "Georgia",
+    "city": "Winder",
+    "killed": 4,
+    "injured": 9,
+    "source": "mother_jones",
+    "url": "https://www.nbcnews.com/news/us-news/suspect-custody-school-district-atlanta-put-lockdown-reports-campus-th-rcna169562",
+    "summary": "Colt Gray, 14, was apprehended by responding police. He and his father had been interviewed in 2023 by local authorities after the FBI received anonymous tips about school shooting threats allegedly coming from Gray."
+  },
+  {
+    "id": "mj-arkansas-grocery-store-shooting",
+    "date": "2024-06-21",
+    "state": "Arkansas",
+    "city": "Fordyce",
+    "killed": 4,
+    "injured": 10,
+    "source": "mother_jones",
+    "url": "https://apnews.com/article/shooting-fordyce-mad-butcher-grocery-store-arkansas-925ed00ca724b5349ebc7c00a184f618",
+    "summary": "Travis Posey, 44, opened fire in the parking lot and inside the store; he was injuired in a gun battle with responding police before being taken into custody."
+  },
+  {
+    "id": "mj-unlv-shooting",
+    "date": "2023-12-06",
+    "state": "Nevada",
+    "city": "Las Vegas",
+    "killed": 3,
+    "injured": 1,
+    "source": "mother_jones",
+    "url": "https://www.nbcnews.com/news/us-news/anthony-polito-s-know-unlv-shooting-suspect-accused-killing-3-wounding-rcna128499",
+    "summary": "Anthony Polito, 67, a former university professor, died in a shootout with police after opening fire on the UNLV campus."
+  },
+  {
+    "id": "mj-maine-bowling-alley-and-bar-shootings",
+    "date": "2023-10-25",
+    "state": "Maine",
+    "city": "Lewiston",
+    "killed": 18,
+    "injured": 13,
+    "source": "mother_jones",
+    "url": "https://www.washingtonpost.com/nation/2023/10/25/lewiston-maine-shooting-live-updates/",
+    "summary": "Robert Card, 40, an Army reservist and firearms instructor, opened fire in the two locations, then fled and became the focus of an intensive manhunt. He was found two days later, dead from a self-inflicted gunshot. For several months prior to the attack, Card's family members, military colleagues and others sounded alarms about his erractic and troubling behaviors, and he had undergone a psychiatric evaluation, but no attempts were made under Maine law to remove firearms from Card."
+  },
+  {
+    "id": "mj-jacksonville-dollar-general-store-shooting",
+    "date": "2023-08-26",
+    "state": "Florida",
+    "city": "Jacksonville",
+    "killed": 3,
+    "injured": 0,
+    "source": "mother_jones",
+    "url": "https://www.washingtonpost.com/nation/2023/08/27/jacksonville-shooter-dollar-general-florida/",
+    "summary": "Ryan Palmeter, 21, outfitted in body armor, fatally shot three Black victims in what authorities said was a racist hate crime. He then shot himself to death on the scene as police responded. Palmeter had first gone to Edward Waters University, a historically Black college, but was refused entry."
+  },
+  {
+    "id": "mj-orange-county-biker-bar-shooting",
+    "date": "2023-08-23",
+    "state": "California",
+    "city": "Trabuco Canyon",
+    "killed": 3,
+    "injured": 6,
+    "source": "mother_jones",
+    "url": "https://www.ocregister.com/2023/08/24/cooks-corner-mass-shooter-a-crazy-ex-cop-reportedly-was-targeting-wife/",
+    "summary": "John Snowling, 59, a retired sergeant from the Ventura Police Department, was targeting his estranged wife, and was killed by police responding to the scene."
+  },
+  {
+    "id": "mj-philidelphia-neighborhood-shooting",
+    "date": "2023-07-03",
+    "state": "Pennsylvania",
+    "city": "Philadelphia",
+    "killed": 5,
+    "injured": 2,
+    "source": "mother_jones",
+    "url": "https://6abc.com/philly-mass-shooting-suspect-charged-with-5-counts-of-murder/13463565/",
+    "summary": "Kimbrady Carriker, 40, wearing a ski mask and body armor, allegedly opened fire randomly in the street in a southwestern neighborhood of Philadelphia. Carriker, who lived nearby, was cornered by police and apprehended. Early statements from local authorities were conflicting about Carriker's gender but later clarified is male."
+  },
+  {
+    "id": "mj-new-mexico-neighborhood-shooting",
+    "date": "2023-05-15",
+    "state": "New Mexico",
+    "city": "Farmington",
+    "killed": 3,
+    "injured": 6,
+    "source": "mother_jones",
+    "url": "https://www.cbsnews.com/news/farmington-shooting-new-mexico-suspect-dead/",
+    "summary": "Beau Wilson, 18, opened fire in a residential neighborhood around his home; he shot randomly at people, houses and cars, according to local authorities. A high school student, he wore body armor and used multiple guns, including an \"AR-15-style rifle,\" and was shot dead by responding police."
+  },
+  {
+    "id": "mj-texas-outlet-mall-shooting",
+    "date": "2023-05-06",
+    "state": "Texas",
+    "city": "Allen",
+    "killed": 8,
+    "injured": 7,
+    "source": "mother_jones",
+    "url": "https://www.nytimes.com/2023/05/07/us/texas-mall-shooting-allen.html",
+    "summary": "Mauricio Garcia, 33, wore tactical gear and used an AR-15 to open fire outside a shopping mall in the city just north of Dallas; he was shot dead by a police officer who was nearby and responded to the attack. Investigators found evidence Garcia may have been motivated in part by far-right extremist ideology."
+  },
+  {
+    "id": "mj-louisville-bank-shooting",
+    "date": "2023-04-10",
+    "state": "Kentucky",
+    "city": "Louisville",
+    "killed": 5,
+    "injured": 8,
+    "source": "mother_jones",
+    "url": "https://apnews.com/article/downtown-louisville-shooting-dc7b45a9c5d2b384a16d653864f8b735",
+    "summary": "Connor Sturgeon, 25, opened fire inside Old National Bank, killing and injuring multiple victims, including responding police officers; he died in a shootout with police. He told at least one person before the attack that he was suicidal, and left a note that he intended to open fire at the bank, according to local authorities."
+  },
+  {
+    "id": "mj-nashville-christian-school-shooting",
+    "date": "2023-03-27",
+    "state": "Tennessee",
+    "city": "Nashville",
+    "killed": 6,
+    "injured": 6,
+    "source": "mother_jones",
+    "url": "https://www.tennessean.com/story/news/crime/2023/03/27/nashville-mourns-mass-shooting-covenant-school/70052585007/",
+    "summary": "Audrey Hale, 28, who was a former student at the private Covenant School (pre-school; K-6), killed three adults and three 9-year-old children, before being shot dead by responding police."
+  },
+  {
+    "id": "mj-michigan-state-university-shooting",
+    "date": "2023-02-13",
+    "state": "Michigan",
+    "city": "East Lansing",
+    "killed": 3,
+    "injured": 5,
+    "source": "mother_jones",
+    "url": "https://www.cnn.com/us/live-news/michigan-state-university-shooting-updates-2-13-23/index.html",
+    "summary": "Anthony D. McRae, 43, opened fire at Berkey Hall and the MSU union, according to local police. Following an intense manhunt in the area, he was found dead from a self-inflicted gunshot wound, police said."
+  },
+  {
+    "id": "mj-half-moon-bay-spree-shooting",
+    "date": "2023-01-23",
+    "state": "California",
+    "city": "Half Moon Bay",
+    "killed": 7,
+    "injured": 1,
+    "source": "mother_jones",
+    "url": "https://www.cnn.com/us/live-news/half-moon-bay-california-shooting-1-23-23/index.html",
+    "summary": "Chunli Zhao, 67, suspected of carrying out the attacks at a mushroom farm and near a trucking facility, was apprehended by police. Zhao reportedly worked at the mushroom farm."
+  },
+  {
+    "id": "mj-la-dance-studio-mass-shooting",
+    "date": "2023-01-21",
+    "state": "California",
+    "city": "Monterey Park",
+    "killed": 11,
+    "injured": 10,
+    "source": "mother_jones",
+    "url": "https://www.latimes.com/california/story/2023-01-22/la-me-monterey-park-mass-shooting",
+    "summary": "Huu Can Tran, 72, fled the scene in a white van and later shot himself to death as police closed in."
+  },
+  {
+    "id": "mj-virginia-walmart-shooting",
+    "date": "2022-11-22",
+    "state": "Virginia",
+    "city": "Chesapeake",
+    "killed": 6,
+    "injured": 6,
+    "source": "mother_jones",
+    "url": "https://www.washingtonpost.com/dc-md-va/2022/11/23/andre-bing-walmart-shooting-employee/",
+    "summary": "Andre Bing, 31, who worked as a supervisor at the store, opened fire on co-workers and then fatally shot himself, according to local authorities."
+  },
+  {
+    "id": "mj-lgbtq-club-shooting",
+    "date": "2022-11-19",
+    "state": "Colorado",
+    "city": "Colorado Springs",
+    "killed": 5,
+    "injured": 25,
+    "source": "mother_jones",
+    "url": "https://coloradosun.com/2022/11/20/club-q-shootins-colorado-springs/",
+    "summary": "Anderson L. Aldrich, 22, wore body armor and opened fire upon entering the club as a dance party was underway; he was subdued by unarmed patrons who tackled him amid the carnage and held him down until police arrived."
+  },
+  {
+    "id": "mj-university-of-virginia-shooting",
+    "date": "2022-11-13",
+    "state": "Virginia",
+    "city": "Charlottesville",
+    "killed": 3,
+    "injured": 2,
+    "source": "mother_jones",
+    "url": "https://dailyprogress.com/news/local/guns-and-ammunition-seized-from-jones-uva-dormitory-room/article_af765148-66c7-11ed-b27c-a362fa328595.html",
+    "summary": "Christopher Darnell Jones Jr., 22, allegedly opened fire after a charter bus returned to campus from a university field trip, killing three members of the UVA football team and injuring two other people. Jones Jr. reportedly was on the radar of the university's threat assessment team regarding talk of owning a gun and a prior 2021 incident involving a concealed weapon."
+  },
+  {
+    "id": "mj-raleigh-spree-shooting",
+    "date": "2022-10-13",
+    "state": "North Carolina",
+    "city": "Hedingham",
+    "killed": 5,
+    "injured": 2,
+    "source": "mother_jones",
+    "url": "https://www.newsobserver.com/news/local/crime/article267301562.html",
+    "summary": "Austin Thompson, 15, went on a rampage in the Hedingham neighborhood, where he lived; one of the fatalities included his 16-year-old brother, James. Thompson was critically wounded and apprehended by police after a long standoff, and was admitted to an area hospital in critical condition."
+  },
+  {
+    "id": "mj-greenwood-park-mall-shooting",
+    "date": "2022-07-17",
+    "state": "Indiana",
+    "city": "Greenwood",
+    "killed": 3,
+    "injured": 2,
+    "source": "mother_jones",
+    "url": "https://apnews.com/article/indiana-mall-shooting-345348912b288dce656083b2422c2fde",
+    "summary": "Jonathan Sapirman, 20, opened fire in a mall food court and was soon shot dead by a 22-year-old armed civilian, whose response local authorities called \"nothing short of heroic.\""
+  },
+  {
+    "id": "mj-highland-park-july-4-parade-shooting",
+    "date": "2022-07-04",
+    "state": "Illinois",
+    "city": "Highland Park",
+    "killed": 7,
+    "injured": 46,
+    "source": "mother_jones",
+    "url": "https://www.cbsnews.com/chicago/news/suspect-in-custody-highland-park-july-4-parade-mass-shooting-active-shooter-at-large-person-of-interest-robert-bobby-crimo-iii-photo-released/",
+    "summary": "Suspected gunman Robert \"Bobby\" Crimo, 21, allegedly opened fire with a rifle from a rooftop during an Independence Day parade, unleashing several bursts of rapid fire, and then escaped from the scene as police responded. He was taken into custody about eight hours later, a few miles from the scene of the attack, following a large-scale manhunt by law enforcement. (*Further details pending.)"
+  },
+  {
+    "id": "mj-church-potluck-dinner-shooting",
+    "date": "2022-06-16",
+    "state": "Alabama",
+    "city": "Birmingham",
+    "killed": 3,
+    "injured": 0,
+    "source": "mother_jones",
+    "url": "https://apnews.com/article/alabama-birmingham-shootings-religion-1c773c7332c344e5ac30a1101cedeeef",
+    "summary": "Robert Findlay Smith, 70, opened fire with a handgun at a potluck dinner and was subdued by a church member until police arrived to apprehend him."
+  },
+  {
+    "id": "mj-concrete-company-shooting",
+    "date": "2022-06-09",
+    "state": "Maryland",
+    "city": "Smithsburg",
+    "killed": 3,
+    "injured": 1,
+    "source": "mother_jones",
+    "url": "https://www.washingtonpost.com/dc-md-va/2022/06/09/smithsburg-shooting-maryland/",
+    "summary": "Joe Louis Esquivel, 23, shot four coworkers and was captured a short time later after a shootout with police."
+  },
+  {
+    "id": "mj-tulsa-medical-center-shooting",
+    "date": "2022-06-01",
+    "state": "Oklahoma",
+    "city": "Tulsa",
+    "killed": 4,
+    "injured": 0,
+    "source": "mother_jones",
+    "url": "https://www.nytimes.com/live/2022/06/01/us/tulsa-shooting-oklahoma-news",
+    "summary": "Michael Louis, 45, killed four, including two doctors, and took his own life, according to authorities. \"The gunman, who the chief said fatally shot himself, had been carrying a letter saying he blamed his surgeon for continuing back pain and intended to kill him and anyone who got in the way,\" according to the New York Times. Louis purchased the AR-15-style rifle he used the day of the attack, according to city Police Chief Wendell Franklin."
+  },
+  {
+    "id": "mj-robb-elementary-school-massacre",
+    "date": "2022-05-24",
+    "state": "Texas",
+    "city": "Uvalde",
+    "killed": 21,
+    "injured": 17,
+    "source": "mother_jones",
+    "url": "https://abcnews.go.com/US/texas-elementary-school-reports-active-shooter-campus/story?",
+    "summary": "Salvador Ramos, 18, was identified by authorities as the suicidal gunman who attacked at Robb Elementary school."
+  },
+  {
+    "id": "mj-buffalo-supermarket-massacre",
+    "date": "2022-05-14",
+    "state": "New York",
+    "city": "Buffalo",
+    "killed": 10,
+    "injured": 3,
+    "source": "mother_jones",
+    "url": "https://www.nytimes.com/live/2022/05/15/nyregion/shooting-buffalo-ny",
+    "summary": "Payton S. Gendron, 18, committed a racially motivated mass murder, according to authorities. He livestreamed the attack and was apprehended by police."
+  },
+  {
+    "id": "mj-sacramento-county-church-shooting",
+    "date": "2022-02-28",
+    "state": "California",
+    "city": "Sacramento",
+    "killed": 4,
+    "injured": 0,
+    "source": "mother_jones",
+    "url": "https://www.nytimes.com/2022/02/28/us/church-shooting-sacramento.html",
+    "summary": "\"A man believed to be meeting his three children for a supervised visit at a church just outside Sacramento on Monday afternoon fatally shot the children and an adult accompanying them before killing himself, police officials said. Sheriff Scott Jones of Sacramento County told reporters at the scene that the gunman had a restraining order against him, and that he had to have supervised visits with his children, who were younger than 15.\" (NYTimes)"
+  },
+  {
+    "id": "mj-oxford-high-school-shooting",
+    "date": "2021-11-30",
+    "state": "Michigan",
+    "city": "Oxford",
+    "killed": 4,
+    "injured": 7,
+    "source": "mother_jones",
+    "url": "https://www.washingtonpost.com/nation/2021/11/30/oxford-high-school-shooting/",
+    "summary": "Ethan Crumbley, a 15-year-old student at Oxford High School, opened fire with a Sig Sauer 9mm pistol purchased four days earlier by his father, and was apprehended by police shortly thereafter. Prosecutors filed charges against Crumbley for terrorism and first-degree murder."
+  },
+  {
+    "id": "mj-san-jose-vta-shooting",
+    "date": "2021-05-26",
+    "state": "California",
+    "city": "San Jose",
+    "killed": 9,
+    "injured": 0,
+    "source": "mother_jones",
+    "url": "https://www.sfchronicle.com/crime/article/Mass-shooting-in-San-Jose-What-we-know-so-far-16204689.php",
+    "summary": "Samuel Cassidy, 57, a Valley Transportation Authorty employee, opened fire at a union meeting at the light rail facility, soon also fatally shooting himself at the scene. Before the attack, Cassidy had set fire to his own house, where he also had firearms and a stockpile of ammunition. His legal history included his ex-wife filing a restraining order against him in 2009."
+  },
+  {
+    "id": "mj-fedex-warehouse-shooting",
+    "date": "2021-04-15",
+    "state": "Indiana",
+    "city": "Indianapolis",
+    "killed": 8,
+    "injured": 7,
+    "source": "mother_jones",
+    "url": "https://www.indystar.com/story/news/crime/2021/04/16/indianapolis-fedex-shooting-gunman-parked-car-and-began-randomly-firing-police-say/7251130002/",
+    "summary": "Brandon Scott Hole, 19, opened fire around 11 p.m. in the parking lot and inside the warehouse, and then shot himself fatally as police responded to the scene."
+  },
+  {
+    "id": "mj-orange-office-complex-shooting",
+    "date": "2021-03-31",
+    "state": "California",
+    "city": "Orange",
+    "killed": 4,
+    "injured": 1,
+    "source": "mother_jones",
+    "url": "https://www.latimes.com/california/story/2021-03-31/orange-mass-shooting-reported",
+    "summary": "Aminadab Gaxiola Gonzalez, 44, allegedly opened fire inside a small business at an office complex, killing at least four victims, including a nine-year-old boy, before being wounded in a confrontation with police and taken into custody. According to law enforcement officials, Gonzalez had chained the front and rear gates to the complex with bicycle cable locks to hinder police response."
+  },
+  {
+    "id": "mj-boulder-supermarket-shooting",
+    "date": "2021-03-22",
+    "state": "Colorado",
+    "city": "Boulder",
+    "killed": 10,
+    "injured": 0,
+    "source": "mother_jones",
+    "url": "https://www.denverpost.com/2021/03/22/police-active-shooter-shooting-king-soopers-boulder/",
+    "summary": "Ahmad Al Aliwi Alissa, 21, carried out a mass shooting at a King Soopers that left 10 victims dead, including veteran police officer Eric Talley, who was the first officer to respond on the scene. Alissa was wounded by police and taken into custody."
+  },
+  {
+    "id": "mj-atlanta-massage-parlor-shootings",
+    "date": "2021-03-16",
+    "state": "Georgia",
+    "city": "Atlanta",
+    "killed": 8,
+    "injured": 1,
+    "source": "mother_jones",
+    "url": "https://www.ajc.com/news/breaking-multiple-shootings-shut-down-busy-woodstock-highway/OLE23RVIO5BE3ELWBZAA6GVSSA/",
+    "summary": "Robert Aaron Long, 21, killed eight people at three massage parlors. An additional victim was injured. Six of the deceased victims were women of Asian descent. According to law enforcement officials, Long, who is white, made claims in custody about having sexual addiction issues, and had frequented the massage parlors. He also spoke of intent to attack additional locations in Florida."
+  },
+  {
+    "id": "mj-springfield-convenience-store-shooting",
+    "date": "2020-03-16",
+    "state": "Missouri",
+    "city": "Springfield",
+    "killed": 4,
+    "injured": 0,
+    "source": "mother_jones",
+    "url": "https://www.kiro7.com/news/trending/ive-been-shot-audio-paints-frantic-picture-shooting-that-killed-missouri-officer-3-others/THC32OGO75BR7FLTMXL4VUFYFE/",
+    "summary": "Joaquin S. Roman, 31, went on a rampage culminating at a Kum & Go, killing four people, including a police officer, before fatally shooting himself on the scene."
+  },
+  {
+    "id": "mj-molson-coors-shooting",
+    "date": "2020-02-26",
+    "state": "Wisconsin",
+    "city": "Milwaukee",
+    "killed": 5,
+    "injured": 0,
+    "source": "mother_jones",
+    "url": "https://www.jsonline.com/story/news/local/2020/02/26/active-shooter-reported-molsoncoors-campus-unknown-injuries/4884282002/",
+    "summary": "Anthony Ferrill, 51, an employee armed with two handguns, including one with a silencer, opened fire on the Milwaukee campus of the beer company, killing five people and then committing suicide. According to the Milwaukee Journal Sentinel, Ferrill \"had been involved in a long-running dispute with a co-worker that boiled over\" in the run-up to the attack."
+  },
+  {
+    "id": "mj-jersey-city-kosher-market-shooting",
+    "date": "2019-12-10",
+    "state": "New Jersey",
+    "city": "Jersey City",
+    "killed": 4,
+    "injured": 3,
+    "source": "mother_jones",
+    "url": "https://www.nytimes.com/2019/12/15/nyregion/jersey-city-shooting-terrorism.html",
+    "summary": "David N. Anderson, 47, and Francine Graham, 50, were heavily armed and traveling in a white van when they first killed a police officer in a cemetery, and then opened fire at a kosher market, “fueled both by anti-Semitism and anti-law enforcement beliefs,” according to New Jersey authorities. The pair, linked to the antisemitic ideology of the Black Hebrew Israelites extremist group, were killed after a lenghty gun battle with police at the market."
+  },
+  {
+    "id": "mj-pensacola-naval-base-shooting",
+    "date": "2019-12-06",
+    "state": "Florida",
+    "city": "Pensacola",
+    "killed": 3,
+    "injured": 8,
+    "source": "mother_jones",
+    "url": "https://www.washingtonpost.com/national-security/2019/12/06/naval-station-pensacola-active-shooter/",
+    "summary": "Ahmed Mohammed al-Shamrani, 21, a Saudi Arabian military pilot training in the United States, opened fire just before 7 a.m. in an air station classroom. He was soon shot and killed by responding Florida sheriff’s deputies."
+  },
+  {
+    "id": "mj-odessa-midland-shooting-spree",
+    "date": "2019-08-31",
+    "state": "Texas",
+    "city": "Odessa",
+    "killed": 7,
+    "injured": 25,
+    "source": "mother_jones",
+    "url": "https://www.washingtonpost.com/politics/5-killed-21-injured-after-suspect-hijacked-a-mail-truck-in-odessa-texas/2019/08/31/f659da2c-cc3c-11e9-be05-f76ac4ec618c_story.html",
+    "summary": "Seth A. Ator, 36, fired at police officers who stopped him for a traffic violation, and then went on a driving rampage in the Odessa-Midland region, where he also shot a postal worker and stole her vehicle. He was shot dead by law enforcement responding to the rampage. Ator had been fired from a job just prior to the attack (though per the FBI he had shown up to that job \"already enraged\"). He had a criminal record and \"a long history of mental problems and making racist comments,\" according to a family friend who spoke to the media."
+  },
+  {
+    "id": "mj-dayton-entertainment-district-shooting",
+    "date": "2019-08-04",
+    "state": "Ohio",
+    "city": "Dayton",
+    "killed": 9,
+    "injured": 27,
+    "source": "mother_jones",
+    "url": "https://www.nytimes.com/2019/08/04/us/dayton-ohio-shooting.html",
+    "summary": "Connor Betts, 24, died during the attack, following a swift police response. He wore tactical gear including body armor and hearing protection, and had an ammunition device capable of holding 100 rounds. Betts had a history of threatening behavior dating back to high school, including reportedly having hit lists targeting classmates for rape and murder."
+  },
+  {
+    "id": "mj-el-paso-walmart-mass-shooting",
+    "date": "2019-08-03",
+    "state": "Texas",
+    "city": "El Paso",
+    "killed": 23,
+    "injured": 22,
+    "source": "mother_jones",
+    "url": "https://www.nytimes.com/2023/07/07/us/el-paso-walmart-shooting-sentencing.html",
+    "summary": "Patrick Crusius, 21, who was apprehended by police, posted a so-called manifesto online shortly before the attack espousing ideas of violent white nationalism and hatred of immigrants. \"This attack is a response to the Hispanic invasion of Texas,\" he allegedly wrote in the document."
+  },
+  {
+    "id": "mj-gilroy-garlic-festival-shooting",
+    "date": "2019-07-28",
+    "state": "California",
+    "city": "Gilroy",
+    "killed": 3,
+    "injured": 12,
+    "source": "mother_jones",
+    "url": "https://www.cbsnews.com/live-news/garlic-festival-mass-shooting-gilroy-california-victims-suspect-santino-william-legan-live-updates/",
+    "summary": "Santino William LeGan, 19, fired indiscriminately into the crowd near a concert stage at the festival. He used an AK-47-style rifle, purchased legally in Nevada three weeks earlier. After apparently pausing to reload, he fired additional multiple rounds before police shot him and then he killed himself. A witness described overhearing someone shout at LeGan, \"Why are you doing this?\" LeGan, who wore camouflage and tactical gear, replied: “Because I'm really angry.\" The murdered victims included a 13-year-old girl, a man in his 20s, and six-year-old Stephen Romero."
+  },
+  {
+    "id": "mj-virginia-beach-municipal-building-shooting",
+    "date": "2019-05-31",
+    "state": "Virginia",
+    "city": "Virginia Beach",
+    "killed": 12,
+    "injured": 4,
+    "source": "mother_jones",
+    "url": "https://www.washingtonpost.com/local/public-safety/virginia-beach-officials-expect-to-release-additional-details-of-mass-shooting/2019/06/02/a001b856-852f-11e9-a870-b9c411dc4312_story.html",
+    "summary": "DeWayne Craddock, 40, a municipal city worker wielding handguns, a suppressor and high-capacity magazines, killed en masse inside a Virginia Beach muncipal building late in the day on a Friday, before dying in a prolonged gun battle with police. Craddock reportedly had submitted his resignation from his job that morning. He was a veteran of the Virginia Army National Guard, and \"had a shaved head, bodybuilder’s physique and cameras in the windows of his house on a peaceful cul-de-sac,\" according to the Washington Post."
+  },
+  {
+    "id": "mj-harry-pratt-co-warehouse-shooting",
+    "date": "2019-02-15",
+    "state": "Illinois",
+    "city": "Aurora",
+    "killed": 5,
+    "injured": 6,
+    "source": "mother_jones",
+    "url": "https://www.washingtonpost.com/nation/2019/02/16/man-kills-five-warehouse-shooting-spree-shortly-after-being-fired-illinois-police-say/?utm_term=.9863ec4ffc41",
+    "summary": "Gary Martin, 45, went on a rampage inside the warehouse in response to being fired from his job and died soon thereafter in a shootout with police. Among his victims were five dead coworkers and five injured police officers. Martin had a felony record and lengthy history of domestic violence; he was able to obtain a gun despite having had his Illinois firearms ownership identification card revoked. According to a report from prosecutors, Martin told a co-worker the morning of the shooting that if he was fired he was going to kill employees and police."
+  },
+  {
+    "id": "mj-pennsylvania-hotel-bar-shooting",
+    "date": "2019-01-24",
+    "state": "Pennsylvania",
+    "city": "State College",
+    "killed": 3,
+    "injured": 1,
+    "source": "mother_jones",
+    "url": "http://www.wistv.com/2019/01/26/details-emerge-about-shooting-rampage-near-penn-state/",
+    "summary": "Jordan Witmer, 21, shot three people at a Ramada Hotel bar near Penn State University, including a former girlfriend he was there with. He then fled the bar, crashed his car about a mile away, and stormed into a random house, fatally shooting an elderly resident and then himself. Witmer, who had a legal carry permit for his handgun, had just finished a three-year stint in the US Army; ten days prior to the attack he had been convicted on drunk driving-related charges in Kentucky, where he'd been stationed."
+  },
+  {
+    "id": "mj-suntrust-bank-shooting",
+    "date": "2019-01-23",
+    "state": "Florida",
+    "city": "Sebring",
+    "killed": 5,
+    "injured": 0,
+    "source": "mother_jones",
+    "url": "https://wsbt.com/news/local/classmate-says-florida-bank-shooter-who-allegedly-killed-5-attended-bremen-high-school",
+    "summary": "Zephen A. Xaver, 21, fatally shot five women inside a bank and then called the police to confess. He was armed with a handgun and wore a bulletproof vest. He reportedly ordered the women to lie down on the floor and shot them execution-style. After a standoff with police, he surrendered and was taken into custody. A week prior, Xaver had quit a job as a prison guard trainee, and authorities said they believed the shooting was \"a random act\" and that roberry did not appear to be a motive. An ex-girlfriend in Indiana told local media she'd been “scared for years” by Xaver’s talk of violence and death, but that her warnings to others (who she did not identify) were not taken seriously. She said she’d first met Xaver in a psychiatric hospital in 2013. In March 2017, Michigan State Police documented an incident in which Xaver indicated he was “possibly thinking of suicide by cop and taking hostages.\""
+  },
+  {
+    "id": "mj-mercy-hospital-shooting",
+    "date": "2018-11-19",
+    "state": "Illinois",
+    "city": "Chicago",
+    "killed": 3,
+    "injured": 0,
+    "source": "mother_jones",
+    "url": "https://www.cnn.com/2018/11/19/us/mercy-hospital-chicago-shooting/index.html",
+    "summary": "Juan Lopez, 32, confronted his former fiancé, ER doctor Tamara O'Neal, before shooting her and opening fire on others at the hospital, including a responding police officer, Samuel Jimenez, and a pharmacy employee, Dayna Less. Lopez was fatally shot by a responding SWAT officer. Lopez had a history of domestic abuse against an ex-wife, and was kicked out of a fire department training academy for misconduct against female cadets."
+  },
+  {
+    "id": "mj-thousand-oaks-nightclub-shooting",
+    "date": "2018-11-07",
+    "state": "California",
+    "city": "Thousand Oaks",
+    "killed": 12,
+    "injured": 22,
+    "source": "mother_jones",
+    "url": "http://www.latimes.com/local/lanow/la-me-ln-thousand-oaks-20181107-story.html",
+    "summary": "Ian David Long, 28, dressed in black and armed with a handgun and a “smoke device,” approached the Borderline Bar & Grill — a country music venue popular with college students — close to midnight and opened fire, killing a security guard and then others in the club, including a sheriff’s deputy responding to the attack. Long was found dead at the scene from apparent suicide. He was a former Marine and had a history of interactions with local law enforcement, including a mental health evaluation in which he’d been cleared."
+  },
+  {
+    "id": "mj-tree-of-life-synagogue-shooting",
+    "date": "2018-10-27",
+    "state": "Pennsylvania",
+    "city": "Pittsburgh",
+    "killed": 11,
+    "injured": 6,
+    "source": "mother_jones",
+    "url": "https://www.nytimes.com/2018/10/27/us/active-shooter-pittsburgh-synagogue-shooting.html",
+    "summary": "Robert D. Bowers, 46, shouted anti-Semitic slurs as he opened fire inside the Tree of Life synagogue during Saturday morning worship. He was armed with an assault rifle and multiple handguns and was apprehended after a standoff with police. His social media accounts contained virulent anti-Semitic content, and references to migrant caravan \"invaders\" hyped by President Trump and the Republican party ahead of the 2018 midterms elections."
+  },
+  {
+    "id": "mj-rite-aid-warehouse-shooting",
+    "date": "2018-09-20",
+    "state": "Maryland",
+    "city": "Perryman",
+    "killed": 3,
+    "injured": 3,
+    "source": "mother_jones",
+    "url": "http://www.baltimoresun.com/news/maryland/crime/bs-md-harford-shooting-20180920-story.html",
+    "summary": "Snochia Moseley, 26, reportedly a disgruntled employee, shot her victims outside the building and on the warehouse floor; she later died from a self-inflicted gunshot at a nearby hospital. (No law enforcement officers responding to her attack fired shots.)"
+  },
+  {
+    "id": "mj-t-t-trucking-shooting",
+    "date": "2018-09-12",
+    "state": "California",
+    "city": "Bakersfield",
+    "killed": 5,
+    "injured": 0,
+    "source": "mother_jones",
+    "url": "http://www.latimes.com/local/lanow/la-me-bakersfield-mass-shooting-20180914-story.html",
+    "summary": "Javier Casarez, 54, who was going through a bitter divorce, went on a shooting spree targeting his ex-wife and former coworkers at the trucking company. His attack included fatally shooting one victim who he pursued to a nearby sporting goods retailer, and two others at a private residence. After then carjacking a woman who was driving with a child (and letting the two go), Casarez fatally shot himself as law enforcement officials closed in on him."
+  },
+  {
+    "id": "mj-fifth-third-center-shooting",
+    "date": "2018-09-06",
+    "state": "Ohio",
+    "city": "Cincinnati",
+    "killed": 3,
+    "injured": 2,
+    "source": "mother_jones",
+    "url": "https://www.cnn.com/2018/09/07/us/cincinnati-shooting/index.html",
+    "summary": "Omar Enrique Santa Perez, 29, walked into the ground-floor lobby of a building in downtown Cincinnati shortly after 9 a.m. and opened fire. Within minutes, Perez was fatally wounded in a shootout with law enforcement officers responding to the scene."
+  },
+  {
+    "id": "mj-capital-gazette-shooting",
+    "date": "2018-06-28",
+    "state": "Maryland",
+    "city": "Annapolis",
+    "killed": 5,
+    "injured": 2,
+    "source": "mother_jones",
+    "url": "http://www.capitalgazette.com/news/annapolis/bs-md-gazette-shooting-20180628-story.html",
+    "summary": "Jarrod W. Ramos, 38, shot through the glass doors of the paper’s newsroom around 3pm to carry out his attack; police quickly responding to the scene found him hiding under a desk and apprehended him. Ramos had harbored a longstanding grudge against the paper over a 2011 column that had detailed his guilty plea for the harassment of a former female classmate. Ramos had sued the paper for defamation and lost."
+  },
+  {
+    "id": "mj-santa-fe-high-school-shooting",
+    "date": "2018-05-18",
+    "state": "Texas",
+    "city": "Santa Fe",
+    "killed": 10,
+    "injured": 13,
+    "source": "mother_jones",
+    "url": "https://www.chron.com/news/houston-texas/article/Shots-fired-at-Santa-Fe-High-School-12925050.php",
+    "summary": "Dimitrios Pagourtzis, a 17-year-old student, opened fire at Santa Fe High School with a shotgun and .38 revolver owned by his father; Pagourtzis killed 10 and injured at least 13 others before surrendering to authorities after a standoff and additional gunfire inside the school. (Pagourtzis reportedly had intended to commit suicide.) Investigators also found undetonated explosive devices in the vicinity. (FURTHER DETAILS PENDING.)"
+  },
+  {
+    "id": "mj-waffle-house-shooting",
+    "date": "2018-04-22",
+    "state": "Tennessee",
+    "city": "Nashville",
+    "killed": 4,
+    "injured": 4,
+    "source": "mother_jones",
+    "url": "https://www.washingtonpost.com/news/post-nation/wp/2018/04/23/waffle-house-shooting-travis-reinking-manhunt-continues-nashville-police-say/?utm_term=.69579db5fdc6",
+    "summary": "Travis Reinking, 29, opened fire around 3:30 a.m. in the parking lot of a Waffle House in Antioch, and continued shooting as he entered the restaurant. As he attempted to reload his AR-15, a bystander heroically wrestled the rifle away from Reinking, who then fled; he was captured by authorities the following day. Reinking had a history of erratic behavior and run-ins with law enforcement in his home state of Illinois, including claims that he was being stalked and harassed by pop star Taylor Swift. In July 2017, he was arrested at the White House after breaching security in an effort to speak with President Trump, reportedly claiming his right to do so as “a sovereign citizen.”"
+  },
+  {
+    "id": "mj-yountville-veterans-home-shooting",
+    "date": "2018-03-09",
+    "state": "California",
+    "city": "Yountville",
+    "killed": 3,
+    "injured": 0,
+    "source": "mother_jones",
+    "url": "https://www.cnn.com/2018/03/10/us/california-veterans-home-shooting/index.html",
+    "summary": "Army veteran Albert Cheung Wong, 36, stormed a veterans home where he was previously under care, exchanging gunfire with a sheriff’s deputy and taking three women hostage, one of whom he’d previously threatened. After a standoff with law enforcement, he killed the three women and himself."
+  },
+  {
+    "id": "mj-marjory-stoneman-douglas-high-school-shooting",
+    "date": "2018-02-14",
+    "state": "Florida",
+    "city": "Parkland",
+    "killed": 17,
+    "injured": 17,
+    "source": "mother_jones",
+    "url": "https://www.nytimes.com/2018/02/14/us/parkland-school-shooting.html",
+    "summary": "Nikolas J. Cruz, 19, heavily armed with an AR-15, tactical gear, and “countless magazines” of ammo, according to the Broward County Sheriff, attacked the high school as classes were ending for the day, killing at least 17 people and injuring many others. He was apprehended by authorities shortly after fleeing the campus."
+  },
+  {
+    "id": "mj-pennsylvania-carwash-shooting",
+    "date": "2018-01-28",
+    "state": "Pennsylvania",
+    "city": "Melcroft",
+    "killed": 4,
+    "injured": 1,
+    "source": "mother_jones",
+    "url": "http://www.wpxi.com/news/top-stories/family-members-small-community-in-shock-after-4-killed-in-shooting/690497960",
+    "summary": "Timothy O'Brien Smith, 28, wearing body armor and well-stocked with ammo, opened fire at a carwash early in the morning in this rural community, killing four people. A fifth victim, though not shot, suffered minor injuries. One of the deceased victims, 25-year-old Chelsie Cline, had been romantically involved with Smith and had broken off the relationship recently, according to her sister. Smith shot himself in the head and died later that night at the hospital."
+  },
+  {
+    "id": "mj-rancho-tehama-shooting-spree",
+    "date": "2017-11-14",
+    "state": "California",
+    "city": "Rancho Tehama",
+    "killed": 5,
+    "injured": 10,
+    "source": "mother_jones",
+    "url": "https://www.nbcnews.com/news/us-news/california-mass-shooter-killed-wife-buried-her-beneath-floor-n821051",
+    "summary": "Kevin Janson Neal, 44, went on an approximately 45-minute shooting spree in the rural community of Rancho Tehama Reserve in Northern California, including shooting up an elementary school, before being killed by law enforcement officers. Neal had also killed his wife at home."
+  },
+  {
+    "id": "mj-texas-first-baptist-church-massacre",
+    "date": "2017-11-05",
+    "state": "Texas",
+    "city": "Sutherland Springs",
+    "killed": 26,
+    "injured": 20,
+    "source": "mother_jones",
+    "url": "https://www.washingtonpost.com/news/morning-mix/wp/2017/11/06/who-is-devin-patrick-kelley-gunman-who-officials-say-killed-churchgoers-in-sutherland-springs/",
+    "summary": "Devin Patrick Kelley, a 26-year-old ex-US Air Force airman, opened fire at the First Baptist Church in Sutherland Springs during Sunday morning services, killing at least 26 people and wounding and injuring 20 others. He left the church and fled in his vehicle after engaging in a gunfight with a local citizen; he soon crashed his vehicle and died from a self-inflicted gunshot wound."
+  },
+  {
+    "id": "mj-walmart-shooting-in-suburban-denver",
+    "date": "2017-11-01",
+    "state": "Colorado",
+    "city": "Thornton",
+    "killed": 3,
+    "injured": 0,
+    "source": "mother_jones",
+    "url": "https://www.nytimes.com/2017/11/01/us/thornton-colorado-walmart-shooting.html",
+    "summary": "Scott Allen Ostrem, 47, walked into a Walmart in a suburb north of Denver and fatally shot two men and a woman, then left the store and drove away. After an all-night manhunt, Ostrem, who had financial problems but no serious criminal history, was captured by police after being spotted near his apartment in Denver."
+  },
+  {
+    "id": "mj-edgewood-businees-park-shooting",
+    "date": "2017-10-18",
+    "state": "Maryland",
+    "city": "Edgewood",
+    "killed": 3,
+    "injured": 3,
+    "source": "mother_jones",
+    "url": "http://www.baltimoresun.com/news/maryland/harford/aegis/ph-ag-edgewood-shooting-20171018-story.html",
+    "summary": "Radee Labeeb Prince, 37, fatally shot three people and wounded two others around 9am at Advance Granite Solutions, a home remodeling business where he worked near Baltimore. Hours later he shot and wounded a sixth person at a car dealership in Wilmington, Delaware. He was apprehended that evening following a manhunt by authorities."
+  },
+  {
+    "id": "mj-las-vegas-strip-massacre",
+    "date": "2017-10-01",
+    "state": "Nevada",
+    "city": "Las Vegas",
+    "killed": 60,
+    "injured": 546,
+    "source": "mother_jones",
+    "url": "https://www.lvmpd.com/en-us/Documents/1_October_FIT_Report_01-18-2018_Footnoted.pdf",
+    "summary": "Stephen Craig Paddock, 64, fired a barrage of rapid gunfire—using semiautomatic rifles modified with \"bump stocks\"—at thousands of concertgoers on the Las Vegas Strip late on a Sunday night; Paddock had positioned himself in a corner suite on the 32nd floor of the Mandalay Bay Resort and Casino, where he took aim from windows he'd smashed open. Police responding to the attack found Paddock inside the hotel suite, deceased from a self-inflicted gunshot."
+  },
+  {
+    "id": "mj-san-francisco-ups-shooting",
+    "date": "2017-06-14",
+    "state": "California",
+    "city": "San Francisco",
+    "killed": 3,
+    "injured": 2,
+    "source": "mother_jones",
+    "url": "http://www.nbcbayarea.com/news/local/Active-Shooter-San-Francisco-Police-428441423.html",
+    "summary": "Jimmy Lam, 38, fatally shot three coworkers and wounded two others inside a UPS facility in San Francisco. Lam killed himself as law enforcement officers responded to the scene."
+  },
+  {
+    "id": "mj-pennsylvania-supermarket-shooting",
+    "date": "2017-06-07",
+    "state": "Pennsylvania",
+    "city": "Tunkhannock",
+    "killed": 3,
+    "injured": 0,
+    "source": "mother_jones",
+    "url": "http://www.pressconnects.com/story/news/local/pennsylvania/2017/06/08/dead-murder-suicide-pa-weis/102621742/",
+    "summary": "Randy Stair, a 24-year-old worker at Weis grocery fatally shot three of his fellow employees. He reportedly fired 59 rounds with a pair of shotguns before turning the gun on himself as another co-worker fled the scene for help and law enforcement responded."
+  },
+  {
+    "id": "mj-florida-awning-manufacturer-shooting",
+    "date": "2017-06-05",
+    "state": "Florida",
+    "city": "Orlando",
+    "killed": 5,
+    "injured": 0,
+    "source": "mother_jones",
+    "url": "http://www.postandcourier.com/news/multiple-people-dead-following-shooting-near-orlando-monday-morning/article_918fe64c-49f6-11e7-b071-a3fbdb04ebcc.html",
+    "summary": "John Robert Neumann, Jr., 45, a former employee of manufacturer Fiamma Inc. fatally shot five workers at the company, and then killed himself on the scene. He'd been fired from the company in April. The attack took place a week before the one-year anniversary of the Orlando nightclub massacre."
+  },
+  {
+    "id": "mj-rural-ohio-nursing-home-shooting",
+    "date": "2017-05-12",
+    "state": "Ohio",
+    "city": "Kirkersville",
+    "killed": 3,
+    "injured": 0,
+    "source": "mother_jones",
+    "url": "http://abc6onyourside.com/news/local/report-of-shooting-in-kirkersville",
+    "summary": "Thomas Hartless, 43, shot and killed a former girlfriend and another employee of a nursing home, and fatally shot the Kirkersville police chief responding to the scene. Hartless' former girlfriend had recently obtained a court protection order against Hartless. Investigators later found more than 60 firearms in the home of Hartless, who was found dead at the scene of the attack, having turned his gun on himself, according to local authorities."
+  },
+  {
+    "id": "mj-fresno-downtown-shooting",
+    "date": "2017-04-18",
+    "state": "California",
+    "city": "Fresno",
+    "killed": 3,
+    "injured": 0,
+    "source": "mother_jones",
+    "url": "http://www.dailymail.co.uk/news/article-4443722/Gunman-Fresno-shooting-speaks-jail.html",
+    "summary": "Kori Ali Muhammad, 39, opened fire along a street in downtown Fresno, killing three people randomly in an alleged hate crime prior to being apprehended by police. Muhammad, who is black, killed three white victims and later described his attack as being racially motivated; he also reportedly yelled 'Allahu Akbar' at the time he was arrested, but authorities indicated they found no links to Islamist terrorism."
+  },
+  {
+    "id": "mj-fort-lauderdale-airport-shooting",
+    "date": "2017-01-06",
+    "state": "Florida",
+    "city": "Fort Lauderdale",
+    "killed": 5,
+    "injured": 6,
+    "source": "mother_jones",
+    "url": "http://www.nytimes.com/2017/01/07/us/esteban-santiago-fort-lauderdale-airport-shooting-.html?_r=0",
+    "summary": "Esteban Santiago, 26, flew from Alaska to Fort Lauderdale, where he opened fire in the baggage claim area of the airport, killing five and wounding six before police aprehended him. (Numerous other people were reportedly injured while fleeing during the panic.)"
+  },
+  {
+    "id": "mj-cascade-mall-shooting",
+    "date": "2016-09-23",
+    "state": "Washington",
+    "city": "Burlington",
+    "killed": 5,
+    "injured": 0,
+    "source": "mother_jones",
+    "url": "http://www.nytimes.com/2016/09/25/us/mall-shooting-washington-state.html",
+    "summary": "Arcan Cetin, 20, killed a teen girl and three women in the cosmetics section of a Macy’s department store at the Cascade Mall. A man was critically wounded in the shooting and taken to Harborview Medical Center in Seattle, where he died. Cetin was apprehended by police a few hours after the shooting while driving a car near his residence."
+  },
+  {
+    "id": "mj-baton-rouge-police-shooting",
+    "date": "2016-07-17",
+    "state": "Louisiana",
+    "city": "Baton Rouge",
+    "killed": 3,
+    "injured": 3,
+    "source": "mother_jones",
+    "url": "http://time.com/4411027/baton-rouge-shooter-gavin-long/",
+    "summary": "Gavin Long, 29, a former Marine who served in Iraq, killed three police offers responding to a 911 call, and wounded three others. He was killed in a shoot-out with other officers responding to the scene. Prior to the attack, Long posted prolifically on social media, where he expressed admiration for the cop killer in Dallas 10 days prior."
+  },
+  {
+    "id": "mj-dallas-police-shooting",
+    "date": "2016-07-07",
+    "state": "Texas",
+    "city": "Dallas",
+    "killed": 5,
+    "injured": 11,
+    "source": "mother_jones",
+    "url": "http://www.nytimes.com/2016/07/11/us/dallas-shooting-micah-johnson-police.html?_r=0",
+    "summary": "Micah Xavier Johnson, a 25-year-old Army veteran, targeted police at a peaceful Black Lives Matter protest, killing five officers and injuring nine others as well as two civilians. After a prolonged standoff in a downtown building, law enforcement killed Johnson using a robot-delivered bomb."
+  },
+  {
     "id": "stanford-344",
     "date": "2016-06-26",
     "state": "South Carolina",
@@ -233,6 +1113,17 @@
     "injured": 3,
     "source": "stanford_msa",
     "summary": "Nightclub Disput"
+  },
+  {
+    "id": "mj-orlando-nightclub-massacre",
+    "date": "2016-06-12",
+    "state": "Florida",
+    "city": "Orlando",
+    "killed": 49,
+    "injured": 53,
+    "source": "mother_jones",
+    "url": "http://www.motherjones.com/politics/2016/06/assault-rifle-used-by-orlando-mass-shooter",
+    "summary": "Omar Mateen, 29, attacked the Pulse nighclub in Orlando in the early morning hours of June 12. He was killed by law enforcement who raided the club after a prolonged standoff."
   },
   {
     "id": "stanford-343",
@@ -915,6 +1806,17 @@
     "summary": "Belfair, Washington"
   },
   {
+    "id": "mj-excel-industries-mass-shooting",
+    "date": "2016-02-25",
+    "state": "Kansas",
+    "city": "Hesston",
+    "killed": 3,
+    "injured": 14,
+    "source": "mother_jones",
+    "url": "http://www.nytimes.com/2016/02/26/us/shooting-at-plant-hesston-kansas.html",
+    "summary": "Cedric L. Ford, who worked as a painter at a manufacturing company, shot victims from his car and at his workplace before being killed by police at the scene. Shortly before the rampage he had been served with a restraining order."
+  },
+  {
     "id": "stanford-252",
     "date": "2016-02-25",
     "state": "Kansas",
@@ -973,6 +1875,17 @@
     "injured": 5,
     "source": "stanford_msa",
     "summary": "Houston Drive-by"
+  },
+  {
+    "id": "mj-kalamazoo-shooting-spree",
+    "date": "2016-02-20",
+    "state": "Michigan",
+    "city": "Kalamazoo County",
+    "killed": 6,
+    "injured": 2,
+    "source": "mother_jones",
+    "url": "http://www.nytimes.com/2016/02/22/us/kalamazoo-michigan-random-shootings.html",
+    "summary": "Jason B. Dalton, a driver for Uber, apparently selected his victims randomly as he went on a rampage over several hours in three different locations, including five people he shot in the parking lot of a Cracker Barrel restaurant. He was \"arrested without incident\" at a downtown Kalamazoo bar about six hours after the rampage began."
   },
   {
     "id": "stanford-249",
@@ -1215,6 +2128,17 @@
     "summary": "Omaha, Nebraska"
   },
   {
+    "id": "mj-san-bernardino-mass-shooting",
+    "date": "2015-12-02",
+    "state": "California",
+    "city": "San Bernardino",
+    "killed": 14,
+    "injured": 21,
+    "source": "mother_jones",
+    "url": "http://www.motherjones.com/mojo/2015/12/san-bernardino-shooting and  http://www.cnbc.com/2015/12/03/san-bernardino-shooting-suspects-rizwan-farook-tashfeen-malik-dead.html and http://www.nytimes.com/2015/12/04/us/san-bernardino-shooting.html and http://www.nytimes.com/2015/12/04/us/weapons-in-san-bernardino-shootings-were-legally-obtained.html?_r=0",
+    "summary": "Syed Rizwan Farook left a Christmas party held at Inland Regional Center, later returning with Tashfeen Malik and the two opened fire, killing 14 and wounding 21, ten critically. The two were later killed by police as they fled in an SUV."
+  },
+  {
     "id": "stanford-245",
     "date": "2015-12-02",
     "state": "California",
@@ -1223,6 +2147,17 @@
     "injured": 21,
     "source": "stanford_msa",
     "summary": "San Bernardino, California"
+  },
+  {
+    "id": "mj-planned-parenthood-clinic",
+    "date": "2015-11-27",
+    "state": "Colorado",
+    "city": "Colorado Springs",
+    "killed": 3,
+    "injured": 9,
+    "source": "mother_jones",
+    "url": "http://www.nytimes.com/2015/11/28/us/colorado-planned-parenthood-shooting.html and http://www.cnn.com/2015/12/09/us/colorado-planned-parenthood-shooting/ and http://www.npr.org/sections/thetwo-way/2015/11/28/457674369/planned-parenthood-shooting-police-name-suspect-procession-for-fallen-officer and http://www.cbsnews.com/news/robert-lewis-dear-planned-parenthood-first-court-appearance/ and http://www.denverpost.com/news/ci_29729326/judge-wont-release-all-records-accused-planned-parenthood and http://www.csindy.com/IndyBlog/archives/2016/02/17/judge-resists-unsealing-dear-affidavits",
+    "summary": "Robert Lewis Dear, 57, shot and killed a police officer and two citizens when he opened fire at a Planned Parenthood health clinic in Colorado Springs, Colorado. Nine others were wounded. Dear was arrested after an hours-long standoff with police."
   },
   {
     "id": "stanford-244",
@@ -1295,6 +2230,17 @@
     "summary": "Oakland, Maine"
   },
   {
+    "id": "mj-colorado-springs-shooting-rampage",
+    "date": "2015-10-31",
+    "state": "Colorado",
+    "city": "Colorado Springs",
+    "killed": 3,
+    "injured": 0,
+    "source": "mother_jones",
+    "url": "http://www.motherjones.com/mojo/2015/11/open-carry-mass-shooting-colorado-springs and http://www.denverpost.com/news/ci_29059452/colorado-springs-police-confronted-shot-gunman-minutes and http://www.cbsnews.com/news/shooter-in-colorado-springs-rampage-legally-purchased-guns/",
+    "summary": "Noah Harpham, 33, shot three people before dead in Colorado Springs before police killed him in a shootout."
+  },
+  {
     "id": "stanford-236",
     "date": "2015-10-31",
     "state": "Colorado",
@@ -1323,6 +2269,17 @@
     "injured": 3,
     "source": "stanford_msa",
     "summary": "Northern Arizona University at Flagstaff Campus"
+  },
+  {
+    "id": "mj-umpqua-community-college-shooting",
+    "date": "2015-10-01",
+    "state": "Oregon",
+    "city": "Roseburg",
+    "killed": 9,
+    "injured": 9,
+    "source": "mother_jones",
+    "url": "http://www.nytimes.com/2015/10/03/us/chris-harper-mercer-umpqua-community-college-shooting.html",
+    "summary": "26-year-old Chris Harper Mercer opened fire at Umpqua Community College in southwest Oregon. The gunman shot himself to death after being wounded in a shootout with police."
   },
   {
     "id": "stanford-231",
@@ -1435,6 +2392,17 @@
     "summary": "Suwanee"
   },
   {
+    "id": "mj-chattanooga-military-recruitment-center",
+    "date": "2015-07-16",
+    "state": "Tennessee",
+    "city": "Chattanooga",
+    "killed": 5,
+    "injured": 2,
+    "source": "mother_jones",
+    "url": "http://www.reuters.com/article/2015/07/16/us-usa-shooting-tennessee-idUSKCN0PQ1WY20150716",
+    "summary": "Kuwaiti-born Mohammod Youssuf Abdulazeez, 24, a naturalized US citizen, opened fire at a Naval reserve center, and then drove to a military recruitment office where he shot and killed four Marines and a Navy service member, and wounded a police officer and another military service member. He was then fatally shot in an exchange of gunfire with law enforcement officers responding to the attack."
+  },
+  {
     "id": "stanford-222",
     "date": "2015-07-16",
     "state": "Tennessee",
@@ -1465,6 +2433,17 @@
     "summary": "Boom Boom Room"
   },
   {
+    "id": "mj-charleston-church-shooting",
+    "date": "2015-06-17",
+    "state": "South Carolina",
+    "city": "Charleston",
+    "killed": 9,
+    "injured": 1,
+    "source": "mother_jones",
+    "url": "http://www.motherjones.com/politics/2015/06/dylann-roofs-attorney",
+    "summary": "Dylann Storm Roof, 21, shot and killed 9 people after opening fire at the Emanuel AME Church in Charleston, South Carolina. According to a roommate, he had allegedly been “planning something like that for six months.\""
+  },
+  {
     "id": "stanford-215",
     "date": "2015-06-17",
     "state": "South Carolina",
@@ -1483,6 +2462,17 @@
     "injured": 4,
     "source": "stanford_msa",
     "summary": "Miami Gardens"
+  },
+  {
+    "id": "mj-trestle-trail-bridge-shooting",
+    "date": "2015-06-11",
+    "state": "Wisconsin",
+    "city": "Menasha",
+    "killed": 3,
+    "injured": 1,
+    "source": "mother_jones",
+    "url": "http://fox6now.com/2015/06/11/released-menasha-police-issue-final-report-on-trestle-trail-bridge-shooting/ and http://www.postcrescent.com/story/news/local/2015/06/11/police-gunman-prior-suicidal-homicidal-thoughts/71064874/ and http://fox6now.com/2015/05/05/he-was-my-future-husband-fiancee-of-menasha-gunman-says-shes-devastated-for-victims-families/",
+    "summary": "Sergio Valencia del Toro, 27, in what officials say was a random act, shot and killed three people including an 11-year-old girl before turning the gun on himself."
   },
   {
     "id": "stanford-214",
@@ -1885,6 +2875,17 @@
     "summary": "Florida State University"
   },
   {
+    "id": "mj-marysville-pilchuck-high-school-shooting",
+    "date": "2014-10-24",
+    "state": "Washington",
+    "city": "Marysville",
+    "killed": 5,
+    "injured": 1,
+    "source": "mother_jones",
+    "url": "http://www.seattletimes.com/seattle-news/fourth-marysville-shooting-victim-dies-as-another-is-laid-to-rest/ http://www.mercurynews.com/crime-courts/ci_26814211/jaylen-fryberg-included-tributes-washington-school-shooting-victims",
+    "summary": "Jaylen Fryberg, 15, using a .40-caliber Berretta, shot five \nstudents at Marysville High School, including two of his cousins and three friends, killing all but one. Fryberg arranged to meet them for lunch in the school cafeteria by text. Fryberg was reportedly well-liked at the school and there was not believed to be any ill-will between him and his victims. He committed suicide at the scene."
+  },
+  {
     "id": "stanford-165",
     "date": "2014-10-24",
     "state": "Washington",
@@ -1935,6 +2936,17 @@
     "summary": "Seattle Pacific University"
   },
   {
+    "id": "mj-isla-vista-mass-murder",
+    "date": "2014-05-23",
+    "state": "California",
+    "city": "Santa Barbara",
+    "killed": 6,
+    "injured": 13,
+    "source": "mother_jones",
+    "url": "http://www.sbsheriff.us/documents/ISLAVISTAINVESTIGATIVESUMMARY.pdf Also: http://www.cnn.com/2014/05/24/us/santa-barbara-isla-vista-shooting-profile/ and http://www.cnn.com/2014/05/24/justice/california-shooting-deaths/index.html and http://www.independent.com/news/2015/feb/20/elliot-rodger-report-details-long-struggle-mental-/ and http://www.cbsnews.com/videos/how-was-elliot-rodger-able-to-purchase-weapons/ and http://www.dailymail.co.uk/news/article-2638922/Santa-Barbara-rampage-killer-bought-three-handguns-legally-gun-shop.html",
+    "summary": "Elliot Rodger, 22, shot three people to death in the college town of Isla Vista near the University of California, Santa Barbara. He also shot others as he drove around town, and injured others by striking them with is vehicle. He committed suicide by shooting himself in his car as police closed in. Prior to the rampage, Rodger stabbed three people to death at his apartment."
+  },
+  {
     "id": "stanford-160",
     "date": "2014-05-23",
     "state": "California",
@@ -1955,6 +2967,17 @@
     "summary": "Kennesaw FedEx"
   },
   {
+    "id": "mj-fort-hood-shooting-2",
+    "date": "2014-04-03",
+    "state": "Texas",
+    "city": "Fort Hood",
+    "killed": 3,
+    "injured": 12,
+    "source": "mother_jones",
+    "url": "http://www.cnn.com/2014/04/02/us/fort-hood-shooting/ and https://www.washingtonpost.com/news/checkpoint/wp/2015/01/23/army-details-the-downward-spiral-of-the-fort-hood-shooter-ivan-lopez/ and http://www.thedailybeast.com/articles/2014/04/03/soldier-opens-fire-at-fort-hood.html",
+    "summary": "Army Specialist Ivan Lopez, 34, opened fire at the Fort Hood Army Post in Texas, killing three and wounding at least 12 others before shooting himself in the head after engaging with military police. Lt. Gen. Mark A. Milley told reporters that Lopez \"had behavioral health and mental health\" issues."
+  },
+  {
     "id": "stanford-158",
     "date": "2014-04-02",
     "state": "Texas",
@@ -1963,6 +2986,17 @@
     "injured": 16,
     "source": "stanford_msa",
     "summary": "Fort Hood"
+  },
+  {
+    "id": "mj-alturas-tribal-shooting",
+    "date": "2014-02-20",
+    "state": "California",
+    "city": "Alturas",
+    "killed": 4,
+    "injured": 2,
+    "source": "mother_jones",
+    "url": "http://www.sacbee.com/news/local/crime/article2603350.html",
+    "summary": "Cherie Lash Rhoades, 44, opened fire at the Cedarville Rancheria Tribal Office and Community Center, killing four and wounding two. After running out of ammunition, Rhoades grabbed a butcher knife and stabbed another person."
   },
   {
     "id": "stanford-167",
@@ -2015,7 +3049,7 @@
     "summary": "Oklahoma City Residence"
   },
   {
-    "id": "stanford-156",
+    "id": "stanford-156-2",
     "date": "2013-08-07",
     "state": "Texas",
     "city": "Dallas",
@@ -2035,6 +3069,17 @@
     "summary": "Ross Township Supervisor Council Meeting"
   },
   {
+    "id": "mj-hialeah-apartment-shooting",
+    "date": "2013-07-26",
+    "state": "Florida",
+    "city": "Hialeah",
+    "killed": 7,
+    "injured": 0,
+    "source": "mother_jones",
+    "url": "http://www.miamiherald.com/2013/07/27/v-print/3526078/a-look-at-the-victims-in-the-hialeah.html  http://www.cbsnews.com/8301-201_162-57595796/pedro-vargas-idd-as-gunman-behind-deadly-rampage-in-hialeah-florida/    http://www.miamiherald.com/2013/07/28/3528362/little-about-pedro-vargas-life.html",
+    "summary": "Pedro Vargas, 42, set fire to his apartment, killed six people in the complex, and held another two hostages at gunpoint before a SWAT team stormed the building and fatally shot him."
+  },
+  {
     "id": "stanford-146",
     "date": "2013-07-26",
     "state": "Florida",
@@ -2043,6 +3088,17 @@
     "injured": 0,
     "source": "stanford_msa",
     "summary": "Hialeah Apartments"
+  },
+  {
+    "id": "mj-santa-monica-rampage",
+    "date": "2013-06-07",
+    "state": "California",
+    "city": "Santa Monica",
+    "killed": 6,
+    "injured": 3,
+    "source": "mother_jones",
+    "url": "http://www.cbsnews.com/8301-504083_162-57589327-504083/john-zawahri-suspected-gunman-in-deadly-santa-monica-shooting-left-farewell-note-police-say/",
+    "summary": "John Zawahri, 23, armed with a homemade assault rifle and high-capacity magazines, killed his brother and father at home and then headed to Santa Monica College, where he was eventually killed by police."
   },
   {
     "id": "stanford-145",
@@ -2065,6 +3121,17 @@
     "summary": "Village of Manchester in Illinois"
   },
   {
+    "id": "mj-pinewood-village-apartment-shooting",
+    "date": "2013-04-21",
+    "state": "Washington",
+    "city": "Federal Way",
+    "killed": 5,
+    "injured": 0,
+    "source": "mother_jones",
+    "url": "http://seattletimes.com/html/localnews/2020836119_federalwayshootingxml.html",
+    "summary": "Dennis Clark III, 27, shot and killed his girlfriend in their shared apartment, and then shot two witnesses in the building's parking lot and a third victim in another apartment, before being killed by police."
+  },
+  {
     "id": "stanford-143",
     "date": "2013-04-21",
     "state": "Washington",
@@ -2073,6 +3140,17 @@
     "injured": 0,
     "source": "stanford_msa",
     "summary": "Pinewood Village Apartments"
+  },
+  {
+    "id": "mj-mohawk-valley-shootings",
+    "date": "2013-03-13",
+    "state": "New York",
+    "city": "Herkimer County",
+    "killed": 5,
+    "injured": 2,
+    "source": "mother_jones",
+    "url": "https://www.nyspnews.com/article_display.cfm?article_id=29584",
+    "summary": "Kurt Myers, 64, shot six people in neighboring towns, killing two in a barbershop and two at a car care business, before being killed by officers in a shootout after a nearly 19-hour standoff."
   },
   {
     "id": "stanford-154",
@@ -2125,6 +3203,17 @@
     "summary": "South Valley Residence"
   },
   {
+    "id": "mj-sandy-hook-elementary-massacre",
+    "date": "2012-12-14",
+    "state": "Connecticut",
+    "city": "Newtown",
+    "killed": 27,
+    "injured": 2,
+    "source": "mother_jones",
+    "url": "http://usnews.nbcnews.com/_news/2012/12/14/15911025-authorities-id-gunman-who-killed-27-in-elementary-school-massacre?lite",
+    "summary": "Adam Lanza, 20, shot his mother dead at their home then drove to Sandy Hook Elementary school. He forced his way inside and opened fire, killing 20 children and six adults before committing suicide."
+  },
+  {
     "id": "stanford-138",
     "date": "2012-12-14",
     "state": "Connecticut",
@@ -2165,6 +3254,17 @@
     "summary": "The Spot Nightclub"
   },
   {
+    "id": "mj-accent-signage-systems-shooting",
+    "date": "2012-09-27",
+    "state": "Minnesota",
+    "city": "Minneapolis",
+    "killed": 7,
+    "injured": 1,
+    "source": "mother_jones",
+    "url": "http://www.startribune.com/local/171774461.html?refer=y",
+    "summary": "Andrew Engeldinger, 36, upon learning he was being fired, went on a shooting rampage, killing the business owner, three fellow employees, and a UPS driver. He then killed himself."
+  },
+  {
     "id": "stanford-134",
     "date": "2012-09-27",
     "state": "Minnesota",
@@ -2175,6 +3275,17 @@
     "summary": "Accent Signage Systems in Minneapolis"
   },
   {
+    "id": "mj-sikh-temple-shooting",
+    "date": "2012-08-05",
+    "state": "Wisconsin",
+    "city": "Oak Creek",
+    "killed": 7,
+    "injured": 3,
+    "source": "mother_jones",
+    "url": "http://www.jsonline.com/news/milwaukee/friend-of-page-feared-what-he-might-do-426edmg-165668826.html",
+    "summary": "U.S. Army veteran Wade Michael Page, 40, opened fire in a Sikh gurdwara before he died from a self-inflicted gunshot would during a shootout with police."
+  },
+  {
     "id": "stanford-133",
     "date": "2012-08-05",
     "state": "Wisconsin",
@@ -2183,6 +3294,17 @@
     "injured": 4,
     "source": "stanford_msa",
     "summary": "Sikh Temple in Wisconsin"
+  },
+  {
+    "id": "mj-aurora-theater-shooting",
+    "date": "2012-07-20",
+    "state": "Colorado",
+    "city": "Aurora",
+    "killed": 12,
+    "injured": 70,
+    "source": "mother_jones",
+    "url": "http://www.cbsnews.com/8301-201_162-57497820/james-holmes-saw-three-mental-health-professionals-before-shooting/",
+    "summary": "James Holmes, 24, opened fire in a movie theater during the opening night of \"The Dark Night Rises\" and was later arrested outside."
   },
   {
     "id": "stanford-132",
@@ -2215,6 +3337,17 @@
     "summary": "Cafe in Seattle"
   },
   {
+    "id": "mj-seattle-cafe-shooting",
+    "date": "2012-05-20",
+    "state": "Washington",
+    "city": "Seattle",
+    "killed": 6,
+    "injured": 1,
+    "source": "mother_jones",
+    "url": "http://usnews.nbcnews.com/_news/2012/05/30/11959312-six-killed-in-seattle-shootings-including-suspect?lite",
+    "summary": "Ian Stawicki, 40, gunned down four patrons at a cafe, and another person during a carjacking nearby, then shot himself as police closed in. (He died later that day in a Seattle hospital.)"
+  },
+  {
     "id": "stanford-129",
     "date": "2012-04-06",
     "state": "Oklahoma",
@@ -2223,6 +3356,17 @@
     "injured": 2,
     "source": "stanford_msa",
     "summary": "North Tulsa, Oklahoma"
+  },
+  {
+    "id": "mj-oikos-university-killings",
+    "date": "2012-04-02",
+    "state": "California",
+    "city": "Oakland",
+    "killed": 7,
+    "injured": 3,
+    "source": "mother_jones",
+    "url": "http://blog.sfgate.com/eguillermo/2012/04/05/something-still-doesnt-compute-in-the-one-goh-nightmare/",
+    "summary": "One L. Goh, 43, a former student, opened fire in a nursing classroom. He fled the scene by car and was arrested nearby a few hours later."
   },
   {
     "id": "stanford-128",
@@ -2255,6 +3399,17 @@
     "summary": "Su Jung Health Sauna"
   },
   {
+    "id": "mj-su-jung-health-sauna-shooting",
+    "date": "2012-02-21",
+    "state": "Georgia",
+    "city": "Norcross",
+    "killed": 5,
+    "injured": 0,
+    "source": "mother_jones",
+    "url": "http://www.gwinnettdailypost.com/news/2012/feb/23/police-id-4-victims-shooter-in-spa-killing/",
+    "summary": "Jeong Soo Paek, 59, returned to a Korean spa from which he'd been kicked out after an altercation. He gunned down two of his sisters and their husbands before committing suicide."
+  },
+  {
     "id": "stanford-168",
     "date": "2012-01-29",
     "state": "Alabama",
@@ -2265,6 +3420,17 @@
     "summary": "Ensley Birmingham"
   },
   {
+    "id": "mj-seal-beach-shooting",
+    "date": "2011-10-12",
+    "state": "California",
+    "city": "Seal Beach",
+    "killed": 8,
+    "injured": 1,
+    "source": "mother_jones",
+    "url": "http://laist.com/2011/10/13/seal_beach_shooter_suffered_from_ptsd.php",
+    "summary": "Scott Evans Dekraai, 42, opened fire inside a hair salon and was later arrested. Victims killed in the attack included his ex-wife, who Dekraai had a history of violently abusing, according to court records. The two had also been involved in a bitter custody battle."
+  },
+  {
     "id": "stanford-125",
     "date": "2011-10-12",
     "state": "California",
@@ -2273,6 +3439,17 @@
     "injured": 1,
     "source": "stanford_msa",
     "summary": "Salon Meritage"
+  },
+  {
+    "id": "mj-ihop-shooting",
+    "date": "2011-09-06",
+    "state": "Nevada",
+    "city": "Carson City",
+    "killed": 5,
+    "injured": 7,
+    "source": "mother_jones",
+    "url": "http://www.huffingtonpost.com/2011/11/03/eduardo-sencion-ihop-shooter_n_1073677.html",
+    "summary": "Eduardo Sencion, 32, opened fire at an International House of Pancakes restaurant and later died from a self-inflicted gunshot wound."
   },
   {
     "id": "stanford-124",
@@ -2315,6 +3492,17 @@
     "summary": "Youngstown State University"
   },
   {
+    "id": "mj-tucson-shooting",
+    "date": "2011-01-08",
+    "state": "Arizona",
+    "city": "Tucson",
+    "killed": 6,
+    "injured": 13,
+    "source": "mother_jones",
+    "url": "http://www.time.com/time/magazine/article/0,9171,2042358,00.html",
+    "summary": "Jared Loughner, 22, opened fire outside a Safeway during a constituent meeting with Congresswoman Gabrielle Giffords (D-Ariz.) before he was subdued by bystanders and arrested."
+  },
+  {
     "id": "stanford-120",
     "date": "2011-01-08",
     "state": "Arizona",
@@ -2323,6 +3511,17 @@
     "injured": 13,
     "source": "stanford_msa",
     "summary": "Tucson, Arizona"
+  },
+  {
+    "id": "mj-hartford-beer-distributor-shooting",
+    "date": "2010-08-03",
+    "state": "Connecticut",
+    "city": "Manchester",
+    "killed": 9,
+    "injured": 2,
+    "source": "mother_jones",
+    "url": "http://www.cbsnews.com/8301-504083_162-20012557-504083.html",
+    "summary": "Omar S. Thornton, 34, shot up his Hartford Beer Distributor workplace after facing disciplinary issues, then committed suicide."
   },
   {
     "id": "stanford-119",
@@ -2345,6 +3544,17 @@
     "summary": "University of Alabama in Huntsville"
   },
   {
+    "id": "mj-coffee-shop-police-killings",
+    "date": "2009-11-29",
+    "state": "Washington",
+    "city": "Parkland",
+    "killed": 4,
+    "injured": 1,
+    "source": "mother_jones",
+    "url": "http://seattletimes.com/html/localnews/2010385617_webmansought29.html",
+    "summary": "Maurice Clemmons, 37, a felon who was out on bail for child-rape charges, entered a coffee shop on a Sunday morning and shot four police officers who had gone there to use their laptops before their shifts. Clemmons, who was wounded fleeing the scene, was later shot dead by a police officer in Seattle after a two-day manhunt."
+  },
+  {
     "id": "stanford-117",
     "date": "2009-11-29",
     "state": "Washington",
@@ -2353,6 +3563,17 @@
     "injured": 0,
     "source": "stanford_msa",
     "summary": "Parkland Coffee Shop"
+  },
+  {
+    "id": "mj-fort-hood-massacre",
+    "date": "2009-11-05",
+    "state": "Texas",
+    "city": "Fort Hood",
+    "killed": 13,
+    "injured": 31,
+    "source": "mother_jones",
+    "url": "http://seattletimes.com/html/nationworld/2010232219_apusforthoodshooting.html",
+    "summary": "Army psychiatrist Nidal Malik Hasan, 39, opened fire on an Army base in an attack linked to Islamist extremism. Hasan was injured during the attack and later arrested."
   },
   {
     "id": "stanford-116",
@@ -2365,6 +3586,17 @@
     "summary": "Fort Hood Army Base"
   },
   {
+    "id": "mj-binghamton-shootings",
+    "date": "2009-04-03",
+    "state": "New York",
+    "city": "Binghamton",
+    "killed": 14,
+    "injured": 4,
+    "source": "mother_jones",
+    "url": "http://www.nytimes.com/2009/04/12/nyregion/12binghamton.html?pagewanted=all&_r=0",
+    "summary": "Jiverly Wong, 41, opened fire at an American Civic Association center for immigrants before committing suicide."
+  },
+  {
     "id": "stanford-115",
     "date": "2009-04-03",
     "state": "New York",
@@ -2373,6 +3605,17 @@
     "injured": 4,
     "source": "stanford_msa",
     "summary": "Immigration Services Center in Binghamton"
+  },
+  {
+    "id": "mj-carthage-nursing-home-shooting",
+    "date": "2009-03-29",
+    "state": "North Carolina",
+    "city": "Carthage",
+    "killed": 8,
+    "injured": 3,
+    "source": "mother_jones",
+    "url": "http://www.wral.com/news/local/story/9845639/",
+    "summary": "Robert Stewart, 45, opened fire at a nursing home where his estranged wife worked before he was shot and arrested by a police officer."
   },
   {
     "id": "stanford-113",
@@ -2435,6 +3678,17 @@
     "summary": "South Mountain Community College"
   },
   {
+    "id": "mj-atlantis-plastics-shooting",
+    "date": "2008-06-25",
+    "state": "Kentucky",
+    "city": "Henderson",
+    "killed": 6,
+    "injured": 1,
+    "source": "mother_jones",
+    "url": "http://www.foxnews.com/story/0,2933,371242,00.html",
+    "summary": "Disgruntled employee Wesley Neal Higdon, 25, shot up an Atlantis Plastics factory after he was escorted out of his workplace for an argument with a supervisor. Higdon shot the supervisor outside the factory before opening fire on coworkers inside. He then committed suicide."
+  },
+  {
     "id": "stanford-108",
     "date": "2008-06-25",
     "state": "Kentucky",
@@ -2445,6 +3699,17 @@
     "summary": "Atlantis Plastics"
   },
   {
+    "id": "mj-northern-illinois-university-shooting",
+    "date": "2008-02-14",
+    "state": "Illinois",
+    "city": "DeKalb",
+    "killed": 5,
+    "injured": 21,
+    "source": "mother_jones",
+    "url": "http://www.huffingtonpost.com/jonathan-fast/steve-kazmierczak-the-sec_b_87031.html",
+    "summary": "Steven Kazmierczak, 27, opened fire in a lecture hall, then shot and killed himself before police arrived."
+  },
+  {
     "id": "stanford-107",
     "date": "2008-02-14",
     "state": "Illinois",
@@ -2453,6 +3718,17 @@
     "injured": 17,
     "source": "stanford_msa",
     "summary": "Northern Illinois University"
+  },
+  {
+    "id": "mj-kirkwood-city-council-shooting",
+    "date": "2008-02-07",
+    "state": "Missouri",
+    "city": "Kirkwood",
+    "killed": 6,
+    "injured": 2,
+    "source": "mother_jones",
+    "url": "http://www.stltoday.com/news/local/crime-and-courts/charles-lee-cookie-thornton-behind-the-smile/article_be96f13c-78b9-11df-bfdc-0017a4a78c22.html",
+    "summary": "Charles \"Cookie\" Lee Thornton, 52, went on a rampage at the city hall before being shot and killed by police."
   },
   {
     "id": "stanford-106",
@@ -2495,6 +3771,17 @@
     "summary": "Youth With A Mission and New Life Church"
   },
   {
+    "id": "mj-westroads-mall-shooting",
+    "date": "2007-12-05",
+    "state": "Nebraska",
+    "city": "Omaha",
+    "killed": 9,
+    "injured": 4,
+    "source": "mother_jones",
+    "url": "http://www.guardian.co.uk/world/2007/dec/06/usa.usgunviolence2",
+    "summary": "Robert A. Hawkins, 19, opened fire inside Westroads Mall before committing suicide."
+  },
+  {
     "id": "stanford-102",
     "date": "2007-12-05",
     "state": "Nebraska",
@@ -2525,6 +3812,17 @@
     "summary": "SuccessTech Academy"
   },
   {
+    "id": "mj-crandon-shooting",
+    "date": "2007-10-07",
+    "state": "Wisconsin",
+    "city": "Crandon",
+    "killed": 6,
+    "injured": 1,
+    "source": "mother_jones",
+    "url": "http://www.rivernewsonline.com/main.asp?SectionID=6&SubSectionID=47&ArticleID=368",
+    "summary": "Off-duty sheriff's deputy Tyler Peterson, 20, opened fire inside an apartment after an argument at a homecoming party. He fled the scene and later committed suicide."
+  },
+  {
     "id": "stanford-99",
     "date": "2007-10-07",
     "state": "Wisconsin",
@@ -2533,6 +3831,17 @@
     "injured": 1,
     "source": "stanford_msa",
     "summary": "Apartment in Crandon, Wisconsin"
+  },
+  {
+    "id": "mj-virginia-tech-massacre",
+    "date": "2007-04-16",
+    "state": "Virginia",
+    "city": "Blacksburg",
+    "killed": 32,
+    "injured": 23,
+    "source": "mother_jones",
+    "url": "http://www.nytimes.com/2007/04/24/us/24virginia.html",
+    "summary": "Virginia Tech student Seung-Hui Cho, 23, opened fire on his school's campus before committing suicide."
   },
   {
     "id": "stanford-98",
@@ -2555,6 +3864,17 @@
     "summary": "Springwater Trail High School"
   },
   {
+    "id": "mj-trolley-square-shooting",
+    "date": "2007-02-12",
+    "state": "Utah",
+    "city": "Salt Lake City",
+    "killed": 6,
+    "injured": 4,
+    "source": "mother_jones",
+    "url": "http://www.deseretnews.com/article/660205647/Ex-relative-calls-Talovic-vicious-troubled.html?pg=all",
+    "summary": "Sulejman Talović, 18, rampaged through the shopping center until he was shot dead by police."
+  },
+  {
     "id": "stanford-96",
     "date": "2007-02-12",
     "state": "Utah",
@@ -2563,6 +3883,17 @@
     "injured": 4,
     "source": "stanford_msa",
     "summary": "Trolley Square"
+  },
+  {
+    "id": "mj-amish-school-shooting",
+    "date": "2006-10-02",
+    "state": "Pennsylvania",
+    "city": "Lancaster County",
+    "killed": 6,
+    "injured": 5,
+    "source": "mother_jones",
+    "url": "http://news.google.com/newspapers?id=O8oyAAAAIBAJ&sjid=YSUEAAAAIBAJ&pg=6143,1260138&dq=charles+carl+roberts+mentally+ill&hl=en",
+    "summary": "Charles Carl Roberts, 32, shot 10 young girls in a one-room schoolhouse in Bart Township, killing 5, before taking his own life."
   },
   {
     "id": "stanford-95",
@@ -2605,6 +3936,17 @@
     "summary": "Essex Elementary School"
   },
   {
+    "id": "mj-capitol-hill-massacre",
+    "date": "2006-03-25",
+    "state": "Washington",
+    "city": "Seattle",
+    "killed": 7,
+    "injured": 2,
+    "source": "mother_jones",
+    "url": "http://seattletimes.com/html/localnews/2002892043_shooter27m.html",
+    "summary": "Kyle Aaron Huff, 28, opened fire at a rave afterparty in the Capitol Hill neighborhood of Seattle before committing suicide."
+  },
+  {
     "id": "stanford-91",
     "date": "2006-03-25",
     "state": "Washington",
@@ -2613,6 +3955,17 @@
     "injured": 2,
     "source": "stanford_msa",
     "summary": "Party in Capitol Hill, Seattle"
+  },
+  {
+    "id": "mj-goleta-postal-shootings",
+    "date": "2006-01-30",
+    "state": "California",
+    "city": "Goleta",
+    "killed": 8,
+    "injured": 0,
+    "source": "mother_jones",
+    "url": "http://www.msnbc.msn.com/id/11167920/ns/us_news-crime_and_courts/t/postal-killer-believed-she-was-target-plot/#.UIxy7kzLwTE",
+    "summary": "Former postal worker Jennifer Sanmarco, 44, shot dead a former neighbor then drove to the mail processing plant where she used to work. Inside, she opened fire, killing six employees before committing suicide."
   },
   {
     "id": "stanford-90",
@@ -2625,6 +3978,17 @@
     "summary": "Goleta Post Office"
   },
   {
+    "id": "mj-red-lake-massacre",
+    "date": "2005-03-21",
+    "state": "Minnesota",
+    "city": "Red Lake",
+    "killed": 10,
+    "injured": 5,
+    "source": "mother_jones",
+    "url": "http://news.google.com/newspapers?id=c4dIAAAAIBAJ&sjid=_XEDAAAAIBAJ&pg=5163,1527281&dq=jeffrey+weise+mental+ill&hl=en",
+    "summary": "Jeffrey Weise, 16, murdered his grandfather, who was a police officer, and grandfather's girlfriend. Weise then drove his grandfather's squad car to Red Lake Senior High School and opened fire on the reservation campus, killing another seven people before committing suicide."
+  },
+  {
     "id": "stanford-89",
     "date": "2005-03-21",
     "state": "Minnesota",
@@ -2633,6 +3997,17 @@
     "injured": 5,
     "source": "stanford_msa",
     "summary": "Red Lake High School"
+  },
+  {
+    "id": "mj-living-church-of-god-shooting",
+    "date": "2005-03-12",
+    "state": "Wisconsin",
+    "city": "Brookfield",
+    "killed": 7,
+    "injured": 4,
+    "source": "mother_jones",
+    "url": "http://www.cbsnews.com/2100-201_162-679761.html",
+    "summary": "Living Church of God member Terry Michael Ratzmann, 44, opened fire at a church meeting at a Sheraton hotel before committing suicide."
   },
   {
     "id": "stanford-88",
@@ -2653,6 +4028,17 @@
     "injured": 1,
     "source": "stanford_msa",
     "summary": "Tyler Courthouse"
+  },
+  {
+    "id": "mj-damageplan-show-shooting",
+    "date": "2004-12-08",
+    "state": "Ohio",
+    "city": "Columbus",
+    "killed": 5,
+    "injured": 7,
+    "source": "mother_jones",
+    "url": "http://www.cbsnews.com/2100-201_162-659983.html",
+    "summary": "Nathan Gale, 25, possibly upset about the breakup of Pantera, gunned down former Pantera guitarist Dimebag Darrell and three others at a Damageplan show before a police officer fatally shot Gale."
   },
   {
     "id": "stanford-87",
@@ -2683,6 +4069,17 @@
     "injured": 0,
     "source": "stanford_msa",
     "summary": "Windy City Core Supply Warehouse"
+  },
+  {
+    "id": "mj-lockheed-martin-shooting",
+    "date": "2003-07-08",
+    "state": "Mississippi",
+    "city": "Meridian",
+    "killed": 7,
+    "injured": 8,
+    "source": "mother_jones",
+    "url": "http://usatoday30.usatoday.com/news/nation/2003-07-08-miss-shooting-main_x.htm",
+    "summary": "Assembly line worker Douglas Williams, 48, opened fire at his Lockheed Martin workplace in a racially motivated attack before committing suicide."
   },
   {
     "id": "stanford-84",
@@ -2735,6 +4132,17 @@
     "summary": "Santana High School"
   },
   {
+    "id": "mj-navistar-shooting",
+    "date": "2001-02-05",
+    "state": "Illinois",
+    "city": "Melrose Park",
+    "killed": 5,
+    "injured": 4,
+    "source": "mother_jones",
+    "url": "http://articles.chicagotribune.com/2001-02-07/news/0102070122_1_navistar-gun-law-hunting-rifle",
+    "summary": "Fired employee William D. Baker, 66, opened fire at his former Navistar workplace before committing suicide."
+  },
+  {
     "id": "stanford-79",
     "date": "2001-02-05",
     "state": "Illinois",
@@ -2745,6 +4153,17 @@
     "summary": "Navistar International"
   },
   {
+    "id": "mj-wakefield-massacre",
+    "date": "2000-12-26",
+    "state": "Massachusetts",
+    "city": "Wakefield",
+    "killed": 7,
+    "injured": 0,
+    "source": "mother_jones",
+    "url": "http://www.time.com/time/magazine/article/0,9171,93313,00.html",
+    "summary": "Michael McDermott, 42, opened fire on co-workers at Edgewater Technology and was later arrested."
+  },
+  {
     "id": "stanford-78",
     "date": "2000-12-26",
     "state": "Massachusetts",
@@ -2753,6 +4172,17 @@
     "injured": 0,
     "source": "stanford_msa",
     "summary": "Edgewater Technology"
+  },
+  {
+    "id": "mj-hotel-shooting",
+    "date": "1999-12-30",
+    "state": "Florida",
+    "city": "Tampa",
+    "killed": 5,
+    "injured": 3,
+    "source": "mother_jones",
+    "url": "http://www.sptimes.com/News/123000/news_pf/TampaBay/A_year_later__the_str.shtml",
+    "summary": "Hotel employee Silvio Leyva, 36, gunned down four coworkers at the Radisson Bay Harbor Inn before killing a woman outside who refused to give him her car. He was arrested shortly after the shootings."
   },
   {
     "id": "stanford-77",
@@ -2775,6 +4205,17 @@
     "summary": "Fort Gibson Middle School"
   },
   {
+    "id": "mj-xerox-killings",
+    "date": "1999-11-02",
+    "state": "Hawaii",
+    "city": "Honolulu",
+    "killed": 7,
+    "injured": 0,
+    "source": "mother_jones",
+    "url": "http://archives.starbulletin.com/2000/06/02/news/story2.html",
+    "summary": "Byran Koji Uyesugi, 40, a Xerox service technician, opened fire inside the building with a 9mm Glock. He fled and was later apprehended by police."
+  },
+  {
     "id": "stanford-75",
     "date": "1999-11-02",
     "state": "Hawaii",
@@ -2785,6 +4226,17 @@
     "summary": "Xerox Office Building"
   },
   {
+    "id": "mj-wedgwood-baptist-church-shooting",
+    "date": "1999-09-15",
+    "state": "Texas",
+    "city": "Fort Worth",
+    "killed": 8,
+    "injured": 7,
+    "source": "mother_jones",
+    "url": "http://www.nytimes.com/1999/09/20/us/fort-worth-remembers-those-killed-at-church.html?pagewanted=all&src=pm",
+    "summary": "Larry Gene Ashbrook, 47, opened fire inside the Wedgwood Baptist Church during a prayer rally before committing suicide."
+  },
+  {
     "id": "stanford-74",
     "date": "1999-09-15",
     "state": "Texas",
@@ -2793,6 +4245,17 @@
     "injured": 7,
     "source": "stanford_msa",
     "summary": "Wedgwood Baptist Church"
+  },
+  {
+    "id": "mj-atlanta-day-trading-spree-killings",
+    "date": "1999-07-29",
+    "state": "Georgia",
+    "city": "Atlanta",
+    "killed": 9,
+    "injured": 13,
+    "source": "mother_jones",
+    "url": "http://www.independent.co.uk/news/i-dont-plan-to-live-much-longer-just-long-enough-to-kill-the-people-that-greedily-sought-my-destruction-1109610.html",
+    "summary": "Day trader Mark O. Barton, 44, who had recently lost a substantial sum of money, went on a shooting spree through two day-trading firms. He started at the All-Tech Investment Group, where he worked, then went on to Momentum Securities. He fled and hours later, after being cornered by police outside a gas station, committed suicide. (Two days before the spree, he killed his wife and two children with a hammer.)"
   },
   {
     "id": "stanford-73",
@@ -2815,6 +4278,17 @@
     "summary": "Heritage High School"
   },
   {
+    "id": "mj-columbine-high-school-massacre",
+    "date": "1999-04-20",
+    "state": "Colorado",
+    "city": "Littleton",
+    "killed": 13,
+    "injured": 24,
+    "source": "mother_jones",
+    "url": "http://www.usatoday.com/news/nation/2009-04-13-columbine-myths_N.htm",
+    "summary": "Eric Harris, 18, and Dylan Klebold, 17, opened fire throughout Columbine High School before committing suicide."
+  },
+  {
     "id": "stanford-71",
     "date": "1999-04-20",
     "state": "Colorado",
@@ -2833,6 +4307,17 @@
     "injured": 3,
     "source": "stanford_msa",
     "summary": "Riverside City Hall"
+  },
+  {
+    "id": "mj-thurston-high-school-shooting",
+    "date": "1998-05-21",
+    "state": "Oregon",
+    "city": "Springfield",
+    "killed": 4,
+    "injured": 25,
+    "source": "mother_jones",
+    "url": "http://www.katu.com/news/local/8082147.html",
+    "summary": "After he was expelled for having a gun in his locker, Kipland P. Kinkel, 15, a freshman at Thurston High, went on a shooting spree, killing his parents at home and two students at school. Five classmates wrestled Kipland to the ground before he was arrested."
   },
   {
     "id": "stanford-69",
@@ -2855,6 +4340,17 @@
     "summary": "Parker Middle School Dance"
   },
   {
+    "id": "mj-westside-middle-school-killings",
+    "date": "1998-03-24",
+    "state": "Arkansas",
+    "city": "Jonesboro",
+    "killed": 5,
+    "injured": 10,
+    "source": "mother_jones",
+    "url": "http://www.vpc.org/studies/wgun980324.htm",
+    "summary": "Mitchell Scott Johnson, 13, and Andrew Douglas Golden, 11, two juveniles, ambushed students and teachers as they left the school; they were apprehended by police at the scene."
+  },
+  {
     "id": "stanford-67",
     "date": "1998-03-24",
     "state": "Arkansas",
@@ -2863,6 +4359,17 @@
     "injured": 10,
     "source": "stanford_msa",
     "summary": "Westside Middle School"
+  },
+  {
+    "id": "mj-connecticut-lottery-shooting",
+    "date": "1998-03-06",
+    "state": "Connecticut",
+    "city": "Newington",
+    "killed": 5,
+    "injured": 1,
+    "source": "mother_jones",
+    "url": "http://www.nytimes.com/1998/03/07/nyregion/rampage-connecticut-overview-connecticut-lottery-worker-kills-4-bosses-then.html?pagewanted=all&src=pm",
+    "summary": "Lottery worker Matthew Beck, 35, gunned down four bosses over a salary dispute before committing suicide."
   },
   {
     "id": "stanford-66",
@@ -2883,6 +4390,17 @@
     "injured": 2,
     "source": "stanford_msa",
     "summary": "Milwaukee Post Office"
+  },
+  {
+    "id": "mj-caltrans-maintenance-yard-shooting",
+    "date": "1997-12-18",
+    "state": "California",
+    "city": "Orange",
+    "killed": 5,
+    "injured": 2,
+    "source": "mother_jones",
+    "url": "http://articles.latimes.com/1997/dec/20/news/mn-431",
+    "summary": "Former Caltrans employee Arturo Reyes Torres, 41, opened fire at a maintenance yard after he was fired for allegedly selling government materials he'd stolen from work. He was shot dead by police."
   },
   {
     "id": "stanford-65",
@@ -2915,6 +4433,17 @@
     "summary": "Pearl High School"
   },
   {
+    "id": "mj-r-e-phelon-company-shooting",
+    "date": "1997-09-15",
+    "state": "South Carolina",
+    "city": "Aiken",
+    "killed": 4,
+    "injured": 3,
+    "source": "mother_jones",
+    "url": "http://www.vpc.org/studies/wgun970915.htm",
+    "summary": "Ex-con Hastings Arthur Wise, 43, opened fire at the R.E. Phelon Company in retaliation for being fired after an argument with a supervisor. He attempted suicide by ingesting insecticide, failed, and was executed by the state of South Carolina eight years later."
+  },
+  {
     "id": "stanford-61",
     "date": "1997-09-15",
     "state": "South Carolina",
@@ -2943,6 +4472,17 @@
     "injured": 0,
     "source": "stanford_msa",
     "summary": "San Diego State University"
+  },
+  {
+    "id": "mj-fort-lauderdale-revenge-shooting",
+    "date": "1996-02-09",
+    "state": "Florida",
+    "city": "Fort Lauderdale",
+    "killed": 6,
+    "injured": 1,
+    "source": "mother_jones",
+    "url": "http://www.nytimes.com/1996/02/11/us/florida-killer-said-victims-were-racists-police-say.html",
+    "summary": "Fired city park employee Clifton McCree, 41, opened fire on former coworkers he called \"racist devils\" inside their municipal trailer in an act of revenge after failing a drug test. He then committed suicide."
   },
   {
     "id": "stanford-58",
@@ -2975,6 +4515,17 @@
     "summary": "Richland High School"
   },
   {
+    "id": "mj-walter-rossler-company-massacre",
+    "date": "1995-04-03",
+    "state": "Texas",
+    "city": "Corpus Christi",
+    "killed": 6,
+    "injured": 0,
+    "source": "mother_jones",
+    "url": "http://web.caller.com/2000/april/03/today/local_ne/4127.html",
+    "summary": "Disgruntled former metallurgist James Daniel Simpson, 28, opened fire throughout the Walter Rossler Company where he had worked before exiting the building and committing suicide."
+  },
+  {
     "id": "stanford-55",
     "date": "1995-04-03",
     "state": "Texas",
@@ -3005,7 +4556,7 @@
     "summary": "Downtown Chapel Hill"
   },
   {
-    "id": "stanford-168",
+    "id": "stanford-168-2",
     "date": "1994-12-30",
     "state": "Massachusetts",
     "city": "Brookline",
@@ -3023,6 +4574,17 @@
     "injured": 3,
     "source": "stanford_msa",
     "summary": "Wickliffe Middle School"
+  },
+  {
+    "id": "mj-air-force-base-shooting",
+    "date": "1994-06-20",
+    "state": "Washington",
+    "city": "Fairchild Air Force Base",
+    "killed": 5,
+    "injured": 23,
+    "source": "mother_jones",
+    "url": "http://articles.latimes.com/1994-06-22/news/mn-7137_1_air-force",
+    "summary": "Former airman Dean Allen Mellberg, 20, opened fire inside a hospital at the Fairchild Air Force Base before he was shot dead by a military police officer outside."
   },
   {
     "id": "stanford-51",
@@ -3055,6 +4617,17 @@
     "summary": "Chelsea High School"
   },
   {
+    "id": "mj-chuck-e-cheese-s-killings",
+    "date": "1993-12-14",
+    "state": "Colorado",
+    "city": "Aurora",
+    "killed": 4,
+    "injured": 1,
+    "source": "mother_jones",
+    "url": "http://www.denverpost.com/news/ci_20218952/aurora-chuck-e-cheese-killers-appeal-cites-mental",
+    "summary": "Nathan Dunlap, 19, a recently fired Chuck E. Cheese's employee, went on a rampage through his former workplace and was arrested the following day. He now awaits execution on death row."
+  },
+  {
     "id": "stanford-48",
     "date": "1993-12-14",
     "state": "Colorado",
@@ -3063,6 +4636,17 @@
     "injured": 1,
     "source": "stanford_msa",
     "summary": "Chuck E. Cheese in Aurora"
+  },
+  {
+    "id": "mj-long-island-rail-road-massacre",
+    "date": "1993-12-07",
+    "state": "New York",
+    "city": "Garden City",
+    "killed": 6,
+    "injured": 19,
+    "source": "mother_jones",
+    "url": "http://www.nytimes.com/1993/12/12/nyregion/tormented-life-special-report-long-slide-privilege-ends-slaughter-train.html",
+    "summary": "Colin Ferguson, 35, opened fire on an eastbound Long Island Rail Road train as it approached a Garden City station. He was later arrested."
   },
   {
     "id": "stanford-47",
@@ -3085,6 +4669,17 @@
     "summary": "Central Middle School"
   },
   {
+    "id": "mj-luigi-s-shooting",
+    "date": "1993-08-06",
+    "state": "North Carolina",
+    "city": "Fayetteville",
+    "killed": 4,
+    "injured": 8,
+    "source": "mother_jones",
+    "url": "http://articles.latimes.com/1993-08-08/news/mn-21847_1_kills-army-french",
+    "summary": "Army Sgt. Kenneth Junior French, 22, opened fire inside Luigi's Italian restaurant while ranting about gays in the military before he was shot and arrested by police."
+  },
+  {
     "id": "stanford-45",
     "date": "1993-08-06",
     "state": "North Carolina",
@@ -3103,6 +4698,17 @@
     "injured": 2,
     "source": "stanford_msa",
     "summary": "Weber State University"
+  },
+  {
+    "id": "mj-101-california-street-shootings",
+    "date": "1993-07-01",
+    "state": "California",
+    "city": "San Francisco",
+    "killed": 9,
+    "injured": 6,
+    "source": "mother_jones",
+    "url": "http://articles.latimes.com/1993-07-03/news/mn-10731_1_mortgage-business/2",
+    "summary": "Failed businessman Gian Luigi Ferri, 55, opened fire throughout an office building before he committed suicide inside as police pursued him."
   },
   {
     "id": "stanford-41",
@@ -3145,6 +4751,17 @@
     "summary": "Simon's Rock College of Bard"
   },
   {
+    "id": "mj-watkins-glen-killings",
+    "date": "1992-10-15",
+    "state": "New York",
+    "city": "Watkins Glen",
+    "killed": 5,
+    "injured": 0,
+    "source": "mother_jones",
+    "url": "http://www.nytimes.com/1992/10/17/nyregion/shooting-followed-tougher-efforts-to-collect-child-support.html?pagewanted=2&src=pm",
+    "summary": "John T. Miller, 50, killed four child-support workers in a county office building before turning the gun on himself.  Miller was upset about a court order garnishing his paycheck to cover overdue child-support payments."
+  },
+  {
     "id": "stanford-39",
     "date": "1992-10-15",
     "state": "New York",
@@ -3165,6 +4782,17 @@
     "summary": "Palo Duro High School"
   },
   {
+    "id": "mj-lindhurst-high-school-shooting",
+    "date": "1992-05-01",
+    "state": "California",
+    "city": "Olivehurst",
+    "killed": 4,
+    "injured": 10,
+    "source": "mother_jones",
+    "url": "http://www.schoolshooters.info/PL/Subject-Houston_files/Nine%20Brief%20Sketches.pdf",
+    "summary": "Former Lindhurst High School student Eric Houston, 20, angry about various personal failings, killed three students and a teacher at the school before surrendering to police after an eight-hour standoff. He was later sentenced to death."
+  },
+  {
     "id": "stanford-37",
     "date": "1992-05-01",
     "state": "California",
@@ -3173,6 +4801,17 @@
     "injured": 10,
     "source": "stanford_msa",
     "summary": "Lindhurst High School"
+  },
+  {
+    "id": "mj-royal-oak-postal-shootings",
+    "date": "1991-11-14",
+    "state": "Michigan",
+    "city": "Royal Oak",
+    "killed": 5,
+    "injured": 5,
+    "source": "mother_jones",
+    "url": "http://www.nytimes.com/1991/11/15/us/ex-postal-worker-kills-3-and-wounds-6-in-michigan.html",
+    "summary": "Laid-off postal worker Thomas McIlvane, 31, opened fire at his former workplace before committing suicide."
   },
   {
     "id": "stanford-36",
@@ -3185,6 +4824,17 @@
     "summary": "Royal Oak Post Office"
   },
   {
+    "id": "mj-university-of-iowa-shooting",
+    "date": "1991-11-01",
+    "state": "Iowa",
+    "city": "Iowa City",
+    "killed": 6,
+    "injured": 1,
+    "source": "mother_jones",
+    "url": "http://www.nytimes.com/1991/11/03/us/gunman-in-iowa-wrote-of-plans-in-five-letters.html?pagewanted=all&src=pm",
+    "summary": "Former graduate student Gang Lu, 28, went on a rampage on campus and then committed suicide at the scene."
+  },
+  {
     "id": "stanford-33",
     "date": "1991-11-01",
     "state": "Iowa",
@@ -3193,6 +4843,17 @@
     "injured": 1,
     "source": "stanford_msa",
     "summary": "University of Iowa"
+  },
+  {
+    "id": "mj-luby-s-massacre",
+    "date": "1991-10-16",
+    "state": "Texas",
+    "city": "Killeen",
+    "killed": 24,
+    "injured": 20,
+    "source": "mother_jones",
+    "url": "http://www.nytimes.com/1991/10/18/us/portrait-of-texas-killer-impatient-and-troubled.html?pagewanted=all&src=pm",
+    "summary": "George Hennard, 35, drove his pickup truck into a Luby's cafeteria and opened fire before committing suicide."
   },
   {
     "id": "stanford-35",
@@ -3225,6 +4886,17 @@
     "summary": "Wat Promkunaram Buddhist Temple"
   },
   {
+    "id": "mj-gmac-massacre",
+    "date": "1990-06-18",
+    "state": "Florida",
+    "city": "Jacksonville",
+    "killed": 10,
+    "injured": 4,
+    "source": "mother_jones",
+    "url": "http://www.nytimes.com/1990/06/19/us/florida-gunman-kills-8-and-wounds-6-in-office.html",
+    "summary": "James Edward Pough, 42, opened fire at a General Motors Acceptance Corporation office before committing suicide. (The day prior, Pough killed a pimp and prostitute and injured two others. Those victims are not included in the mass murder count.)"
+  },
+  {
     "id": "stanford-32",
     "date": "1990-06-17",
     "state": "Florida",
@@ -3233,6 +4905,17 @@
     "injured": 6,
     "source": "stanford_msa",
     "summary": "GMAC Loan Office"
+  },
+  {
+    "id": "mj-standard-gravure-shooting",
+    "date": "1989-09-14",
+    "state": "Kentucky",
+    "city": "Louisville",
+    "killed": 9,
+    "injured": 12,
+    "source": "mother_jones",
+    "url": "http://nl.newsbank.com/nl-search/we/Archives?p_product=LH&s_site=kentucky&p_multi=LH&p_theme=realcities&p_action=search&p_maxdocs=200&p_topdoc=1&p_text_direct-0=0EB73C025033DC82&p_field_direct-0=document_id&p_perpage=10&p_sort=YMD_date:D&s_trackval=GooglePM",
+    "summary": "Joseph T. Wesbecker, 47, gunned down eight people at his former workplace before committing suicide."
   },
   {
     "id": "stanford-31",
@@ -3253,6 +4936,17 @@
     "injured": 1,
     "source": "stanford_msa",
     "summary": "Orange Glenn Post Office"
+  },
+  {
+    "id": "mj-stockton-schoolyard-shooting",
+    "date": "1989-01-17",
+    "state": "California",
+    "city": "Stockton",
+    "killed": 6,
+    "injured": 29,
+    "source": "mother_jones",
+    "url": "http://www.recordnet.com/apps/pbcs.dll/article?AID=/20090118/A_NEWS/901170304",
+    "summary": "Patrick Purdy, 26, an alcoholic with a police record, launched an assault at Cleveland Elementary School, where many young Southeast Asian immigrants were enrolled. Purdy killed himself with a shot to the head."
   },
   {
     "id": "stanford-29",
@@ -3305,6 +4999,17 @@
     "summary": "Hubbard Woods Elementary School"
   },
   {
+    "id": "mj-esl-shooting",
+    "date": "1988-02-16",
+    "state": "California",
+    "city": "Sunnyvale",
+    "killed": 7,
+    "injured": 4,
+    "source": "mother_jones",
+    "url": "http://articles.latimes.com/1988-02-18/news/mn-43514_1_mr-farley-richard-farley-sunnyvale-public-safety-department",
+    "summary": "Former ESL Incorporated employee Richard Farley, 39, gunned down seven people at his former workplace, after stalking and harassing a coworker he was romantically interested in. He was later arrested and now sits on death row at San Quentin."
+  },
+  {
     "id": "stanford-24",
     "date": "1988-02-16",
     "state": "California",
@@ -3325,6 +5030,17 @@
     "summary": "Pinellas Park High School"
   },
   {
+    "id": "mj-shopping-centers-spree-killings",
+    "date": "1987-04-23",
+    "state": "Florida",
+    "city": "Palm Bay",
+    "killed": 6,
+    "injured": 14,
+    "source": "mother_jones",
+    "url": "http://articles.latimes.com/1987-04-25/news/mn-990_1_palm-bay-police",
+    "summary": "Retired librarian William Cruse, 59, was paranoid neighbors gossiped that he was gay. He drove to a Publix supermarket, killing two Florida Tech students en route before opening fire outside and killing a woman. He then drove to a Winn-Dixie supermarket and killed three more, including two police officers. Cruse was arrested after taking a hostage and died on death row in 2009."
+  },
+  {
     "id": "stanford-22",
     "date": "1987-04-23",
     "state": "Florida",
@@ -3343,6 +5059,17 @@
     "injured": 3,
     "source": "stanford_msa",
     "summary": "Fergus County High School"
+  },
+  {
+    "id": "mj-united-states-postal-service-shooting",
+    "date": "1986-08-20",
+    "state": "Oklahoma",
+    "city": "Edmond",
+    "killed": 15,
+    "injured": 6,
+    "source": "mother_jones",
+    "url": "http://news.google.com/newspapers?id=dm8aAAAAIBAJ&sjid=pyoEAAAAIBAJ&pg=2297,4870051&dq=patrick+sherrill&hl=en",
+    "summary": "Postal worker Patrick Sherrill, 44, opened fire at a post office before committing suicide."
   },
   {
     "id": "stanford-20",
@@ -3385,6 +5112,17 @@
     "summary": "Goddard Junior High School"
   },
   {
+    "id": "mj-san-ysidro-mcdonald-s-massacre",
+    "date": "1984-07-18",
+    "state": "California",
+    "city": "San Ysidro",
+    "killed": 22,
+    "injured": 19,
+    "source": "mother_jones",
+    "url": "http://www.utsandiego.com/san-ysidro-massacre/",
+    "summary": "James Oliver Huberty, 41, opened fire in a McDonald's restaurant before he was shot dead by a police officer."
+  },
+  {
     "id": "stanford-16",
     "date": "1984-07-18",
     "state": "California",
@@ -3393,6 +5131,17 @@
     "injured": 19,
     "source": "stanford_msa",
     "summary": "McDonald's restaurant in San Ysidro"
+  },
+  {
+    "id": "mj-dallas-nightclub-shooting",
+    "date": "1984-06-29",
+    "state": "Texas",
+    "city": "Dallas",
+    "killed": 6,
+    "injured": 1,
+    "source": "mother_jones",
+    "url": "http://books.google.com/books?id=Hr3OBwP-lbUC&pg=PA38&lpg=PA38&dq=Abdelkrim+Belachheb+mental&source=bl&ots=D56pgdNnnl&sig=grAT08P9HLfPoHVgwlXt8RfPHz0&hl=en&",
+    "summary": "Abdelkrim Belachheb, 39, opened fire at an upscale nightclub after a woman rejected his advances. He was later arrested."
   },
   {
     "id": "stanford-15",
@@ -3433,6 +5182,17 @@
     "injured": 1,
     "source": "stanford_msa",
     "summary": "Wah Mee Club in Seattle"
+  },
+  {
+    "id": "mj-welding-shop-shooting",
+    "date": "1982-08-20",
+    "state": "Florida",
+    "city": "Miami",
+    "killed": 8,
+    "injured": 3,
+    "source": "mother_jones",
+    "url": "http://www.nytimes.com/1982/08/21/us/gunman-in-miami-kills-8-in-rampage.html",
+    "summary": "Junior high school teacher Carl Robert Brown, 51, opened fire inside a welding shop and was later shot dead by a witness as he fled the scene."
   },
   {
     "id": "stanford-11",
