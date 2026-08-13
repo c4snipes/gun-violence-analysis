@@ -19,7 +19,6 @@ import pandas as pd
 
 from .constants import FULL_STATE_NAMES, STATE_ABBR
 
-
 # ---------------------------------------------------------------------------
 # 2020 Census-era reference figures (World Population Review / Census).
 # Hard-coded to keep the build reproducible without hitting external services.

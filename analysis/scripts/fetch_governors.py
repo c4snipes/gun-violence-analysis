@@ -91,6 +91,12 @@ OVERRIDES: dict[tuple[str, int], str] = {
     # Democrat. On 1 July 2017 he was still a Democrat, so only 2018 onward
     # change. Wikipedia's table labels the entire term Democratic.
     **{("West Virginia", y): "Republican" for y in range(2018, END_YEAR + 1)},
+    # Lincoln Chafee was elected in 2010 as an Independent and joined the
+    # Democratic Party on 30 May 2013, serving to 6 Jan 2015. His row therefore
+    # lists Independent first, which position-based matching picks up, but on
+    # 1 July 2014 he was a Democrat. Only 2014 is affected: by 1 July 2015 the
+    # governor was Gina Raimondo (D).
+    ("Rhode Island", 2014): "Democratic",
 }
 
 
@@ -159,13 +165,22 @@ def extract_terms(wikitext: str) -> list[tuple[date, str]]:
             dates = [d for d in (_parse_date(x) for x in _PLAIN_DATE.findall(block)) if d]
         if not dates:
             continue
-        party = None
+        # Take the EARLIEST party link by position, not the first by map order.
+        # The final block of a state's table runs into the election-results
+        # table that follows it, whose header cells read
+        # "[[Democratic Party (United States)|Democratic]] nominee" and
+        # "[[Republican Party (United States)|Republican]] nominee". Matching in
+        # map order put "republican" first, so those trailing headers overrode
+        # the governor's own party cell -- which silently made Oregon 2023 and
+        # Hawaii 2023 Republican when both are Democratic. The governor's party
+        # cell always precedes those headers, so position decides correctly.
+        best: tuple[int, str] | None = None
         for raw, mapped in PARTY_MAP.items():
-            if re.search(rf"\[\[[^\]]*{re.escape(raw)}[^\]]*\]\]", block, re.IGNORECASE):
-                party = mapped
-                break
-        if party:
-            terms.append((min(dates), party))
+            m = re.search(rf"\[\[[^\]]*{re.escape(raw)}[^\]]*\]\]", block, re.IGNORECASE)
+            if m and (best is None or m.start() < best[0]):
+                best = (m.start(), mapped)
+        if best:
+            terms.append((min(dates), best[1]))
     terms.sort(key=lambda t: t[0])
     return terms
 
