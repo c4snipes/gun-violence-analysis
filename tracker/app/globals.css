@@ -282,6 +282,46 @@ sup {
   color: var(--ink-muted);
 }
 
+/*
+ * Fixed-height readout above the map. Reserving the row keeps the figure from
+ * jumping as the pointer moves between states.
+ */
+.map-readout {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  min-height: 30px;
+  padding: 4px 0 2px;
+  border-bottom: 1px solid var(--rule);
+  font: 400 11px/1.4 var(--sans);
+  color: var(--ink-muted);
+}
+
+.map-readout-state {
+  font: 400 14px/1.2 var(--serif);
+  color: var(--ink);
+}
+
+.map-readout-value {
+  font: 400 18px/1 var(--mono);
+  color: var(--ink);
+}
+
+.map-readout-unit,
+.map-readout-counts {
+  font-family: var(--mono);
+  font-size: 10px;
+}
+
+.map-readout-counts {
+  margin-left: auto;
+}
+
+.map-readout-idle {
+  font-style: italic;
+  opacity: 0.65;
+}
+
 .statemap {
   display: block;
   width: 100%;

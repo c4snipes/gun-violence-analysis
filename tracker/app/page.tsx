@@ -4,7 +4,6 @@ import AwaitingData from "./components/AwaitingData";
 import IncidentMatrix from "./components/IncidentMatrix";
 import Masthead from "./components/Masthead";
 import StateMap from "./components/StateMap";
-import StateTileGrid from "./components/StateTileGrid";
 import { footnoteForCitation } from "./lib/citations";
 import { loadCitations, loadSnapshot } from "./lib/data";
 import { SOURCES, type SourceId } from "./lib/sources";
@@ -112,25 +111,16 @@ export default async function Dashboard() {
         <div>
           <div className="table-title">Figure 1 &mdash; Incidents per 10 million residents, by state</div>
           <p className="table-note">
-            Gun Violence Archive definition. Hover a state for its counts. A geographic projection
-            sizes each state by land area, so sparsely populated states carry more visual weight
-            than their populations warrant on a per-capita measure; the equal-area grid below shows
-            the same figures without that distortion.
+            Gun Violence Archive definition. Hover a state for its rate and counts. A geographic
+            projection sizes each state by land area, so sparsely populated states carry more
+            visual weight than their populations warrant on a per-capita measure &mdash; read the
+            figures, not the areas.
           </p>
           <StateMap states={snap.states} source="gva" />
         </div>
 
         <div>
-          <div className="table-title">Table 1 &mdash; Incidents per 10 million residents, by state</div>
-          <p className="table-note">
-            Equal-area tiles. Gun Violence Archive definition. A centred dot marks a state with no
-            qualifying incident in the window.
-          </p>
-          <StateTileGrid states={snap.states} source="gva" />
-        </div>
-
-        <div>
-          <div className="table-title">Table 2 &mdash; Most recent incidents</div>
+          <div className="table-title">Table 1 &mdash; Most recent incidents</div>
           <p className="table-note">
             Marked under every dataset whose definition the incident meets. A filled dot means it
             qualifies, an open dot means it clears the casualty threshold but the contextual
