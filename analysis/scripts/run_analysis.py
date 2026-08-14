@@ -106,6 +106,18 @@ def main() -> None:
     df = load_dataset(args.data)
     print(f"Loaded {len(df)} states, {len(df.columns)} columns")
 
+    # A predictor may legitimately be missing for a state: the credit-score
+    # source sheet has no South Carolina row at all. Absent must stay absent
+    # rather than being imputed, so those states are dropped from the fit --
+    # explicitly and loudly, because the reported n is part of the result.
+    incomplete = df[df[CORE_PREDICTORS].isna().any(axis=1)]
+    if not incomplete.empty:
+        for _, r in incomplete.iterrows():
+            missing = [c for c in CORE_PREDICTORS if pd.isna(r[c])]
+            print(f"  dropping {r['state']}: missing {', '.join(missing)}")
+        df = df.drop(incomplete.index).reset_index(drop=True)
+        print(f"  fitting on {len(df)} of {len(df) + len(incomplete)} states")
+
     run(df, "firearm_mortality_rate", "mortality", args.figures, args.results)
     run(df, "mass_shootings_per_10m", "mass_shootings", args.figures, args.results)
 
