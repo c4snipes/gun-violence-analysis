@@ -1,4 +1,4 @@
-.PHONY: install fetch fetch-saipe icc build analyze test lint all clean
+.PHONY: install fetch fetch-saipe fetch-debt fetch-governors fetch-politics panel icc build analyze test lint all clean
 
 PYTHON ?= python3
 
@@ -10,6 +10,19 @@ fetch:
 
 fetch-saipe:
 	$(PYTHON) scripts/fetch_saipe.py --out data/raw/saipe_2014_2023.csv
+
+fetch-debt:
+	$(PYTHON) scripts/fetch_nyfed_debt.py --out data/nyfed_debt_2014_2023.csv
+
+fetch-governors:
+	$(PYTHON) scripts/fetch_governors.py --out data/governors_2014_2023.csv
+
+fetch-politics: fetch-governors
+	$(PYTHON) scripts/fetch_state_politics.py --out data/state_politics_2014_2023.csv
+
+# Every panel input. fetch-politics cross-checks itself against the governor
+# panel, so it must run after it.
+panel: fetch-saipe fetch-debt fetch-politics
 
 icc: fetch-saipe
 	$(PYTHON) scripts/measure_icc.py --saipe data/raw/saipe_2014_2023.csv

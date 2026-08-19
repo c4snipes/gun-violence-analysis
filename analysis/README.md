@@ -92,16 +92,54 @@ n = 49 in any model using it.
 
 ### Built for the 2014–2023 panel
 
+Build every panel input with `make panel`.
+
 | Variable | Source | Script | Committed to |
 |---|---|---|---|
 | Poverty rate, median household income | Census [SAIPE](https://www.census.gov/programs-surveys/saipe.html) API — keyless, no 2020 gap | `scripts/fetch_saipe.py` | `data/raw/` (gitignored) |
+| Household debt and delinquency | NY Fed / Equifax [Household Debt & Credit](https://www.newyorkfed.org/microeconomics/hhdc) area report — keyless | `scripts/fetch_nyfed_debt.py` | `data/nyfed_debt_2014_2023.csv` |
 | Governor party | Wikipedia "List of governors of X" via the [MediaWiki API](https://en.wikipedia.org/w/api.php) | `scripts/fetch_governors.py` | `data/governors_2014_2023.csv` |
-| Attorney General party, legislative control | Wikipedia "Political party strength in X" | `scripts/fetch_state_politics.py` | *in progress* |
+| Attorney General party, legislative control | Wikipedia "Political party strength in X" | `scripts/fetch_state_politics.py` | `data/state_politics_2014_2023.csv` |
 
-Measured intraclass correlations (ICC = between-state share of variance;
-lower means more within-state variation for a panel to exploit):
-poverty **0.852**, ERPO enforcement **0.529**, cost of living **0.962**,
-law-strictness index **0.966**.
+The AG panel covers the **43 states that elect an attorney general**. The other
+seven are not a gap: five appoint via the governor, Maine's is elected by the
+legislature, and Tennessee's is appointed by the state supreme court. An
+appointed AG's party is downstream of whoever appointed them, so it is a
+different variable and `ag_selection` records which.
+
+### Intraclass correlations
+
+ICC is the between-state share of variance. **Lower is better for a panel** —
+it means more within-state variation over time for a fixed-effects estimator to
+use. Measured across the 50 states, 2014–2023:
+
+| Variable | ICC | |
+|---|---:|---|
+| `delinq_studentloan` | 0.107 | best identified in the project |
+| `delinq_mortgage` | 0.261 | |
+| ERPO enforcement (Tufts) | 0.529 | |
+| `debt_auto` | 0.547 | |
+| `delinq_creditcard` | 0.680 | |
+| `debt_studentloan` | 0.755 | 0.894 if DC is included — DC is a student-debt outlier |
+| `debt_total` | 0.821 | |
+| `delinq_auto` | 0.836 | |
+| Poverty rate | 0.852 | |
+| `debt_mortgage` | 0.863 | |
+| Cost of living (BEA RPP) | 0.962 | between-dominated |
+| Law-strictness index | 0.966 | between-dominated |
+
+**The best proxy is not the best-identified variable.** `delinq_auto` is the
+closest stand-in for the frozen 2020 credit score — it correlates **−0.913**
+with it, and has the strongest correlation with firearm mortality (+0.579) of
+any debt measure — but its own ICC of 0.836 leaves limited within-state
+variation. `delinq_studentloan` identifies far better (0.107) but proxies the
+credit score less well (−0.576), and `delinq_mortgage` identifies well (0.261)
+while being essentially uncorrelated with mortality (−0.04). There is no single
+variable that is both.
+
+These figures come from a 5% sample of Equifax credit files, so they describe
+people **with a credit record**. The credit-invisible are excluded, and that
+exclusion is itself correlated with poverty.
 
 ### Evaluated and rejected, with reasons
 
