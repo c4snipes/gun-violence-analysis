@@ -245,9 +245,30 @@ trustworthy summaries in this specification.
   panel for 2014–2023 is in progress: poverty and median income are built
   (`scripts/fetch_saipe.py`), as is governor party
   (`scripts/fetch_governors.py`, `data/governors_2014_2023.csv`).
-- **n = 49, not 50.** South Carolina has no credit-score row in the source sheet
-  at all, so it is dropped from any model containing that predictor rather than
-  imputed. `credit_score` is in `ALLOWED_MISSING`, not `REQUIRED_COMPLETE`.
+- **n = 49, not 50, and it does not matter.** South Carolina has no
+  credit-score row in the source sheet, so it is dropped from any model
+  containing that predictor rather than imputed. `credit_score` is in
+  `ALLOWED_MISSING`, not `REQUIRED_COMPLETE`.
+
+  This was investigated rather than assumed. An archived October 2020 capture
+  of `valuepenguin.com/average-credit-score` lists all 51 jurisdictions
+  including South Carolina at 657, so the original source had the state and the
+  workbook lost it when trimming to 50 rows. But that page is not the same
+  measure: across the 49 overlapping states it correlates 0.973 with the
+  workbook while sitting ~35 points lower, and the fit is
+  `workbook = 0.941 x vp + 74.7` — a slope below 1 means the scales differ in
+  dispersion, not just level, which points to different scoring models. Using
+  657 directly would have made South Carolina the lowest-credit state in the
+  country by a wide margin. The fit implies ~693, but with a maximum residual
+  of 10.6 points against a 64-point data range (675–739).
+
+  It was left absent because nothing turns on it. Across the whole plausible
+  band (682–704), the credit-score coefficient stays negative and significant
+  (p ranges 0.021–0.046) and poverty stays null (p 0.26–0.30); imputing at 693
+  moves the coefficient from −0.152 to −0.157. With no conclusion depending on
+  the value, imputing buys nothing and costs real precision.
+  `tests/test_south_carolina_sensitivity.py` enforces this, so if the
+  robustness claim ever stops holding, the question reopens loudly.
 - **Poverty and credit score are collinear at r = −0.859** and cannot be
   separately identified at this n. Treat them as one economic-distress construct
   measured two ways, not as two independent effects.
