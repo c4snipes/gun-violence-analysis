@@ -1,0 +1,501 @@
+state,year,gvro,gvrolawenforcement,source_covers_year
+Alabama,2014,0,0,True
+Alabama,2015,0,0,True
+Alabama,2016,0,0,True
+Alabama,2017,0,0,True
+Alabama,2018,0,0,True
+Alabama,2019,0,0,True
+Alabama,2020,0,0,True
+Alabama,2021,,,False
+Alabama,2022,,,False
+Alabama,2023,,,False
+Alaska,2014,0,0,True
+Alaska,2015,0,0,True
+Alaska,2016,0,0,True
+Alaska,2017,0,0,True
+Alaska,2018,0,0,True
+Alaska,2019,0,0,True
+Alaska,2020,0,0,True
+Alaska,2021,,,False
+Alaska,2022,,,False
+Alaska,2023,,,False
+Arizona,2014,0,0,True
+Arizona,2015,0,0,True
+Arizona,2016,0,0,True
+Arizona,2017,0,0,True
+Arizona,2018,0,0,True
+Arizona,2019,0,0,True
+Arizona,2020,0,0,True
+Arizona,2021,,,False
+Arizona,2022,,,False
+Arizona,2023,,,False
+Arkansas,2014,0,0,True
+Arkansas,2015,0,0,True
+Arkansas,2016,0,0,True
+Arkansas,2017,0,0,True
+Arkansas,2018,0,0,True
+Arkansas,2019,0,0,True
+Arkansas,2020,0,0,True
+Arkansas,2021,,,False
+Arkansas,2022,,,False
+Arkansas,2023,,,False
+California,2014,0,0,True
+California,2015,0,0,True
+California,2016,1,1,True
+California,2017,1,1,True
+California,2018,1,1,True
+California,2019,1,1,True
+California,2020,1,1,True
+California,2021,,,False
+California,2022,,,False
+California,2023,,,False
+Colorado,2014,0,0,True
+Colorado,2015,0,0,True
+Colorado,2016,0,0,True
+Colorado,2017,0,0,True
+Colorado,2018,0,0,True
+Colorado,2019,1,1,True
+Colorado,2020,1,1,True
+Colorado,2021,,,False
+Colorado,2022,,,False
+Colorado,2023,,,False
+Connecticut,2014,0,1,True
+Connecticut,2015,0,1,True
+Connecticut,2016,0,1,True
+Connecticut,2017,0,1,True
+Connecticut,2018,0,1,True
+Connecticut,2019,0,1,True
+Connecticut,2020,0,1,True
+Connecticut,2021,,,False
+Connecticut,2022,,,False
+Connecticut,2023,,,False
+Delaware,2014,0,0,True
+Delaware,2015,0,0,True
+Delaware,2016,0,0,True
+Delaware,2017,0,0,True
+Delaware,2018,1,1,True
+Delaware,2019,1,1,True
+Delaware,2020,1,1,True
+Delaware,2021,,,False
+Delaware,2022,,,False
+Delaware,2023,,,False
+Florida,2014,0,0,True
+Florida,2015,0,0,True
+Florida,2016,0,0,True
+Florida,2017,0,0,True
+Florida,2018,0,1,True
+Florida,2019,0,1,True
+Florida,2020,0,1,True
+Florida,2021,,,False
+Florida,2022,,,False
+Florida,2023,,,False
+Georgia,2014,0,0,True
+Georgia,2015,0,0,True
+Georgia,2016,0,0,True
+Georgia,2017,0,0,True
+Georgia,2018,0,0,True
+Georgia,2019,0,0,True
+Georgia,2020,0,0,True
+Georgia,2021,,,False
+Georgia,2022,,,False
+Georgia,2023,,,False
+Hawaii,2014,0,0,True
+Hawaii,2015,0,0,True
+Hawaii,2016,0,0,True
+Hawaii,2017,0,0,True
+Hawaii,2018,0,0,True
+Hawaii,2019,0,0,True
+Hawaii,2020,1,1,True
+Hawaii,2021,,,False
+Hawaii,2022,,,False
+Hawaii,2023,,,False
+Idaho,2014,0,0,True
+Idaho,2015,0,0,True
+Idaho,2016,0,0,True
+Idaho,2017,0,0,True
+Idaho,2018,0,0,True
+Idaho,2019,0,0,True
+Idaho,2020,0,0,True
+Idaho,2021,,,False
+Idaho,2022,,,False
+Idaho,2023,,,False
+Illinois,2014,0,0,True
+Illinois,2015,0,0,True
+Illinois,2016,0,0,True
+Illinois,2017,0,0,True
+Illinois,2018,0,0,True
+Illinois,2019,1,1,True
+Illinois,2020,1,1,True
+Illinois,2021,,,False
+Illinois,2022,,,False
+Illinois,2023,,,False
+Indiana,2014,0,1,True
+Indiana,2015,0,1,True
+Indiana,2016,0,1,True
+Indiana,2017,0,1,True
+Indiana,2018,0,1,True
+Indiana,2019,0,1,True
+Indiana,2020,0,1,True
+Indiana,2021,,,False
+Indiana,2022,,,False
+Indiana,2023,,,False
+Iowa,2014,0,0,True
+Iowa,2015,0,0,True
+Iowa,2016,0,0,True
+Iowa,2017,0,0,True
+Iowa,2018,0,0,True
+Iowa,2019,0,0,True
+Iowa,2020,0,0,True
+Iowa,2021,,,False
+Iowa,2022,,,False
+Iowa,2023,,,False
+Kansas,2014,0,0,True
+Kansas,2015,0,0,True
+Kansas,2016,0,0,True
+Kansas,2017,0,0,True
+Kansas,2018,0,0,True
+Kansas,2019,0,0,True
+Kansas,2020,0,0,True
+Kansas,2021,,,False
+Kansas,2022,,,False
+Kansas,2023,,,False
+Kentucky,2014,0,0,True
+Kentucky,2015,0,0,True
+Kentucky,2016,0,0,True
+Kentucky,2017,0,0,True
+Kentucky,2018,0,0,True
+Kentucky,2019,0,0,True
+Kentucky,2020,0,0,True
+Kentucky,2021,,,False
+Kentucky,2022,,,False
+Kentucky,2023,,,False
+Louisiana,2014,0,0,True
+Louisiana,2015,0,0,True
+Louisiana,2016,0,0,True
+Louisiana,2017,0,0,True
+Louisiana,2018,0,0,True
+Louisiana,2019,0,0,True
+Louisiana,2020,0,0,True
+Louisiana,2021,,,False
+Louisiana,2022,,,False
+Louisiana,2023,,,False
+Maine,2014,0,0,True
+Maine,2015,0,0,True
+Maine,2016,0,0,True
+Maine,2017,0,0,True
+Maine,2018,0,0,True
+Maine,2019,0,0,True
+Maine,2020,0,0,True
+Maine,2021,,,False
+Maine,2022,,,False
+Maine,2023,,,False
+Maryland,2014,0,0,True
+Maryland,2015,0,0,True
+Maryland,2016,0,0,True
+Maryland,2017,0,0,True
+Maryland,2018,1,1,True
+Maryland,2019,1,1,True
+Maryland,2020,1,1,True
+Maryland,2021,,,False
+Maryland,2022,,,False
+Maryland,2023,,,False
+Massachusetts,2014,0,0,True
+Massachusetts,2015,0,0,True
+Massachusetts,2016,0,0,True
+Massachusetts,2017,0,0,True
+Massachusetts,2018,1,1,True
+Massachusetts,2019,1,1,True
+Massachusetts,2020,1,1,True
+Massachusetts,2021,,,False
+Massachusetts,2022,,,False
+Massachusetts,2023,,,False
+Michigan,2014,0,0,True
+Michigan,2015,0,0,True
+Michigan,2016,0,0,True
+Michigan,2017,0,0,True
+Michigan,2018,0,0,True
+Michigan,2019,0,0,True
+Michigan,2020,0,0,True
+Michigan,2021,,,False
+Michigan,2022,,,False
+Michigan,2023,,,False
+Minnesota,2014,0,0,True
+Minnesota,2015,0,0,True
+Minnesota,2016,0,0,True
+Minnesota,2017,0,0,True
+Minnesota,2018,0,0,True
+Minnesota,2019,0,0,True
+Minnesota,2020,0,0,True
+Minnesota,2021,,,False
+Minnesota,2022,,,False
+Minnesota,2023,,,False
+Mississippi,2014,0,0,True
+Mississippi,2015,0,0,True
+Mississippi,2016,0,0,True
+Mississippi,2017,0,0,True
+Mississippi,2018,0,0,True
+Mississippi,2019,0,0,True
+Mississippi,2020,0,0,True
+Mississippi,2021,,,False
+Mississippi,2022,,,False
+Mississippi,2023,,,False
+Missouri,2014,0,0,True
+Missouri,2015,0,0,True
+Missouri,2016,0,0,True
+Missouri,2017,0,0,True
+Missouri,2018,0,0,True
+Missouri,2019,0,0,True
+Missouri,2020,0,0,True
+Missouri,2021,,,False
+Missouri,2022,,,False
+Missouri,2023,,,False
+Montana,2014,0,0,True
+Montana,2015,0,0,True
+Montana,2016,0,0,True
+Montana,2017,0,0,True
+Montana,2018,0,0,True
+Montana,2019,0,0,True
+Montana,2020,0,0,True
+Montana,2021,,,False
+Montana,2022,,,False
+Montana,2023,,,False
+Nebraska,2014,0,0,True
+Nebraska,2015,0,0,True
+Nebraska,2016,0,0,True
+Nebraska,2017,0,0,True
+Nebraska,2018,0,0,True
+Nebraska,2019,0,0,True
+Nebraska,2020,0,0,True
+Nebraska,2021,,,False
+Nebraska,2022,,,False
+Nebraska,2023,,,False
+Nevada,2014,0,0,True
+Nevada,2015,0,0,True
+Nevada,2016,0,0,True
+Nevada,2017,0,0,True
+Nevada,2018,0,0,True
+Nevada,2019,0,0,True
+Nevada,2020,1,1,True
+Nevada,2021,,,False
+Nevada,2022,,,False
+Nevada,2023,,,False
+New Hampshire,2014,0,0,True
+New Hampshire,2015,0,0,True
+New Hampshire,2016,0,0,True
+New Hampshire,2017,0,0,True
+New Hampshire,2018,0,0,True
+New Hampshire,2019,0,0,True
+New Hampshire,2020,0,0,True
+New Hampshire,2021,,,False
+New Hampshire,2022,,,False
+New Hampshire,2023,,,False
+New Jersey,2014,0,0,True
+New Jersey,2015,0,0,True
+New Jersey,2016,0,0,True
+New Jersey,2017,0,0,True
+New Jersey,2018,0,0,True
+New Jersey,2019,1,1,True
+New Jersey,2020,1,1,True
+New Jersey,2021,,,False
+New Jersey,2022,,,False
+New Jersey,2023,,,False
+New Mexico,2014,0,0,True
+New Mexico,2015,0,0,True
+New Mexico,2016,0,0,True
+New Mexico,2017,0,0,True
+New Mexico,2018,0,0,True
+New Mexico,2019,0,0,True
+New Mexico,2020,0,0,True
+New Mexico,2021,,,False
+New Mexico,2022,,,False
+New Mexico,2023,,,False
+New York,2014,0,0,True
+New York,2015,0,0,True
+New York,2016,0,0,True
+New York,2017,0,0,True
+New York,2018,0,0,True
+New York,2019,1,1,True
+New York,2020,1,1,True
+New York,2021,,,False
+New York,2022,,,False
+New York,2023,,,False
+North Carolina,2014,0,0,True
+North Carolina,2015,0,0,True
+North Carolina,2016,0,0,True
+North Carolina,2017,0,0,True
+North Carolina,2018,0,0,True
+North Carolina,2019,0,0,True
+North Carolina,2020,0,0,True
+North Carolina,2021,,,False
+North Carolina,2022,,,False
+North Carolina,2023,,,False
+North Dakota,2014,0,0,True
+North Dakota,2015,0,0,True
+North Dakota,2016,0,0,True
+North Dakota,2017,0,0,True
+North Dakota,2018,0,0,True
+North Dakota,2019,0,0,True
+North Dakota,2020,0,0,True
+North Dakota,2021,,,False
+North Dakota,2022,,,False
+North Dakota,2023,,,False
+Ohio,2014,0,0,True
+Ohio,2015,0,0,True
+Ohio,2016,0,0,True
+Ohio,2017,0,0,True
+Ohio,2018,0,0,True
+Ohio,2019,0,0,True
+Ohio,2020,0,0,True
+Ohio,2021,,,False
+Ohio,2022,,,False
+Ohio,2023,,,False
+Oklahoma,2014,0,0,True
+Oklahoma,2015,0,0,True
+Oklahoma,2016,0,0,True
+Oklahoma,2017,0,0,True
+Oklahoma,2018,0,0,True
+Oklahoma,2019,0,0,True
+Oklahoma,2020,0,0,True
+Oklahoma,2021,,,False
+Oklahoma,2022,,,False
+Oklahoma,2023,,,False
+Oregon,2014,0,0,True
+Oregon,2015,0,0,True
+Oregon,2016,0,0,True
+Oregon,2017,0,0,True
+Oregon,2018,1,1,True
+Oregon,2019,1,1,True
+Oregon,2020,1,1,True
+Oregon,2021,,,False
+Oregon,2022,,,False
+Oregon,2023,,,False
+Pennsylvania,2014,0,0,True
+Pennsylvania,2015,0,0,True
+Pennsylvania,2016,0,0,True
+Pennsylvania,2017,0,0,True
+Pennsylvania,2018,0,0,True
+Pennsylvania,2019,0,0,True
+Pennsylvania,2020,0,0,True
+Pennsylvania,2021,,,False
+Pennsylvania,2022,,,False
+Pennsylvania,2023,,,False
+Rhode Island,2014,0,0,True
+Rhode Island,2015,0,0,True
+Rhode Island,2016,0,0,True
+Rhode Island,2017,0,0,True
+Rhode Island,2018,0,1,True
+Rhode Island,2019,0,1,True
+Rhode Island,2020,0,1,True
+Rhode Island,2021,,,False
+Rhode Island,2022,,,False
+Rhode Island,2023,,,False
+South Carolina,2014,0,0,True
+South Carolina,2015,0,0,True
+South Carolina,2016,0,0,True
+South Carolina,2017,0,0,True
+South Carolina,2018,0,0,True
+South Carolina,2019,0,0,True
+South Carolina,2020,0,0,True
+South Carolina,2021,,,False
+South Carolina,2022,,,False
+South Carolina,2023,,,False
+South Dakota,2014,0,0,True
+South Dakota,2015,0,0,True
+South Dakota,2016,0,0,True
+South Dakota,2017,0,0,True
+South Dakota,2018,0,0,True
+South Dakota,2019,0,0,True
+South Dakota,2020,0,0,True
+South Dakota,2021,,,False
+South Dakota,2022,,,False
+South Dakota,2023,,,False
+Tennessee,2014,0,0,True
+Tennessee,2015,0,0,True
+Tennessee,2016,0,0,True
+Tennessee,2017,0,0,True
+Tennessee,2018,0,0,True
+Tennessee,2019,0,0,True
+Tennessee,2020,0,0,True
+Tennessee,2021,,,False
+Tennessee,2022,,,False
+Tennessee,2023,,,False
+Texas,2014,0,0,True
+Texas,2015,0,0,True
+Texas,2016,0,0,True
+Texas,2017,0,0,True
+Texas,2018,0,0,True
+Texas,2019,0,0,True
+Texas,2020,0,0,True
+Texas,2021,,,False
+Texas,2022,,,False
+Texas,2023,,,False
+Utah,2014,0,0,True
+Utah,2015,0,0,True
+Utah,2016,0,0,True
+Utah,2017,0,0,True
+Utah,2018,0,0,True
+Utah,2019,0,0,True
+Utah,2020,0,0,True
+Utah,2021,,,False
+Utah,2022,,,False
+Utah,2023,,,False
+Vermont,2014,0,0,True
+Vermont,2015,0,0,True
+Vermont,2016,0,0,True
+Vermont,2017,0,0,True
+Vermont,2018,0,1,True
+Vermont,2019,0,1,True
+Vermont,2020,0,1,True
+Vermont,2021,,,False
+Vermont,2022,,,False
+Vermont,2023,,,False
+Virginia,2014,0,0,True
+Virginia,2015,0,0,True
+Virginia,2016,0,0,True
+Virginia,2017,0,0,True
+Virginia,2018,0,0,True
+Virginia,2019,0,0,True
+Virginia,2020,0,1,True
+Virginia,2021,,,False
+Virginia,2022,,,False
+Virginia,2023,,,False
+Washington,2014,0,0,True
+Washington,2015,0,0,True
+Washington,2016,1,1,True
+Washington,2017,1,1,True
+Washington,2018,1,1,True
+Washington,2019,1,1,True
+Washington,2020,1,1,True
+Washington,2021,,,False
+Washington,2022,,,False
+Washington,2023,,,False
+West Virginia,2014,0,0,True
+West Virginia,2015,0,0,True
+West Virginia,2016,0,0,True
+West Virginia,2017,0,0,True
+West Virginia,2018,0,0,True
+West Virginia,2019,0,0,True
+West Virginia,2020,0,0,True
+West Virginia,2021,,,False
+West Virginia,2022,,,False
+West Virginia,2023,,,False
+Wisconsin,2014,0,0,True
+Wisconsin,2015,0,0,True
+Wisconsin,2016,0,0,True
+Wisconsin,2017,0,0,True
+Wisconsin,2018,0,0,True
+Wisconsin,2019,0,0,True
+Wisconsin,2020,0,0,True
+Wisconsin,2021,,,False
+Wisconsin,2022,,,False
+Wisconsin,2023,,,False
+Wyoming,2014,0,0,True
+Wyoming,2015,0,0,True
+Wyoming,2016,0,0,True
+Wyoming,2017,0,0,True
+Wyoming,2018,0,0,True
+Wyoming,2019,0,0,True
+Wyoming,2020,0,0,True
+Wyoming,2021,,,False
+Wyoming,2022,,,False
+Wyoming,2023,,,False

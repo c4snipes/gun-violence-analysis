@@ -98,6 +98,7 @@ Build every panel input with `make panel`.
 |---|---|---|---|
 | Poverty rate, median household income | Census [SAIPE](https://www.census.gov/programs-surveys/saipe.html) API — keyless, no 2020 gap | `scripts/fetch_saipe.py` | `data/raw/` (gitignored) |
 | Household debt and delinquency | NY Fed / Equifax [Household Debt & Credit](https://www.newyorkfed.org/microeconomics/hhdc) area report — keyless | `scripts/fetch_nyfed_debt.py` | `data/nyfed_debt_2014_2023.csv` |
+| ERPO ("red flag") laws | State Firearm Laws database (Siegel, Boston University), read from a [pinned Internet Archive capture](https://web.archive.org/web/20230521114747id_/https://www.statefirearmlaws.org/sites/default/files/2020-07/DATABASE_0.xlsx) — the original host no longer resolves | `scripts/fetch_erpo_laws.py` | `data/erpo_laws_2014_2023.csv` |
 | Governor party | Wikipedia "List of governors of X" via the [MediaWiki API](https://en.wikipedia.org/w/api.php) | `scripts/fetch_governors.py` | `data/governors_2014_2023.csv` |
 | Attorney General party, legislative control | Wikipedia "Political party strength in X" | `scripts/fetch_state_politics.py` | `data/state_politics_2014_2023.csv` |
 
@@ -117,7 +118,8 @@ use. Measured across the 50 states, 2014–2023:
 |---|---:|---|
 | `delinq_studentloan` | 0.107 | best identified in the project |
 | `delinq_mortgage` | 0.261 | |
-| ERPO enforcement (Tufts) | 0.529 | |
+| `gvro` | 0.378 | ERPO, family *or* law enforcement may petition |
+| `gvrolawenforcement` | 0.475 | ERPO, law enforcement may petition — 16 adoptions in window |
 | `debt_auto` | 0.547 | |
 | `delinq_creditcard` | 0.680 | |
 | `debt_studentloan` | 0.755 | 0.894 if DC is included — DC is a student-debt outlier |
@@ -140,6 +142,21 @@ variable that is both.
 These figures come from a 5% sample of Equifax credit files, so they describe
 people **with a credit record**. The credit-invisible are excluded, and that
 exclusion is itself correlated with poverty.
+
+**ERPO is the only genuine treatment variable in the set.** Sixteen states
+adopted a law-enforcement-petition ERPO between 2014 and 2020, so the variation
+is within states over time rather than merely between them — unlike the
+law-strictness index at ICC 0.966, which a fixed-effects estimator can say
+nothing about. An earlier draft of this README cited its ICC as 0.529; measured
+against the source over its actual coverage it is **0.475**.
+
+Its source ends at **2020**, so 2021–2023 are emitted as empty rows and are
+never forward-filled. Carrying 2020 forward would assert that no state adopted
+an ERPO law afterwards, which is false and false in one direction — it would
+bias any estimated treatment effect toward zero. Wikipedia's [Red flag law](https://en.wikipedia.org/wiki/Red_flag_law)
+article records 21 states as of May 2023 against this database's 18 in 2020, so
+roughly three adoptions fall outside coverage; which three cannot be determined
+from that figure, so they are not guessed.
 
 ### Evaluated and rejected, with reasons
 
