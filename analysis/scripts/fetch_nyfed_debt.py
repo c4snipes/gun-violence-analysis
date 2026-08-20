@@ -102,10 +102,19 @@ _PLAUSIBLE = {
 }
 
 
-def download(dest: Path) -> Path:
-    """Fetch the workbook unless it is already present."""
-    if dest.exists():
-        print(f"using cached {dest} ({dest.stat().st_size:,} bytes)")
+def download(dest: Path, refresh: bool = False) -> Path:
+    """Fetch the workbook, reusing a local copy unless --refresh is given.
+
+    Unlike scripts/fetch_erpo_laws.py, whose URL is a pinned Wayback snapshot
+    and therefore immutable, this URL is live and the NY Fed republishes the
+    workbook quarterly. The server sends no Last-Modified header, so a stale
+    local copy is indistinguishable from a current one and would silently win
+    forever. Pass --refresh to pick up a new quarter; the cache exists only to
+    avoid refetching 170KB while iterating within a session.
+    """
+    if dest.exists() and not refresh:
+        print(f"using cached {dest} ({dest.stat().st_size:,} bytes) "
+              "-- pass --refresh to pick up a newer NY Fed release")
         return dest
     dest.parent.mkdir(parents=True, exist_ok=True)
     req = urllib.request.Request(
@@ -189,9 +198,15 @@ def main() -> None:
         default=Path("data/raw/nyfed_area_report_by_year.xlsx"),
         help="where to cache the downloaded workbook (gitignored)",
     )
+    parser.add_argument(
+        "--refresh",
+        action="store_true",
+        help="re-download even if a local copy exists; the NY Fed republishes "
+             "quarterly and serves no Last-Modified header",
+    )
     args = parser.parse_args()
 
-    path = download(args.workbook)
+    path = download(args.workbook, refresh=args.refresh)
 
     merged: pd.DataFrame | None = None
     for sheet, col in _SHEETS.items():

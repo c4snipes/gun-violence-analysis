@@ -44,7 +44,9 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import html
+import inspect
 import json
 import re
 import sys
@@ -83,6 +85,35 @@ TITLE_OVERRIDES = {
 # elected by the state Legislature", and that in Tennessee it "is appointed by
 # the Tennessee Supreme Court". 5 + 1 + 1 = 7, and 50 - 7 = 43, which matches
 # that article's own count.
+# Years where a state's table carries two rows because an officeholder changed
+# mid-term, and the two rows disagree. The 1 July rule decides these, but a
+# year-indexed table cannot express it, so each is resolved by hand here with
+# its reason. Any conflict NOT listed is reported and left to first-row-wins,
+# which is arbitrary -- the run prints it so it can be added here.
+CONFLICT_RESOLUTIONS: dict[tuple[str, int], dict[str, str]] = {
+    # Mark Herring (D) replaced Ken Cuccinelli (R) on 11 Jan 2014, so the
+    # office was Democratic for all but ten days of the year.
+    ("Virginia", 2014): {"ag_party": "Democratic"},
+    # Patrick Morrisey (R) was AG throughout. The conflicting cell is the
+    # Governor column: Jim Justice sat as a Democrat until 3 Aug 2017, which is
+    # how fetch_governors.py codes it under the same 1 July rule.
+    ("West Virginia", 2017): {"ag_party": "Republican",
+                              "governor_party_check": "Democratic"},
+    # T.J. Donovan (D) served to 30 June 2022; Susanne Young was appointed to
+    # finish the term. On 1 July the elected officeholder had just left, making
+    # this the one genuinely ambiguous case -- it is coded to the officeholder
+    # who served all but one day of the year.
+    ("Vermont", 2022): {"ag_party": "Democratic"},
+}
+
+# KNOWN OPEN ITEM, expected in every run's output:
+#   Virginia 2014, senate_control -- the two rows read 'Split' and 'Republican'.
+# Virginia's Senate was 20-20 after the 2013 election and changed composition
+# mid-year, and the exact date could not be established from this source, so it
+# is deliberately left to the reported first-row-wins fallback rather than
+# resolved on a guess. It affects one cell of one state-year in a column no
+# current model uses. If that changes, resolve it before using senate_control.
+
 AG_SELECTION = {
     "Alaska": "Appointed by governor",
     "Hawaii": "Appointed by governor",
@@ -249,6 +280,29 @@ def find_columns(grid: list[list[str]]) -> tuple[int, dict[str, int]] | None:
     return None
 
 
+def parser_fingerprint() -> str:
+    """Short hash of the logic that turns a page into rows.
+
+    Resume caching keyed only on "this state already has 10 rows" is unsafe: a
+    row count says nothing about whether those rows are right, so a cache
+    written by an older parser survives a fix to that parser. Hashing the
+    parsing functions and the lookup tables means any change to how a row is
+    produced discards rows produced the old way.
+
+    It over-triggers -- editing a comment forces a refetch -- but the costs are
+    asymmetric: a needless refetch takes two minutes, while a stale cache
+    silently publishes wrong research data.
+    """
+    src = "".join(
+        inspect.getsource(fn)
+        for fn in (_text, expand_table, party_of, chamber_control,
+                   _is_state_chamber, find_columns)
+    )
+    src += repr(sorted(TITLE_OVERRIDES.items())) + repr(sorted(AG_SELECTION.items()))
+    src += repr(sorted(CONFLICT_RESOLUTIONS.items()))
+    return hashlib.sha256(src.encode()).hexdigest()[:12]
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--out", type=Path, required=True)
@@ -260,10 +314,13 @@ def main() -> None:
     states = sorted(FULL_STATE_NAMES - {"District of Columbia"})
 
     rows: list[dict[str, str]] = []
+    fingerprint = parser_fingerprint()
     done: set[str] = set()
     if args.out.exists():
         with args.out.open() as fh:
             existing = list(csv.DictReader(fh))
+        stale = sum(1 for r in existing if r.get("parser") != fingerprint)
+        existing = [r for r in existing if r.get("parser") == fingerprint]
         by_state: dict[str, list[dict[str, str]]] = {}
         for r in existing:
             by_state.setdefault(r["state"], []).append(r)
@@ -271,6 +328,9 @@ def main() -> None:
             if len(rs) == END_YEAR - START_YEAR + 1:
                 rows.extend(rs)
                 done.add(st)
+        if stale:
+            print(f"discarding {stale} row(s) written by a different parser "
+                  f"(current fingerprint {fingerprint})")
         if done:
             print(f"resuming: {len(done)} state(s) already complete\n")
 
@@ -338,6 +398,7 @@ def main() -> None:
                     "governor_party_check": party_of(cell("governor")) or "",
                     "source": page,
                     "retrieved": retrieved,
+                    "parser": fingerprint,
                 })
                 found += 1
             if found:
@@ -350,34 +411,45 @@ def main() -> None:
         # 1 July rule cannot be resolved from a year-indexed table, so it is
         # reported rather than silently resolved to whichever row came last.
         merged: dict[int, dict[str, str]] = {}
-        conflicts: list[int] = []
+        conflicts: list[tuple[int, str, str, str]] = []
         for r in [r for r in rows if r["state"] == state]:
             y = int(r["year"])
             prev = merged.get(y)
             if prev is None:
                 merged[y] = r
                 continue
+            resolution = CONFLICT_RESOLUTIONS.get((state, y), {})
             for key in ("ag_party", "senate_control", "house_control", "governor_party_check"):
-                if prev[key] and r[key] and prev[key] != r[key] and y not in conflicts:
-                    conflicts.append(y)
+                if prev[key] and r[key] and prev[key] != r[key]:
+                    if key in resolution:
+                        prev[key] = resolution[key]
+                        continue
+                    conflicts.append((y, key, prev[key], r[key]))
                 # keep whichever row actually carries a value
                 prev[key] = prev[key] or r[key]
             prev["legislature_control"] = prev["legislature_control"] or r["legislature_control"]
             prev["ag_selection"] = prev["ag_selection"] or r["ag_selection"]
         rows = [r for r in rows if r["state"] != state] + [merged[y] for y in sorted(merged)]
-        for y in conflicts:
-            problems.append(f"{state} {y}: mid-year party change, needs manual resolution")
+        for y, key, kept, dropped in conflicts:
+            problems.append(
+                f"{state} {y}: {key} disagrees between rows ({kept!r} kept, "
+                f"{dropped!r} dropped) with no entry in CONFLICT_RESOLUTIONS. "
+                "First-row-wins is arbitrary -- resolve under the 1 July rule "
+                "and add it there."
+            )
 
         n = len(merged)
         if n != END_YEAR - START_YEAR + 1:
             problems.append(f"{state}: {n} of 10 years")
-        print(f"  [{i:2d}/50] {state}: {n} years" + (f"  ({len(conflicts)} conflict)" if conflicts else ""))
+        print(f"  [{i:2d}/50] {state}: {n} years"
+              + (f"  ({len(conflicts)} unresolved conflict)" if conflicts else ""))
         time.sleep(args.sleep)
 
     rows.sort(key=lambda r: (r["state"], int(r["year"])))
     args.out.parent.mkdir(parents=True, exist_ok=True)
     fields = ["state", "year", "ag_party", "ag_selection", "senate_control", "house_control",
-              "legislature_control", "governor_party_check", "source", "retrieved"]
+              "legislature_control", "governor_party_check", "source", "retrieved",
+              "parser"]
     with args.out.open("w", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=fields)
         w.writeheader()

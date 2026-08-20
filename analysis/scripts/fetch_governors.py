@@ -52,6 +52,8 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
+import inspect
 import json
 import re
 import sys
@@ -185,6 +187,30 @@ def extract_terms(wikitext: str) -> list[tuple[date, str]]:
     return terms
 
 
+def parser_fingerprint() -> str:
+    """Short hash of the logic that turns a page into rows.
+
+    Resume caching keyed only on "this state already has 10 rows" is unsafe: a
+    row count says nothing about whether those rows are right, so a cache
+    written by an older parser survives a fix to that parser. That is not
+    hypothetical -- the fix that corrected Hawaii and Oregon 2023 required
+    deleting this script's output by hand, and without that the wrong values
+    would have persisted under a 'resolved 500 of 500' success message.
+
+    Hashing the parsing functions and the override table means any change to
+    how a row is produced discards rows produced the old way. It over-triggers
+    -- editing a comment forces a refetch -- but the costs are asymmetric: a
+    needless refetch takes two minutes, while a stale cache silently publishes
+    wrong research data.
+    """
+    src = "".join(
+        inspect.getsource(fn)
+        for fn in (_parse_date, extract_terms, party_on)
+    )
+    src += repr(sorted(OVERRIDES.items())) + repr(sorted(PARTY_MAP.items()))
+    return hashlib.sha256(src.encode()).hexdigest()[:12]
+
+
 def party_on(terms: list[tuple[date, str]], when: date) -> str | None:
     current = None
     for start, party in terms:
@@ -209,11 +235,14 @@ def main() -> None:
 
     # Resume: keep any state already fully resolved in a previous run, so a
     # rate-limited attempt does not throw away the work it did complete.
+    fingerprint = parser_fingerprint()
     done: set[str] = set()
     if args.out.exists():
         with args.out.open() as fh:
             existing = list(csv.DictReader(fh))
         years_needed = END_YEAR - START_YEAR + 1
+        stale = sum(1 for r in existing if r.get("parser") != fingerprint)
+        existing = [r for r in existing if r.get("parser") == fingerprint]
         by_state: dict[str, list[dict[str, str]]] = {}
         for r in existing:
             by_state.setdefault(r["state"], []).append(r)
@@ -221,6 +250,9 @@ def main() -> None:
             if len(rs) == years_needed:
                 rows.extend(rs)
                 done.add(st)
+        if stale:
+            print(f"discarding {stale} row(s) written by a different parser "
+                  f"(current fingerprint {fingerprint})")
         if done:
             print(f"resuming: {len(done)} state(s) already complete\n")
 
@@ -246,6 +278,7 @@ def main() -> None:
                     "source": title,
                     "retrieved": retrieved,
                     "override": "yes" if (state, year) in OVERRIDES else "no",
+                    "parser": fingerprint,
                 }
             )
         print(f"  [{i:2d}/50] {state}: {len(terms)} terms parsed")
@@ -260,7 +293,8 @@ def main() -> None:
 
     args.out.parent.mkdir(parents=True, exist_ok=True)
     with args.out.open("w", newline="") as fh:
-        w = csv.DictWriter(fh, fieldnames=["state", "year", "party", "source", "retrieved", "override"])
+        w = csv.DictWriter(fh, fieldnames=["state", "year", "party", "source", "retrieved",
+                                     "override", "parser"])
         w.writeheader()
         w.writerows(rows)
     print(f"Wrote {args.out}")
