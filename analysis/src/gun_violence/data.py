@@ -318,6 +318,8 @@ def build_dataset(sources: DataSources) -> pd.DataFrame:
 
     df["gov_party_rep"] = (df["gov_party"] == "republican").astype(int)
 
+    df = _blank_suppressed_zeros(df)
+
     _validate(df)
     sources.output_csv.parent.mkdir(parents=True, exist_ok=True)
     df.to_csv(sources.output_csv, index=False)
@@ -343,7 +345,40 @@ REQUIRED_COMPLETE = {
 # NaN. 'credit_score' is here because the source sheet has no South Carolina
 # row at all -- absent must read as absent rather than borrowing a neighbour's
 # value, which is precisely the defect that put the wrong score on 32 states.
-ALLOWED_MISSING = {"credit_score"}
+# CDC mortality rates where an exact 0.0 is a suppressed cell rather than a
+# measured zero. NCHS suppresses counts of 1-9, and the workbook recorded those
+# suppressed cells as zeros: homicide_rate is exactly 0.0 for New Hampshire and
+# Vermont, while the smallest non-zero rate in the column is 1.6. That gap is a
+# discontinuity rather than a taper, which is what suppression looks like -- a
+# genuinely low rate would have values between. At New Hampshire's 1.4 million
+# residents a rate of 1.6 is roughly 23 homicides, so a suppressed cell of
+# fewer than 10 puts the true rate somewhere in (0, 0.7]. Zero is the one value
+# it cannot be.
+#
+# This matters because a zero asserts that no event occurred, which is exactly
+# the claim the tracker refuses to make when it renders an em dash instead of a
+# 0. The same rule now holds on the analysis side.
+SUPPRESSIBLE = {"homicide_rate", "suicide_rate", "accident_mortality_rate"}
+
+ALLOWED_MISSING = {"credit_score"} | SUPPRESSIBLE
+
+
+def _blank_suppressed_zeros(df: pd.DataFrame) -> pd.DataFrame:
+    """Turn exact-zero rates in SUPPRESSIBLE columns into NaN.
+
+    Done at load rather than in analysis so no consumer ever sees the zero. A
+    suppressed cell is an unknown value, and averaging or regressing on it as
+    if it were zero biases the estimate toward zero for precisely the smallest
+    states -- the ones most likely to be suppressed in the first place.
+    """
+    for col in SUPPRESSIBLE & set(df.columns):
+        zeros = df[col] == 0.0
+        if zeros.any():
+            states = df.loc[zeros, "state"].tolist()
+            print(f"  note: {col} is exactly 0 for {states} -- recording as "
+                  "missing, since a suppressed CDC cell is not a measured zero")
+            df.loc[zeros, col] = pd.NA
+    return df
 
 
 def _validate(df: pd.DataFrame) -> None:
@@ -358,3 +393,17 @@ def _validate(df: pd.DataFrame) -> None:
     ]
     if nan_cols:
         raise ValueError(f"NaN values in required columns: {nan_cols}")
+
+    # Belt and braces: _blank_suppressed_zeros should have cleared these at
+    # load, so an exact zero surviving to here means a path bypassed it.
+    zero_cols = {
+        c: df.loc[df[c] == 0.0, "state"].tolist()
+        for c in SUPPRESSIBLE & set(df.columns)
+        if (df[c] == 0.0).any()
+    }
+    if zero_cols:
+        raise ValueError(
+            f"exact zero in suppressible column(s): {zero_cols}. A CDC rate of "
+            "exactly 0 is a suppressed cell, not a measured zero; it must be "
+            "recorded as missing."
+        )
