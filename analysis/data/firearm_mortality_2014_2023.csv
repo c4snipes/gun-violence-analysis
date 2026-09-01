@@ -1,0 +1,501 @@
+state,year,firearm_deaths,firearm_mortality_rate_aa
+Alabama,2014,815,16.9
+Alabama,2015,958,19.6
+Alabama,2016,1046,21.5
+Alabama,2017,1124,22.9
+Alabama,2018,1064,21.8
+Alabama,2019,1076,22.2
+Alabama,2020,1141,23.6
+Alabama,2021,1315,26.4
+Alabama,2022,1278,25.5
+Alabama,2023,1292,25.6
+Alaska,2014,145,19.2
+Alaska,2015,177,23.4
+Alaska,2016,177,23.3
+Alaska,2017,180,24.5
+Alaska,2018,155,21.0
+Alaska,2019,179,24.4
+Alaska,2020,175,23.5
+Alaska,2021,182,25.2
+Alaska,2022,164,22.4
+Alaska,2023,176,23.5
+Arizona,2014,927,13.5
+Arizona,2015,970,13.8
+Arizona,2016,1094,15.2
+Arizona,2017,1134,15.8
+Arizona,2018,1147,15.3
+Arizona,2019,1136,15.1
+Arizona,2020,1265,16.7
+Arizona,2021,1365,18.3
+Arizona,2022,1535,20.1
+Arizona,2023,1419,18.5
+Arkansas,2014,496,16.6
+Arkansas,2015,520,16.9
+Arkansas,2016,541,17.8
+Arkansas,2017,613,20.3
+Arkansas,2018,573,18.9
+Arkansas,2019,580,19.3
+Arkansas,2020,673,22.6
+Arkansas,2021,698,23.3
+Arkansas,2022,666,21.9
+Arkansas,2023,671,21.9
+California,2014,2942,7.4
+California,2015,3095,7.7
+California,2016,3184,7.9
+California,2017,3184,7.9
+California,2018,3040,7.5
+California,2019,2945,7.2
+California,2020,3449,8.5
+California,2021,3576,9.0
+California,2022,3484,8.6
+California,2023,3209,8.0
+Colorado,2014,663,12.2
+Colorado,2015,701,12.6
+Colorado,2016,812,14.3
+Colorado,2017,779,13.4
+Colorado,2018,889,15.2
+Colorado,2019,846,14.2
+Colorado,2020,922,15.4
+Colorado,2021,1064,17.8
+Colorado,2022,1036,17.1
+Colorado,2023,1019,16.6
+Connecticut,2014,187,5.0
+Connecticut,2015,189,5.3
+Connecticut,2016,172,4.6
+Connecticut,2017,188,5.1
+Connecticut,2018,186,4.9
+Connecticut,2019,190,5.3
+Connecticut,2020,219,6.0
+Connecticut,2021,248,6.7
+Connecticut,2022,252,6.9
+Connecticut,2023,225,6.2
+Delaware,2014,102,11.1
+Delaware,2015,112,12.1
+Delaware,2016,111,11.0
+Delaware,2017,111,11.7
+Delaware,2018,107,11.6
+Delaware,2019,93,9.9
+Delaware,2020,135,14.4
+Delaware,2021,158,16.6
+Delaware,2022,124,11.9
+Delaware,2023,124,12.0
+Florida,2014,2410,11.5
+Florida,2015,2559,12.0
+Florida,2016,2704,12.6
+Florida,2017,2724,12.4
+Florida,2018,2902,12.9
+Florida,2019,2872,12.7
+Florida,2020,3041,13.7
+Florida,2021,3142,14.1
+Florida,2022,3232,14.0
+Florida,2023,3253,13.7
+Georgia,2014,1391,13.7
+Georgia,2015,1448,14.1
+Georgia,2016,1571,15.0
+Georgia,2017,1623,15.4
+Georgia,2018,1680,15.7
+Georgia,2019,1695,15.8
+Georgia,2020,1897,17.7
+Georgia,2021,2200,20.3
+Georgia,2022,2163,19.7
+Georgia,2023,2070,18.6
+Hawaii,2014,40,2.6
+Hawaii,2015,55,3.6
+Hawaii,2016,66,4.5
+Hawaii,2017,39,2.5
+Hawaii,2018,59,4.0
+Hawaii,2019,62,4.4
+Hawaii,2020,50,3.4
+Hawaii,2021,71,4.8
+Hawaii,2022,66,4.5
+Hawaii,2023,73,4.9
+Idaho,2014,213,13.2
+Idaho,2015,247,14.7
+Idaho,2016,242,14.6
+Idaho,2017,280,16.4
+Idaho,2018,294,16.6
+Idaho,2019,255,14.2
+Idaho,2020,321,17.6
+Idaho,2021,309,16.3
+Idaho,2022,338,17.0
+Idaho,2023,356,17.9
+Illinois,2014,1179,9.0
+Illinois,2015,1220,9.5
+Illinois,2016,1490,11.7
+Illinois,2017,1543,12.1
+Illinois,2018,1382,10.9
+Illinois,2019,1367,10.8
+Illinois,2020,1745,14.1
+Illinois,2021,1995,16.1
+Illinois,2022,1798,14.4
+Illinois,2023,1691,13.5
+Indiana,2014,818,12.4
+Indiana,2015,846,12.7
+Indiana,2016,997,15.0
+Indiana,2017,1016,15.3
+Indiana,2018,977,14.7
+Indiana,2019,958,14.1
+Indiana,2020,1159,17.3
+Indiana,2021,1251,18.4
+Indiana,2022,1211,17.4
+Indiana,2023,1258,18.3
+Iowa,2014,241,7.5
+Iowa,2015,247,7.8
+Iowa,2016,288,9.2
+Iowa,2017,293,9.0
+Iowa,2018,282,8.7
+Iowa,2019,294,9.1
+Iowa,2020,351,11.2
+Iowa,2021,364,11.2
+Iowa,2022,367,11.2
+Iowa,2023,341,10.5
+Kansas,2014,329,11.3
+Kansas,2015,330,11.4
+Kansas,2016,383,13.4
+Kansas,2017,466,16.0
+Kansas,2018,424,14.8
+Kansas,2019,403,13.7
+Kansas,2020,494,16.9
+Kansas,2021,503,17.3
+Kansas,2022,492,16.8
+Kansas,2023,475,16.3
+Kentucky,2014,634,13.9
+Kentucky,2015,694,15.2
+Kentucky,2016,772,17.5
+Kentucky,2017,730,16.2
+Kentucky,2018,762,16.9
+Kentucky,2019,682,14.9
+Kentucky,2020,902,20.1
+Kentucky,2021,947,21.1
+Kentucky,2022,840,18.8
+Kentucky,2023,841,18.4
+Louisiana,2014,896,19.0
+Louisiana,2015,952,20.4
+Louisiana,2016,987,21.3
+Louisiana,2017,1008,21.7
+Louisiana,2018,991,21.4
+Louisiana,2019,1013,22.1
+Louisiana,2020,1183,26.3
+Louisiana,2021,1314,29.1
+Louisiana,2022,1266,28.2
+Louisiana,2023,1261,28.3
+Maine,2014,133,9.4
+Maine,2015,144,9.8
+Maine,2016,123,8.3
+Maine,2017,172,11.7
+Maine,2018,159,10.3
+Maine,2019,163,11.5
+Maine,2020,153,10.4
+Maine,2021,178,12.6
+Maine,2022,179,11.7
+Maine,2023,200,14.0
+Maryland,2014,546,9.0
+Maryland,2015,708,11.9
+Maryland,2016,707,11.9
+Maryland,2017,742,12.3
+Maryland,2018,707,11.7
+Maryland,2019,757,12.6
+Maryland,2020,803,13.5
+Maryland,2021,915,15.2
+Maryland,2022,813,13.6
+Maryland,2023,737,12.3
+Massachusetts,2014,226,3.2
+Massachusetts,2015,213,3.0
+Massachusetts,2016,242,3.4
+Massachusetts,2017,262,3.7
+Massachusetts,2018,258,3.5
+Massachusetts,2019,247,3.4
+Massachusetts,2020,268,3.7
+Massachusetts,2021,247,3.4
+Massachusetts,2022,263,3.7
+Massachusetts,2023,270,3.7
+Michigan,2014,1095,11.1
+Michigan,2015,1164,11.7
+Michigan,2016,1230,12.3
+Michigan,2017,1138,11.3
+Michigan,2018,1310,12.9
+Michigan,2019,1220,12.1
+Michigan,2020,1454,14.6
+Michigan,2021,1544,15.4
+Michigan,2022,1504,15.0
+Michigan,2023,1384,13.9
+Minnesota,2014,377,6.6
+Minnesota,2015,410,7.4
+Minnesota,2016,432,7.6
+Minnesota,2017,465,8.2
+Minnesota,2018,437,7.8
+Minnesota,2019,465,8.1
+Minnesota,2020,513,8.9
+Minnesota,2021,573,10.0
+Minnesota,2022,561,9.6
+Minnesota,2023,525,8.9
+Mississippi,2014,547,18.3
+Mississippi,2015,589,19.6
+Mississippi,2016,587,19.9
+Mississippi,2017,632,21.5
+Mississippi,2018,681,22.9
+Mississippi,2019,710,24.2
+Mississippi,2020,818,28.6
+Mississippi,2021,962,33.9
+Mississippi,2022,848,29.6
+Mississippi,2023,844,29.4
+Missouri,2014,943,15.3
+Missouri,2015,1094,18.1
+Missouri,2016,1144,19.0
+Missouri,2017,1307,21.5
+Missouri,2018,1311,21.5
+Missouri,2019,1252,20.6
+Missouri,2020,1426,23.9
+Missouri,2021,1414,23.2
+Missouri,2022,1489,24.2
+Missouri,2023,1324,21.4
+Montana,2014,172,16.1
+Montana,2015,205,19.2
+Montana,2016,194,18.9
+Montana,2017,244,22.5
+Montana,2018,186,17.3
+Montana,2019,209,19.0
+Montana,2020,238,20.9
+Montana,2021,280,25.1
+Montana,2022,274,23.9
+Montana,2023,247,21.5
+Nebraska,2014,179,9.5
+Nebraska,2015,169,8.9
+Nebraska,2016,171,9.1
+Nebraska,2017,160,8.3
+Nebraska,2018,183,9.0
+Nebraska,2019,205,10.4
+Nebraska,2020,197,10.1
+Nebraska,2021,200,10.3
+Nebraska,2022,244,12.2
+Nebraska,2023,213,10.6
+Nevada,2014,429,14.8
+Nevada,2015,446,14.9
+Nevada,2016,498,16.8
+Nevada,2017,508,16.7
+Nevada,2018,550,17.9
+Nevada,2019,490,15.3
+Nevada,2020,547,17.0
+Nevada,2021,633,19.8
+Nevada,2022,618,18.9
+Nevada,2023,616,18.4
+New Hampshire,2014,122,8.7
+New Hampshire,2015,121,8.9
+New Hampshire,2016,132,9.3
+New Hampshire,2017,146,10.4
+New Hampshire,2018,155,10.8
+New Hampshire,2019,156,10.7
+New Hampshire,2020,128,8.9
+New Hampshire,2021,123,8.3
+New Hampshire,2022,156,10.1
+New Hampshire,2023,143,9.6
+New Jersey,2014,468,5.3
+New Jersey,2015,475,5.4
+New Jersey,2016,485,5.5
+New Jersey,2017,478,5.3
+New Jersey,2018,420,4.8
+New Jersey,2019,368,4.1
+New Jersey,2020,443,5.0
+New Jersey,2021,475,5.2
+New Jersey,2022,468,5.0
+New Jersey,2023,430,4.6
+New Mexico,2014,340,16.0
+New Mexico,2015,390,18.6
+New Mexico,2016,383,18.1
+New Mexico,2017,394,18.5
+New Mexico,2018,438,20.7
+New Mexico,2019,471,22.3
+New Mexico,2020,479,22.7
+New Mexico,2021,578,27.8
+New Mexico,2022,571,27.3
+New Mexico,2023,530,25.3
+New York,2014,875,4.2
+New York,2015,849,4.2
+New York,2016,900,4.4
+New York,2017,772,3.7
+New York,2018,821,4.1
+New York,2019,804,3.9
+New York,2020,1052,5.3
+New York,2021,1078,5.4
+New York,2022,1044,5.3
+New York,2023,943,4.7
+North Carolina,2014,1206,11.8
+North Carolina,2015,1289,12.5
+North Carolina,2016,1409,13.7
+North Carolina,2017,1430,13.7
+North Carolina,2018,1416,13.3
+North Carolina,2019,1397,13.1
+North Carolina,2020,1699,16.0
+North Carolina,2021,1839,17.3
+North Carolina,2022,1831,16.8
+North Carolina,2023,1803,16.4
+North Dakota,2014,96,12.3
+North Dakota,2015,92,12.8
+North Dakota,2016,90,11.9
+North Dakota,2017,103,13.2
+North Dakota,2018,89,11.5
+North Dakota,2019,93,12.4
+North Dakota,2020,100,13.8
+North Dakota,2021,128,16.8
+North Dakota,2022,125,16.4
+North Dakota,2023,103,12.8
+Ohio,2014,1211,10.3
+Ohio,2015,1397,11.9
+Ohio,2016,1524,12.9
+Ohio,2017,1589,13.7
+Ohio,2018,1555,13.1
+Ohio,2019,1578,13.3
+Ohio,2020,1764,15.2
+Ohio,2021,1911,16.5
+Ohio,2022,1831,15.6
+Ohio,2023,1768,15.0
+Oklahoma,2014,611,15.7
+Oklahoma,2015,706,18.0
+Oklahoma,2016,766,19.6
+Oklahoma,2017,681,17.2
+Oklahoma,2018,665,16.8
+Oklahoma,2019,737,18.6
+Oklahoma,2020,826,20.7
+Oklahoma,2021,836,21.2
+Oklahoma,2022,797,19.8
+Oklahoma,2023,814,19.9
+Oregon,2014,497,11.7
+Oregon,2015,486,11.4
+Oregon,2016,513,11.9
+Oregon,2017,528,12.1
+Oregon,2018,519,11.7
+Oregon,2019,566,12.6
+Oregon,2020,592,13.0
+Oregon,2021,670,14.9
+Oregon,2022,655,14.4
+Oregon,2023,642,14.2
+Pennsylvania,2014,1390,10.5
+Pennsylvania,2015,1485,11.4
+Pennsylvania,2016,1555,12.0
+Pennsylvania,2017,1636,12.5
+Pennsylvania,2018,1654,12.5
+Pennsylvania,2019,1541,11.7
+Pennsylvania,2020,1752,13.6
+Pennsylvania,2021,1905,14.8
+Pennsylvania,2022,1941,14.7
+Pennsylvania,2023,1807,13.6
+Rhode Island,2014,34,3.0
+Rhode Island,2015,51,4.7
+Rhode Island,2016,49,4.1
+Rhode Island,2017,43,3.9
+Rhode Island,2018,37,3.3
+Rhode Island,2019,48,4.6
+Rhode Island,2020,54,5.1
+Rhode Island,2021,64,5.6
+Rhode Island,2022,37,3.1
+Rhode Island,2023,58,4.8
+South Carolina,2014,767,15.5
+South Carolina,2015,850,17.3
+South Carolina,2016,891,17.7
+South Carolina,2017,893,17.7
+South Carolina,2018,895,17.6
+South Carolina,2019,1012,19.9
+South Carolina,2020,1131,22.0
+South Carolina,2021,1136,22.4
+South Carolina,2022,1105,20.8
+South Carolina,2023,1019,19.1
+South Dakota,2014,89,10.3
+South Dakota,2015,96,11.1
+South Dakota,2016,108,13.4
+South Dakota,2017,101,11.9
+South Dakota,2018,117,13.6
+South Dakota,2019,113,13.1
+South Dakota,2020,120,13.6
+South Dakota,2021,128,14.3
+South Dakota,2022,141,15.7
+South Dakota,2023,112,12.3
+Tennessee,2014,1016,15.1
+Tennessee,2015,1075,16.0
+Tennessee,2016,1148,17.1
+Tennessee,2017,1246,18.4
+Tennessee,2018,1228,17.8
+Tennessee,2019,1270,18.4
+Tennessee,2020,1473,21.3
+Tennessee,2021,1569,22.8
+Tennessee,2022,1480,20.5
+Tennessee,2023,1587,22.0
+Texas,2014,2848,10.7
+Texas,2015,3203,11.7
+Texas,2016,3353,12.1
+Texas,2017,3513,12.4
+Texas,2018,3522,12.2
+Texas,2019,3683,12.7
+Texas,2020,4164,14.2
+Texas,2021,4613,15.6
+Texas,2022,4630,15.3
+Texas,2023,4561,14.9
+Utah,2014,337,12.3
+Utah,2015,367,12.8
+Utah,2016,370,12.9
+Utah,2017,410,14.0
+Utah,2018,397,13.2
+Utah,2019,394,12.8
+Utah,2020,429,13.6
+Utah,2021,450,13.9
+Utah,2022,446,13.7
+Utah,2023,489,14.8
+Vermont,2014,69,10.3
+Vermont,2015,70,9.6
+Vermont,2016,78,11.1
+Vermont,2017,70,11.7
+Vermont,2018,82,12.8
+Vermont,2019,67,9.3
+Vermont,2020,76,11.6
+Vermont,2021,83,11.9
+Vermont,2022,84,12.0
+Vermont,2023,83,12.0
+Virginia,2014,889,10.3
+Virginia,2015,946,10.9
+Virginia,2016,1049,12.1
+Virginia,2017,1041,11.9
+Virginia,2018,1035,11.8
+Virginia,2019,1025,11.7
+Virginia,2020,1174,13.4
+Virginia,2021,1248,14.3
+Virginia,2022,1316,14.9
+Virginia,2023,1237,13.8
+Washington,2014,702,9.7
+Washington,2015,718,9.8
+Washington,2016,686,9.0
+Washington,2017,849,11.1
+Washington,2018,809,10.4
+Washington,2019,842,10.7
+Washington,2020,864,10.9
+Washington,2021,896,11.2
+Washington,2022,1022,12.4
+Washington,2023,1053,13.0
+West Virginia,2014,286,14.6
+West Virginia,2015,278,14.0
+West Virginia,2016,332,17.5
+West Virginia,2017,348,18.6
+West Virginia,2018,343,18.2
+West Virginia,2019,300,16.6
+West Virginia,2020,325,18.1
+West Virginia,2021,319,17.3
+West Virginia,2022,311,16.2
+West Virginia,2023,315,16.8
+Wisconsin,2014,487,8.2
+Wisconsin,2015,613,10.4
+Wisconsin,2016,664,11.4
+Wisconsin,2017,624,10.6
+Wisconsin,2018,598,10.1
+Wisconsin,2019,604,10.0
+Wisconsin,2020,717,12.2
+Wisconsin,2021,793,13.5
+Wisconsin,2022,830,14.0
+Wisconsin,2023,762,12.7
+Wyoming,2014,93,16.2
+Wyoming,2015,113,19.6
+Wyoming,2016,101,17.4
+Wyoming,2017,113,18.8
+Wyoming,2018,124,21.5
+Wyoming,2019,133,22.3
+Wyoming,2020,154,25.9
+Wyoming,2021,155,26.1
+Wyoming,2022,124,20.4
+Wyoming,2023,130,21.5

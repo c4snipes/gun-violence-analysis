@@ -18,6 +18,7 @@ fetch-erpo:
 	$(PYTHON) scripts/fetch_erpo_laws.py --out data/erpo_laws_2014_2023.csv
 
 fetch-mortality:
+	$(PYTHON) scripts/fetch_firearm_mortality_kff.py --out data/firearm_mortality_2014_2023.csv
 	$(PYTHON) scripts/fetch_firearm_mortality.py --out data/firearm_mortality_2019_2024.csv
 
 fetch-governors:

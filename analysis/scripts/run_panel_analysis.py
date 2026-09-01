@@ -1,57 +1,66 @@
 """Merge the state-year panels and fit a within-between estimator.
 
 WHAT THIS ANSWERS
-The project's cross-sectional models report associations between state
-characteristics and firearm mortality. A cross-section cannot tell whether a
-state with more poverty has more firearm death *because of* the poverty, or
-whether both reflect something fixed about the state. Splitting each regressor
-into a state mean (BETWEEN) and a deviation from it (WITHIN) separates the two:
+A cross-section cannot tell whether a state with more poverty has more firearm
+death *because of* the poverty, or whether both reflect something fixed about
+the state. Splitting each regressor into a state mean (BETWEEN) and a deviation
+from it (WITHIN) separates the two:
 
     BETWEEN  do states with more of X have more of Y?
     WITHIN   when a state's X changes, does its Y change?
 
-A finding that is significant between and null within is a cross-sectional
-association with no within-state support.
+WINDOW
+2014-2023, 500 state-years, using the KFF age-adjusted outcome from
+scripts/fetch_firearm_mortality_kff.py. An earlier version ran 2019-2023 on
+CDC's Socrata series, which begins in 2019; doubling the window mattered more
+than any modelling choice made here. The outcome's ICC falls from 0.948 over
+2019-2023 to 0.876 over 2014-2023, because the five-year window began after
+most of the 2014-2021 rise had already happened. Within-variation is a property
+of the observation window, not of the variable.
 
-THE CONSTRAINT THIS RAN INTO
-The outcome series (CDC, 2019-2024) is shorter than the predictor panels
-(2014-2023), so the usable window is five years: 2019-2023. More importantly,
-all three outcomes are overwhelmingly between-state:
-
-    firearm_mortality_rate  ICC 0.948
-    firearm_homicide_rate   ICC 0.921
-    firearm_suicide_rate    ICC 0.960
-
-Roughly 92-96% of the variance in each is across states rather than across
-years within a state, so a within estimator has very little left to explain.
-This is a real limit on what a panel of this length can establish, and it was
-not knowable before the outcome was assembled -- the Phase 0 gate measured ICCs
-for the predictors only.
-
-An earlier run of this analysis appeared to show firearm homicide with ICC
-0.389, which would have made it the one outcome with usable within variation.
-That was an artifact: CDC encodes suppressed cells as rate -999.0, and five of
-them inflated the within-state variance. Corrected, homicide behaves like the
-others. See scripts/fetch_firearm_mortality.py.
+Adding ERPO truncates to 2014-2020, its source's last year, giving n=350.
 
 YEAR EFFECTS
-Year dummies are included. Firearm homicide rose nationally from 4.24 per
-100,000 in 2019 to 6.06 in 2021 before falling back. Without year effects a
-within estimator would attribute that common shock to whichever state-level
-variable happened to move alongside it.
+Included. The national mean rose from 11.44 per 100,000 in 2014 to 16.36 in
+2021 before easing to 15.21. Without year dummies a within estimator would
+attribute that common trend to whichever state-level variable moved alongside
+it.
+
+THE POVERTY RESULT, AND WHY IT IS REPORTED WITHOUT A CAUSAL READING
+Poverty is significantly NEGATIVE within states and null between them -- when a
+state's poverty rises, its firearm mortality falls. That direction is not
+credible as a causal claim, and it is reported as a caution rather than a
+finding.
+
+It is not a truncation artifact. Checked across four specifications, the sign
+is the same in every one:
+
+    2014-2023, no ERPO   n=500   within -0.652  p<0.001
+    2014-2020, no ERPO   n=350   within -0.630  p<0.001
+    2014-2020, with ERPO n=350   within -0.592  p<0.001
+    2019-2023, no ERPO   n=250   within -0.296  p=0.240
+
+The five-year window agrees in sign and merely lacks the power to resolve it.
+
+Two explanations are more plausible than a real protective effect of poverty.
+First, opposing secular trends: over 2014-2021 poverty fell nationally while
+firearm mortality rose, and year dummies remove only the common component, so
+states with larger poverty declines and larger mortality increases for
+unrelated reasons will produce this sign. Second, measurement error: poverty's
+ICC is 0.852, so only about 15% of its variance is within-state, and SAIPE
+values are themselves model-based estimates with published error. Small true
+within-variation relative to measurement error attenuates a coefficient and can
+destabilise its sign.
+
+Establishing which would need a design this data cannot support -- lagged
+specifications, an instrument, or a policy discontinuity.
 
 INTERPRETING THE DELINQUENCY WITHIN-COEFFICIENTS
 Treat them with suspicion. Federal student-loan payments were suspended from
-March 2020 into 2023, which mechanically collapsed student-loan delinquency
-over most of this window while firearm homicide was rising. Year dummies absorb
-the national component of that, but the measure's within variation over these
-particular years is dominated by a federal policy rather than by state
-economic conditions.
-
-ERPO
-Excluded. Its source ends in 2020, so within a 2019-2023 window it contributes
-two years and essentially no adoption events. The policy variation that made it
-worth collecting sits in 2014-2018, where there is no outcome to regress on.
+March 2020 into 2023, mechanically collapsing student-loan delinquency across
+most of this window. Year dummies absorb the national component, but the
+measure's within variation over these years is dominated by a federal policy
+rather than by state economic conditions.
 
 Usage:
     python scripts/run_panel_analysis.py --out results/panel
@@ -79,25 +88,32 @@ PREDICTORS = [
     "delinq_studentloan",
     "debt_total",
     "gov_rep",
+    # Usable now that the outcome reaches 2014. Its source ends in 2020, so it
+    # contributes 2014-2020 -- seven years carrying 16 adoption events, the
+    # policy variation a five-year window from 2019 could not see.
+    "gvrolawenforcement",
 ]
 
 OUTCOMES = {
-    "firearm_mortality_rate": "all firearm deaths",
-    "firearm_homicide_rate": "firearm homicide",
+    "firearm_mortality_rate_aa": "all firearm deaths (age-adjusted)",
 }
 
 
 def load_panel(saipe: Path) -> pd.DataFrame:
     """Merge outcome and predictor panels on (state, year)."""
-    outcome = pd.read_csv(DATA / "firearm_mortality_2019_2024.csv")
+    outcome = pd.read_csv(DATA / "firearm_mortality_2014_2023.csv")
     poverty = pd.read_csv(saipe)
     governors = pd.read_csv(DATA / "governors_2014_2023.csv")[["state", "year", "party"]]
     debt = pd.read_csv(DATA / "nyfed_debt_2014_2023.csv")
+    erpo = pd.read_csv(DATA / "erpo_laws_2014_2023.csv")[
+        ["state", "year", "gvrolawenforcement"]
+    ]
 
     df = (
         outcome.merge(poverty, on=["state", "year"])
         .merge(governors, on=["state", "year"])
         .merge(debt, on=["state", "year"])
+        .merge(erpo, on=["state", "year"], how="left")
     )
     df["gov_rep"] = (df["party"] == "Republican").astype(float)
     return df.sort_values(["state", "year"]).reset_index(drop=True)

@@ -15,9 +15,19 @@ keyless. Intents kept:
     FA_Homicide  firearm homicides
     FA_Suicide   firearm suicides
 
-Rates are deaths per 100,000 population, age-adjusted by the publisher.
+Rates are CRUDE deaths per 100,000 population, not age-adjusted. Verified:
+Alabama 2020 is 1,141 deaths against a population of 5,024,279, which is 22.71
+per 100,000 -- exactly the rate this endpoint reports. KFF publishes the same
+death counts age-adjusted, giving 23.6 for that state-year. The two series must
+not be spliced; see scripts/fetch_firearm_mortality_kff.py.
 
-COVERAGE, AND WHAT IT COSTS
+COVERAGE
+The series runs 2019-2024. The panel outcome now comes from
+scripts/fetch_firearm_mortality_kff.py, which reaches 2014 on a single
+age-adjusted definition; this series is retained as an independent cross-check
+and for its homicide and suicide breakdowns, which KFF does not publish.
+
+The note below records why the five-year window mattered before that existed.
 The series runs 2019-2024, not 2014-2023. That is the binding constraint on the
 whole panel: what is estimable is the INTERSECTION of outcome and predictor
 coverage, not the union. Against predictors that end in 2023 the usable window
