@@ -99,6 +99,12 @@ Build every panel input with `make panel`.
 | Poverty rate, median household income | Census [SAIPE](https://www.census.gov/programs-surveys/saipe.html) API — keyless, no 2020 gap | `scripts/fetch_saipe.py` | `data/raw/` (gitignored) |
 | Household debt and delinquency | NY Fed / Equifax [Household Debt & Credit](https://www.newyorkfed.org/microeconomics/hhdc) area report — keyless | `scripts/fetch_nyfed_debt.py` | `data/nyfed_debt_2014_2023.csv` |
 | ERPO ("red flag") laws | State Firearm Laws database (Siegel, Boston University), read from a [pinned Internet Archive capture](https://web.archive.org/web/20230521114747id_/https://www.statefirearmlaws.org/sites/default/files/2020-07/DATABASE_0.xlsx) — the original host no longer resolves | `scripts/fetch_erpo_laws.py` | `data/erpo_laws_2014_2023.csv` |
+| **Firearm mortality, homicide, suicide** (the panel *outcome*) | CDC/NCHS [Mapping Injury, Overdose, and Violence — State](https://data.cdc.gov/resource/fpsi-y8tj.json), keyless via Socrata. 2019–2024. Validated against the 2020 cross-section at r = 0.9970 | `scripts/fetch_firearm_mortality.py` | `data/firearm_mortality_2019_2024.csv` |
+
+**Suppression is encoded differently by each source, and always as a number.**
+The SRI workbook writes a suppressed CDC cell as `0.0`; the Socrata API writes
+it as `rate: -999.0` with `count_sup: "1-9"`. Both are read as missing here.
+Neither is a measured value, and both hit New Hampshire and Vermont.
 | Governor party | Wikipedia "List of governors of X" via the [MediaWiki API](https://en.wikipedia.org/w/api.php) | `scripts/fetch_governors.py` | `data/governors_2014_2023.csv` |
 | Attorney General party, legislative control | Wikipedia "Political party strength in X" | `scripts/fetch_state_politics.py` | `data/state_politics_2014_2023.csv` |
 
@@ -239,12 +245,81 @@ precisely how a data defect in one variable was able to manufacture a clean
 result for the other. Bootstrap sign stability and the Lasso path are the more
 trustworthy summaries in this specification.
 
+## Panel findings (2019–2023)
+
+Run with `make panel-analyze`. A cross-section cannot distinguish "states with
+more of X have more of Y" from "when a state's X changes, its Y changes".
+Splitting each regressor into a state mean (**between**) and a deviation from
+it (**within**) separates them.
+
+**The outcome barely varies within states, which limits what any panel of this
+length can establish:**
+
+| Outcome | ICC |
+|---|---:|
+| `firearm_mortality_rate` | 0.948 |
+| `firearm_homicide_rate` | 0.921 |
+| `firearm_suicide_rate` | 0.960 |
+
+Roughly 92–96% of the variance in each is *across states* rather than across
+years within a state. The Phase 0 gate measured ICCs for the predictors and
+assumed the outcome varied; it barely does, and that was not knowable until the
+outcome series was assembled. However well-identified a predictor is, a within
+estimator on these outcomes has little left to explain.
+
+**The headline result, on 250 state-years across 50 states with year effects:**
+
+| Relationship | Between | Within |
+|---|---|---|
+| poverty → firearm homicide | **p = 0.003** *** | p = 0.608 |
+| Republican governor → firearm deaths | **p = 0.011** ** | p = 0.391 |
+
+States with more poverty have more firearm homicide, but a state whose poverty
+*changes* shows no matching change in its homicide rate. The same holds for
+governor party. The cross-sectional associations reported above survive the
+between transformation and vanish in the within one.
+
+This is **not** a causal refutation — five years against an outcome ICC over
+0.92 cannot support one — but it does establish that these associations are
+between-state, and that the cross-section should not be read as evidence of a
+within-state channel.
+
+**Two caveats, both load-bearing:**
+
+- The only significant *within* coefficients are the two delinquency measures,
+  and both are **negative**, which is backwards if delinquency proxies distress.
+  Federal student-loan forbearance ran March 2020 into 2023 and mechanically
+  collapsed those delinquencies while firearm homicide rose. Year dummies absorb
+  the national component, but the within variation over these particular years
+  is dominated by a federal policy rather than state economic conditions. Treat
+  them as artifacts, not findings.
+- **ERPO is excluded.** Its source ends in 2020, so within a 2019–2023 window it
+  contributes two years and no adoption events. The policy variation that made
+  it worth collecting (16 adoptions) sits in 2014–2018, where no outcome exists
+  to regress on.
+
+**A correction worth recording.** An earlier run of this analysis reported
+`firearm_homicide_rate` at ICC 0.389, which would have made it the one outcome
+with usable within-state variation. That was an artifact: CDC encodes a
+suppressed cell as `rate: -999.0`, and five sentinels inflated the column's
+within variance. A full estimation ran on that basis before negative national
+homicide rates exposed it. The validator missed it because it range-checked only
+`firearm_mortality_rate`, which has no suppressed cells — checking one column of
+three and assuming the rest. The affected states were New Hampshire and Vermont,
+the same two whose suppressed homicide cells appear as exact zeros in the 2020
+cross-section.
+
 ## Known limitations
 
-- **Single-year snapshot** (2020 for most variables); no panel data. A state-year
-  panel for 2014–2023 is in progress: poverty and median income are built
-  (`scripts/fetch_saipe.py`), as is governor party
-  (`scripts/fetch_governors.py`, `data/governors_2014_2023.csv`).
+- **The cross-section is a single-year snapshot** (2020 for most variables). A
+  state-year panel now exists alongside it — see *Panel findings* above and
+  `make panel-analyze` — but it does not supersede the cross-section, because
+  the two answer different questions and the panel is limited by its window.
+- **The panel window is five years, not ten.** Every predictor panel runs
+  2014–2023, but the CDC outcome series begins in 2019, and what is estimable is
+  the *intersection* of outcome and predictor coverage, not the union. This is
+  what costs the ERPO variable: its adoption events sit in 2014–2018, where
+  there is no outcome to regress on.
 - **n = 49, not 50, and it does not matter.** South Carolina has no
   credit-score row in the source sheet, so it is dropped from any model
   containing that predictor rather than imputed. `credit_score` is in
