@@ -381,10 +381,50 @@ def _blank_suppressed_zeros(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-def _validate(df: pd.DataFrame) -> None:
-    """Sanity checks on the merged dataset."""
-    if len(df) != 50:
+def _validate(df: pd.DataFrame, *, panel: bool = False) -> None:
+    """Sanity checks on the merged dataset.
+
+    With ``panel=False`` the frame is the 50-state cross-section. With
+    ``panel=True`` it is state-year, and the shape checks change accordingly:
+    one row per state per year, no duplicate (state, year), and every state
+    observed in the same years.
+
+    The balanced check is not pedantry. A within-state estimator weights each
+    state by how many years it contributes, so an unbalanced panel silently
+    changes what the coefficient means -- states with more observations pull
+    harder, and which states those are is rarely random.
+    """
+    if panel:
+        if "year" not in df.columns:
+            raise ValueError("panel frame has no 'year' column")
+
+        dupes = df.duplicated(subset=["state", "year"])
+        if dupes.any():
+            examples = (
+                df.loc[dupes, ["state", "year"]].head(5).to_dict("records")
+            )
+            raise ValueError(f"duplicate (state, year) rows: {examples}")
+
+        n_states = df["state"].nunique()
+        if n_states != 50:
+            raise ValueError(f"Expected 50 states, got {n_states}")
+
+        years_per_state = df.groupby("state")["year"].apply(frozenset)
+        distinct = set(years_per_state)
+        if len(distinct) != 1:
+            counts = df.groupby("state")["year"].nunique()
+            short = counts[counts != counts.max()].to_dict()
+            raise ValueError(
+                "unbalanced panel: not every state is observed in the same "
+                f"years. States with fewer: {short}"
+            )
+
+        expected = n_states * len(next(iter(distinct)))
+        if len(df) != expected:
+            raise ValueError(f"Expected {expected} state-years, got {len(df)}")
+    elif len(df) != 50:
         raise ValueError(f"Expected 50 states, got {len(df)}")
+
     missing = (REQUIRED_COMPLETE | ALLOWED_MISSING) - set(df.columns)
     if missing:
         raise ValueError(f"Missing required columns: {missing}")
