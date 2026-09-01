@@ -99,14 +99,29 @@ Build every panel input with `make panel`.
 | Poverty rate, median household income | Census [SAIPE](https://www.census.gov/programs-surveys/saipe.html) API — keyless, no 2020 gap | `scripts/fetch_saipe.py` | `data/raw/` (gitignored) |
 | Household debt and delinquency | NY Fed / Equifax [Household Debt & Credit](https://www.newyorkfed.org/microeconomics/hhdc) area report — keyless | `scripts/fetch_nyfed_debt.py` | `data/nyfed_debt_2014_2023.csv` |
 | ERPO ("red flag") laws | State Firearm Laws database (Siegel, Boston University), read from a [pinned Internet Archive capture](https://web.archive.org/web/20230521114747id_/https://www.statefirearmlaws.org/sites/default/files/2020-07/DATABASE_0.xlsx) — the original host no longer resolves | `scripts/fetch_erpo_laws.py` | `data/erpo_laws_2014_2023.csv` |
-| **Firearm mortality, homicide, suicide** (the panel *outcome*) | CDC/NCHS [Mapping Injury, Overdose, and Violence — State](https://data.cdc.gov/resource/fpsi-y8tj.json), keyless via Socrata. 2019–2024. Validated against the 2020 cross-section at r = 0.9970 | `scripts/fetch_firearm_mortality.py` | `data/firearm_mortality_2019_2024.csv` |
+| **Firearm mortality** (the panel *outcome*) | [KFF State Health Facts](https://www.kff.org/other/state-indicator/firearms-death-rate-per-100000/), from CDC/NCHS. **Age-adjusted**, 2014–2023 | `scripts/fetch_firearm_mortality_kff.py` | `data/firearm_mortality_2014_2023.csv` |
+| Firearm mortality, homicide, suicide (cross-check) | CDC/NCHS [Mapping Injury, Overdose, and Violence — State](https://data.cdc.gov/resource/fpsi-y8tj.json), keyless via Socrata. **Crude**, 2019–2024. Validated against the 2020 cross-section at r = 0.9970 | `scripts/fetch_firearm_mortality.py` | `data/firearm_mortality_2019_2024.csv` |
+| Governor party | Wikipedia "List of governors of X" via the [MediaWiki API](https://en.wikipedia.org/w/api.php) | `scripts/fetch_governors.py` | `data/governors_2014_2023.csv` |
+| Attorney General party, legislative control | Wikipedia "Political party strength in X" | `scripts/fetch_state_politics.py` | `data/state_politics_2014_2023.csv` |
+
+**The two outcome series are not interchangeable.** KFF publishes age-adjusted
+rates, the Socrata endpoint crude ones. They agree exactly on death counts and
+differ only in denominator treatment — Alabama 2020 is 1,141 deaths in both,
+22.7 per 100,000 crude and 23.6 age-adjusted. Splicing one onto the other would
+put a level shift at the join in every state at once, which a within-state
+estimator reads as a real simultaneous change. The panel therefore uses KFF
+alone for 2014–2023; the CDC series is an independent cross-check and the only
+source here for the homicide and suicide breakdowns.
+
+CDC WONDER holds the earlier years directly but refused a documented request
+four ways — a 403 at the Akamai edge for a plain client, then three rounds of
+parameter-validation errors from a browser origin referencing session state for
+groupings never requested.
 
 **Suppression is encoded differently by each source, and always as a number.**
 The SRI workbook writes a suppressed CDC cell as `0.0`; the Socrata API writes
 it as `rate: -999.0` with `count_sup: "1-9"`. Both are read as missing here.
 Neither is a measured value, and both hit New Hampshire and Vermont.
-| Governor party | Wikipedia "List of governors of X" via the [MediaWiki API](https://en.wikipedia.org/w/api.php) | `scripts/fetch_governors.py` | `data/governors_2014_2023.csv` |
-| Attorney General party, legislative control | Wikipedia "Political party strength in X" | `scripts/fetch_state_politics.py` | `data/state_politics_2014_2023.csv` |
 
 The AG panel covers the **43 states that elect an attorney general**. The other
 seven are not a gap: five appoint via the governor, Maine's is elected by the
@@ -245,69 +260,87 @@ precisely how a data defect in one variable was able to manufacture a clean
 result for the other. Bootstrap sign stability and the Lasso path are the more
 trustworthy summaries in this specification.
 
-## Panel findings (2019–2023)
+## Panel findings (2014–2023)
 
 Run with `make panel-analyze`. A cross-section cannot distinguish "states with
 more of X have more of Y" from "when a state's X changes, its Y changes".
-Splitting each regressor into a state mean (**between**) and a deviation from
-it (**within**) separates them.
+Splitting each regressor into a state mean (**between**) and a deviation from it
+(**within**) separates them.
 
-**The outcome barely varies within states, which limits what any panel of this
-length can establish:**
+**Window length mattered more than any modelling choice.** An earlier version of
+this analysis ran 2019–2023, because CDC's Socrata outcome series begins in
+2019. Sourcing the outcome from KFF instead reaches 2014:
 
-| Outcome | ICC |
-|---|---:|
-| `firearm_mortality_rate` | 0.948 |
-| `firearm_homicide_rate` | 0.921 |
-| `firearm_suicide_rate` | 0.960 |
+| | 2019–2023 | 2014–2023 |
+|---|---:|---:|
+| state-years | 250 | 500 |
+| outcome ICC | 0.948 | **0.876** |
+| ERPO usable | no | yes (to 2020) |
 
-Roughly 92–96% of the variance in each is *across states* rather than across
-years within a state. The Phase 0 gate measured ICCs for the predictors and
-assumed the outcome varied; it barely does, and that was not knowable until the
-outcome series was assembled. However well-identified a predictor is, a within
-estimator on these outcomes has little left to explain.
+Within-variation is a property of the observation window, not of the variable —
+the five-year window began after most of the 2014–2021 rise had already
+happened.
 
-**The headline result, on 250 state-years across 50 states with year effects:**
+**The headline result, on 500 state-years across 50 states with year effects:**
 
-| Relationship | Between | Within |
+| Predictor | Within | Between |
 |---|---|---|
-| poverty → firearm homicide | **p = 0.003** *** | p = 0.608 |
-| Republican governor → firearm deaths | **p = 0.011** ** | p = 0.391 |
+| poverty rate | **−0.652** *** | −0.026 |
+| median household income | **−0.00034** *** | −0.00045 *** |
+| auto delinquency | **+0.591** *** | +1.475 * |
+| credit-card delinquency | −0.058 | −1.427 ** |
+| student-loan delinquency | **−0.163** *** | +0.746 |
+| total debt | **+0.00012** *** | +0.00026 ** |
+| Republican governor | −0.039 | +3.005 * |
 
-States with more poverty have more firearm homicide, but a state whose poverty
-*changes* shows no matching change in its homicide rate. The same holds for
-governor party. The cross-sectional associations reported above survive the
-between transformation and vanish in the within one.
+ERPO enters a **secondary** specification, because its source ends in 2020 and
+including it truncates the panel to n=350. There it is −0.332 (p=0.233) within
+and −3.930 (p=0.075) between.
 
-This is **not** a causal refutation — five years against an outcome ICC over
-0.92 cannot support one — but it does establish that these associations are
-between-state, and that the cross-section should not be read as evidence of a
-within-state channel.
+**The poverty coefficient is reported as a caution, not a finding.** It is
+significantly *negative* within states — when a state's poverty rises, its
+firearm mortality falls — which is not credible causally.
 
-**Two caveats, both load-bearing:**
+It is not a truncation artifact. The sign is identical across every
+specification tried, and the five-year window merely lacked the power to resolve
+it:
 
-- The only significant *within* coefficients are the two delinquency measures,
-  and both are **negative**, which is backwards if delinquency proxies distress.
-  Federal student-loan forbearance ran March 2020 into 2023 and mechanically
-  collapsed those delinquencies while firearm homicide rose. Year dummies absorb
-  the national component, but the within variation over these particular years
-  is dominated by a federal policy rather than state economic conditions. Treat
-  them as artifacts, not findings.
-- **ERPO is excluded.** Its source ends in 2020, so within a 2019–2023 window it
-  contributes two years and no adoption events. The policy variation that made
-  it worth collecting (16 adoptions) sits in 2014–2018, where no outcome exists
-  to regress on.
+```
+2014-2023, no ERPO    n=500   within -0.652  p<0.001
+2014-2020, no ERPO    n=350   within -0.630  p<0.001
+2014-2020, with ERPO  n=350   within -0.592  p<0.001
+2019-2023, no ERPO    n=250   within -0.296  p=0.240
+```
 
-**A correction worth recording.** An earlier run of this analysis reported
-`firearm_homicide_rate` at ICC 0.389, which would have made it the one outcome
-with usable within-state variation. That was an artifact: CDC encodes a
-suppressed cell as `rate: -999.0`, and five sentinels inflated the column's
-within variance. A full estimation ran on that basis before negative national
-homicide rates exposed it. The validator missed it because it range-checked only
-`firearm_mortality_rate`, which has no suppressed cells — checking one column of
-three and assuming the rest. The affected states were New Hampshire and Vermont,
-the same two whose suppressed homicide cells appear as exact zeros in the 2020
-cross-section.
+Two explanations are likelier than a protective effect of poverty. **Opposing
+secular trends:** over 2014–2021 poverty fell nationally while firearm mortality
+rose, and year dummies remove only the common component. **Measurement error:**
+poverty's ICC is 0.852, so only ~15% of its variance is within-state, and SAIPE
+values are themselves model-based estimates with published error — small true
+within-variation relative to error attenuates a coefficient and can destabilise
+its sign. Distinguishing them needs a design this data cannot support: lagged
+specifications, an instrument, or a policy discontinuity.
+
+**Other caveats, both load-bearing:**
+
+- The delinquency within-coefficients are suspect. Federal student-loan
+  forbearance ran March 2020 into 2023, mechanically collapsing those
+  delinquencies across most of the window. Year dummies absorb the national
+  component, but the within variation over these years is dominated by a federal
+  policy rather than state economic conditions.
+- **ERPO remains weakly identified.** It is now in the model, but its source
+  ends in 2020, so it contributes 2014–2020 and truncates the panel to n=350
+  when included. Its between coefficient (−3.93, p=0.075) is suggestive and its
+  within coefficient is null.
+
+**A correction worth recording.** An earlier run reported `firearm_homicide_rate`
+at ICC 0.389, which would have made it the one outcome with usable within-state
+variation. That was an artifact: CDC encodes a suppressed cell as `rate: -999.0`,
+and five sentinels inflated the column's within variance. A full estimation ran
+on that basis before negative national homicide rates exposed it. The validator
+missed it because it range-checked only `firearm_mortality_rate`, which has no
+suppressed cells — checking one column of three and assuming the rest. Corrected,
+homicide's ICC is 0.921.
 
 ## Known limitations
 

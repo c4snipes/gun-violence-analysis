@@ -80,6 +80,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 
 DATA = Path("data")
 
+# Headline specification: the full 2014-2023 window, n=500.
 PREDICTORS = [
     "poverty_rate",
     "median_household_income",
@@ -88,11 +89,14 @@ PREDICTORS = [
     "delinq_studentloan",
     "debt_total",
     "gov_rep",
-    # Usable now that the outcome reaches 2014. Its source ends in 2020, so it
-    # contributes 2014-2020 -- seven years carrying 16 adoption events, the
-    # policy variation a five-year window from 2019 could not see.
-    "gvrolawenforcement",
 ]
+
+# ERPO is usable now that the outcome reaches 2014, but its source ends in 2020,
+# so including it truncates the panel to 2014-2020 and costs 150 observations.
+# It is fitted as a secondary specification rather than folded into the headline,
+# because paying that price for a variable whose within coefficient is null
+# would weaken every other estimate for nothing.
+PREDICTORS_WITH_ERPO = [*PREDICTORS, "gvrolawenforcement"]
 
 OUTCOMES = {
     "firearm_mortality_rate_aa": "all firearm deaths (age-adjusted)",
@@ -126,15 +130,17 @@ def icc(df: pd.DataFrame, col: str) -> float:
     return between / (between + within)
 
 
-def within_between(df: pd.DataFrame, outcome: str) -> pd.DataFrame:
+def within_between(df: pd.DataFrame, outcome: str,
+                   predictors: list[str] | None = None) -> pd.DataFrame:
     """Mundlak / correlated-random-effects fit for one outcome."""
-    d = df.dropna(subset=[outcome, *PREDICTORS]).copy()
-    for p in PREDICTORS:
+    predictors = predictors or PREDICTORS
+    d = df.dropna(subset=[outcome, *predictors]).copy()
+    for p in predictors:
         mean = d.groupby("state")[p].transform("mean")
         d[f"{p}__between"] = mean
         d[f"{p}__within"] = d[p] - mean
 
-    cols = [f"{p}__within" for p in PREDICTORS] + [f"{p}__between" for p in PREDICTORS]
+    cols = [f"{p}__within" for p in predictors] + [f"{p}__between" for p in predictors]
     years = pd.get_dummies(d["year"], prefix="yr", drop_first=True).astype(float)
     exog = sm.add_constant(
         pd.concat([d[cols].reset_index(drop=True), years.reset_index(drop=True)], axis=1)
@@ -146,7 +152,7 @@ def within_between(df: pd.DataFrame, outcome: str) -> pd.DataFrame:
         ).fit()
 
     rows = []
-    for p in PREDICTORS:
+    for p in predictors:
         rows.append({
             "predictor": p,
             "within_coef": fit.params[f"{p}__within"],
@@ -190,9 +196,14 @@ def main() -> None:
     print(df.groupby("year")[list(OUTCOMES)].mean().round(2).to_string())
 
     args.out.mkdir(parents=True, exist_ok=True)
+    specs = [("headline, full window", PREDICTORS, ""),
+             ("secondary, adds ERPO (truncates to 2014-2020)",
+              PREDICTORS_WITH_ERPO, "_with_erpo")]
     for outcome, label in OUTCOMES.items():
-        table = within_between(df, outcome)
-        print(f"\n=== {label} ({outcome})  "
+      for spec_label, preds, suffix in specs:
+        table = within_between(df, outcome, preds)
+        heading = f"{label} -- {spec_label}"
+        print(f"\n=== {heading} ({outcome})  "
               f"n={table.attrs['n']}  states={table.attrs['states']} ===")
         print(f"{'predictor':<26}{'WITHIN':>11}{'p':>8}   {'BETWEEN':>11}{'p':>8}")
         print("-" * 68)
@@ -200,7 +211,7 @@ def main() -> None:
             print(f"{r['predictor']:<26}{r['within_coef']:>11.5f}{r['within_p']:>8.3f}"
                   f"{stars(r['within_p']):<4}{r['between_coef']:>11.5f}"
                   f"{r['between_p']:>8.3f}{stars(r['between_p'])}")
-        table.to_csv(args.out / f"{outcome}_within_between.csv", index=False)
+        table.to_csv(args.out / f"{outcome}_within_between{suffix}.csv", index=False)
 
     print(f"\nWrote tables to {args.out}/")
 
