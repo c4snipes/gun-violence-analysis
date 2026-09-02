@@ -37,6 +37,16 @@ def run(df: pd.DataFrame, y_col: str, tag: str, figures: Path, results: Path) ->
     """Fit and diagnose one model, saving all outputs prefixed by ``tag``."""
     print(f"\n=== {tag}: outcome = {y_col} ===")
 
+    # The outcome itself can be missing: CDC suppresses firearm_homicide_rate
+    # for New Hampshire and Vermont. main() drops rows missing a PREDICTOR, so
+    # a missing outcome has to be handled here, and reported -- the n behind a
+    # coefficient is part of the result.
+    absent = df[df[y_col].isna()]
+    if not absent.empty:
+        print(f"  {y_col} not available for {absent['state'].tolist()}; "
+              f"fitting on {len(df) - len(absent)} of {len(df)} states")
+        df = df.drop(absent.index).reset_index(drop=True)
+
     # -------- OLS --------
     ols = fit_ols(df, y_col=y_col, predictors=CORE_PREDICTORS)
     print(f"OLS R^2 = {ols.r_squared:.3f}, adj. R^2 = {ols.adj_r_squared:.3f}")
@@ -119,6 +129,26 @@ def main() -> None:
         print(f"  fitting on {len(df)} of {len(df) + len(incomplete)} states")
 
     run(df, "firearm_mortality_rate", "mortality", args.figures, args.results)
+
+    # Firearm mortality is not one phenomenon: suicide is ~62% of it by volume
+    # and the components relate to the predictors differently -- credit score is
+    # a homicide relationship and null for suicide, population density the
+    # reverse, and gun_reg_pct changes sign between them while the combined fit
+    # reports it significant. A coefficient on the total is a volume-weighted
+    # average of two effects, so the components are fitted separately.
+    #
+    # These use CDC's CRUDE series, whereas firearm_mortality_rate above is the
+    # workbook's AGE-ADJUSTED figure. The crude total is fitted alongside so a
+    # component is always comparable to a total on the same denominator
+    # treatment; coefficients are not comparable across the two rate types.
+    for col, tag in [
+        ("firearm_mortality_rate_crude", "mortality_crude"),
+        ("firearm_suicide_rate", "suicide"),
+        ("firearm_homicide_rate", "homicide"),
+    ]:
+        if col in df.columns and df[col].notna().any():
+            run(df, col, tag, args.figures, args.results)
+
     run(df, "mass_shootings_per_10m", "mass_shootings", args.figures, args.results)
 
     plots.mass_shooting_rerank(df, args.figures / "mass_shooting_rerank.png")

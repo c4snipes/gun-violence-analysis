@@ -28,7 +28,11 @@ Outputs land in `figures/` (PNGs) and `results/` (CSV tables + OLS summary text)
 Two outcomes are modeled with the same six predictors:
 
 1. **Firearm mortality rate** — CDC 2020 age-adjusted rate per 100k
-2. **Mass shootings per 10 million residents** — from the Mother Jones database, 2013 onward (post-definition-change window)
+2. **Firearm mortality, split by cause** — suicide and homicide separately, plus
+   the crude total as a like-for-like baseline. Firearm mortality is not one
+   phenomenon: suicide is ~62% of it by volume, and the components relate to the
+   predictors differently — see *The cross-section, split by cause*
+3. **Mass shootings per 10 million residents** — from the Mother Jones database, 2013 onward (post-definition-change window)
 
 Predictors: gun registration %, poverty rate, median household income, credit score, population density, and Republican governor indicator. Suicide and homicide rates are deliberately excluded from the predictor set because firearm deaths are counted within both, which would introduce circularity.
 
@@ -412,6 +416,23 @@ component:**
 Three predictors take opposite signs across the two components: `gun_reg_pct`,
 `poverty_rate` and `median_household_income`. Combining does not merely average
 those effects, it conceals which phenomenon each predictor relates to.
+
+**The full pipeline now fits the components too** (`make analyze`), so bootstrap,
+Ridge/Lasso, random forest and SHAP all run per component. Two results from that:
+
+| Outcome | adj R² | RF LOO-CV R² | Influential states (Cook's D) |
+|---|---:|---:|---|
+| firearm mortality (age-adjusted) | 0.736 | 0.546 | Alaska, Hawaii, Montana, NJ, NY, Texas |
+| firearm mortality (crude) | 0.743 | 0.530 | same |
+| **suicide** | 0.662 | **0.612** | Alaska, Montana, NJ, Wyoming |
+| **homicide** (n=47) | 0.590 | 0.537 | Louisiana, Maryland, Mississippi, Wyoming |
+
+The influential states barely overlap — suicide is driven by rural, low-density
+states, homicide by high-homicide ones. And the random forest predicts **suicide
+alone** better out-of-sample (0.612) than it predicts the **combined** outcome
+(0.546). Combining two phenomena makes the target harder to predict, not easier,
+which is an out-of-sample confirmation that the split is real rather than an
+artifact of slicing.
 
 **Caveats.** Homicide is n=47 rather than 49: New Hampshire and Vermont are
 suppressed in the component series, the same two states affected everywhere else

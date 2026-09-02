@@ -65,11 +65,17 @@ class DataSources:
     sri_workbook: Path                 # original SRI Excel workbook
     mother_jones_csv: Path             # Mother Jones mass shootings CSV
     output_csv: Path                   # where to write the merged output
+    # CDC firearm components, already committed, so this adds no network
+    # dependency to the build. Optional: the build still works without it,
+    # simply without the split outcomes.
+    components_csv: Path | None = None
 
     def __post_init__(self) -> None:
         self.sri_workbook = Path(self.sri_workbook)
         self.mother_jones_csv = Path(self.mother_jones_csv)
         self.output_csv = Path(self.output_csv)
+        if self.components_csv is not None:
+            self.components_csv = Path(self.components_csv)
 
 
 # ---------------------------------------------------------------------------
@@ -318,6 +324,9 @@ def build_dataset(sources: DataSources) -> pd.DataFrame:
 
     df["gov_party_rep"] = (df["gov_party"] == "republican").astype(int)
 
+    if sources.components_csv is not None and sources.components_csv.exists():
+        df = _merge_firearm_components(df, sources.components_csv)
+
     df = _blank_suppressed_zeros(df)
 
     _validate(df)
@@ -358,7 +367,12 @@ REQUIRED_COMPLETE = {
 # This matters because a zero asserts that no event occurred, which is exactly
 # the claim the tracker refuses to make when it renders an em dash instead of a
 # 0. The same rule now holds on the analysis side.
-SUPPRESSIBLE = {"homicide_rate", "suicide_rate", "accident_mortality_rate"}
+SUPPRESSIBLE = {
+    "homicide_rate", "suicide_rate", "accident_mortality_rate",
+    # CDC's firearm components: New Hampshire and Vermont are suppressed in
+    # firearm_homicide_rate, the same two states suppressed elsewhere here.
+    "firearm_suicide_rate", "firearm_homicide_rate", "firearm_mortality_rate_crude",
+}
 
 ALLOWED_MISSING = {"credit_score"} | SUPPRESSIBLE
 
@@ -379,6 +393,29 @@ def _blank_suppressed_zeros(df: pd.DataFrame) -> pd.DataFrame:
                   "missing, since a suppressed CDC cell is not a measured zero")
             df.loc[zeros, col] = pd.NA
     return df
+
+
+def _merge_firearm_components(df: pd.DataFrame, path: Path, year: int = 2020) -> pd.DataFrame:
+    """Attach CDC's firearm suicide/homicide split for the cross-section year.
+
+    The workbook's own firearm_mortality_rate is AGE-ADJUSTED while CDC's series
+    is CRUDE, so the crude total is carried alongside as
+    firearm_mortality_rate_crude rather than replacing it. A component must be
+    compared against a total on the same denominator treatment; mixing them
+    would confound composition with rate type.
+
+    The workbook's existing suicide_rate and homicide_rate are ALL-CAUSE, not
+    firearm-specific -- 16.1 and 7.7 per 100,000 against 9.1 and 5.6 -- so they
+    cannot serve as this split.
+    """
+    comp = pd.read_csv(path)
+    comp = comp[comp["year"] == year].drop(columns=["year"])
+    comp = comp.rename(columns={"firearm_mortality_rate": "firearm_mortality_rate_crude"})
+    merged = df.merge(comp, on="state", how="left")
+    missing = merged.loc[merged["firearm_suicide_rate"].isna(), "state"].tolist()
+    if missing:
+        print(f"  note: no {year} firearm components for {missing}")
+    return merged
 
 
 def _validate(df: pd.DataFrame, *, panel: bool = False) -> None:
