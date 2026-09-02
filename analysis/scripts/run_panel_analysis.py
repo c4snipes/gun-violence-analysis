@@ -103,6 +103,36 @@ OUTCOMES = {
 }
 
 
+# The component split, fitted as its own specification. CDC publishes the
+# suicide/homicide breakdown that KFF does not, but only from 2019 and as CRUDE
+# rates, so this is a shorter window on a different denominator treatment -- a
+# separate specification, never an extension of the one above. Its own crude
+# total is fitted alongside so a component is always comparable to a total on
+# matching terms.
+COMPONENT_OUTCOMES = {
+    "firearm_mortality_rate": "all firearm deaths (crude)",
+    "firearm_suicide_rate": "  of which suicide",
+    "firearm_homicide_rate": "  of which homicide",
+}
+
+
+def load_components(saipe: Path) -> pd.DataFrame | None:
+    """Panel of CDC's firearm components, 2019-2023, or None if absent."""
+    path = DATA / "firearm_mortality_2019_2024.csv"
+    if not path.exists():
+        return None
+    comp = pd.read_csv(path)
+    comp = comp[comp["year"] <= 2023]
+    df = (
+        comp.merge(pd.read_csv(saipe), on=["state", "year"])
+        .merge(pd.read_csv(DATA / "governors_2014_2023.csv")[["state", "year", "party"]],
+               on=["state", "year"])
+        .merge(pd.read_csv(DATA / "nyfed_debt_2014_2023.csv"), on=["state", "year"])
+    )
+    df["gov_rep"] = (df["party"] == "Republican").astype(float)
+    return df
+
+
 def load_panel(saipe: Path) -> pd.DataFrame:
     """Merge outcome and predictor panels on (state, year)."""
     outcome = pd.read_csv(DATA / "firearm_mortality_2014_2023.csv")
@@ -211,7 +241,33 @@ def main() -> None:
             print(f"{r['predictor']:<26}{r['within_coef']:>11.5f}{r['within_p']:>8.3f}"
                   f"{stars(r['within_p']):<4}{r['between_coef']:>11.5f}"
                   f"{r['between_p']:>8.3f}{stars(r['between_p'])}")
-        table.to_csv(args.out / f"{outcome}_within_between{suffix}.csv", index=False)
+        yrs = sorted(df["year"].unique())
+        table.to_csv(
+            args.out / f"{yrs[0]}_{yrs[-1]}_{outcome}_within_between{suffix}.csv",
+            index=False,
+        )
+
+    # Component specification, on its own shorter window.
+    comp = load_components(args.saipe)
+    if comp is None:
+        print("\n(component series absent; run `make fetch-mortality` for the split)")
+    else:
+        years = sorted(comp["year"].unique())
+        print(f"\n--- component specification: {years[0]}-{years[-1]}, CDC crude ---")
+        print("    a different window and rate type from the table above, so these")
+        print("    coefficients are not comparable to it")
+        for outcome, label in COMPONENT_OUTCOMES.items():
+            table = within_between(comp, outcome, PREDICTORS)
+            print(f"\n=== {label} ({outcome})  n={table.attrs['n']} "
+                  f"states={table.attrs['states']} ===")
+            print(f"{'predictor':<26}{'WITHIN':>11}{'p':>8}   {'BETWEEN':>11}{'p':>8}")
+            print("-" * 68)
+            for _, r in table.iterrows():
+                print(f"{r['predictor']:<26}{r['within_coef']:>11.5f}{r['within_p']:>8.3f}"
+                      f"{stars(r['within_p']):<4}{r['between_coef']:>11.5f}"
+                      f"{r['between_p']:>8.3f}{stars(r['between_p'])}")
+            table.to_csv(args.out / f"components_{years[0]}_{years[-1]}_{outcome}.csv",
+                         index=False)
 
     print(f"\nWrote tables to {args.out}/")
 
