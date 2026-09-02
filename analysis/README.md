@@ -379,6 +379,48 @@ missed it because it range-checked only `firearm_mortality_rate`, which has no
 suppressed cells — checking one column of three and assuming the rest. Corrected,
 homicide's ICC is 0.921.
 
+## The cross-section, split by cause (2020)
+
+Run with `make split-cross-section`. The panel showed that "firearm mortality"
+merges two phenomena; the cross-sectional models inherit the same problem, since
+a coefficient on the total is a volume-weighted average of two effects that may
+differ in size or sign.
+
+Refitting the same specification on each component, using CDC's crude series
+throughout so all three outcomes share a rate definition:
+
+| Predictor | Combined | Suicide | Homicide |
+|---|---|---|---|
+| `gun_reg_pct` | **+55.6** *** | +58.3 (p=0.20) | −7.2 (p=0.89) |
+| `credit_score` | −0.147 * | −0.018 (p=0.78) | **−0.130** *** |
+| `pop_density` | **−0.0086** *** | **−0.0074** ** | −0.0006 (p=0.66) |
+| `poverty_rate` | +0.544 (p=0.33) | −0.041 (p=0.93) | +0.472 (p=0.28) |
+| `gov_party_rep` | +1.549 (p=0.13) | +1.317 (p=0.15) | +0.211 (p=0.79) |
+
+**Each significant predictor in the combined model traces to a different
+component:**
+
+- **Credit score is a homicide relationship.** p=0.004 for homicide, null at
+  p=0.78 for suicide. The finding that displaced poverty in this project's
+  headline result lives entirely in the homicide third of the outcome.
+- **Population density is a suicide relationship.** p=0.018 for suicide, null at
+  p=0.66 for homicide.
+- **`gun_reg_pct` changes sign between components** (+58.3 suicide, −7.2
+  homicide) and is significant in neither, while the combined fit reports
+  +55.6 at p<0.001 — an artifact of suicide's volume share.
+
+Three predictors take opposite signs across the two components: `gun_reg_pct`,
+`poverty_rate` and `median_household_income`. Combining does not merely average
+those effects, it conceals which phenomenon each predictor relates to.
+
+**Caveats.** Homicide is n=47 rather than 49: New Hampshire and Vermont are
+suppressed in the component series, the same two states affected everywhere else
+in this project. The comparison uses CDC's crude rates rather than the
+workbook's age-adjusted total, so these coefficients are not directly comparable
+to the *Key findings* table above — that table remains the age-adjusted
+combined-outcome result. Sign stability from 2000 bootstrap resamples is in
+`results/split_cross_section/`.
+
 ## Known limitations
 
 - **The cross-section is a single-year snapshot** (2020 for most variables). A
