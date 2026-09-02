@@ -210,19 +210,80 @@ Recorded so the same dead ends are not re-explored:
 
 ## Key findings
 
-> **Revised August 2026.** An earlier version of this section claimed poverty was
-> the most robust predictor, sign stable in 99.9% of bootstrap resamples. That
-> rested on a data defect: the workbook loader assigned columns by row position,
-> and the credit-score sheet carries District of Columbia while omitting South
-> Carolina, so **32 of 50 states held another state's credit score**. The
-> committed data put Mississippi at the top of the credit distribution and
-> Minnesota mid-pack; the true ordering is the reverse. With credit score
-> effectively randomised it could not compete for variance, and poverty absorbed
-> the whole shared signal. Correcting it (`8213a6b`) changes the conclusion. The
-> numbers below are regenerated from corrected data at n = 49.
+> **Revised twice.** The original version claimed poverty was the most robust
+> predictor of firearm mortality; that rested on 32 wrong credit scores, fixed in
+> `8213a6b`. The revision that replaced it reported results for *combined*
+> firearm mortality, which is not one phenomenon. This version is organised by
+> component. The combined-outcome table is kept at the end for continuity.
 
-Standardised coefficients, firearm mortality, n = 49 (South Carolina dropped —
-its credit score is genuinely absent from the source, not imputed):
+**Firearm mortality is two phenomena with disjoint predictors.** Suicide is ~62%
+of firearm deaths by volume, homicide most of the rest, and at conventional
+significance **no predictor in this model is significant for both**:
+
+| Predictor | Suicide | Homicide |
+|---|---:|---:|
+| population density | **p = 0.018** | p = 0.662 |
+| credit score | p = 0.781 | **p = 0.004** |
+| gun registration % | p = 0.204 | p = 0.890 |
+| poverty rate | p = 0.933 | p = 0.284 |
+| median household income | p = 0.699 | p = 0.557 |
+| Republican governor | p = 0.153 | p = 0.785 |
+
+### Firearm suicide (n = 49, adj R² 0.662, RF LOO-CV 0.612)
+
+- **Population density is the predictor.** −0.0074 per person/sq mi, p = 0.018,
+  sign stable in **100%** of 2000 bootstrap resamples, and the largest
+  standardised Lasso coefficient (−2.03). Denser states have lower firearm
+  suicide.
+- **Gun registration is sign-stable but imprecise.** +58.3, and 100% sign
+  stability with a surviving Lasso coefficient (+1.71), yet p = 0.204. The
+  bootstrap says the direction is consistent; the OLS standard error says the
+  magnitude is not well pinned at n = 49.
+- **Credit score and poverty are null here.** Both sit near coin-flip sign
+  stability (59.8% and 57.9%), and Lasso drives poverty to exactly zero.
+
+### Firearm homicide (n = 47, adj R² 0.590, RF LOO-CV 0.537)
+
+- **Credit score is the predictor.** −0.130 points of firearm homicide per point
+  of credit score, p = 0.004, sign stable in **99.8%** of resamples, largest
+  Lasso coefficient (−1.95).
+- **Poverty is directionally positive but not significant.** +0.472, p = 0.284,
+  84.9% sign stability, surviving Lasso at +0.75. This is the expected direction
+  and the only place in the model where poverty behaves as the original project
+  assumed.
+- **Density, gun registration and governor party are null**, all driven to zero
+  or near zero by Lasso.
+
+### What combining them does
+
+`gun_reg_pct` is significant in the **combined** model at **p < 0.001** and
+significant in **neither component**. Its combined coefficient is suicide's
+volume share doing the work, not a relationship with either phenomenon. Three
+predictors additionally take opposite signs across the components:
+`gun_reg_pct`, `poverty_rate` and `median_household_income`.
+
+Out-of-sample, the random forest predicts **suicide alone** better (LOO-CV
+0.612) than the **combined** outcome (0.546). Combining makes the target harder
+to predict, which is independent evidence that the split is real rather than an
+artifact of slicing.
+
+### Unchanged from the earlier analysis
+
+- **Median household income is a true null** in every specification — Lasso
+  drives it to zero, and bootstrap sign stability is a coin flip (53.8%
+  combined, 70% in each component).
+- **Mass shooting rates per capita are not explained** by any socioeconomic
+  variable here. RF LOO-CV R² is **−0.196**, worse than predicting the mean.
+  Mass shootings and overall firearm mortality correlate at r = 0.024 across
+  states: statistically distinct phenomena.
+- **Poverty and credit score remain collinear at r = −0.859.** The split
+  clarifies where each matters but does not resolve their joint identification.
+
+### The combined-outcome model, for continuity
+
+Standardised coefficients on age-adjusted firearm mortality, n = 49. Read with
+the caveat that three of these are component-specific and one — `gun_reg_pct` —
+is significant here and in neither component:
 
 | Predictor | OLS | Ridge | Lasso | Bootstrap sign stability |
 |---|---:|---:|---:|---:|
@@ -233,155 +294,20 @@ its credit score is genuinely absent from the source, not imputed):
 | Republican governor | +0.85 | +0.83 | +0.82 | 94.6% |
 | Median household income | +0.03 | −0.40 | **0.00** | 52.4% |
 
-- **Economic distress is robustly associated with firearm mortality, but this
-  data cannot identify which measure of it matters.** Poverty and credit score
-  correlate at **r = −0.859** — they are largely two readings of one latent
-  construct. Credit score has the stronger bivariate relationship with the
-  outcome (r = −0.671, against poverty's +0.640), and the larger standardised
-  coefficient, but the pair is too collinear for OLS to separate cleanly: in a
-  model containing both, poverty falls to p = 0.29 while credit score reaches
-  p = 0.04. Lasso retains both. Attributing the effect specifically to poverty,
-  as this project previously did, is not supported.
-- **Population density** has a robust negative effect (denser → lower firearm
-  mortality) and is now the largest standardised coefficient.
-- **Median household income** remains the one clear null: Lasso drives it to
-  exactly zero and its bootstrap sign is a coin flip at 52.4%. This part of the
-  original conclusion survives.
-- **Republican governor** remains a positive predictor, smaller than the
-  economic terms but sign stable at 94.6%.
-- **Mass shooting rates per capita** are still not explained by any
-  socioeconomic variable here. RF LOO-CV R² is negative — worse than predicting
-  the mean. A legitimate null result: mass shootings and overall firearm
-  mortality correlate at r = 0.024 across states, so they are statistically
-  distinct phenomena.
-- Cook's distance now flags Alaska, Hawaii, Montana, New Jersey, New York and
-  Texas as disproportionately influential — small-population and extreme-density
-  states that county-level data would dilute.
-
 **Read the p-values with care.** At r = −0.859 between two predictors, OLS
-standard errors inflate and individual p-values become unstable, which is
-precisely how a data defect in one variable was able to manufacture a clean
-result for the other. Bootstrap sign stability and the Lasso path are the more
-trustworthy summaries in this specification.
+standard errors inflate and individual p-values become unstable — which is how a
+data defect in one variable manufactured a clean result for the other. Bootstrap
+sign stability and the Lasso path are the more trustworthy summaries.
 
-## Panel findings (2014–2023)
+Cook's distance flags different states for each component: Alaska, Montana, New
+Jersey and Wyoming for suicide; Louisiana, Maryland, Mississippi and Wyoming for
+homicide. The near-disjoint sets are a further sign these are different
+phenomena.
 
-Run with `make panel-analyze`. A cross-section cannot distinguish "states with
-more of X have more of Y" from "when a state's X changes, its Y changes".
-Splitting each regressor into a state mean (**between**) and a deviation from it
-(**within**) separates them.
-
-**Window length mattered more than any modelling choice.** An earlier version of
-this analysis ran 2019–2023, because CDC's Socrata outcome series begins in
-2019. Sourcing the outcome from KFF instead reaches 2014:
-
-| | 2019–2023 | 2014–2023 |
-|---|---:|---:|
-| state-years | 250 | 500 |
-| outcome ICC | 0.948 | **0.876** |
-| ERPO usable | no | yes (to 2020) |
-
-Within-variation is a property of the observation window, not of the variable —
-the five-year window began after most of the 2014–2021 rise had already
-happened.
-
-**The headline result, on 500 state-years across 50 states with year effects:**
-
-| Predictor | Within | Between |
-|---|---|---|
-| poverty rate | **−0.652** *** | −0.026 |
-| median household income | **−0.00034** *** | −0.00045 *** |
-| auto delinquency | **+0.591** *** | +1.475 * |
-| credit-card delinquency | −0.058 | −1.427 ** |
-| student-loan delinquency | **−0.163** *** | +0.746 |
-| total debt | **+0.00012** *** | +0.00026 ** |
-| Republican governor | −0.039 | +3.005 * |
-
-ERPO enters a **secondary** specification, because its source ends in 2020 and
-including it truncates the panel to n=350. There it is −0.332 (p=0.233) within
-and −3.930 (p=0.075) between.
-
-**The poverty coefficient is reported as a caution, not a finding.** It is
-significantly *negative* within states — when a state's poverty rises, its
-firearm mortality falls — which is not credible causally.
-
-It is not a truncation artifact. The sign is identical across every
-specification tried, and the five-year window merely lacked the power to resolve
-it:
-
-```
-2014-2023, no ERPO    n=500   within -0.652  p<0.001
-2014-2020, no ERPO    n=350   within -0.630  p<0.001
-2014-2020, with ERPO  n=350   within -0.592  p<0.001
-2019-2023, no ERPO    n=250   within -0.296  p=0.240
-```
-
-Five explanations were tested — see `make diagnose-poverty`. The first four
-fail; the fifth resolves it.
-
-| Hypothesis | Test | Verdict |
-|---|---|---|
-| Opposing secular trends | drop 2020–21; pre-COVID only | refuted — −0.631 and −0.461, both p<0.01 |
-| A few influential states | leave-one-out ×50 | refuted — range −0.694 to −0.570 |
-| Measurement error | SAIPE's published 90% CI | refuted — SE 0.182 pp vs within-SD 1.03 pp, ~3% attenuation |
-| A slow causal process | lag 1y, lag 2y | −0.411 then −0.069 (p=0.62) — whatever it is, it is *contemporaneous* |
-| **Outcome composition** | split suicide vs homicide | **this is the explanation** |
-
-**Total firearm mortality is not one phenomenon.** Suicide is 62% of it by
-volume (9.49 of 15.27 per 100k), and the two components relate to poverty in
-opposite directions:
-
-| Component | Within | Between |
-|---|---|---|
-| total | −0.306 (p=0.195) | +0.224 (p=0.655) |
-| of which **suicide** | **−0.402** (p=0.010) | −0.551 (p=0.160) |
-| of which **homicide** | +0.090 (p=0.608) | **+0.692** (p=0.003) |
-
-Between states, higher poverty goes with higher firearm **homicide** — the
-expected result, and significant. Within states, higher poverty tracks lower
-firearm **suicide**. Because suicide dominates by volume, it drags the combined
-figure negative.
-
-So the anomaly was an artifact of the **outcome variable**, not of the data or
-the estimator. Modelling "firearm mortality" merges two phenomena with opposing
-relationships to poverty — the same mistake this project refuses to make with
-its four incident datasets, committed in its own dependent variable.
-
-The defensible statements are narrower and separate: *across* states higher
-poverty goes with higher firearm homicide; *within* a state over time higher
-poverty goes with lower firearm suicide, and why that holds is not established
-here. It was never evidence that poverty protects against firearm mortality.
-
-Two earlier versions of this README were wrong about this — first asserting the
-result was probably an artifact of trends or measurement error, then, after
-those were refuted, that it was robust and unexplained. The sequence is recorded
-in `scripts/diagnose_poverty_within.py` so the reasoning can be checked.
-
-**Caveat:** the component series is CDC's, which runs 2019–2023, so the
-decomposition uses 250 state-years against the 500 available for the total. The
-KFF series that reaches 2014 publishes no suicide/homicide split. The suicide
-coefficient is significant even on the shorter window.
-
-**Other caveats, both load-bearing:**
-
-- The delinquency within-coefficients are suspect. Federal student-loan
-  forbearance ran March 2020 into 2023, mechanically collapsing those
-  delinquencies across most of the window. Year dummies absorb the national
-  component, but the within variation over these years is dominated by a federal
-  policy rather than state economic conditions.
-- **ERPO remains weakly identified.** It is now in the model, but its source
-  ends in 2020, so it contributes 2014–2020 and truncates the panel to n=350
-  when included. Its between coefficient (−3.93, p=0.075) is suggestive and its
-  within coefficient is null.
-
-**A correction worth recording.** An earlier run reported `firearm_homicide_rate`
-at ICC 0.389, which would have made it the one outcome with usable within-state
-variation. That was an artifact: CDC encodes a suppressed cell as `rate: -999.0`,
-and five sentinels inflated the column's within variance. A full estimation ran
-on that basis before negative national homicide rates exposed it. The validator
-missed it because it range-checked only `firearm_mortality_rate`, which has no
-suppressed cells — checking one column of three and assuming the rest. Corrected,
-homicide's ICC is 0.921.
+**Rate types.** The component figures use CDC's crude series; the combined table
+above is the workbook's age-adjusted rate. Coefficients are not comparable
+across the two, which is why `firearm_mortality_rate_crude` is fitted alongside
+as a like-for-like baseline.
 
 ## The cross-section, split by cause (2020)
 
