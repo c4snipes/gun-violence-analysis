@@ -117,8 +117,12 @@ def test_federal_columns_are_not_read_as_state_chambers(rows) -> None:
         ("Texas", 2015, "Republican", "Republican"),
         ("California", 2020, "Democratic", "Democratic"),
         # Virginia 2014: Herring (D) replaced Cuccinelli (R) in January, so the
-        # 1 July rule gives Democratic. A duplicate-row conflict year.
-        ("Virginia", 2014, "Democratic", "Split"),
+        # 1 July rule gives Democratic for the AG. The legislature expectation
+        # was previously "Split" -- that encoded a bug rather than a fact. Both
+        # chambers were Republican once the senate conflict was resolved
+        # (Puckett resigned 9 June), and legislature_control is now recomputed
+        # after resolutions instead of being left at its pre-resolution value.
+        ("Virginia", 2014, "Democratic", "Republican"),
         # West Virginia 2017: Morrisey (R) as AG while Justice was still a
         # Democrat, matching the governor panel's coding of the August switch.
         ("West Virginia", 2017, "Republican", "Republican"),
@@ -133,3 +137,60 @@ def test_known_state_years(rows, state: str, year: int, ag: str, leg: str) -> No
 def test_ag_selection_recorded_for_every_row(rows) -> None:
     """Every covered state elects its AG, so selection must read 'Elected'."""
     assert {r["ag_selection"] for r in rows} == {"Elected"}
+
+
+def test_conflict_resolutions_are_not_silently_overwritten() -> None:
+    """A repeated dict key is silent in Python -- the later entry simply wins.
+
+    Virginia 2014 needs two fields resolved, ag_party and senate_control. When
+    they were written as two separate entries with the same key, the second
+    overwrote the first and the ag_party resolution vanished with no error. The
+    output stayed correct only because first-row-wins happened to agree.
+    """
+    import importlib.util
+    import sys as _sys
+
+    spec = importlib.util.spec_from_file_location(
+        "fsp", Path(__file__).resolve().parent.parent / "scripts" / "fetch_state_politics.py"
+    )
+    mod = importlib.util.module_from_spec(spec)
+    _sys.modules["fsp"] = mod
+    spec.loader.exec_module(mod)
+
+    resolutions = mod.CONFLICT_RESOLUTIONS
+    assert ("Virginia", 2014) in resolutions
+    assert resolutions[("Virginia", 2014)] == {
+        "ag_party": "Democratic",
+        "senate_control": "Republican",
+    }
+    assert resolutions[("West Virginia", 2017)]["governor_party_check"] == "Democratic"
+    assert resolutions[("Vermont", 2022)]["ag_party"] == "Democratic"
+
+
+def test_legislature_control_agrees_with_its_chambers(rows) -> None:
+    """The derived value must reflect resolutions applied to the chambers.
+
+    legislature_control is computed while parsing, before any conflict
+    resolution runs, so a corrected senate previously left a stale combined
+    value: Virginia 2014 read 'Split' with both chambers Republican.
+    """
+    for r in rows:
+        sen, hou, leg = r["senate_control"], r["house_control"], r["legislature_control"]
+        if r["state"] == "Nebraska":
+            assert leg == "Nonpartisan"
+            continue
+        if not sen or not hou:
+            continue
+        expected = sen if sen == hou else "Split"
+        assert leg == expected, f"{r['state']} {r['year']}: {sen}/{hou} -> {leg}"
+
+
+def test_virginia_2014_senate_is_republican(rows) -> None:
+    """Puckett (D) resigned 9 June 2014, per the article's own footnote.
+
+    On 1 July Republicans held 20 seated members to the Democrats' 19.
+    """
+    row = next(r for r in rows if r["state"] == "Virginia" and r["year"] == "2014")
+    assert row["senate_control"] == "Republican"
+    assert row["legislature_control"] == "Republican"
+    assert row["ag_party"] == "Democratic"

@@ -91,9 +91,18 @@ TITLE_OVERRIDES = {
 # its reason. Any conflict NOT listed is reported and left to first-row-wins,
 # which is arbitrary -- the run prints it so it can be added here.
 CONFLICT_RESOLUTIONS: dict[tuple[str, int], dict[str, str]] = {
-    # Mark Herring (D) replaced Ken Cuccinelli (R) on 11 Jan 2014, so the
-    # office was Democratic for all but ten days of the year.
-    ("Virginia", 2014): {"ag_party": "Democratic"},
+    # Two changes land in Virginia 2014 and both belong in ONE entry -- a
+    # repeated dict key is silent in Python and the later one simply wins.
+    #   ag_party: Mark Herring (D) replaced Ken Cuccinelli (R) on 11 Jan 2014,
+    #     so the office was Democratic for all but ten days of the year.
+    #   senate_control: the chamber was 20D-20R until Democrat Phillip Puckett
+    #     resigned on 9 June 2014 -- stated in the article's own footnote --
+    #     leaving 19D, 20R and a vacancy until an August special election
+    #     returned it 21R-19D. On 1 July Republicans held 20 seated members to
+    #     the Democrats' 19, and by days they controlled roughly 205 of the year
+    #     against 160 tied. Both readings of the rule give Republican.
+    ("Virginia", 2014): {"ag_party": "Democratic",
+                         "senate_control": "Republican"},
     # Patrick Morrisey (R) was AG throughout. The conflicting cell is the
     # Governor column: Jim Justice sat as a Democrat until 3 Aug 2017, which is
     # how fetch_governors.py codes it under the same 1 July rule.
@@ -106,13 +115,10 @@ CONFLICT_RESOLUTIONS: dict[tuple[str, int], dict[str, str]] = {
     ("Vermont", 2022): {"ag_party": "Democratic"},
 }
 
-# KNOWN OPEN ITEM, expected in every run's output:
-#   Virginia 2014, senate_control -- the two rows read 'Split' and 'Republican'.
-# Virginia's Senate was 20-20 after the 2013 election and changed composition
-# mid-year, and the exact date could not be established from this source, so it
-# is deliberately left to the reported first-row-wins fallback rather than
-# resolved on a guess. It affects one cell of one state-year in a column no
-# current model uses. If that changes, resolve it before using senate_control.
+# Virginia 2014 was once left unresolved on the grounds that the date of the
+# change could not be established from this source. That was wrong: the article
+# carries it in a footnote, which _text() strips along with the <sup> markers.
+# A parser discarding context can make data look ambiguous when it is not.
 
 AG_SELECTION = {
     "Alaska": "Appointed by governor",
@@ -427,8 +433,16 @@ def main() -> None:
                     conflicts.append((y, key, prev[key], r[key]))
                 # keep whichever row actually carries a value
                 prev[key] = prev[key] or r[key]
-            prev["legislature_control"] = prev["legislature_control"] or r["legislature_control"]
             prev["ag_selection"] = prev["ag_selection"] or r["ag_selection"]
+            # legislature_control is derived during parsing, so it predates any
+            # resolution applied above. Recompute it from the resolved chambers,
+            # otherwise a corrected senate leaves a stale combined value --
+            # Virginia 2014 read 'Split' with both chambers Republican.
+            sen_r, hou_r = prev["senate_control"], prev["house_control"]
+            if state == "Nebraska":
+                prev["legislature_control"] = "Nonpartisan"
+            elif sen_r and hou_r:
+                prev["legislature_control"] = sen_r if sen_r == hou_r else "Split"
         rows = [r for r in rows if r["state"] != state] + [merged[y] for y in sorted(merged)]
         for y, key, kept, dropped in conflicts:
             problems.append(
