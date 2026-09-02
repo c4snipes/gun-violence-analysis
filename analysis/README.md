@@ -312,14 +312,31 @@ it:
 2019-2023, no ERPO    n=250   within -0.296  p=0.240
 ```
 
-Two explanations are likelier than a protective effect of poverty. **Opposing
-secular trends:** over 2014–2021 poverty fell nationally while firearm mortality
-rose, and year dummies remove only the common component. **Measurement error:**
-poverty's ICC is 0.852, so only ~15% of its variance is within-state, and SAIPE
-values are themselves model-based estimates with published error — small true
-within-variation relative to error attenuates a coefficient and can destabilise
-its sign. Distinguishing them needs a design this data cannot support: lagged
-specifications, an instrument, or a policy discontinuity.
+Four explanations were tested. **None survives** — see
+`scripts/diagnose_poverty_within.py`:
+
+| Hypothesis | Test | Verdict |
+|---|---|---|
+| Opposing secular trends | drop 2020–21; pre-COVID only | **refuted** — −0.631 and −0.461, both p<0.01 |
+| A few influential states | leave-one-out ×50 | **refuted** — range −0.694 to −0.570 |
+| Measurement error | SAIPE's published 90% CI | **refuted** — SE 0.182 pp vs within-SD 1.03 pp, ~3% attenuation |
+| A slow causal process | lag 1y, lag 2y | decays to −0.411 then −0.069 (p=0.62) — whatever it is, it is *contemporaneous* |
+
+An earlier version of this README asserted that opposing trends and measurement
+error were "likelier than a protective effect of poverty." Both were then tested
+and both failed. The measurement-error claim in particular rested on an assumed
+SAIPE standard error of 0.5–1.0 pp; the published figure is **0.182 pp**, five
+times smaller, implying about 3% attenuation — nowhere near enough to flip a
+sign.
+
+What remains is a robust, same-year, negative within-state association that none
+of the obvious artifacts explains. Candidates this data cannot separate include
+simultaneity and an omitted time-varying factor moving poverty and firearm
+mortality in opposite directions within a state in the same year. Distinguishing
+them needs an instrument or a policy discontinuity, neither available here.
+
+It is **not** reported as evidence that poverty protects against firearm
+mortality.
 
 **Other caveats, both load-bearing:**
 

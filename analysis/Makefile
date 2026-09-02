@@ -1,4 +1,4 @@
-.PHONY: install fetch fetch-saipe fetch-debt fetch-erpo fetch-mortality fetch-governors fetch-politics panel panel-analyze icc build analyze test lint all clean
+.PHONY: diagnose-poverty install fetch fetch-saipe fetch-debt fetch-erpo fetch-mortality fetch-governors fetch-politics panel panel-analyze icc build analyze test lint all clean
 
 PYTHON ?= python3
 
@@ -57,6 +57,9 @@ all: fetch build analyze
 clean:
 	rm -rf figures results data/state_data_full.csv data/raw/mother_jones.csv
 	find . -type d -name __pycache__ -exec rm -rf {} +
+
+diagnose-poverty:
+	$(PYTHON) scripts/diagnose_poverty_within.py
 
 panel-analyze: panel
 	$(PYTHON) scripts/run_panel_analysis.py --out results/panel
