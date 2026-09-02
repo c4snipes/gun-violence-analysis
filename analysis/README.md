@@ -312,31 +312,51 @@ it:
 2019-2023, no ERPO    n=250   within -0.296  p=0.240
 ```
 
-Four explanations were tested. **None survives** — see
-`scripts/diagnose_poverty_within.py`:
+Five explanations were tested — see `make diagnose-poverty`. The first four
+fail; the fifth resolves it.
 
 | Hypothesis | Test | Verdict |
 |---|---|---|
-| Opposing secular trends | drop 2020–21; pre-COVID only | **refuted** — −0.631 and −0.461, both p<0.01 |
-| A few influential states | leave-one-out ×50 | **refuted** — range −0.694 to −0.570 |
-| Measurement error | SAIPE's published 90% CI | **refuted** — SE 0.182 pp vs within-SD 1.03 pp, ~3% attenuation |
-| A slow causal process | lag 1y, lag 2y | decays to −0.411 then −0.069 (p=0.62) — whatever it is, it is *contemporaneous* |
+| Opposing secular trends | drop 2020–21; pre-COVID only | refuted — −0.631 and −0.461, both p<0.01 |
+| A few influential states | leave-one-out ×50 | refuted — range −0.694 to −0.570 |
+| Measurement error | SAIPE's published 90% CI | refuted — SE 0.182 pp vs within-SD 1.03 pp, ~3% attenuation |
+| A slow causal process | lag 1y, lag 2y | −0.411 then −0.069 (p=0.62) — whatever it is, it is *contemporaneous* |
+| **Outcome composition** | split suicide vs homicide | **this is the explanation** |
 
-An earlier version of this README asserted that opposing trends and measurement
-error were "likelier than a protective effect of poverty." Both were then tested
-and both failed. The measurement-error claim in particular rested on an assumed
-SAIPE standard error of 0.5–1.0 pp; the published figure is **0.182 pp**, five
-times smaller, implying about 3% attenuation — nowhere near enough to flip a
-sign.
+**Total firearm mortality is not one phenomenon.** Suicide is 62% of it by
+volume (9.49 of 15.27 per 100k), and the two components relate to poverty in
+opposite directions:
 
-What remains is a robust, same-year, negative within-state association that none
-of the obvious artifacts explains. Candidates this data cannot separate include
-simultaneity and an omitted time-varying factor moving poverty and firearm
-mortality in opposite directions within a state in the same year. Distinguishing
-them needs an instrument or a policy discontinuity, neither available here.
+| Component | Within | Between |
+|---|---|---|
+| total | −0.306 (p=0.195) | +0.224 (p=0.655) |
+| of which **suicide** | **−0.402** (p=0.010) | −0.551 (p=0.160) |
+| of which **homicide** | +0.090 (p=0.608) | **+0.692** (p=0.003) |
 
-It is **not** reported as evidence that poverty protects against firearm
-mortality.
+Between states, higher poverty goes with higher firearm **homicide** — the
+expected result, and significant. Within states, higher poverty tracks lower
+firearm **suicide**. Because suicide dominates by volume, it drags the combined
+figure negative.
+
+So the anomaly was an artifact of the **outcome variable**, not of the data or
+the estimator. Modelling "firearm mortality" merges two phenomena with opposing
+relationships to poverty — the same mistake this project refuses to make with
+its four incident datasets, committed in its own dependent variable.
+
+The defensible statements are narrower and separate: *across* states higher
+poverty goes with higher firearm homicide; *within* a state over time higher
+poverty goes with lower firearm suicide, and why that holds is not established
+here. It was never evidence that poverty protects against firearm mortality.
+
+Two earlier versions of this README were wrong about this — first asserting the
+result was probably an artifact of trends or measurement error, then, after
+those were refuted, that it was robust and unexplained. The sequence is recorded
+in `scripts/diagnose_poverty_within.py` so the reasoning can be checked.
+
+**Caveat:** the component series is CDC's, which runs 2019–2023, so the
+decomposition uses 250 state-years against the 500 available for the total. The
+KFF series that reaches 2014 publishes no suicide/homicide split. The suicide
+coefficient is significant even on the shorter window.
 
 **Other caveats, both load-bearing:**
 

@@ -6,9 +6,14 @@ states: when a state's poverty rises, its firearm mortality falls. That
 direction is not credible as a causal claim, so this script tests the
 explanations that would let it be dismissed.
 
-None of them survives. The result is robust, contemporaneous, and unexplained.
-That is reported as such rather than waved away, because "probably an artifact"
-was the previous position and testing it turned out to be wrong.
+The first four fail. The fifth explains it: "firearm mortality" is not one
+phenomenon, and its two components relate to poverty in opposite directions.
+
+The order matters. "Probably an artifact" was the original position, asserted
+without test; the first four tests refuted the specific artifacts named, which
+left a robust and unexplained result; only decomposing the outcome resolved it.
+Each step was wrong in a different way, and the sequence is kept here so the
+reasoning can be checked rather than taken on trust.
 
 WHAT WAS TESTED, AND WHAT EACH FOUND
 
@@ -45,15 +50,39 @@ WHAT WAS TESTED, AND WHAT EACH FOUND
    confound would appear at every lag, so whatever this is, it is
    contemporaneous.
 
-WHAT REMAINS
-A robust, same-year, negative within-state association that none of the obvious
-artifacts explains. Candidates that this data cannot separate include
-simultaneity, and an omitted time-varying factor that moves poverty and firearm
-mortality in opposite directions within a state in the same year. Distinguishing
-them needs an instrument or a policy discontinuity, neither of which is
-available here.
+5. Outcome composition. Total firearm mortality is not one phenomenon. Across
+   2019-2023 it averages 9.49 suicide and 5.30 homicide per 100,000, so suicide
+   is 62% of it. Splitting the outcome:
 
-It is NOT reported as evidence that poverty protects against firearm mortality.
+                        WITHIN                 BETWEEN
+       total       -0.306  p=0.195         +0.224  p=0.655
+       suicide     -0.402  p=0.0097        -0.551  p=0.160
+       homicide    +0.090  p=0.608         +0.692  p=0.0034
+
+   THIS IS THE EXPLANATION. The negative within coefficient is entirely the
+   suicide component, and the two components point in opposite directions:
+   between states poverty predicts more firearm HOMICIDE, which is the expected
+   result; within states it tracks less firearm SUICIDE. Because suicide is
+   nearly two thirds of the total by volume, it dominates the combined figure
+   and drags it negative.
+
+WHAT THIS MEANS
+The anomaly was an artifact of the outcome variable, not of the data or the
+estimator. Modelling "firearm mortality" merges two phenomena with opposing
+relationships to poverty -- the same mistake this project refuses to make with
+its four incident datasets, committed in its own dependent variable.
+
+It was never evidence that poverty protects against firearm mortality. The
+defensible statements are narrower and separate: across states, higher poverty
+goes with higher firearm homicide; within a state over time, higher poverty
+goes with lower firearm suicide, and why that holds is not established here.
+
+CAVEAT ON THIS TEST
+The component series is CDC's, which runs 2019-2023, so the decomposition uses
+250 state-years rather than the 500 available for the total. The KFF series that
+reaches 2014 publishes no suicide/homicide split. The suicide coefficient is
+significant even on the shorter window, but a ten-year decomposition would need
+a component series this project has not found.
 
 Usage:
     python scripts/diagnose_poverty_within.py
@@ -102,9 +131,15 @@ def load(saipe: Path) -> pd.DataFrame:
     return df
 
 
-def within_fit(df: pd.DataFrame, predictors: list[str], focus: str):
-    """Return (coefficient, p-value) for `focus`'s within term."""
-    d = df.dropna(subset=["firearm_mortality_rate_aa", *predictors]).copy()
+def within_fit(df: pd.DataFrame, predictors: list[str], focus: str,
+               outcome: str = "firearm_mortality_rate_aa"):
+    """Return (coefficient, p-value, n) for `focus`'s within term.
+
+    The outcome is a parameter rather than a fixed name: renaming a component
+    column into the outcome's name would leave two columns sharing that label,
+    and pandas then returns a DataFrame from d[outcome] instead of a Series.
+    """
+    d = df.dropna(subset=[outcome, *predictors]).copy()
     for p in predictors:
         mean = d.groupby("state")[p].transform("mean")
         d[f"{p}__between"] = mean
@@ -117,7 +152,7 @@ def within_fit(df: pd.DataFrame, predictors: list[str], focus: str):
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
         fit = sm.MixedLM(
-            d["firearm_mortality_rate_aa"].reset_index(drop=True),
+            d[outcome].reset_index(drop=True),
             exog,
             groups=d["state"].reset_index(drop=True),
         ).fit()
@@ -203,9 +238,32 @@ def main() -> None:
             c, p, k = base, base_p, n
         print(f"   lag {lag}y  n={k:>4}  within {c:+.3f}  p={p:.4f}")
 
-    print("\nNone of these explains the sign. It is robust, contemporaneous, and")
-    print("unexplained -- reported as such, and NOT as evidence that poverty")
-    print("protects against firearm mortality.")
+    print("\n5. outcome composition -- is 'firearm mortality' one phenomenon?")
+    comp = DATA / "firearm_mortality_2019_2024.csv"
+    if not comp.exists():
+        print("   (skipped: run `make fetch-mortality` for the component series)")
+        return
+    parts = pd.read_csv(comp)
+    parts = parts[parts["year"] <= 2023]
+    cdf = (parts.merge(pd.read_csv(args.saipe), on=["state", "year"])
+                .merge(pd.read_csv(DATA / "governors_2014_2023.csv")[["state", "year", "party"]],
+                       on=["state", "year"])
+                .merge(pd.read_csv(DATA / "nyfed_debt_2014_2023.csv"), on=["state", "year"]))
+    cdf["gov_rep"] = (cdf["party"] == "Republican").astype(float)
+    share = cdf["firearm_suicide_rate"].mean() / cdf["firearm_mortality_rate"].mean()
+    print(f"   suicide is {share:.0%} of firearm deaths by volume")
+    for col, label in [("firearm_mortality_rate", "total"),
+                       ("firearm_suicide_rate", "  suicide"),
+                       ("firearm_homicide_rate", "  homicide")]:
+        c, p_, k = within_fit(cdf, PREDICTORS, "poverty_rate", outcome=col)
+        print(f"   {label:<12} n={k:>4}  within {c:+.3f}  p={p_:.4f}")
+
+    print("\nThe negative sign is the SUICIDE component. Between states poverty")
+    print("predicts more firearm homicide, as expected; within states it tracks")
+    print("less firearm suicide, and suicide is ~62% of the total by volume.")
+    print("Modelling the combined rate merges two phenomena with opposing")
+    print("relationships to poverty. It was never evidence that poverty protects")
+    print("against firearm mortality.")
 
 
 if __name__ == "__main__":
