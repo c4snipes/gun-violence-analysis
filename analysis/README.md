@@ -23,9 +23,18 @@ make test
 
 Outputs land in `figures/` (PNGs) and `results/` (CSV tables + OLS summary text).
 
+The panel is separate and needs its own inputs:
+
+```bash
+make panel            # fetch every state-year input, 2014-2023
+make panel-analyze    # within-between estimator + component specification
+make split-cross-section   # the 2020 cross-section, split by cause
+make diagnose-poverty      # why poverty's within-state sign is negative
+```
+
 ## What this repo does
 
-Two outcomes are modeled with the same six predictors:
+Three outcomes are modeled with the same six predictors:
 
 1. **Firearm mortality rate** — CDC 2020 age-adjusted rate per 100k
 2. **Firearm mortality, split by cause** — suicide and homicide separately, plus
@@ -59,13 +68,24 @@ For each outcome, the pipeline runs:
 │   ├── diagnostics.py    # influence, added-variable computations
 │   └── plots.py          # all figure generation
 ├── scripts/
-│   ├── fetch_mother_jones.py    # download raw CSV
-│   ├── build_dataset.py         # merge into state_data_full.csv
-│   └── run_analysis.py          # fit everything, save figures + results
-├── tests/                       # pytest smoke tests
+│   ├── fetch_mother_jones.py         # mass shootings CSV
+│   ├── build_dataset.py              # merge into state_data_full.csv
+│   ├── run_analysis.py               # cross-section: fit everything
+│   ├── run_split_cross_section.py    # cross-section, split by cause
+│   ├── run_panel_analysis.py         # panel: within-between estimator
+│   ├── diagnose_poverty_within.py    # why poverty's within sign is negative
+│   ├── measure_icc.py                # between/within variance decomposition
+│   └── fetch_*.py                    # one per panel input, see Data sources
+├── tests/                            # pytest, 116 tests
 ├── data/
-│   ├── raw/              # source files (gitignored, gitignored where applicable)
-│   └── state_data_full.csv      # merged output
+│   ├── raw/                          # source + fetched files (all gitignored)
+│   ├── state_data_full.csv           # 2020 cross-section
+│   ├── firearm_mortality_2014_2023.csv   # panel outcome (KFF, age-adjusted)
+│   ├── firearm_mortality_2019_2024.csv   # components (CDC, crude)
+│   ├── governors_2014_2023.csv
+│   ├── state_politics_2014_2023.csv
+│   ├── nyfed_debt_2014_2023.csv
+│   └── erpo_laws_2014_2023.csv
 ├── figures/              # generated PNGs (gitignored)
 ├── results/              # generated CSV/txt (gitignored)
 ├── pyproject.toml
