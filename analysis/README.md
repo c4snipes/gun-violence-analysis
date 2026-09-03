@@ -562,6 +562,76 @@ score at r = 0.876 and should not be entered beside it.
 rate, core + demographics + rurality for suicide, core + demographics for
 homicide. Trauma and education are best left out of all three.
 
+## Adding risk measures: suicide yes, homicide no
+
+The same procedure was applied to both components — year-aligned to a 2022–23
+outcome, judged on leave-one-out R², with a placebo check against the *other*
+component.
+
+### Firearm suicide: ideation helps
+
+| Specification | LOO-CV R² | added term |
+|---|---:|---|
+| base | 0.613 | |
+| **+ serious thoughts of suicide** | **0.693** | **+1.866 (p=0.025)** |
+| + attempts | 0.659 | +10.327 (p=0.045) |
+| + depression | 0.679 | +0.928 (p=0.086) |
+| + plans | 0.652 | +3.203 (p=0.140) |
+
+Two things would have gone wrong on intuition. **Plans has the higher raw
+correlation** (+0.627 vs ideation's +0.397) yet adds nothing conditional on
+ideation (p=0.912) — the conditional ordering nearly reverses the marginal one.
+And a **placebo check separated ideation from attempts**: ideation correlates
+−0.401 with firearm *homicide* against +0.397 with suicide (opposite signs, so
+suicide-specific), whereas attempts correlates +0.446 with homicide against
++0.489 with suicide — nearly the same, so it tracks something general.
+
+This is **not circular**, though the project excludes `suicide_rate` as a
+predictor elsewhere. That exclusion exists because all-cause suicide deaths
+*contain* firearm suicide deaths. Here the populations are disjoint: the outcome
+is from death certificates, ideation is self-reported by *living* survey
+respondents, and a completed suicide cannot answer a survey. What it changes is
+interpretation — firearm suicide reflects suicidality **×** means lethality, so
+holding ideation constant leaves residual variation closer to a means signal.
+
+### Firearm homicide: nothing helps
+
+| Specification | LOO-CV R² | added term |
+|---|---:|---|
+| base | **0.655** | |
+| + income inequality | 0.637 | +0.658 (p=0.700) |
+| + social associations | 0.644 | +0.066 (p=0.689) |
+| + uninsured | 0.636 | −0.040 (p=0.772) |
+| + mental distress | 0.630 | +0.078 (p=0.749) |
+
+Every candidate lowers out-of-sample fit and none approaches significance, so
+the homicide model is unchanged at 11 predictors.
+
+Income inequality is the instructive case. Marginally it looks strong —
+r = +0.468 with homicide, −0.389 with suicide, exactly the specificity signature
+that made ideation the right pick for suicide, and significant on its own at
+p = 0.0006. It is then **entirely absorbed** by the demographics:
+
+| | coefficient | p | R² |
+|---|---|---|---|
+| inequality alone | +3.886 | 0.0006 | 0.219 |
+| + `pct_black` | +0.827 | 0.395 | 0.551 |
+
+It correlates 0.538 with `pct_black`, which correlates 0.737 with homicide.
+
+**`pct_black` has now absorbed two separate candidates** — credit score earlier,
+income inequality here. That is consistent with what this README already says
+about it: at state level it is not an explanation but a stand-in for a bundle of
+structural factors this data cannot separate. Each candidate that disappears
+into it is further evidence for that reading, and none of them prises the bundle
+apart.
+
+**Social capital is a flat null.** `social_associations` correlates −0.005 with
+firearm homicide, against a criminology literature that expects a clear negative
+relationship. At state level, with membership organisations per 10,000 counted
+from a business register, the measure is probably too coarse to carry what the
+theory means by collective efficacy.
+
 ## Known limitations
 
 - **The cross-section is a single-year snapshot** (2020 for most variables). A
