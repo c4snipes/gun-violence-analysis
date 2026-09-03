@@ -45,6 +45,38 @@ Checked against the 2020 cross-section already in the repository: correlation
 deltas are vintage -- the workbook used a 2020-era release and this is a later
 revision with updated denominators -- not a different measure.
 
+WHY THE COMPONENTS START AT 2019, AND WHAT WAS TRIED
+The suicide/homicide split runs 2019-2023 while the combined outcome reaches
+2014. Extending the split backwards would double the component panel and was
+attempted; it is not available programmatically. Recorded so it is not
+re-explored:
+
+  * CDC WONDER API -- refuses sub-national queries outright. Once a request is
+    well-formed enough to validate, it answers: "Only national data are
+    available for this dataset when using the WONDER web service. Please check
+    that your query does not group results by region, division, state, county
+    or urbanization". This is a policy restriction, not a parameter problem, so
+    no request will satisfy it. The API is also 403 to plain HTTP clients and
+    only reachable from a browser origin.
+  * KFF State Health Facts -- publishes total firearm deaths by state back to
+    1999, which is where the combined outcome comes from, but no
+    suicide/homicide split. Its indicator search returns nothing for the
+    components.
+  * CDC Socrata "Mapping Injury, Overdose, and Violence - State"
+    (fpsi-y8tj) -- the source used here. Its periods begin at 2019.
+  * NCHS "Injury Mortality: United States" (nt65-c7a7, vc9m-u7tv) -- carry
+    intent and mechanism but are NATIONAL only, with no state column.
+  * CDC WISQARS -- has state by intent by mechanism, but only through an
+    interactive JS application; /api/v1/fatal is 404 and no bulk export was
+    found.
+
+Both CDC tools that hold the data withhold it from programmatic access. It can
+be exported by hand from the WONDER or WISQARS interfaces, and if that is done
+the file can be dropped in and the component window widened. Screen-scraping
+either was rejected deliberately: an outcome variable that cannot be rebuilt by
+running a script does not meet the standard the rest of this repository is held
+to.
+
 Usage:
     python scripts/fetch_firearm_mortality.py --out data/firearm_mortality_2019_2024.csv
 """

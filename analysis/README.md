@@ -117,10 +117,25 @@ estimator reads as a real simultaneous change. The panel therefore uses KFF
 alone for 2014–2023; the CDC series is an independent cross-check and the only
 source here for the homicide and suicide breakdowns.
 
-CDC WONDER holds the earlier years directly but refused a documented request
-four ways — a 403 at the Akamai edge for a plain client, then three rounds of
-parameter-validation errors from a browser origin referencing session state for
-groupings never requested.
+CDC WONDER holds the earlier years and the suicide/homicide split directly,
+but **will not serve them to a program at all**. Once a request is well-formed
+enough to validate, the API answers plainly:
+
+> "Only national data are available for this dataset when using the WONDER web
+> service. Please check that your query does not group results by region,
+> division, state, county or urbanization."
+
+That is a policy restriction rather than a parameter problem, so no request
+will satisfy it, and persistence is not the answer — an earlier note here
+described this as WONDER having "refused a documented request four ways", which
+wrongly implied a technical obstacle. It is also 403 at the Akamai edge for a
+plain HTTP client and reachable only from a browser origin.
+
+The data can be exported by hand from the WONDER or WISQARS interfaces. If that
+is done the file drops in and the component window widens. Screen-scraping
+either was rejected deliberately: an outcome variable that cannot be rebuilt by
+running a script does not meet the standard the rest of this repository is held
+to.
 
 **Suppression is encoded differently by each source, and always as a number.**
 The SRI workbook writes a suppressed CDC cell as `0.0`; the Socrata API writes
@@ -196,6 +211,10 @@ Recorded so the same dead ends are not re-explored:
 | [agstudies.org](https://agstudies.org/states/) | Current-AG profile pages (~1.4 KB), no history, no tables |
 | Book of the States | Has party *and* method of selection, but only 2022–2023 are online |
 | NY Fed [Community Credit](https://www.newyorkfed.org/data-and-statistics/data-visualization/community-credit-profiles) | JS-only interactive; no bulk download exposed |
+| **CDC WONDER API** | **Refuses sub-national queries by policy** — "Only national data are available for this dataset when using the WONDER web service… does not group results by region, division, state, county or urbanization". Also 403 to plain HTTP clients |
+| **CDC WISQARS** | Has state × intent × mechanism, but only through an interactive JS app; `/api/v1/fatal` is 404, no bulk export found |
+| **NCHS Injury Mortality** (`nt65-c7a7`, `vc9m-u7tv`) | Carry intent and mechanism but are **national only** — no state column |
+| **KFF firearm components** | Publishes the state total back to 1999 but no suicide/homicide split |
 | Urban Institute [Debt in America](https://apps.urban.org/features/debt-interactive-map/) | Catalogue 403s; current snapshot only, no time series |
 
 ### Candidate sources for planned variables
