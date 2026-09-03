@@ -189,7 +189,7 @@ def validate(df: pd.DataFrame) -> None:
     if df.duplicated(subset=["state", "year"]).any():
         raise SystemExit("duplicate (state, year) rows")
 
-    for _code, (name, _scale, (lo, hi)) in _VARIABLES.items():
+    for name, _scale, (lo, hi) in _VARIABLES.values():
         present = df[name].notna()
         if not present.any():
             print(f"  warning: {name} is empty in every year, column absent upstream")
@@ -241,7 +241,7 @@ def main() -> None:
     print(f"\nWrote {len(out)} state-years ({years[0]}-{years[-1]}) to {args.out}")
 
     print("\nICC (between-state share of variance; >0.9 is a cross-sectional control):")
-    for _code, (name, _s, _r) in _VARIABLES.items():
+    for name, _s, _r in _VARIABLES.values():
         if out[name].notna().any():
             print(f"  {name:<32}{icc(out, name):.3f}")
 
