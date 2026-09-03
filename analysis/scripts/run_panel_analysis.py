@@ -26,34 +26,46 @@ Included. The national mean rose from 11.44 per 100,000 in 2014 to 16.36 in
 attribute that common trend to whichever state-level variable moved alongside
 it.
 
-THE POVERTY RESULT, AND WHY IT IS REPORTED WITHOUT A CAUSAL READING
-Poverty is significantly NEGATIVE within states and null between them -- when a
-state's poverty rises, its firearm mortality falls. That direction is not
-credible as a causal claim, and it is reported as a caution rather than a
-finding.
+THE POVERTY RESULT, AND WHY IT IS NOT WHAT IT LOOKS LIKE
+Poverty is significantly NEGATIVE within states here -- when a state's poverty
+rises, its firearm mortality falls. That direction is not credible as a causal
+claim, and it is NOT reported as one.
 
-It is not a truncation artifact. Checked across four specifications, the sign
-is the same in every one:
+It is not a truncation artifact. The sign holds across every window:
 
     2014-2023, no ERPO   n=500   within -0.652  p<0.001
     2014-2020, no ERPO   n=350   within -0.630  p<0.001
     2014-2020, with ERPO n=350   within -0.592  p<0.001
     2019-2023, no ERPO   n=250   within -0.296  p=0.240
 
-The five-year window agrees in sign and merely lacks the power to resolve it.
+The cause is the OUTCOME VARIABLE, not the data or the estimator. "Firearm
+mortality" is not one phenomenon: suicide is about 62% of it by volume, and the
+two components relate to poverty in opposite directions. From the component
+specification printed below:
 
-Two explanations are more plausible than a real protective effect of poverty.
-First, opposing secular trends: over 2014-2021 poverty fell nationally while
-firearm mortality rose, and year dummies remove only the common component, so
-states with larger poverty declines and larger mortality increases for
-unrelated reasons will produce this sign. Second, measurement error: poverty's
-ICC is 0.852, so only about 15% of its variance is within-state, and SAIPE
-values are themselves model-based estimates with published error. Small true
-within-variation relative to measurement error attenuates a coefficient and can
-destabilise its sign.
+                        WITHIN                 BETWEEN
+    total          -0.306  p=0.195         +0.224  p=0.655
+    suicide        -0.402  p=0.0097        -0.551  p=0.160
+    homicide       +0.090  p=0.608         +0.692  p=0.0034
 
-Establishing which would need a design this data cannot support -- lagged
-specifications, an instrument, or a policy discontinuity.
+The negative within coefficient is entirely the suicide component. Between
+states, higher poverty goes with higher firearm HOMICIDE, which is the expected
+result. Suicide dominates the total by volume and drags it negative.
+
+Earlier versions of this docstring named opposing secular trends and
+measurement error as the likelier explanations, and said establishing which
+"would need a design this data cannot support -- lagged specifications, an
+instrument, or a policy discontinuity". Both were then tested and both failed;
+lagged specifications turned out to be perfectly available and were informative,
+showing the effect decays to nothing by two years. See
+scripts/diagnose_poverty_within.py for all five tests. The measurement-error
+claim rested on an assumed SAIPE standard error of 0.5-1.0 pp; the published
+figure is 0.182 pp, implying about 3% attenuation.
+
+The defensible statements are narrower and separate: across states higher
+poverty goes with higher firearm homicide; within a state over time higher
+poverty goes with lower firearm suicide, and why that holds is not established
+here.
 
 INTERPRETING THE DELINQUENCY WITHIN-COEFFICIENTS
 Treat them with suspicion. Federal student-loan payments were suspended from
