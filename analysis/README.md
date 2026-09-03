@@ -283,9 +283,11 @@ significance **no predictor in this model is significant for both**:
 
 ### Firearm homicide (n = 47, adj R² 0.590, RF LOO-CV 0.537)
 
-- **Credit score is the predictor.** −0.130 points of firearm homicide per point
-  of credit score, p = 0.004, sign stable in **99.8%** of resamples, largest
-  Lasso coefficient (−1.95).
+- **Credit score is the predictor — but only until demographics are added.**
+  −0.130 per point, p = 0.004, sign stable in **99.8%** of resamples, largest
+  Lasso coefficient (−1.95). Controlling for state demographic composition it
+  falls to −0.041 at p = 0.375. See *Demographic composition* below; the short
+  version is that it was partly standing in for something else.
 - **Poverty is directionally positive but not significant.** +0.472, p = 0.284,
   84.9% sign stability, surviving Lasso at +0.75. This is the expected direction
   and the only place in the model where poverty behaves as the original project
@@ -406,6 +408,68 @@ workbook's age-adjusted total, so these coefficients are not directly comparable
 to the *Key findings* table above — that table remains the age-adjusted
 combined-outcome result. Sign stability from 2000 bootstrap resamples is in
 `results/split_cross_section/`.
+
+## Demographic composition (2014–2023)
+
+Built with `make fetch-demographics` from the Census [Population Estimates
+Program](https://www2.census.gov/programs-surveys/popest/datasets), which
+publishes age, sex, race and Hispanic origin by state and year as keyless CSVs.
+The ACS API was not usable: it now requires a key, ACS 1-year has no 2020, and
+ACS 5-year estimates overlap so heavily that year-to-year change is smoothed
+away.
+
+**These are state characteristics, not panel variables.** Their ICCs are near
+the ceiling:
+
+| Variable | ICC |
+|---|---:|
+| `pct_black` | 0.999 |
+| `pct_hispanic` | 0.994 |
+| `pct_white_nh` | 0.994 |
+| `pct_male` | 0.965 |
+| `pct_age_15_34` | 0.919 |
+| `pct_age_65_plus` | 0.724 |
+
+Racial composition at 0.999 means about a tenth of a percent of its variance is
+within-state across ten years. A within-state estimator can say nothing about
+these; they belong in the cross-section as controls, and only
+`pct_age_65_plus` carries enough within-variation to be worth a panel term.
+
+### What they do to the credit-score result
+
+Adding them to the firearm-homicide model absorbs credit score entirely:
+
+| Specification | adj R² | credit score | `pct_black` |
+|---|---:|---|---|
+| credit score, no demographics | 0.590 | **−0.130** (p=0.004) | — |
+| `pct_black`, no credit score | 0.792 | — | **+0.248** (p<0.0001) |
+| both together | 0.790 | −0.029 (p=0.452) | **+0.234** (p<0.0001) |
+
+The collapse is **asymmetric**: credit score loses significance while
+`pct_black` keeps it entirely, and `pct_black` alone explains substantially more
+variance. Under ordinary collinearity both would destabilise. Credit score
+correlates with `pct_black` at r = −0.627 and was partly standing in for it.
+
+### How this must and must not be read
+
+This is an **ecological association between state-level aggregates**. It is not
+a statement about individuals, and nothing here identifies a cause.
+
+`pct_black` at state level is not an explanation — it is a **stand-in for a
+bundle of structural factors this dataset cannot separate**: residential
+segregation, historical and continuing disinvestment, concentrated rather than
+diffuse poverty, urban concentration, and differences in policing and trauma
+care. Any of these could carry the association, and a 50-row cross-section with
+one observation per state cannot distinguish them. Reading the coefficient as a
+property of the population it counts would be an ecological fallacy, and this
+project already refuses that reasoning elsewhere — it is why credit data is not
+attributed to demographic groups through zip-code proxies.
+
+**The load-bearing conclusion is about credit score, not about race.** The
+finding is that credit score was not the clean economic signal the earlier
+analysis took it for: a substantial part of its apparent relationship with
+firearm homicide was compositional. What replaces it is not an explanation but a
+larger, less tractable question.
 
 ## Known limitations
 
