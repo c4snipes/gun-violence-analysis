@@ -43,6 +43,31 @@ DEMOGRAPHIC_PREDICTORS = [
 
 RURALITY_PREDICTORS = ["pct_rural"]
 
+# Suicidal ideation prevalence, SAMHSA NSDUH. Added to the firearm-suicide model
+# only, where it raises leave-one-out R^2 from 0.613 to 0.693 on a year-aligned
+# 2022-2023 sample (coefficient +1.866, p = 0.025).
+#
+# NOT CIRCULAR, despite this project excluding suicide_rate as a predictor
+# elsewhere. That exclusion is because all-cause suicide deaths CONTAIN firearm
+# suicide deaths. Here the populations are disjoint: firearm_suicide_rate comes
+# from death certificates, while ideation is self-reported by LIVING survey
+# respondents, and a completed suicide cannot answer a survey.
+#
+# What it changes is the interpretation. Firearm suicide deaths reflect
+# underlying suicidality multiplied by the lethality of the means chosen.
+# Controlling for ideation holds the first roughly constant, so the remaining
+# variation is closer to a means-availability signal than the uncontrolled
+# coefficient was.
+#
+# Ideation is used rather than plans or attempts, though plans has the higher
+# raw correlation at +0.627 against ideation's +0.397. Conditionally the order
+# reverses: plans adds nothing on top of ideation (p = 0.912) and lowers
+# out-of-sample fit. Ideation also passes a placebo check that attempts fails --
+# it correlates -0.401 with firearm HOMICIDE while correlating +0.397 with
+# firearm suicide, so it is suicide-specific rather than a general distress
+# proxy, whereas attempts correlates +0.446 with homicide.
+SUICIDE_RISK_PREDICTORS = ["pct_serious_thoughts_suicide"]
+
 # Predictors per outcome, chosen on leave-one-out cross-validated R^2 rather
 # than in-sample fit. At 46-49 usable rows, in-sample R^2 cannot fall when a
 # predictor is added, so it cannot tell signal from parameter count.
@@ -67,7 +92,10 @@ RURALITY_PREDICTORS = ["pct_rural"]
 PREDICTORS_BY_OUTCOME = {
     "firearm_mortality_rate": CORE_PREDICTORS,
     "firearm_mortality_rate_crude": CORE_PREDICTORS,
-    "firearm_suicide_rate": CORE_PREDICTORS + DEMOGRAPHIC_PREDICTORS + RURALITY_PREDICTORS,
+    "firearm_suicide_rate": (
+        CORE_PREDICTORS + DEMOGRAPHIC_PREDICTORS + RURALITY_PREDICTORS
+        + SUICIDE_RISK_PREDICTORS
+    ),
     "firearm_homicide_rate": CORE_PREDICTORS + DEMOGRAPHIC_PREDICTORS,
     "mass_shootings_per_10m": CORE_PREDICTORS,
 }

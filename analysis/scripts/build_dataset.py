@@ -38,6 +38,12 @@ def main() -> None:
         default=Path("data/rurality_by_state.csv"),
         help="time-invariant rurality, joined on state alone",
     )
+    parser.add_argument(
+        "--nsduh",
+        type=Path,
+        default=Path("data/nsduh_substance_2022_2023.csv"),
+        help="NSDUH substance and suicidal-ideation prevalence, 2022-2023 pooled",
+    )
     args = parser.parse_args()
 
     sources = DataSources(
@@ -47,6 +53,7 @@ def main() -> None:
         components_csv=args.components,
         demographics_csv=args.demographics,
         rurality_csv=args.rurality,
+        nsduh_csv=args.nsduh,
     )
     df = build_dataset(sources)
     print(f"Wrote {len(df)} states x {len(df.columns)} columns to {args.out}")

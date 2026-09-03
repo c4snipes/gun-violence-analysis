@@ -73,12 +73,15 @@ class DataSources:
     # works without them, simply without the outcome-specific predictor sets.
     demographics_csv: Path | None = None
     rurality_csv: Path | None = None
+    # NSDUH suicidal-ideation prevalence, committed. See the caveat in
+    # _merge_state_attribute's caller about its 2022-2023 vintage.
+    nsduh_csv: Path | None = None
 
     def __post_init__(self) -> None:
         self.sri_workbook = Path(self.sri_workbook)
         self.mother_jones_csv = Path(self.mother_jones_csv)
         self.output_csv = Path(self.output_csv)
-        for attr in ("components_csv", "demographics_csv", "rurality_csv"):
+        for attr in ("components_csv", "demographics_csv", "rurality_csv", "nsduh_csv"):
             value = getattr(self, attr)
             if value is not None:
                 setattr(self, attr, Path(value))
@@ -336,6 +339,14 @@ def build_dataset(sources: DataSources) -> pd.DataFrame:
         df = _merge_state_year(df, sources.demographics_csv, "demographics")
     if sources.rurality_csv is not None and sources.rurality_csv.exists():
         df = _merge_state_attribute(df, sources.rurality_csv, "rurality")
+    if sources.nsduh_csv is not None and sources.nsduh_csv.exists():
+        # VINTAGE MISMATCH, stated rather than hidden: NSDUH pools 2022-2023
+        # while this cross-section is 2020, so the predictor postdates the
+        # outcome. It is carried because suicidal ideation is a slow-moving
+        # state characteristic, but any coefficient on it in the 2020
+        # cross-section is anachronistic and the year-aligned test that
+        # justified adding it used a 2022-2023 outcome instead.
+        df = _merge_state_attribute(df, sources.nsduh_csv, "NSDUH (2022-2023)")
 
     df = _blank_suppressed_zeros(df)
 
