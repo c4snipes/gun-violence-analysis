@@ -517,6 +517,51 @@ at **r = 0.876**. That is two collinear variables splitting variance, not a
 discovered effect, and the +0.358 is not reported as a finding. `pct_some_college`
 should not be entered alongside `credit_score`.
 
+## The expanded model, judged out of sample
+
+Run with `make expanded`. Adding the demographic, rurality, trauma and education
+variables to the original six gives up to 14 predictors on 46–49 rows — roughly
+three observations per parameter, where in-sample R² rises mechanically whether
+or not a variable carries signal. Each specification is therefore judged by
+**leave-one-out cross-validated R²**, with in-sample adjusted R² shown alongside
+only to expose the gap.
+
+| Specification | k | Total (crude) | Suicide | Homicide |
+|---|---:|---:|---:|---:|
+| 1 core | 6 | **0.674** | 0.410 | 0.280 |
+| 2 + demographics | 11 | 0.601 | 0.515 | **0.735** |
+| 3 + rurality | 12 | 0.572 | **0.550** | 0.733 |
+| 4 + trauma | 13 | 0.515 | 0.502 | 0.693 |
+| 5 + education | 14 | 0.494 | 0.486 | 0.665 |
+
+*(LOO-CV R²; bold marks each outcome's best specification.)*
+
+**Demographics more than double out-of-sample fit for firearm homicide** — from
+0.280 to 0.735 — and add a substantial amount for suicide. That is a real
+improvement, not a parameter-count artifact, because LOO-CV penalises the extra
+parameters.
+
+**But they make the combined outcome worse**, 0.674 down to 0.601, and it keeps
+falling as more are added. That is not a contradiction. Demographic effects run
+in **opposite directions** for the two components — `pct_black` is strongly
+positive for homicide and weakly negative for suicide — so in the sum they
+partially cancel while still costing degrees of freedom. The information is real
+in each component and nets out in the total.
+
+This is the strongest evidence in the project for not modelling combined firearm
+mortality. It is not merely that the combined coefficients are averages of two
+different effects; **combining actively destroys predictive signal that is
+present in both parts.**
+
+**Trauma access and education subtract from every outcome** (homicide 0.735 →
+0.693 → 0.665). Consistent with both being null: they cost parameters and
+return nothing. Education is additionally a collinearity hazard against credit
+score at r = 0.876 and should not be entered beside it.
+
+**Recommended specifications**, on this evidence: core alone for the combined
+rate, core + demographics + rurality for suicide, core + demographics for
+homicide. Trauma and education are best left out of all three.
+
 ## Known limitations
 
 - **The cross-section is a single-year snapshot** (2020 for most variables). A

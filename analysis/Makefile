@@ -1,4 +1,4 @@
-.PHONY: fetch-trauma fetch-education fetch-demographics split-cross-section diagnose-poverty install fetch fetch-saipe fetch-debt fetch-erpo fetch-mortality fetch-governors fetch-politics panel panel-analyze icc build analyze test lint all clean
+.PHONY: expanded fetch-trauma fetch-education fetch-demographics split-cross-section diagnose-poverty install fetch fetch-saipe fetch-debt fetch-erpo fetch-mortality fetch-governors fetch-politics panel panel-analyze icc build analyze test lint all clean
 
 PYTHON ?= python3
 
@@ -66,6 +66,9 @@ all: fetch build analyze
 clean:
 	rm -rf figures results data/state_data_full.csv data/raw/mother_jones.csv
 	find . -type d -name __pycache__ -exec rm -rf {} +
+
+expanded:
+	$(PYTHON) scripts/run_expanded_models.py --out results/expanded
 
 split-cross-section:
 	$(PYTHON) scripts/run_split_cross_section.py
