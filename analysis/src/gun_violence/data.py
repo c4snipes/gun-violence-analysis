@@ -69,13 +69,19 @@ class DataSources:
     # dependency to the build. Optional: the build still works without it,
     # simply without the split outcomes.
     components_csv: Path | None = None
+    # Demographic composition and rurality, both committed. Optional: the build
+    # works without them, simply without the outcome-specific predictor sets.
+    demographics_csv: Path | None = None
+    rurality_csv: Path | None = None
 
     def __post_init__(self) -> None:
         self.sri_workbook = Path(self.sri_workbook)
         self.mother_jones_csv = Path(self.mother_jones_csv)
         self.output_csv = Path(self.output_csv)
-        if self.components_csv is not None:
-            self.components_csv = Path(self.components_csv)
+        for attr in ("components_csv", "demographics_csv", "rurality_csv"):
+            value = getattr(self, attr)
+            if value is not None:
+                setattr(self, attr, Path(value))
 
 
 # ---------------------------------------------------------------------------
@@ -326,6 +332,10 @@ def build_dataset(sources: DataSources) -> pd.DataFrame:
 
     if sources.components_csv is not None and sources.components_csv.exists():
         df = _merge_firearm_components(df, sources.components_csv)
+    if sources.demographics_csv is not None and sources.demographics_csv.exists():
+        df = _merge_state_year(df, sources.demographics_csv, "demographics")
+    if sources.rurality_csv is not None and sources.rurality_csv.exists():
+        df = _merge_state_attribute(df, sources.rurality_csv, "rurality")
 
     df = _blank_suppressed_zeros(df)
 
@@ -374,7 +384,7 @@ SUPPRESSIBLE = {
     "firearm_suicide_rate", "firearm_homicide_rate", "firearm_mortality_rate_crude",
 }
 
-ALLOWED_MISSING = {"credit_score"} | SUPPRESSIBLE
+ALLOWED_MISSING = {"credit_score", "pct_rural"} | SUPPRESSIBLE
 
 
 def _blank_suppressed_zeros(df: pd.DataFrame) -> pd.DataFrame:
@@ -415,6 +425,33 @@ def _merge_firearm_components(df: pd.DataFrame, path: Path, year: int = 2020) ->
     missing = merged.loc[merged["firearm_suicide_rate"].isna(), "state"].tolist()
     if missing:
         print(f"  note: no {year} firearm components for {missing}")
+    return merged
+
+
+def _merge_state_year(df: pd.DataFrame, path: Path, label: str,
+                      year: int = 2020) -> pd.DataFrame:
+    """Attach one year of a state-year panel to the cross-section."""
+    extra = pd.read_csv(path)
+    extra = extra[extra["year"] == year].drop(columns=["year"])
+    merged = df.merge(extra, on="state", how="left")
+    missing = merged.loc[merged[extra.columns[1]].isna(), "state"].tolist()
+    if missing:
+        print(f"  note: no {year} {label} for {missing}")
+    return merged
+
+
+def _merge_state_attribute(df: pd.DataFrame, path: Path, label: str) -> pd.DataFrame:
+    """Attach a time-invariant state attribute.
+
+    Rurality is decennial -- identical in 51 of 52 states between CHR vintages --
+    so it carries no year column and is joined on state alone.
+    """
+    extra = pd.read_csv(path)
+    extra = extra.drop(columns=[c for c in ("vintage",) if c in extra.columns])
+    merged = df.merge(extra, on="state", how="left")
+    missing = merged.loc[merged[extra.columns[1]].isna(), "state"].tolist()
+    if missing:
+        print(f"  note: no {label} for {missing}")
     return merged
 
 

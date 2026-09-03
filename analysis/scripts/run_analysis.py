@@ -20,7 +20,7 @@ from pathlib import Path
 import pandas as pd
 
 from gun_violence import diagnostics, plots
-from gun_violence.constants import CORE_PREDICTORS
+from gun_violence.constants import CORE_PREDICTORS, predictors_for
 from gun_violence.data import load_dataset
 from gun_violence.models import (
     bootstrap_coefficients,
@@ -34,7 +34,25 @@ warnings.filterwarnings("ignore")
 
 
 def run(df: pd.DataFrame, y_col: str, tag: str, figures: Path, results: Path) -> None:
-    """Fit and diagnose one model, saving all outputs prefixed by ``tag``."""
+    """Fit and diagnose one model, saving all outputs prefixed by ``tag``.
+
+    Predictors are chosen per outcome on out-of-sample fit rather than shared:
+    firearm suicide and homicide have disjoint significant predictors, and the
+    demographics that help each component make the combined rate worse. See
+    PREDICTORS_BY_OUTCOME in constants.py.
+    """
+    predictors = predictors_for(y_col)
+    missing_cols = [c for c in predictors if c not in df.columns]
+    if missing_cols:
+        print(f"  note: {missing_cols} absent from the dataset; falling back to the core set")
+        predictors = [c for c in predictors if c in df.columns]
+    print(f"  predictors ({len(predictors)}): {', '.join(predictors)}")
+
+    # A predictor may be missing for a state even when the column exists.
+    absent_pred = df[df[predictors].isna().any(axis=1)]
+    if not absent_pred.empty:
+        print(f"  dropping {absent_pred['state'].tolist()} for missing predictors")
+        df = df.drop(absent_pred.index).reset_index(drop=True)
     print(f"\n=== {tag}: outcome = {y_col} ===")
 
     # The outcome itself can be missing: CDC suppresses firearm_homicide_rate
@@ -48,30 +66,30 @@ def run(df: pd.DataFrame, y_col: str, tag: str, figures: Path, results: Path) ->
         df = df.drop(absent.index).reset_index(drop=True)
 
     # -------- OLS --------
-    ols = fit_ols(df, y_col=y_col, predictors=CORE_PREDICTORS)
+    ols = fit_ols(df, y_col=y_col, predictors=predictors)
     print(f"OLS R^2 = {ols.r_squared:.3f}, adj. R^2 = {ols.adj_r_squared:.3f}")
     (results / f"{tag}_ols_summary.txt").write_text(str(ols.fit.summary()))
     ols.vif.to_csv(results / f"{tag}_vif.csv", index=False)
 
-    plots.coefficient_plot(df, y_col, CORE_PREDICTORS, figures / f"{tag}_coef_plot.png")
+    plots.coefficient_plot(df, y_col, predictors, figures / f"{tag}_coef_plot.png")
 
     # -------- Diagnostics --------
     infl = diagnostics.influence(ols.fit, n=len(df))
     print(f"Influential states (Cook's D > 4/n): {infl.influential_states(df['state'])}")
     plots.diagnostic_4panel(ols.fit, infl, df["state"], figures / f"{tag}_diagnostic_4panel.png")
-    plots.added_variable_grid(df, y_col, CORE_PREDICTORS, figures / f"{tag}_added_variable.png")
+    plots.added_variable_grid(df, y_col, predictors, figures / f"{tag}_added_variable.png")
 
     # -------- Bootstrap --------
-    boot = bootstrap_coefficients(df, y_col, CORE_PREDICTORS, n_boot=2000)
+    boot = bootstrap_coefficients(df, y_col, predictors, n_boot=2000)
     stability = sign_stability(boot)
     print("Bootstrap sign stability (majority-sign share):")
-    for pred in CORE_PREDICTORS:
+    for pred in predictors:
         print(f"  {pred:30s} {stability[pred] * 100:5.1f}%")
     stability.to_csv(results / f"{tag}_bootstrap_stability.csv", header=["sign_stability"])
     plots.bootstrap_violin(boot, figures / f"{tag}_bootstrap_coefs.png")
 
     # -------- Regularization --------
-    reg_table, ridge_alpha, lasso_alpha = compare_regularization(df, y_col, CORE_PREDICTORS)
+    reg_table, ridge_alpha, lasso_alpha = compare_regularization(df, y_col, predictors)
     print(f"Ridge alpha = {ridge_alpha:.3f}, Lasso alpha = {lasso_alpha:.3f}")
     reg_table.to_csv(results / f"{tag}_regularization.csv")
     plots.regularization_comparison(
@@ -79,12 +97,12 @@ def run(df: pd.DataFrame, y_col: str, tag: str, figures: Path, results: Path) ->
     )
 
     # -------- Random Forest + SHAP --------
-    rf = fit_random_forest(df, y_col, CORE_PREDICTORS)
+    rf = fit_random_forest(df, y_col, predictors)
     print(f"Random Forest LOO-CV R^2 = {rf.loo_r2:.3f}")
     rf.permutation_importance.to_csv(results / f"{tag}_permutation_importance.csv", index=False)
 
     plots.predicted_vs_actual(
-        df, y_col, CORE_PREDICTORS, ols, rf, df["state"],
+        df, y_col, predictors, ols, rf, df["state"],
         figures / f"{tag}_predicted_vs_actual.png",
     )
     plots.permutation_importance_plot(
@@ -93,7 +111,7 @@ def run(df: pd.DataFrame, y_col: str, tag: str, figures: Path, results: Path) ->
 
     try:
         import shap  # noqa: F401
-        X = df[CORE_PREDICTORS].astype(float)
+        X = df[predictors].astype(float)
         plots.shap_beeswarm(rf, X, figures / f"{tag}_shap_beeswarm.png")
         plots.shap_dependence(
             rf, X, "median_household_income", "poverty_rate",
