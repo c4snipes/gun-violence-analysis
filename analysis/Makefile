@@ -1,4 +1,4 @@
-.PHONY: fetch-demographics split-cross-section diagnose-poverty install fetch fetch-saipe fetch-debt fetch-erpo fetch-mortality fetch-governors fetch-politics panel panel-analyze icc build analyze test lint all clean
+.PHONY: fetch-education fetch-demographics split-cross-section diagnose-poverty install fetch fetch-saipe fetch-debt fetch-erpo fetch-mortality fetch-governors fetch-politics panel panel-analyze icc build analyze test lint all clean
 
 PYTHON ?= python3
 
@@ -24,6 +24,9 @@ fetch-mortality:
 fetch-demographics:
 	$(PYTHON) scripts/fetch_demographics.py --out data/demographics_2014_2023.csv
 
+fetch-education:
+	$(PYTHON) scripts/fetch_education_urbanicity.py --out data/education_2019_2023.csv --rural-out data/rurality_by_state.csv
+
 fetch-governors:
 	$(PYTHON) scripts/fetch_governors.py --out data/governors_2014_2023.csv
 
@@ -32,7 +35,7 @@ fetch-politics: fetch-governors
 
 # Every panel input. fetch-politics cross-checks itself against the governor
 # panel, so it must run after it.
-panel: fetch-saipe fetch-debt fetch-erpo fetch-mortality fetch-demographics fetch-politics
+panel: fetch-saipe fetch-debt fetch-erpo fetch-mortality fetch-demographics fetch-education fetch-politics
 
 icc: fetch-saipe
 	$(PYTHON) scripts/measure_icc.py --saipe data/raw/saipe_2014_2023.csv

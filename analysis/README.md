@@ -471,6 +471,52 @@ analysis took it for: a substantial part of its apparent relationship with
 firearm homicide was compositional. What replaces it is not an explanation but a
 larger, less tractable question.
 
+## Education and rurality — both null
+
+Built with `make fetch-education` from [County Health
+Rankings](https://www.countyhealthrankings.org/), which republishes ACS and
+decennial aggregates as keyless annual CSVs. Added because they were on the
+"worth adding" list; reported here because they did not work out.
+
+**They behave differently in time, measured across CHR's 2021 and 2023
+vintages:**
+
+| Measure | Identical across vintages | Mean change |
+|---|---|---|
+| Some College | 0 / 52 states | 0.0092 |
+| % Rural | **51 / 52 states** | 0.00001 |
+
+So `pct_some_college` is emitted per year (2019–2023, since CHR's file does not
+reach 2014) and `pct_rural` **once per state with no year column** — it is
+decennial data in annual packaging, and shaping it as a time series would invite
+a within-state estimator to read rounding as change. Education's ICC is 0.974,
+so it is a cross-sectional control like every demographic measure here.
+
+### Neither adds anything
+
+**Rurality does not displace population density for suicide.** Unlike the
+credit-score case, density holds:
+
+| Specification | adj R² | `pop_density` | `pct_rural` |
+|---|---:|---|---|
+| core only | 0.662 | −0.0074 (p=0.018) | — |
+| + rurality | 0.670 | −0.0068 (p=0.016) | +0.044 (p=0.235) |
+
+**Education is null on its own, and its apparent effect alongside credit score
+is an artifact.** On firearm homicide:
+
+| Specification | adj R² | credit score | education |
+|---|---:|---|---|
+| credit score only | 0.590 | −0.130 (p=0.004) | — |
+| education only | 0.509 | — | +0.014 (**p=0.931**) |
+| both together | 0.634 | −0.208 (p<0.001) | +0.358 (p=0.036) |
+
+Education is completely null alone, then both coefficients inflate and gain
+significance with opposite signs once paired with a variable it correlates with
+at **r = 0.876**. That is two collinear variables splitting variance, not a
+discovered effect, and the +0.358 is not reported as a finding. `pct_some_college`
+should not be entered alongside `credit_score`.
+
 ## Known limitations
 
 - **The cross-section is a single-year snapshot** (2020 for most variables). A
