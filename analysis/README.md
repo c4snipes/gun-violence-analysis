@@ -562,7 +562,30 @@ should not be entered alongside `credit_score`.
   auto-loan delinquency, which correlates −0.913 with the 2020 credit score and
   is available state-by-year 2003–2025.
 - **n = 50** limits how many predictors can be included before overfitting.
-- **No trauma-care variable** — firearm mortality conflates being shot with dying from being shot. Rural trauma-care access is a plausible confound sitting inside the density and poverty coefficients right now.
+- **No trauma-care variable, and this was attempted.** Firearm mortality
+  conflates being shot with dying from being shot, so trauma-care access is a
+  plausible confound sitting inside the density and poverty coefficients. It is
+  still missing, deliberately.
+
+  No keyless source carries state trauma-center designations. HIFLD's hospitals
+  layer has a `TRAUMA` field but its ArcGIS endpoint returns `Invalid URL` —
+  the service has moved more than once — and an ArcGIS Hub search surfaced no
+  working replacement. CMS Hospital Enrollments is stable and downloadable but
+  has **no trauma field at all**: its subgroups are care types (acute,
+  psychiatric, rehabilitation, long-term), not trauma levels. The authoritative
+  list is the American Trauma Society's TIEP database, which requires
+  registration.
+
+  The deeper problem is that a facility list would not be enough. The measure
+  that matters is the **share of a state's population within roughly an hour of
+  a Level I or II centre**, and centres-per-capita is not a proxy for it: a
+  state can hold every centre in one metro and leave most of its area beyond
+  reach. Computing the real measure needs drive-time isochrones against
+  population rasters — a project in itself, not a fetcher.
+
+  A crude per-capita count was rejected on those grounds. It would enter the
+  model looking like a controlled confound while measuring something else,
+  which is worse than a documented gap.
 - **`gun_reg_pct` is registration, not law strictness.** Two very different things; conflating them is why the gun variable has looked weak throughout.
 
 ## Additional predictors worth adding
