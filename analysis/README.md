@@ -632,6 +632,47 @@ relationship. At state level, with membership organisations per 10,000 counted
 from a business register, the measure is probably too coarse to carry what the
 theory means by collective efficacy.
 
+## Can anything decompose the `pct_black` bundle?
+
+This README describes `pct_black` at state level as a stand-in for structural
+factors this data cannot separate. Two candidates have now been swallowed by it
+— credit score and income inequality — so the research question is whether
+anything **separates** the bundle rather than disappearing into it.
+
+Residential segregation is the most theoretically motivated candidate. A
+dissimilarity index was computed per state from AHRF county-level Black and
+non-Hispanic White populations (`data/segregation_county_level.csv`):
+
+`D = ½ Σ |bᵢ/B − wᵢ/W|` over counties, 0 = even distribution, 1 = complete separation.
+
+**It is the first candidate `pct_black` does not absorb** — and it still does not
+predict:
+
+| | |
+|---|---|
+| dissimilarity vs `pct_black` | **r = +0.174** (income inequality was 0.538) |
+| dissimilarity vs firearm homicide | r = +0.191 |
+| alone | +6.902, p = 0.184, R² 0.036 |
+| with `pct_black` | +2.334, p = 0.520 |
+| in the full model | p = 0.546, LOO-CV 0.655 → 0.642 |
+
+**This is inconclusive, not a null**, and the distinction matters. County
+resolution is the wrong scale for the construct: most US residential segregation
+is *within* counties rather than between them, so a county-level index
+systematically understates it. The ranking proves the point — **Connecticut
+comes out among the least segregated states**, which is plainly wrong. Its
+segregation is intense but operates within towns, invisible between its eight
+counties.
+
+So the finding is that segregation *as measured at county level* is independent
+of `pct_black` and unrelated to firearm homicide. Whether segregation at the
+scale the literature actually means — tract level within metropolitan areas —
+would separate the bundle is untested here, and would need tract-level race
+counts rather than county aggregates.
+
+Two candidates absorbed, one independent but unmeasurable at this resolution.
+The bundle remains intact.
+
 ## Known limitations
 
 - **The cross-section is a single-year snapshot** (2020 for most variables). A
