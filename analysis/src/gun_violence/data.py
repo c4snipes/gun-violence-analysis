@@ -363,6 +363,27 @@ def load_dataset(path: str | Path) -> pd.DataFrame:
     return df
 
 
+def merge_supplement(
+    df: pd.DataFrame, extra: pd.DataFrame, *, on: str = "state"
+) -> pd.DataFrame:
+    """Left-join `extra`, skipping columns `df` already carries.
+
+    WHY THIS EXISTS
+    ``build_dataset`` has steadily absorbed sources that analysis scripts used
+    to join for themselves -- demographics and rurality among them. A script
+    that still joins one of those gets pandas' default behaviour: no error, but
+    every duplicated column is silently renamed to ``pct_black_x`` and
+    ``pct_black_y``, and the name the script then asks for no longer exists.
+
+    That failure is quiet at the join and loud much later, and it took out an
+    entire model ladder without anything reporting a problem. Routing
+    supplementary joins through here makes re-merging a source that the build
+    already provides a no-op instead of a corruption.
+    """
+    new = [c for c in extra.columns if c == on or c not in df.columns]
+    return df.merge(extra[new], on=on, how="left")
+
+
 # Columns that must be present AND complete. A gap here means the build is
 # broken, not that the underlying figure is unavailable.
 REQUIRED_COMPLETE = {

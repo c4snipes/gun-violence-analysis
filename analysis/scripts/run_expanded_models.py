@@ -57,6 +57,7 @@ from sklearn.preprocessing import StandardScaler
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 
 from gun_violence.constants import CORE_PREDICTORS
+from gun_violence.data import merge_supplement
 
 DATA = Path("data")
 
@@ -78,15 +79,26 @@ OUTCOMES = {
 
 
 def load(year: int = 2020) -> pd.DataFrame:
+    # Every join here goes through merge_supplement. build_dataset has since
+    # absorbed demographics and rurality, and re-joining them with a plain
+    # merge silently renamed all seven to _x/_y -- which broke this whole
+    # ladder without raising anything until a predictor name was looked up.
     df = pd.read_csv(DATA / "state_data_full.csv")
     dem = pd.read_csv(DATA / "demographics_2014_2023.csv")
-    df = df.merge(dem[dem["year"] == year].drop(columns=["year"]), on="state", how="left")
+    df = merge_supplement(df, dem[dem["year"] == year].drop(columns=["year"]))
+    # CHR labels its files by RELEASE year, which lags the underlying data by
+    # about two years -- hence the column name. Selecting the release whose data
+    # year is `year` means asking for release year + 2, and CHR's education
+    # releases only run to 2023, so 2020 data comes from the 2022 release.
     edu = pd.read_csv(DATA / "education_2019_2023.csv")
-    df = df.merge(edu[edu["year"] == year].drop(columns=["year"]), on="state", how="left")
+    release = min(year + 2, int(edu["chr_release_year"].max()))
+    df = merge_supplement(
+        df, edu[edu["chr_release_year"] == release].drop(columns=["chr_release_year"])
+    )
     rural = pd.read_csv(DATA / "rurality_by_state.csv").drop(columns=["vintage"])
-    df = df.merge(rural, on="state", how="left")
+    df = merge_supplement(df, rural)
     trauma = pd.read_csv(DATA / "trauma_access_by_state.csv")[["state", *TRAUMA]]
-    return df.merge(trauma, on="state", how="left")
+    return merge_supplement(df, trauma)
 
 
 def loo_r2(X: pd.DataFrame, y: pd.Series) -> float:
