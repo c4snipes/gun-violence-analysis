@@ -639,39 +639,94 @@ factors this data cannot separate. Two candidates have now been swallowed by it
 — credit score and income inequality — so the research question is whether
 anything **separates** the bundle rather than disappearing into it.
 
-Residential segregation is the most theoretically motivated candidate. A
-dissimilarity index was computed per state from AHRF county-level Black and
-non-Hispanic White populations (`data/segregation_county_level.csv`):
+Residential segregation is the most theoretically motivated candidate. It was
+first computed as a dissimilarity index over AHRF **county** populations, and
+that measure was inconclusive rather than null — county resolution is the wrong
+scale, because most US residential segregation is *within* counties rather than
+between them. The ranking proved it: Connecticut came out 49th of 50, which is
+plainly wrong.
 
-`D = ½ Σ |bᵢ/B − wᵢ/W|` over counties, 0 = even distribution, 1 = complete separation.
+### Rebuilt at tract level
 
-**It is the first candidate `pct_black` does not absorb** — and it still does not
-predict:
+`scripts/fetch_tract_segregation.py` recomputes both indices across all
+**84,208 census tracts** in the 50 states, from the 2020 PL 94-171 redistricting
+files (`data/segregation_tract_level.csv`). Tracts are the scale the segregation
+literature actually uses.
 
-| | |
-|---|---|
-| dissimilarity vs `pct_black` | **r = +0.174** (income inequality was 0.538) |
-| dissimilarity vs firearm homicide | r = +0.191 |
-| alone | +6.902, p = 0.184, R² 0.036 |
-| with `pct_black` | +2.334, p = 0.520 |
-| in the full model | p = 0.546, LOO-CV 0.655 → 0.642 |
+The rebuild confirms the diagnosis exactly:
 
-**This is inconclusive, not a null**, and the distinction matters. County
-resolution is the wrong scale for the construct: most US residential segregation
-is *within* counties rather than between them, so a county-level index
-systematically understates it. The ranking proves the point — **Connecticut
-comes out among the least segregated states**, which is plainly wrong. Its
-segregation is intense but operates within towns, invisible between its eight
-counties.
+| | county rank | tract rank | move |
+|---|---|---|---|
+| Connecticut | 49 | **11** | **+38** |
+| Massachusetts | 41 | 18 | +23 |
+| New York | 10 | **1** | +9 |
+| Michigan | 14 | 4 | +10 |
 
-So the finding is that segregation *as measured at county level* is independent
-of `pct_black` and unrelated to firearm homicide. Whether segregation at the
-scale the literature actually means — tract level within metropolitan areas —
-would separate the bundle is untested here, and would need tract-level race
-counts rather than county aggregates.
+The tract measure is higher than the county measure in **50 of 50 states**, mean
+gap +0.21 — the county index is not noisier, it is biased low. The new top of
+the ranking is New York, Wisconsin, Illinois, Michigan, Pennsylvania: Milwaukee,
+Chicago and Detroit, which is what the literature names.
 
-Two candidates absorbed, one independent but unmeasurable at this resolution.
-The bundle remains intact.
+*Parsing note:* these files are pipe-delimited with no header, so columns are
+identified by position alone and a wrong offset returns a different table's
+counts, which look plausible. The parse is verified externally — the national
+total reproduces the published 330,759,736 exactly, as do Alabama's components.
+
+### Which index can be told apart from `pct_black`
+
+The two indices behave differently, and the difference decides the analysis:
+
+| | r with `pct_black` | |
+|---|---|---|
+| **dissimilarity** (evenness) | **+0.296** | size-insensitive |
+| isolation (exposure) | +0.848 | size-dependent **by construction** |
+
+A state with few Black residents *cannot* post a high isolation index. So
+isolation is near-collinear with `pct_black` and cannot separate from it; only
+dissimilarity can. This was predicted before fitting, and it held.
+
+### The result
+
+**Tract-level dissimilarity is the first candidate that `pct_black` does not
+absorb *and* that improves out-of-sample prediction** — for firearm suicide,
+where both survive together:
+
+| firearm suicide | LOO-CV R² | tract D |
+|---|---|---|
+| core + `pct_black` | 0.570 | — |
+| + tract dissimilarity | **0.603** | p = 0.078, kept by Lasso |
+| + county dissimilarity | 0.559 | p = 0.440 |
+
+Neither variable knocks the other out: tract D holds at p = 0.078 while
+`pct_black` holds at p = 0.024. That is the first time any candidate has done
+this. The sign is negative — more segregation, less firearm suicide.
+
+**But it does not clear the bar cleanly, and the honest reading is
+suggestive rather than established.** Two caveats, both real:
+
+- p = 0.078 is not conventional significance.
+- `pct_rural` does comparable work on its own (LOO-CV 0.600), and entered
+  together they reach only 0.615 while tract D weakens to p = 0.108. They
+  correlate at just −0.238, so they are not the same variable, but at n = 49
+  they cannot be separated. Segregation is metropolitan and firearm suicide is
+  rural, so this confound is exactly the one to expect.
+
+For **firearm homicide**, isolation appears to survive strongly (p = 0.004,
+pushing `pct_black` to p = 0.061) — but that is the two trading places at
+r = 0.85, not separation, and LOO-CV barely moves (0.759 → 0.761). For **total
+firearm mortality** nothing works at all, which is consistent with the two
+components having disjoint predictors.
+
+### Where that leaves the bundle
+
+Two candidates absorbed (credit score, income inequality); one measured at the
+wrong resolution and now rebuilt; and tract-level dissimilarity standing
+partially outside the bundle for the suicide component, entangled with rurality.
+The bundle is no longer intact, but it is not cleanly decomposed either — and
+50 states is not enough observations to finish the job. Doing so needs
+tract-level indices computed *within metropolitan areas* and an outcome measured
+at the same resolution, which means county- or metro-level mortality rather than
+state.
 
 ## Known limitations
 
