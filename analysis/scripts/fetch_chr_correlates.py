@@ -6,9 +6,34 @@ CHR republishes ACS, BRFSS, BLS and CDC aggregates, so these are second-hand
 measures with their originating survey's properties -- most importantly, several
 are ACS or BRFSS multi-year estimates whose year-to-year change is smoothed.
 
-WINDOW
-2019-2023. CHR's file returns 404 before 2019 at this URL, the same limit the
-education measure runs into.
+WINDOW, AND A TRAP IN HOW IT IS LABELLED
+Releases 2019-2023; CHR's file returns 404 before 2019 at this URL.
+
+The year column is named `chr_release_year`, NOT `year`, because CHR's release
+year is not its data year. Verified against known national unemployment:
+
+    CHR release   its unemployment   actual US unemployment
+    2021          3.62%              2019 was 3.7%
+    2022          7.37%              2020 was 8.1%
+    2023          4.84%              2021 was 5.3%
+
+So a release carries data from roughly two years earlier, and an earlier version
+of this file called that column `year`, which would let anyone join it straight
+onto an outcome year and silently compare a 2021 measurement to a 2023 death
+rate while believing both were 2023.
+
+The lag is NOT necessarily two years for every measure. CHR draws unemployment
+from BLS, the behavioural measures from BRFSS, income and education from ACS and
+overdose deaths from CDC, and those have different release schedules. The data
+dictionary gives definitions but no per-measure data year, so the lag is not
+assumed uniform and the column is not silently shifted -- it is named for what it
+actually is, and any analysis wanting a true data year must establish it per
+measure.
+
+One consequence worth noting: because these lag the outcome, merging a release
+onto a later outcome year gives a LAGGED predictor, which is better causally
+ordered than a contemporaneous one. The problem was never the lag, only the
+label.
 
 VARIABLES, AND WHAT EACH ACTUALLY MEASURES
     unemployment_rate       share of the labour force unemployed (BLS)
@@ -171,7 +196,7 @@ def state_rows(path: Path, year: int) -> pd.DataFrame:
     df["state_name"] = df["state"].map(STATE_ABBR)
     df = df[df["state_name"].notna() & (df["state_name"] != "District of Columbia")]
 
-    out = pd.DataFrame({"state": df["state_name"].values, "year": year})
+    out = pd.DataFrame({"state": df["state_name"].values, "chr_release_year": year})
     for code, (name, scale, _) in _VARIABLES.items():
         if code in df.columns:
             out[name] = pd.to_numeric(df[code], errors="coerce").values * scale
@@ -181,12 +206,12 @@ def state_rows(path: Path, year: int) -> pd.DataFrame:
 
 
 def validate(df: pd.DataFrame) -> None:
-    years = sorted(df["year"].unique())
+    years = sorted(df["chr_release_year"].unique())
     if df["state"].nunique() != 50:
         raise SystemExit(f"Expected 50 states, got {df['state'].nunique()}")
     if len(df) != 50 * len(years):
         raise SystemExit(f"unbalanced: {len(df)} rows over {len(years)} years")
-    if df.duplicated(subset=["state", "year"]).any():
+    if df.duplicated(subset=["state", "chr_release_year"]).any():
         raise SystemExit("duplicate (state, year) rows")
 
     for name, _scale, (lo, hi) in _VARIABLES.values():
@@ -231,7 +256,7 @@ def main() -> None:
     if not frames:
         raise SystemExit("no CHR files were retrievable")
 
-    out = pd.concat(frames, ignore_index=True).sort_values(["state", "year"])
+    out = pd.concat(frames, ignore_index=True).sort_values(["state", "chr_release_year"])
     out = out.reset_index(drop=True)
     validate(out)
 

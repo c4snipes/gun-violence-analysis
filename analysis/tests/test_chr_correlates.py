@@ -52,7 +52,7 @@ def rows() -> list[dict[str, str]]:
 def test_panel_is_balanced(rows) -> None:
     assert len(rows) == 250
     assert len({r["state"] for r in rows}) == 50
-    assert sorted({int(r["year"]) for r in rows}) == YEARS
+    assert sorted({int(r["chr_release_year"]) for r in rows}) == YEARS
 
 
 def test_district_of_columbia_excluded(rows) -> None:
@@ -102,7 +102,7 @@ def test_social_associations_is_effectively_fixed(rows) -> None:
 
 def test_known_state_values(rows) -> None:
     """Face validity against well-established patterns."""
-    by = {(r["state"], int(r["year"])): r for r in rows}
+    by = {(r["state"], int(r["chr_release_year"])): r for r in rows}
     # West Virginia has led the nation in drug overdose deaths for years.
     wv = float(by[("West Virginia", 2023)]["drug_overdose_deaths"])
     assert wv > 45, wv
@@ -112,3 +112,36 @@ def test_known_state_values(rows) -> None:
     # Utah has the lowest excessive drinking, on religious composition.
     ut = float(by[("Utah", 2023)]["pct_excessive_drinking"])
     assert ut < 16, ut
+
+
+def test_release_year_is_not_the_data_year(rows) -> None:
+    """CHR's release year lags its data by roughly two years.
+
+    This is the defect the column rename exists to prevent. An earlier version
+    called this column `year`, which invites joining a release straight onto an
+    outcome year -- silently comparing a 2021 measurement to a 2023 death rate
+    while believing both were 2023.
+
+    Unemployment makes the lag visible because the pandemic spike has a known
+    shape. Actual US annual unemployment was 3.7% in 2019, 8.1% in 2020 and 5.3%
+    in 2021. CHR's releases reproduce that sequence two years late, so the
+    release labelled 2022 -- not 2020 -- is the one carrying the spike.
+    """
+    by_release: dict[int, list[float]] = {}
+    for r in rows:
+        by_release.setdefault(int(r["chr_release_year"]), []).append(
+            float(r["unemployment_rate"])
+        )
+    mean = {y: sum(v) / len(v) for y, v in by_release.items()}
+
+    # The spike sits in the 2022 release, matching 2020 reality.
+    assert mean[2022] > 6.5, mean
+    # And not in the 2020 release, which carries pre-pandemic data.
+    assert mean[2020] < 5.0, mean
+    assert mean[2022] > mean[2020] + 2.0, mean
+
+
+def test_year_column_is_named_for_what_it_is(rows) -> None:
+    """A column called `year` here would be actively misleading."""
+    assert "chr_release_year" in rows[0]
+    assert "year" not in rows[0]

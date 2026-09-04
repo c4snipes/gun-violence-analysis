@@ -23,10 +23,15 @@ Education is still an ACS five-year rolling estimate underneath, so consecutive
 years share most of their sample and its within-variation is smoothed. Treat a
 year-to-year move as a moving average, not a measurement of that year.
 
-WINDOW
-CHR publishes this file from 2019 onward; 2014-2018 return 404. Education is
-therefore 2019-2023, five years, matching the firearm component series rather
-than the ten-year predictor panels.
+WINDOW, AND A TRAP IN HOW IT IS LABELLED
+CHR publishes from 2019 onward; 2014-2018 return 404.
+
+The year column is `chr_release_year`, not `year`: CHR's release year is not its
+data year. Checked against known national unemployment in the same files, a
+release carries data from roughly two years earlier. The lag is not necessarily
+identical across measures, since CHR draws them from BLS, BRFSS, ACS and CDC on
+different schedules and its dictionary gives no per-measure data year, so the
+column is named for what it is rather than silently shifted.
 
 RURALITY IS NOT REDUNDANT WITH DENSITY
 pct_rural correlates with pop_density at r = -0.516 and with log density at
@@ -125,7 +130,7 @@ def main() -> None:
         rows = state_rows(path)
         edu_frames.append(pd.DataFrame({
             "state": rows["state_name"].values,
-            "year": year,
+            "chr_release_year": year,
             "pct_some_college": (rows[_SOME_COLLEGE] * 100).values,
         }))
         if _RURAL in rows.columns:
@@ -139,10 +144,10 @@ def main() -> None:
     if not edu_frames:
         raise SystemExit("no CHR files were retrievable")
 
-    edu = pd.concat(edu_frames, ignore_index=True).sort_values(["state", "year"])
+    edu = pd.concat(edu_frames, ignore_index=True).sort_values(["state", "chr_release_year"])
     edu = edu.reset_index(drop=True)
 
-    years = sorted(edu["year"].unique())
+    years = sorted(edu["chr_release_year"].unique())
     if edu["state"].nunique() != 50:
         raise SystemExit(f"Expected 50 states, got {edu['state'].nunique()}")
     if len(edu) != 50 * len(years):

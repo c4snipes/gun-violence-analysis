@@ -48,7 +48,7 @@ def rural() -> list[dict[str, str]]:
 def test_education_panel_is_balanced(edu) -> None:
     assert len(edu) == 250
     assert len({r["state"] for r in edu}) == 50
-    assert sorted({int(r["year"]) for r in edu}) == YEARS
+    assert sorted({int(r["chr_release_year"]) for r in edu}) == YEARS
 
 
 def test_education_is_a_percentage_not_a_proportion(edu) -> None:
