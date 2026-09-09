@@ -76,12 +76,17 @@ class DataSources:
     # NSDUH suicidal-ideation prevalence, committed. See the caveat in
     # _merge_state_attribute's caller about its 2022-2023 vintage.
     nsduh_csv: Path | None = None
+    # VA VetPop veteran share, committed. A state-year panel, but used here as
+    # one year: over 90% of its within-state variance is a national trend
+    # shared by all 50 states, so it is a cross-sectional control.
+    veterans_csv: Path | None = None
 
     def __post_init__(self) -> None:
         self.sri_workbook = Path(self.sri_workbook)
         self.mother_jones_csv = Path(self.mother_jones_csv)
         self.output_csv = Path(self.output_csv)
-        for attr in ("components_csv", "demographics_csv", "rurality_csv", "nsduh_csv"):
+        for attr in ("components_csv", "demographics_csv", "rurality_csv", "nsduh_csv",
+                     "veterans_csv"):
             value = getattr(self, attr)
             if value is not None:
                 setattr(self, attr, Path(value))
@@ -347,6 +352,8 @@ def build_dataset(sources: DataSources) -> pd.DataFrame:
         # cross-section is anachronistic and the year-aligned test that
         # justified adding it used a 2022-2023 outcome instead.
         df = _merge_state_attribute(df, sources.nsduh_csv, "NSDUH (2022-2023)")
+    if sources.veterans_csv is not None and sources.veterans_csv.exists():
+        df = _merge_state_year(df, sources.veterans_csv, "veterans")
 
     df = _blank_suppressed_zeros(df)
 

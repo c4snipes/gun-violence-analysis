@@ -68,6 +68,31 @@ RURALITY_PREDICTORS = ["pct_rural"]
 # proxy, whereas attempts correlates +0.446 with homicide.
 SUICIDE_RISK_PREDICTORS = ["pct_serious_thoughts_suicide"]
 
+# Veteran share of the 17+ population, VA VetPop2023. The single most useful
+# predictor added to this project: on the 2020 cross-section it takes the
+# six-predictor core model's leave-one-out R^2 from 0.410 to 0.600 for firearm
+# suicide, at p = 0.0004.
+#
+# SHARPLY COMPONENT-SPECIFIC, which is why it sits here and not in the shared
+# groups. It correlates +0.712 with firearm suicide and +0.054 with firearm
+# homicide, and adding it to the homicide model does nothing (p = 0.354). That
+# is the two-phenomena finding again, about as cleanly as it has appeared.
+#
+# It is not merely rurality. The two correlate at +0.500, but entering pct_rural
+# beside it barely moves the coefficient (+0.950 to +0.932, p = 0.0012), and it
+# survives the full 13-predictor suicide specification at p = 0.008 while Lasso
+# keeps it.
+#
+# WHAT IT CANNOT SHOW, and the caveat matters more than the coefficient: this is
+# state-level data, so it does NOT establish that veterans are the people dying.
+# States with more veterans have higher firearm suicide rates; that is an
+# ecological association. The obvious mechanism is household firearm
+# availability, which veteran share plausibly proxies -- and which this project
+# cannot measure, because RAND's state ownership series refuses programmatic
+# access. Until an ownership measure exists, veteran share and gun availability
+# cannot be told apart here.
+VETERAN_PREDICTORS = ["veteran_pct"]
+
 # Predictors per outcome, chosen on leave-one-out cross-validated R^2 rather
 # than in-sample fit. At 46-49 usable rows, in-sample R^2 cannot fall when a
 # predictor is added, so it cannot tell signal from parameter count.
@@ -94,7 +119,7 @@ PREDICTORS_BY_OUTCOME = {
     "firearm_mortality_rate_crude": CORE_PREDICTORS,
     "firearm_suicide_rate": (
         CORE_PREDICTORS + DEMOGRAPHIC_PREDICTORS + RURALITY_PREDICTORS
-        + SUICIDE_RISK_PREDICTORS
+        + SUICIDE_RISK_PREDICTORS + VETERAN_PREDICTORS
     ),
     "firearm_homicide_rate": CORE_PREDICTORS + DEMOGRAPHIC_PREDICTORS,
     "mass_shootings_per_10m": CORE_PREDICTORS,

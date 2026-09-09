@@ -44,6 +44,12 @@ def main() -> None:
         default=Path("data/nsduh_substance_2022_2023.csv"),
         help="NSDUH substance and suicidal-ideation prevalence, 2022-2023 pooled",
     )
+    parser.add_argument(
+        "--veterans",
+        type=Path,
+        default=Path("data/veterans_2014_2023.csv"),
+        help="VA VetPop veteran share; the 2020 row is merged",
+    )
     args = parser.parse_args()
 
     sources = DataSources(
@@ -54,6 +60,7 @@ def main() -> None:
         demographics_csv=args.demographics,
         rurality_csv=args.rurality,
         nsduh_csv=args.nsduh,
+        veterans_csv=args.veterans,
     )
     df = build_dataset(sources)
     print(f"Wrote {len(df)} states x {len(df.columns)} columns to {args.out}")

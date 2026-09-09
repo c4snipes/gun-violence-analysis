@@ -632,6 +632,68 @@ relationship. At state level, with membership organisations per 10,000 counted
 from a business register, the measure is probably too coarse to carry what the
 theory means by collective efficacy.
 
+## Veteran share — the strongest single predictor found
+
+`data/veterans_2014_2023.csv`, from VA's VetPop2023 model via the keyless
+data.va.gov Socrata portal, as a share of the 17+ resident population (matching
+VetPop's own age universe rather than a conventional 18+ base).
+
+It is **the most useful variable added to this project**, and it is almost
+perfectly component-specific:
+
+| | firearm suicide | firearm homicide |
+|---|---:|---:|
+| raw correlation | **+0.712** | +0.054 |
+| added to the six-predictor core | **LOO-CV 0.410 → 0.600** | 0.280 → 0.330 |
+| coefficient | **+0.950, p = 0.0004** | −0.248, p = 0.354 |
+
+That split is the two-phenomena finding appearing about as cleanly as it has
+anywhere in this analysis: veteran share carries the suicide component and is
+silent on homicide.
+
+**It is not just rurality.** The two correlate at +0.500, but entering
+`pct_rural` beside it barely moves the coefficient (+0.950 → +0.932,
+p = 0.0012). It also survives the full 13-predictor suicide specification at
+p = 0.008, where Lasso keeps it and drops `pct_age_15_34` to make room, lifting
+LOO-CV from 0.599 to 0.634. Notably the *six*-predictor core plus veteran share
+(0.600) matches the full thirteen-predictor model (0.599) — parsimony again.
+
+### What this does not show
+
+**It does not establish that veterans are the people dying.** This is
+state-level data: states with more veterans have higher firearm suicide rates,
+which is an ecological association and nothing more. The individual-level claim
+would need individual-level data.
+
+The obvious mechanism is **household firearm availability**, which veteran share
+plausibly proxies and which this project cannot measure — RAND's state ownership
+series refuses programmatic access. Until an ownership measure exists, veteran
+share and gun availability cannot be told apart here, and the honest reading is
+that this variable may be carrying either.
+
+### Why it is a cross-sectional control despite having ten years
+
+VetPop is a deterministic **actuarial model**, not a survey or an administrative
+count, and every year from 2000 to 2023 is output of a single 2025 model run.
+The panel is real but nearly all of its movement is shared:
+
+- **91.9%** of within-state variance is a common national decline
+- removing year means pushes the ICC **up**, 0.82 → 0.98 — the signature of
+  within-variance being a shared trend rather than state-specific movement
+- every one of the 50 states declines monotonically, as the WWII, Korea and
+  Vietnam cohorts die
+
+So a within-state estimator handed this variable would read the national decline
+as state-level signal. It is used as a cross-sectional control, like rurality
+and trauma access.
+
+*Source caveat:* VetPop counts all living veterans including the
+institutionalised and runs about 15% above ACS nationally (18.06M vs 15.70M for
+the 50 states). The gap **varies by state**, 1.059× in Delaware to 1.373× in
+Illinois, so it is not a level shift a fixed effect absorbs. The two agree on
+ordering (Spearman 0.950); VetPop is used because it is the one available as a
+real multi-year series.
+
 ## Can anything decompose the `pct_black` bundle?
 
 This README describes `pct_black` at state level as a stand-in for structural
@@ -813,17 +875,28 @@ state.
 
 Ordered by likely impact. Each is a column that could be added to `data/state_data_full.csv` and dropped into `CORE_PREDICTORS` in `src/gun_violence/constants.py` to rerun.
 
-- Drive time to nearest Level I/II trauma center
-- Urbanization rate (% urban)
-- Unemployment rate
-- Income inequality (Gini coefficient)
-- Gun law strictness index (e.g. Giffords Law Center score)
-- % population male, ages 15–34
-- Veteran %
-- Uninsured rate / mental health provider density
-- Alcohol and substance use rates
-- Incarceration rate
-- Single-parent household rate and racial composition (Census ACS, needs API key)
+**Built since this list was written**, and each has its own section above:
+urbanization (`pct_rural`), unemployment, income inequality, % male ages 15–34,
+uninsured rate, alcohol and substance use, trauma-centre access, ERPO law
+strength, and veteran share — the last of these being the strongest predictor
+found for firearm suicide.
+
+**Still outstanding:**
+
+- **Household firearm ownership rate.** The most important gap by far. It is the
+  mechanism most of the firearm-suicide literature points to, and veteran share
+  is currently standing in for it without any way to separate the two. RAND's
+  state-level ownership series returns HTTP 403 to programmatic requests, so it
+  has not been obtainable here.
+- Drive time to the nearest Level I/II trauma centre. The built measure is the
+  *share of population in a county with* a centre, which is coarser — though
+  trauma access turned out to predict nothing, so this is low priority.
+- Incarceration rate.
+- Single-parent household share. Census ACS, which now requires an API key;
+  the keyless bulk-file route used for the 2020 tract work would need extending
+  to ACS summary files.
+- A gun-law strictness index such as the Giffords score, to sit alongside the
+  Tufts ERPO variable.
 
 ## License
 
