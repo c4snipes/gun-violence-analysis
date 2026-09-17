@@ -36,8 +36,34 @@ class OLSResult:
         return float(self.fit.rsquared_adj)
 
 
+def complete_cases(df: pd.DataFrame, y_col: str, predictors: list[str]) -> pd.DataFrame:
+    """Drop rows missing the outcome or any predictor -- listwise deletion.
+
+    WHY THIS EXISTS
+    Some values here are legitimately absent rather than broken: the source
+    workbook has no South Carolina credit score, and CDC suppresses homicide
+    counts for New Hampshire and Vermont. `_validate` therefore permits NaN in
+    those columns, and the analysis scripts each call `dropna` before fitting.
+
+    The model functions did not, so they handed NaN straight to statsmodels and
+    raised "exog contains inf or nans". That broke the nightly refresh workflow
+    every night for a week -- one missing credit score was enough, because the
+    refit is the first step and the whole job exits on it.
+
+    Complete-case analysis is the right default here rather than a convenience:
+    it is what the scripts already do explicitly, and it is what OLS means by a
+    sample. What it must never do is hide how many rows it dropped, so callers
+    read `len()` of the result for the n they actually fitted.
+    """
+    return df.dropna(subset=[y_col, *predictors])
+
+
 def fit_ols(df: pd.DataFrame, y_col: str, predictors: list[str]) -> OLSResult:
-    """Fit OLS with HC3 robust standard errors and compute VIF for each predictor."""
+    """Fit OLS with HC3 robust standard errors and compute VIF for each predictor.
+
+    Rows missing the outcome or any predictor are dropped; see `complete_cases`.
+    """
+    df = complete_cases(df, y_col, predictors)
     X = sm.add_constant(df[predictors].astype(float))
     y = df[y_col].astype(float)
     fit = sm.OLS(y, X).fit(cov_type="HC3")
@@ -56,7 +82,9 @@ def bootstrap_coefficients(
     """Case-resampling bootstrap on standardized coefficients.
 
     Returns a DataFrame with one row per resample and one column per predictor.
+    Rows missing the outcome or any predictor are dropped; see `complete_cases`.
     """
+    df = complete_cases(df, y_col, predictors)
     rng = np.random.default_rng(seed)
     n = len(df)
     X_std = _standardize(df[predictors])
@@ -70,7 +98,15 @@ def bootstrap_coefficients(
         try:
             res = sm.OLS(yb, Xb).fit()
             out[b, :] = res.params[predictors].values
-        except Exception:
+        except (np.linalg.LinAlgError, ValueError):
+            # A case resample can draw a design matrix that is singular, or one
+            # whose predictor comes back constant -- both legitimate outcomes of
+            # resampling 50 rows with replacement, not bugs. Those resamples
+            # become NaN and are excluded from the percentile intervals.
+            #
+            # Narrowed from a blind `except Exception`, which would equally have
+            # swallowed a typo in the predictor list and silently returned an
+            # all-NaN table that looks like an unstable coefficient.
             out[b, :] = np.nan
     return pd.DataFrame(out, columns=predictors)
 
@@ -87,7 +123,9 @@ def compare_regularization(
     """Fit standardized OLS, RidgeCV, and LassoCV; return coefficients side-by-side.
 
     Returns the coefficient table plus the CV-selected alphas for Ridge and Lasso.
+    Rows missing the outcome or any predictor are dropped; see `complete_cases`.
     """
+    df = complete_cases(df, y_col, predictors)
     scaler = StandardScaler()
     X_s = scaler.fit_transform(df[predictors])
     y = df[y_col].astype(float).values
@@ -128,9 +166,13 @@ def fit_random_forest(
     n_perm_repeats: int = 200,
     seed: int = 42,
 ) -> RandomForestResult:
-    """Fit a Random Forest with leave-one-out CV and permutation importance."""
+    """Fit a Random Forest with leave-one-out CV and permutation importance.
+
+    Rows missing the outcome or any predictor are dropped; see `complete_cases`.
+    """
     from sklearn.metrics import r2_score
 
+    df = complete_cases(df, y_col, predictors)
     X = df[predictors].astype(float)
     y = df[y_col].astype(float)
 

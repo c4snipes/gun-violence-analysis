@@ -58,7 +58,11 @@ def main() -> None:
 
     output = {
         "fitted_at": datetime.now(timezone.utc).isoformat(),
-        "n_states": int(len(df)),
+        # The number actually FITTED, not the number loaded. The model functions
+        # drop rows missing the outcome or any predictor, so len(df) would
+        # overstate the sample the moment any predictor goes missing -- which is
+        # exactly what happened when one absent credit score broke this script.
+        "n_states": int(ols.fit.nobs),
         "outcome": "firearm_mortality_rate",
         "ols": {
             "r_squared": float(ols.r_squared),

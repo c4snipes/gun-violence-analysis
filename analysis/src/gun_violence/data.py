@@ -103,7 +103,15 @@ _SRI_SHEETS_FIRST_COL = {
     "Sucide Rates by State 2020": "suicide_rate",
     "Homicide Rates by State 2020": "homicide_rate",
     "Accident Mortality by State": "accident_mortality_rate",
-    "Average Credit Score ": "credit_score",
+    # NOT the 'Average Credit Score ' sheet, which is missing South Carolina and
+    # carries District of Columbia in its place -- 50 rows, but the wrong 50.
+    # That absence is what made the original positional read produce 32 wrong
+    # scores, and it later left South Carolina NaN, which broke the nightly
+    # refit. This sheet has all 50 states and no DC, and the two agree exactly
+    # on all 49 states they share, so nothing is traded away by preferring it.
+    # Its column B is the credit score; column C is a firearm mortality rate on
+    # a different scale (0.236 for Alabama, i.e. per 1,000) and must not be read.
+    "Average Credit Score vs Firearm": "credit_score",
     "Median House Income v Firearm": "median_household_income",
 }
 
@@ -395,7 +403,7 @@ def merge_supplement(
 # broken, not that the underlying figure is unavailable.
 REQUIRED_COMPLETE = {
     "state", "firearm_mortality_rate", "gun_reg_pct", "poverty_rate",
-    "median_household_income", "pop_density", "population",
+    "median_household_income", "pop_density", "population", "credit_score",
     "gov_party_rep", "mass_shootings_count", "mass_shootings_per_10m",
 }
 
@@ -423,7 +431,11 @@ SUPPRESSIBLE = {
     "firearm_suicide_rate", "firearm_homicide_rate", "firearm_mortality_rate_crude",
 }
 
-ALLOWED_MISSING = {"credit_score", "pct_rural"} | SUPPRESSIBLE
+# credit_score used to live here: the sheet originally read was missing South
+# Carolina. The 'Average Credit Score vs Firearm' sheet has all 50 states and
+# agrees exactly where they overlap, so the column is now complete and REQUIRED
+# -- a silent return to the bad sheet should fail the build, not produce a NaN.
+ALLOWED_MISSING = {"pct_rural"} | SUPPRESSIBLE
 
 
 def _blank_suppressed_zeros(df: pd.DataFrame) -> pd.DataFrame:

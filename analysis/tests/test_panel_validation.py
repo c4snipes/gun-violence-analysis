@@ -20,6 +20,8 @@ produces a plausible number rather than an error.
 
 from __future__ import annotations
 
+from pathlib import Path
+
 import numpy as np
 import pandas as pd
 import pytest
@@ -107,3 +109,55 @@ def test_panel_mode_accepts_a_shorter_window() -> None:
     short = _panel([2014, 2015, 2016])
     assert len(short) == 150
     _validate(short, panel=True)
+
+
+# ---------------------------------------------------------------------------
+# What may NOT enter the panel specification
+#
+# credit_score is a SINGLE-YEAR figure from the SRI workbook. In the 2020
+# cross-section that is exactly right. In a 2014-2023 panel it would be constant
+# within every state, so a within-state estimator has no variation to use: the
+# state effect absorbs it entirely and whatever coefficient comes back is not a
+# within-state estimate of anything.
+#
+# The panel already uses the NY Fed delinquency and debt series instead, which
+# are genuinely measured each year. This pins that choice so a single-year
+# column cannot drift into the panel specification later and produce a
+# confident, meaningless number.
+
+
+def test_panel_specification_excludes_single_year_columns() -> None:
+    import importlib.util
+
+    spec = importlib.util.spec_from_file_location(
+        "run_panel_analysis",
+        Path(__file__).resolve().parent.parent / "scripts" / "run_panel_analysis.py",
+    )
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+
+    # Measured once, in the workbook, for one year only.
+    single_year = {"credit_score", "gun_reg_pct"}
+    leaked = single_year & set(module.PREDICTORS)
+    assert not leaked, (
+        f"{leaked} is a single-year measure and cannot carry within-state "
+        "variation; the panel uses the NY Fed series for credit conditions"
+    )
+    assert not single_year & set(module.PREDICTORS_WITH_ERPO)
+
+
+def test_panel_uses_genuinely_time_varying_credit_measures() -> None:
+    """The replacement must actually move within states, or it buys nothing."""
+    import statistics
+
+    debt = pd.read_csv(
+        Path(__file__).resolve().parent.parent / "data" / "nyfed_debt_2014_2023.csv"
+    )
+    for col in ("delinq_creditcard", "delinq_auto"):
+        by_state: dict[str, list[float]] = {}
+        for _, r in debt.iterrows():
+            by_state.setdefault(r["state"], []).append(float(r[col]))
+        between = statistics.variance([statistics.mean(v) for v in by_state.values()])
+        within = statistics.mean([statistics.variance(v) for v in by_state.values()])
+        icc = between / (between + within)
+        assert icc < 0.95, f"{col} has ICC {icc:.3f}; too static for a panel term"

@@ -16,13 +16,13 @@ concurrency:
 # a tracker-only change from spending time on the Python suite and vice versa.
 jobs:
   analysis:
-    name: analysis (pytest)
+    name: analysis (ruff + pytest)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: "3.11"
           cache: "pip"
@@ -31,11 +31,14 @@ jobs:
         working-directory: analysis
         run: pip install -e ".[dev]"
 
-      # `ruff check src tests scripts` currently reports two pre-existing
-      # findings (import ordering, and an intentional blind `except Exception`
-      # in the bootstrap resampler that turns singular resamples into NaN).
-      # Left out of the gate rather than failing every build on day one, or
-      # silently rewriting statistical code to satisfy a linter.
+      # Both findings that kept this out of the gate are now fixed: the import
+      # ordering, and the blind `except Exception` in the bootstrap resampler,
+      # which is now narrowed to the two errors a case resample can genuinely
+      # raise. A blind except there would have swallowed a typo in the predictor
+      # list and returned an all-NaN table looking like an unstable coefficient.
+      - name: Lint
+        working-directory: analysis
+        run: ruff check src tests scripts
 
       # The SRI source workbook is gitignored, so `make build` cannot run in CI.
       # The committed data/state_data_full.csv is what the tests and the
@@ -44,14 +47,22 @@ jobs:
         working-directory: analysis
         run: python -m pytest -v
 
+      # The nightly refresh runs this first and exits on it, so a failure here
+      # used to surface only as a broken scheduled job hours later. One absent
+      # credit score was enough to break it for a week. Running it in CI against
+      # the committed dataset catches that on the commit that causes it.
+      - name: Refit model (smoke test)
+        working-directory: tracker
+        run: python scripts/refit_model.py --out /tmp/model.json
+
   tracker:
     name: tracker (vitest + build)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Set up Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: "20"
           cache: "npm"
