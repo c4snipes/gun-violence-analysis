@@ -13,5 +13,10 @@
     "queried_at": "2026-08-13T03:17:06.220Z",
     "had_results": true,
     "match": null
+  },
+  "gva-2026-08-03-michigan-oak-park": {
+    "queried_at": "2026-09-17T14:29:41.325Z",
+    "had_results": false,
+    "match": null
   }
 }
