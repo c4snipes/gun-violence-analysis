@@ -18,5 +18,10 @@
     "queried_at": "2026-09-17T14:29:41.325Z",
     "had_results": false,
     "match": null
+  },
+  "gva-2026-08-03-north-carolina-raleigh": {
+    "queried_at": "2026-09-18T10:09:34.705Z",
+    "had_results": false,
+    "match": null
   }
 }
