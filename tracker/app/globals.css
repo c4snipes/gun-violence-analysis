@@ -209,13 +209,38 @@ sup {
   font: 400 8px/1 var(--mono);
 }
 
+/*
+ * The legend separates "none" from the graded scale, because zero is the modal
+ * value over a 365-day window rather than the bottom of a gradient. The tick
+ * figures sit under the bin they close, so the reader can see that the top of
+ * the scale is often one incident in a small state.
+ */
 .ramp {
   display: flex;
-  align-items: center;
-  gap: 7px;
-  margin-top: 12px;
+  align-items: flex-end;
+  gap: 16px;
+  margin-top: 14px;
   font: 400 9.5px/1 var(--mono);
   color: var(--ink-muted);
+}
+
+.ramp-zero {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-bottom: 11px;
+}
+
+.ramp-swatch {
+  width: 14px;
+  height: 7px;
+  border: 0.5px solid var(--rule-faint);
+}
+
+.ramp-scale {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .ramp-swatches {
@@ -223,8 +248,28 @@ sup {
 }
 
 .ramp-swatches span {
-  width: 30px;
+  width: 34px;
   height: 7px;
+}
+
+/*
+ * Each tick labels the UPPER bound of its bin, so it is right-aligned to the
+ * swatch it closes rather than centred under it.
+ */
+.ramp-ticks {
+  display: flex;
+}
+
+.ramp-ticks span {
+  width: 34px;
+  text-align: right;
+  color: var(--ink-dim);
+  font-size: 9px;
+}
+
+.ramp-unit {
+  padding-bottom: 11px;
+  color: var(--ink-dim);
 }
 
 .matrix {
@@ -467,12 +512,44 @@ sup {
     padding-left: 0;
     margin-left: 0;
   }
+  /*
+   * minmax(0, 1fr) rather than 1fr. A 1fr track carries an implicit
+   * min-width:auto, so it cannot shrink below its content's min-content width
+   * -- and Table 1 sets 212px of fixed columns plus 64px of gaps, which with a
+   * long place name like "Greensboro, North Carolina" forces the track wider
+   * than the 335px content box. The overflow was only a pixel or two, but it
+   * gave the whole document a horizontal scroll on a phone.
+   *
+   * The matrix is also tightened below, so the track has something it can
+   * actually fit rather than merely being allowed to clip.
+   */
   .tables {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     row-gap: 40px;
+  }
+  .matrix {
+    grid-template-columns: 52px minmax(0, 1fr) 50px 30px 28px;
+    column-gap: 9px;
+    font-size: 11px;
   }
   .entry {
     grid-template-columns: 1fr;
     row-gap: 12px;
+  }
+
+  /*
+   * The legend is the widest fixed-width element on the page: the "none" key,
+   * four 34px swatches and the unit string together overflow a 375px viewport
+   * by a hair, which is enough to give the whole document a horizontal scroll.
+   * Letting it wrap and dropping the unit to its own line costs nothing and
+   * removes the overflow.
+   */
+  .ramp {
+    flex-wrap: wrap;
+    gap: 10px 14px;
+  }
+  .ramp-unit {
+    flex-basis: 100%;
+    padding-bottom: 0;
   }
 }

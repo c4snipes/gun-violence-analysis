@@ -2,7 +2,14 @@
 
 import { useState } from "react";
 
-import { formatRate, INK_RAMP, inkStep, RATE_UNIT, toDisplayRate } from "../lib/tilegrid";
+import {
+  formatRate,
+  INK_RAMP,
+  inkStep,
+  rampBreakpoints,
+  RATE_UNIT,
+  toDisplayRate,
+} from "../lib/tilegrid";
 import { STATE_PATHS, USMAP_VIEWBOX } from "../lib/usmap";
 import type { SourceId } from "../lib/sources";
 import type { StateStats } from "@/types/data";
@@ -110,14 +117,32 @@ export default function StateMap({ states, source }: Props) {
         })}
       </svg>
 
+      {/*
+        "None" is split out from the graded scale rather than sitting at its
+        foot. Over a 365-day window most states hold no qualifying incident --
+        33 of 50 under the GVA definition at the time of writing -- so zero is
+        the modal value, not the bottom of a gradient. A single continuous ramp
+        from 0 invites reading those states as "low", which is a different
+        claim from "none".
+      */}
       <div className="ramp">
-        <span>0</span>
-        <div className="ramp-swatches">
-          {INK_RAMP.map((c) => (
-            <span key={c} style={{ background: c }} />
-          ))}
-        </div>
-        <span>{formatRate(max)}</span>
+        <span className="ramp-zero">
+          <span className="ramp-swatch" style={{ background: INK_RAMP[0] }} />
+          none
+        </span>
+        <span className="ramp-scale">
+          <span className="ramp-swatches">
+            {INK_RAMP.slice(1).map((c) => (
+              <span key={c} style={{ background: c }} />
+            ))}
+          </span>
+          <span className="ramp-ticks" aria-hidden="true">
+            {rampBreakpoints(max).map((b) => (
+              <span key={b}>{formatRate(b)}</span>
+            ))}
+          </span>
+        </span>
+        <span className="ramp-unit">{RATE_UNIT}</span>
       </div>
     </>
   );

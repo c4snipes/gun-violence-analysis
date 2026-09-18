@@ -114,7 +114,10 @@ export default async function Dashboard() {
             Gun Violence Archive definition. Hover a state for its rate and counts. A geographic
             projection sizes each state by land area, so sparsely populated states carry more
             visual weight than their populations warrant on a per-capita measure &mdash; read the
-            figures, not the areas.
+            figures, not the areas. Most states record no qualifying incident in a 365-day window
+            and are shown at the legend&rsquo;s &ldquo;none&rdquo; step; among those that do, a
+            rate resting on one incident in a small state can top the scale, so the brightest
+            state is often the least stable figure on the map.
           </p>
           <StateMap states={snap.states} source="gva" />
         </div>
