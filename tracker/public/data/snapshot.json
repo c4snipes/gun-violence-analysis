@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T09:49:40.310Z",
+  "generated_at": "2026-09-20T10:11:25.334Z",
   "window_days": 365,
   "totals_by_source": [
     {
@@ -8,7 +8,7 @@
       "killed": 24,
       "injured": 108,
       "latest_incident_date": "2026-08-04",
-      "stale_since": "2026-09-19T09:49:40.310Z"
+      "stale_since": "2026-09-20T10:11:25.335Z"
     },
     {
       "source": "mother_jones",
@@ -2637,7 +2637,7 @@
     }
   ],
   "model": {
-    "fitted_at": "2026-09-19T09:49:37.330361+00:00",
+    "fitted_at": "2026-09-20T10:11:22.687813+00:00",
     "n_states": 50,
     "outcome": "firearm_mortality_rate",
     "ols": {
