@@ -1,14 +1,13 @@
 {
-  "generated_at": "2026-09-22T10:26:36.269Z",
+  "generated_at": "2026-09-22T17:46:10.790Z",
   "window_days": 365,
   "totals_by_source": [
     {
       "source": "gva",
       "incidents": 25,
       "killed": 24,
-      "injured": 108,
-      "latest_incident_date": "2026-08-04",
-      "stale_since": "2026-09-22T10:26:36.269Z"
+      "injured": 125,
+      "latest_incident_date": "2026-09-20"
     },
     {
       "source": "mother_jones",
@@ -40,8 +39,8 @@
       "counts_by_source": {
         "gva": {
           "incidents": 1,
-          "killed": 1,
-          "injured": 4,
+          "killed": 0,
+          "injured": 7,
           "per_100k": 0.01914564108317613
         },
         "mother_jones": {
@@ -163,10 +162,10 @@
       "population": 39345844,
       "counts_by_source": {
         "gva": {
-          "incidents": 2,
-          "killed": 1,
-          "injured": 10,
-          "per_100k": 0.005083128983076332
+          "incidents": 1,
+          "killed": 0,
+          "injured": 4,
+          "per_100k": 0.002541564491538166
         },
         "mother_jones": {
           "incidents": 1,
@@ -287,10 +286,10 @@
       "population": 23659198,
       "counts_by_source": {
         "gva": {
-          "incidents": 3,
-          "killed": 1,
-          "injured": 11,
-          "per_100k": 0.012680057878546857
+          "incidents": 1,
+          "killed": 0,
+          "injured": 8,
+          "per_100k": 0.004226685959515618
         },
         "mother_jones": {
           "incidents": 0,
@@ -319,8 +318,8 @@
       "counts_by_source": {
         "gva": {
           "incidents": 1,
-          "killed": 0,
-          "injured": 4,
+          "killed": 2,
+          "injured": 2,
           "per_100k": 0.008770938862346079
         },
         "mother_jones": {
@@ -380,10 +379,10 @@
       "population": 2058594,
       "counts_by_source": {
         "gva": {
-          "incidents": 1,
-          "killed": 3,
-          "injured": 8,
-          "per_100k": 0.04857684419560147
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
         },
         "mother_jones": {
           "incidents": 1,
@@ -411,10 +410,10 @@
       "population": 12735249,
       "counts_by_source": {
         "gva": {
-          "incidents": 1,
-          "killed": 0,
-          "injured": 6,
-          "per_100k": 0.007852221813644946
+          "incidents": 4,
+          "killed": 5,
+          "injured": 25,
+          "per_100k": 0.031408887254579784
         },
         "mother_jones": {
           "incidents": 0,
@@ -535,10 +534,10 @@
       "population": 4629682,
       "counts_by_source": {
         "gva": {
-          "incidents": 0,
+          "incidents": 1,
           "killed": 0,
-          "injured": 0,
-          "per_100k": 0
+          "injured": 4,
+          "per_100k": 0.021599755663563935
         },
         "mother_jones": {
           "incidents": 0,
@@ -566,10 +565,10 @@
       "population": 4621500,
       "counts_by_source": {
         "gva": {
-          "incidents": 1,
-          "killed": 0,
-          "injured": 4,
-          "per_100k": 0.021637996321540627
+          "incidents": 2,
+          "killed": 1,
+          "injured": 8,
+          "per_100k": 0.043275992643081254
         },
         "mother_jones": {
           "incidents": 0,
@@ -628,10 +627,10 @@
       "population": 6285380,
       "counts_by_source": {
         "gva": {
-          "incidents": 0,
-          "killed": 0,
-          "injured": 0,
-          "per_100k": 0
+          "incidents": 2,
+          "killed": 1,
+          "injured": 13,
+          "per_100k": 0.03181987405693848
         },
         "mother_jones": {
           "incidents": 0,
@@ -661,7 +660,7 @@
         "gva": {
           "incidents": 1,
           "killed": 1,
-          "injured": 4,
+          "injured": 7,
           "per_100k": 0.013947763950274548
         },
         "mother_jones": {
@@ -690,10 +689,10 @@
       "population": 10155806,
       "counts_by_source": {
         "gva": {
-          "incidents": 3,
-          "killed": 9,
-          "injured": 7,
-          "per_100k": 0.029539752925567896
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
         },
         "mother_jones": {
           "incidents": 1,
@@ -721,10 +720,10 @@
       "population": 5863405,
       "counts_by_source": {
         "gva": {
-          "incidents": 0,
-          "killed": 0,
-          "injured": 0,
-          "per_100k": 0
+          "incidents": 1,
+          "killed": 2,
+          "injured": 5,
+          "per_100k": 0.017054936508735113
         },
         "mother_jones": {
           "incidents": 0,
@@ -938,10 +937,10 @@
       "population": 9590076,
       "counts_by_source": {
         "gva": {
-          "incidents": 0,
-          "killed": 0,
-          "injured": 0,
-          "per_100k": 0
+          "incidents": 1,
+          "killed": 2,
+          "injured": 8,
+          "per_100k": 0.010427446039009492
         },
         "mother_jones": {
           "incidents": 0,
@@ -1000,10 +999,10 @@
       "population": 20003435,
       "counts_by_source": {
         "gva": {
-          "incidents": 2,
-          "killed": 2,
-          "injured": 9,
-          "per_100k": 0.00999828279492997
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
         },
         "mother_jones": {
           "incidents": 0,
@@ -1031,10 +1030,10 @@
       "population": 11343875,
       "counts_by_source": {
         "gva": {
-          "incidents": 3,
-          "killed": 2,
-          "injured": 15,
-          "per_100k": 0.026445989575872443
+          "incidents": 2,
+          "killed": 3,
+          "injured": 6,
+          "per_100k": 0.017630659717248295
         },
         "mother_jones": {
           "incidents": 1,
@@ -1093,10 +1092,10 @@
       "population": 11940399,
       "counts_by_source": {
         "gva": {
-          "incidents": 1,
-          "killed": 0,
-          "injured": 5,
-          "per_100k": 0.008374929514499474
+          "incidents": 3,
+          "killed": 2,
+          "injured": 10,
+          "per_100k": 0.025124788543498422
         },
         "mother_jones": {
           "incidents": 0,
@@ -1155,10 +1154,10 @@
       "population": 4281848,
       "counts_by_source": {
         "gva": {
-          "incidents": 1,
-          "killed": 1,
-          "injured": 5,
-          "per_100k": 0.02335440211796402
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
         },
         "mother_jones": {
           "incidents": 0,
@@ -1248,10 +1247,10 @@
       "population": 5650232,
       "counts_by_source": {
         "gva": {
-          "incidents": 1,
-          "killed": 1,
-          "injured": 3,
-          "per_100k": 0.017698388313966577
+          "incidents": 2,
+          "killed": 0,
+          "injured": 13,
+          "per_100k": 0.035396776627933155
         },
         "mother_jones": {
           "incidents": 0,
@@ -1310,10 +1309,10 @@
       "population": 7378861,
       "counts_by_source": {
         "gva": {
-          "incidents": 1,
+          "incidents": 0,
           "killed": 0,
-          "injured": 4,
-          "per_100k": 0.013552227098464112
+          "injured": 0,
+          "per_100k": 0
         },
         "mother_jones": {
           "incidents": 0,
@@ -1341,10 +1340,10 @@
       "population": 32101064,
       "counts_by_source": {
         "gva": {
-          "incidents": 0,
-          "killed": 0,
-          "injured": 0,
-          "per_100k": 0
+          "incidents": 2,
+          "killed": 5,
+          "injured": 5,
+          "per_100k": 0.006230323082125875
         },
         "mother_jones": {
           "incidents": 1,
@@ -1434,10 +1433,10 @@
       "population": 8940572,
       "counts_by_source": {
         "gva": {
-          "incidents": 1,
+          "incidents": 0,
           "killed": 0,
-          "injured": 4,
-          "per_100k": 0.011184966688932206
+          "injured": 0,
+          "per_100k": 0
         },
         "mother_jones": {
           "incidents": 0,
@@ -1465,10 +1464,10 @@
       "population": 8074082,
       "counts_by_source": {
         "gva": {
-          "incidents": 1,
-          "killed": 2,
-          "injured": 5,
-          "per_100k": 0.012385308942861863
+          "incidents": 0,
+          "killed": 0,
+          "injured": 0,
+          "per_100k": 0
         },
         "mother_jones": {
           "incidents": 0,
@@ -1586,120 +1585,228 @@
   ],
   "recent_incidents": [
     {
-      "id": "gva-2026-08-04-florida-pensacola",
-      "date": "2026-08-04",
-      "state": "Florida",
-      "city": "Pensacola",
-      "killed": 0,
-      "injured": 4,
-      "source": "gva"
-    },
-    {
-      "id": "gva-2026-08-03-north-carolina-raleigh",
-      "date": "2026-08-03",
-      "state": "North Carolina",
-      "city": "Raleigh",
-      "killed": 0,
-      "injured": 4,
-      "source": "gva"
-    },
-    {
-      "id": "gva-2026-08-03-virginia-norfolk",
-      "date": "2026-08-03",
-      "state": "Virginia",
-      "city": "Norfolk",
-      "killed": 0,
-      "injured": 4,
-      "source": "gva"
-    },
-    {
-      "id": "gva-2026-08-03-michigan-oak-park",
-      "date": "2026-08-03",
-      "state": "Michigan",
-      "city": "Oak Park",
-      "killed": 2,
-      "injured": 2,
-      "source": "gva"
-    },
-    {
-      "id": "gva-2026-08-03-massachusetts-boston",
-      "date": "2026-08-03",
-      "state": "Massachusetts",
-      "city": "Boston",
-      "killed": 1,
-      "injured": 4,
-      "source": "gva"
-    },
-    {
-      "id": "gva-2026-08-02-new-york-rochester",
-      "date": "2026-08-02",
-      "state": "New York",
-      "city": "Rochester",
-      "killed": 1,
-      "injured": 5,
-      "source": "gva"
-    },
-    {
-      "id": "gva-2026-08-02-north-carolina-greensboro",
-      "date": "2026-08-02",
+      "id": "gva-2026-09-20-north-carolina-greensboro",
+      "date": "2026-09-20",
       "state": "North Carolina",
       "city": "Greensboro",
-      "killed": 0,
-      "injured": 9,
-      "source": "gva"
-    },
-    {
-      "id": "gva-2026-08-02-new-york-yonkers",
-      "date": "2026-08-02",
-      "state": "New York",
-      "city": "Yonkers",
       "killed": 1,
       "injured": 4,
       "source": "gva"
     },
     {
-      "id": "gva-2026-08-02-alabama-huntsville",
-      "date": "2026-08-02",
-      "state": "Alabama",
-      "city": "Huntsville",
-      "killed": 1,
-      "injured": 4,
-      "source": "gva"
-    },
-    {
-      "id": "gva-2026-08-02-north-carolina-dunn",
-      "date": "2026-08-02",
-      "state": "North Carolina",
-      "city": "Dunn",
+      "id": "gva-2026-09-20-georgia-stone-mountain",
+      "date": "2026-09-20",
+      "state": "Georgia",
+      "city": "Stone Mountain",
       "killed": 2,
       "injured": 2,
       "source": "gva"
     },
     {
-      "id": "gva-2026-08-02-oregon-portland",
-      "date": "2026-08-02",
-      "state": "Oregon",
-      "city": "Portland",
+      "id": "gva-2026-09-19-florida-sanford",
+      "date": "2026-09-19",
+      "state": "Florida",
+      "city": "Sanford",
+      "killed": 0,
+      "injured": 8,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-09-18-illinois-east-saint-louis",
+      "date": "2026-09-18",
+      "state": "Illinois",
+      "city": "East Saint Louis",
       "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-09-18-louisiana-bastrop",
+      "date": "2026-09-18",
+      "state": "Louisiana",
+      "city": "Bastrop",
+      "killed": 0,
       "injured": 5,
       "source": "gva"
     },
     {
-      "id": "gva-2026-08-01-florida-jacksonville",
-      "date": "2026-08-01",
-      "state": "Florida",
-      "city": "Jacksonville",
+      "id": "gva-2026-09-16-maryland-baltimore",
+      "date": "2026-09-16",
+      "state": "Maryland",
+      "city": "Baltimore",
+      "killed": 1,
+      "injured": 6,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-09-16-maryland-baltimore-2",
+      "date": "2026-09-16",
+      "state": "Maryland",
+      "city": "Baltimore",
+      "killed": 0,
+      "injured": 7,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-09-15-ohio-dayton",
+      "date": "2026-09-15",
+      "state": "Ohio",
+      "city": "Dayton",
       "killed": 0,
       "injured": 4,
       "source": "gva"
     },
     {
-      "id": "gva-2026-08-01-idaho-twin-falls",
-      "date": "2026-08-01",
-      "state": "Idaho",
-      "city": "Twin Falls",
-      "killed": 3,
+      "id": "gva-2026-09-13-illinois-chicago",
+      "date": "2026-09-13",
+      "state": "Illinois",
+      "city": "Chicago",
+      "killed": 1,
+      "injured": 6,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-09-13-south-carolina-columbia",
+      "date": "2026-09-13",
+      "state": "South Carolina",
+      "city": "Columbia",
+      "killed": 0,
       "injured": 8,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-09-13-texas-san-benito",
+      "date": "2026-09-13",
+      "state": "Texas",
+      "city": "San Benito",
+      "killed": 4,
+      "injured": 0,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-09-12-texas-dallas",
+      "date": "2026-09-12",
+      "state": "Texas",
+      "city": "Dallas",
+      "killed": 1,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-09-12-ohio-euclid",
+      "date": "2026-09-12",
+      "state": "Ohio",
+      "city": "Euclid",
+      "killed": 2,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-09-12-alabama-tuscaloosa",
+      "date": "2026-09-12",
+      "state": "Alabama",
+      "city": "Tuscaloosa",
+      "killed": 0,
+      "injured": 7,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-09-12-ohio-euclid-2",
+      "date": "2026-09-12",
+      "state": "Ohio",
+      "city": "Euclid",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-09-11-kentucky-louisville",
+      "date": "2026-09-11",
+      "state": "Kentucky",
+      "city": "Louisville",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-09-10-north-carolina-gastonia",
+      "date": "2026-09-10",
+      "state": "North Carolina",
+      "city": "Gastonia",
+      "killed": 2,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-09-06-massachusetts-taunton",
+      "date": "2026-09-06",
+      "state": "Massachusetts",
+      "city": "Taunton",
+      "killed": 1,
+      "injured": 7,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-09-06-california-sacramento",
+      "date": "2026-09-06",
+      "state": "California",
+      "city": "Sacramento",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-09-02-minnesota-minneapolis",
+      "date": "2026-09-02",
+      "state": "Minnesota",
+      "city": "Minneapolis",
+      "killed": 2,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-09-01-south-carolina-conway",
+      "date": "2026-09-01",
+      "state": "South Carolina",
+      "city": "Conway",
+      "killed": 0,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-08-30-new-jersey-trenton",
+      "date": "2026-08-30",
+      "state": "New Jersey",
+      "city": "Trenton",
+      "killed": 2,
+      "injured": 8,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-08-30-louisiana-baton-rouge",
+      "date": "2026-08-30",
+      "state": "Louisiana",
+      "city": "Baton Rouge",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-08-29-illinois-crest-hill",
+      "date": "2026-08-29",
+      "state": "Illinois",
+      "city": "Crest Hill",
+      "killed": 2,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-08-29-illinois-chicago",
+      "date": "2026-08-29",
+      "state": "Illinois",
+      "city": "Chicago",
+      "killed": 1,
+      "injured": 14,
       "source": "gva"
     },
     {
@@ -1712,114 +1819,6 @@
       "source": "mother_jones",
       "url": "https://abcnews.com/US/burger-shooting-suspect/story?id=135337720",
       "summary": "Chad Williams, 24, opened fire outside the restaurant, faced return fire from an armed citizen and an off-duty police officer, and shot himself to death."
-    },
-    {
-      "id": "gva-2026-07-30-ohio-dayton",
-      "date": "2026-07-30",
-      "state": "Ohio",
-      "city": "Dayton",
-      "killed": 0,
-      "injured": 5,
-      "source": "gva"
-    },
-    {
-      "id": "gva-2026-07-27-florida-jacksonville",
-      "date": "2026-07-27",
-      "state": "Florida",
-      "city": "Jacksonville",
-      "killed": 1,
-      "injured": 3,
-      "source": "gva"
-    },
-    {
-      "id": "gva-2026-07-26-washington-seattle",
-      "date": "2026-07-26",
-      "state": "Washington",
-      "city": "Seattle",
-      "killed": 2,
-      "injured": 5,
-      "source": "gva"
-    },
-    {
-      "id": "gva-2026-07-26-tennessee-memphis",
-      "date": "2026-07-26",
-      "state": "Tennessee",
-      "city": "Memphis",
-      "killed": 0,
-      "injured": 4,
-      "source": "gva"
-    },
-    {
-      "id": "gva-2026-07-26-illinois-chicago",
-      "date": "2026-07-26",
-      "state": "Illinois",
-      "city": "Chicago",
-      "killed": 0,
-      "injured": 6,
-      "source": "gva"
-    },
-    {
-      "id": "gva-2026-07-26-michigan-grand-haven",
-      "date": "2026-07-26",
-      "state": "Michigan",
-      "city": "Grand Haven",
-      "killed": 0,
-      "injured": 5,
-      "source": "gva"
-    },
-    {
-      "id": "gva-2026-07-25-south-carolina-north-charleston",
-      "date": "2026-07-25",
-      "state": "South Carolina",
-      "city": "North Charleston",
-      "killed": 1,
-      "injured": 3,
-      "source": "gva"
-    },
-    {
-      "id": "gva-2026-07-25-louisiana-saint-martinville",
-      "date": "2026-07-25",
-      "state": "Louisiana",
-      "city": "Saint Martinville",
-      "killed": 0,
-      "injured": 4,
-      "source": "gva"
-    },
-    {
-      "id": "gva-2026-07-25-california-morgan-hill",
-      "date": "2026-07-25",
-      "state": "California",
-      "city": "Morgan Hill",
-      "killed": 1,
-      "injured": 6,
-      "source": "gva"
-    },
-    {
-      "id": "gva-2026-07-25-california-san-francisco",
-      "date": "2026-07-25",
-      "state": "California",
-      "city": "San Francisco",
-      "killed": 0,
-      "injured": 4,
-      "source": "gva"
-    },
-    {
-      "id": "gva-2026-07-24-michigan-grand-haven",
-      "date": "2026-07-24",
-      "state": "Michigan",
-      "city": "Grand Haven",
-      "killed": 7,
-      "injured": 0,
-      "source": "gva"
-    },
-    {
-      "id": "gva-2026-07-22-georgia-atlanta",
-      "date": "2026-07-22",
-      "state": "Georgia",
-      "city": "Atlanta",
-      "killed": 0,
-      "injured": 4,
-      "source": "gva"
     },
     {
       "id": "mj-san-diego-mosque-shooting",
@@ -2637,7 +2636,7 @@
     }
   ],
   "model": {
-    "fitted_at": "2026-09-22T10:26:34.020743+00:00",
+    "fitted_at": "2026-09-22T17:46:08.515537+00:00",
     "n_states": 50,
     "outcome": "firearm_mortality_rate",
     "ols": {

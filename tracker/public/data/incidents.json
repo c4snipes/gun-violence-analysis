@@ -1,119 +1,227 @@
 [
   {
-    "id": "gva-2026-08-04-florida-pensacola",
-    "date": "2026-08-04",
-    "state": "Florida",
-    "city": "Pensacola",
-    "killed": 0,
-    "injured": 4,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-08-03-north-carolina-raleigh",
-    "date": "2026-08-03",
-    "state": "North Carolina",
-    "city": "Raleigh",
-    "killed": 0,
-    "injured": 4,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-08-03-virginia-norfolk",
-    "date": "2026-08-03",
-    "state": "Virginia",
-    "city": "Norfolk",
-    "killed": 0,
-    "injured": 4,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-08-03-michigan-oak-park",
-    "date": "2026-08-03",
-    "state": "Michigan",
-    "city": "Oak Park",
-    "killed": 2,
-    "injured": 2,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-08-03-massachusetts-boston",
-    "date": "2026-08-03",
-    "state": "Massachusetts",
-    "city": "Boston",
-    "killed": 1,
-    "injured": 4,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-08-02-new-york-rochester",
-    "date": "2026-08-02",
-    "state": "New York",
-    "city": "Rochester",
-    "killed": 1,
-    "injured": 5,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-08-02-north-carolina-greensboro",
-    "date": "2026-08-02",
+    "id": "gva-2026-09-20-north-carolina-greensboro",
+    "date": "2026-09-20",
     "state": "North Carolina",
     "city": "Greensboro",
-    "killed": 0,
-    "injured": 9,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-08-02-new-york-yonkers",
-    "date": "2026-08-02",
-    "state": "New York",
-    "city": "Yonkers",
     "killed": 1,
     "injured": 4,
     "source": "gva"
   },
   {
-    "id": "gva-2026-08-02-alabama-huntsville",
-    "date": "2026-08-02",
-    "state": "Alabama",
-    "city": "Huntsville",
-    "killed": 1,
-    "injured": 4,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-08-02-north-carolina-dunn",
-    "date": "2026-08-02",
-    "state": "North Carolina",
-    "city": "Dunn",
+    "id": "gva-2026-09-20-georgia-stone-mountain",
+    "date": "2026-09-20",
+    "state": "Georgia",
+    "city": "Stone Mountain",
     "killed": 2,
     "injured": 2,
     "source": "gva"
   },
   {
-    "id": "gva-2026-08-02-oregon-portland",
-    "date": "2026-08-02",
-    "state": "Oregon",
-    "city": "Portland",
+    "id": "gva-2026-09-19-florida-sanford",
+    "date": "2026-09-19",
+    "state": "Florida",
+    "city": "Sanford",
+    "killed": 0,
+    "injured": 8,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-09-18-illinois-east-saint-louis",
+    "date": "2026-09-18",
+    "state": "Illinois",
+    "city": "East Saint Louis",
     "killed": 1,
+    "injured": 3,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-09-18-louisiana-bastrop",
+    "date": "2026-09-18",
+    "state": "Louisiana",
+    "city": "Bastrop",
+    "killed": 0,
     "injured": 5,
     "source": "gva"
   },
   {
-    "id": "gva-2026-08-01-florida-jacksonville",
-    "date": "2026-08-01",
-    "state": "Florida",
-    "city": "Jacksonville",
+    "id": "gva-2026-09-16-maryland-baltimore",
+    "date": "2026-09-16",
+    "state": "Maryland",
+    "city": "Baltimore",
+    "killed": 1,
+    "injured": 6,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-09-16-maryland-baltimore-2",
+    "date": "2026-09-16",
+    "state": "Maryland",
+    "city": "Baltimore",
+    "killed": 0,
+    "injured": 7,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-09-15-ohio-dayton",
+    "date": "2026-09-15",
+    "state": "Ohio",
+    "city": "Dayton",
     "killed": 0,
     "injured": 4,
     "source": "gva"
   },
   {
-    "id": "gva-2026-08-01-idaho-twin-falls",
-    "date": "2026-08-01",
-    "state": "Idaho",
-    "city": "Twin Falls",
-    "killed": 3,
+    "id": "gva-2026-09-13-illinois-chicago",
+    "date": "2026-09-13",
+    "state": "Illinois",
+    "city": "Chicago",
+    "killed": 1,
+    "injured": 6,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-09-13-south-carolina-columbia",
+    "date": "2026-09-13",
+    "state": "South Carolina",
+    "city": "Columbia",
+    "killed": 0,
     "injured": 8,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-09-13-texas-san-benito",
+    "date": "2026-09-13",
+    "state": "Texas",
+    "city": "San Benito",
+    "killed": 4,
+    "injured": 0,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-09-12-texas-dallas",
+    "date": "2026-09-12",
+    "state": "Texas",
+    "city": "Dallas",
+    "killed": 1,
+    "injured": 5,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-09-12-ohio-euclid",
+    "date": "2026-09-12",
+    "state": "Ohio",
+    "city": "Euclid",
+    "killed": 2,
+    "injured": 2,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-09-12-alabama-tuscaloosa",
+    "date": "2026-09-12",
+    "state": "Alabama",
+    "city": "Tuscaloosa",
+    "killed": 0,
+    "injured": 7,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-09-12-ohio-euclid-2",
+    "date": "2026-09-12",
+    "state": "Ohio",
+    "city": "Euclid",
+    "killed": 0,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-09-11-kentucky-louisville",
+    "date": "2026-09-11",
+    "state": "Kentucky",
+    "city": "Louisville",
+    "killed": 0,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-09-10-north-carolina-gastonia",
+    "date": "2026-09-10",
+    "state": "North Carolina",
+    "city": "Gastonia",
+    "killed": 2,
+    "injured": 2,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-09-06-massachusetts-taunton",
+    "date": "2026-09-06",
+    "state": "Massachusetts",
+    "city": "Taunton",
+    "killed": 1,
+    "injured": 7,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-09-06-california-sacramento",
+    "date": "2026-09-06",
+    "state": "California",
+    "city": "Sacramento",
+    "killed": 0,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-09-02-minnesota-minneapolis",
+    "date": "2026-09-02",
+    "state": "Minnesota",
+    "city": "Minneapolis",
+    "killed": 2,
+    "injured": 5,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-09-01-south-carolina-conway",
+    "date": "2026-09-01",
+    "state": "South Carolina",
+    "city": "Conway",
+    "killed": 0,
+    "injured": 5,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-08-30-new-jersey-trenton",
+    "date": "2026-08-30",
+    "state": "New Jersey",
+    "city": "Trenton",
+    "killed": 2,
+    "injured": 8,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-08-30-louisiana-baton-rouge",
+    "date": "2026-08-30",
+    "state": "Louisiana",
+    "city": "Baton Rouge",
+    "killed": 1,
+    "injured": 3,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-08-29-illinois-crest-hill",
+    "date": "2026-08-29",
+    "state": "Illinois",
+    "city": "Crest Hill",
+    "killed": 2,
+    "injured": 2,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-08-29-illinois-chicago",
+    "date": "2026-08-29",
+    "state": "Illinois",
+    "city": "Chicago",
+    "killed": 1,
+    "injured": 14,
     "source": "gva"
   },
   {
@@ -126,114 +234,6 @@
     "source": "mother_jones",
     "url": "https://abcnews.com/US/burger-shooting-suspect/story?id=135337720",
     "summary": "Chad Williams, 24, opened fire outside the restaurant, faced return fire from an armed citizen and an off-duty police officer, and shot himself to death."
-  },
-  {
-    "id": "gva-2026-07-30-ohio-dayton",
-    "date": "2026-07-30",
-    "state": "Ohio",
-    "city": "Dayton",
-    "killed": 0,
-    "injured": 5,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-07-27-florida-jacksonville",
-    "date": "2026-07-27",
-    "state": "Florida",
-    "city": "Jacksonville",
-    "killed": 1,
-    "injured": 3,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-07-26-washington-seattle",
-    "date": "2026-07-26",
-    "state": "Washington",
-    "city": "Seattle",
-    "killed": 2,
-    "injured": 5,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-07-26-tennessee-memphis",
-    "date": "2026-07-26",
-    "state": "Tennessee",
-    "city": "Memphis",
-    "killed": 0,
-    "injured": 4,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-07-26-illinois-chicago",
-    "date": "2026-07-26",
-    "state": "Illinois",
-    "city": "Chicago",
-    "killed": 0,
-    "injured": 6,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-07-26-michigan-grand-haven",
-    "date": "2026-07-26",
-    "state": "Michigan",
-    "city": "Grand Haven",
-    "killed": 0,
-    "injured": 5,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-07-25-south-carolina-north-charleston",
-    "date": "2026-07-25",
-    "state": "South Carolina",
-    "city": "North Charleston",
-    "killed": 1,
-    "injured": 3,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-07-25-louisiana-saint-martinville",
-    "date": "2026-07-25",
-    "state": "Louisiana",
-    "city": "Saint Martinville",
-    "killed": 0,
-    "injured": 4,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-07-25-california-morgan-hill",
-    "date": "2026-07-25",
-    "state": "California",
-    "city": "Morgan Hill",
-    "killed": 1,
-    "injured": 6,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-07-25-california-san-francisco",
-    "date": "2026-07-25",
-    "state": "California",
-    "city": "San Francisco",
-    "killed": 0,
-    "injured": 4,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-07-24-michigan-grand-haven",
-    "date": "2026-07-24",
-    "state": "Michigan",
-    "city": "Grand Haven",
-    "killed": 7,
-    "injured": 0,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-07-22-georgia-atlanta",
-    "date": "2026-07-22",
-    "state": "Georgia",
-    "city": "Atlanta",
-    "killed": 0,
-    "injured": 4,
-    "source": "gva"
   },
   {
     "id": "mj-san-diego-mosque-shooting",
