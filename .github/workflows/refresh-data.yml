@@ -48,7 +48,14 @@ jobs:
         working-directory: tracker
         run: npm run refresh-data
 
+      # Runs even when the refresh step exited non-zero. That step fails the run
+      # when a source parses cleanly but has gone quiet for longer than its
+      # cadence allows -- the failure mode that kept this job green for seven
+      # weeks while the site served August figures. The data it wrote is still
+      # worth publishing, because the other sources are usually fine, so the
+      # commit happens either way and only the run's status carries the alarm.
       - name: Commit updated data
+        if: success() || failure()
         env:
           GIT_COMMITTER_NAME: github-actions[bot]
           GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com

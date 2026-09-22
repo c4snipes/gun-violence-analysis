@@ -26,6 +26,7 @@ import { fetchMotherJones } from "../app/lib/fetchers/mother_jones";
 import { fetchStanfordMSA } from "../app/lib/fetchers/stanford_msa";
 import { fetchViolenceProject } from "../app/lib/fetchers/violence_project";
 import { SOURCES, type SourceId } from "../app/lib/sources";
+import { findStaleFeeds } from "../app/lib/staleness";
 import { STATE_POPULATION, STATE_TO_CODE } from "../app/lib/states";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -208,6 +209,26 @@ async function main(): Promise<void> {
       Object.keys(SOURCES).length
     } sources`,
   );
+
+  // Checked AFTER the files are written, deliberately. Whatever the healthy
+  // sources returned is still worth publishing, so the data lands either way
+  // and only the run's exit status reports the problem. The workflow commits
+  // with `if: always()` so a red run still ships the good data.
+  const staleFeeds = findStaleFeeds(snapshot.totals_by_source);
+  if (staleFeeds.length > 0) {
+    console.error(
+      `\nSTALE FEED: ${staleFeeds.length} source(s) parsed without error but ` +
+        "returned nothing recent. This is the failure mode where the job stays " +
+        "green while the site quietly serves old figures.",
+    );
+    for (const p of staleFeeds) console.error(`  ${p}`);
+    console.error(
+      "\nCheck whether the source's page structure changed -- that is what " +
+        "broke the GVA scrape in August, and it parsed cleanly right up until " +
+        "it returned nothing at all.",
+    );
+    process.exitCode = 1;
+  }
 }
 
 main().catch((err) => {
