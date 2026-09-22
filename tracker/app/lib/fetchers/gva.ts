@@ -22,10 +22,21 @@ import { normalizeDate, stripHtml } from "./util";
 
 const REPORT_URL = "https://www.gunviolencearchive.org/reports/mass-shooting";
 
-// Positional schema we rely on when destructuring each row's cells. GVA's
-// table has an unlabeled leading column (row actions) followed by six named
-// columns: Incident Date, State, City Or County, Address, # Killed, # Injured.
-const EXPECTED_CELL_COUNT = 7;
+// Positional schema we rely on when destructuring each row's cells. The
+// highest index read is 6 (# injured), so a row needs at least seven cells.
+//
+// This was an EXACT count of 7, and GVA appending four columns -- Suspects
+// Killed, Suspects Injured, Suspects Arrested, Operations -- made every data
+// row throw. The scrape had been failing for six weeks while the site went on
+// serving cached figures behind a "most recent run failed" footnote: the
+// failure was reported honestly and still went unnoticed, because a stale
+// tracker looks exactly like a quiet one.
+//
+// An exact count was the wrong invariant. It is HEADER_SCHEMA below that
+// protects the indices, by checking the columns are named what we expect, and
+// a column inserted before index 6 would fail it loudly. Appending columns to
+// the right of the ones we read cannot move them, so it should not be fatal.
+const MIN_CELL_COUNT = 7;
 const HEADER_SCHEMA: Array<{ index: number; mustInclude: string }> = [
   { index: 1, mustInclude: "date" },
   { index: 2, mustInclude: "state" },
@@ -80,7 +91,8 @@ export async function fetchGVA(): Promise<Incident[]> {
   if (!res.ok) throw new Error(`GVA fetch failed: ${res.status}`);
   const html = await res.text();
 
-  assertTableShape(extractHeaderCells(html));
+  const headers = extractHeaderCells(html);
+  assertTableShape(headers);
 
   const rowRegex = /<tr[^>]*>([\s\S]*?)<\/tr>/g;
   const cellRegex = /<td[^>]*>([\s\S]*?)<\/td>/g;
@@ -94,10 +106,19 @@ export async function fetchGVA(): Promise<Incident[]> {
       cells.push(stripHtml(cellMatch[1]).trim());
     }
     if (cells.length === 0) continue; // header row or non-data <tr>, no <td>s
-    if (cells.length !== EXPECTED_CELL_COUNT) {
+    if (cells.length < MIN_CELL_COUNT) {
       throw new Error(
-        `GVA parse failed: expected ${EXPECTED_CELL_COUNT} cells per data row, got ` +
+        `GVA parse failed: need at least ${MIN_CELL_COUNT} cells per data row, got ` +
           `${cells.length} (row: ${JSON.stringify(cells)})`,
+      );
+    }
+    // The table must stay rectangular. A data row that disagrees with the
+    // header it was validated against means the columns no longer line up,
+    // which is the case where the named-header check cannot save the indices.
+    if (headers.length > 0 && cells.length !== headers.length) {
+      throw new Error(
+        `GVA parse failed: row has ${cells.length} cells but the header has ` +
+          `${headers.length} (row: ${JSON.stringify(cells)})`,
       );
     }
 

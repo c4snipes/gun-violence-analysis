@@ -2,69 +2,104 @@
   Synthetic fixture mirroring the structure of GVA's mass-shooting report
   page (a Drupal Views table: <th> header row, <td> data rows). Incident
   data below is fabricated for testing — not scraped from the live site.
+
+  ELEVEN columns, matching the live table as of September 2026. It had seven
+  here until GVA appended Suspects Killed / Injured / Arrested and Operations,
+  and renamed "# Killed" / "# Injured" to "Victims Killed" / "Victims Injured".
+  The parser's exact-seven-cell guard then threw on every data row, so the
+  scrape failed for six weeks while the site served cached figures behind a
+  "most recent run failed" footnote.
+
+  The columns the parser reads are indices 1, 2, 3, 5 and 6, all unchanged by
+  that edit — which is exactly why the fixture must carry the real width. A
+  seven-column fixture would keep passing while production stayed broken.
 -->
 <!DOCTYPE html>
 <html>
-<head><title>Mass Shootings in America — Gun Violence Archive</title></head>
+<head><title>Mass Shootings in 2026 | Gun Violence Archive</title></head>
 <body>
 <div class="view-content">
-<table class="views-table cols-7">
+<table class="views-table cols-11">
   <thead>
     <tr>
-      <th></th>
+      <th>Incident ID</th>
       <th>Incident Date</th>
       <th>State</th>
       <th>City Or County</th>
       <th>Address</th>
-      <th># Killed</th>
-      <th># Injured</th>
+      <th>Victims Killed</th>
+      <th>Victims Injured</th>
+      <th>Suspects Killed</th>
+      <th>Suspects Injured</th>
+      <th>Suspects Arrested</th>
+      <th>Operations</th>
     </tr>
   </thead>
   <tbody>
     <tr class="odd">
-      <td><a href="/incident/1">view</a></td>
+      <td>3548001</td>
       <td>January 3, 2026</td>
       <td>Texas</td>
       <td>Houston</td>
       <td>1200 Block of Main St</td>
       <td>1</td>
       <td>4</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td><a href="/incident/1">View Incident</a></td>
     </tr>
     <tr class="even">
-      <td><a href="/incident/2">view</a></td>
+      <td>3548002</td>
       <td>January 5, 2026</td>
       <td>OH</td>
       <td>Columbus</td>
       <td>500 Block of High St</td>
       <td>0</td>
       <td>5</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td><a href="/incident/2">View Incident</a></td>
     </tr>
     <tr class="odd">
-      <td><a href="/incident/3">view</a></td>
+      <td>3548003</td>
       <td>January 6, 2026</td>
       <td>District of Columbia</td>
       <td>Washington</td>
       <td>1600 Block of Pennsylvania Ave</td>
       <td>0</td>
       <td>4</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td><a href="/incident/3">View Incident</a></td>
     </tr>
     <tr class="even">
-      <td><a href="/incident/4">view</a></td>
+      <td>3548004</td>
       <td>TBD</td>
       <td>Georgia</td>
       <td>Atlanta</td>
       <td>Peachtree St</td>
       <td>2</td>
       <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td><a href="/incident/4">View Incident</a></td>
     </tr>
     <tr class="odd">
-      <td><a href="/incident/5">view</a></td>
+      <td>3548005</td>
       <td>January 9, 2026</td>
       <td>California</td>
       <td>Fresno</td>
       <td>Blackstone Ave</td>
       <td>3</td>
       <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td><a href="/incident/5">View Incident</a></td>
     </tr>
   </tbody>
 </table>
