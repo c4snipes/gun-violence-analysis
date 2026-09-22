@@ -119,11 +119,11 @@ export default function StateMap({ states, source }: Props) {
 
       {/*
         "None" is split out from the graded scale rather than sitting at its
-        foot. Over a 365-day window most states hold no qualifying incident --
-        33 of 50 under the GVA definition at the time of writing -- so zero is
-        the modal value, not the bottom of a gradient. A single continuous ramp
-        from 0 invites reading those states as "low", which is a different
-        claim from "none".
+        foot. Zero is a categorical answer, not the bottom of a gradient: a
+        single continuous ramp from 0 invites reading those states as "low",
+        which is a different claim from "none". The distinction mattered even
+        more while the scrape was truncated to one page and two thirds of
+        states sat at zero.
       */}
       <div className="ramp">
         <span className="ramp-zero">

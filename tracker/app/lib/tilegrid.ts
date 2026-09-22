@@ -87,10 +87,11 @@ export const TILE_ROWS = 8;
  * Five-step ink ramp, darkest to lightest. Index 0 means NO incidents.
  *
  * Step 0 was #141416 against a #0b0b0c page, a difference of about three
- * percent lightness. In a 365-day window 33 of 50 states hold no qualifying
- * incident, so two thirds of the map was rendering as one undifferentiated
- * dark mass -- and because the state hairlines are stroked in the page colour,
- * their borders vanished with them. The figure was accurate and unreadable.
+ * percent lightness, so every state at the bottom of the scale vanished into
+ * the background -- and because the state hairlines are stroked in the page
+ * colour, their borders went with them. It was worst while the GVA scrape was
+ * returning only one page: two thirds of states read as zero and the map was a
+ * single dark mass. The figure was accurate and unreadable.
  *
  * Step 0 is now a visible floor. That matters for honesty as much as legibility:
  * a state with zero incidents should look like a state that was measured and
@@ -105,9 +106,9 @@ export const INK_RAMP = ["#1c1c21", "#343139", "#554e4e", "#82755f", "#c9b184"];
 /**
  * Rates are stored per 100,000 but displayed per 10,000,000.
  *
- * A 365-day window holds only a few dozen qualifying incidents nationally, so
- * a per-100,000 rate is around 0.05 at its highest and every state renders as
- * "0.0" -- the scale carries no information. Per 10 million puts the same
+ * Even across a full 365-day window the busiest state sits near 0.5 incidents
+ * per 100,000, so that scale renders most of the country as "0.0" or "0.1" and
+ * carries almost no information. Per 10 million puts the same
  * figures in a 0-5 range that can actually be read, and matches the
  * `mass_shootings_per_10m` convention already used in the analysis package's
  * state_data_full.csv, so the two halves of the project agree.
@@ -140,10 +141,10 @@ export function inkStep(value: number, max: number): number {
  * Upper bound of each non-zero ramp bin, for labelling the legend.
  *
  * The bins are equal fractions of the observed maximum, which is worth showing
- * rather than hiding behind an unlabelled gradient: over a 365-day window the
- * maximum often rests on a SINGLE incident in a small state, so the top of the
- * scale is the least stable number on the figure. A reader who can see the
- * breakpoints can see that for themselves.
+ * rather than hiding behind an unlabelled gradient. The top of the scale is the
+ * least stable number on the figure -- it is a per-capita rate, so the smallest
+ * states reach it on the fewest incidents -- and a reader who can see the
+ * breakpoints can judge that themselves.
  */
 export function rampBreakpoints(max: number): number[] {
   if (max <= 0) return [];
