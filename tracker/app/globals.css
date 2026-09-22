@@ -279,6 +279,71 @@ sup {
   font: 400 12px/1 var(--sans);
 }
 
+/*
+ * Table 1's pager. Deliberately quiet: a rule, a range and two arrows in the
+ * same mono face as the column heads, so it reads as part of the figure rather
+ * than as a web control bolted underneath it. The range is spelled out in full
+ * because its job is to show how much more there is than the eight rows that
+ * used to be the whole table.
+ */
+.pager {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 14px;
+  padding-top: 10px;
+  border-top: 1px solid var(--rule-faint);
+  font: 400 10px/1 var(--mono);
+  color: var(--ink-muted);
+}
+
+.pager-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pager-page {
+  color: var(--ink-dim);
+  min-width: 42px;
+  text-align: center;
+}
+
+.pager-step {
+  appearance: none;
+  background: none;
+  border: 1px solid var(--rule);
+  color: var(--ink-quiet);
+  font: inherit;
+  line-height: 1;
+  padding: 5px 9px;
+  cursor: pointer;
+  transition:
+    color 120ms ease,
+    border-color 120ms ease;
+}
+
+.pager-step:hover:not(:disabled) {
+  color: var(--ink);
+  border-color: var(--ink-muted);
+}
+
+.pager-step:focus-visible {
+  outline: 1px solid var(--ink-muted);
+  outline-offset: 2px;
+}
+
+/*
+ * Disabled ends stay visible rather than disappearing, so the control does not
+ * change width at the first and last page.
+ */
+.pager-step:disabled {
+  color: var(--rule);
+  border-color: var(--rule-faint);
+  cursor: default;
+}
+
 .matrix .head {
   font: 500 9.5px/1 var(--mono);
   color: var(--ink-muted);

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T18:23:47.032Z",
+  "generated_at": "2026-09-22T18:39:03.421Z",
   "window_days": 365,
   "totals_by_source": [
     {
@@ -2484,6 +2484,3013 @@
       "city": "Philadelphia",
       "killed": 1,
       "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-12-illinois-east-saint-louis",
+      "date": "2026-07-12",
+      "state": "Illinois",
+      "city": "East Saint Louis",
+      "killed": 5,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-12-south-carolina-florence",
+      "date": "2026-07-12",
+      "state": "South Carolina",
+      "city": "Florence",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-11-indiana-anderson",
+      "date": "2026-07-11",
+      "state": "Indiana",
+      "city": "Anderson",
+      "killed": 0,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-11-kentucky-louisville",
+      "date": "2026-07-11",
+      "state": "Kentucky",
+      "city": "Louisville",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-10-florida-lehigh-acres",
+      "date": "2026-07-10",
+      "state": "Florida",
+      "city": "Lehigh Acres",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-10-georgia-atlanta",
+      "date": "2026-07-10",
+      "state": "Georgia",
+      "city": "Atlanta",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-09-georgia-savannah",
+      "date": "2026-07-09",
+      "state": "Georgia",
+      "city": "Savannah",
+      "killed": 2,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-06-virginia-chesapeake",
+      "date": "2026-07-06",
+      "state": "Virginia",
+      "city": "Chesapeake",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-06-washington-seattle",
+      "date": "2026-07-06",
+      "state": "Washington",
+      "city": "Seattle",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-06-rhode-island-providence",
+      "date": "2026-07-06",
+      "state": "Rhode Island",
+      "city": "Providence",
+      "killed": 0,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-06-ohio-cleveland",
+      "date": "2026-07-06",
+      "state": "Ohio",
+      "city": "Cleveland",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-06-minnesota-minneapolis",
+      "date": "2026-07-06",
+      "state": "Minnesota",
+      "city": "Minneapolis",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-05-michigan-grand-rapids",
+      "date": "2026-07-05",
+      "state": "Michigan",
+      "city": "Grand Rapids",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-05-indiana-gary",
+      "date": "2026-07-05",
+      "state": "Indiana",
+      "city": "Gary",
+      "killed": 0,
+      "injured": 6,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-05-new-york-buffalo",
+      "date": "2026-07-05",
+      "state": "New York",
+      "city": "Buffalo",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-05-north-carolina-raleigh",
+      "date": "2026-07-05",
+      "state": "North Carolina",
+      "city": "Raleigh",
+      "killed": 0,
+      "injured": 9,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-05-california-bakersfield",
+      "date": "2026-07-05",
+      "state": "California",
+      "city": "Bakersfield",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-05-california-los-angeles-(east-los-angeles)",
+      "date": "2026-07-05",
+      "state": "California",
+      "city": "Los Angeles (East Los Angeles)",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-05-massachusetts-boston",
+      "date": "2026-07-05",
+      "state": "Massachusetts",
+      "city": "Boston",
+      "killed": 1,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-05-indiana-fort-wayne",
+      "date": "2026-07-05",
+      "state": "Indiana",
+      "city": "Fort Wayne",
+      "killed": 1,
+      "injured": 8,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-05-pennsylvania-aliquippa",
+      "date": "2026-07-05",
+      "state": "Pennsylvania",
+      "city": "Aliquippa",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-05-massachusetts-boston-2",
+      "date": "2026-07-05",
+      "state": "Massachusetts",
+      "city": "Boston",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-05-illinois-chicago",
+      "date": "2026-07-05",
+      "state": "Illinois",
+      "city": "Chicago",
+      "killed": 0,
+      "injured": 7,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-05-ohio-rittman",
+      "date": "2026-07-05",
+      "state": "Ohio",
+      "city": "Rittman",
+      "killed": 3,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-05-missouri-saint-louis",
+      "date": "2026-07-05",
+      "state": "Missouri",
+      "city": "Saint Louis",
+      "killed": 2,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-05-florida-pensacola",
+      "date": "2026-07-05",
+      "state": "Florida",
+      "city": "Pensacola",
+      "killed": 1,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-04-new-york-brooklyn",
+      "date": "2026-07-04",
+      "state": "New York",
+      "city": "Brooklyn",
+      "killed": 0,
+      "injured": 8,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-04-south-carolina-hilton-head-island-(hilton-head)",
+      "date": "2026-07-04",
+      "state": "South Carolina",
+      "city": "Hilton Head Island (Hilton Head)",
+      "killed": 0,
+      "injured": 6,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-04-kentucky-radcliff",
+      "date": "2026-07-04",
+      "state": "Kentucky",
+      "city": "Radcliff",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-04-ohio-dayton",
+      "date": "2026-07-04",
+      "state": "Ohio",
+      "city": "Dayton",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-04-michigan-mount-clemens",
+      "date": "2026-07-04",
+      "state": "Michigan",
+      "city": "Mount Clemens",
+      "killed": 0,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-04-mississippi-centreville",
+      "date": "2026-07-04",
+      "state": "Mississippi",
+      "city": "Centreville",
+      "killed": 2,
+      "injured": 7,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-04-florida-miami",
+      "date": "2026-07-04",
+      "state": "Florida",
+      "city": "Miami",
+      "killed": 2,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-04-california-san-bernardino",
+      "date": "2026-07-04",
+      "state": "California",
+      "city": "San Bernardino",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-04-texas-san-antonio",
+      "date": "2026-07-04",
+      "state": "Texas",
+      "city": "San Antonio",
+      "killed": 2,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-02-illinois-chicago",
+      "date": "2026-07-02",
+      "state": "Illinois",
+      "city": "Chicago",
+      "killed": 2,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-28-california-carson",
+      "date": "2026-06-28",
+      "state": "California",
+      "city": "Carson",
+      "killed": 1,
+      "injured": 6,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-27-texas-marshall",
+      "date": "2026-06-27",
+      "state": "Texas",
+      "city": "Marshall",
+      "killed": 2,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-27-louisiana-baton-rouge",
+      "date": "2026-06-27",
+      "state": "Louisiana",
+      "city": "Baton Rouge",
+      "killed": 1,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-27-massachusetts-boston",
+      "date": "2026-06-27",
+      "state": "Massachusetts",
+      "city": "Boston",
+      "killed": 1,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-27-michigan-flint",
+      "date": "2026-06-27",
+      "state": "Michigan",
+      "city": "Flint",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-26-massachusetts-brockton",
+      "date": "2026-06-26",
+      "state": "Massachusetts",
+      "city": "Brockton",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-25-texas-houston",
+      "date": "2026-06-25",
+      "state": "Texas",
+      "city": "Houston",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-23-florida-royal-palm-beach",
+      "date": "2026-06-23",
+      "state": "Florida",
+      "city": "Royal Palm Beach",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-21-virginia-petersburg",
+      "date": "2026-06-21",
+      "state": "Virginia",
+      "city": "Petersburg",
+      "killed": 0,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-21-new-york-new-york-(manhattan)",
+      "date": "2026-06-21",
+      "state": "New York",
+      "city": "New York (Manhattan)",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-21-texas-dallas",
+      "date": "2026-06-21",
+      "state": "Texas",
+      "city": "Dallas",
+      "killed": 0,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-21-pennsylvania-philadelphia",
+      "date": "2026-06-21",
+      "state": "Pennsylvania",
+      "city": "Philadelphia",
+      "killed": 2,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-20-maryland-hanover",
+      "date": "2026-06-20",
+      "state": "Maryland",
+      "city": "Hanover",
+      "killed": 0,
+      "injured": 6,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-20-alabama-montgomery",
+      "date": "2026-06-20",
+      "state": "Alabama",
+      "city": "Montgomery",
+      "killed": 2,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-19-wisconsin-milwaukee",
+      "date": "2026-06-19",
+      "state": "Wisconsin",
+      "city": "Milwaukee",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-19-missouri-kansas-city",
+      "date": "2026-06-19",
+      "state": "Missouri",
+      "city": "Kansas City",
+      "killed": 1,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-19-illinois-chicago",
+      "date": "2026-06-19",
+      "state": "Illinois",
+      "city": "Chicago",
+      "killed": 0,
+      "injured": 13,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-17-texas-amarillo",
+      "date": "2026-06-17",
+      "state": "Texas",
+      "city": "Amarillo",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-17-louisiana-baton-rouge",
+      "date": "2026-06-17",
+      "state": "Louisiana",
+      "city": "Baton Rouge",
+      "killed": 0,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-15-georgia-lithonia",
+      "date": "2026-06-15",
+      "state": "Georgia",
+      "city": "Lithonia",
+      "killed": 0,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-14-south-carolina-columbia",
+      "date": "2026-06-14",
+      "state": "South Carolina",
+      "city": "Columbia",
+      "killed": 1,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-14-mississippi-lexington",
+      "date": "2026-06-14",
+      "state": "Mississippi",
+      "city": "Lexington",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-13-florida-jacksonville",
+      "date": "2026-06-13",
+      "state": "Florida",
+      "city": "Jacksonville",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-13-texas-crockett",
+      "date": "2026-06-13",
+      "state": "Texas",
+      "city": "Crockett",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-12-texas-midland",
+      "date": "2026-06-12",
+      "state": "Texas",
+      "city": "Midland",
+      "killed": 1,
+      "injured": 10,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-11-ohio-cleveland",
+      "date": "2026-06-11",
+      "state": "Ohio",
+      "city": "Cleveland",
+      "killed": 0,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-09-michigan-livonia",
+      "date": "2026-06-09",
+      "state": "Michigan",
+      "city": "Livonia",
+      "killed": 4,
+      "injured": 0,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-09-new-jersey-trenton",
+      "date": "2026-06-09",
+      "state": "New Jersey",
+      "city": "Trenton",
+      "killed": 0,
+      "injured": 7,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-08-illinois-chicago",
+      "date": "2026-06-08",
+      "state": "Illinois",
+      "city": "Chicago",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-07-ohio-cleveland",
+      "date": "2026-06-07",
+      "state": "Ohio",
+      "city": "Cleveland",
+      "killed": 0,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-07-south-carolina-greenville",
+      "date": "2026-06-07",
+      "state": "South Carolina",
+      "city": "Greenville",
+      "killed": 0,
+      "injured": 8,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-06-illinois-chicago",
+      "date": "2026-06-06",
+      "state": "Illinois",
+      "city": "Chicago",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-06-mississippi-jackson",
+      "date": "2026-06-06",
+      "state": "Mississippi",
+      "city": "Jackson",
+      "killed": 1,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-06-texas-fort-worth",
+      "date": "2026-06-06",
+      "state": "Texas",
+      "city": "Fort Worth",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-06-ohio-toledo",
+      "date": "2026-06-06",
+      "state": "Ohio",
+      "city": "Toledo",
+      "killed": 0,
+      "injured": 12,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-06-arizona-phoenix",
+      "date": "2026-06-06",
+      "state": "Arizona",
+      "city": "Phoenix",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-06-missouri-kansas-city",
+      "date": "2026-06-06",
+      "state": "Missouri",
+      "city": "Kansas City",
+      "killed": 0,
+      "injured": 9,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-05-illinois-chicago",
+      "date": "2026-06-05",
+      "state": "Illinois",
+      "city": "Chicago",
+      "killed": 2,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-04-alabama-birmingham",
+      "date": "2026-06-04",
+      "state": "Alabama",
+      "city": "Birmingham",
+      "killed": 2,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-03-california-fairfield",
+      "date": "2026-06-03",
+      "state": "California",
+      "city": "Fairfield",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-01-new-york-buffalo-(cheektowaga)",
+      "date": "2026-06-01",
+      "state": "New York",
+      "city": "Buffalo (Cheektowaga)",
+      "killed": 4,
+      "injured": 0,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-01-iowa-muscatine",
+      "date": "2026-06-01",
+      "state": "Iowa",
+      "city": "Muscatine",
+      "killed": 6,
+      "injured": 0,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-01-louisiana-shreveport",
+      "date": "2026-06-01",
+      "state": "Louisiana",
+      "city": "Shreveport",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-05-31-oregon-sandy",
+      "date": "2026-05-31",
+      "state": "Oregon",
+      "city": "Sandy",
+      "killed": 3,
+      "injured": 1,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-05-30-virginia-petersburg",
+      "date": "2026-05-30",
+      "state": "Virginia",
+      "city": "Petersburg",
+      "killed": 0,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-05-30-california-visalia",
+      "date": "2026-05-30",
+      "state": "California",
+      "city": "Visalia",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-05-28-missouri-saint-louis-(berkeley)",
+      "date": "2026-05-28",
+      "state": "Missouri",
+      "city": "Saint Louis (Berkeley)",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-05-26-ohio-cincinnati",
+      "date": "2026-05-26",
+      "state": "Ohio",
+      "city": "Cincinnati",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-05-26-texas-dallas",
+      "date": "2026-05-26",
+      "state": "Texas",
+      "city": "Dallas",
+      "killed": 3,
+      "injured": 1,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-05-25-missouri-saint-louis",
+      "date": "2026-05-25",
+      "state": "Missouri",
+      "city": "Saint Louis",
+      "killed": 0,
+      "injured": 6,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-05-25-pennsylvania-philadelphia",
+      "date": "2026-05-25",
+      "state": "Pennsylvania",
+      "city": "Philadelphia",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-05-25-illinois-chicago",
+      "date": "2026-05-25",
+      "state": "Illinois",
+      "city": "Chicago",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-05-24-kentucky-louisville",
+      "date": "2026-05-24",
+      "state": "Kentucky",
+      "city": "Louisville",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-05-24-illinois-chicago",
+      "date": "2026-05-24",
+      "state": "Illinois",
+      "city": "Chicago",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-05-24-louisiana-thibodaux",
+      "date": "2026-05-24",
+      "state": "Louisiana",
+      "city": "Thibodaux",
+      "killed": 0,
+      "injured": 7,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-05-23-pennsylvania-philadelphia",
+      "date": "2026-05-23",
+      "state": "Pennsylvania",
+      "city": "Philadelphia",
+      "killed": 1,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-05-18-alabama-mobile",
+      "date": "2026-05-18",
+      "state": "Alabama",
+      "city": "Mobile",
+      "killed": 1,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "mj-san-diego-mosque-shooting",
+      "date": "2026-05-18",
+      "state": "California",
+      "city": "San Diego",
+      "killed": 3,
+      "injured": 0,
+      "source": "mother_jones",
+      "url": "https://www.latimes.com/california/story/2026-05-18/san-diego-islamic-center-shooting-suspects-what-we-know",
+      "summary": "Cain Clark, 17, and Caleb Vasquez, 18, attacked a mosque and then died by self-inflicted gunshots as police responded."
+    },
+    {
+      "id": "gva-2026-05-17-pennsylvania-homestead",
+      "date": "2026-05-17",
+      "state": "Pennsylvania",
+      "city": "Homestead",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-05-16-georgia-atlanta",
+      "date": "2026-05-16",
+      "state": "Georgia",
+      "city": "Atlanta",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-05-16-kansas-wichita",
+      "date": "2026-05-16",
+      "state": "Kansas",
+      "city": "Wichita",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-05-15-missouri-saint-louis",
+      "date": "2026-05-15",
+      "state": "Missouri",
+      "city": "Saint Louis",
+      "killed": 2,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-05-12-pennsylvania-philadelphia",
+      "date": "2026-05-12",
+      "state": "Pennsylvania",
+      "city": "Philadelphia",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-05-10-new-jersey-paterson",
+      "date": "2026-05-10",
+      "state": "New Jersey",
+      "city": "Paterson",
+      "killed": 2,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-05-09-michigan-muskegon",
+      "date": "2026-05-09",
+      "state": "Michigan",
+      "city": "Muskegon",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-05-09-michigan-jackson",
+      "date": "2026-05-09",
+      "state": "Michigan",
+      "city": "Jackson",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-05-09-louisiana-lake-charles",
+      "date": "2026-05-09",
+      "state": "Louisiana",
+      "city": "Lake Charles",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-05-09-florida-reddick",
+      "date": "2026-05-09",
+      "state": "Florida",
+      "city": "Reddick",
+      "killed": 0,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-05-08-tennessee-brownsville",
+      "date": "2026-05-08",
+      "state": "Tennessee",
+      "city": "Brownsville",
+      "killed": 1,
+      "injured": 6,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-05-07-ohio-cleveland",
+      "date": "2026-05-07",
+      "state": "Ohio",
+      "city": "Cleveland",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-05-06-texas-pflugerville",
+      "date": "2026-05-06",
+      "state": "Texas",
+      "city": "Pflugerville",
+      "killed": 1,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-05-05-texas-dallas",
+      "date": "2026-05-05",
+      "state": "Texas",
+      "city": "Dallas",
+      "killed": 0,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-05-05-texas-carrollton",
+      "date": "2026-05-05",
+      "state": "Texas",
+      "city": "Carrollton",
+      "killed": 2,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-05-05-louisiana-monroe-(richwood)",
+      "date": "2026-05-05",
+      "state": "Louisiana",
+      "city": "Monroe (Richwood)",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-05-04-tennessee-memphis",
+      "date": "2026-05-04",
+      "state": "Tennessee",
+      "city": "Memphis",
+      "killed": 0,
+      "injured": 7,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-05-03-oklahoma-edmond",
+      "date": "2026-05-03",
+      "state": "Oklahoma",
+      "city": "Edmond",
+      "killed": 1,
+      "injured": 22,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-05-03-california-bakersfield",
+      "date": "2026-05-03",
+      "state": "California",
+      "city": "Bakersfield",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-05-03-georgia-valdosta",
+      "date": "2026-05-03",
+      "state": "Georgia",
+      "city": "Valdosta",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-05-02-texas-amarillo",
+      "date": "2026-05-02",
+      "state": "Texas",
+      "city": "Amarillo",
+      "killed": 2,
+      "injured": 10,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-05-01-minnesota-minneapolis",
+      "date": "2026-05-01",
+      "state": "Minnesota",
+      "city": "Minneapolis",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-04-28-georgia-albany",
+      "date": "2026-04-28",
+      "state": "Georgia",
+      "city": "Albany",
+      "killed": 1,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-04-27-maryland-columbia",
+      "date": "2026-04-27",
+      "state": "Maryland",
+      "city": "Columbia",
+      "killed": 1,
+      "injured": 7,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-04-26-new-york-corona-(queens)",
+      "date": "2026-04-26",
+      "state": "New York",
+      "city": "Corona (Queens)",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-04-26-indiana-bloomington",
+      "date": "2026-04-26",
+      "state": "Indiana",
+      "city": "Bloomington",
+      "killed": 0,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-04-26-texas-austin",
+      "date": "2026-04-26",
+      "state": "Texas",
+      "city": "Austin",
+      "killed": 0,
+      "injured": 6,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-04-26-pennsylvania-vandergrift",
+      "date": "2026-04-26",
+      "state": "Pennsylvania",
+      "city": "Vandergrift",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-04-23-louisiana-baton-rouge",
+      "date": "2026-04-23",
+      "state": "Louisiana",
+      "city": "Baton Rouge",
+      "killed": 1,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-04-23-michigan-lansing",
+      "date": "2026-04-23",
+      "state": "Michigan",
+      "city": "Lansing",
+      "killed": 0,
+      "injured": 6,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-04-22-north-carolina-zebulon",
+      "date": "2026-04-22",
+      "state": "North Carolina",
+      "city": "Zebulon",
+      "killed": 1,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-04-22-illinois-chicago",
+      "date": "2026-04-22",
+      "state": "Illinois",
+      "city": "Chicago",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-04-20-north-carolina-winston-salem-(winston-salem)",
+      "date": "2026-04-20",
+      "state": "North Carolina",
+      "city": "Winston Salem (Winston-salem)",
+      "killed": 1,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-04-20-alaska-anchorage",
+      "date": "2026-04-20",
+      "state": "Alaska",
+      "city": "Anchorage",
+      "killed": 0,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-04-19-iowa-iowa-city",
+      "date": "2026-04-19",
+      "state": "Iowa",
+      "city": "Iowa City",
+      "killed": 0,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-04-19-louisiana-shreveport",
+      "date": "2026-04-19",
+      "state": "Louisiana",
+      "city": "Shreveport",
+      "killed": 8,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-04-19-virginia-temperanceville",
+      "date": "2026-04-19",
+      "state": "Virginia",
+      "city": "Temperanceville",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-04-18-mississippi-union-church",
+      "date": "2026-04-18",
+      "state": "Mississippi",
+      "city": "Union Church",
+      "killed": 0,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-04-18-california-sacramento",
+      "date": "2026-04-18",
+      "state": "California",
+      "city": "Sacramento",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-04-18-virginia-danville",
+      "date": "2026-04-18",
+      "state": "Virginia",
+      "city": "Danville",
+      "killed": 1,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-04-18-arizona-tolleson",
+      "date": "2026-04-18",
+      "state": "Arizona",
+      "city": "Tolleson",
+      "killed": 0,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-04-18-new-jersey-paterson",
+      "date": "2026-04-18",
+      "state": "New Jersey",
+      "city": "Paterson",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-04-18-arizona-litchfield-park",
+      "date": "2026-04-18",
+      "state": "Arizona",
+      "city": "Litchfield Park",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-04-17-illinois-chicago",
+      "date": "2026-04-17",
+      "state": "Illinois",
+      "city": "Chicago",
+      "killed": 3,
+      "injured": 1,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-04-14-missouri-saint-louis",
+      "date": "2026-04-14",
+      "state": "Missouri",
+      "city": "Saint Louis",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-04-12-california-rosemead",
+      "date": "2026-04-12",
+      "state": "California",
+      "city": "Rosemead",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-04-11-mississippi-belzoni",
+      "date": "2026-04-11",
+      "state": "Mississippi",
+      "city": "Belzoni",
+      "killed": 1,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-04-11-new-jersey-union",
+      "date": "2026-04-11",
+      "state": "New Jersey",
+      "city": "Union",
+      "killed": 1,
+      "injured": 6,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-04-11-indiana-fort-wayne",
+      "date": "2026-04-11",
+      "state": "Indiana",
+      "city": "Fort Wayne",
+      "killed": 1,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-04-11-virginia-virginia-beach",
+      "date": "2026-04-11",
+      "state": "Virginia",
+      "city": "Virginia Beach",
+      "killed": 0,
+      "injured": 7,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-04-11-texas-fort-worth",
+      "date": "2026-04-11",
+      "state": "Texas",
+      "city": "Fort Worth",
+      "killed": 1,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-04-06-mississippi-monticello",
+      "date": "2026-04-06",
+      "state": "Mississippi",
+      "city": "Monticello",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-04-05-georgia-ocilla",
+      "date": "2026-04-05",
+      "state": "Georgia",
+      "city": "Ocilla",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-04-05-georgia-atlanta",
+      "date": "2026-04-05",
+      "state": "Georgia",
+      "city": "Atlanta",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-04-03-idaho-pocatello-(chubbuck)",
+      "date": "2026-04-03",
+      "state": "Idaho",
+      "city": "Pocatello (Chubbuck)",
+      "killed": 2,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-04-01-california-los-angeles",
+      "date": "2026-04-01",
+      "state": "California",
+      "city": "Los Angeles",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-03-31-louisiana-winnfield",
+      "date": "2026-03-31",
+      "state": "Louisiana",
+      "city": "Winnfield",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-03-30-pennsylvania-philadelphia",
+      "date": "2026-03-30",
+      "state": "Pennsylvania",
+      "city": "Philadelphia",
+      "killed": 2,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-03-29-idaho-meridian",
+      "date": "2026-03-29",
+      "state": "Idaho",
+      "city": "Meridian",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-03-29-florida-tallahassee",
+      "date": "2026-03-29",
+      "state": "Florida",
+      "city": "Tallahassee",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-03-29-texas-dickinson",
+      "date": "2026-03-29",
+      "state": "Texas",
+      "city": "Dickinson",
+      "killed": 0,
+      "injured": 7,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-03-29-arkansas-little-rock",
+      "date": "2026-03-29",
+      "state": "Arkansas",
+      "city": "Little Rock",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-03-28-texas-houston",
+      "date": "2026-03-28",
+      "state": "Texas",
+      "city": "Houston",
+      "killed": 0,
+      "injured": 6,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-03-26-pennsylvania-philadelphia",
+      "date": "2026-03-26",
+      "state": "Pennsylvania",
+      "city": "Philadelphia",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-03-25-california-sacramento",
+      "date": "2026-03-25",
+      "state": "California",
+      "city": "Sacramento",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-03-24-delaware-wilmington",
+      "date": "2026-03-24",
+      "state": "Delaware",
+      "city": "Wilmington",
+      "killed": 3,
+      "injured": 1,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-03-23-virginia-virginia-beach",
+      "date": "2026-03-23",
+      "state": "Virginia",
+      "city": "Virginia Beach",
+      "killed": 0,
+      "injured": 7,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-03-23-south-carolina-dillon",
+      "date": "2026-03-23",
+      "state": "South Carolina",
+      "city": "Dillon",
+      "killed": 2,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-03-22-pennsylvania-harrisburg-(steelton)",
+      "date": "2026-03-22",
+      "state": "Pennsylvania",
+      "city": "Harrisburg (Steelton)",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-03-22-texas-tyler",
+      "date": "2026-03-22",
+      "state": "Texas",
+      "city": "Tyler",
+      "killed": 2,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-03-22-north-carolina-greensboro",
+      "date": "2026-03-22",
+      "state": "North Carolina",
+      "city": "Greensboro",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-03-22-north-carolina-charlotte",
+      "date": "2026-03-22",
+      "state": "North Carolina",
+      "city": "Charlotte",
+      "killed": 1,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-03-22-illinois-normal",
+      "date": "2026-03-22",
+      "state": "Illinois",
+      "city": "Normal",
+      "killed": 0,
+      "injured": 6,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-03-22-texas-amarillo",
+      "date": "2026-03-22",
+      "state": "Texas",
+      "city": "Amarillo",
+      "killed": 2,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-03-22-new-mexico-albuquerque",
+      "date": "2026-03-22",
+      "state": "New Mexico",
+      "city": "Albuquerque",
+      "killed": 1,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-03-22-texas-amarillo-2",
+      "date": "2026-03-22",
+      "state": "Texas",
+      "city": "Amarillo",
+      "killed": 4,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-03-22-georgia-midway",
+      "date": "2026-03-22",
+      "state": "Georgia",
+      "city": "Midway",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-03-22-new-mexico-clovis",
+      "date": "2026-03-22",
+      "state": "New Mexico",
+      "city": "Clovis",
+      "killed": 2,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-03-21-wisconsin-milwaukee",
+      "date": "2026-03-21",
+      "state": "Wisconsin",
+      "city": "Milwaukee",
+      "killed": 1,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-03-21-oklahoma-lawton",
+      "date": "2026-03-21",
+      "state": "Oklahoma",
+      "city": "Lawton",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-03-21-missouri-saint-louis",
+      "date": "2026-03-21",
+      "state": "Missouri",
+      "city": "Saint Louis",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-03-20-minnesota-minneapolis",
+      "date": "2026-03-20",
+      "state": "Minnesota",
+      "city": "Minneapolis",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-03-16-florida-palm-beach-gardens-(riviera-beach)",
+      "date": "2026-03-16",
+      "state": "Florida",
+      "city": "Palm Beach Gardens (Riviera Beach)",
+      "killed": 2,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-03-14-minnesota-minneapolis",
+      "date": "2026-03-14",
+      "state": "Minnesota",
+      "city": "Minneapolis",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-03-14-texas-port-aransas",
+      "date": "2026-03-14",
+      "state": "Texas",
+      "city": "Port Aransas",
+      "killed": 0,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-03-09-virginia-dumfries",
+      "date": "2026-03-09",
+      "state": "Virginia",
+      "city": "Dumfries",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-03-08-north-carolina-asheville",
+      "date": "2026-03-08",
+      "state": "North Carolina",
+      "city": "Asheville",
+      "killed": 0,
+      "injured": 7,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-03-08-new-york-brooklyn",
+      "date": "2026-03-08",
+      "state": "New York",
+      "city": "Brooklyn",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-03-07-virginia-virginia-beach",
+      "date": "2026-03-07",
+      "state": "Virginia",
+      "city": "Virginia Beach",
+      "killed": 0,
+      "injured": 6,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-03-07-california-oakland",
+      "date": "2026-03-07",
+      "state": "California",
+      "city": "Oakland",
+      "killed": 2,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-03-07-arkansas-osceola",
+      "date": "2026-03-07",
+      "state": "Arkansas",
+      "city": "Osceola",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-03-06-alabama-selma",
+      "date": "2026-03-06",
+      "state": "Alabama",
+      "city": "Selma",
+      "killed": 0,
+      "injured": 6,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-03-05-florida-apopka",
+      "date": "2026-03-05",
+      "state": "Florida",
+      "city": "Apopka",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-03-01-ohio-cincinnati",
+      "date": "2026-03-01",
+      "state": "Ohio",
+      "city": "Cincinnati",
+      "killed": 0,
+      "injured": 9,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-03-01-texas-austin",
+      "date": "2026-03-01",
+      "state": "Texas",
+      "city": "Austin",
+      "killed": 3,
+      "injured": 15,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-03-01-iowa-marshalltown",
+      "date": "2026-03-01",
+      "state": "Iowa",
+      "city": "Marshalltown",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "mj-austin-bar-shooting",
+      "date": "2026-03-01",
+      "state": "Texas",
+      "city": "Austin",
+      "killed": 3,
+      "injured": 13,
+      "source": "mother_jones",
+      "url": "https://www.cnn.com/2026/03/02/us/austin-mass-shooting-ndiaga-diagne-wwk-hnk",
+      "summary": "Ndiaga Diagne, 53, opened fire in a popular entertainment district along Sixth Street, and was quickly killed in a gun battle with police. Diagne had emigrated to the US in 2000 and became a naturalized citizen in 2013."
+    },
+    {
+      "id": "gva-2026-02-28-texas-edinburg",
+      "date": "2026-02-28",
+      "state": "Texas",
+      "city": "Edinburg",
+      "killed": 4,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-02-28-california-palm-springs",
+      "date": "2026-02-28",
+      "state": "California",
+      "city": "Palm Springs",
+      "killed": 2,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-02-28-california-anaheim",
+      "date": "2026-02-28",
+      "state": "California",
+      "city": "Anaheim",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-02-27-michigan-detroit",
+      "date": "2026-02-27",
+      "state": "Michigan",
+      "city": "Detroit",
+      "killed": 2,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-02-23-missouri-highlandville",
+      "date": "2026-02-23",
+      "state": "Missouri",
+      "city": "Highlandville",
+      "killed": 2,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-02-22-florida-jacksonville",
+      "date": "2026-02-22",
+      "state": "Florida",
+      "city": "Jacksonville",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-02-21-virginia-richmond",
+      "date": "2026-02-21",
+      "state": "Virginia",
+      "city": "Richmond",
+      "killed": 2,
+      "injured": 7,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-02-21-missouri-kansas-city",
+      "date": "2026-02-21",
+      "state": "Missouri",
+      "city": "Kansas City",
+      "killed": 2,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-02-21-florida-jacksonville",
+      "date": "2026-02-21",
+      "state": "Florida",
+      "city": "Jacksonville",
+      "killed": 0,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-02-19-michigan-flint",
+      "date": "2026-02-19",
+      "state": "Michigan",
+      "city": "Flint",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-02-18-georgia-atlanta",
+      "date": "2026-02-18",
+      "state": "Georgia",
+      "city": "Atlanta",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-02-16-rhode-island-pawtucket",
+      "date": "2026-02-16",
+      "state": "Rhode Island",
+      "city": "Pawtucket",
+      "killed": 3,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-02-15-ohio-cincinnati",
+      "date": "2026-02-15",
+      "state": "Ohio",
+      "city": "Cincinnati",
+      "killed": 2,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-02-15-north-carolina-charlotte",
+      "date": "2026-02-15",
+      "state": "North Carolina",
+      "city": "Charlotte",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-02-15-missouri-kansas-city",
+      "date": "2026-02-15",
+      "state": "Missouri",
+      "city": "Kansas City",
+      "killed": 2,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-02-15-louisiana-new-orleans",
+      "date": "2026-02-15",
+      "state": "Louisiana",
+      "city": "New Orleans",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-02-15-alabama-mobile",
+      "date": "2026-02-15",
+      "state": "Alabama",
+      "city": "Mobile",
+      "killed": 0,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-02-15-florida-orlando",
+      "date": "2026-02-15",
+      "state": "Florida",
+      "city": "Orlando",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-02-12-louisiana-hammond",
+      "date": "2026-02-12",
+      "state": "Louisiana",
+      "city": "Hammond",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-02-10-florida-sarasota",
+      "date": "2026-02-10",
+      "state": "Florida",
+      "city": "Sarasota",
+      "killed": 6,
+      "injured": 0,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-02-08-california-san-jose",
+      "date": "2026-02-08",
+      "state": "California",
+      "city": "San Jose",
+      "killed": 0,
+      "injured": 6,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-02-08-florida-jacksonville",
+      "date": "2026-02-08",
+      "state": "Florida",
+      "city": "Jacksonville",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-02-07-texas-plainview",
+      "date": "2026-02-07",
+      "state": "Texas",
+      "city": "Plainview",
+      "killed": 4,
+      "injured": 0,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-02-04-florida-jacksonville",
+      "date": "2026-02-04",
+      "state": "Florida",
+      "city": "Jacksonville",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-02-04-california-los-angeles",
+      "date": "2026-02-04",
+      "state": "California",
+      "city": "Los Angeles",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-02-01-north-carolina-concord",
+      "date": "2026-02-01",
+      "state": "North Carolina",
+      "city": "Concord",
+      "killed": 2,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-02-01-indiana-indianapolis",
+      "date": "2026-02-01",
+      "state": "Indiana",
+      "city": "Indianapolis",
+      "killed": 2,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-02-01-washington-seattle",
+      "date": "2026-02-01",
+      "state": "Washington",
+      "city": "Seattle",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-01-31-texas-houston",
+      "date": "2026-01-31",
+      "state": "Texas",
+      "city": "Houston",
+      "killed": 1,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-01-31-louisiana-clinton",
+      "date": "2026-01-31",
+      "state": "Louisiana",
+      "city": "Clinton",
+      "killed": 0,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-01-29-north-carolina-mount-airy",
+      "date": "2026-01-29",
+      "state": "North Carolina",
+      "city": "Mount Airy",
+      "killed": 2,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-01-26-pennsylvania-philadelphia",
+      "date": "2026-01-26",
+      "state": "Pennsylvania",
+      "city": "Philadelphia",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-01-24-massachusetts-carver",
+      "date": "2026-01-24",
+      "state": "Massachusetts",
+      "city": "Carver",
+      "killed": 2,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-01-23-georgia-lawrenceville",
+      "date": "2026-01-23",
+      "state": "Georgia",
+      "city": "Lawrenceville",
+      "killed": 4,
+      "injured": 0,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-01-18-louisiana-baton-rouge",
+      "date": "2026-01-18",
+      "state": "Louisiana",
+      "city": "Baton Rouge",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-01-17-washington-seattle",
+      "date": "2026-01-17",
+      "state": "Washington",
+      "city": "Seattle",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-01-16-louisiana-new-orleans",
+      "date": "2026-01-16",
+      "state": "Louisiana",
+      "city": "New Orleans",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-01-11-texas-slaton",
+      "date": "2026-01-11",
+      "state": "Texas",
+      "city": "Slaton",
+      "killed": 2,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-01-11-california-los-angeles",
+      "date": "2026-01-11",
+      "state": "California",
+      "city": "Los Angeles",
+      "killed": 1,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-01-11-texas-newton",
+      "date": "2026-01-11",
+      "state": "Texas",
+      "city": "Newton",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-01-11-colorado-strasburg",
+      "date": "2026-01-11",
+      "state": "Colorado",
+      "city": "Strasburg",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-01-09-mississippi-cedarbluff",
+      "date": "2026-01-09",
+      "state": "Mississippi",
+      "city": "Cedarbluff",
+      "killed": 6,
+      "injured": 0,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-01-07-utah-salt-lake-city",
+      "date": "2026-01-07",
+      "state": "Utah",
+      "city": "Salt Lake City",
+      "killed": 2,
+      "injured": 6,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-01-06-alabama-montgomery",
+      "date": "2026-01-06",
+      "state": "Alabama",
+      "city": "Montgomery",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-01-04-tennessee-talbott",
+      "date": "2026-01-04",
+      "state": "Tennessee",
+      "city": "Talbott",
+      "killed": 2,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-01-04-kentucky-louisville",
+      "date": "2026-01-04",
+      "state": "Kentucky",
+      "city": "Louisville",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-01-03-indiana-indianapolis",
+      "date": "2026-01-03",
+      "state": "Indiana",
+      "city": "Indianapolis",
+      "killed": 2,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-01-03-colorado-denver",
+      "date": "2026-01-03",
+      "state": "Colorado",
+      "city": "Denver",
+      "killed": 2,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-01-02-tennessee-memphis",
+      "date": "2026-01-02",
+      "state": "Tennessee",
+      "city": "Memphis",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-01-01-texas-dallas",
+      "date": "2026-01-01",
+      "state": "Texas",
+      "city": "Dallas",
+      "killed": 1,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-01-01-mississippi-jackson",
+      "date": "2026-01-01",
+      "state": "Mississippi",
+      "city": "Jackson",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-01-01-texas-houston",
+      "date": "2026-01-01",
+      "state": "Texas",
+      "city": "Houston",
+      "killed": 0,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-12-31-south-carolina-anderson",
+      "date": "2025-12-31",
+      "state": "South Carolina",
+      "city": "Anderson",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-12-31-texas-round-rock",
+      "date": "2025-12-31",
+      "state": "Texas",
+      "city": "Round Rock",
+      "killed": 0,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-12-30-california-los-angeles-(east-los-angeles)",
+      "date": "2025-12-30",
+      "state": "California",
+      "city": "Los Angeles (East Los Angeles)",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-12-28-arizona-phoenix",
+      "date": "2025-12-28",
+      "state": "Arizona",
+      "city": "Phoenix",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-12-28-florida-fort-lauderdale",
+      "date": "2025-12-28",
+      "state": "Florida",
+      "city": "Fort Lauderdale",
+      "killed": 0,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-12-28-illinois-chicago",
+      "date": "2025-12-28",
+      "state": "Illinois",
+      "city": "Chicago",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-12-27-texas-el-paso-(socorro)",
+      "date": "2025-12-27",
+      "state": "Texas",
+      "city": "El Paso (Socorro)",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-12-26-california-san-jose",
+      "date": "2025-12-26",
+      "state": "California",
+      "city": "San Jose",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-12-25-california-lancaster",
+      "date": "2025-12-25",
+      "state": "California",
+      "city": "Lancaster",
+      "killed": 1,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-12-24-colorado-aurora",
+      "date": "2025-12-24",
+      "state": "Colorado",
+      "city": "Aurora",
+      "killed": 2,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-12-24-alabama-jacksonville",
+      "date": "2025-12-24",
+      "state": "Alabama",
+      "city": "Jacksonville",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-12-24-illinois-chicago",
+      "date": "2025-12-24",
+      "state": "Illinois",
+      "city": "Chicago",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-12-24-mississippi-greenwood",
+      "date": "2025-12-24",
+      "state": "Mississippi",
+      "city": "Greenwood",
+      "killed": 2,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-12-23-georgia-albany",
+      "date": "2025-12-23",
+      "state": "Georgia",
+      "city": "Albany",
+      "killed": 1,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-12-20-florida-jacksonville",
+      "date": "2025-12-20",
+      "state": "Florida",
+      "city": "Jacksonville",
+      "killed": 0,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-12-20-california-oakland",
+      "date": "2025-12-20",
+      "state": "California",
+      "city": "Oakland",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-12-15-maryland-baltimore",
+      "date": "2025-12-15",
+      "state": "Maryland",
+      "city": "Baltimore",
+      "killed": 1,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-12-14-new-york-brooklyn",
+      "date": "2025-12-14",
+      "state": "New York",
+      "city": "Brooklyn",
+      "killed": 0,
+      "injured": 6,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-12-14-ohio-cleveland",
+      "date": "2025-12-14",
+      "state": "Ohio",
+      "city": "Cleveland",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-12-13-rhode-island-providence",
+      "date": "2025-12-13",
+      "state": "Rhode Island",
+      "city": "Providence",
+      "killed": 3,
+      "injured": 8,
+      "source": "gva"
+    },
+    {
+      "id": "mj-brown-university-and-mit-shooting",
+      "date": "2025-12-13",
+      "state": "Rhode Island",
+      "city": "Providence",
+      "killed": 3,
+      "injured": 9,
+      "source": "mother_jones",
+      "url": "https://www.nytimes.com/2025/12/19/us/mit-professor-shooting-suspect-portugal-lisbon-physics.html",
+      "summary": "Claudio Neves Valente, 48, a former student at Brown, opened fire inside the school of engineering, killing two victims and injuring nine others; two days later he shot and killed an MIT professor, who had been his former classmate in Portugal. After a six-day regional manhunt and a key tip from a reddit user, authorities found Neves Valente, dead from a self-inflicted gunshot wound, in a storage rental facility in New Hampshire."
+    },
+    {
+      "id": "gva-2025-12-08-montana-nye",
+      "date": "2025-12-08",
+      "state": "Montana",
+      "city": "Nye",
+      "killed": 2,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-12-07-california-san-jose",
+      "date": "2025-12-07",
+      "state": "California",
+      "city": "San Jose",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-12-07-florida-clearwater",
+      "date": "2025-12-07",
+      "state": "Florida",
+      "city": "Clearwater",
+      "killed": 1,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-12-06-michigan-muskegon",
+      "date": "2025-12-06",
+      "state": "Michigan",
+      "city": "Muskegon",
+      "killed": 2,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-12-06-maryland-baltimore",
+      "date": "2025-12-06",
+      "state": "Maryland",
+      "city": "Baltimore",
+      "killed": 2,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-12-06-texas-dallas",
+      "date": "2025-12-06",
+      "state": "Texas",
+      "city": "Dallas",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-12-05-south-carolina-union",
+      "date": "2025-12-05",
+      "state": "South Carolina",
+      "city": "Union",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-11-29-california-stockton",
+      "date": "2025-11-29",
+      "state": "California",
+      "city": "Stockton",
+      "killed": 4,
+      "injured": 13,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-11-24-texas-dallas",
+      "date": "2025-11-24",
+      "state": "Texas",
+      "city": "Dallas",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-11-23-tennessee-union-city",
+      "date": "2025-11-23",
+      "state": "Tennessee",
+      "city": "Union City",
+      "killed": 1,
+      "injured": 6,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-11-22-texas-houston",
+      "date": "2025-11-22",
+      "state": "Texas",
+      "city": "Houston",
+      "killed": 1,
+      "injured": 9,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-11-22-arizona-phoenix",
+      "date": "2025-11-22",
+      "state": "Arizona",
+      "city": "Phoenix",
+      "killed": 2,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-11-21-illinois-chicago",
+      "date": "2025-11-21",
+      "state": "Illinois",
+      "city": "Chicago",
+      "killed": 0,
+      "injured": 7,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-11-16-florida-jacksonville",
+      "date": "2025-11-16",
+      "state": "Florida",
+      "city": "Jacksonville",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-11-15-kansas-carbondale",
+      "date": "2025-11-15",
+      "state": "Kansas",
+      "city": "Carbondale",
+      "killed": 0,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-11-15-new-mexico-las-cruces",
+      "date": "2025-11-15",
+      "state": "New Mexico",
+      "city": "Las Cruces",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-11-15-mississippi-mantee",
+      "date": "2025-11-15",
+      "state": "Mississippi",
+      "city": "Mantee",
+      "killed": 0,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-11-15-new-jersey-newark",
+      "date": "2025-11-15",
+      "state": "New Jersey",
+      "city": "Newark",
+      "killed": 3,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-11-08-california-san-francisco",
+      "date": "2025-11-08",
+      "state": "California",
+      "city": "San Francisco",
+      "killed": 0,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-11-07-delaware-wilmington",
+      "date": "2025-11-07",
+      "state": "Delaware",
+      "city": "Wilmington",
+      "killed": 0,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-11-02-california-winnetka",
+      "date": "2025-11-02",
+      "state": "California",
+      "city": "Winnetka",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-11-02-ohio-cincinnati",
+      "date": "2025-11-02",
+      "state": "Ohio",
+      "city": "Cincinnati",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-11-02-california-elk-grove",
+      "date": "2025-11-02",
+      "state": "California",
+      "city": "Elk Grove",
+      "killed": 2,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-11-02-ohio-akron",
+      "date": "2025-11-02",
+      "state": "Ohio",
+      "city": "Akron",
+      "killed": 1,
+      "injured": 7,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-11-02-illinois-chicago",
+      "date": "2025-11-02",
+      "state": "Illinois",
+      "city": "Chicago",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-11-01-florida-gretna",
+      "date": "2025-11-01",
+      "state": "Florida",
+      "city": "Gretna",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-11-01-california-sacramento",
+      "date": "2025-11-01",
+      "state": "California",
+      "city": "Sacramento",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-11-01-arizona-tucson",
+      "date": "2025-11-01",
+      "state": "Arizona",
+      "city": "Tucson",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-10-31-texas-san-antonio",
+      "date": "2025-10-31",
+      "state": "Texas",
+      "city": "San Antonio",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-10-31-oklahoma-oklahoma-city",
+      "date": "2025-10-31",
+      "state": "Oklahoma",
+      "city": "Oklahoma City",
+      "killed": 0,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-10-26-tennessee-nashville",
+      "date": "2025-10-26",
+      "state": "Tennessee",
+      "city": "Nashville",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-10-26-washington-pasco",
+      "date": "2025-10-26",
+      "state": "Washington",
+      "city": "Pasco",
+      "killed": 0,
+      "injured": 6,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-10-25-north-carolina-maxton",
+      "date": "2025-10-25",
+      "state": "North Carolina",
+      "city": "Maxton",
+      "killed": 2,
+      "injured": 11,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-10-25-pennsylvania-lincoln-university",
+      "date": "2025-10-25",
+      "state": "Pennsylvania",
+      "city": "Lincoln University",
+      "killed": 1,
+      "injured": 6,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-10-20-california-buena-park",
+      "date": "2025-10-20",
+      "state": "California",
+      "city": "Buena Park",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-10-20-delaware-dover",
+      "date": "2025-10-20",
+      "state": "Delaware",
+      "city": "Dover",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-10-19-alabama-pinson",
+      "date": "2025-10-19",
+      "state": "Alabama",
+      "city": "Pinson",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-10-18-mississippi-gautier",
+      "date": "2025-10-18",
+      "state": "Mississippi",
+      "city": "Gautier",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-10-18-ohio-cleveland",
+      "date": "2025-10-18",
+      "state": "Ohio",
+      "city": "Cleveland",
+      "killed": 2,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-10-18-texas-dallas",
+      "date": "2025-10-18",
+      "state": "Texas",
+      "city": "Dallas",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-10-17-oklahoma-bethany",
+      "date": "2025-10-17",
+      "state": "Oklahoma",
+      "city": "Bethany",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-10-17-texas-mabank",
+      "date": "2025-10-17",
+      "state": "Texas",
+      "city": "Mabank",
+      "killed": 3,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-10-17-illinois-chicago",
+      "date": "2025-10-17",
+      "state": "Illinois",
+      "city": "Chicago",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-10-12-south-carolina-anderson",
+      "date": "2025-10-12",
+      "state": "South Carolina",
+      "city": "Anderson",
+      "killed": 2,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-10-12-texas-dallas",
+      "date": "2025-10-12",
+      "state": "Texas",
+      "city": "Dallas",
+      "killed": 2,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-10-12-kansas-wichita",
+      "date": "2025-10-12",
+      "state": "Kansas",
+      "city": "Wichita",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-10-12-south-carolina-saint-helena-island",
+      "date": "2025-10-12",
+      "state": "South Carolina",
+      "city": "Saint Helena Island",
+      "killed": 3,
+      "injured": 15,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-10-10-south-carolina-kingstree",
+      "date": "2025-10-10",
+      "state": "South Carolina",
+      "city": "Kingstree",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-10-10-mississippi-leland",
+      "date": "2025-10-10",
+      "state": "Mississippi",
+      "city": "Leland",
+      "killed": 7,
+      "injured": 12,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-10-10-ohio-youngstown",
+      "date": "2025-10-10",
+      "state": "Ohio",
+      "city": "Youngstown",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-10-08-missouri-saint-louis",
+      "date": "2025-10-08",
+      "state": "Missouri",
+      "city": "Saint Louis",
+      "killed": 1,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-10-07-minnesota-minneapolis",
+      "date": "2025-10-07",
+      "state": "Minnesota",
+      "city": "Minneapolis",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-10-05-texas-fort-worth",
+      "date": "2025-10-05",
+      "state": "Texas",
+      "city": "Fort Worth",
+      "killed": 1,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-10-04-texas-angleton",
+      "date": "2025-10-04",
+      "state": "Texas",
+      "city": "Angleton",
+      "killed": 2,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-10-04-alabama-montgomery",
+      "date": "2025-10-04",
+      "state": "Alabama",
+      "city": "Montgomery",
+      "killed": 2,
+      "injured": 12,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-10-04-alabama-mobile",
+      "date": "2025-10-04",
+      "state": "Alabama",
+      "city": "Mobile",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-10-01-georgia-atlanta",
+      "date": "2025-10-01",
+      "state": "Georgia",
+      "city": "Atlanta",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-09-28-michigan-grand-blanc",
+      "date": "2025-09-28",
+      "state": "Michigan",
+      "city": "Grand Blanc",
+      "killed": 4,
+      "injured": 7,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-09-28-michigan-highland-park",
+      "date": "2025-09-28",
+      "state": "Michigan",
+      "city": "Highland Park",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-09-28-texas-eagle-pass",
+      "date": "2025-09-28",
+      "state": "Texas",
+      "city": "Eagle Pass",
+      "killed": 2,
+      "injured": 6,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-09-28-louisiana-new-orleans",
+      "date": "2025-09-28",
+      "state": "Louisiana",
+      "city": "New Orleans",
+      "killed": 1,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-09-28-alabama-selma",
+      "date": "2025-09-28",
+      "state": "Alabama",
+      "city": "Selma",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "mj-michigan-mormon-church-shooting",
+      "date": "2025-09-28",
+      "state": "Michigan",
+      "city": "Grand Blanc",
+      "killed": 4,
+      "injured": 8,
+      "source": "mother_jones",
+      "url": "https://www.nbcnews.com/news/us-news/what-we-know-thomas-jacob-sanford-suspect-michigan-church-shooting-rcna234309",
+      "summary": "Thomas J. Sanford, 40, an ex-Marine and Iraq War veteran, crashed his truck into a Mormon church during crowded Sunday morning services. He opened fire with a semiautomatic rifle and also carried out an arson attack on the building, before dying in a gun battle with responding police."
+    },
+    {
+      "id": "gva-2025-09-27-north-carolina-raleigh",
+      "date": "2025-09-27",
+      "state": "North Carolina",
+      "city": "Raleigh",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-09-27-louisiana-alexandria",
+      "date": "2025-09-27",
+      "state": "Louisiana",
+      "city": "Alexandria",
+      "killed": 1,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-09-27-north-carolina-southport",
+      "date": "2025-09-27",
+      "state": "North Carolina",
+      "city": "Southport",
+      "killed": 3,
+      "injured": 6,
+      "source": "gva"
+    },
+    {
+      "id": "mj-north-carolina-waterfront-bar-shooting",
+      "date": "2025-09-27",
+      "state": "North Carolina",
+      "city": "Southport Yacht Basin",
+      "killed": 3,
+      "injured": 8,
+      "source": "mother_jones",
+      "url": "https://www.cnn.com/2025/09/28/us/southport-yacht-basin-north-carolina-shooting-hnk?cid=ios_app",
+      "summary": "Nigel Edge (formerly Sean DeBevoise), 39, an ex-Marine and decorated Iraq war veteran, opened fire from a boat at the waterfront establishment; was arrested the following day by local authorities."
+    },
+    {
+      "id": "gva-2025-09-24-texas-el-paso",
+      "date": "2025-09-24",
+      "state": "Texas",
+      "city": "El Paso",
+      "killed": 2,
+      "injured": 1,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2025-09-23-california-hemet",
+      "date": "2025-09-23",
+      "state": "California",
+      "city": "Hemet",
+      "killed": 1,
+      "injured": 3,
       "source": "gva"
     }
   ],

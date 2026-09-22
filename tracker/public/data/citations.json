@@ -53,5 +53,15 @@
       "source_domain": "newsx.com",
       "published_at": "20260727T061500Z"
     }
+  },
+  "gva-2026-09-20-north-carolina-greensboro": {
+    "queried_at": "2026-09-22T18:39:20.488Z",
+    "had_results": false,
+    "match": null
+  },
+  "gva-2026-09-20-georgia-stone-mountain": {
+    "queried_at": "2026-09-22T18:39:47.482Z",
+    "had_results": false,
+    "match": null
   }
 }

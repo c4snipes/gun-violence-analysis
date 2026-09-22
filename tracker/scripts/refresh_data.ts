@@ -182,12 +182,27 @@ async function main(): Promise<void> {
   const incidents = ensureUniqueIds(rawIncidents);
 
   const model = await loadModelResults();
+  const windowCutoff = new Date();
+  windowCutoff.setDate(windowCutoff.getDate() - WINDOW_DAYS);
   const snapshot: TrackerSnapshot = {
     generated_at: new Date().toISOString(),
     window_days: WINDOW_DAYS,
     totals_by_source: computeTotalsBySource(incidents, staleSources, WINDOW_DAYS),
     states: computeStateStats(incidents, WINDOW_DAYS),
-    recent_incidents: incidents.slice(0, 100),
+    // Everything inside the rolling window, not an arbitrary newest-N.
+    //
+    // This was slice(0, 100), which was fine when the GVA scrape returned one
+    // page and there were only ~30 incidents to show. Now that a full year is
+    // fetched, a flat 100 would silently cut the table off partway through the
+    // window while the headline count said 428 -- the same shape of error the
+    // pagination fix just removed, one layer up.
+    //
+    // The cap is a payload guard, not a window: at ~142 bytes an incident,
+    // 500 rows is about 70KB, and passing it means something upstream is very
+    // wrong rather than that the year was busy.
+    recent_incidents: incidents
+      .filter((i) => new Date(i.date) >= windowCutoff)
+      .slice(0, 500),
     model,
   };
 

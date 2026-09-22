@@ -1,7 +1,9 @@
 import { format, formatDistanceToNow } from "date-fns";
 
 import AwaitingData from "./components/AwaitingData";
-import IncidentMatrix from "./components/IncidentMatrix";
+import CitationFootnotes from "./components/CitationFootnotes";
+import { IncidentPageProvider } from "./components/IncidentPage";
+import IncidentTable from "./components/IncidentTable";
 import Masthead from "./components/Masthead";
 import StateMap from "./components/StateMap";
 import { footnoteForCitation } from "./lib/citations";
@@ -39,15 +41,13 @@ export default async function Dashboard() {
   // Citation footnotes are kept in their own numbered sequence with a dagger
   // marker. They are evidence a reader can check, not a fifth dataset, so they
   // never join the numbered source footnotes above.
-  const recentIncidents = snap.recent_incidents.slice(0, 8);
-  const citationNotes: { text: string; url: string }[] = [];
-  const citationMarkers = new Map<string, string>();
-  for (const incident of recentIncidents) {
-    const footnote = footnoteForCitation(incident, citations[incident.id]);
-    if (!footnote) continue;
-    citationNotes.push({ text: footnote.text, url: footnote.url });
-    citationMarkers.set(incident.id, `†${citationNotes.length}`);
-  }
+  // Index-aligned with recentIncidents, null where an incident has no
+  // footnote. The table and the footnote block both slice this by the current
+  // page, which is what keeps their numbering in step.
+  const recentIncidents = snap.recent_incidents;
+  const citationNotes = recentIncidents.map((incident) =>
+    footnoteForCitation(incident, citations[incident.id]),
+  );
 
   return (
     <>
@@ -107,6 +107,11 @@ export default async function Dashboard() {
         })}
       </section>
 
+      {/*
+        The provider spans both the table and the citation footnote block,
+        because the two describe the same eight rows and must page together.
+      */}
+      <IncidentPageProvider total={recentIncidents.length}>
       <section className="tables">
         <div>
           <div className="table-title">Figure 1 &mdash; Incidents per 10 million residents, by state</div>
@@ -130,7 +135,7 @@ export default async function Dashboard() {
             condition is unrecorded, an em dash means it does not qualify.
           </p>
           {recentIncidents.length > 0 ? (
-            <IncidentMatrix incidents={recentIncidents} citationMarkers={citationMarkers} />
+            <IncidentTable incidents={recentIncidents} notes={citationNotes} />
           ) : (
             <p className="table-note">No incidents recorded in the current window.</p>
           )}
@@ -147,22 +152,8 @@ export default async function Dashboard() {
         </footer>
       )}
 
-      {citationNotes.length > 0 && (
-        <footer className="footnotes citation-footnotes">
-          <p className="table-note">
-            Related news coverage, matched automatically and unconfirmed. Not one of the four
-            datasets, and it does not resolve any definition above.
-          </p>
-          {citationNotes.map((note, i) => (
-            <div key={i}>
-              <sup>{`†${i + 1}`}</sup> {note.text}{" "}
-              <a href={note.url} target="_blank" rel="noopener noreferrer">
-                {note.url}
-              </a>
-            </div>
-          ))}
-        </footer>
-      )}
+      <CitationFootnotes notes={citationNotes} />
+      </IncidentPageProvider>
 
       <p className="table-note" style={{ marginTop: "2rem" }}>
         Last generated {formatDistanceToNow(generated, { addSuffix: true })}.
