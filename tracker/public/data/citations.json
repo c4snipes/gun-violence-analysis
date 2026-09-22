@@ -38,5 +38,20 @@
     "queried_at": "2026-09-20T10:14:28.623Z",
     "had_results": true,
     "match": null
+  },
+  "gva-2026-08-02-north-carolina-greensboro": {
+    "queried_at": "2026-09-22T10:27:51.286Z",
+    "had_results": true,
+    "match": null
+  },
+  "gva-2026-07-26-washington-seattle": {
+    "queried_at": "2026-09-22T10:29:55.803Z",
+    "had_results": true,
+    "match": {
+      "title": "Seattle Shooting : At Least 6 Shot , Including Child , After Gunfire Erupts at Seattle Food Festival in Washington",
+      "url": "https://www.newsx.com/world/seattle-shooting-at-least-6-shot-including-child-after-gunfire-erupts-at-seattle-food-festival-in-washington-253002/",
+      "source_domain": "newsx.com",
+      "published_at": "20260727T061500Z"
+    }
   }
 }
