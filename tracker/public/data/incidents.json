@@ -1,5 +1,14 @@
 [
   {
+    "id": "gva-2026-09-22-arizona-mesa",
+    "date": "2026-09-22",
+    "state": "Arizona",
+    "city": "Mesa",
+    "killed": 0,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-09-20-north-carolina-greensboro",
     "date": "2026-09-20",
     "state": "North Carolina",

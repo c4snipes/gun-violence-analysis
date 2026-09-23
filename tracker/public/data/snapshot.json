@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-23T10:22:52.990Z",
+  "generated_at": "2026-09-23T17:59:21.237Z",
   "window_days": 365,
   "totals_by_source": [
     {
       "source": "gva",
-      "incidents": 426,
+      "incidents": 427,
       "killed": 411,
-      "injured": 1820,
-      "latest_incident_date": "2026-09-20"
+      "injured": 1824,
+      "latest_incident_date": "2026-09-22"
     },
     {
       "source": "mother_jones",
@@ -100,10 +100,10 @@
       "population": 7691212,
       "counts_by_source": {
         "gva": {
-          "incidents": 7,
+          "incidents": 8,
           "killed": 4,
-          "injured": 30,
-          "per_100k": 0.091012963886576
+          "injured": 34,
+          "per_100k": 0.10401481587037258
         },
         "mother_jones": {
           "incidents": 0,
@@ -1584,6 +1584,15 @@
     }
   ],
   "recent_incidents": [
+    {
+      "id": "gva-2026-09-22-arizona-mesa",
+      "date": "2026-09-22",
+      "state": "Arizona",
+      "city": "Mesa",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
     {
       "id": "gva-2026-09-20-north-carolina-greensboro",
       "date": "2026-09-20",
@@ -5486,7 +5495,7 @@
     }
   ],
   "model": {
-    "fitted_at": "2026-09-23T10:22:10.382888+00:00",
+    "fitted_at": "2026-09-23T17:58:47.625834+00:00",
     "n_states": 50,
     "outcome": "firearm_mortality_rate",
     "ols": {
