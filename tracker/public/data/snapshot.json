@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-22T18:39:03.421Z",
+  "generated_at": "2026-09-23T10:22:52.990Z",
   "window_days": 365,
   "totals_by_source": [
     {
       "source": "gva",
-      "incidents": 427,
-      "killed": 412,
-      "injured": 1823,
+      "incidents": 426,
+      "killed": 411,
+      "injured": 1820,
       "latest_incident_date": "2026-09-20"
     },
     {
@@ -162,10 +162,10 @@
       "population": 39345844,
       "counts_by_source": {
         "gva": {
-          "incidents": 32,
-          "killed": 22,
-          "injured": 134,
-          "per_100k": 0.08133006372922132
+          "incidents": 31,
+          "killed": 21,
+          "injured": 131,
+          "per_100k": 0.07878849923768315
         },
         "mother_jones": {
           "incidents": 1,
@@ -1855,21 +1855,21 @@
       "source": "gva"
     },
     {
-      "id": "gva-2026-08-22-oregon-forest-grove",
-      "date": "2026-08-22",
-      "state": "Oregon",
-      "city": "Forest Grove",
-      "killed": 5,
-      "injured": 0,
-      "source": "gva"
-    },
-    {
       "id": "gva-2026-08-22-louisiana-eunice",
       "date": "2026-08-22",
       "state": "Louisiana",
       "city": "Eunice",
       "killed": 2,
       "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-08-22-oregon-forest-grove",
+      "date": "2026-08-22",
+      "state": "Oregon",
+      "city": "Forest Grove",
+      "killed": 5,
+      "injured": 0,
       "source": "gva"
     },
     {
@@ -5483,19 +5483,10 @@
       "killed": 2,
       "injured": 1,
       "source": "gva"
-    },
-    {
-      "id": "gva-2025-09-23-california-hemet",
-      "date": "2025-09-23",
-      "state": "California",
-      "city": "Hemet",
-      "killed": 1,
-      "injured": 3,
-      "source": "gva"
     }
   ],
   "model": {
-    "fitted_at": "2026-09-22T17:46:08.515537+00:00",
+    "fitted_at": "2026-09-23T10:22:10.382888+00:00",
     "n_states": 50,
     "outcome": "firearm_mortality_rate",
     "ols": {

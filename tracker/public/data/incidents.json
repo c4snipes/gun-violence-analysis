@@ -270,21 +270,21 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-08-22-oregon-forest-grove",
-    "date": "2026-08-22",
-    "state": "Oregon",
-    "city": "Forest Grove",
-    "killed": 5,
-    "injured": 0,
-    "source": "gva"
-  },
-  {
     "id": "gva-2026-08-22-louisiana-eunice",
     "date": "2026-08-22",
     "state": "Louisiana",
     "city": "Eunice",
     "killed": 2,
     "injured": 3,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-08-22-oregon-forest-grove",
+    "date": "2026-08-22",
+    "state": "Oregon",
+    "city": "Forest Grove",
+    "killed": 5,
+    "injured": 0,
     "source": "gva"
   },
   {
@@ -3906,15 +3906,6 @@
     "city": "Hemet",
     "killed": 1,
     "injured": 3,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-09-22-texas-el-paso",
-    "date": "2025-09-22",
-    "state": "Texas",
-    "city": "El Paso",
-    "killed": 0,
-    "injured": 5,
     "source": "gva"
   },
   {
