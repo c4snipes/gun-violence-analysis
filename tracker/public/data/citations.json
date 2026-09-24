@@ -63,5 +63,15 @@
     "queried_at": "2026-09-22T18:39:47.482Z",
     "had_results": false,
     "match": null
+  },
+  "gva-2026-09-18-illinois-east-saint-louis": {
+    "queried_at": "2026-09-24T10:38:48.943Z",
+    "had_results": false,
+    "match": null
+  },
+  "gva-2026-09-16-maryland-baltimore-2": {
+    "queried_at": "2026-09-24T10:39:52.879Z",
+    "had_results": false,
+    "match": null
   }
 }
