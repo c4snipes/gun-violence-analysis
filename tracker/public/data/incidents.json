@@ -1,5 +1,14 @@
 [
   {
+    "id": "gva-2026-09-25-georgia-rome",
+    "date": "2026-09-25",
+    "state": "Georgia",
+    "city": "Rome",
+    "killed": 0,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-09-24-california-hawthorne",
     "date": "2026-09-24",
     "state": "California",

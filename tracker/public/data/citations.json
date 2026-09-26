@@ -78,5 +78,15 @@
     "queried_at": "2026-09-25T10:43:48.776Z",
     "had_results": false,
     "match": null
+  },
+  "gva-2026-09-18-louisiana-bastrop": {
+    "queried_at": "2026-09-26T10:26:07.003Z",
+    "had_results": false,
+    "match": null
+  },
+  "gva-2026-09-16-maryland-baltimore": {
+    "queried_at": "2026-09-26T10:26:30.948Z",
+    "had_results": false,
+    "match": null
   }
 }
