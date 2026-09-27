@@ -1,5 +1,32 @@
 [
   {
+    "id": "gva-2026-09-26-louisiana-shreveport",
+    "date": "2026-09-26",
+    "state": "Louisiana",
+    "city": "Shreveport",
+    "killed": 0,
+    "injured": 7,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-09-26-virginia-arlington",
+    "date": "2026-09-26",
+    "state": "Virginia",
+    "city": "Arlington",
+    "killed": 0,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-09-26-alaska-anchorage",
+    "date": "2026-09-26",
+    "state": "Alaska",
+    "city": "Anchorage",
+    "killed": 0,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-09-25-georgia-rome",
     "date": "2026-09-25",
     "state": "Georgia",
@@ -159,15 +186,6 @@
     "city": "Tuscaloosa",
     "killed": 0,
     "injured": 7,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-09-12-ohio-euclid-2",
-    "date": "2026-09-12",
-    "state": "Ohio",
-    "city": "Euclid",
-    "killed": 0,
-    "injured": 4,
     "source": "gva"
   },
   {
@@ -3044,7 +3062,7 @@
     "state": "Utah",
     "city": "Salt Lake City",
     "killed": 2,
-    "injured": 6,
+    "injured": 5,
     "source": "gva"
   },
   {

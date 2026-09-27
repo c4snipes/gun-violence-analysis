@@ -88,5 +88,15 @@
     "queried_at": "2026-09-26T10:26:30.948Z",
     "had_results": false,
     "match": null
+  },
+  "gva-2026-09-26-louisiana-shreveport": {
+    "queried_at": "2026-09-27T10:56:53.407Z",
+    "had_results": false,
+    "match": null
+  },
+  "gva-2026-09-26-alaska-anchorage": {
+    "queried_at": "2026-09-27T10:57:35.273Z",
+    "had_results": false,
+    "match": null
   }
 }
