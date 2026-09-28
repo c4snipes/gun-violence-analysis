@@ -98,5 +98,10 @@
     "queried_at": "2026-09-27T10:57:35.273Z",
     "had_results": false,
     "match": null
+  },
+  "gva-2026-09-27-missouri-cape-girardeau": {
+    "queried_at": "2026-09-28T12:08:44.233Z",
+    "had_results": false,
+    "match": null
   }
 }

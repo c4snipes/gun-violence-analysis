@@ -1,11 +1,56 @@
 [
   {
-    "id": "gva-2026-09-26-louisiana-shreveport",
-    "date": "2026-09-26",
-    "state": "Louisiana",
-    "city": "Shreveport",
+    "id": "gva-2026-09-27-south-carolina-columbia",
+    "date": "2026-09-27",
+    "state": "South Carolina",
+    "city": "Columbia",
     "killed": 0,
-    "injured": 7,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-09-27-missouri-cape-girardeau",
+    "date": "2026-09-27",
+    "state": "Missouri",
+    "city": "Cape Girardeau",
+    "killed": 1,
+    "injured": 3,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-09-27-georgia-macon",
+    "date": "2026-09-27",
+    "state": "Georgia",
+    "city": "Macon",
+    "killed": 0,
+    "injured": 11,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-09-27-michigan-detroit",
+    "date": "2026-09-27",
+    "state": "Michigan",
+    "city": "Detroit",
+    "killed": 3,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-09-27-florida-lake-wales",
+    "date": "2026-09-27",
+    "state": "Florida",
+    "city": "Lake Wales",
+    "killed": 0,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-09-26-georgia-blakely",
+    "date": "2026-09-26",
+    "state": "Georgia",
+    "city": "Blakely",
+    "killed": 0,
+    "injured": 5,
     "source": "gva"
   },
   {
@@ -14,7 +59,7 @@
     "state": "Virginia",
     "city": "Arlington",
     "killed": 0,
-    "injured": 4,
+    "injured": 5,
     "source": "gva"
   },
   {
@@ -24,6 +69,15 @@
     "city": "Anchorage",
     "killed": 0,
     "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-09-26-louisiana-shreveport",
+    "date": "2026-09-26",
+    "state": "Louisiana",
+    "city": "Shreveport",
+    "killed": 0,
+    "injured": 7,
     "source": "gva"
   },
   {
@@ -1478,19 +1532,19 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-06-13-florida-jacksonville",
+    "id": "gva-2026-06-13-texas-crockett",
     "date": "2026-06-13",
-    "state": "Florida",
-    "city": "Jacksonville",
+    "state": "Texas",
+    "city": "Crockett",
     "killed": 0,
     "injured": 4,
     "source": "gva"
   },
   {
-    "id": "gva-2026-06-13-texas-crockett",
+    "id": "gva-2026-06-13-florida-jacksonville",
     "date": "2026-06-13",
-    "state": "Texas",
-    "city": "Crockett",
+    "state": "Florida",
+    "city": "Jacksonville",
     "killed": 0,
     "injured": 4,
     "source": "gva"
@@ -3905,33 +3959,6 @@
     "source": "mother_jones",
     "url": "https://www.nbcnews.com/news/us-news/what-we-know-thomas-jacob-sanford-suspect-michigan-church-shooting-rcna234309",
     "summary": "Thomas J. Sanford, 40, an ex-Marine and Iraq War veteran, crashed his truck into a Mormon church during crowded Sunday morning services. He opened fire with a semiautomatic rifle and also carried out an arson attack on the building, before dying in a gun battle with responding police."
-  },
-  {
-    "id": "gva-2025-09-27-north-carolina-raleigh",
-    "date": "2025-09-27",
-    "state": "North Carolina",
-    "city": "Raleigh",
-    "killed": 0,
-    "injured": 4,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-09-27-louisiana-alexandria",
-    "date": "2025-09-27",
-    "state": "Louisiana",
-    "city": "Alexandria",
-    "killed": 1,
-    "injured": 4,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-09-27-north-carolina-southport",
-    "date": "2025-09-27",
-    "state": "North Carolina",
-    "city": "Southport",
-    "killed": 3,
-    "injured": 6,
-    "source": "gva"
   },
   {
     "id": "mj-north-carolina-waterfront-bar-shooting",
