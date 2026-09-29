@@ -1,5 +1,14 @@
 [
   {
+    "id": "gva-2026-09-27-michigan-detroit",
+    "date": "2026-09-27",
+    "state": "Michigan",
+    "city": "Detroit",
+    "killed": 3,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-09-27-south-carolina-columbia",
     "date": "2026-09-27",
     "state": "South Carolina",
@@ -9,30 +18,21 @@
     "source": "gva"
   },
   {
+    "id": "gva-2026-09-27-georgia-macon",
+    "date": "2026-09-27",
+    "state": "Georgia",
+    "city": "Macon",
+    "killed": 0,
+    "injured": 12,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-09-27-missouri-cape-girardeau",
     "date": "2026-09-27",
     "state": "Missouri",
     "city": "Cape Girardeau",
     "killed": 1,
     "injured": 3,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-09-27-georgia-macon",
-    "date": "2026-09-27",
-    "state": "Georgia",
-    "city": "Macon",
-    "killed": 0,
-    "injured": 11,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-09-27-michigan-detroit",
-    "date": "2026-09-27",
-    "state": "Michigan",
-    "city": "Detroit",
-    "killed": 3,
-    "injured": 4,
     "source": "gva"
   },
   {
@@ -3902,51 +3902,6 @@
     "city": "Atlanta",
     "killed": 0,
     "injured": 4,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-09-28-michigan-grand-blanc",
-    "date": "2025-09-28",
-    "state": "Michigan",
-    "city": "Grand Blanc",
-    "killed": 4,
-    "injured": 7,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-09-28-michigan-highland-park",
-    "date": "2025-09-28",
-    "state": "Michigan",
-    "city": "Highland Park",
-    "killed": 0,
-    "injured": 4,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-09-28-texas-eagle-pass",
-    "date": "2025-09-28",
-    "state": "Texas",
-    "city": "Eagle Pass",
-    "killed": 2,
-    "injured": 6,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-09-28-louisiana-new-orleans",
-    "date": "2025-09-28",
-    "state": "Louisiana",
-    "city": "New Orleans",
-    "killed": 1,
-    "injured": 4,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-09-28-alabama-selma",
-    "date": "2025-09-28",
-    "state": "Alabama",
-    "city": "Selma",
-    "killed": 1,
-    "injured": 3,
     "source": "gva"
   },
   {
