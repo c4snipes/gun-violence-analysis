@@ -9,10 +9,28 @@
     "source": "gva"
   },
   {
+    "id": "gva-2026-09-27-missouri-cape-girardeau",
+    "date": "2026-09-27",
+    "state": "Missouri",
+    "city": "Cape Girardeau",
+    "killed": 1,
+    "injured": 3,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-09-27-south-carolina-columbia",
     "date": "2026-09-27",
     "state": "South Carolina",
     "city": "Columbia",
+    "killed": 0,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-09-27-florida-lake-wales",
+    "date": "2026-09-27",
+    "state": "Florida",
+    "city": "Lake Wales",
     "killed": 0,
     "injured": 4,
     "source": "gva"
@@ -27,21 +45,12 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-09-27-missouri-cape-girardeau",
-    "date": "2026-09-27",
-    "state": "Missouri",
-    "city": "Cape Girardeau",
-    "killed": 1,
-    "injured": 3,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-09-27-florida-lake-wales",
-    "date": "2026-09-27",
-    "state": "Florida",
-    "city": "Lake Wales",
+    "id": "gva-2026-09-26-louisiana-shreveport",
+    "date": "2026-09-26",
+    "state": "Louisiana",
+    "city": "Shreveport",
     "killed": 0,
-    "injured": 4,
+    "injured": 7,
     "source": "gva"
   },
   {
@@ -72,15 +81,6 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-09-26-louisiana-shreveport",
-    "date": "2026-09-26",
-    "state": "Louisiana",
-    "city": "Shreveport",
-    "killed": 0,
-    "injured": 7,
-    "source": "gva"
-  },
-  {
     "id": "gva-2026-09-25-georgia-rome",
     "date": "2026-09-25",
     "state": "Georgia",
@@ -90,10 +90,10 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-09-24-california-hawthorne",
+    "id": "gva-2026-09-24-california-gardena",
     "date": "2026-09-24",
     "state": "California",
-    "city": "Hawthorne",
+    "city": "Gardena",
     "killed": 0,
     "injured": 4,
     "source": "gva"

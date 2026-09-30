@@ -118,5 +118,10 @@
     "queried_at": "2026-09-29T11:44:55.355Z",
     "had_results": true,
     "match": null
+  },
+  "gva-2026-09-26-virginia-arlington": {
+    "queried_at": "2026-09-30T11:29:53.824Z",
+    "had_results": true,
+    "match": null
   }
 }
