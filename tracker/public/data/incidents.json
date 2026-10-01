@@ -9,28 +9,10 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-09-27-missouri-cape-girardeau",
-    "date": "2026-09-27",
-    "state": "Missouri",
-    "city": "Cape Girardeau",
-    "killed": 1,
-    "injured": 3,
-    "source": "gva"
-  },
-  {
     "id": "gva-2026-09-27-south-carolina-columbia",
     "date": "2026-09-27",
     "state": "South Carolina",
     "city": "Columbia",
-    "killed": 0,
-    "injured": 4,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-09-27-florida-lake-wales",
-    "date": "2026-09-27",
-    "state": "Florida",
-    "city": "Lake Wales",
     "killed": 0,
     "injured": 4,
     "source": "gva"
@@ -42,6 +24,24 @@
     "city": "Macon",
     "killed": 0,
     "injured": 12,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-09-27-missouri-cape-girardeau",
+    "date": "2026-09-27",
+    "state": "Missouri",
+    "city": "Cape Girardeau",
+    "killed": 1,
+    "injured": 3,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-09-27-florida-lake-wales",
+    "date": "2026-09-27",
+    "state": "Florida",
+    "city": "Lake Wales",
+    "killed": 0,
+    "injured": 4,
     "source": "gva"
   },
   {

@@ -123,5 +123,20 @@
     "queried_at": "2026-09-30T11:29:53.824Z",
     "had_results": true,
     "match": null
+  },
+  "gva-2026-09-19-florida-sanford": {
+    "queried_at": "2026-10-01T11:58:29.746Z",
+    "had_results": true,
+    "match": {
+      "title": "Sanford mass shooting update : At least 6 people shot at Florida gathering , 2 critical – what we know so far",
+      "url": "https://www.hindustantimes.com/world-news/us-news/sanford-mass-shooting-update-at-least-6-people-shot-at-florida-gathering-2-critical-what-we-know-so-far-101789882843897.html",
+      "source_domain": "hindustantimes.com",
+      "published_at": "20260920T084500Z"
+    }
+  },
+  "gva-2026-09-13-texas-san-benito": {
+    "queried_at": "2026-10-01T11:59:18.567Z",
+    "had_results": false,
+    "match": null
   }
 }
