@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T11:55:55.213Z",
+  "generated_at": "2026-10-02T11:28:31.187Z",
   "window_days": 365,
   "totals_by_source": [
     {
@@ -5482,7 +5482,7 @@
     }
   ],
   "model": {
-    "fitted_at": "2026-10-01T11:55:22.393762+00:00",
+    "fitted_at": "2026-10-02T11:27:54.405366+00:00",
     "n_states": 50,
     "outcome": "firearm_mortality_rate",
     "ols": {
