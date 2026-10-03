@@ -1,19 +1,28 @@
 [
   {
-    "id": "gva-2026-09-27-michigan-detroit",
-    "date": "2026-09-27",
-    "state": "Michigan",
-    "city": "Detroit",
-    "killed": 3,
-    "injured": 4,
-    "source": "gva"
-  },
-  {
     "id": "gva-2026-09-27-south-carolina-columbia",
     "date": "2026-09-27",
     "state": "South Carolina",
     "city": "Columbia",
     "killed": 0,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-09-27-florida-lake-wales",
+    "date": "2026-09-27",
+    "state": "Florida",
+    "city": "Lake Wales",
+    "killed": 0,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-09-27-michigan-detroit",
+    "date": "2026-09-27",
+    "state": "Michigan",
+    "city": "Detroit",
+    "killed": 3,
     "injured": 4,
     "source": "gva"
   },
@@ -36,30 +45,12 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-09-27-florida-lake-wales",
-    "date": "2026-09-27",
-    "state": "Florida",
-    "city": "Lake Wales",
-    "killed": 0,
-    "injured": 4,
-    "source": "gva"
-  },
-  {
     "id": "gva-2026-09-26-louisiana-shreveport",
     "date": "2026-09-26",
     "state": "Louisiana",
     "city": "Shreveport",
     "killed": 0,
     "injured": 7,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-09-26-georgia-blakely",
-    "date": "2026-09-26",
-    "state": "Georgia",
-    "city": "Blakely",
-    "killed": 0,
-    "injured": 5,
     "source": "gva"
   },
   {
@@ -78,6 +69,15 @@
     "city": "Anchorage",
     "killed": 0,
     "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-09-26-georgia-blakely",
+    "date": "2026-09-26",
+    "state": "Georgia",
+    "city": "Blakely",
+    "killed": 0,
+    "injured": 6,
     "source": "gva"
   },
   {
@@ -216,21 +216,21 @@
     "source": "gva"
   },
   {
+    "id": "gva-2026-09-12-ohio-euclid",
+    "date": "2026-09-12",
+    "state": "Ohio",
+    "city": "Euclid",
+    "killed": 1,
+    "injured": 3,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-09-12-texas-dallas",
     "date": "2026-09-12",
     "state": "Texas",
     "city": "Dallas",
     "killed": 1,
     "injured": 5,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-09-12-ohio-euclid",
-    "date": "2026-09-12",
-    "state": "Ohio",
-    "city": "Euclid",
-    "killed": 2,
-    "injured": 2,
     "source": "gva"
   },
   {
@@ -1005,8 +1005,8 @@
     "date": "2026-07-12",
     "state": "Pennsylvania",
     "city": "Philadelphia",
-    "killed": 1,
-    "injured": 4,
+    "killed": 2,
+    "injured": 3,
     "source": "gva"
   },
   {
@@ -2650,21 +2650,21 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-03-07-virginia-virginia-beach",
-    "date": "2026-03-07",
-    "state": "Virginia",
-    "city": "Virginia Beach",
-    "killed": 0,
-    "injured": 6,
-    "source": "gva"
-  },
-  {
     "id": "gva-2026-03-07-california-oakland",
     "date": "2026-03-07",
     "state": "California",
     "city": "Oakland",
     "killed": 2,
     "injured": 5,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-03-07-virginia-virginia-beach",
+    "date": "2026-03-07",
+    "state": "Virginia",
+    "city": "Virginia Beach",
+    "killed": 0,
+    "injured": 6,
     "source": "gva"
   },
   {
