@@ -138,5 +138,10 @@
     "queried_at": "2026-10-01T11:59:18.567Z",
     "had_results": false,
     "match": null
+  },
+  "gva-2026-10-03-maryland-baltimore": {
+    "queried_at": "2026-10-04T11:26:02.971Z",
+    "had_results": false,
+    "match": null
   }
 }

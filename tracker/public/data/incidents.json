@@ -1,5 +1,14 @@
 [
   {
+    "id": "gva-2026-10-03-maryland-baltimore",
+    "date": "2026-10-03",
+    "state": "Maryland",
+    "city": "Baltimore",
+    "killed": 1,
+    "injured": 1,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-09-27-south-carolina-columbia",
     "date": "2026-09-27",
     "state": "South Carolina",
@@ -866,21 +875,21 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-07-19-north-carolina-asheville",
-    "date": "2026-07-19",
-    "state": "North Carolina",
-    "city": "Asheville",
-    "killed": 2,
-    "injured": 7,
-    "source": "gva"
-  },
-  {
     "id": "gva-2026-07-19-tennessee-denmark",
     "date": "2026-07-19",
     "state": "Tennessee",
     "city": "Denmark",
     "killed": 3,
     "injured": 9,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-07-19-north-carolina-asheville",
+    "date": "2026-07-19",
+    "state": "North Carolina",
+    "city": "Asheville",
+    "killed": 2,
+    "injured": 7,
     "source": "gva"
   },
   {
