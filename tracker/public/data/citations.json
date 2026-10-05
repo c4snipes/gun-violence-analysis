@@ -143,5 +143,10 @@
     "queried_at": "2026-10-04T11:26:02.971Z",
     "had_results": false,
     "match": null
+  },
+  "gva-2026-09-27-south-carolina-columbia": {
+    "queried_at": "2026-10-05T12:50:54.958Z",
+    "had_results": true,
+    "match": null
   }
 }

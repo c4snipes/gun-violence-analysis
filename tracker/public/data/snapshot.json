@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-04T11:25:50.776Z",
+  "generated_at": "2026-10-05T12:49:35.227Z",
   "window_days": 365,
   "totals_by_source": [
     {
       "source": "gva",
-      "incidents": 426,
-      "killed": 398,
-      "injured": 1820,
-      "latest_incident_date": "2026-10-03"
+      "incidents": 428,
+      "killed": 400,
+      "injured": 1862,
+      "latest_incident_date": "2026-10-04"
     },
     {
       "source": "mother_jones",
@@ -317,10 +317,10 @@
       "population": 11401288,
       "counts_by_source": {
         "gva": {
-          "incidents": 20,
-          "killed": 17,
-          "injured": 79,
-          "per_100k": 0.1754187772469216
+          "incidents": 21,
+          "killed": 19,
+          "injured": 114,
+          "per_100k": 0.18418971610926765
         },
         "mother_jones": {
           "incidents": 0,
@@ -629,7 +629,7 @@
         "gva": {
           "incidents": 8,
           "killed": 6,
-          "injured": 39,
+          "injured": 42,
           "per_100k": 0.12727949622775392
         },
         "mother_jones": {
@@ -999,10 +999,10 @@
       "population": 20003435,
       "counts_by_source": {
         "gva": {
-          "incidents": 9,
-          "killed": 6,
-          "injured": 39,
-          "per_100k": 0.04499227257718487
+          "incidents": 10,
+          "killed": 7,
+          "injured": 42,
+          "per_100k": 0.04999141397464985
         },
         "mother_jones": {
           "incidents": 0,
@@ -1341,8 +1341,8 @@
       "counts_by_source": {
         "gva": {
           "incidents": 47,
-          "killed": 56,
-          "injured": 200,
+          "killed": 55,
+          "injured": 201,
           "per_100k": 0.14641259242995808
         },
         "mother_jones": {
@@ -1585,12 +1585,39 @@
   ],
   "recent_incidents": [
     {
+      "id": "gva-2026-10-04-georgia-vienna",
+      "date": "2026-10-04",
+      "state": "Georgia",
+      "city": "Vienna",
+      "killed": 2,
+      "injured": 35,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-10-04-new-york-albany",
+      "date": "2026-10-04",
+      "state": "New York",
+      "city": "Albany",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-10-04-texas-dallas",
+      "date": "2026-10-04",
+      "state": "Texas",
+      "city": "Dallas",
+      "killed": 0,
+      "injured": 6,
+      "source": "gva"
+    },
+    {
       "id": "gva-2026-10-03-maryland-baltimore",
       "date": "2026-10-03",
       "state": "Maryland",
       "city": "Baltimore",
       "killed": 1,
-      "injured": 1,
+      "injured": 4,
       "source": "gva"
     },
     {
@@ -5452,19 +5479,10 @@
       "killed": 1,
       "injured": 3,
       "source": "gva"
-    },
-    {
-      "id": "gva-2025-10-05-texas-fort-worth",
-      "date": "2025-10-05",
-      "state": "Texas",
-      "city": "Fort Worth",
-      "killed": 1,
-      "injured": 5,
-      "source": "gva"
     }
   ],
   "model": {
-    "fitted_at": "2026-10-04T11:25:07.897496+00:00",
+    "fitted_at": "2026-10-05T12:49:00.310244+00:00",
     "n_states": 50,
     "outcome": "firearm_mortality_rate",
     "ols": {

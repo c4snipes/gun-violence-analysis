@@ -1,11 +1,38 @@
 [
   {
+    "id": "gva-2026-10-04-georgia-vienna",
+    "date": "2026-10-04",
+    "state": "Georgia",
+    "city": "Vienna",
+    "killed": 2,
+    "injured": 35,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-10-04-new-york-albany",
+    "date": "2026-10-04",
+    "state": "New York",
+    "city": "Albany",
+    "killed": 1,
+    "injured": 3,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-10-04-texas-dallas",
+    "date": "2026-10-04",
+    "state": "Texas",
+    "city": "Dallas",
+    "killed": 0,
+    "injured": 6,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-10-03-maryland-baltimore",
     "date": "2026-10-03",
     "state": "Maryland",
     "city": "Baltimore",
     "killed": 1,
-    "injured": 1,
+    "injured": 4,
     "source": "gva"
   },
   {
@@ -3875,33 +3902,6 @@
     "city": "Fort Worth",
     "killed": 1,
     "injured": 5,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-10-04-texas-angleton",
-    "date": "2025-10-04",
-    "state": "Texas",
-    "city": "Angleton",
-    "killed": 2,
-    "injured": 2,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-10-04-alabama-montgomery",
-    "date": "2025-10-04",
-    "state": "Alabama",
-    "city": "Montgomery",
-    "killed": 2,
-    "injured": 12,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-10-04-alabama-mobile",
-    "date": "2025-10-04",
-    "state": "Alabama",
-    "city": "Mobile",
-    "killed": 0,
-    "injured": 4,
     "source": "gva"
   },
   {
