@@ -27,6 +27,15 @@
     "source": "gva"
   },
   {
+    "id": "gva-2026-10-03-new-jersey-trenton",
+    "date": "2026-10-03",
+    "state": "New Jersey",
+    "city": "Trenton",
+    "killed": 0,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-10-03-maryland-baltimore",
     "date": "2026-10-03",
     "state": "Maryland",
@@ -3893,15 +3902,6 @@
     "city": "Minneapolis",
     "killed": 1,
     "injured": 3,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-10-05-texas-fort-worth",
-    "date": "2025-10-05",
-    "state": "Texas",
-    "city": "Fort Worth",
-    "killed": 1,
-    "injured": 5,
     "source": "gva"
   },
   {
