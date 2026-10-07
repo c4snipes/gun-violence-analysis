@@ -148,5 +148,20 @@
     "queried_at": "2026-10-05T12:50:54.958Z",
     "had_results": true,
     "match": null
+  },
+  "gva-2026-10-04-georgia-vienna": {
+    "queried_at": "2026-10-07T12:11:12.257Z",
+    "had_results": false,
+    "match": null
+  },
+  "gva-2026-10-04-texas-dallas": {
+    "queried_at": "2026-10-07T12:12:19.375Z",
+    "had_results": false,
+    "match": null
+  },
+  "gva-2026-09-27-michigan-detroit": {
+    "queried_at": "2026-10-07T12:13:04.875Z",
+    "had_results": true,
+    "match": null
   }
 }

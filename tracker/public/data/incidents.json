@@ -1,5 +1,14 @@
 [
   {
+    "id": "gva-2026-10-05-virginia-portsmouth",
+    "date": "2026-10-05",
+    "state": "Virginia",
+    "city": "Portsmouth",
+    "killed": 0,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-10-04-georgia-vienna",
     "date": "2026-10-04",
     "state": "Georgia",
@@ -15,6 +24,15 @@
     "city": "Albany",
     "killed": 1,
     "injured": 3,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-10-04-california-sacramento",
+    "date": "2026-10-04",
+    "state": "California",
+    "city": "Sacramento",
+    "killed": 0,
+    "injured": 4,
     "source": "gva"
   },
   {
@@ -45,6 +63,15 @@
     "source": "gva"
   },
   {
+    "id": "gva-2026-09-27-michigan-detroit",
+    "date": "2026-09-27",
+    "state": "Michigan",
+    "city": "Detroit",
+    "killed": 3,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-09-27-south-carolina-columbia",
     "date": "2026-09-27",
     "state": "South Carolina",
@@ -59,15 +86,6 @@
     "state": "Florida",
     "city": "Lake Wales",
     "killed": 0,
-    "injured": 4,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-09-27-michigan-detroit",
-    "date": "2026-09-27",
-    "state": "Michigan",
-    "city": "Detroit",
-    "killed": 3,
     "injured": 4,
     "source": "gva"
   },
