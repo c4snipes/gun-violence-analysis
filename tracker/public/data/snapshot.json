@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-07T12:10:38.431Z",
+  "generated_at": "2026-10-08T12:21:17.132Z",
   "window_days": 365,
   "totals_by_source": [
     {
       "source": "gva",
       "incidents": 430,
-      "killed": 399,
-      "injured": 1871,
+      "killed": 398,
+      "injured": 1872,
       "latest_incident_date": "2026-10-05"
     },
     {
@@ -629,7 +629,7 @@
         "gva": {
           "incidents": 8,
           "killed": 6,
-          "injured": 42,
+          "injured": 41,
           "per_100k": 0.12727949622775392
         },
         "mother_jones": {
@@ -782,10 +782,10 @@
       "population": 6297538,
       "counts_by_source": {
         "gva": {
-          "incidents": 16,
-          "killed": 17,
-          "injured": 60,
-          "per_100k": 0.254067541950521
+          "incidents": 15,
+          "killed": 16,
+          "injured": 56,
+          "per_100k": 0.23818832057861342
         },
         "mother_jones": {
           "incidents": 0,
@@ -1340,10 +1340,10 @@
       "population": 32101064,
       "counts_by_source": {
         "gva": {
-          "incidents": 47,
+          "incidents": 48,
           "killed": 55,
-          "injured": 201,
-          "per_100k": 0.14641259242995808
+          "injured": 207,
+          "per_100k": 0.14952775397102103
         },
         "mother_jones": {
           "incidents": 1,
@@ -1630,6 +1630,15 @@
       "source": "gva"
     },
     {
+      "id": "gva-2026-10-03-texas-commerce",
+      "date": "2026-10-03",
+      "state": "Texas",
+      "city": "Commerce",
+      "killed": 0,
+      "injured": 6,
+      "source": "gva"
+    },
+    {
       "id": "gva-2026-10-03-new-jersey-trenton",
       "date": "2026-10-03",
       "state": "New Jersey",
@@ -1644,7 +1653,7 @@
       "state": "Maryland",
       "city": "Baltimore",
       "killed": 1,
-      "injured": 4,
+      "injured": 3,
       "source": "gva"
     },
     {
@@ -2305,21 +2314,21 @@
       "source": "gva"
     },
     {
-      "id": "gva-2026-08-02-north-carolina-greensboro",
-      "date": "2026-08-02",
-      "state": "North Carolina",
-      "city": "Greensboro",
-      "killed": 0,
-      "injured": 9,
-      "source": "gva"
-    },
-    {
       "id": "gva-2026-08-02-new-york-yonkers",
       "date": "2026-08-02",
       "state": "New York",
       "city": "Yonkers",
       "killed": 1,
       "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-08-02-north-carolina-greensboro",
+      "date": "2026-08-02",
+      "state": "North Carolina",
+      "city": "Greensboro",
+      "killed": 0,
+      "injured": 9,
       "source": "gva"
     },
     {
@@ -5488,19 +5497,10 @@
       "killed": 0,
       "injured": 4,
       "source": "gva"
-    },
-    {
-      "id": "gva-2025-10-08-missouri-saint-louis",
-      "date": "2025-10-08",
-      "state": "Missouri",
-      "city": "Saint Louis",
-      "killed": 1,
-      "injured": 4,
-      "source": "gva"
     }
   ],
   "model": {
-    "fitted_at": "2026-10-07T12:10:05.410782+00:00",
+    "fitted_at": "2026-10-08T12:20:45.294893+00:00",
     "n_states": 50,
     "outcome": "firearm_mortality_rate",
     "ols": {

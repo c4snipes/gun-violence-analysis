@@ -45,6 +45,15 @@
     "source": "gva"
   },
   {
+    "id": "gva-2026-10-03-texas-commerce",
+    "date": "2026-10-03",
+    "state": "Texas",
+    "city": "Commerce",
+    "killed": 0,
+    "injured": 6,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-10-03-new-jersey-trenton",
     "date": "2026-10-03",
     "state": "New Jersey",
@@ -59,7 +68,7 @@
     "state": "Maryland",
     "city": "Baltimore",
     "killed": 1,
-    "injured": 4,
+    "injured": 3,
     "source": "gva"
   },
   {
@@ -720,21 +729,21 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-08-02-north-carolina-greensboro",
-    "date": "2026-08-02",
-    "state": "North Carolina",
-    "city": "Greensboro",
-    "killed": 0,
-    "injured": 9,
-    "source": "gva"
-  },
-  {
     "id": "gva-2026-08-02-new-york-yonkers",
     "date": "2026-08-02",
     "state": "New York",
     "city": "Yonkers",
     "killed": 1,
     "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-08-02-north-carolina-greensboro",
+    "date": "2026-08-02",
+    "state": "North Carolina",
+    "city": "Greensboro",
+    "killed": 0,
+    "injured": 9,
     "source": "gva"
   },
   {
@@ -3911,15 +3920,6 @@
     "city": "Saint Louis",
     "killed": 1,
     "injured": 4,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-10-07-minnesota-minneapolis",
-    "date": "2025-10-07",
-    "state": "Minnesota",
-    "city": "Minneapolis",
-    "killed": 1,
-    "injured": 3,
     "source": "gva"
   },
   {

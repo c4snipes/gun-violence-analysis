@@ -163,5 +163,15 @@
     "queried_at": "2026-10-07T12:13:04.875Z",
     "had_results": true,
     "match": null
+  },
+  "gva-2026-10-05-virginia-portsmouth": {
+    "queried_at": "2026-10-08T12:21:30.689Z",
+    "had_results": false,
+    "match": null
+  },
+  "gva-2026-09-26-georgia-blakely": {
+    "queried_at": "2026-10-08T12:23:41.488Z",
+    "had_results": true,
+    "match": null
   }
 }
