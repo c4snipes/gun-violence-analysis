@@ -1,5 +1,14 @@
 [
   {
+    "id": "gva-2026-10-08-alabama-meridianville",
+    "date": "2026-10-08",
+    "state": "Alabama",
+    "city": "Meridianville",
+    "killed": 0,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-10-05-virginia-portsmouth",
     "date": "2026-10-05",
     "state": "Virginia",
@@ -3372,21 +3381,21 @@
     "source": "gva"
   },
   {
-    "id": "gva-2025-12-24-illinois-chicago",
-    "date": "2025-12-24",
-    "state": "Illinois",
-    "city": "Chicago",
-    "killed": 1,
-    "injured": 3,
-    "source": "gva"
-  },
-  {
     "id": "gva-2025-12-24-mississippi-greenwood",
     "date": "2025-12-24",
     "state": "Mississippi",
     "city": "Greenwood",
     "killed": 2,
     "injured": 2,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2025-12-24-illinois-chicago",
+    "date": "2025-12-24",
+    "state": "Illinois",
+    "city": "Chicago",
+    "killed": 1,
+    "injured": 3,
     "source": "gva"
   },
   {
@@ -3910,15 +3919,6 @@
     "state": "Ohio",
     "city": "Youngstown",
     "killed": 0,
-    "injured": 4,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-10-08-missouri-saint-louis",
-    "date": "2025-10-08",
-    "state": "Missouri",
-    "city": "Saint Louis",
-    "killed": 1,
     "injured": 4,
     "source": "gva"
   },
