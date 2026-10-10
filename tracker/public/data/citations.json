@@ -173,5 +173,10 @@
     "queried_at": "2026-10-08T12:23:41.488Z",
     "had_results": true,
     "match": null
+  },
+  "gva-2026-09-24-california-gardena": {
+    "queried_at": "2026-10-10T11:32:33.751Z",
+    "had_results": false,
+    "match": null
   }
 }

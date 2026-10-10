@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-09T12:11:21.856Z",
+  "generated_at": "2026-10-10T11:29:18.641Z",
   "window_days": 365,
   "totals_by_source": [
     {
       "source": "gva",
-      "incidents": 431,
-      "killed": 398,
-      "injured": 1876,
-      "latest_incident_date": "2026-10-08"
+      "incidents": 430,
+      "killed": 402,
+      "injured": 1858,
+      "latest_incident_date": "2026-10-09"
     },
     {
       "source": "mother_jones",
@@ -627,10 +627,10 @@
       "population": 6285380,
       "counts_by_source": {
         "gva": {
-          "incidents": 8,
-          "killed": 6,
-          "injured": 41,
-          "per_100k": 0.12727949622775392
+          "incidents": 9,
+          "killed": 8,
+          "injured": 43,
+          "per_100k": 0.14318943325622316
         },
         "mother_jones": {
           "incidents": 0,
@@ -751,10 +751,10 @@
       "population": 2958148,
       "counts_by_source": {
         "gva": {
-          "incidents": 14,
-          "killed": 22,
-          "injured": 61,
-          "per_100k": 0.4732690859280874
+          "incidents": 13,
+          "killed": 15,
+          "injured": 49,
+          "per_100k": 0.4394641512189383
         },
         "mother_jones": {
           "incidents": 0,
@@ -1092,10 +1092,10 @@
       "population": 11940399,
       "counts_by_source": {
         "gva": {
-          "incidents": 21,
+          "incidents": 20,
           "killed": 13,
-          "injured": 94,
-          "per_100k": 0.17587351980448895
+          "injured": 90,
+          "per_100k": 0.16749859028998948
         },
         "mother_jones": {
           "incidents": 0,
@@ -1185,10 +1185,10 @@
       "population": 13073016,
       "counts_by_source": {
         "gva": {
-          "incidents": 14,
-          "killed": 11,
+          "incidents": 15,
+          "killed": 20,
           "injured": 51,
-          "per_100k": 0.10709081974656805
+          "per_100k": 0.11474016401418005
         },
         "mother_jones": {
           "incidents": 0,
@@ -1247,10 +1247,10 @@
       "population": 5650232,
       "counts_by_source": {
         "gva": {
-          "incidents": 14,
+          "incidents": 13,
           "killed": 10,
-          "injured": 74,
-          "per_100k": 0.24777743639553207
+          "injured": 70,
+          "per_100k": 0.23007904808156548
         },
         "mother_jones": {
           "incidents": 0,
@@ -1585,6 +1585,24 @@
   ],
   "recent_incidents": [
     {
+      "id": "gva-2026-10-09-pennsylvania-erie",
+      "date": "2026-10-09",
+      "state": "Pennsylvania",
+      "city": "Erie",
+      "killed": 9,
+      "injured": 0,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-10-09-maryland-baltimore",
+      "date": "2026-10-09",
+      "state": "Maryland",
+      "city": "Baltimore",
+      "killed": 2,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
       "id": "gva-2026-10-08-alabama-meridianville",
       "date": "2026-10-08",
       "state": "Alabama",
@@ -1729,21 +1747,21 @@
       "source": "gva"
     },
     {
-      "id": "gva-2026-09-26-alaska-anchorage",
-      "date": "2026-09-26",
-      "state": "Alaska",
-      "city": "Anchorage",
-      "killed": 0,
-      "injured": 4,
-      "source": "gva"
-    },
-    {
       "id": "gva-2026-09-26-georgia-blakely",
       "date": "2026-09-26",
       "state": "Georgia",
       "city": "Blakely",
       "killed": 0,
       "injured": 6,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-09-26-alaska-anchorage",
+      "date": "2026-09-26",
+      "state": "Alaska",
+      "city": "Anchorage",
+      "killed": 0,
+      "injured": 4,
       "source": "gva"
     },
     {
@@ -1783,21 +1801,21 @@
       "source": "gva"
     },
     {
-      "id": "gva-2026-09-20-north-carolina-greensboro",
-      "date": "2026-09-20",
-      "state": "North Carolina",
-      "city": "Greensboro",
-      "killed": 1,
-      "injured": 4,
-      "source": "gva"
-    },
-    {
       "id": "gva-2026-09-20-georgia-stone-mountain",
       "date": "2026-09-20",
       "state": "Georgia",
       "city": "Stone Mountain",
       "killed": 2,
       "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-09-20-north-carolina-greensboro",
+      "date": "2026-09-20",
+      "state": "North Carolina",
+      "city": "Greensboro",
+      "killed": 1,
+      "injured": 4,
       "source": "gva"
     },
     {
@@ -2152,15 +2170,6 @@
       "source": "gva"
     },
     {
-      "id": "gva-2026-08-15-virginia-petersburg",
-      "date": "2026-08-15",
-      "state": "Virginia",
-      "city": "Petersburg",
-      "killed": 0,
-      "injured": 5,
-      "source": "gva"
-    },
-    {
       "id": "gva-2026-08-15-texas-houston",
       "date": "2026-08-15",
       "state": "Texas",
@@ -2176,6 +2185,15 @@
       "city": "Chicago",
       "killed": 0,
       "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-08-15-virginia-petersburg",
+      "date": "2026-08-15",
+      "state": "Virginia",
+      "city": "Petersburg",
+      "killed": 0,
+      "injured": 5,
       "source": "gva"
     },
     {
@@ -4453,15 +4471,6 @@
       "source": "gva"
     },
     {
-      "id": "gva-2026-02-21-virginia-richmond",
-      "date": "2026-02-21",
-      "state": "Virginia",
-      "city": "Richmond",
-      "killed": 2,
-      "injured": 7,
-      "source": "gva"
-    },
-    {
       "id": "gva-2026-02-21-missouri-kansas-city",
       "date": "2026-02-21",
       "state": "Missouri",
@@ -4477,6 +4486,15 @@
       "city": "Jacksonville",
       "killed": 0,
       "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-02-21-virginia-richmond",
+      "date": "2026-02-21",
+      "state": "Virginia",
+      "city": "Richmond",
+      "killed": 2,
+      "injured": 7,
       "source": "gva"
     },
     {
@@ -5479,90 +5497,63 @@
       "killed": 3,
       "injured": 15,
       "source": "gva"
-    },
-    {
-      "id": "gva-2025-10-10-south-carolina-kingstree",
-      "date": "2025-10-10",
-      "state": "South Carolina",
-      "city": "Kingstree",
-      "killed": 0,
-      "injured": 4,
-      "source": "gva"
-    },
-    {
-      "id": "gva-2025-10-10-mississippi-leland",
-      "date": "2025-10-10",
-      "state": "Mississippi",
-      "city": "Leland",
-      "killed": 7,
-      "injured": 12,
-      "source": "gva"
-    },
-    {
-      "id": "gva-2025-10-10-ohio-youngstown",
-      "date": "2025-10-10",
-      "state": "Ohio",
-      "city": "Youngstown",
-      "killed": 0,
-      "injured": 4,
-      "source": "gva"
     }
   ],
   "model": {
-    "fitted_at": "2026-10-09T12:10:49.323052+00:00",
+    "fitted_at": "2026-10-10T11:28:47.603603+00:00",
     "n_states": 50,
     "outcome": "firearm_mortality_rate",
     "ols": {
-      "r_squared": 0.7744387844731884,
-      "adj_r_squared": 0.7429651264927031,
+      "r_squared": 0.7744387844731888,
+      "adj_r_squared": 0.7429651264927035,
       "coefficients": [
         {
           "name": "gun_reg_pct",
-          "coef": 51.66128296313114,
-          "std_err": 8.155073169207599,
-          "p_value": 2.375500497683639e-10,
-          "ci_low": 35.67763326019533,
-          "ci_high": 67.64493266606695
+          "coef": 51.66128296307991,
+          "std_err": 8.155073171025204,
+          "p_value": 2.37550051953348e-10,
+          "ci_low": 35.67763325658166,
+          "ci_high": 67.64493266957817
         },
         {
           "name": "poverty_rate",
-          "coef": 0.5659741408903772,
-          "std_err": 0.5435894687891093,
-          "p_value": 0.2977923082407432,
-          "ci_low": -0.4994416403115368,
-          "ci_high": 1.6313899220922914
+          "coef": 0.5659741408803357,
+          "std_err": 0.5435894687878519,
+          "p_value": 0.29779230824819747,
+          "ci_low": -0.49944164031911387,
+          "ci_high": 1.6313899220797854
         },
         {
           "name": "median_household_income",
-          "coef": -0.0000014088660475143264,
-          "std_err": 0.000179637779904276,
-          "p_value": 0.9937424023817562,
-          "ci_low": -0.0003534924449226283,
-          "ci_high": 0.0003506747128275997
+          "coef": -0.0000014088660480707796,
+          "std_err": 0.00017963777990324272,
+          "p_value": 0.9937424023792487,
+          "ci_low": -0.0003534924449211596,
+          "ci_high": 0.00035067471282501807
         },
         {
           "name": "credit_score",
-          "coef": -0.1565765181408093,
-          "std_err": 0.0713187138622951,
-          "p_value": 0.028131486753928868,
-          "ci_low": -0.2963586287346252,
-          "ci_high": -0.016794407546993406
+          "coef": -0.15657651814079948,
+          "std_err": 0.07131871386223189,
+          "p_value": 0.028131486753799295,
+          "ci_low": -0.2963586287344915,
+          "ci_high": -0.01679440754710748
         },
         {
           "name": "pop_density",
-          "coef": -0.008344859309630722,
-          "std_err": 0.003012997140381244,
-          "p_value": 0.005612160254628798,
-          "ci_low": -0.014250225190300133,
-          "ci_high": -0.00243949342896131
+          "coef": -0.008344859309636087,
+          "std_err": 0.003012997140360295,
+          "p_value": 0.005612160254266354,
+          "ci_low": -0.01425022519026444,
+          "ci_high": -0.0024394934290077348
         },
         {
           "name": "gov_party_rep",
-          "coef": 1.7239646321360356,
-          "std_err": 1.0174453741768075,
-          "p_value": 0.09018833085827146,
-          "ci_low": -0.27019165748738616,
-          "ci_high": 3.718120921759457
+          "coef": 1.7239646321360411,
+          "std_err": 1.0174453741733398,
+          "p_value": 0.09018833085717383,
+          "ci_low": -0.27019165748058405,
+          "ci_high": 3.718120921752666
         }
       ]
     },

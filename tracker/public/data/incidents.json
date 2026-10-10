@@ -1,5 +1,23 @@
 [
   {
+    "id": "gva-2026-10-09-pennsylvania-erie",
+    "date": "2026-10-09",
+    "state": "Pennsylvania",
+    "city": "Erie",
+    "killed": 9,
+    "injured": 0,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-10-09-maryland-baltimore",
+    "date": "2026-10-09",
+    "state": "Maryland",
+    "city": "Baltimore",
+    "killed": 2,
+    "injured": 2,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-10-08-alabama-meridianville",
     "date": "2026-10-08",
     "state": "Alabama",
@@ -144,21 +162,21 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-09-26-alaska-anchorage",
-    "date": "2026-09-26",
-    "state": "Alaska",
-    "city": "Anchorage",
-    "killed": 0,
-    "injured": 4,
-    "source": "gva"
-  },
-  {
     "id": "gva-2026-09-26-georgia-blakely",
     "date": "2026-09-26",
     "state": "Georgia",
     "city": "Blakely",
     "killed": 0,
     "injured": 6,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-09-26-alaska-anchorage",
+    "date": "2026-09-26",
+    "state": "Alaska",
+    "city": "Anchorage",
+    "killed": 0,
+    "injured": 4,
     "source": "gva"
   },
   {
@@ -198,21 +216,21 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-09-20-north-carolina-greensboro",
-    "date": "2026-09-20",
-    "state": "North Carolina",
-    "city": "Greensboro",
-    "killed": 1,
-    "injured": 4,
-    "source": "gva"
-  },
-  {
     "id": "gva-2026-09-20-georgia-stone-mountain",
     "date": "2026-09-20",
     "state": "Georgia",
     "city": "Stone Mountain",
     "killed": 2,
     "injured": 2,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-09-20-north-carolina-greensboro",
+    "date": "2026-09-20",
+    "state": "North Carolina",
+    "city": "Greensboro",
+    "killed": 1,
+    "injured": 4,
     "source": "gva"
   },
   {
@@ -567,15 +585,6 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-08-15-virginia-petersburg",
-    "date": "2026-08-15",
-    "state": "Virginia",
-    "city": "Petersburg",
-    "killed": 0,
-    "injured": 5,
-    "source": "gva"
-  },
-  {
     "id": "gva-2026-08-15-texas-houston",
     "date": "2026-08-15",
     "state": "Texas",
@@ -591,6 +600,15 @@
     "city": "Chicago",
     "killed": 0,
     "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-08-15-virginia-petersburg",
+    "date": "2026-08-15",
+    "state": "Virginia",
+    "city": "Petersburg",
+    "killed": 0,
+    "injured": 5,
     "source": "gva"
   },
   {
@@ -2868,15 +2886,6 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-02-21-virginia-richmond",
-    "date": "2026-02-21",
-    "state": "Virginia",
-    "city": "Richmond",
-    "killed": 2,
-    "injured": 7,
-    "source": "gva"
-  },
-  {
     "id": "gva-2026-02-21-missouri-kansas-city",
     "date": "2026-02-21",
     "state": "Missouri",
@@ -2892,6 +2901,15 @@
     "city": "Jacksonville",
     "killed": 0,
     "injured": 5,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-02-21-virginia-richmond",
+    "date": "2026-02-21",
+    "state": "Virginia",
+    "city": "Richmond",
+    "killed": 2,
+    "injured": 7,
     "source": "gva"
   },
   {
