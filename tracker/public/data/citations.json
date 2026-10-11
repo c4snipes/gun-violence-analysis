@@ -178,5 +178,10 @@
     "queried_at": "2026-10-10T11:32:33.751Z",
     "had_results": false,
     "match": null
+  },
+  "gva-2026-09-27-georgia-macon": {
+    "queried_at": "2026-10-11T11:44:39.269Z",
+    "had_results": true,
+    "match": null
   }
 }
