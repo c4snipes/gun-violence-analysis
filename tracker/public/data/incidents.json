@@ -1,10 +1,28 @@
 [
   {
+    "id": "gva-2026-10-10-michigan-detroit",
+    "date": "2026-10-10",
+    "state": "Michigan",
+    "city": "Detroit",
+    "killed": 1,
+    "injured": 3,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-10-09-georgia-douglas",
     "date": "2026-10-09",
     "state": "Georgia",
     "city": "Douglas",
     "killed": 4,
+    "injured": 0,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-10-09-pennsylvania-erie",
+    "date": "2026-10-09",
+    "state": "Pennsylvania",
+    "city": "Erie",
+    "killed": 8,
     "injured": 0,
     "source": "gva"
   },
@@ -15,15 +33,6 @@
     "city": "Baltimore",
     "killed": 2,
     "injured": 2,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-10-09-pennsylvania-erie",
-    "date": "2026-10-09",
-    "state": "Pennsylvania",
-    "city": "Erie",
-    "killed": 8,
-    "injured": 0,
     "source": "gva"
   },
   {

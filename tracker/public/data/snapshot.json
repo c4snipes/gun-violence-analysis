@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-11T11:41:54.042Z",
+  "generated_at": "2026-10-12T13:40:38.892Z",
   "window_days": 365,
   "totals_by_source": [
     {
       "source": "gva",
-      "incidents": 431,
-      "killed": 406,
-      "injured": 1857,
-      "latest_incident_date": "2026-10-09"
+      "incidents": 428,
+      "killed": 400,
+      "injured": 1835,
+      "latest_incident_date": "2026-10-10"
     },
     {
       "source": "mother_jones",
@@ -503,10 +503,10 @@
       "population": 2989188,
       "counts_by_source": {
         "gva": {
-          "incidents": 4,
+          "incidents": 3,
           "killed": 5,
-          "injured": 13,
-          "per_100k": 0.133815604772935
+          "injured": 9,
+          "per_100k": 0.10036170357970123
         },
         "mother_jones": {
           "incidents": 0,
@@ -689,10 +689,10 @@
       "population": 10155806,
       "counts_by_source": {
         "gva": {
-          "incidents": 17,
-          "killed": 25,
-          "injured": 55,
-          "per_100k": 0.16739193324488474
+          "incidents": 18,
+          "killed": 26,
+          "injured": 58,
+          "per_100k": 0.1772385175534074
         },
         "mother_jones": {
           "incidents": 0,
@@ -1247,10 +1247,10 @@
       "population": 5650232,
       "counts_by_source": {
         "gva": {
-          "incidents": 13,
-          "killed": 10,
-          "injured": 70,
-          "per_100k": 0.23007904808156548
+          "incidents": 11,
+          "killed": 5,
+          "injured": 52,
+          "per_100k": 0.19468227145363237
         },
         "mother_jones": {
           "incidents": 0,
@@ -1340,10 +1340,10 @@
       "population": 32101064,
       "counts_by_source": {
         "gva": {
-          "incidents": 48,
-          "killed": 55,
-          "injured": 207,
-          "per_100k": 0.14952775397102103
+          "incidents": 47,
+          "killed": 53,
+          "injured": 204,
+          "per_100k": 0.14641259242995808
         },
         "mother_jones": {
           "incidents": 1,
@@ -1585,11 +1585,29 @@
   ],
   "recent_incidents": [
     {
+      "id": "gva-2026-10-10-michigan-detroit",
+      "date": "2026-10-10",
+      "state": "Michigan",
+      "city": "Detroit",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
       "id": "gva-2026-10-09-georgia-douglas",
       "date": "2026-10-09",
       "state": "Georgia",
       "city": "Douglas",
       "killed": 4,
+      "injured": 0,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-10-09-pennsylvania-erie",
+      "date": "2026-10-09",
+      "state": "Pennsylvania",
+      "city": "Erie",
+      "killed": 8,
       "injured": 0,
       "source": "gva"
     },
@@ -1600,15 +1618,6 @@
       "city": "Baltimore",
       "killed": 2,
       "injured": 2,
-      "source": "gva"
-    },
-    {
-      "id": "gva-2026-10-09-pennsylvania-erie",
-      "date": "2026-10-09",
-      "state": "Pennsylvania",
-      "city": "Erie",
-      "killed": 8,
-      "injured": 0,
       "source": "gva"
     },
     {
@@ -5470,99 +5479,63 @@
       "killed": 0,
       "injured": 4,
       "source": "gva"
-    },
-    {
-      "id": "gva-2025-10-12-south-carolina-anderson",
-      "date": "2025-10-12",
-      "state": "South Carolina",
-      "city": "Anderson",
-      "killed": 2,
-      "injured": 3,
-      "source": "gva"
-    },
-    {
-      "id": "gva-2025-10-12-texas-dallas",
-      "date": "2025-10-12",
-      "state": "Texas",
-      "city": "Dallas",
-      "killed": 2,
-      "injured": 3,
-      "source": "gva"
-    },
-    {
-      "id": "gva-2025-10-12-kansas-wichita",
-      "date": "2025-10-12",
-      "state": "Kansas",
-      "city": "Wichita",
-      "killed": 0,
-      "injured": 4,
-      "source": "gva"
-    },
-    {
-      "id": "gva-2025-10-12-south-carolina-saint-helena-island",
-      "date": "2025-10-12",
-      "state": "South Carolina",
-      "city": "Saint Helena Island",
-      "killed": 3,
-      "injured": 15,
-      "source": "gva"
     }
   ],
   "model": {
-    "fitted_at": "2026-10-11T11:41:21.839566+00:00",
+    "fitted_at": "2026-10-12T13:40:07.331692+00:00",
     "n_states": 50,
     "outcome": "firearm_mortality_rate",
     "ols": {
-      "r_squared": 0.7744387844731884,
-      "adj_r_squared": 0.7429651264927031,
+      "r_squared": 0.7744387844731888,
+      "adj_r_squared": 0.7429651264927035,
       "coefficients": [
         {
           "name": "gun_reg_pct",
-          "coef": 51.66128296313114,
-          "std_err": 8.155073169207599,
-          "p_value": 2.375500497683639e-10,
-          "ci_low": 35.67763326019533,
-          "ci_high": 67.64493266606695
+          "coef": 51.66128296307991,
+          "std_err": 8.155073171025204,
+          "p_value": 2.37550051953348e-10,
+          "ci_low": 35.67763325658166,
+          "ci_high": 67.64493266957817
         },
         {
           "name": "poverty_rate",
-          "coef": 0.5659741408903772,
-          "std_err": 0.5435894687891093,
-          "p_value": 0.2977923082407432,
-          "ci_low": -0.4994416403115368,
-          "ci_high": 1.6313899220922914
+          "coef": 0.5659741408803357,
+          "std_err": 0.5435894687878519,
+          "p_value": 0.29779230824819747,
+          "ci_low": -0.49944164031911387,
+          "ci_high": 1.6313899220797854
         },
         {
           "name": "median_household_income",
-          "coef": -0.0000014088660475143264,
-          "std_err": 0.000179637779904276,
-          "p_value": 0.9937424023817562,
-          "ci_low": -0.0003534924449226283,
-          "ci_high": 0.0003506747128275997
+          "coef": -0.0000014088660480707796,
+          "std_err": 0.00017963777990324272,
+          "p_value": 0.9937424023792487,
+          "ci_low": -0.0003534924449211596,
+          "ci_high": 0.00035067471282501807
         },
         {
           "name": "credit_score",
-          "coef": -0.1565765181408093,
-          "std_err": 0.0713187138622951,
-          "p_value": 0.028131486753928868,
-          "ci_low": -0.2963586287346252,
-          "ci_high": -0.016794407546993406
+          "coef": -0.15657651814079948,
+          "std_err": 0.07131871386223189,
+          "p_value": 0.028131486753799295,
+          "ci_low": -0.2963586287344915,
+          "ci_high": -0.01679440754710748
         },
         {
           "name": "pop_density",
-          "coef": -0.008344859309630722,
-          "std_err": 0.003012997140381244,
-          "p_value": 0.005612160254628798,
-          "ci_low": -0.014250225190300133,
-          "ci_high": -0.00243949342896131
+          "coef": -0.008344859309636087,
+          "std_err": 0.003012997140360295,
+          "p_value": 0.005612160254266354,
+          "ci_low": -0.01425022519026444,
+          "ci_high": -0.0024394934290077348
         },
         {
           "name": "gov_party_rep",
-          "coef": 1.7239646321360356,
-          "std_err": 1.0174453741768075,
-          "p_value": 0.09018833085827146,
-          "ci_low": -0.27019165748738616,
-          "ci_high": 3.718120921759457
+          "coef": 1.7239646321360411,
+          "std_err": 1.0174453741733398,
+          "p_value": 0.09018833085717383,
+          "ci_low": -0.27019165748058405,
+          "ci_high": 3.718120921752666
         }
       ]
     },

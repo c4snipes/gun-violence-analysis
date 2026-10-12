@@ -183,5 +183,10 @@
     "queried_at": "2026-10-11T11:44:39.269Z",
     "had_results": true,
     "match": null
+  },
+  "gva-2026-10-03-texas-commerce": {
+    "queried_at": "2026-10-12T13:43:14.660Z",
+    "had_results": false,
+    "match": null
   }
 }
