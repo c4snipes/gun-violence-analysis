@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T13:40:38.892Z",
+  "generated_at": "2026-10-13T13:03:24.928Z",
   "window_days": 365,
   "totals_by_source": [
     {
@@ -1603,21 +1603,21 @@
       "source": "gva"
     },
     {
-      "id": "gva-2026-10-09-pennsylvania-erie",
-      "date": "2026-10-09",
-      "state": "Pennsylvania",
-      "city": "Erie",
-      "killed": 8,
-      "injured": 0,
-      "source": "gva"
-    },
-    {
       "id": "gva-2026-10-09-maryland-baltimore",
       "date": "2026-10-09",
       "state": "Maryland",
       "city": "Baltimore",
       "killed": 2,
       "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-10-09-pennsylvania-erie",
+      "date": "2026-10-09",
+      "state": "Pennsylvania",
+      "city": "Erie",
+      "killed": 8,
+      "injured": 0,
       "source": "gva"
     },
     {
@@ -5482,7 +5482,7 @@
     }
   ],
   "model": {
-    "fitted_at": "2026-10-12T13:40:07.331692+00:00",
+    "fitted_at": "2026-10-13T13:02:50.491578+00:00",
     "n_states": 50,
     "outcome": "firearm_mortality_rate",
     "ols": {

@@ -18,21 +18,21 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-10-09-pennsylvania-erie",
-    "date": "2026-10-09",
-    "state": "Pennsylvania",
-    "city": "Erie",
-    "killed": 8,
-    "injured": 0,
-    "source": "gva"
-  },
-  {
     "id": "gva-2026-10-09-maryland-baltimore",
     "date": "2026-10-09",
     "state": "Maryland",
     "city": "Baltimore",
     "killed": 2,
     "injured": 2,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-10-09-pennsylvania-erie",
+    "date": "2026-10-09",
+    "state": "Pennsylvania",
+    "city": "Erie",
+    "killed": 8,
+    "injured": 0,
     "source": "gva"
   },
   {
@@ -3893,42 +3893,6 @@
     "city": "Chicago",
     "killed": 0,
     "injured": 4,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-10-12-south-carolina-anderson",
-    "date": "2025-10-12",
-    "state": "South Carolina",
-    "city": "Anderson",
-    "killed": 2,
-    "injured": 3,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-10-12-texas-dallas",
-    "date": "2025-10-12",
-    "state": "Texas",
-    "city": "Dallas",
-    "killed": 2,
-    "injured": 3,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-10-12-kansas-wichita",
-    "date": "2025-10-12",
-    "state": "Kansas",
-    "city": "Wichita",
-    "killed": 0,
-    "injured": 4,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-10-12-south-carolina-saint-helena-island",
-    "date": "2025-10-12",
-    "state": "South Carolina",
-    "city": "Saint Helena Island",
-    "killed": 3,
-    "injured": 15,
     "source": "gva"
   },
   {
