@@ -1,5 +1,14 @@
 [
   {
+    "id": "gva-2026-10-13-montana-kalispell",
+    "date": "2026-10-13",
+    "state": "Montana",
+    "city": "Kalispell",
+    "killed": 1,
+    "injured": 3,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-10-10-michigan-detroit",
     "date": "2026-10-10",
     "state": "Michigan",
@@ -9,21 +18,21 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-10-09-georgia-douglas",
-    "date": "2026-10-09",
-    "state": "Georgia",
-    "city": "Douglas",
-    "killed": 4,
-    "injured": 0,
-    "source": "gva"
-  },
-  {
     "id": "gva-2026-10-09-maryland-baltimore",
     "date": "2026-10-09",
     "state": "Maryland",
     "city": "Baltimore",
     "killed": 2,
     "injured": 2,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-10-09-georgia-douglas",
+    "date": "2026-10-09",
+    "state": "Georgia",
+    "city": "Douglas",
+    "killed": 4,
+    "injured": 0,
     "source": "gva"
   },
   {

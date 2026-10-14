@@ -188,5 +188,10 @@
     "queried_at": "2026-10-12T13:43:14.660Z",
     "had_results": false,
     "match": null
+  },
+  "gva-2026-10-09-georgia-douglas": {
+    "queried_at": "2026-10-14T10:44:52.310Z",
+    "had_results": false,
+    "match": null
   }
 }
