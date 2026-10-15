@@ -292,15 +292,6 @@
     "date": "2026-09-16",
     "state": "Maryland",
     "city": "Baltimore",
-    "killed": 1,
-    "injured": 6,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-09-16-maryland-baltimore-2",
-    "date": "2026-09-16",
-    "state": "Maryland",
-    "city": "Baltimore",
     "killed": 0,
     "injured": 7,
     "source": "gva"
