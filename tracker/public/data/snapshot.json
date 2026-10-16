@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-15T10:28:20.809Z",
+  "generated_at": "2026-10-16T10:15:31.757Z",
   "window_days": 365,
   "totals_by_source": [
     {
       "source": "gva",
-      "incidents": 428,
-      "killed": 400,
-      "injured": 1832,
-      "latest_incident_date": "2026-10-13"
+      "incidents": 431,
+      "killed": 407,
+      "injured": 1840,
+      "latest_incident_date": "2026-10-15"
     },
     {
       "source": "mother_jones",
@@ -131,10 +131,10 @@
       "population": 3133502,
       "counts_by_source": {
         "gva": {
-          "incidents": 2,
-          "killed": 1,
-          "injured": 7,
-          "per_100k": 0.06382635147512272
+          "incidents": 3,
+          "killed": 2,
+          "injured": 10,
+          "per_100k": 0.09573952721268408
         },
         "mother_jones": {
           "incidents": 0,
@@ -627,10 +627,10 @@
       "population": 6285380,
       "counts_by_source": {
         "gva": {
-          "incidents": 8,
-          "killed": 7,
-          "injured": 37,
-          "per_100k": 0.12727949622775392
+          "incidents": 9,
+          "killed": 9,
+          "injured": 40,
+          "per_100k": 0.14318943325622316
         },
         "mother_jones": {
           "incidents": 0,
@@ -1154,10 +1154,10 @@
       "population": 4281848,
       "counts_by_source": {
         "gva": {
-          "incidents": 3,
-          "killed": 9,
-          "injured": 6,
-          "per_100k": 0.07006320635389206
+          "incidents": 4,
+          "killed": 13,
+          "injured": 8,
+          "per_100k": 0.09341760847185608
         },
         "mother_jones": {
           "incidents": 0,
@@ -1585,6 +1585,24 @@
   ],
   "recent_incidents": [
     {
+      "id": "gva-2026-10-15-maryland-baltimore",
+      "date": "2026-10-15",
+      "state": "Maryland",
+      "city": "Baltimore",
+      "killed": 2,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-10-15-oregon-bend",
+      "date": "2026-10-15",
+      "state": "Oregon",
+      "city": "Bend",
+      "killed": 4,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
       "id": "gva-2026-10-13-montana-kalispell",
       "date": "2026-10-13",
       "state": "Montana",
@@ -1603,12 +1621,12 @@
       "source": "gva"
     },
     {
-      "id": "gva-2026-10-09-maryland-baltimore",
-      "date": "2026-10-09",
-      "state": "Maryland",
-      "city": "Baltimore",
-      "killed": 2,
-      "injured": 2,
+      "id": "gva-2026-10-10-arkansas-little-rock",
+      "date": "2026-10-10",
+      "state": "Arkansas",
+      "city": "Little Rock",
+      "killed": 1,
+      "injured": 3,
       "source": "gva"
     },
     {
@@ -1618,6 +1636,15 @@
       "city": "Douglas",
       "killed": 4,
       "injured": 0,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-10-09-maryland-baltimore",
+      "date": "2026-10-09",
+      "state": "Maryland",
+      "city": "Baltimore",
+      "killed": 2,
+      "injured": 2,
       "source": "gva"
     },
     {
@@ -1648,6 +1675,15 @@
       "source": "gva"
     },
     {
+      "id": "gva-2026-10-04-georgia-vienna",
+      "date": "2026-10-04",
+      "state": "Georgia",
+      "city": "Vienna",
+      "killed": 2,
+      "injured": 35,
+      "source": "gva"
+    },
+    {
       "id": "gva-2026-10-04-new-york-albany",
       "date": "2026-10-04",
       "state": "New York",
@@ -1663,15 +1699,6 @@
       "city": "Sacramento",
       "killed": 0,
       "injured": 4,
-      "source": "gva"
-    },
-    {
-      "id": "gva-2026-10-04-georgia-vienna",
-      "date": "2026-10-04",
-      "state": "Georgia",
-      "city": "Vienna",
-      "killed": 2,
-      "injured": 35,
       "source": "gva"
     },
     {
@@ -5482,7 +5509,7 @@
     }
   ],
   "model": {
-    "fitted_at": "2026-10-15T10:27:39.061744+00:00",
+    "fitted_at": "2026-10-16T10:14:50.347424+00:00",
     "n_states": 50,
     "outcome": "firearm_mortality_rate",
     "ols": {

@@ -193,5 +193,10 @@
     "queried_at": "2026-10-14T10:44:52.310Z",
     "had_results": false,
     "match": null
+  },
+  "gva-2026-10-04-new-york-albany": {
+    "queried_at": "2026-10-16T10:18:38.442Z",
+    "had_results": false,
+    "match": null
   }
 }
