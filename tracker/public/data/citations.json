@@ -198,5 +198,10 @@
     "queried_at": "2026-10-16T10:18:38.442Z",
     "had_results": false,
     "match": null
+  },
+  "gva-2026-10-08-alabama-meridianville": {
+    "queried_at": "2026-10-17T09:52:11.117Z",
+    "had_results": false,
+    "match": null
   }
 }

@@ -1,5 +1,14 @@
 [
   {
+    "id": "gva-2026-10-15-oregon-bend",
+    "date": "2026-10-15",
+    "state": "Oregon",
+    "city": "Bend",
+    "killed": 4,
+    "injured": 2,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-10-15-maryland-baltimore",
     "date": "2026-10-15",
     "state": "Maryland",
@@ -9,13 +18,24 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-10-15-oregon-bend",
+    "id": "gva-2026-10-15-arkansas-little-rock",
+    "date": "2026-10-15",
+    "state": "Arkansas",
+    "city": "Little Rock",
+    "killed": 2,
+    "injured": 3,
+    "source": "gva"
+  },
+  {
+    "id": "mj-silver-rail-elementary-shooting",
     "date": "2026-10-15",
     "state": "Oregon",
     "city": "Bend",
     "killed": 4,
     "injured": 2,
-    "source": "gva"
+    "source": "mother_jones",
+    "url": "https://www.washingtonpost.com/education/2026/10/16/suspect-identified-oregon-school-shooting-that-killed-4-people-sources-say/",
+    "summary": "John J. Griffin, 16, opened fire at the school; he was pursued inside by an armed citizen, Kaylub Giamanco, who shot him fatally."
   },
   {
     "id": "gva-2026-10-13-montana-kalispell",
