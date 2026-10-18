@@ -1,11 +1,11 @@
 [
   {
-    "id": "gva-2026-10-15-oregon-bend",
-    "date": "2026-10-15",
-    "state": "Oregon",
-    "city": "Bend",
-    "killed": 4,
-    "injured": 2,
+    "id": "gva-2026-10-16-illinois-chicago",
+    "date": "2026-10-16",
+    "state": "Illinois",
+    "city": "Chicago",
+    "killed": 0,
+    "injured": 4,
     "source": "gva"
   },
   {
@@ -23,7 +23,16 @@
     "state": "Arkansas",
     "city": "Little Rock",
     "killed": 2,
-    "injured": 3,
+    "injured": 2,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-10-15-oregon-bend",
+    "date": "2026-10-15",
+    "state": "Oregon",
+    "city": "Bend",
+    "killed": 4,
+    "injured": 2,
     "source": "gva"
   },
   {
@@ -34,8 +43,8 @@
     "killed": 4,
     "injured": 2,
     "source": "mother_jones",
-    "url": "https://www.washingtonpost.com/education/2026/10/16/suspect-identified-oregon-school-shooting-that-killed-4-people-sources-say/",
-    "summary": "John J. Griffin, 16, opened fire at the school; he was pursued inside by an armed citizen, Kaylub Giamanco, who shot him fatally."
+    "url": "https://www.nbcnews.com/news/us-news/live-blog/live-coverage-teen-shooter-kills-3-children-teacher-oregon-elementary-rcna603846",
+    "summary": "Griffin J. John, 16, opened fire at the school; he was pursued inside by an armed citizen, Kaylub Giamanco, who shot him fatally."
   },
   {
     "id": "gva-2026-10-13-montana-kalispell",
@@ -143,6 +152,15 @@
     "city": "Dallas",
     "killed": 0,
     "injured": 6,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-10-04-nevada-reno",
+    "date": "2026-10-04",
+    "state": "Nevada",
+    "city": "Reno",
+    "killed": 0,
+    "injured": 4,
     "source": "gva"
   },
   {
@@ -3911,33 +3929,6 @@
     "date": "2025-10-18",
     "state": "Texas",
     "city": "Dallas",
-    "killed": 0,
-    "injured": 4,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-10-17-oklahoma-bethany",
-    "date": "2025-10-17",
-    "state": "Oklahoma",
-    "city": "Bethany",
-    "killed": 0,
-    "injured": 4,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-10-17-texas-mabank",
-    "date": "2025-10-17",
-    "state": "Texas",
-    "city": "Mabank",
-    "killed": 3,
-    "injured": 2,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-10-17-illinois-chicago",
-    "date": "2025-10-17",
-    "state": "Illinois",
-    "city": "Chicago",
     "killed": 0,
     "injured": 4,
     "source": "gva"

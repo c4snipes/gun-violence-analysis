@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-17T09:49:03.111Z",
+  "generated_at": "2026-10-18T10:01:12.822Z",
   "window_days": 365,
   "totals_by_source": [
     {
       "source": "gva",
-      "incidents": 429,
-      "killed": 406,
-      "injured": 1833,
-      "latest_incident_date": "2026-10-15"
+      "incidents": 428,
+      "killed": 403,
+      "injured": 1831,
+      "latest_incident_date": "2026-10-16"
     },
     {
       "source": "mother_jones",
@@ -133,7 +133,7 @@
         "gva": {
           "incidents": 4,
           "killed": 4,
-          "injured": 13,
+          "injured": 12,
           "per_100k": 0.12765270295024544
         },
         "mother_jones": {
@@ -410,10 +410,10 @@
       "population": 12735249,
       "counts_by_source": {
         "gva": {
-          "incidents": 24,
+          "incidents": 25,
           "killed": 23,
-          "injured": 112,
-          "per_100k": 0.18845332352747873
+          "injured": 116,
+          "per_100k": 0.19630554534112366
         },
         "mother_jones": {
           "incidents": 0,
@@ -751,10 +751,10 @@
       "population": 2958148,
       "counts_by_source": {
         "gva": {
-          "incidents": 13,
-          "killed": 15,
-          "injured": 49,
-          "per_100k": 0.4394641512189383
+          "incidents": 12,
+          "killed": 14,
+          "injured": 46,
+          "per_100k": 0.4056592165097892
         },
         "mother_jones": {
           "incidents": 0,
@@ -875,10 +875,10 @@
       "population": 3310833,
       "counts_by_source": {
         "gva": {
-          "incidents": 0,
+          "incidents": 1,
           "killed": 0,
-          "injured": 0,
-          "per_100k": 0
+          "injured": 4,
+          "per_100k": 0.03020387920502182
         },
         "mother_jones": {
           "incidents": 0,
@@ -1092,10 +1092,10 @@
       "population": 11940399,
       "counts_by_source": {
         "gva": {
-          "incidents": 20,
-          "killed": 13,
-          "injured": 90,
-          "per_100k": 0.16749859028998948
+          "incidents": 19,
+          "killed": 11,
+          "injured": 88,
+          "per_100k": 0.15912366077549
         },
         "mother_jones": {
           "incidents": 0,
@@ -1340,10 +1340,10 @@
       "population": 32101064,
       "counts_by_source": {
         "gva": {
-          "incidents": 46,
+          "incidents": 45,
           "killed": 50,
-          "injured": 202,
-          "per_100k": 0.14329743088889513
+          "injured": 198,
+          "per_100k": 0.1401822693478322
         },
         "mother_jones": {
           "incidents": 1,
@@ -1585,12 +1585,12 @@
   ],
   "recent_incidents": [
     {
-      "id": "gva-2026-10-15-oregon-bend",
-      "date": "2026-10-15",
-      "state": "Oregon",
-      "city": "Bend",
-      "killed": 4,
-      "injured": 2,
+      "id": "gva-2026-10-16-illinois-chicago",
+      "date": "2026-10-16",
+      "state": "Illinois",
+      "city": "Chicago",
+      "killed": 0,
+      "injured": 4,
       "source": "gva"
     },
     {
@@ -1608,7 +1608,16 @@
       "state": "Arkansas",
       "city": "Little Rock",
       "killed": 2,
-      "injured": 3,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-10-15-oregon-bend",
+      "date": "2026-10-15",
+      "state": "Oregon",
+      "city": "Bend",
+      "killed": 4,
+      "injured": 2,
       "source": "gva"
     },
     {
@@ -1619,8 +1628,8 @@
       "killed": 4,
       "injured": 2,
       "source": "mother_jones",
-      "url": "https://www.washingtonpost.com/education/2026/10/16/suspect-identified-oregon-school-shooting-that-killed-4-people-sources-say/",
-      "summary": "John J. Griffin, 16, opened fire at the school; he was pursued inside by an armed citizen, Kaylub Giamanco, who shot him fatally."
+      "url": "https://www.nbcnews.com/news/us-news/live-blog/live-coverage-teen-shooter-kills-3-children-teacher-oregon-elementary-rcna603846",
+      "summary": "Griffin J. John, 16, opened fire at the school; he was pursued inside by an armed citizen, Kaylub Giamanco, who shot him fatally."
     },
     {
       "id": "gva-2026-10-13-montana-kalispell",
@@ -1728,6 +1737,15 @@
       "city": "Dallas",
       "killed": 0,
       "injured": 6,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-10-04-nevada-reno",
+      "date": "2026-10-04",
+      "state": "Nevada",
+      "city": "Reno",
+      "killed": 0,
+      "injured": 4,
       "source": "gva"
     },
     {
@@ -5472,37 +5490,10 @@
       "killed": 1,
       "injured": 3,
       "source": "gva"
-    },
-    {
-      "id": "gva-2025-10-18-mississippi-gautier",
-      "date": "2025-10-18",
-      "state": "Mississippi",
-      "city": "Gautier",
-      "killed": 1,
-      "injured": 3,
-      "source": "gva"
-    },
-    {
-      "id": "gva-2025-10-18-ohio-cleveland",
-      "date": "2025-10-18",
-      "state": "Ohio",
-      "city": "Cleveland",
-      "killed": 2,
-      "injured": 2,
-      "source": "gva"
-    },
-    {
-      "id": "gva-2025-10-18-texas-dallas",
-      "date": "2025-10-18",
-      "state": "Texas",
-      "city": "Dallas",
-      "killed": 0,
-      "injured": 4,
-      "source": "gva"
     }
   ],
   "model": {
-    "fitted_at": "2026-10-17T09:48:30.125866+00:00",
+    "fitted_at": "2026-10-18T10:00:41.133116+00:00",
     "n_states": 50,
     "outcome": "firearm_mortality_rate",
     "ols": {
