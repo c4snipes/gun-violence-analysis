@@ -1,5 +1,59 @@
 [
   {
+    "id": "gva-2026-10-18-texas-humble",
+    "date": "2026-10-18",
+    "state": "Texas",
+    "city": "Humble",
+    "killed": 1,
+    "injured": 3,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-10-18-pennsylvania-philadelphia",
+    "date": "2026-10-18",
+    "state": "Pennsylvania",
+    "city": "Philadelphia",
+    "killed": 1,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-10-18-illinois-chicago",
+    "date": "2026-10-18",
+    "state": "Illinois",
+    "city": "Chicago",
+    "killed": 0,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-10-17-south-carolina-newberry",
+    "date": "2026-10-17",
+    "state": "South Carolina",
+    "city": "Newberry",
+    "killed": 0,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-10-17-california-corona-(eastvale)",
+    "date": "2026-10-17",
+    "state": "California",
+    "city": "Corona (Eastvale)",
+    "killed": 1,
+    "injured": 6,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-10-17-georgia-monroe",
+    "date": "2026-10-17",
+    "state": "Georgia",
+    "city": "Monroe",
+    "killed": 0,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-10-16-illinois-chicago",
     "date": "2026-10-16",
     "state": "Illinois",
@@ -146,21 +200,21 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-10-04-texas-dallas",
-    "date": "2026-10-04",
-    "state": "Texas",
-    "city": "Dallas",
-    "killed": 0,
-    "injured": 6,
-    "source": "gva"
-  },
-  {
     "id": "gva-2026-10-04-nevada-reno",
     "date": "2026-10-04",
     "state": "Nevada",
     "city": "Reno",
     "killed": 0,
     "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-10-04-texas-dallas",
+    "date": "2026-10-04",
+    "state": "Texas",
+    "city": "Dallas",
+    "killed": 0,
+    "injured": 6,
     "source": "gva"
   },
   {
@@ -3904,33 +3958,6 @@
     "city": "Pinson",
     "killed": 1,
     "injured": 3,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-10-18-mississippi-gautier",
-    "date": "2025-10-18",
-    "state": "Mississippi",
-    "city": "Gautier",
-    "killed": 1,
-    "injured": 3,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-10-18-ohio-cleveland",
-    "date": "2025-10-18",
-    "state": "Ohio",
-    "city": "Cleveland",
-    "killed": 2,
-    "injured": 2,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-10-18-texas-dallas",
-    "date": "2025-10-18",
-    "state": "Texas",
-    "city": "Dallas",
-    "killed": 0,
-    "injured": 4,
     "source": "gva"
   },
   {

@@ -203,5 +203,10 @@
     "queried_at": "2026-10-17T09:52:11.117Z",
     "had_results": false,
     "match": null
+  },
+  "gva-2026-10-17-south-carolina-newberry": {
+    "queried_at": "2026-10-19T11:24:55.474Z",
+    "had_results": false,
+    "match": null
   }
 }

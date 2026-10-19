@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-18T10:01:12.822Z",
+  "generated_at": "2026-10-19T11:23:40.710Z",
   "window_days": 365,
   "totals_by_source": [
     {
       "source": "gva",
-      "incidents": 428,
-      "killed": 403,
-      "injured": 1831,
-      "latest_incident_date": "2026-10-16"
+      "incidents": 433,
+      "killed": 405,
+      "injured": 1853,
+      "latest_incident_date": "2026-10-18"
     },
     {
       "source": "mother_jones",
@@ -38,10 +38,10 @@
       "population": 5223121,
       "counts_by_source": {
         "gva": {
-          "incidents": 11,
-          "killed": 6,
-          "injured": 48,
-          "per_100k": 0.21060205191493744
+          "incidents": 10,
+          "killed": 5,
+          "injured": 45,
+          "per_100k": 0.19145641083176132
         },
         "mother_jones": {
           "incidents": 0,
@@ -162,10 +162,10 @@
       "population": 39345844,
       "counts_by_source": {
         "gva": {
-          "incidents": 33,
-          "killed": 21,
-          "injured": 139,
-          "per_100k": 0.08387162822075947
+          "incidents": 34,
+          "killed": 22,
+          "injured": 145,
+          "per_100k": 0.08641319271229765
         },
         "mother_jones": {
           "incidents": 1,
@@ -317,10 +317,10 @@
       "population": 11401288,
       "counts_by_source": {
         "gva": {
-          "incidents": 22,
+          "incidents": 23,
           "killed": 23,
-          "injured": 114,
-          "per_100k": 0.19296065497161372
+          "injured": 118,
+          "per_100k": 0.2017315938339598
         },
         "mother_jones": {
           "incidents": 0,
@@ -410,10 +410,10 @@
       "population": 12735249,
       "counts_by_source": {
         "gva": {
-          "incidents": 25,
+          "incidents": 26,
           "killed": 23,
-          "injured": 116,
-          "per_100k": 0.19630554534112366
+          "injured": 120,
+          "per_100k": 0.2041577671547686
         },
         "mother_jones": {
           "incidents": 0,
@@ -1185,10 +1185,10 @@
       "population": 13073016,
       "counts_by_source": {
         "gva": {
-          "incidents": 15,
-          "killed": 19,
-          "injured": 51,
-          "per_100k": 0.11474016401418005
+          "incidents": 16,
+          "killed": 20,
+          "injured": 55,
+          "per_100k": 0.12238950828179204
         },
         "mother_jones": {
           "incidents": 0,
@@ -1247,10 +1247,10 @@
       "population": 5650232,
       "counts_by_source": {
         "gva": {
-          "incidents": 11,
+          "incidents": 12,
           "killed": 5,
-          "injured": 52,
-          "per_100k": 0.19468227145363237
+          "injured": 56,
+          "per_100k": 0.2123806597675989
         },
         "mother_jones": {
           "incidents": 0,
@@ -1340,10 +1340,10 @@
       "population": 32101064,
       "counts_by_source": {
         "gva": {
-          "incidents": 45,
-          "killed": 50,
-          "injured": 198,
-          "per_100k": 0.1401822693478322
+          "incidents": 46,
+          "killed": 51,
+          "injured": 201,
+          "per_100k": 0.14329743088889513
         },
         "mother_jones": {
           "incidents": 1,
@@ -1585,6 +1585,60 @@
   ],
   "recent_incidents": [
     {
+      "id": "gva-2026-10-18-texas-humble",
+      "date": "2026-10-18",
+      "state": "Texas",
+      "city": "Humble",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-10-18-pennsylvania-philadelphia",
+      "date": "2026-10-18",
+      "state": "Pennsylvania",
+      "city": "Philadelphia",
+      "killed": 1,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-10-18-illinois-chicago",
+      "date": "2026-10-18",
+      "state": "Illinois",
+      "city": "Chicago",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-10-17-south-carolina-newberry",
+      "date": "2026-10-17",
+      "state": "South Carolina",
+      "city": "Newberry",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-10-17-california-corona-(eastvale)",
+      "date": "2026-10-17",
+      "state": "California",
+      "city": "Corona (Eastvale)",
+      "killed": 1,
+      "injured": 6,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-10-17-georgia-monroe",
+      "date": "2026-10-17",
+      "state": "Georgia",
+      "city": "Monroe",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
       "id": "gva-2026-10-16-illinois-chicago",
       "date": "2026-10-16",
       "state": "Illinois",
@@ -1731,21 +1785,21 @@
       "source": "gva"
     },
     {
-      "id": "gva-2026-10-04-texas-dallas",
-      "date": "2026-10-04",
-      "state": "Texas",
-      "city": "Dallas",
-      "killed": 0,
-      "injured": 6,
-      "source": "gva"
-    },
-    {
       "id": "gva-2026-10-04-nevada-reno",
       "date": "2026-10-04",
       "state": "Nevada",
       "city": "Reno",
       "killed": 0,
       "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-10-04-texas-dallas",
+      "date": "2026-10-04",
+      "state": "Texas",
+      "city": "Dallas",
+      "killed": 0,
+      "injured": 6,
       "source": "gva"
     },
     {
@@ -5481,19 +5535,10 @@
       "killed": 0,
       "injured": 4,
       "source": "gva"
-    },
-    {
-      "id": "gva-2025-10-19-alabama-pinson",
-      "date": "2025-10-19",
-      "state": "Alabama",
-      "city": "Pinson",
-      "killed": 1,
-      "injured": 3,
-      "source": "gva"
     }
   ],
   "model": {
-    "fitted_at": "2026-10-18T10:00:41.133116+00:00",
+    "fitted_at": "2026-10-19T11:23:06.367686+00:00",
     "n_states": 50,
     "outcome": "firearm_mortality_rate",
     "ols": {
