@@ -208,5 +208,15 @@
     "queried_at": "2026-10-19T11:24:55.474Z",
     "had_results": false,
     "match": null
+  },
+  "gva-2026-10-17-georgia-monroe": {
+    "queried_at": "2026-10-20T10:33:10.793Z",
+    "had_results": false,
+    "match": null
+  },
+  "gva-2026-10-15-maryland-baltimore": {
+    "queried_at": "2026-10-20T10:34:17.880Z",
+    "had_results": false,
+    "match": null
   }
 }

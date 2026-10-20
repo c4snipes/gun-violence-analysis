@@ -1,10 +1,10 @@
 [
   {
-    "id": "gva-2026-10-18-texas-humble",
+    "id": "gva-2026-10-18-maryland-baltimore",
     "date": "2026-10-18",
-    "state": "Texas",
-    "city": "Humble",
-    "killed": 1,
+    "state": "Maryland",
+    "city": "Baltimore",
+    "killed": 2,
     "injured": 3,
     "source": "gva"
   },
@@ -15,6 +15,15 @@
     "city": "Philadelphia",
     "killed": 1,
     "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-10-18-texas-humble",
+    "date": "2026-10-18",
+    "state": "Texas",
+    "city": "Humble",
+    "killed": 1,
+    "injured": 3,
     "source": "gva"
   },
   {
@@ -36,21 +45,21 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-10-17-california-corona-(eastvale)",
-    "date": "2026-10-17",
-    "state": "California",
-    "city": "Corona (Eastvale)",
-    "killed": 1,
-    "injured": 6,
-    "source": "gva"
-  },
-  {
     "id": "gva-2026-10-17-georgia-monroe",
     "date": "2026-10-17",
     "state": "Georgia",
     "city": "Monroe",
     "killed": 0,
     "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-10-17-california-corona-(eastvale)",
+    "date": "2026-10-17",
+    "state": "California",
+    "city": "Corona (Eastvale)",
+    "killed": 1,
+    "injured": 6,
     "source": "gva"
   },
   {
@@ -106,7 +115,7 @@
     "state": "Montana",
     "city": "Kalispell",
     "killed": 1,
-    "injured": 3,
+    "injured": 2,
     "source": "gva"
   },
   {
@@ -3949,15 +3958,6 @@
     "city": "Dover",
     "killed": 0,
     "injured": 4,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-10-19-alabama-pinson",
-    "date": "2025-10-19",
-    "state": "Alabama",
-    "city": "Pinson",
-    "killed": 1,
-    "injured": 3,
     "source": "gva"
   },
   {
