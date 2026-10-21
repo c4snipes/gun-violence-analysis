@@ -1,11 +1,11 @@
 [
   {
-    "id": "gva-2026-10-18-maryland-baltimore",
+    "id": "gva-2026-10-18-illinois-mundelein",
     "date": "2026-10-18",
-    "state": "Maryland",
-    "city": "Baltimore",
-    "killed": 2,
-    "injured": 3,
+    "state": "Illinois",
+    "city": "Mundelein",
+    "killed": 4,
+    "injured": 0,
     "source": "gva"
   },
   {
@@ -23,6 +23,15 @@
     "state": "Texas",
     "city": "Humble",
     "killed": 1,
+    "injured": 3,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-10-18-maryland-baltimore",
+    "date": "2026-10-18",
+    "state": "Maryland",
+    "city": "Baltimore",
+    "killed": 2,
     "injured": 3,
     "source": "gva"
   },
@@ -45,21 +54,21 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-10-17-georgia-monroe",
-    "date": "2026-10-17",
-    "state": "Georgia",
-    "city": "Monroe",
-    "killed": 0,
-    "injured": 4,
-    "source": "gva"
-  },
-  {
     "id": "gva-2026-10-17-california-corona-(eastvale)",
     "date": "2026-10-17",
     "state": "California",
     "city": "Corona (Eastvale)",
     "killed": 1,
     "injured": 6,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-10-17-georgia-monroe",
+    "date": "2026-10-17",
+    "state": "Georgia",
+    "city": "Monroe",
+    "killed": 0,
+    "injured": 4,
     "source": "gva"
   },
   {
@@ -3940,24 +3949,6 @@
     "city": "Lincoln University",
     "killed": 1,
     "injured": 6,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-10-20-california-buena-park",
-    "date": "2025-10-20",
-    "state": "California",
-    "city": "Buena Park",
-    "killed": 0,
-    "injured": 4,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-10-20-delaware-dover",
-    "date": "2025-10-20",
-    "state": "Delaware",
-    "city": "Dover",
-    "killed": 0,
-    "injured": 4,
     "source": "gva"
   },
   {

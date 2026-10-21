@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-20T10:31:32.180Z",
+  "generated_at": "2026-10-21T10:43:51.112Z",
   "window_days": 365,
   "totals_by_source": [
     {
       "source": "gva",
-      "incidents": 432,
-      "killed": 407,
+      "incidents": 433,
+      "killed": 411,
       "injured": 1847,
       "latest_incident_date": "2026-10-18"
     },
@@ -410,10 +410,10 @@
       "population": 12735249,
       "counts_by_source": {
         "gva": {
-          "incidents": 26,
-          "killed": 23,
+          "incidents": 27,
+          "killed": 27,
           "injured": 120,
-          "per_100k": 0.2041577671547686
+          "per_100k": 0.21200998896841355
         },
         "mother_jones": {
           "incidents": 0,
@@ -1585,12 +1585,12 @@
   ],
   "recent_incidents": [
     {
-      "id": "gva-2026-10-18-maryland-baltimore",
+      "id": "gva-2026-10-18-illinois-mundelein",
       "date": "2026-10-18",
-      "state": "Maryland",
-      "city": "Baltimore",
-      "killed": 2,
-      "injured": 3,
+      "state": "Illinois",
+      "city": "Mundelein",
+      "killed": 4,
+      "injured": 0,
       "source": "gva"
     },
     {
@@ -1608,6 +1608,15 @@
       "state": "Texas",
       "city": "Humble",
       "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-10-18-maryland-baltimore",
+      "date": "2026-10-18",
+      "state": "Maryland",
+      "city": "Baltimore",
+      "killed": 2,
       "injured": 3,
       "source": "gva"
     },
@@ -1630,21 +1639,21 @@
       "source": "gva"
     },
     {
-      "id": "gva-2026-10-17-georgia-monroe",
-      "date": "2026-10-17",
-      "state": "Georgia",
-      "city": "Monroe",
-      "killed": 0,
-      "injured": 4,
-      "source": "gva"
-    },
-    {
       "id": "gva-2026-10-17-california-corona-(eastvale)",
       "date": "2026-10-17",
       "state": "California",
       "city": "Corona (Eastvale)",
       "killed": 1,
       "injured": 6,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-10-17-georgia-monroe",
+      "date": "2026-10-17",
+      "state": "Georgia",
+      "city": "Monroe",
+      "killed": 0,
+      "injured": 4,
       "source": "gva"
     },
     {
@@ -5529,7 +5538,7 @@
     }
   ],
   "model": {
-    "fitted_at": "2026-10-20T10:30:47.232769+00:00",
+    "fitted_at": "2026-10-21T10:42:06.794061+00:00",
     "n_states": 50,
     "outcome": "firearm_mortality_rate",
     "ols": {

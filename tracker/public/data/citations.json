@@ -218,5 +218,20 @@
     "queried_at": "2026-10-20T10:34:17.880Z",
     "had_results": false,
     "match": null
+  },
+  "gva-2026-10-18-texas-humble": {
+    "queried_at": "2026-10-21T10:44:47.413Z",
+    "had_results": true,
+    "match": null
+  },
+  "gva-2026-10-16-illinois-chicago": {
+    "queried_at": "2026-10-21T10:46:16.393Z",
+    "had_results": true,
+    "match": null
+  },
+  "gva-2026-10-15-arkansas-little-rock": {
+    "queried_at": "2026-10-21T10:46:46.019Z",
+    "had_results": true,
+    "match": null
   }
 }
