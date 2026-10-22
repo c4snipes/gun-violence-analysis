@@ -233,5 +233,10 @@
     "queried_at": "2026-10-21T10:46:46.019Z",
     "had_results": true,
     "match": null
+  },
+  "gva-2026-10-13-montana-kalispell": {
+    "queried_at": "2026-10-22T10:48:41.506Z",
+    "had_results": false,
+    "match": null
   }
 }

@@ -45,15 +45,6 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-10-17-south-carolina-newberry",
-    "date": "2026-10-17",
-    "state": "South Carolina",
-    "city": "Newberry",
-    "killed": 0,
-    "injured": 4,
-    "source": "gva"
-  },
-  {
     "id": "gva-2026-10-17-california-corona-(eastvale)",
     "date": "2026-10-17",
     "state": "California",
@@ -63,12 +54,30 @@
     "source": "gva"
   },
   {
+    "id": "gva-2026-10-17-south-carolina-newberry",
+    "date": "2026-10-17",
+    "state": "South Carolina",
+    "city": "Newberry",
+    "killed": 0,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-10-17-georgia-monroe",
     "date": "2026-10-17",
     "state": "Georgia",
     "city": "Monroe",
     "killed": 0,
     "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-10-17-ohio-cleveland",
+    "date": "2026-10-17",
+    "state": "Ohio",
+    "city": "Cleveland",
+    "killed": 0,
+    "injured": 5,
     "source": "gva"
   },
   {

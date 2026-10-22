@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-21T10:43:51.112Z",
+  "generated_at": "2026-10-22T10:45:34.146Z",
   "window_days": 365,
   "totals_by_source": [
     {
       "source": "gva",
-      "incidents": 433,
+      "incidents": 434,
       "killed": 411,
-      "injured": 1847,
+      "injured": 1852,
       "latest_incident_date": "2026-10-18"
     },
     {
@@ -1092,10 +1092,10 @@
       "population": 11940399,
       "counts_by_source": {
         "gva": {
-          "incidents": 19,
+          "incidents": 20,
           "killed": 11,
-          "injured": 88,
-          "per_100k": 0.15912366077549
+          "injured": 93,
+          "per_100k": 0.16749859028998948
         },
         "mother_jones": {
           "incidents": 0,
@@ -1630,15 +1630,6 @@
       "source": "gva"
     },
     {
-      "id": "gva-2026-10-17-south-carolina-newberry",
-      "date": "2026-10-17",
-      "state": "South Carolina",
-      "city": "Newberry",
-      "killed": 0,
-      "injured": 4,
-      "source": "gva"
-    },
-    {
       "id": "gva-2026-10-17-california-corona-(eastvale)",
       "date": "2026-10-17",
       "state": "California",
@@ -1648,12 +1639,30 @@
       "source": "gva"
     },
     {
+      "id": "gva-2026-10-17-south-carolina-newberry",
+      "date": "2026-10-17",
+      "state": "South Carolina",
+      "city": "Newberry",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
       "id": "gva-2026-10-17-georgia-monroe",
       "date": "2026-10-17",
       "state": "Georgia",
       "city": "Monroe",
       "killed": 0,
       "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-10-17-ohio-cleveland",
+      "date": "2026-10-17",
+      "state": "Ohio",
+      "city": "Cleveland",
+      "killed": 0,
+      "injured": 5,
       "source": "gva"
     },
     {
@@ -5538,7 +5547,7 @@
     }
   ],
   "model": {
-    "fitted_at": "2026-10-21T10:42:06.794061+00:00",
+    "fitted_at": "2026-10-22T10:44:47.908411+00:00",
     "n_states": 50,
     "outcome": "firearm_mortality_rate",
     "ols": {
