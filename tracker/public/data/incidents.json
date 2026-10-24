@@ -1039,15 +1039,6 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-07-25-louisiana-saint-martinville",
-    "date": "2026-07-25",
-    "state": "Louisiana",
-    "city": "Saint Martinville",
-    "killed": 0,
-    "injured": 4,
-    "source": "gva"
-  },
-  {
     "id": "gva-2026-07-25-california-morgan-hill",
     "date": "2026-07-25",
     "state": "California",
@@ -1061,6 +1052,15 @@
     "date": "2026-07-25",
     "state": "California",
     "city": "San Francisco",
+    "killed": 0,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-07-25-louisiana-saint-martinville",
+    "date": "2026-07-25",
+    "state": "Louisiana",
+    "city": "Saint Martinville",
     "killed": 0,
     "injured": 4,
     "source": "gva"

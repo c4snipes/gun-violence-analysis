@@ -238,5 +238,10 @@
     "queried_at": "2026-10-22T10:48:41.506Z",
     "had_results": false,
     "match": null
+  },
+  "gva-2026-10-18-illinois-chicago": {
+    "queried_at": "2026-10-24T09:56:23.470Z",
+    "had_results": true,
+    "match": null
   }
 }
