@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-24T09:54:59.588Z",
+  "generated_at": "2026-10-25T10:15:57.355Z",
   "window_days": 365,
   "totals_by_source": [
     {
       "source": "gva",
-      "incidents": 434,
-      "killed": 411,
-      "injured": 1852,
-      "latest_incident_date": "2026-10-18"
+      "incidents": 432,
+      "killed": 407,
+      "injured": 1838,
+      "latest_incident_date": "2026-10-24"
     },
     {
       "source": "mother_jones",
@@ -813,10 +813,10 @@
       "population": 1151831,
       "counts_by_source": {
         "gva": {
-          "incidents": 3,
-          "killed": 11,
-          "injured": 4,
-          "per_100k": 0.26045487575868337
+          "incidents": 2,
+          "killed": 10,
+          "injured": 2,
+          "per_100k": 0.17363658383912223
         },
         "mother_jones": {
           "incidents": 0,
@@ -1030,10 +1030,10 @@
       "population": 11343875,
       "counts_by_source": {
         "gva": {
-          "incidents": 18,
-          "killed": 16,
-          "injured": 87,
-          "per_100k": 0.15867593745523467
+          "incidents": 17,
+          "killed": 14,
+          "injured": 76,
+          "per_100k": 0.14986060759661052
         },
         "mother_jones": {
           "incidents": 0,
@@ -1185,10 +1185,10 @@
       "population": 13073016,
       "counts_by_source": {
         "gva": {
-          "incidents": 16,
-          "killed": 20,
-          "injured": 55,
-          "per_100k": 0.12238950828179204
+          "incidents": 15,
+          "killed": 19,
+          "injured": 49,
+          "per_100k": 0.11474016401418005
         },
         "mother_jones": {
           "incidents": 0,
@@ -1309,10 +1309,10 @@
       "population": 7378861,
       "counts_by_source": {
         "gva": {
-          "incidents": 9,
+          "incidents": 10,
           "killed": 8,
-          "injured": 46,
-          "per_100k": 0.12197004388617701
+          "injured": 51,
+          "per_100k": 0.13552227098464112
         },
         "mother_jones": {
           "incidents": 0,
@@ -1585,6 +1585,15 @@
   ],
   "recent_incidents": [
     {
+      "id": "gva-2026-10-24-tennessee-memphis",
+      "date": "2026-10-24",
+      "state": "Tennessee",
+      "city": "Memphis",
+      "killed": 0,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
       "id": "gva-2026-10-18-illinois-mundelein",
       "date": "2026-10-18",
       "state": "Illinois",
@@ -1711,15 +1720,6 @@
       "source": "mother_jones",
       "url": "https://www.nbcnews.com/news/us-news/live-blog/live-coverage-teen-shooter-kills-3-children-teacher-oregon-elementary-rcna603846",
       "summary": "Griffin J. John, 16, opened fire at the school; he was pursued inside by an armed citizen, Kaylub Giamanco, who shot him fatally."
-    },
-    {
-      "id": "gva-2026-10-13-montana-kalispell",
-      "date": "2026-10-13",
-      "state": "Montana",
-      "city": "Kalispell",
-      "killed": 1,
-      "injured": 2,
-      "source": "gva"
     },
     {
       "id": "gva-2026-10-10-michigan-detroit",
@@ -5526,28 +5526,10 @@
       "killed": 0,
       "injured": 6,
       "source": "gva"
-    },
-    {
-      "id": "gva-2025-10-25-north-carolina-maxton",
-      "date": "2025-10-25",
-      "state": "North Carolina",
-      "city": "Maxton",
-      "killed": 2,
-      "injured": 11,
-      "source": "gva"
-    },
-    {
-      "id": "gva-2025-10-25-pennsylvania-lincoln-university",
-      "date": "2025-10-25",
-      "state": "Pennsylvania",
-      "city": "Lincoln University",
-      "killed": 1,
-      "injured": 6,
-      "source": "gva"
     }
   ],
   "model": {
-    "fitted_at": "2026-10-24T09:54:26.058639+00:00",
+    "fitted_at": "2026-10-25T10:15:14.218118+00:00",
     "n_states": 50,
     "outcome": "firearm_mortality_rate",
     "ols": {

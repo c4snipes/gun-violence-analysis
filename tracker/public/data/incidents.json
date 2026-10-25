@@ -1,5 +1,14 @@
 [
   {
+    "id": "gva-2026-10-24-tennessee-memphis",
+    "date": "2026-10-24",
+    "state": "Tennessee",
+    "city": "Memphis",
+    "killed": 0,
+    "injured": 5,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-10-18-illinois-mundelein",
     "date": "2026-10-18",
     "state": "Illinois",
@@ -126,15 +135,6 @@
     "source": "mother_jones",
     "url": "https://www.nbcnews.com/news/us-news/live-blog/live-coverage-teen-shooter-kills-3-children-teacher-oregon-elementary-rcna603846",
     "summary": "Griffin J. John, 16, opened fire at the school; he was pursued inside by an armed citizen, Kaylub Giamanco, who shot him fatally."
-  },
-  {
-    "id": "gva-2026-10-13-montana-kalispell",
-    "date": "2026-10-13",
-    "state": "Montana",
-    "city": "Kalispell",
-    "killed": 1,
-    "injured": 2,
-    "source": "gva"
   },
   {
     "id": "gva-2026-10-10-michigan-detroit",
