@@ -1,11 +1,47 @@
 [
   {
+    "id": "gva-2026-10-25-north-carolina-charlotte",
+    "date": "2026-10-25",
+    "state": "North Carolina",
+    "city": "Charlotte",
+    "killed": 2,
+    "injured": 2,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-10-25-indiana-muncie",
+    "date": "2026-10-25",
+    "state": "Indiana",
+    "city": "Muncie",
+    "killed": 0,
+    "injured": 5,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-10-24-tennessee-memphis",
     "date": "2026-10-24",
     "state": "Tennessee",
     "city": "Memphis",
     "killed": 0,
     "injured": 5,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-10-24-north-carolina-charlotte",
+    "date": "2026-10-24",
+    "state": "North Carolina",
+    "city": "Charlotte",
+    "killed": 0,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-10-24-florida-tallahassee",
+    "date": "2026-10-24",
+    "state": "Florida",
+    "city": "Tallahassee",
+    "killed": 0,
+    "injured": 11,
     "source": "gva"
   },
   {
@@ -3939,24 +3975,6 @@
     "state": "Washington",
     "city": "Pasco",
     "killed": 0,
-    "injured": 6,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-10-25-north-carolina-maxton",
-    "date": "2025-10-25",
-    "state": "North Carolina",
-    "city": "Maxton",
-    "killed": 2,
-    "injured": 11,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-10-25-pennsylvania-lincoln-university",
-    "date": "2025-10-25",
-    "state": "Pennsylvania",
-    "city": "Lincoln University",
-    "killed": 1,
     "injured": 6,
     "source": "gva"
   },
