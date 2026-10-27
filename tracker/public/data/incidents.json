@@ -1,11 +1,11 @@
 [
   {
-    "id": "gva-2026-10-25-north-carolina-charlotte",
-    "date": "2026-10-25",
-    "state": "North Carolina",
-    "city": "Charlotte",
-    "killed": 2,
-    "injured": 2,
+    "id": "gva-2026-10-26-new-jersey-elizabeth",
+    "date": "2026-10-26",
+    "state": "New Jersey",
+    "city": "Elizabeth",
+    "killed": 1,
+    "injured": 6,
     "source": "gva"
   },
   {
@@ -18,12 +18,12 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-10-24-tennessee-memphis",
-    "date": "2026-10-24",
-    "state": "Tennessee",
-    "city": "Memphis",
-    "killed": 0,
-    "injured": 5,
+    "id": "gva-2026-10-25-north-carolina-charlotte",
+    "date": "2026-10-25",
+    "state": "North Carolina",
+    "city": "Charlotte",
+    "killed": 2,
+    "injured": 2,
     "source": "gva"
   },
   {
@@ -42,6 +42,15 @@
     "city": "Tallahassee",
     "killed": 0,
     "injured": 11,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-10-24-tennessee-memphis",
+    "date": "2026-10-24",
+    "state": "Tennessee",
+    "city": "Memphis",
+    "killed": 0,
+    "injured": 5,
     "source": "gva"
   },
   {
@@ -254,6 +263,15 @@
     "source": "gva"
   },
   {
+    "id": "gva-2026-10-04-texas-dallas",
+    "date": "2026-10-04",
+    "state": "Texas",
+    "city": "Dallas",
+    "killed": 0,
+    "injured": 6,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-10-04-california-sacramento",
     "date": "2026-10-04",
     "state": "California",
@@ -269,15 +287,6 @@
     "city": "Reno",
     "killed": 0,
     "injured": 4,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-10-04-texas-dallas",
-    "date": "2026-10-04",
-    "state": "Texas",
-    "city": "Dallas",
-    "killed": 0,
-    "injured": 6,
     "source": "gva"
   },
   {
@@ -449,15 +458,6 @@
     "city": "Sanford",
     "killed": 0,
     "injured": 7,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-09-18-illinois-east-saint-louis",
-    "date": "2026-09-18",
-    "state": "Illinois",
-    "city": "East Saint Louis",
-    "killed": 1,
-    "injured": 3,
     "source": "gva"
   },
   {
@@ -3958,24 +3958,6 @@
     "city": "Oklahoma City",
     "killed": 0,
     "injured": 5,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-10-26-tennessee-nashville",
-    "date": "2025-10-26",
-    "state": "Tennessee",
-    "city": "Nashville",
-    "killed": 0,
-    "injured": 4,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-10-26-washington-pasco",
-    "date": "2025-10-26",
-    "state": "Washington",
-    "city": "Pasco",
-    "killed": 0,
-    "injured": 6,
     "source": "gva"
   },
   {
