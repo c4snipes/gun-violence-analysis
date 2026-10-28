@@ -5,7 +5,7 @@
     "state": "New Jersey",
     "city": "Elizabeth",
     "killed": 1,
-    "injured": 6,
+    "injured": 4,
     "source": "gva"
   },
   {
@@ -263,15 +263,6 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-10-04-texas-dallas",
-    "date": "2026-10-04",
-    "state": "Texas",
-    "city": "Dallas",
-    "killed": 0,
-    "injured": 6,
-    "source": "gva"
-  },
-  {
     "id": "gva-2026-10-04-california-sacramento",
     "date": "2026-10-04",
     "state": "California",
@@ -287,6 +278,15 @@
     "city": "Reno",
     "killed": 0,
     "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-10-04-texas-dallas",
+    "date": "2026-10-04",
+    "state": "Texas",
+    "city": "Dallas",
+    "killed": 0,
+    "injured": 6,
     "source": "gva"
   },
   {
