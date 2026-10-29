@@ -27,6 +27,15 @@
     "source": "gva"
   },
   {
+    "id": "gva-2026-10-25-arizona-tucson",
+    "date": "2026-10-25",
+    "state": "Arizona",
+    "city": "Tucson",
+    "killed": 0,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-10-24-north-carolina-charlotte",
     "date": "2026-10-24",
     "state": "North Carolina",
@@ -1237,6 +1246,15 @@
     "source": "gva"
   },
   {
+    "id": "gva-2026-07-16-illinois-chicago",
+    "date": "2026-07-16",
+    "state": "Illinois",
+    "city": "Chicago",
+    "killed": 1,
+    "injured": 3,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-07-16-louisiana-shreveport",
     "date": "2026-07-16",
     "state": "Louisiana",
@@ -1252,15 +1270,6 @@
     "city": "Dallas",
     "killed": 0,
     "injured": 4,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-07-16-illinois-chicago",
-    "date": "2026-07-16",
-    "state": "Illinois",
-    "city": "Chicago",
-    "killed": 1,
-    "injured": 3,
     "source": "gva"
   },
   {

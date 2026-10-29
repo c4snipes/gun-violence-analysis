@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-28T11:45:21.051Z",
+  "generated_at": "2026-10-29T11:53:22.991Z",
   "window_days": 365,
   "totals_by_source": [
     {
       "source": "gva",
-      "incidents": 434,
+      "incidents": 435,
       "killed": 409,
-      "injured": 1851,
+      "injured": 1855,
       "latest_incident_date": "2026-10-26"
     },
     {
@@ -100,10 +100,10 @@
       "population": 7691212,
       "counts_by_source": {
         "gva": {
-          "incidents": 8,
+          "incidents": 9,
           "killed": 4,
-          "injured": 34,
-          "per_100k": 0.10401481587037258
+          "injured": 38,
+          "per_100k": 0.11701666785416914
         },
         "mother_jones": {
           "incidents": 0,
@@ -1612,6 +1612,15 @@
       "source": "gva"
     },
     {
+      "id": "gva-2026-10-25-arizona-tucson",
+      "date": "2026-10-25",
+      "state": "Arizona",
+      "city": "Tucson",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
       "id": "gva-2026-10-24-north-carolina-charlotte",
       "date": "2026-10-24",
       "state": "North Carolina",
@@ -2822,6 +2831,15 @@
       "source": "gva"
     },
     {
+      "id": "gva-2026-07-16-illinois-chicago",
+      "date": "2026-07-16",
+      "state": "Illinois",
+      "city": "Chicago",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
       "id": "gva-2026-07-16-louisiana-shreveport",
       "date": "2026-07-16",
       "state": "Louisiana",
@@ -2837,15 +2855,6 @@
       "city": "Dallas",
       "killed": 0,
       "injured": 4,
-      "source": "gva"
-    },
-    {
-      "id": "gva-2026-07-16-illinois-chicago",
-      "date": "2026-07-16",
-      "state": "Illinois",
-      "city": "Chicago",
-      "killed": 1,
-      "injured": 3,
       "source": "gva"
     },
     {
@@ -5547,7 +5556,7 @@
     }
   ],
   "model": {
-    "fitted_at": "2026-10-28T11:44:35.609176+00:00",
+    "fitted_at": "2026-10-29T11:52:48.760070+00:00",
     "n_states": 50,
     "outcome": "firearm_mortality_rate",
     "ols": {
