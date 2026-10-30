@@ -263,5 +263,15 @@
     "queried_at": "2026-10-28T11:48:10.311Z",
     "had_results": false,
     "match": null
+  },
+  "gva-2026-10-25-indiana-muncie": {
+    "queried_at": "2026-10-30T11:46:28.553Z",
+    "had_results": false,
+    "match": null
+  },
+  "gva-2026-10-24-tennessee-memphis": {
+    "queried_at": "2026-10-30T11:48:04.707Z",
+    "had_results": true,
+    "match": null
   }
 }

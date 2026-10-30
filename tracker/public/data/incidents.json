@@ -36,21 +36,21 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-10-24-north-carolina-charlotte",
-    "date": "2026-10-24",
-    "state": "North Carolina",
-    "city": "Charlotte",
-    "killed": 0,
-    "injured": 4,
-    "source": "gva"
-  },
-  {
     "id": "gva-2026-10-24-florida-tallahassee",
     "date": "2026-10-24",
     "state": "Florida",
     "city": "Tallahassee",
     "killed": 0,
     "injured": 11,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-10-24-north-carolina-charlotte",
+    "date": "2026-10-24",
+    "state": "North Carolina",
+    "city": "Charlotte",
+    "killed": 0,
+    "injured": 4,
     "source": "gva"
   },
   {
