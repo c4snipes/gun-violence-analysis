@@ -273,5 +273,10 @@
     "queried_at": "2026-10-30T11:48:04.707Z",
     "had_results": true,
     "match": null
+  },
+  "gva-2026-10-24-north-carolina-charlotte": {
+    "queried_at": "2026-10-31T11:20:39.179Z",
+    "had_results": true,
+    "match": null
   }
 }

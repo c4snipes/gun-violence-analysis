@@ -263,6 +263,15 @@
     "source": "gva"
   },
   {
+    "id": "gva-2026-10-04-texas-dallas",
+    "date": "2026-10-04",
+    "state": "Texas",
+    "city": "Dallas",
+    "killed": 0,
+    "injured": 6,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-10-04-new-york-albany",
     "date": "2026-10-04",
     "state": "New York",
@@ -287,15 +296,6 @@
     "city": "Reno",
     "killed": 0,
     "injured": 4,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-10-04-texas-dallas",
-    "date": "2026-10-04",
-    "state": "Texas",
-    "city": "Dallas",
-    "killed": 0,
-    "injured": 6,
     "source": "gva"
   },
   {
