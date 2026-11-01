@@ -1,5 +1,23 @@
 [
   {
+    "id": "gva-2026-10-31-michigan-flint",
+    "date": "2026-10-31",
+    "state": "Michigan",
+    "city": "Flint",
+    "killed": 1,
+    "injured": 3,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-10-30-california-fairfield",
+    "date": "2026-10-30",
+    "state": "California",
+    "city": "Fairfield",
+    "killed": 1,
+    "injured": 6,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-10-26-new-jersey-elizabeth",
     "date": "2026-10-26",
     "state": "New Jersey",
@@ -1939,21 +1957,21 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-06-06-texas-fort-worth",
-    "date": "2026-06-06",
-    "state": "Texas",
-    "city": "Fort Worth",
-    "killed": 0,
-    "injured": 4,
-    "source": "gva"
-  },
-  {
     "id": "gva-2026-06-06-ohio-toledo",
     "date": "2026-06-06",
     "state": "Ohio",
     "city": "Toledo",
     "killed": 0,
     "injured": 12,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-06-06-texas-fort-worth",
+    "date": "2026-06-06",
+    "state": "Texas",
+    "city": "Fort Worth",
+    "killed": 0,
+    "injured": 4,
     "source": "gva"
   },
   {
@@ -3949,24 +3967,6 @@
     "city": "Tucson",
     "killed": 1,
     "injured": 3,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-10-31-texas-san-antonio",
-    "date": "2025-10-31",
-    "state": "Texas",
-    "city": "San Antonio",
-    "killed": 0,
-    "injured": 4,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-10-31-oklahoma-oklahoma-city",
-    "date": "2025-10-31",
-    "state": "Oklahoma",
-    "city": "Oklahoma City",
-    "killed": 0,
-    "injured": 5,
     "source": "gva"
   },
   {

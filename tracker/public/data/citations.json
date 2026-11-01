@@ -278,5 +278,20 @@
     "queried_at": "2026-10-31T11:20:39.179Z",
     "had_results": true,
     "match": null
+  },
+  "gva-2026-10-30-california-fairfield": {
+    "queried_at": "2026-11-01T12:11:18.415Z",
+    "had_results": false,
+    "match": null
+  },
+  "gva-2026-10-24-florida-tallahassee": {
+    "queried_at": "2026-11-01T12:12:21.982Z",
+    "had_results": true,
+    "match": {
+      "title": "Tallahassee shooting update : At least 11 shot near Bragg Stadium at Florida A & M University ; 3 sustain serious injuries",
+      "url": "https://www.hindustantimes.com/world-news/us-news/tallahassee-shooting-update-at-least-11-shot-near-bragg-stadium-at-florida-a-m-university-3-sustain-serious-injuries-101792903342671.html",
+      "source_domain": "hindustantimes.com",
+      "published_at": "20261025T053000Z"
+    }
   }
 }

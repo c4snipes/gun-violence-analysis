@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-31T11:19:24.476Z",
+  "generated_at": "2026-11-01T12:10:44.427Z",
   "window_days": 365,
   "totals_by_source": [
     {
       "source": "gva",
-      "incidents": 433,
+      "incidents": 432,
       "killed": 409,
-      "injured": 1846,
-      "latest_incident_date": "2026-10-26"
+      "injured": 1845,
+      "latest_incident_date": "2026-10-31"
     },
     {
       "source": "mother_jones",
@@ -100,10 +100,10 @@
       "population": 7691212,
       "counts_by_source": {
         "gva": {
-          "incidents": 9,
-          "killed": 4,
-          "injured": 38,
-          "per_100k": 0.11701666785416914
+          "incidents": 8,
+          "killed": 3,
+          "injured": 35,
+          "per_100k": 0.10401481587037258
         },
         "mother_jones": {
           "incidents": 0,
@@ -163,8 +163,8 @@
       "counts_by_source": {
         "gva": {
           "incidents": 33,
-          "killed": 22,
-          "injured": 141,
+          "killed": 23,
+          "injured": 143,
           "per_100k": 0.08387162822075947
         },
         "mother_jones": {
@@ -286,10 +286,10 @@
       "population": 23659198,
       "counts_by_source": {
         "gva": {
-          "incidents": 26,
-          "killed": 16,
-          "injured": 108,
-          "per_100k": 0.10989383494740607
+          "incidents": 25,
+          "killed": 15,
+          "injured": 105,
+          "per_100k": 0.10566714898789047
         },
         "mother_jones": {
           "incidents": 0,
@@ -689,10 +689,10 @@
       "population": 10155806,
       "counts_by_source": {
         "gva": {
-          "incidents": 18,
-          "killed": 26,
-          "injured": 58,
-          "per_100k": 0.1772385175534074
+          "incidents": 19,
+          "killed": 27,
+          "injured": 61,
+          "per_100k": 0.18708510186193
         },
         "mother_jones": {
           "incidents": 0,
@@ -1584,6 +1584,24 @@
     }
   ],
   "recent_incidents": [
+    {
+      "id": "gva-2026-10-31-michigan-flint",
+      "date": "2026-10-31",
+      "state": "Michigan",
+      "city": "Flint",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-10-30-california-fairfield",
+      "date": "2026-10-30",
+      "state": "California",
+      "city": "Fairfield",
+      "killed": 1,
+      "injured": 6,
+      "source": "gva"
+    },
     {
       "id": "gva-2026-10-26-new-jersey-elizabeth",
       "date": "2026-10-26",
@@ -3524,21 +3542,21 @@
       "source": "gva"
     },
     {
-      "id": "gva-2026-06-06-texas-fort-worth",
-      "date": "2026-06-06",
-      "state": "Texas",
-      "city": "Fort Worth",
-      "killed": 0,
-      "injured": 4,
-      "source": "gva"
-    },
-    {
       "id": "gva-2026-06-06-ohio-toledo",
       "date": "2026-06-06",
       "state": "Ohio",
       "city": "Toledo",
       "killed": 0,
       "injured": 12,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-06-06-texas-fort-worth",
+      "date": "2026-06-06",
+      "state": "Texas",
+      "city": "Fort Worth",
+      "killed": 0,
+      "injured": 4,
       "source": "gva"
     },
     {
@@ -5508,37 +5526,10 @@
       "killed": 0,
       "injured": 4,
       "source": "gva"
-    },
-    {
-      "id": "gva-2025-11-01-florida-gretna",
-      "date": "2025-11-01",
-      "state": "Florida",
-      "city": "Gretna",
-      "killed": 1,
-      "injured": 3,
-      "source": "gva"
-    },
-    {
-      "id": "gva-2025-11-01-california-sacramento",
-      "date": "2025-11-01",
-      "state": "California",
-      "city": "Sacramento",
-      "killed": 0,
-      "injured": 4,
-      "source": "gva"
-    },
-    {
-      "id": "gva-2025-11-01-arizona-tucson",
-      "date": "2025-11-01",
-      "state": "Arizona",
-      "city": "Tucson",
-      "killed": 1,
-      "injured": 3,
-      "source": "gva"
     }
   ],
   "model": {
-    "fitted_at": "2026-10-31T11:18:50.126611+00:00",
+    "fitted_at": "2026-11-01T12:10:10.397160+00:00",
     "n_states": 50,
     "outcome": "firearm_mortality_rate",
     "ols": {
