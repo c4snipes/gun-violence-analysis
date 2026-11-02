@@ -1,11 +1,119 @@
 [
   {
+    "id": "gva-2026-11-01-tennessee-nashville",
+    "date": "2026-11-01",
+    "state": "Tennessee",
+    "city": "Nashville",
+    "killed": 0,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-11-01-arkansas-fayetteville",
+    "date": "2026-11-01",
+    "state": "Arkansas",
+    "city": "Fayetteville",
+    "killed": 0,
+    "injured": 6,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-11-01-florida-jacksonville",
+    "date": "2026-11-01",
+    "state": "Florida",
+    "city": "Jacksonville",
+    "killed": 1,
+    "injured": 9,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-11-01-illinois-bloomington",
+    "date": "2026-11-01",
+    "state": "Illinois",
+    "city": "Bloomington",
+    "killed": 1,
+    "injured": 7,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-11-01-indiana-bloomington",
+    "date": "2026-11-01",
+    "state": "Indiana",
+    "city": "Bloomington",
+    "killed": 0,
+    "injured": 7,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-11-01-texas-dallas",
+    "date": "2026-11-01",
+    "state": "Texas",
+    "city": "Dallas",
+    "killed": 0,
+    "injured": 6,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-10-31-alabama-birmingham",
+    "date": "2026-10-31",
+    "state": "Alabama",
+    "city": "Birmingham",
+    "killed": 1,
+    "injured": 8,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-10-31-michigan-flint",
     "date": "2026-10-31",
     "state": "Michigan",
     "city": "Flint",
     "killed": 1,
     "injured": 3,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-10-31-delaware-ellendale",
+    "date": "2026-10-31",
+    "state": "Delaware",
+    "city": "Ellendale",
+    "killed": 1,
+    "injured": 8,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-10-31-kansas-wichita",
+    "date": "2026-10-31",
+    "state": "Kansas",
+    "city": "Wichita",
+    "killed": 0,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-10-31-texas-edinburg",
+    "date": "2026-10-31",
+    "state": "Texas",
+    "city": "Edinburg",
+    "killed": 0,
+    "injured": 7,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-10-31-delaware-newark",
+    "date": "2026-10-31",
+    "state": "Delaware",
+    "city": "Newark",
+    "killed": 0,
+    "injured": 6,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-10-31-mississippi-jackson",
+    "date": "2026-10-31",
+    "state": "Mississippi",
+    "city": "Jackson",
+    "killed": 2,
+    "injured": 6,
     "source": "gva"
   },
   {
@@ -227,21 +335,21 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-10-09-georgia-douglas",
-    "date": "2026-10-09",
-    "state": "Georgia",
-    "city": "Douglas",
-    "killed": 4,
-    "injured": 0,
-    "source": "gva"
-  },
-  {
     "id": "gva-2026-10-09-maryland-baltimore",
     "date": "2026-10-09",
     "state": "Maryland",
     "city": "Baltimore",
     "killed": 2,
     "injured": 2,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-10-09-georgia-douglas",
+    "date": "2026-10-09",
+    "state": "Georgia",
+    "city": "Douglas",
+    "killed": 4,
+    "injured": 0,
     "source": "gva"
   },
   {
@@ -296,15 +404,6 @@
     "city": "Albany",
     "killed": 1,
     "injured": 3,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-10-04-california-sacramento",
-    "date": "2026-10-04",
-    "state": "California",
-    "city": "Sacramento",
-    "killed": 0,
-    "injured": 4,
     "source": "gva"
   },
   {
@@ -3940,33 +4039,6 @@
     "city": "Chicago",
     "killed": 0,
     "injured": 4,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-11-01-florida-gretna",
-    "date": "2025-11-01",
-    "state": "Florida",
-    "city": "Gretna",
-    "killed": 1,
-    "injured": 3,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-11-01-california-sacramento",
-    "date": "2025-11-01",
-    "state": "California",
-    "city": "Sacramento",
-    "killed": 0,
-    "injured": 4,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-11-01-arizona-tucson",
-    "date": "2025-11-01",
-    "state": "Arizona",
-    "city": "Tucson",
-    "killed": 1,
-    "injured": 3,
     "source": "gva"
   },
   {
