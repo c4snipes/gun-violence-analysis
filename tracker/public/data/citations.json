@@ -298,5 +298,10 @@
     "queried_at": "2026-11-02T14:03:58.074Z",
     "had_results": false,
     "match": null
+  },
+  "gva-2026-11-01-texas-dallas": {
+    "queried_at": "2026-11-03T13:09:25.036Z",
+    "had_results": false,
+    "match": null
   }
 }

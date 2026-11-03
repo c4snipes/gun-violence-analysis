@@ -1,38 +1,29 @@
 [
   {
-    "id": "gva-2026-11-01-tennessee-nashville",
-    "date": "2026-11-01",
-    "state": "Tennessee",
-    "city": "Nashville",
-    "killed": 0,
-    "injured": 4,
+    "id": "gva-2026-11-02-california-moss-landing",
+    "date": "2026-11-02",
+    "state": "California",
+    "city": "Moss Landing",
+    "killed": 2,
+    "injured": 2,
     "source": "gva"
   },
   {
-    "id": "gva-2026-11-01-arkansas-fayetteville",
-    "date": "2026-11-01",
-    "state": "Arkansas",
-    "city": "Fayetteville",
-    "killed": 0,
-    "injured": 6,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-11-01-florida-jacksonville",
-    "date": "2026-11-01",
-    "state": "Florida",
-    "city": "Jacksonville",
-    "killed": 1,
-    "injured": 9,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-11-01-illinois-bloomington",
+    "id": "gva-2026-11-01-illinois-madison",
     "date": "2026-11-01",
     "state": "Illinois",
-    "city": "Bloomington",
+    "city": "Madison",
     "killed": 1,
-    "injured": 7,
+    "injured": 3,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-11-01-texas-dallas",
+    "date": "2026-11-01",
+    "state": "Texas",
+    "city": "Dallas",
+    "killed": 0,
+    "injured": 14,
     "source": "gva"
   },
   {
@@ -45,12 +36,66 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-11-01-texas-dallas",
+    "id": "gva-2026-11-01-mississippi-jackson",
     "date": "2026-11-01",
-    "state": "Texas",
-    "city": "Dallas",
-    "killed": 0,
+    "state": "Mississippi",
+    "city": "Jackson",
+    "killed": 2,
     "injured": 6,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-11-01-illinois-bloomington",
+    "date": "2026-11-01",
+    "state": "Illinois",
+    "city": "Bloomington",
+    "killed": 1,
+    "injured": 8,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-11-01-arkansas-fayetteville",
+    "date": "2026-11-01",
+    "state": "Arkansas",
+    "city": "Fayetteville",
+    "killed": 0,
+    "injured": 7,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-11-01-florida-jacksonville",
+    "date": "2026-11-01",
+    "state": "Florida",
+    "city": "Jacksonville",
+    "killed": 1,
+    "injured": 9,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-11-01-north-carolina-durham",
+    "date": "2026-11-01",
+    "state": "North Carolina",
+    "city": "Durham",
+    "killed": 0,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-11-01-north-carolina-mooresville",
+    "date": "2026-11-01",
+    "state": "North Carolina",
+    "city": "Mooresville",
+    "killed": 0,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-11-01-tennessee-nashville",
+    "date": "2026-11-01",
+    "state": "Tennessee",
+    "city": "Nashville",
+    "killed": 0,
+    "injured": 4,
     "source": "gva"
   },
   {
@@ -72,15 +117,6 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-10-31-delaware-ellendale",
-    "date": "2026-10-31",
-    "state": "Delaware",
-    "city": "Ellendale",
-    "killed": 1,
-    "injured": 8,
-    "source": "gva"
-  },
-  {
     "id": "gva-2026-10-31-kansas-wichita",
     "date": "2026-10-31",
     "state": "Kansas",
@@ -99,20 +135,20 @@
     "source": "gva"
   },
   {
+    "id": "gva-2026-10-31-delaware-ellendale",
+    "date": "2026-10-31",
+    "state": "Delaware",
+    "city": "Ellendale",
+    "killed": 1,
+    "injured": 8,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-10-31-delaware-newark",
     "date": "2026-10-31",
     "state": "Delaware",
     "city": "Newark",
     "killed": 0,
-    "injured": 6,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-10-31-mississippi-jackson",
-    "date": "2026-10-31",
-    "state": "Mississippi",
-    "city": "Jackson",
-    "killed": 2,
     "injured": 6,
     "source": "gva"
   },
@@ -3994,51 +4030,6 @@
     "city": "Wilmington",
     "killed": 0,
     "injured": 5,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-11-02-california-winnetka",
-    "date": "2025-11-02",
-    "state": "California",
-    "city": "Winnetka",
-    "killed": 0,
-    "injured": 4,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-11-02-ohio-cincinnati",
-    "date": "2025-11-02",
-    "state": "Ohio",
-    "city": "Cincinnati",
-    "killed": 0,
-    "injured": 4,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-11-02-california-elk-grove",
-    "date": "2025-11-02",
-    "state": "California",
-    "city": "Elk Grove",
-    "killed": 2,
-    "injured": 2,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-11-02-ohio-akron",
-    "date": "2025-11-02",
-    "state": "Ohio",
-    "city": "Akron",
-    "killed": 1,
-    "injured": 7,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-11-02-illinois-chicago",
-    "date": "2025-11-02",
-    "state": "Illinois",
-    "city": "Chicago",
-    "killed": 0,
-    "injured": 4,
     "source": "gva"
   },
   {
