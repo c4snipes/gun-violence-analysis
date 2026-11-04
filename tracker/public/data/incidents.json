@@ -18,15 +18,6 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-11-01-texas-dallas",
-    "date": "2026-11-01",
-    "state": "Texas",
-    "city": "Dallas",
-    "killed": 0,
-    "injured": 14,
-    "source": "gva"
-  },
-  {
     "id": "gva-2026-11-01-indiana-bloomington",
     "date": "2026-11-01",
     "state": "Indiana",
@@ -51,6 +42,15 @@
     "city": "Bloomington",
     "killed": 1,
     "injured": 8,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-11-01-texas-dallas",
+    "date": "2026-11-01",
+    "state": "Texas",
+    "city": "Dallas",
+    "killed": 0,
+    "injured": 14,
     "source": "gva"
   },
   {
@@ -99,6 +99,15 @@
     "source": "gva"
   },
   {
+    "id": "gva-2026-10-31-delaware-newark",
+    "date": "2026-10-31",
+    "state": "Delaware",
+    "city": "Newark",
+    "killed": 0,
+    "injured": 7,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-10-31-alabama-birmingham",
     "date": "2026-10-31",
     "state": "Alabama",
@@ -126,15 +135,6 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-10-31-texas-edinburg",
-    "date": "2026-10-31",
-    "state": "Texas",
-    "city": "Edinburg",
-    "killed": 0,
-    "injured": 7,
-    "source": "gva"
-  },
-  {
     "id": "gva-2026-10-31-delaware-ellendale",
     "date": "2026-10-31",
     "state": "Delaware",
@@ -144,12 +144,12 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-10-31-delaware-newark",
+    "id": "gva-2026-10-31-texas-edinburg",
     "date": "2026-10-31",
-    "state": "Delaware",
-    "city": "Newark",
+    "state": "Texas",
+    "city": "Edinburg",
     "killed": 0,
-    "injured": 6,
+    "injured": 9,
     "source": "gva"
   },
   {

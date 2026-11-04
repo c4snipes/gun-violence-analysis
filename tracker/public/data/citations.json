@@ -303,5 +303,20 @@
     "queried_at": "2026-11-03T13:09:25.036Z",
     "had_results": false,
     "match": null
+  },
+  "gva-2026-11-01-mississippi-jackson": {
+    "queried_at": "2026-11-04T13:24:31.683Z",
+    "had_results": false,
+    "match": null
+  },
+  "gva-2026-11-01-illinois-bloomington": {
+    "queried_at": "2026-11-04T13:24:55.253Z",
+    "had_results": false,
+    "match": null
+  },
+  "gva-2026-11-01-arkansas-fayetteville": {
+    "queried_at": "2026-11-04T13:25:21.491Z",
+    "had_results": false,
+    "match": null
   }
 }
