@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-04T13:23:12.191Z",
+  "generated_at": "2026-11-05T13:36:14.327Z",
   "window_days": 365,
   "totals_by_source": [
     {
       "source": "gva",
-      "incidents": 442,
-      "killed": 415,
-      "injured": 1924,
-      "latest_incident_date": "2026-11-02"
+      "incidents": 444,
+      "killed": 418,
+      "injured": 1931,
+      "latest_incident_date": "2026-11-03"
     },
     {
       "source": "mother_jones",
@@ -751,10 +751,10 @@
       "population": 2958148,
       "counts_by_source": {
         "gva": {
-          "incidents": 13,
+          "incidents": 14,
           "killed": 16,
-          "injured": 52,
-          "per_100k": 0.4394641512189383
+          "injured": 57,
+          "per_100k": 0.4732690859280874
         },
         "mother_jones": {
           "incidents": 0,
@@ -1464,10 +1464,10 @@
       "population": 8074082,
       "counts_by_source": {
         "gva": {
-          "incidents": 4,
-          "killed": 4,
-          "injured": 15,
-          "per_100k": 0.04954123577144745
+          "incidents": 5,
+          "killed": 7,
+          "injured": 17,
+          "per_100k": 0.06192654471430931
         },
         "mother_jones": {
           "incidents": 0,
@@ -1584,6 +1584,15 @@
     }
   ],
   "recent_incidents": [
+    {
+      "id": "gva-2026-11-03-washington-spangle",
+      "date": "2026-11-03",
+      "state": "Washington",
+      "city": "Spangle",
+      "killed": 3,
+      "injured": 2,
+      "source": "gva"
+    },
     {
       "id": "gva-2026-11-02-california-moss-landing",
       "date": "2026-11-02",
@@ -1711,21 +1720,21 @@
       "source": "gva"
     },
     {
-      "id": "gva-2026-10-31-kansas-wichita",
-      "date": "2026-10-31",
-      "state": "Kansas",
-      "city": "Wichita",
-      "killed": 0,
-      "injured": 4,
-      "source": "gva"
-    },
-    {
       "id": "gva-2026-10-31-delaware-ellendale",
       "date": "2026-10-31",
       "state": "Delaware",
       "city": "Ellendale",
       "killed": 1,
       "injured": 8,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-10-31-kansas-wichita",
+      "date": "2026-10-31",
+      "state": "Kansas",
+      "city": "Wichita",
+      "killed": 0,
+      "injured": 4,
       "source": "gva"
     },
     {
@@ -1989,6 +1998,15 @@
       "city": "Meridianville",
       "killed": 0,
       "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-10-07-mississippi-batesville",
+      "date": "2026-10-07",
+      "state": "Mississippi",
+      "city": "Batesville",
+      "killed": 0,
+      "injured": 5,
       "source": "gva"
     },
     {
@@ -5619,7 +5637,7 @@
     }
   ],
   "model": {
-    "fitted_at": "2026-11-04T13:22:37.623125+00:00",
+    "fitted_at": "2026-11-05T13:35:39.851381+00:00",
     "n_states": 50,
     "outcome": "firearm_mortality_rate",
     "ols": {

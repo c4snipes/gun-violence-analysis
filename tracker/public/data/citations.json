@@ -318,5 +318,15 @@
     "queried_at": "2026-11-04T13:25:21.491Z",
     "had_results": false,
     "match": null
+  },
+  "gva-2026-10-31-delaware-newark": {
+    "queried_at": "2026-11-05T13:39:10.962Z",
+    "had_results": false,
+    "match": null
+  },
+  "gva-2026-10-31-alabama-birmingham": {
+    "queried_at": "2026-11-05T13:39:37.944Z",
+    "had_results": false,
+    "match": null
   }
 }
