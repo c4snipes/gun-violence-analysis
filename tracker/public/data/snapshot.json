@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-05T13:36:14.327Z",
+  "generated_at": "2026-11-06T13:20:23.365Z",
   "window_days": 365,
   "totals_by_source": [
     {
       "source": "gva",
-      "incidents": 444,
-      "killed": 418,
-      "injured": 1931,
+      "incidents": 445,
+      "killed": 419,
+      "injured": 1928,
       "latest_incident_date": "2026-11-03"
     },
     {
@@ -131,10 +131,10 @@
       "population": 3133502,
       "counts_by_source": {
         "gva": {
-          "incidents": 5,
-          "killed": 4,
-          "injured": 19,
-          "per_100k": 0.1595658786878068
+          "incidents": 6,
+          "killed": 5,
+          "injured": 25,
+          "per_100k": 0.19147905442536817
         },
         "mother_jones": {
           "incidents": 0,
@@ -319,7 +319,7 @@
         "gva": {
           "incidents": 23,
           "killed": 23,
-          "injured": 118,
+          "injured": 109,
           "per_100k": 0.2017315938339598
         },
         "mother_jones": {
@@ -1621,6 +1621,15 @@
       "source": "gva"
     },
     {
+      "id": "gva-2026-11-01-texas-dallas",
+      "date": "2026-11-01",
+      "state": "Texas",
+      "city": "Dallas",
+      "killed": 0,
+      "injured": 14,
+      "source": "gva"
+    },
+    {
       "id": "gva-2026-11-01-mississippi-jackson",
       "date": "2026-11-01",
       "state": "Mississippi",
@@ -1639,21 +1648,21 @@
       "source": "gva"
     },
     {
-      "id": "gva-2026-11-01-texas-dallas",
-      "date": "2026-11-01",
-      "state": "Texas",
-      "city": "Dallas",
-      "killed": 0,
-      "injured": 14,
-      "source": "gva"
-    },
-    {
       "id": "gva-2026-11-01-arkansas-fayetteville",
       "date": "2026-11-01",
       "state": "Arkansas",
       "city": "Fayetteville",
       "killed": 0,
       "injured": 7,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-11-01-arkansas-little-rock",
+      "date": "2026-11-01",
+      "state": "Arkansas",
+      "city": "Little Rock",
+      "killed": 1,
+      "injured": 6,
       "source": "gva"
     },
     {
@@ -1702,15 +1711,6 @@
       "source": "gva"
     },
     {
-      "id": "gva-2026-10-31-alabama-birmingham",
-      "date": "2026-10-31",
-      "state": "Alabama",
-      "city": "Birmingham",
-      "killed": 1,
-      "injured": 8,
-      "source": "gva"
-    },
-    {
       "id": "gva-2026-10-31-michigan-flint",
       "date": "2026-10-31",
       "state": "Michigan",
@@ -1744,6 +1744,15 @@
       "city": "Edinburg",
       "killed": 0,
       "injured": 9,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-10-31-alabama-birmingham",
+      "date": "2026-10-31",
+      "state": "Alabama",
+      "city": "Birmingham",
+      "killed": 1,
+      "injured": 8,
       "source": "gva"
     },
     {
@@ -1792,21 +1801,21 @@
       "source": "gva"
     },
     {
-      "id": "gva-2026-10-24-florida-tallahassee",
-      "date": "2026-10-24",
-      "state": "Florida",
-      "city": "Tallahassee",
-      "killed": 0,
-      "injured": 11,
-      "source": "gva"
-    },
-    {
       "id": "gva-2026-10-24-north-carolina-charlotte",
       "date": "2026-10-24",
       "state": "North Carolina",
       "city": "Charlotte",
       "killed": 0,
       "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-10-24-florida-tallahassee",
+      "date": "2026-10-24",
+      "state": "Florida",
+      "city": "Tallahassee",
+      "killed": 0,
+      "injured": 11,
       "source": "gva"
     },
     {
@@ -2024,7 +2033,7 @@
       "state": "Georgia",
       "city": "Vienna",
       "killed": 2,
-      "injured": 35,
+      "injured": 26,
       "source": "gva"
     },
     {
@@ -2840,21 +2849,21 @@
       "source": "gva"
     },
     {
-      "id": "gva-2026-07-25-california-morgan-hill",
-      "date": "2026-07-25",
-      "state": "California",
-      "city": "Morgan Hill",
-      "killed": 1,
-      "injured": 6,
-      "source": "gva"
-    },
-    {
       "id": "gva-2026-07-25-california-san-francisco",
       "date": "2026-07-25",
       "state": "California",
       "city": "San Francisco",
       "killed": 0,
       "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-07-25-california-morgan-hill",
+      "date": "2026-07-25",
+      "state": "California",
+      "city": "Morgan Hill",
+      "killed": 1,
+      "injured": 6,
       "source": "gva"
     },
     {
@@ -5637,7 +5646,7 @@
     }
   ],
   "model": {
-    "fitted_at": "2026-11-05T13:35:39.851381+00:00",
+    "fitted_at": "2026-11-06T13:19:50.358989+00:00",
     "n_states": 50,
     "outcome": "firearm_mortality_rate",
     "ols": {

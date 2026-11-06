@@ -36,6 +36,15 @@
     "source": "gva"
   },
   {
+    "id": "gva-2026-11-01-texas-dallas",
+    "date": "2026-11-01",
+    "state": "Texas",
+    "city": "Dallas",
+    "killed": 0,
+    "injured": 14,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-11-01-mississippi-jackson",
     "date": "2026-11-01",
     "state": "Mississippi",
@@ -54,21 +63,21 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-11-01-texas-dallas",
-    "date": "2026-11-01",
-    "state": "Texas",
-    "city": "Dallas",
-    "killed": 0,
-    "injured": 14,
-    "source": "gva"
-  },
-  {
     "id": "gva-2026-11-01-arkansas-fayetteville",
     "date": "2026-11-01",
     "state": "Arkansas",
     "city": "Fayetteville",
     "killed": 0,
     "injured": 7,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-11-01-arkansas-little-rock",
+    "date": "2026-11-01",
+    "state": "Arkansas",
+    "city": "Little Rock",
+    "killed": 1,
+    "injured": 6,
     "source": "gva"
   },
   {
@@ -117,15 +126,6 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-10-31-alabama-birmingham",
-    "date": "2026-10-31",
-    "state": "Alabama",
-    "city": "Birmingham",
-    "killed": 1,
-    "injured": 8,
-    "source": "gva"
-  },
-  {
     "id": "gva-2026-10-31-michigan-flint",
     "date": "2026-10-31",
     "state": "Michigan",
@@ -159,6 +159,15 @@
     "city": "Edinburg",
     "killed": 0,
     "injured": 9,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-10-31-alabama-birmingham",
+    "date": "2026-10-31",
+    "state": "Alabama",
+    "city": "Birmingham",
+    "killed": 1,
+    "injured": 8,
     "source": "gva"
   },
   {
@@ -207,21 +216,21 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-10-24-florida-tallahassee",
-    "date": "2026-10-24",
-    "state": "Florida",
-    "city": "Tallahassee",
-    "killed": 0,
-    "injured": 11,
-    "source": "gva"
-  },
-  {
     "id": "gva-2026-10-24-north-carolina-charlotte",
     "date": "2026-10-24",
     "state": "North Carolina",
     "city": "Charlotte",
     "killed": 0,
     "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-10-24-florida-tallahassee",
+    "date": "2026-10-24",
+    "state": "Florida",
+    "city": "Tallahassee",
+    "killed": 0,
+    "injured": 11,
     "source": "gva"
   },
   {
@@ -439,7 +448,7 @@
     "state": "Georgia",
     "city": "Vienna",
     "killed": 2,
-    "injured": 35,
+    "injured": 26,
     "source": "gva"
   },
   {
@@ -1255,21 +1264,21 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-07-25-california-morgan-hill",
-    "date": "2026-07-25",
-    "state": "California",
-    "city": "Morgan Hill",
-    "killed": 1,
-    "injured": 6,
-    "source": "gva"
-  },
-  {
     "id": "gva-2026-07-25-california-san-francisco",
     "date": "2026-07-25",
     "state": "California",
     "city": "San Francisco",
     "killed": 0,
     "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-07-25-california-morgan-hill",
+    "date": "2026-07-25",
+    "state": "California",
+    "city": "Morgan Hill",
+    "killed": 1,
+    "injured": 6,
     "source": "gva"
   },
   {

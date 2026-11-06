@@ -328,5 +328,15 @@
     "queried_at": "2026-11-05T13:39:37.944Z",
     "had_results": false,
     "match": null
+  },
+  "gva-2026-11-01-indiana-bloomington": {
+    "queried_at": "2026-11-06T13:21:43.744Z",
+    "had_results": false,
+    "match": null
+  },
+  "gva-2026-11-01-tennessee-nashville": {
+    "queried_at": "2026-11-06T13:23:27.497Z",
+    "had_results": false,
+    "match": null
   }
 }
