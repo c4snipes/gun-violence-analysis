@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-06T13:20:23.365Z",
+  "generated_at": "2026-11-07T12:00:55.963Z",
   "window_days": 365,
   "totals_by_source": [
     {
       "source": "gva",
       "incidents": 445,
-      "killed": 419,
-      "injured": 1928,
-      "latest_incident_date": "2026-11-03"
+      "killed": 421,
+      "injured": 1927,
+      "latest_incident_date": "2026-11-05"
     },
     {
       "source": "mother_jones",
@@ -193,10 +193,10 @@
       "population": 6036620,
       "counts_by_source": {
         "gva": {
-          "incidents": 4,
-          "killed": 6,
-          "injured": 16,
-          "per_100k": 0.06626224609135577
+          "incidents": 5,
+          "killed": 7,
+          "injured": 20,
+          "per_100k": 0.0828278076141947
         },
         "mother_jones": {
           "incidents": 0,
@@ -255,10 +255,10 @@
       "population": 1069781,
       "counts_by_source": {
         "gva": {
-          "incidents": 6,
+          "incidents": 5,
           "killed": 4,
-          "injured": 29,
-          "per_100k": 0.5608624568953833
+          "injured": 24,
+          "per_100k": 0.4673853807461527
         },
         "mother_jones": {
           "incidents": 0,
@@ -753,7 +753,7 @@
         "gva": {
           "incidents": 14,
           "killed": 16,
-          "injured": 57,
+          "injured": 58,
           "per_100k": 0.4732690859280874
         },
         "mother_jones": {
@@ -1465,8 +1465,8 @@
       "counts_by_source": {
         "gva": {
           "incidents": 5,
-          "killed": 7,
-          "injured": 17,
+          "killed": 8,
+          "injured": 16,
           "per_100k": 0.06192654471430931
         },
         "mother_jones": {
@@ -1585,12 +1585,21 @@
   ],
   "recent_incidents": [
     {
+      "id": "gva-2026-11-05-colorado-littleton-(lakewood)",
+      "date": "2026-11-05",
+      "state": "Colorado",
+      "city": "Littleton (Lakewood)",
+      "killed": 1,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
       "id": "gva-2026-11-03-washington-spangle",
       "date": "2026-11-03",
       "state": "Washington",
       "city": "Spangle",
-      "killed": 3,
-      "injured": 2,
+      "killed": 4,
+      "injured": 1,
       "source": "gva"
     },
     {
@@ -1621,6 +1630,15 @@
       "source": "gva"
     },
     {
+      "id": "gva-2026-11-01-illinois-bloomington",
+      "date": "2026-11-01",
+      "state": "Illinois",
+      "city": "Bloomington",
+      "killed": 1,
+      "injured": 8,
+      "source": "gva"
+    },
+    {
       "id": "gva-2026-11-01-texas-dallas",
       "date": "2026-11-01",
       "state": "Texas",
@@ -1635,16 +1653,7 @@
       "state": "Mississippi",
       "city": "Jackson",
       "killed": 2,
-      "injured": 6,
-      "source": "gva"
-    },
-    {
-      "id": "gva-2026-11-01-illinois-bloomington",
-      "date": "2026-11-01",
-      "state": "Illinois",
-      "city": "Bloomington",
-      "killed": 1,
-      "injured": 8,
+      "injured": 7,
       "source": "gva"
     },
     {
@@ -5634,19 +5643,10 @@
       "killed": 0,
       "injured": 5,
       "source": "gva"
-    },
-    {
-      "id": "gva-2025-11-07-delaware-wilmington",
-      "date": "2025-11-07",
-      "state": "Delaware",
-      "city": "Wilmington",
-      "killed": 0,
-      "injured": 5,
-      "source": "gva"
     }
   ],
   "model": {
-    "fitted_at": "2026-11-06T13:19:50.358989+00:00",
+    "fitted_at": "2026-11-07T12:00:21.105420+00:00",
     "n_states": 50,
     "outcome": "firearm_mortality_rate",
     "ols": {

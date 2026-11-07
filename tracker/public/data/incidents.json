@@ -1,11 +1,20 @@
 [
   {
+    "id": "gva-2026-11-05-colorado-littleton-(lakewood)",
+    "date": "2026-11-05",
+    "state": "Colorado",
+    "city": "Littleton (Lakewood)",
+    "killed": 1,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-11-03-washington-spangle",
     "date": "2026-11-03",
     "state": "Washington",
     "city": "Spangle",
-    "killed": 3,
-    "injured": 2,
+    "killed": 4,
+    "injured": 1,
     "source": "gva"
   },
   {
@@ -36,6 +45,15 @@
     "source": "gva"
   },
   {
+    "id": "gva-2026-11-01-illinois-bloomington",
+    "date": "2026-11-01",
+    "state": "Illinois",
+    "city": "Bloomington",
+    "killed": 1,
+    "injured": 8,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-11-01-texas-dallas",
     "date": "2026-11-01",
     "state": "Texas",
@@ -50,16 +68,7 @@
     "state": "Mississippi",
     "city": "Jackson",
     "killed": 2,
-    "injured": 6,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-11-01-illinois-bloomington",
-    "date": "2026-11-01",
-    "state": "Illinois",
-    "city": "Bloomington",
-    "killed": 1,
-    "injured": 8,
+    "injured": 7,
     "source": "gva"
   },
   {
