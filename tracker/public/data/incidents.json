@@ -18,15 +18,6 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-11-02-california-moss-landing",
-    "date": "2026-11-02",
-    "state": "California",
-    "city": "Moss Landing",
-    "killed": 2,
-    "injured": 2,
-    "source": "gva"
-  },
-  {
     "id": "gva-2026-11-01-illinois-madison",
     "date": "2026-11-01",
     "state": "Illinois",
@@ -153,21 +144,21 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-10-31-kansas-wichita",
-    "date": "2026-10-31",
-    "state": "Kansas",
-    "city": "Wichita",
-    "killed": 0,
-    "injured": 4,
-    "source": "gva"
-  },
-  {
     "id": "gva-2026-10-31-texas-edinburg",
     "date": "2026-10-31",
     "state": "Texas",
     "city": "Edinburg",
     "killed": 0,
     "injured": 9,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-10-31-kansas-wichita",
+    "date": "2026-10-31",
+    "state": "Kansas",
+    "city": "Wichita",
+    "killed": 0,
+    "injured": 4,
     "source": "gva"
   },
   {
@@ -4055,15 +4046,6 @@
     "date": "2025-11-08",
     "state": "California",
     "city": "San Francisco",
-    "killed": 0,
-    "injured": 5,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-11-07-delaware-wilmington",
-    "date": "2025-11-07",
-    "state": "Delaware",
-    "city": "Wilmington",
     "killed": 0,
     "injured": 5,
     "source": "gva"
