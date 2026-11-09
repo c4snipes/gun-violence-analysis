@@ -1,5 +1,14 @@
 [
   {
+    "id": "gva-2026-11-07-wisconsin-west-bend",
+    "date": "2026-11-07",
+    "state": "Wisconsin",
+    "city": "West Bend",
+    "killed": 3,
+    "injured": 1,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-11-05-colorado-littleton-(lakewood)",
     "date": "2026-11-05",
     "state": "Colorado",
@@ -4039,15 +4048,6 @@
     "city": "Newark",
     "killed": 3,
     "injured": 2,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-11-08-california-san-francisco",
-    "date": "2025-11-08",
-    "state": "California",
-    "city": "San Francisco",
-    "killed": 0,
-    "injured": 5,
     "source": "gva"
   },
   {
