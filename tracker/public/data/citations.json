@@ -338,5 +338,20 @@
     "queried_at": "2026-11-06T13:23:27.497Z",
     "had_results": false,
     "match": null
+  },
+  "gva-2026-11-07-wisconsin-west-bend": {
+    "queried_at": "2026-11-10T13:52:43.338Z",
+    "had_results": false,
+    "match": null
+  },
+  "gva-2026-11-01-florida-jacksonville": {
+    "queried_at": "2026-11-10T13:54:37.959Z",
+    "had_results": false,
+    "match": null
+  },
+  "gva-2026-11-01-north-carolina-mooresville": {
+    "queried_at": "2026-11-10T13:55:22.489Z",
+    "had_results": false,
+    "match": null
   }
 }
