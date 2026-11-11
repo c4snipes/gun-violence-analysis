@@ -353,5 +353,10 @@
     "queried_at": "2026-11-10T13:55:22.489Z",
     "had_results": false,
     "match": null
+  },
+  "gva-2026-10-31-texas-edinburg": {
+    "queried_at": "2026-11-11T13:07:14.071Z",
+    "had_results": false,
+    "match": null
   }
 }

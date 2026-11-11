@@ -27,15 +27,6 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-11-01-illinois-madison",
-    "date": "2026-11-01",
-    "state": "Illinois",
-    "city": "Madison",
-    "killed": 1,
-    "injured": 3,
-    "source": "gva"
-  },
-  {
     "id": "gva-2026-11-01-indiana-bloomington",
     "date": "2026-11-01",
     "state": "Indiana",
@@ -96,6 +87,15 @@
     "city": "Jacksonville",
     "killed": 1,
     "injured": 9,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-11-01-illinois-madison",
+    "date": "2026-11-01",
+    "state": "Illinois",
+    "city": "Madison",
+    "killed": 1,
+    "injured": 3,
     "source": "gva"
   },
   {
@@ -3284,6 +3284,15 @@
     "source": "gva"
   },
   {
+    "id": "gva-2026-02-21-virginia-richmond",
+    "date": "2026-02-21",
+    "state": "Virginia",
+    "city": "Richmond",
+    "killed": 2,
+    "injured": 7,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-02-21-missouri-kansas-city",
     "date": "2026-02-21",
     "state": "Missouri",
@@ -3299,15 +3308,6 @@
     "city": "Jacksonville",
     "killed": 0,
     "injured": 5,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-02-21-virginia-richmond",
-    "date": "2026-02-21",
-    "state": "Virginia",
-    "city": "Richmond",
-    "killed": 2,
-    "injured": 7,
     "source": "gva"
   },
   {
