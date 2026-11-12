@@ -126,21 +126,21 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-10-31-delaware-newark",
-    "date": "2026-10-31",
-    "state": "Delaware",
-    "city": "Newark",
-    "killed": 0,
-    "injured": 7,
-    "source": "gva"
-  },
-  {
     "id": "gva-2026-10-31-michigan-flint",
     "date": "2026-10-31",
     "state": "Michigan",
     "city": "Flint",
     "killed": 1,
     "injured": 3,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-10-31-delaware-newark",
+    "date": "2026-10-31",
+    "state": "Delaware",
+    "city": "Newark",
+    "killed": 0,
+    "injured": 7,
     "source": "gva"
   },
   {

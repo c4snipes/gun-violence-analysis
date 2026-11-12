@@ -358,5 +358,10 @@
     "queried_at": "2026-11-11T13:07:14.071Z",
     "had_results": false,
     "match": null
+  },
+  "gva-2026-11-05-colorado-littleton-(lakewood)": {
+    "queried_at": "2026-11-12T14:05:51.599Z",
+    "had_results": false,
+    "match": null
   }
 }
