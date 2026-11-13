@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-12T14:05:30.260Z",
+  "generated_at": "2026-11-13T13:31:38.830Z",
   "window_days": 365,
   "totals_by_source": [
     {
       "source": "gva",
-      "incidents": 444,
-      "killed": 422,
-      "injured": 1921,
+      "incidents": 445,
+      "killed": 425,
+      "injured": 1919,
       "latest_incident_date": "2026-11-07"
     },
     {
@@ -1340,10 +1340,10 @@
       "population": 32101064,
       "counts_by_source": {
         "gva": {
-          "incidents": 47,
-          "killed": 51,
-          "injured": 220,
-          "per_100k": 0.14641259242995808
+          "incidents": 48,
+          "killed": 54,
+          "injured": 218,
+          "per_100k": 0.14952775397102103
         },
         "mother_jones": {
           "incidents": 1,
@@ -1612,10 +1612,37 @@
       "source": "gva"
     },
     {
+      "id": "gva-2026-11-01-illinois-madison",
+      "date": "2026-11-01",
+      "state": "Illinois",
+      "city": "Madison",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
+    {
       "id": "gva-2026-11-01-indiana-bloomington",
       "date": "2026-11-01",
       "state": "Indiana",
       "city": "Bloomington",
+      "killed": 0,
+      "injured": 7,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-11-01-texas-dallas",
+      "date": "2026-11-01",
+      "state": "Texas",
+      "city": "Dallas",
+      "killed": 3,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-11-01-texas-dallas-2",
+      "date": "2026-11-01",
+      "state": "Texas",
+      "city": "Dallas",
       "killed": 0,
       "injured": 7,
       "source": "gva"
@@ -1627,15 +1654,6 @@
       "city": "Bloomington",
       "killed": 1,
       "injured": 8,
-      "source": "gva"
-    },
-    {
-      "id": "gva-2026-11-01-texas-dallas",
-      "date": "2026-11-01",
-      "state": "Texas",
-      "city": "Dallas",
-      "killed": 0,
-      "injured": 14,
       "source": "gva"
     },
     {
@@ -1672,15 +1690,6 @@
       "city": "Jacksonville",
       "killed": 1,
       "injured": 9,
-      "source": "gva"
-    },
-    {
-      "id": "gva-2026-11-01-illinois-madison",
-      "date": "2026-11-01",
-      "state": "Illinois",
-      "city": "Madison",
-      "killed": 1,
-      "injured": 3,
       "source": "gva"
     },
     {
@@ -5637,7 +5646,7 @@
     }
   ],
   "model": {
-    "fitted_at": "2026-11-12T14:04:56.177288+00:00",
+    "fitted_at": "2026-11-13T13:31:04.157593+00:00",
     "n_states": 50,
     "outcome": "firearm_mortality_rate",
     "ols": {

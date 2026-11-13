@@ -27,10 +27,37 @@
     "source": "gva"
   },
   {
+    "id": "gva-2026-11-01-illinois-madison",
+    "date": "2026-11-01",
+    "state": "Illinois",
+    "city": "Madison",
+    "killed": 1,
+    "injured": 3,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-11-01-indiana-bloomington",
     "date": "2026-11-01",
     "state": "Indiana",
     "city": "Bloomington",
+    "killed": 0,
+    "injured": 7,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-11-01-texas-dallas",
+    "date": "2026-11-01",
+    "state": "Texas",
+    "city": "Dallas",
+    "killed": 3,
+    "injured": 5,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-11-01-texas-dallas-2",
+    "date": "2026-11-01",
+    "state": "Texas",
+    "city": "Dallas",
     "killed": 0,
     "injured": 7,
     "source": "gva"
@@ -42,15 +69,6 @@
     "city": "Bloomington",
     "killed": 1,
     "injured": 8,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-11-01-texas-dallas",
-    "date": "2026-11-01",
-    "state": "Texas",
-    "city": "Dallas",
-    "killed": 0,
-    "injured": 14,
     "source": "gva"
   },
   {
@@ -87,15 +105,6 @@
     "city": "Jacksonville",
     "killed": 1,
     "injured": 9,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-11-01-illinois-madison",
-    "date": "2026-11-01",
-    "state": "Illinois",
-    "city": "Madison",
-    "killed": 1,
-    "injured": 3,
     "source": "gva"
   },
   {

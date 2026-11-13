@@ -363,5 +363,10 @@
     "queried_at": "2026-11-12T14:05:51.599Z",
     "had_results": false,
     "match": null
+  },
+  "gva-2026-10-31-michigan-flint": {
+    "queried_at": "2026-11-13T13:33:39.541Z",
+    "had_results": false,
+    "match": null
   }
 }
