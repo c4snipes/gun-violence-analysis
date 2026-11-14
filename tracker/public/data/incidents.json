@@ -49,15 +49,6 @@
     "date": "2026-11-01",
     "state": "Texas",
     "city": "Dallas",
-    "killed": 3,
-    "injured": 5,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-11-01-texas-dallas-2",
-    "date": "2026-11-01",
-    "state": "Texas",
-    "city": "Dallas",
     "killed": 0,
     "injured": 7,
     "source": "gva"
@@ -78,6 +69,15 @@
     "city": "Jackson",
     "killed": 2,
     "injured": 7,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-11-01-texas-dallas-2",
+    "date": "2026-11-01",
+    "state": "Texas",
+    "city": "Dallas",
+    "killed": 3,
+    "injured": 5,
     "source": "gva"
   },
   {
@@ -153,21 +153,21 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-10-31-delaware-ellendale",
-    "date": "2026-10-31",
-    "state": "Delaware",
-    "city": "Ellendale",
-    "killed": 1,
-    "injured": 8,
-    "source": "gva"
-  },
-  {
     "id": "gva-2026-10-31-texas-edinburg",
     "date": "2026-10-31",
     "state": "Texas",
     "city": "Edinburg",
     "killed": 0,
     "injured": 9,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-10-31-delaware-ellendale",
+    "date": "2026-10-31",
+    "state": "Delaware",
+    "city": "Ellendale",
+    "killed": 1,
+    "injured": 8,
     "source": "gva"
   },
   {
@@ -1759,15 +1759,6 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-07-04-south-carolina-hilton-head-island-(hilton-head)",
-    "date": "2026-07-04",
-    "state": "South Carolina",
-    "city": "Hilton Head Island (Hilton Head)",
-    "killed": 0,
-    "injured": 6,
-    "source": "gva"
-  },
-  {
     "id": "gva-2026-07-04-kentucky-radcliff",
     "date": "2026-07-04",
     "state": "Kentucky",
@@ -1783,6 +1774,15 @@
     "city": "Dayton",
     "killed": 0,
     "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-07-04-south-carolina-hilton-head-island-(hilton-head)",
+    "date": "2026-07-04",
+    "state": "South Carolina",
+    "city": "Hilton Head Island (Hilton Head)",
+    "killed": 0,
+    "injured": 7,
     "source": "gva"
   },
   {
