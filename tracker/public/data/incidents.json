@@ -1,5 +1,23 @@
 [
   {
+    "id": "gva-2026-11-13-alabama-bessemer-(hueytown)",
+    "date": "2026-11-13",
+    "state": "Alabama",
+    "city": "Bessemer (Hueytown)",
+    "killed": 2,
+    "injured": 2,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-11-12-north-carolina-chapel-hill",
+    "date": "2026-11-12",
+    "state": "North Carolina",
+    "city": "Chapel Hill",
+    "killed": 0,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-11-07-wisconsin-west-bend",
     "date": "2026-11-07",
     "state": "Wisconsin",
@@ -27,6 +45,15 @@
     "source": "gva"
   },
   {
+    "id": "gva-2026-11-01-texas-dallas",
+    "date": "2026-11-01",
+    "state": "Texas",
+    "city": "Dallas",
+    "killed": 3,
+    "injured": 5,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-11-01-illinois-madison",
     "date": "2026-11-01",
     "state": "Illinois",
@@ -45,7 +72,7 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-11-01-texas-dallas",
+    "id": "gva-2026-11-01-texas-dallas-2",
     "date": "2026-11-01",
     "state": "Texas",
     "city": "Dallas",
@@ -72,12 +99,12 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-11-01-texas-dallas-2",
+    "id": "gva-2026-11-01-arkansas-little-rock",
     "date": "2026-11-01",
-    "state": "Texas",
-    "city": "Dallas",
-    "killed": 3,
-    "injured": 5,
+    "state": "Arkansas",
+    "city": "Little Rock",
+    "killed": 1,
+    "injured": 6,
     "source": "gva"
   },
   {
@@ -87,15 +114,6 @@
     "city": "Fayetteville",
     "killed": 0,
     "injured": 7,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-11-01-arkansas-little-rock",
-    "date": "2026-11-01",
-    "state": "Arkansas",
-    "city": "Little Rock",
-    "killed": 1,
-    "injured": 6,
     "source": "gva"
   },
   {
@@ -135,6 +153,15 @@
     "source": "gva"
   },
   {
+    "id": "gva-2026-10-31-texas-edinburg",
+    "date": "2026-10-31",
+    "state": "Texas",
+    "city": "Edinburg",
+    "killed": 0,
+    "injured": 9,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-10-31-michigan-flint",
     "date": "2026-10-31",
     "state": "Michigan",
@@ -150,15 +177,6 @@
     "city": "Newark",
     "killed": 0,
     "injured": 7,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-10-31-texas-edinburg",
-    "date": "2026-10-31",
-    "state": "Texas",
-    "city": "Edinburg",
-    "killed": 0,
-    "injured": 9,
     "source": "gva"
   },
   {
@@ -1759,6 +1777,15 @@
     "source": "gva"
   },
   {
+    "id": "gva-2026-07-04-south-carolina-hilton-head-island-(hilton-head)",
+    "date": "2026-07-04",
+    "state": "South Carolina",
+    "city": "Hilton Head Island (Hilton Head)",
+    "killed": 0,
+    "injured": 7,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-07-04-kentucky-radcliff",
     "date": "2026-07-04",
     "state": "Kentucky",
@@ -1774,15 +1801,6 @@
     "city": "Dayton",
     "killed": 0,
     "injured": 4,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-07-04-south-carolina-hilton-head-island-(hilton-head)",
-    "date": "2026-07-04",
-    "state": "South Carolina",
-    "city": "Hilton Head Island (Hilton Head)",
-    "killed": 0,
-    "injured": 7,
     "source": "gva"
   },
   {

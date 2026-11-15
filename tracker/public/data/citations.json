@@ -378,5 +378,15 @@
     "queried_at": "2026-11-14T12:40:04.371Z",
     "had_results": false,
     "match": null
+  },
+  "gva-2026-11-01-illinois-madison": {
+    "queried_at": "2026-11-15T13:03:30.325Z",
+    "had_results": false,
+    "match": null
+  },
+  "gva-2026-10-18-pennsylvania-philadelphia": {
+    "queried_at": "2026-11-15T13:05:24.065Z",
+    "had_results": true,
+    "match": null
   }
 }

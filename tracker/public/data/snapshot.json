@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-14T12:37:57.978Z",
+  "generated_at": "2026-11-15T13:02:12.329Z",
   "window_days": 365,
   "totals_by_source": [
     {
       "source": "gva",
-      "incidents": 445,
-      "killed": 425,
-      "injured": 1920,
-      "latest_incident_date": "2026-11-07"
+      "incidents": 443,
+      "killed": 423,
+      "injured": 1911,
+      "latest_incident_date": "2026-11-13"
     },
     {
       "source": "mother_jones",
@@ -38,10 +38,10 @@
       "population": 5223121,
       "counts_by_source": {
         "gva": {
-          "incidents": 11,
-          "killed": 6,
-          "injured": 53,
-          "per_100k": 0.21060205191493744
+          "incidents": 12,
+          "killed": 8,
+          "injured": 55,
+          "per_100k": 0.22974769299811357
         },
         "mother_jones": {
           "incidents": 0,
@@ -503,10 +503,10 @@
       "population": 2989188,
       "counts_by_source": {
         "gva": {
-          "incidents": 4,
+          "incidents": 3,
           "killed": 5,
-          "injured": 13,
-          "per_100k": 0.133815604772935
+          "injured": 8,
+          "per_100k": 0.10036170357970123
         },
         "mother_jones": {
           "incidents": 0,
@@ -751,10 +751,10 @@
       "population": 2958148,
       "counts_by_source": {
         "gva": {
-          "incidents": 14,
+          "incidents": 13,
           "killed": 16,
-          "injured": 58,
-          "per_100k": 0.4732690859280874
+          "injured": 53,
+          "per_100k": 0.4394641512189383
         },
         "mother_jones": {
           "incidents": 0,
@@ -937,10 +937,10 @@
       "population": 9590076,
       "counts_by_source": {
         "gva": {
-          "incidents": 8,
-          "killed": 10,
-          "injured": 39,
-          "per_100k": 0.08341956831207593
+          "incidents": 7,
+          "killed": 7,
+          "injured": 37,
+          "per_100k": 0.07299212227306645
         },
         "mother_jones": {
           "incidents": 0,
@@ -968,10 +968,10 @@
       "population": 2124222,
       "counts_by_source": {
         "gva": {
-          "incidents": 3,
-          "killed": 4,
-          "injured": 11,
-          "per_100k": 0.14122817671599297
+          "incidents": 2,
+          "killed": 3,
+          "injured": 8,
+          "per_100k": 0.09415211781066198
         },
         "mother_jones": {
           "incidents": 0,
@@ -1030,10 +1030,10 @@
       "population": 11343875,
       "counts_by_source": {
         "gva": {
-          "incidents": 21,
+          "incidents": 22,
           "killed": 16,
-          "injured": 90,
-          "per_100k": 0.18512192703110708
+          "injured": 94,
+          "per_100k": 0.19393725688973124
         },
         "mother_jones": {
           "incidents": 0,
@@ -1585,6 +1585,24 @@
   ],
   "recent_incidents": [
     {
+      "id": "gva-2026-11-13-alabama-bessemer-(hueytown)",
+      "date": "2026-11-13",
+      "state": "Alabama",
+      "city": "Bessemer (Hueytown)",
+      "killed": 2,
+      "injured": 2,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-11-12-north-carolina-chapel-hill",
+      "date": "2026-11-12",
+      "state": "North Carolina",
+      "city": "Chapel Hill",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
       "id": "gva-2026-11-07-wisconsin-west-bend",
       "date": "2026-11-07",
       "state": "Wisconsin",
@@ -1612,6 +1630,15 @@
       "source": "gva"
     },
     {
+      "id": "gva-2026-11-01-texas-dallas",
+      "date": "2026-11-01",
+      "state": "Texas",
+      "city": "Dallas",
+      "killed": 3,
+      "injured": 5,
+      "source": "gva"
+    },
+    {
       "id": "gva-2026-11-01-illinois-madison",
       "date": "2026-11-01",
       "state": "Illinois",
@@ -1630,7 +1657,7 @@
       "source": "gva"
     },
     {
-      "id": "gva-2026-11-01-texas-dallas",
+      "id": "gva-2026-11-01-texas-dallas-2",
       "date": "2026-11-01",
       "state": "Texas",
       "city": "Dallas",
@@ -1657,12 +1684,12 @@
       "source": "gva"
     },
     {
-      "id": "gva-2026-11-01-texas-dallas-2",
+      "id": "gva-2026-11-01-arkansas-little-rock",
       "date": "2026-11-01",
-      "state": "Texas",
-      "city": "Dallas",
-      "killed": 3,
-      "injured": 5,
+      "state": "Arkansas",
+      "city": "Little Rock",
+      "killed": 1,
+      "injured": 6,
       "source": "gva"
     },
     {
@@ -1672,15 +1699,6 @@
       "city": "Fayetteville",
       "killed": 0,
       "injured": 7,
-      "source": "gva"
-    },
-    {
-      "id": "gva-2026-11-01-arkansas-little-rock",
-      "date": "2026-11-01",
-      "state": "Arkansas",
-      "city": "Little Rock",
-      "killed": 1,
-      "injured": 6,
       "source": "gva"
     },
     {
@@ -1720,6 +1738,15 @@
       "source": "gva"
     },
     {
+      "id": "gva-2026-10-31-texas-edinburg",
+      "date": "2026-10-31",
+      "state": "Texas",
+      "city": "Edinburg",
+      "killed": 0,
+      "injured": 9,
+      "source": "gva"
+    },
+    {
       "id": "gva-2026-10-31-michigan-flint",
       "date": "2026-10-31",
       "state": "Michigan",
@@ -1735,15 +1762,6 @@
       "city": "Newark",
       "killed": 0,
       "injured": 7,
-      "source": "gva"
-    },
-    {
-      "id": "gva-2026-10-31-texas-edinburg",
-      "date": "2026-10-31",
-      "state": "Texas",
-      "city": "Edinburg",
-      "killed": 0,
-      "injured": 9,
       "source": "gva"
     },
     {
@@ -3344,6 +3362,15 @@
       "source": "gva"
     },
     {
+      "id": "gva-2026-07-04-south-carolina-hilton-head-island-(hilton-head)",
+      "date": "2026-07-04",
+      "state": "South Carolina",
+      "city": "Hilton Head Island (Hilton Head)",
+      "killed": 0,
+      "injured": 7,
+      "source": "gva"
+    },
+    {
       "id": "gva-2026-07-04-kentucky-radcliff",
       "date": "2026-07-04",
       "state": "Kentucky",
@@ -3359,15 +3386,6 @@
       "city": "Dayton",
       "killed": 0,
       "injured": 4,
-      "source": "gva"
-    },
-    {
-      "id": "gva-2026-07-04-south-carolina-hilton-head-island-(hilton-head)",
-      "date": "2026-07-04",
-      "state": "South Carolina",
-      "city": "Hilton Head Island (Hilton Head)",
-      "killed": 0,
-      "injured": 7,
       "source": "gva"
     },
     {
@@ -5607,99 +5625,63 @@
       "killed": 0,
       "injured": 4,
       "source": "gva"
-    },
-    {
-      "id": "gva-2025-11-15-kansas-carbondale",
-      "date": "2025-11-15",
-      "state": "Kansas",
-      "city": "Carbondale",
-      "killed": 0,
-      "injured": 5,
-      "source": "gva"
-    },
-    {
-      "id": "gva-2025-11-15-new-mexico-las-cruces",
-      "date": "2025-11-15",
-      "state": "New Mexico",
-      "city": "Las Cruces",
-      "killed": 1,
-      "injured": 3,
-      "source": "gva"
-    },
-    {
-      "id": "gva-2025-11-15-mississippi-mantee",
-      "date": "2025-11-15",
-      "state": "Mississippi",
-      "city": "Mantee",
-      "killed": 0,
-      "injured": 5,
-      "source": "gva"
-    },
-    {
-      "id": "gva-2025-11-15-new-jersey-newark",
-      "date": "2025-11-15",
-      "state": "New Jersey",
-      "city": "Newark",
-      "killed": 3,
-      "injured": 2,
-      "source": "gva"
     }
   ],
   "model": {
-    "fitted_at": "2026-11-14T12:37:24.087171+00:00",
+    "fitted_at": "2026-11-15T13:01:38.222507+00:00",
     "n_states": 50,
     "outcome": "firearm_mortality_rate",
     "ols": {
-      "r_squared": 0.7744387844731889,
-      "adj_r_squared": 0.7429651264927036,
+      "r_squared": 0.7744387844731888,
+      "adj_r_squared": 0.7429651264927035,
       "coefficients": [
         {
           "name": "gun_reg_pct",
-          "coef": 51.66128296308126,
-          "std_err": 8.155073168509297,
-          "p_value": 2.375500489420613e-10,
-          "ci_low": 35.677633261514096,
-          "ci_high": 67.64493266464842
+          "coef": 51.66128296313414,
+          "std_err": 8.155073168692816,
+          "p_value": 2.3755004915170786e-10,
+          "ci_low": 35.67763326120728,
+          "ci_high": 67.64493266506099
         },
         {
           "name": "poverty_rate",
-          "coef": 0.5659741408804222,
-          "std_err": 0.5435894687903121,
-          "p_value": 0.2977923082503102,
-          "ci_low": -0.4994416403238493,
-          "ci_high": 1.6313899220846937
+          "coef": 0.5659741408904146,
+          "std_err": 0.54358946878926,
+          "p_value": 0.2977923082408451,
+          "ci_low": -0.4994416403117947,
+          "ci_high": 1.631389922092624
         },
         {
           "name": "median_household_income",
-          "coef": -0.0000014088660496839098,
-          "std_err": 0.00017963777990535282,
-          "p_value": 0.9937424023721575,
-          "ci_low": -0.0003534924449269085,
-          "ci_high": 0.0003506747128275407
+          "coef": -0.0000014088660476194533,
+          "std_err": 0.00017963777990462028,
+          "p_value": 0.9937424023813013,
+          "ci_low": -0.0003534924449234083,
+          "ci_high": 0.00035067471282816936
         },
         {
           "name": "credit_score",
-          "coef": -0.1565765181407771,
-          "std_err": 0.07131871386214772,
-          "p_value": 0.028131486753636088,
-          "ci_low": -0.29635862873430413,
-          "ci_high": -0.01679440754725009
+          "coef": -0.15657651814078413,
+          "std_err": 0.07131871386224324,
+          "p_value": 0.028131486753839748,
+          "ci_low": -0.29635862873449836,
+          "ci_high": -0.016794407547069873
         },
         {
           "name": "pop_density",
-          "coef": -0.008344859309647751,
-          "std_err": 0.003012997140398639,
-          "p_value": 0.005612160254806908,
-          "ci_low": -0.014250225190351257,
-          "ci_high": -0.0024394934289442465
+          "coef": -0.008344859309653707,
+          "std_err": 0.0030129971403884412,
+          "p_value": 0.005612160254611355,
+          "ci_low": -0.014250225190337223,
+          "ci_high": -0.0024394934289701893
         },
         {
           "name": "gov_party_rep",
-          "coef": 1.7239646321360402,
-          "std_err": 1.0174453741793725,
-          "p_value": 0.09018833085908178,
-          "ci_low": -0.27019165749240903,
-          "ci_high": 3.7181209217644895
+          "coef": 1.7239646321360378,
+          "std_err": 1.0174453741777985,
+          "p_value": 0.09018833085858448,
+          "ci_low": -0.2701916574893264,
+          "ci_high": 3.718120921761402
         }
       ]
     },
