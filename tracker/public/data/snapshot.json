@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-15T13:02:12.329Z",
+  "generated_at": "2026-11-16T14:06:54.776Z",
   "window_days": 365,
   "totals_by_source": [
     {
       "source": "gva",
-      "incidents": 443,
+      "incidents": 442,
       "killed": 423,
-      "injured": 1911,
+      "injured": 1907,
       "latest_incident_date": "2026-11-13"
     },
     {
@@ -286,10 +286,10 @@
       "population": 23659198,
       "counts_by_source": {
         "gva": {
-          "incidents": 26,
+          "incidents": 25,
           "killed": 16,
-          "injured": 114,
-          "per_100k": 0.10989383494740607
+          "injured": 110,
+          "per_100k": 0.10566714898789047
         },
         "mother_jones": {
           "incidents": 0,
@@ -5616,19 +5616,10 @@
       "killed": 0,
       "injured": 7,
       "source": "gva"
-    },
-    {
-      "id": "gva-2025-11-16-florida-jacksonville",
-      "date": "2025-11-16",
-      "state": "Florida",
-      "city": "Jacksonville",
-      "killed": 0,
-      "injured": 4,
-      "source": "gva"
     }
   ],
   "model": {
-    "fitted_at": "2026-11-15T13:01:38.222507+00:00",
+    "fitted_at": "2026-11-16T14:06:21.042131+00:00",
     "n_states": 50,
     "outcome": "firearm_mortality_rate",
     "ols": {

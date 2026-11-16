@@ -4042,42 +4042,6 @@
     "source": "gva"
   },
   {
-    "id": "gva-2025-11-15-kansas-carbondale",
-    "date": "2025-11-15",
-    "state": "Kansas",
-    "city": "Carbondale",
-    "killed": 0,
-    "injured": 5,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-11-15-new-mexico-las-cruces",
-    "date": "2025-11-15",
-    "state": "New Mexico",
-    "city": "Las Cruces",
-    "killed": 1,
-    "injured": 3,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-11-15-mississippi-mantee",
-    "date": "2025-11-15",
-    "state": "Mississippi",
-    "city": "Mantee",
-    "killed": 0,
-    "injured": 5,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-11-15-new-jersey-newark",
-    "date": "2025-11-15",
-    "state": "New Jersey",
-    "city": "Newark",
-    "killed": 3,
-    "injured": 2,
-    "source": "gva"
-  },
-  {
     "id": "mj-michigan-mormon-church-shooting",
     "date": "2025-09-28",
     "state": "Michigan",

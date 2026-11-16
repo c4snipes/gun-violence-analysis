@@ -388,5 +388,10 @@
     "queried_at": "2026-11-15T13:05:24.065Z",
     "had_results": true,
     "match": null
+  },
+  "gva-2026-10-25-arizona-tucson": {
+    "queried_at": "2026-11-16T14:09:17.820Z",
+    "had_results": true,
+    "match": null
   }
 }
