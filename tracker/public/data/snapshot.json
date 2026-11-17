@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-16T14:06:54.776Z",
+  "generated_at": "2026-11-17T15:00:24.028Z",
   "window_days": 365,
   "totals_by_source": [
     {
       "source": "gva",
-      "incidents": 442,
-      "killed": 423,
-      "injured": 1907,
-      "latest_incident_date": "2026-11-13"
+      "incidents": 446,
+      "killed": 426,
+      "injured": 1924,
+      "latest_incident_date": "2026-11-16"
     },
     {
       "source": "mother_jones",
@@ -565,10 +565,10 @@
       "population": 4621500,
       "counts_by_source": {
         "gva": {
-          "incidents": 21,
+          "incidents": 22,
           "killed": 19,
-          "injured": 85,
-          "per_100k": 0.4543979227523531
+          "injured": 93,
+          "per_100k": 0.47603591907389375
         },
         "mother_jones": {
           "incidents": 0,
@@ -627,10 +627,10 @@
       "population": 6285380,
       "counts_by_source": {
         "gva": {
-          "incidents": 10,
+          "incidents": 11,
           "killed": 11,
-          "injured": 43,
-          "per_100k": 0.15909937028469243
+          "injured": 47,
+          "per_100k": 0.17500930731316167
         },
         "mother_jones": {
           "incidents": 0,
@@ -751,10 +751,10 @@
       "population": 2958148,
       "counts_by_source": {
         "gva": {
-          "incidents": 13,
-          "killed": 16,
-          "injured": 53,
-          "per_100k": 0.4394641512189383
+          "incidents": 15,
+          "killed": 19,
+          "injured": 58,
+          "per_100k": 0.5070740206372366
         },
         "mother_jones": {
           "incidents": 0,
@@ -1584,6 +1584,42 @@
     }
   ],
   "recent_incidents": [
+    {
+      "id": "gva-2026-11-16-maryland-baltimore",
+      "date": "2026-11-16",
+      "state": "Maryland",
+      "city": "Baltimore",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-11-16-louisiana-alexandria",
+      "date": "2026-11-16",
+      "state": "Louisiana",
+      "city": "Alexandria",
+      "killed": 0,
+      "injured": 8,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-11-15-mississippi-jackson",
+      "date": "2026-11-15",
+      "state": "Mississippi",
+      "city": "Jackson",
+      "killed": 3,
+      "injured": 1,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-11-15-mississippi-collins",
+      "date": "2026-11-15",
+      "state": "Mississippi",
+      "city": "Collins",
+      "killed": 0,
+      "injured": 4,
+      "source": "gva"
+    },
     {
       "id": "gva-2026-11-13-alabama-bessemer-(hueytown)",
       "date": "2026-11-13",
@@ -5619,7 +5655,7 @@
     }
   ],
   "model": {
-    "fitted_at": "2026-11-16T14:06:21.042131+00:00",
+    "fitted_at": "2026-11-17T14:59:49.120484+00:00",
     "n_states": 50,
     "outcome": "firearm_mortality_rate",
     "ols": {

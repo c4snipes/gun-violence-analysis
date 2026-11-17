@@ -1,5 +1,41 @@
 [
   {
+    "id": "gva-2026-11-16-maryland-baltimore",
+    "date": "2026-11-16",
+    "state": "Maryland",
+    "city": "Baltimore",
+    "killed": 0,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-11-16-louisiana-alexandria",
+    "date": "2026-11-16",
+    "state": "Louisiana",
+    "city": "Alexandria",
+    "killed": 0,
+    "injured": 8,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-11-15-mississippi-jackson",
+    "date": "2026-11-15",
+    "state": "Mississippi",
+    "city": "Jackson",
+    "killed": 3,
+    "injured": 1,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-11-15-mississippi-collins",
+    "date": "2026-11-15",
+    "state": "Mississippi",
+    "city": "Collins",
+    "killed": 0,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-11-13-alabama-bessemer-(hueytown)",
     "date": "2026-11-13",
     "state": "Alabama",
@@ -4030,15 +4066,6 @@
     "city": "Chicago",
     "killed": 0,
     "injured": 7,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-11-16-florida-jacksonville",
-    "date": "2025-11-16",
-    "state": "Florida",
-    "city": "Jacksonville",
-    "killed": 0,
-    "injured": 4,
     "source": "gva"
   },
   {
