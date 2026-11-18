@@ -1,20 +1,20 @@
 [
   {
-    "id": "gva-2026-11-16-maryland-baltimore",
-    "date": "2026-11-16",
-    "state": "Maryland",
-    "city": "Baltimore",
-    "killed": 0,
-    "injured": 4,
-    "source": "gva"
-  },
-  {
     "id": "gva-2026-11-16-louisiana-alexandria",
     "date": "2026-11-16",
     "state": "Louisiana",
     "city": "Alexandria",
     "killed": 0,
     "injured": 8,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-11-16-maryland-baltimore",
+    "date": "2026-11-16",
+    "state": "Maryland",
+    "city": "Baltimore",
+    "killed": 0,
+    "injured": 4,
     "source": "gva"
   },
   {

@@ -393,5 +393,20 @@
     "queried_at": "2026-11-16T14:09:17.820Z",
     "had_results": true,
     "match": null
+  },
+  "gva-2026-11-16-louisiana-alexandria": {
+    "queried_at": "2026-11-18T14:42:27.879Z",
+    "had_results": false,
+    "match": null
+  },
+  "gva-2026-11-16-maryland-baltimore": {
+    "queried_at": "2026-11-18T14:42:54.615Z",
+    "had_results": false,
+    "match": null
+  },
+  "gva-2026-11-15-mississippi-jackson": {
+    "queried_at": "2026-11-18T14:43:18.213Z",
+    "had_results": false,
+    "match": null
   }
 }
