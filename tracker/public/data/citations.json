@@ -408,5 +408,15 @@
     "queried_at": "2026-11-18T14:43:18.213Z",
     "had_results": false,
     "match": null
+  },
+  "gva-2026-11-19-florida-plant-city": {
+    "queried_at": "2026-11-20T14:29:25.156Z",
+    "had_results": false,
+    "match": null
+  },
+  "gva-2026-11-15-mississippi-collins": {
+    "queried_at": "2026-11-20T14:30:09.005Z",
+    "had_results": false,
+    "match": null
   }
 }

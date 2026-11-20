@@ -1,5 +1,23 @@
 [
   {
+    "id": "gva-2026-11-19-florida-plant-city",
+    "date": "2026-11-19",
+    "state": "Florida",
+    "city": "Plant City",
+    "killed": 4,
+    "injured": 0,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-11-18-louisiana-baton-rouge",
+    "date": "2026-11-18",
+    "state": "Louisiana",
+    "city": "Baton Rouge",
+    "killed": 0,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-11-16-louisiana-alexandria",
     "date": "2026-11-16",
     "state": "Louisiana",
