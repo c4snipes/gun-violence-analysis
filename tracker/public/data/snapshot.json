@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-20T14:29:07.773Z",
+  "generated_at": "2026-11-21T13:49:12.831Z",
   "window_days": 365,
   "totals_by_source": [
     {
       "source": "gva",
-      "incidents": 448,
+      "incidents": 447,
       "killed": 430,
-      "injured": 1928,
+      "injured": 1921,
       "latest_incident_date": "2026-11-19"
     },
     {
@@ -410,10 +410,10 @@
       "population": 12735249,
       "counts_by_source": {
         "gva": {
-          "incidents": 27,
+          "incidents": 26,
           "killed": 28,
-          "injured": 124,
-          "per_100k": 0.21200998896841355
+          "injured": 117,
+          "per_100k": 0.2041577671547686
         },
         "mother_jones": {
           "incidents": 0,
@@ -1621,21 +1621,21 @@
       "source": "gva"
     },
     {
-      "id": "gva-2026-11-15-mississippi-jackson",
-      "date": "2026-11-15",
-      "state": "Mississippi",
-      "city": "Jackson",
-      "killed": 3,
-      "injured": 1,
-      "source": "gva"
-    },
-    {
       "id": "gva-2026-11-15-mississippi-collins",
       "date": "2026-11-15",
       "state": "Mississippi",
       "city": "Collins",
       "killed": 0,
       "injured": 4,
+      "source": "gva"
+    },
+    {
+      "id": "gva-2026-11-15-mississippi-jackson",
+      "date": "2026-11-15",
+      "state": "Mississippi",
+      "city": "Jackson",
+      "killed": 3,
+      "injured": 1,
       "source": "gva"
     },
     {
@@ -5661,19 +5661,10 @@
       "killed": 2,
       "injured": 2,
       "source": "gva"
-    },
-    {
-      "id": "gva-2025-11-21-illinois-chicago",
-      "date": "2025-11-21",
-      "state": "Illinois",
-      "city": "Chicago",
-      "killed": 0,
-      "injured": 7,
-      "source": "gva"
     }
   ],
   "model": {
-    "fitted_at": "2026-11-20T14:28:33.045222+00:00",
+    "fitted_at": "2026-11-21T13:48:38.352889+00:00",
     "n_states": 50,
     "outcome": "firearm_mortality_rate",
     "ols": {

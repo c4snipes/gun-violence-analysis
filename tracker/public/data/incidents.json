@@ -36,21 +36,21 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-11-15-mississippi-jackson",
-    "date": "2026-11-15",
-    "state": "Mississippi",
-    "city": "Jackson",
-    "killed": 3,
-    "injured": 1,
-    "source": "gva"
-  },
-  {
     "id": "gva-2026-11-15-mississippi-collins",
     "date": "2026-11-15",
     "state": "Mississippi",
     "city": "Collins",
     "killed": 0,
     "injured": 4,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-11-15-mississippi-jackson",
+    "date": "2026-11-15",
+    "state": "Mississippi",
+    "city": "Jackson",
+    "killed": 3,
+    "injured": 1,
     "source": "gva"
   },
   {
