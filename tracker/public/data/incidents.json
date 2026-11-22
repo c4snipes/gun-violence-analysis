@@ -1,5 +1,14 @@
 [
   {
+    "id": "gva-2026-11-21-ohio-cleveland-(parma)",
+    "date": "2026-11-21",
+    "state": "Ohio",
+    "city": "Cleveland (Parma)",
+    "killed": 3,
+    "injured": 1,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-11-19-florida-plant-city",
     "date": "2026-11-19",
     "state": "Florida",
@@ -4075,15 +4084,6 @@
     "city": "Phoenix",
     "killed": 2,
     "injured": 2,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-11-21-illinois-chicago",
-    "date": "2025-11-21",
-    "state": "Illinois",
-    "city": "Chicago",
-    "killed": 0,
-    "injured": 7,
     "source": "gva"
   },
   {
