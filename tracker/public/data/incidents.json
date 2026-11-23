@@ -1,11 +1,29 @@
 [
   {
+    "id": "gva-2026-11-22-illinois-chicago",
+    "date": "2026-11-22",
+    "state": "Illinois",
+    "city": "Chicago",
+    "killed": 0,
+    "injured": 4,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-11-21-ohio-cleveland-(parma)",
     "date": "2026-11-21",
     "state": "Ohio",
     "city": "Cleveland (Parma)",
     "killed": 3,
     "injured": 1,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-11-21-california-strathmore",
+    "date": "2026-11-21",
+    "state": "California",
+    "city": "Strathmore",
+    "killed": 0,
+    "injured": 9,
     "source": "gva"
   },
   {
@@ -4066,24 +4084,6 @@
     "city": "Union City",
     "killed": 1,
     "injured": 6,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-11-22-texas-houston",
-    "date": "2025-11-22",
-    "state": "Texas",
-    "city": "Houston",
-    "killed": 1,
-    "injured": 9,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2025-11-22-arizona-phoenix",
-    "date": "2025-11-22",
-    "state": "Arizona",
-    "city": "Phoenix",
-    "killed": 2,
-    "injured": 2,
     "source": "gva"
   },
   {
