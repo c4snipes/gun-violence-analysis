@@ -23,7 +23,7 @@
     "state": "California",
     "city": "Strathmore",
     "killed": 0,
-    "injured": 9,
+    "injured": 11,
     "source": "gva"
   },
   {
@@ -153,24 +153,6 @@
     "source": "gva"
   },
   {
-    "id": "gva-2026-11-01-texas-dallas",
-    "date": "2026-11-01",
-    "state": "Texas",
-    "city": "Dallas",
-    "killed": 3,
-    "injured": 5,
-    "source": "gva"
-  },
-  {
-    "id": "gva-2026-11-01-texas-dallas-2",
-    "date": "2026-11-01",
-    "state": "Texas",
-    "city": "Dallas",
-    "killed": 0,
-    "injured": 7,
-    "source": "gva"
-  },
-  {
     "id": "gva-2026-11-01-illinois-bloomington",
     "date": "2026-11-01",
     "state": "Illinois",
@@ -186,6 +168,24 @@
     "city": "Jackson",
     "killed": 2,
     "injured": 7,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-11-01-texas-dallas",
+    "date": "2026-11-01",
+    "state": "Texas",
+    "city": "Dallas",
+    "killed": 0,
+    "injured": 7,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-11-01-texas-dallas-2",
+    "date": "2026-11-01",
+    "state": "Texas",
+    "city": "Dallas",
+    "killed": 3,
+    "injured": 5,
     "source": "gva"
   },
   {

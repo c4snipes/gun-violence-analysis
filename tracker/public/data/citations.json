@@ -423,5 +423,15 @@
     "queried_at": "2026-11-22T13:44:54.552Z",
     "had_results": true,
     "match": null
+  },
+  "gva-2026-11-12-north-carolina-chapel-hill": {
+    "queried_at": "2026-11-26T15:57:09.886Z",
+    "had_results": true,
+    "match": null
+  },
+  "gva-2026-10-26-new-jersey-elizabeth": {
+    "queried_at": "2026-11-26T15:58:30.830Z",
+    "had_results": true,
+    "match": null
   }
 }
