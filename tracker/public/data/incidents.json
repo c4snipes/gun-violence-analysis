@@ -1,5 +1,23 @@
 [
   {
+    "id": "gva-2026-11-26-florida-davenport",
+    "date": "2026-11-26",
+    "state": "Florida",
+    "city": "Davenport",
+    "killed": 0,
+    "injured": 6,
+    "source": "gva"
+  },
+  {
+    "id": "gva-2026-11-25-north-carolina-charlotte",
+    "date": "2026-11-25",
+    "state": "North Carolina",
+    "city": "Charlotte",
+    "killed": 2,
+    "injured": 2,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-11-24-texas-houston",
     "date": "2026-11-24",
     "state": "Texas",

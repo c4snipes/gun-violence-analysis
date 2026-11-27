@@ -433,5 +433,15 @@
     "queried_at": "2026-11-26T15:58:30.830Z",
     "had_results": true,
     "match": null
+  },
+  "gva-2026-11-26-florida-davenport": {
+    "queried_at": "2026-11-27T15:44:30.481Z",
+    "had_results": true,
+    "match": null
+  },
+  "gva-2026-11-24-texas-houston": {
+    "queried_at": "2026-11-27T15:45:15.837Z",
+    "had_results": true,
+    "match": null
   }
 }
