@@ -1,5 +1,14 @@
 [
   {
+    "id": "gva-2026-11-27-florida-orlando",
+    "date": "2026-11-27",
+    "state": "Florida",
+    "city": "Orlando",
+    "killed": 1,
+    "injured": 3,
+    "source": "gva"
+  },
+  {
     "id": "gva-2026-11-26-florida-davenport",
     "date": "2026-11-26",
     "state": "Florida",

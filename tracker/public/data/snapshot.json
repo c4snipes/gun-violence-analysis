@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-27T15:44:15.257Z",
+  "generated_at": "2026-11-28T14:40:49.722Z",
   "window_days": 365,
   "totals_by_source": [
     {
       "source": "gva",
-      "incidents": 449,
-      "killed": 432,
-      "injured": 1927,
-      "latest_incident_date": "2026-11-26"
+      "incidents": 450,
+      "killed": 433,
+      "injured": 1930,
+      "latest_incident_date": "2026-11-27"
     },
     {
       "source": "mother_jones",
@@ -286,10 +286,10 @@
       "population": 23659198,
       "counts_by_source": {
         "gva": {
-          "incidents": 27,
-          "killed": 20,
-          "injured": 116,
-          "per_100k": 0.1141205209069217
+          "incidents": 28,
+          "killed": 21,
+          "injured": 119,
+          "per_100k": 0.11834720686643731
         },
         "mother_jones": {
           "incidents": 0,
@@ -1584,6 +1584,15 @@
     }
   ],
   "recent_incidents": [
+    {
+      "id": "gva-2026-11-27-florida-orlando",
+      "date": "2026-11-27",
+      "state": "Florida",
+      "city": "Orlando",
+      "killed": 1,
+      "injured": 3,
+      "source": "gva"
+    },
     {
       "id": "gva-2026-11-26-florida-davenport",
       "date": "2026-11-26",
@@ -5682,7 +5691,7 @@
     }
   ],
   "model": {
-    "fitted_at": "2026-11-27T15:43:41.479799+00:00",
+    "fitted_at": "2026-11-28T14:39:35.386698+00:00",
     "n_states": 50,
     "outcome": "firearm_mortality_rate",
     "ols": {

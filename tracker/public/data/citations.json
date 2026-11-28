@@ -443,5 +443,15 @@
     "queried_at": "2026-11-27T15:45:15.837Z",
     "had_results": true,
     "match": null
+  },
+  "gva-2026-11-25-north-carolina-charlotte": {
+    "queried_at": "2026-11-28T14:41:25.931Z",
+    "had_results": true,
+    "match": null
+  },
+  "gva-2026-11-01-texas-dallas-2": {
+    "queried_at": "2026-11-28T14:43:41.742Z",
+    "had_results": false,
+    "match": null
   }
 }
